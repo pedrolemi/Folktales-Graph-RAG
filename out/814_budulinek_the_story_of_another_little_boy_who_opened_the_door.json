@@ -1,0 +1,312 @@
+{
+    "uri": "https://fairytalez.com/budulinek-story-another-little-boy-opened-door",
+    "nation": "czechoslovak",
+    "title": "Budulinek: The Story of Another Little Boy Who Opened the Door",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "budulinek",
+            "age_category": "children",
+            "gender": "male",
+            "has_personality": [
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "granny",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "hero_family_member"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "anthropomorphic_animal",
+            "instance_name": "lishka_the_fox",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "aggressive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 1
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "organ_grinder",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "eager"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "hero_helper"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 0,
+            "other": 3,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 1,
+            "other": 3,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 3,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "dwelling",
+            "instance_name": "grannys_cottage"
+        },
+        {
+            "class_name": "forest",
+            "instance_name": "foxes_home_forest"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "nearby_field"
+        },
+        {
+            "class_name": "community_building",
+            "instance_name": "organ_grinders_location"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "organ"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "peas"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "move",
+            "instance_name": "daily_routine_established",
+            "description": "Granny went out to work every day, leaving Budulinek alone at home. She would always remind him not to open the door for anyone.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "attempted_entry",
+            "description": "One morning, Granny left some soup on the table for Budulinek's dinner and reminded him again not to open the door. However, Lishka, the sly old mother fox, came knocking and tried to persuade Budulinek to let her in.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "lack_of_money",
+            "instance_name": "insufficient_provision",
+            "description": "Budulinek opened the door for Lishka, who then ate up the soup that Granny had left for him. When dinner time came, Budulinek was left with nothing to eat.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "disobedience_conflict",
+            "description": "Granny returned home in the evening and asked Budulinek if he had let anyone in. Budulinek confessed, and Granny scolded him for disobeying her instructions.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "call_for_help",
+            "instance_name": "conflict_setup_introduction",
+            "description": "The next morning, Granny cooked some porridge for Budulinek's dinner and reminded him to stay inside. However, Lishka came knocking again and tried to persuade Budulinek to let her in.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "character_daily_routine",
+            "description": "Budulinek opened the door once more, and Lishka ate up the porridge that Granny had left for him. When dinner time came, Budulinek was hungry again.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "lack_of_bride",
+            "instance_name": "disobedience_consequence",
+            "description": "Granny scolded Budulinek for disobeying her instructions yet again. She warned him that if he continued to open the door for strangers, she would have to spank him.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "counteraction_initiated",
+            "description": "The next morning, Granny cooked some peas for Budulinek's dinner. However, instead of eating them inside, Budulinek took his bowl and ate at the window so that Lishka wouldn't see him.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "convincing_entry",
+            "description": "Lishka came knocking again and begged Budulinek to let her in, promising to give him a ride on her tail if he did. This time, Budulinek believed her and opened the door.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "transportation_to_habitat",
+            "description": "Lishka gave Budulinek a ride on her tail, but instead of taking him home safely, she took him to her hole in the forest and hid him with her three children.",
+            "agents": [
+                2
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "harassment_occurs",
+            "description": "Budulinek was forced to stay with the foxes, who teased and bit him. He cried out for help, but no one came to his aid.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "conflict",
+            "instance_name": "missing_child_search",
+            "description": "Granny searched everywhere for Budulinek but couldn't find him anywhere. She asked everyone she met if they had seen her little boy, but nobody had.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "granny_reminded_of_past",
+            "description": "An organ-grinder with a wooden leg began playing in front of Granny's cottage. The music reminded her of Budulinek and made her cry.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "organ_grinder_searches_forest",
+            "description": "The organ-grinder heard Granny's story and promised to help her find Budulinek. He went around the forest, playing his organ and looking for any sign of the little boy.",
+            "agents": [
+                0,
+                1,
+                3
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "organ_grinder_investigates",
+            "description": "The organ-grinder thought he heard a child crying in a nearby fox's hole and decided to investigate. He played his organ softly and sang a song that would lure out Lishka and her children from their hiding place.",
+            "agents": [
+                2,
+                3
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        }
+    ]
+}

@@ -1,0 +1,146 @@
+{
+    "uri": "https://fairytalez.com/olive-tree-fig-tree",
+    "nation": "greek",
+    "title": "The Olive-Tree and the Fig-Tree",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "magical_creature",
+            "instance_name": "olive_tree",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "aggressive",
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "fig_tree",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "assertive",
+                "eager"
+            ],
+            "has_role": {
+                "class_name": "hero",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 1
+        }
+    ],
+    "relationships": [],
+    "places": [
+        {
+            "class_name": "natural_place",
+            "instance_name": "olive_forest"
+        },
+        {
+            "class_name": "mountain",
+            "instance_name": "fig_mountain"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "olive_leaves"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "fig_branches"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "snow_flakes"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "absentation",
+            "instance_name": "tree_confrontation_setup",
+            "description": "An Olive-tree taunted a Fig-tree with her supposed advantage over losing leaves every autumn.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "entity_boasts_unique_characteristic",
+            "description": "The Olive-tree boasted that she remained green and flourishing all year round.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "winter_weather_arrival",
+            "description": "A heavy fall of snow arrived, threatening both trees.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "environmental_shift",
+            "description": "The snow settled on the leaves of the Olive-tree, causing them to bend under its weight.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "tree_collapses",
+            "description": "The Olive-tree ultimately broke under the pressure of the snow.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "scene_setting_description",
+            "description": "In contrast, the snow fell harmlessly through the bare branches of the Fig-tree.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "tree_recovery",
+            "description": "The Fig-tree emerged unscathed from the storm, ready to bear many more crops.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

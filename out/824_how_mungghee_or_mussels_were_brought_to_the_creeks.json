@@ -1,0 +1,245 @@
+{
+    "uri": "https://fairytalez.com/mungghee-mussels-brought-creeks",
+    "nation": "australian_ethnic",
+    "title": "How Mungghee, or Mussels, were Brought to the Creeks",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "anthropomorphic_animal",
+            "instance_name": "wanh_crow",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 1
+        },
+        {
+            "class_name": "anthropomorphic_animal",
+            "instance_name": "mungghee_wurraywurraymul",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "magical_helper",
+                "instance_name": "mussel_bringer"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "natural_place",
+            "instance_name": "western_plains"
+        },
+        {
+            "class_name": "river",
+            "instance_name": "creek"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "big_waterhole"
+        },
+        {
+            "class_name": "river",
+            "instance_name": "back_creeks"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "mussel_shell"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "tree_root"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "initial_situation",
+            "instance_name": "setup_event",
+            "description": "One day in the far past a Mungghee wurraywurraymul, or sea-gull, was flying over the Western plains carrying a mussel.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "subject_pursuit_abandonment",
+            "description": "Wahn the crow saw her and wondered what she carried. He pursued her, but in her fear at being overtaken, she dropped the mussel.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "direction_shift",
+            "description": "Seeing it drop, Wahn stopped his pursuit and swooped down to see what this strange thing was. Standing beside it, with his head on one side, he peered at it.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "bird_consumes_food",
+            "description": "Then he gave it a peck. He rather liked the taste of it; he pecked again and again, until the fish in one side of the shell was finished.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "protagonist_throws_object",
+            "description": "He never noticed that there was a fish in the other side too, so he took up the empty shell, as he thought, and threw it into the creek.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "connective_incident",
+            "instance_name": "mungghee_comparative_event",
+            "description": "There this Mungghee throve and multiplied, all that followed her being as she was, one fish enclosed between two shells, not as the one Mungghee wurraywurraymul had brought, which had two fish, one on each side shell.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "continuing_counteraction_pursuit",
+            "description": "Not knowing that he had thrown a Mungghee mother into the creek, Wahn determined to pursue Mungghee wurraywurraymul and get more, or find out whence she had brought the one he had thought so good.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "overtaking_character",
+            "description": "Away he flew in the direction she had gone. He overtook her some miles up the creek beside a big waterhole.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "conflict",
+            "instance_name": "request_denied",
+            "description": "Before she saw him coming, Wahn had swooped down upon her, crying, “Give me some more of that fish in two shells you brought.”“I have no more. Let me go,” replied Mungghee wurraywurraymul.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 3
+        },
+        {
+            "class_name": "call_for_help",
+            "instance_name": "demanded_release",
+            "description": "Wahn held her tightly and demanded that she promise to return to her own country and bring more Mungghee for him. She promised, and Wahn released her, turning her head towards the south.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "hero_departure",
+            "instance_name": "unfulfilled_promised_departure",
+            "description": "Mungghee wurraywurraymul flew away, but did not return as promised. Days passed, and months went by, with no sign of her.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "villainy",
+            "instance_name": "regretful_reflection",
+            "description": "Wahn grew angry with himself for letting her go and began to think that he should have killed her instead.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "encountered_new_environmental_feature",
+            "description": "One day, while drinking from the creek, Wahn saw shells on the bank similar to the one he had thrown away. He ate the fish inside, but did not notice that they were Mungghee.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "call_for_help",
+            "instance_name": "tribe_misleads_protagonist",
+            "description": "Later, he discovered that Mungghee wurraywurraymul and her tribe had been bringing more Mungghee to the creek, sticking them in the mud for him to find.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 3
+        },
+        {
+            "class_name": "psychological_transformation",
+            "instance_name": "behavioral_norm_establishment",
+            "description": "The newcomers soon learned to live like the original Mungghee born in the creek, with only one fish between two shells. This became the habit of all mussels from then on.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 3
+        }
+    ]
+}

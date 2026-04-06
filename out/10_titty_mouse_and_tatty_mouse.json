@@ -1,0 +1,505 @@
+{
+    "uri": "https://fairytalez.com/titty-mouse-and-tatty-mouse",
+    "nation": "english",
+    "title": "Titty Mouse and Tatty Mouse",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "titty_mouse",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "active"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 5
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "tatty_mouse",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 5
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "three_legged_stool",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "impersonal"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 5
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "broom",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 5
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "door",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 5
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "window",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "tense"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 5
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "old_form",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 5
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "walnut_tree",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 1
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "little_bird",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 1
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "little_girl",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "tertiary_character",
+                "instance_name": "obstacle"
+            },
+            "lives_in": 4
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "old_man",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive"
+            ],
+            "has_role": {
+                "class_name": "tertiary_character",
+                "instance_name": "obstacle"
+            },
+            "lives_in": 2
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "friend"
+        },
+        {
+            "agent": 0,
+            "other": 4,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 8,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 7,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 4,
+            "relationship": "knows"
+        },
+        {
+            "agent": 3,
+            "other": 5,
+            "relationship": "knows"
+        },
+        {
+            "agent": 4,
+            "other": 10,
+            "relationship": "knows"
+        },
+        {
+            "agent": 5,
+            "other": 8,
+            "relationship": "knows"
+        },
+        {
+            "agent": 6,
+            "other": 9,
+            "relationship": "knows"
+        },
+        {
+            "agent": 8,
+            "other": 9,
+            "relationship": "knows"
+        },
+        {
+            "agent": 9,
+            "other": 10,
+            "relationship": "knows"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "house",
+            "instance_name": "titty_mouse_home"
+        },
+        {
+            "class_name": "field",
+            "instance_name": "walnut_tree_field"
+        },
+        {
+            "class_name": "dwelling",
+            "instance_name": "old_man_house"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "nearby_forest"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "little_girl_village"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "tatty_mouse_castle"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "three_legged_stool"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "broom"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "door"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "window"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "walnut_tree"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "ear_of_corn"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "pot"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "jug_of_milk"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "characters_preparing_for_action",
+            "description": "Titty Mouse and Tatty Mouse both lived in a house. Titty Mouse went a leasing and Tatty Mouse went a leasing, So they both went a leasing.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "corn_leasing_event",
+            "description": "Titty Mouse leased an ear of corn, and Tatty Mouse leased an ear of corn, So they both leased an ear of corn.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                5
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "characters_prepare_action",
+            "description": "Titty Mouse made a pudding, and Tatty Mouse made a pudding,So they both made a pudding. And Tatty Mouse put her pudding into the pot to boil,",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                6
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "receive_injury",
+            "instance_name": "fatal_accident",
+            "description": "But when Titty went to put hers in, the pot tumbled over, and scalded her to death.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "comfort_offered",
+            "description": "Then Tatty sat down and wept; then a three-legged stool said: “Tatty, why do you weep?” “Titty’s dead,” said Tatty, “and so I weep;” “then,” said the stool, “I’ll hop,”",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "object_hops_and_others_respond",
+            "description": "so the stool hopped. Then a broom in the corner of the room said, “Stool, why do you hop?” “Oh!” said the stool, “Titty’s dead, and Tatty weeps, and so I hop;” “then,” said the broom, “I’ll sweep,”",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0,
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "setup_conversation_about_death",
+            "description": "so the broom began to sweep. Then,” said the door, “Broom, why do you sweep?” “Oh!” said the broom, “Titty’s dead, and Tatty weeps, and the stool hops, and so I sweep;” “Then,” said the door, “I’ll jar,”",
+            "agents": [
+                0,
+                1,
+                2,
+                4
+            ],
+            "objects": [
+                0,
+                1,
+                2
+            ],
+            "place": 5
+        },
+        {
+            "class_name": "move",
+            "instance_name": "door_jarring_event",
+            "description": "so the door jarred. Then,” said the window, “Door, why do you jar?” “Oh!” said the door, “Titty’s dead, and Tatty weeps, and the stool hops, and the broom sweeps, and so I jar.”“Then,” said the window, “I’ll creak,”",
+            "agents": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "objects": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "entity_interaction_occurs",
+            "description": "so the window creaked. Now there was an old form outside the house, and when the window creaked, the form said: “Window, why do you creak?” “Oh!” said the window, “Titty’s dead, and Tatty weeps, and the stool hops, and the broom sweeps, the door jars, and so I creak.”“Then,” said the old form, “I’ll run round the house;”",
+            "agents": [
+                0,
+                1,
+                2,
+                5
+            ],
+            "objects": [
+                0,
+                1,
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "helper_move",
+            "instance_name": "environmental_response",
+            "description": "then the old form ran round the house. Now there was a fine large walnut-tree growing by the cottage, and the tree said to the form: “Form, why do you run round the house?” “Oh!” said the form, “Titty’s dead, and Tatty weeps, and the stool hops, and the broom sweeps, the door jars, and the window creaks, and so I run round the house.”“Then,” said the walnut-tree, “I’ll shed my leaves,”",
+            "agents": [
+                0,
+                1,
+                6
+            ],
+            "objects": [
+                0,
+                1,
+                4
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "villainy",
+            "instance_name": "villainy_explanation",
+            "description": "so the walnut- tree shed all its beautiful green leaves. Now there was a little bird perched on one of the boughs of the tree, and when all the leaves fell, it said: “Walnut-tree, why do you shed your leaves?” “Oh!” said the tree, “Titty’s dead, and Tatty weeps, the stool hops, and the broom sweeps, the door jars, and the window creaks, the old form runs round the house, and so I shed my leaves.”“Then,” said the little bird, “I’ll moult all my feathers,”",
+            "agents": [
+                1,
+                6,
+                7
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "call_for_help",
+            "instance_name": "bird_mourning_call",
+            "description": "so he moulted all his pretty feathers. Now there was a little girl walking below, carrying a jug of milk for her brothers and sisters’ supper, and when she saw the poor little bird moult all its feathers, she said: “Little bird, why do you moult all your feathers?” “Oh!” said the little bird, “Titty’s dead, and Tatty weeps, the stool hops, and the broom sweeps, the door jars, and the window creaks, the old form runs round the house, the walnut-tree sheds its leaves, and so I moult all my feathers.”“Then,” said the little girl, “I’ll spill the milk,”",
+            "agents": [
+                0,
+                1,
+                8,
+                9
+            ],
+            "objects": [
+                0,
+                1,
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "ladder_threat",
+            "description": "so she dropt the pitcher and spilt the milk. Now there was an old man just by on the top of a ladder thatching a rick, and when he saw the little girl spill the milk, he said: “Little girl, what do you mean by spilling the milk, your little brothers and sisters must go without their supper.” Then said the little girl: “Titty’s dead, and Tatty weeps, the stool hops, and the broom sweeps, the door jars, and the window creaks, the old form runs round the house, the walnut-tree sheds all its leaves, the little bird moults all its feathers, and so I spill the milk.”“Oh!” said the old man, “then I’ll tumble off the ladder and break my neck,”",
+            "agents": [
+                0,
+                1,
+                10
+            ],
+            "objects": [
+                0,
+                1,
+                2,
+                4,
+                5,
+                7
+            ],
+            "place": 3
+        },
+        {
+            "class_name": "move",
+            "instance_name": "walnut_tree_falls",
+            "description": "so he tumbled off the ladder and broke his neck; and when the old man broke his neck, the great walnut-tree fell down with a crash, and upset the old form and house, and the house falling knocked the window out,",
+            "agents": [
+                10
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "call_for_help",
+            "instance_name": "chain_reaction_disaster",
+            "description": "and the window knocked the door down, and the door upset the broom, and the broom upset the stool, and poor little Tatty Mouse was buried beneath the ruins.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "place": 0
+        }
+    ]
+}

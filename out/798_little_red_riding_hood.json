@@ -1,0 +1,282 @@
+{
+    "uri": "https://fairytalez.com/little-red-riding-hood",
+    "nation": "french",
+    "title": "Little Red Riding Hood",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "little_red_riding_hood",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "hero"
+            },
+            "lives_in": 1
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "grandmother",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "innocent_helper"
+            },
+            "lives_in": 1
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "wolf",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 2
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "village",
+            "instance_name": "grandmas_village"
+        },
+        {
+            "class_name": "village",
+            "instance_name": "littles_village"
+        },
+        {
+            "class_name": "forest",
+            "instance_name": "wolf_encounter_forest"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "grandmas_house"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "mill"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "red_riding_hood"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "nuts"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "pot_of_butter"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "custard"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "bobbin"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "introduce_main_characters",
+            "description": "In a certain village, a little country girl lived with her mother and grandmother. The girl was extremely pretty, and everyone called her Little Red Riding-Hood.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "task_assignment",
+            "description": "The girl's mother asked her to visit her grandmother, who lived in another village, and bring her a custard and a pot of butter.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                2,
+                4
+            ],
+            "place": 3
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_encounter_setup",
+            "description": "Little Red Riding-Hood set out on the journey to her grandmother's house, passing through a wood where she met Gaffer Wolf.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "wolf_plans_attack",
+            "description": "Gaffer Wolf had a mind to eat Little Red Riding-Hood but was afraid because of some faggot-makers nearby. He asked for directions and pretended to be friendly.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "characters_meet",
+            "description": "Little Red Riding-Hood told the wolf that her grandmother lived in the first house beyond a mill, and they parted ways with the wolf going one way and Little Red Riding-Hood another.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "characters_set_up",
+            "description": "The wolf ran quickly to the grandmother's house while Little Red Riding-Hood took the longer route, gathering nuts and flowers along the way.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                0,
+                1
+            ],
+            "place": 3
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "disguise_deception_initiated",
+            "description": "The wolf arrived at the grandmother's house first and knocked on the door in a disguised voice, claiming to be Little Red Riding-Hood with a custard and butter.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [
+                4
+            ],
+            "place": 3
+        },
+        {
+            "class_name": "move",
+            "instance_name": "wolf_attacks_grandmother",
+            "description": "The grandmother, who was ill in bed, gave instructions to open the door by pulling a bobbin, which the wolf did, and then ate her up.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                4
+            ],
+            "place": 3
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "wolf_disguises_as_grandmother",
+            "description": "The wolf got into the grandmother's bed, expecting Little Red Riding-Hood to arrive soon. When she came, he disguised his voice to sound like the grandmother's.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 3
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "initial_confrontation_setup",
+            "description": "Little Red Riding-Hood knocked on the door, and the wolf, in a disguised voice, asked her to open the door by pulling the bobbin.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [
+                4
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "wolf_trick_attempt",
+            "description": "When Little Red Riding-Hood entered, the wolf hid under the bedclothes and told her to put the custard and butter on a stool and come lie down with him.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                2,
+                3,
+                4
+            ],
+            "place": 3
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "encounter_with_disguise",
+            "description": "Little Red Riding-Hood undressed and got into bed, where she was shocked by the grandmother's appearance in nightclothes. The wolf then revealed his true intentions.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 3
+        },
+        {
+            "class_name": "fight",
+            "instance_name": "protagonist_harmed_in_combat",
+            "description": "The wolf ate Little Red Riding-Hood after she noticed his large teeth and realized he was not her grandmother.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [
+                4
+            ],
+            "place": 2
+        }
+    ]
+}

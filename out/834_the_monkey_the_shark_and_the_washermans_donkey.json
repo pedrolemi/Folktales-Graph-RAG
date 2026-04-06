@@ -1,0 +1,314 @@
+{
+    "uri": "https://www.worldoftales.com/African_folktales/African_Folktale_39.html#gsc.tab=0",
+    "nation": "tanzanian",
+    "title": "The Monkey, the Shark, and the Washermans Donkey",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "anthropomorphic_animal",
+            "instance_name": "monkey_friend",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "joyful",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 1
+        },
+        {
+            "class_name": "anthropomorphic_animal",
+            "instance_name": "shark_friend",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "anthropomorphic_animal",
+            "instance_name": "hare_friend",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "magical_helper",
+                "instance_name": "fairy_godmother_helper"
+            },
+            "lives_in": 2
+        },
+        {
+            "class_name": "anthropomorphic_animal",
+            "instance_name": "lion_friend",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "depressive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "false_hero"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "anthropomorphic_animal",
+            "instance_name": "donkey_friend",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "joyful",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "tertiary_character",
+                "instance_name": "prisoner"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 3,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 0,
+            "other": 4,
+            "relationship": "friend"
+        },
+        {
+            "agent": 1,
+            "other": 4,
+            "relationship": "friend"
+        },
+        {
+            "agent": 2,
+            "other": 3,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 2,
+            "other": 4,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 4,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "forest",
+            "instance_name": "donkeys_home"
+        },
+        {
+            "class_name": "mountain",
+            "instance_name": "mkooyoo_tree"
+        },
+        {
+            "class_name": "river",
+            "instance_name": "the_sea"
+        },
+        {
+            "class_name": "castle",
+            "instance_name": "sharks_home"
+        },
+        {
+            "class_name": "town",
+            "instance_name": "sultans_city"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "monkey_heart"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "lion_claws"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "initial_situation",
+            "instance_name": "peaceful_coexistence",
+            "description": "In the immense mkooyoo tree that grew by the margin of the sea, Kee′ma, the monkey, lived with Pa′pa, the shark, who would often visit to ask for food.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "child_move_invitation",
+            "description": "One day, Papa said to Keema, “You have done me many kindnesses: I would like you to go with me to my home, that I may repay you.”",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "helper_move",
+            "instance_name": "character_help_offered",
+            "description": "Keema was hesitant at first because land beasts couldn't travel in the water, but Papa reassured him that he would carry him safely.",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "establishing_trust",
+            "description": "When they had gone about half-way, Papa stopped and said, “You are my friend. I will tell you the truth,” which made Keema curious.",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "counterintuitive_solution_proposed",
+            "description": "Papa revealed to Keema that their sultan was very sick and needed a monkey's heart as medicine, but Keema cleverly suggested that he could have left his heart in the tree.",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "character_decision_conflict",
+            "description": "Keema convinced Papa that they should continue on to his home, where he would be killed for his heart. However, Papa insisted they return to get the heart first.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "pretended_action",
+            "description": "When they got back to the tree, Kee′ma pretended to climb up and retrieve his heart, but instead sat still and waited for Papa to leave.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "connective_incident",
+            "instance_name": "hesitant_response",
+            "description": "Papa called out several times for Keema to come down, but he remained silent until Papa asked about going home again. Then, Keema poked his head out from among the upper branches and questioned Papa's sanity.",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "character_demise_event",
+            "description": "The monkey related a story about a washerman's donkey who was invited by a lion to be his wife, but ultimately met her demise at the hands of Sim′ba.",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "hare_tricks_lion",
+            "description": "In the story, Soongoo′ra, the hare, tricked the lion into killing the donkey for its heart and ears. However, when the hare returned with meat, the lion asked him to bring only the heart and ears.",
+            "agents": [
+                2,
+                3
+            ],
+            "objects": [
+                0
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "villainy",
+            "instance_name": "conflict_introduction",
+            "description": "The monkey told Papa that he was being treated like a washerman's donkey, which has no heart or ears, and thus couldn't be killed for them.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "resolution",
+            "instance_name": "friendship_resolution",
+            "description": "Papa realized the truth in the story and the monkey's words, but Keema ended their friendship and bid him farewell.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "father_kid_conflict",
+            "description": "Keema scolded Papa for trying to trick him into becoming a washerman's donkey and told him to leave by himself.",
+            "agents": [
+                0,
+                4
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "realization_shift",
+            "description": "The shark was left alone, realizing his foolishness in underestimating the cleverness of the monkey.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "resolution",
+            "instance_name": "friendship_resolution",
+            "description": "Papa had no choice but to accept Keema's decision and end their friendship, feeling regret for not being more honest with his friend from the beginning.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 4
+        }
+    ]
+}

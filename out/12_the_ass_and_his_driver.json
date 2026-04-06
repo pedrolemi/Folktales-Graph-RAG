@@ -1,0 +1,167 @@
+{
+    "uri": "https://fairytalez.com/the-ass-and-his-driver",
+    "nation": "greek",
+    "title": "The Ass and his Driver",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "ass_master",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "quest_giver"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "anthropomorphic_animal",
+            "instance_name": "ass",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "impulsive",
+                "aggressive"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "false_hero"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "knows"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "mountain",
+            "instance_name": "ass_mountain"
+        },
+        {
+            "class_name": "river",
+            "instance_name": "no_instance"
+        },
+        {
+            "class_name": "field",
+            "instance_name": "foot_field"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "stall_building"
+        },
+        {
+            "class_name": "dwelling",
+            "instance_name": "ass_dwelling"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "mountain_edge"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "tail_halter"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "scene_introduction",
+            "description": "An Ass was being driven along a road leading down the mountain side",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_decides_to_act",
+            "description": "The Ass suddenly took it into his silly head to choose his own path",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "considered_risky_descent",
+            "description": "He could see his stall at the foot of the mountain, and thought the quickest way down seemed to be over the edge of the nearest cliff",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "action_thwarted",
+            "description": "Just as he was about to leap over, his master caught him by the tail and tried to pull him back",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "ass_resists_master",
+            "description": "The Ass would not yield and pulled with all his might against his master's attempt to restrain him",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "connective_incident",
+            "instance_name": "master_releases_ass",
+            "description": "His master said, 'Very well,' to the Ass, indicating that he would let him go if he insisted on following his own path",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "entity_progression",
+            "description": "With that, his master let go of the Ass, allowing him to continue down the mountain side",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "donkey_tumbles",
+            "description": "The foolish Ass tumbled head over heels down the mountain side",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

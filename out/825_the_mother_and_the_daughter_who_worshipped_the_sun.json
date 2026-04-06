@@ -1,0 +1,284 @@
+{
+    "uri": "https://fairytalez.com/the-mother-and-the-daughter-who-worshipped-the-sun",
+    "nation": "indian",
+    "title": "The Mother and the Daughter Who Worshipped the Sun",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "mother",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "aggressive",
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 4
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "daughter",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "hero",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "priest",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "magical_helper"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "prince",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "eager"
+            ],
+            "has_role": {
+                "class_name": "hero",
+                "instance_name": "hero_soulmate"
+            },
+            "lives_in": 1
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "knows"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "natural_place",
+            "instance_name": "forest_where_prince_was_chasing_deer"
+        },
+        {
+            "class_name": "dwelling",
+            "instance_name": "daughters_pipal_tree_home"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "palace_where_daughter_lived_with_prince"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "open_field_where_golden_palace_was_seen_from_far_away"
+        },
+        {
+            "class_name": "dwelling",
+            "instance_name": "mothers_hut_before_it_became_sun_palace"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "sun_palace_that_appeared_to_daughter_and_prince"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "glass_slipper"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "pipal_tree"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "golden_stool"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "meal_cake"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "move",
+            "instance_name": "daily_routine",
+            "description": "A mother and daughter lived in poverty but continued to honor the Sun by giving all their earnings except for two meal cakes. They would eat one cake each every day, with the remaining half being given to a priest who visited their home.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "cake_dispute",
+            "description": "The mother returned from work to find that only half of her cake was left, leading to an argument between the mother and daughter about what had happened to the other half. The daughter explained that she ate her share first and then gave half of the mother's cake to a visiting priest in honor of the Sun, but the mother did not believe her.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                3
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_exiled",
+            "description": "The mother, suspecting the daughter was lying to save her own meal, banished her from their home, leaving the daughter homeless. The daughter wandered into the wilderness, crying bitterly.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "characters_enter_scene",
+            "description": "After traveling for some time, the daughter grew tired and climbed a pîpal tree to rest, where she fell asleep amidst its branches. A handsome young prince, who had been hunting in the forest, came upon the tree and lay down to sleep beneath it.",
+            "agents": [
+                1,
+                3
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "romantic_encounter",
+            "description": "The daughter's tears fell onto the prince's face, waking him up. He got out of the tree to find the source of the 'rain' and discovered the daughter weeping in the branches. The prince was immediately smitten with her beauty and asked her to be his bride.",
+            "agents": [
+                0,
+                1,
+                3
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "move",
+            "instance_name": "decision_to_leave_home",
+            "description": "The daughter accepted the prince's proposal and went with him to his palace, where she was treated like royalty but struggled with feelings of shame about her humble background. She prayed daily that her mother would not find out about her new life.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "conflict_resolution_attempt",
+            "description": "However, one day the daughter's mother appeared at the palace, ragged and poor as before. The daughter begged her to leave and not embarrass her in front of her prince.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "emotional_division",
+            "description": "The mother refused to leave, claiming she had sent her daughter into the world where she found a fine husband, implying that her own actions were responsible for the daughter's good fortune. The daughter was torn between gratitude towards her mother and shame about her humble past.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "receipt_object",
+            "instance_name": "external_intervention_prevents_escalation",
+            "description": "Just as it seemed like the situation would escalate further, the prince arrived at the palace, asking his bride about the golden stool he had seen in their previous conversation. The daughter explained that it came from her mother's house, which sparked the prince's curiosity to visit the house himself.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                2
+            ],
+            "place": 5
+        },
+        {
+            "class_name": "call_for_help",
+            "instance_name": "request_for_intervention",
+            "description": "Despite the daughter's protests and attempts to find excuses, the prince insisted on visiting her mother's home, where she knew he would be disappointed by its humble appearance. She cried out to the Sun for help in this difficult situation.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "arrival_at_new_location",
+            "description": "The next day, the prince and his entourage set out to visit the daughter's mother's house, which was now a grand golden palace filled with marvels. The couple spent three days admiring the palace and its wonders.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                2
+            ],
+            "place": 5
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "palace_transformation",
+            "description": "After their three-day visit, the prince decided it was time for them to return home, but on their way back, he stopped to take one last look at the golden palace. To his surprise, it had transformed back into a humble thatched hovel.",
+            "agents": [
+                1,
+                3
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "conflict_escalation",
+            "description": "The prince turned on the daughter, accusing her of being a witch and deceiving him with her 'detestable arts.' However, she explained that the Sun was responsible for the transformation of her mother's hut into a golden palace.",
+            "agents": [
+                1,
+                3
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "convincing_narrative_explanation",
+            "description": "The daughter told the entire story from beginning to end, explaining how she had given her cake to the priest in honor of the Sun and how it had led to their meeting. The prince was convinced by her explanation and decided to worship the Sun as well.",
+            "agents": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "objects": [],
+            "place": 5
+        }
+    ]
+}

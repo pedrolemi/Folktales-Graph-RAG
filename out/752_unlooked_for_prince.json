@@ -1,0 +1,388 @@
+{
+    "uri": "https://fairytalez.com/unlooked-for-prince",
+    "nation": "slavic",
+    "title": "Unlooked-For Prince",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "king",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "depressive",
+                "depressive"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "king"
+            },
+            "lives_in": 1
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "queen",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "depressive"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "queen"
+            },
+            "lives_in": 1
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "prince",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "prince"
+            },
+            "lives_in": 1
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "bee",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "bee"
+            },
+            "lives_in": 1
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "king_kostiei",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "king_kostiei"
+            },
+            "lives_in": 2
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "princess",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "princess"
+            },
+            "lives_in": 2
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "soldiers",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "soldiers"
+            },
+            "lives_in": 2
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "geese",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "geese"
+            },
+            "lives_in": 2
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "old_man",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "old_man"
+            },
+            "lives_in": 2
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 3,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 0,
+            "other": 5,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 7,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 1,
+            "other": 5,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 2,
+            "other": 3,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 4,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 2,
+            "other": 6,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 6,
+            "relationship": "friend"
+        },
+        {
+            "agent": 4,
+            "other": 6,
+            "relationship": "knows"
+        },
+        {
+            "agent": 4,
+            "other": 8,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 5,
+            "other": 6,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "city",
+            "instance_name": "kingdom_capital"
+        },
+        {
+            "class_name": "mountain",
+            "instance_name": "high_mountains"
+        },
+        {
+            "class_name": "dwelling",
+            "instance_name": "palace_of_king_and_queen"
+        },
+        {
+            "class_name": "forest",
+            "instance_name": "woods_where_prince_met_old_man"
+        },
+        {
+            "class_name": "community_building",
+            "instance_name": "church_at_border_of_kostiei_power"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "silver_cup"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "well_water"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "marble_palace"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "ladybird"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "spittle"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "golden_cross"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "initial_situation",
+            "instance_name": "initial_situation_setup",
+            "description": "The king and queen lived in a kingdom with no children, despite their wishes for a son. They tried to hide their unhappiness but eventually, the king decided to visit the farthest corners of his kingdom, hoping to forget about having a child.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "encountered_obstacle",
+            "description": "The king wandered into the wilderness, lost, and stumbled upon a well with a silver cup floating on its surface. He drank from the cup but got stuck due to an unseen force and was forced to promise King Kostiei that he would give him something precious in return for his release.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "return",
+            "instance_name": "returning_and_reminding",
+            "description": "Eight months after leaving the kingdom, the king returned home to find his queen holding their newborn son. However, upon seeing the child, the king remembered his promise to King Kostiei and became anxious about fulfilling it.",
+            "agents": [
+                0,
+                1,
+                5
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "conflict",
+            "instance_name": "ongoing_conflict_unresolved_promises",
+            "description": "Years passed, and the prince grew up, but King Kostiei remained silent. The king eventually forgot about his promise, but the prince's life was marked by an unspoken threat from the little man in the well.",
+            "agents": [
+                2,
+                4
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "message_received_by_principal",
+            "description": "One day, while hunting, the prince met a mysterious old man who told him to pass on a message to his father, warning him that he needed to settle his debts with Kostiei. The prince returned home and shared the news with his father, who explained the story of King Kostiei's powers.",
+            "agents": [
+                8,
+                2
+            ],
+            "objects": [],
+            "place": 3
+        },
+        {
+            "class_name": "acquisition",
+            "instance_name": "prince_prepares_for_journey",
+            "description": "The prince decided to find a way to deal with Kostiei and promised his father that if he didn't return within a year, he would give up hope. He set out on his journey, armed with steel armor and a sword given by his father, and a golden cross from his mother.",
+            "agents": [
+                2
+            ],
+            "objects": [
+                5
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "magical_transformation_occurs",
+            "description": "On the fourth day of his journey, the prince arrived at the seashore and found twelve white dresses scattered on the sand. Curious, he picked one up, and geese that had been in the sea put on the dresses and transformed into beautiful young girls, except for the youngest princess who remained alone.",
+            "agents": [
+                2,
+                7
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "helper_move",
+            "instance_name": "external_assistance_drives_narrative",
+            "description": "The youngest princess appeared to the prince, helping him with his tasks given by King Kostiei. She advised him to build a marble palace with crystal windows and a golden roof within one night, which she somehow magically completed when the prince woke up in the morning.",
+            "agents": [
+                4,
+                5
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "task_completion",
+            "description": "King Kostiei was amazed but set another task for the prince: to recognize which of his twelve daughters was the youngest among them. The princess once again helped him by revealing that the youngest would have a ladybird on her eyelid, and the prince successfully identified her.",
+            "agents": [
+                2,
+                4,
+                5
+            ],
+            "objects": [
+                3
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "counteraction_prevention",
+            "description": "The prince's final task from King Kostiei was to turn a handful of straw into a pair of boots within three hours. The princess appeared once more, this time turning herself into spittle which imitated the prince's voice when the king sent servants to bring him back.",
+            "agents": [
+                2,
+                4,
+                5
+            ],
+            "objects": [
+                4
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "attempt_at_reconnaissance",
+            "instance_name": "magic_evade_pursuit",
+            "description": "As King Kostiei realized his plan had been foiled again, he ordered his guards to pursue the fugitives. However, the princess and the prince used magic to evade them once more by transforming themselves and their horse into different forms.",
+            "agents": [
+                2,
+                4,
+                5
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "transfiguration",
+            "instance_name": "conflict_resolution",
+            "description": "The final transformation allowed them to escape from King Kostiei's powers and continue their journey without further adventures.",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

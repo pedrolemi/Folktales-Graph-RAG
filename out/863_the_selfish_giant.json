@@ -1,0 +1,383 @@
+{
+    "uri": "https://fairytalez.com/the-selfish-giant",
+    "nation": "irish",
+    "title": "The Selfish Giant",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "selfish_giant",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "egocentric",
+                "aggressive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "children",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "hero_family"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "north_wind",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "villain_minion"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "hail",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "villain_minion"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "frost",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "villain_minion"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "snow",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "villain_minion"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "little_boy",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "hero"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "friend"
+        },
+        {
+            "agent": 0,
+            "other": 6,
+            "relationship": "friend"
+        },
+        {
+            "agent": 1,
+            "other": 5,
+            "relationship": "friend"
+        },
+        {
+            "agent": 1,
+            "other": 6,
+            "relationship": "friend"
+        },
+        {
+            "agent": 2,
+            "other": 3,
+            "relationship": "friend"
+        },
+        {
+            "agent": 3,
+            "other": 4,
+            "relationship": "friend"
+        },
+        {
+            "agent": 3,
+            "other": 5,
+            "relationship": "knows"
+        },
+        {
+            "agent": 4,
+            "other": 5,
+            "relationship": "friend"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "dwelling",
+            "instance_name": "giants_castle"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "giants_garden"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "paradise"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "spring_flowers"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "notice_board"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "tree_with_blossoms"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "wall"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "snow"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "linnet_song"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "axe"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "golden_fruit"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "nails_of_love"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "move",
+            "instance_name": "establishing_location",
+            "description": "Every afternoon, as they were coming from school, the children used to go and play in the Giant's garden. It was a large lovely garden, with soft green grass. Here and there over the grass stood beautiful flowers like stars, and there were twelve peach-trees that in the spring-time broke out into delicate blossoms of pink and pearl, and in the autumn bore rich fruit.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "giant_returns_home",
+            "description": "One day the Giant came back. He had been to visit his friend the Cornish ogre, and had stayed with him for seven years. After the seven years were over he had said all that he had to say, for his conversation was limited, and he determined to return to his own castle. When he arrived he saw the children playing in the garden.",
+            "agents": [
+                0,
+                1,
+                6
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "expulsion",
+            "instance_name": "conflict_setup_expulsion",
+            "description": "The Giant was a very selfish Giant. The poor children had now nowhere to play. They tried to play on the road, but the road was very dusty and full of hard stones, and they did not like it. They used to wander round the high wall when their lessons were over, and talk about the beautiful garden inside.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "out_of_season_garden",
+            "description": "The Spring came, and all over the country there were little blossoms and little birds. Only in the garden of the Selfish Giant it was still winter. The birds did not care to sing in it as there were no children, and the trees forgot to blossom.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "flower_retracts",
+            "description": "A beautiful flower put its head out from the grass, but when it saw the notice-board it was so sorry for the children that it slipped back into the ground again, and went off to sleep. The only people who were pleased were the Snow and the Frost.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "external_force_chaos_event",
+            "description": "The North Wind came, inviting the Hail on a visit. He roared all day about the garden, blowing the chimney-pots down. The Hail came every day for three hours, rattling on the roof of the castle till he broke most of the slates, and then he ran round and round the garden as fast as he could go.",
+            "agents": [
+                2,
+                3
+            ],
+            "objects": [
+                4
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "hearing_music",
+            "description": "The Giant was lying awake in bed when he heard some lovely music. It sounded so sweet to his ears that he thought it must be the King's musicians passing by. It was really only a little linnet singing outside his window, but it was so long since he had heard a bird sing in his garden.",
+            "agents": [
+                0,
+                6
+            ],
+            "objects": [
+                5
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "giant_discover_children",
+            "description": "The Giant saw a most wonderful sight. Through a little hole in the wall the children had crept in, and they were sitting in the branches of the trees. The trees were glad to have the children back again that they had covered themselves with blossoms, and were waving their arms gently above the children's heads.",
+            "agents": [
+                0,
+                1,
+                6
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "giant_change_of_heart",
+            "description": "The Giant's heart melted as he looked out. 'How selfish I have been!' he said; 'now I know why the Spring would not come here.' He decided to put a little boy on the top of the tree, and then knock down the wall, so his garden shall be the children's playground for ever.",
+            "agents": [
+                0,
+                6
+            ],
+            "objects": [
+                8,
+                2
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "giant_leaves_house",
+            "description": "The Giant crept downstairs and opened the front door quite softly, and went out into the garden. But when the children saw him they were so frightened that they all ran away, and the garden became winter again.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "giant_catches_boy",
+            "description": "Only the little boy did not run, for his eyes were so full of tears that he did not see the Giant coming. The Giant stole up behind him and took him gently in his hand, and put him up into the tree.",
+            "agents": [
+                0,
+                6
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "physical_transformation",
+            "instance_name": "resolution_transformation",
+            "description": "The tree broke at once into blossom, and the birds came and sang on it, and the little boy stretched out his two arms and flung them round the Giant's neck, and kissed him.",
+            "agents": [
+                0,
+                6
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "resolution_function",
+            "instance_name": "conflict_resolution_restitution",
+            "description": "And the other children, when they saw that the Giant was not wicked any longer, came running back, and with them came the Spring. 'It is your garden now, little children,' said the Giant, and he took a great axe and knocked down the wall.",
+            "agents": [
+                0,
+                1,
+                6
+            ],
+            "objects": [
+                8,
+                6
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "giant_meets_children",
+            "description": "The people going to market at twelve o'clock found the Giant playing with the children in the most beautiful garden they had ever seen. The children played all day long, and in the evening they came to the Giant to bid him good-bye.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "conflict",
+            "instance_name": "giant_expresses_concern",
+            "description": "But where is your little companion?' said the Giant: 'the boy I put into the tree.' But the children did not know where he lived, and the Giant felt very sad.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

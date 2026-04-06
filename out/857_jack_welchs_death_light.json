@@ -1,0 +1,283 @@
+{
+    "uri": "https://fairytalez.com/jack-welchs-death-light",
+    "nation": "north_american_native",
+    "title": "Jack Welch's Death Light",
+    "has_genre": "legend",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "jack_welch",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "false_hero"
+            },
+            "lives_in": 2
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "tom_wright",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "villain"
+            },
+            "lives_in": 1
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "ruth_bonython",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "joyful",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "hero_family"
+            },
+            "lives_in": 4
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "mogg_megoneh",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 4
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "father_rasles",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "tense"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 5
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 3,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 1,
+            "other": 3,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 2,
+            "other": 4,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "natural_place",
+            "instance_name": "pond_cove"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "old_house"
+        },
+        {
+            "class_name": "community_building",
+            "instance_name": "wharf"
+        },
+        {
+            "class_name": "dwelling",
+            "instance_name": "wrights_house"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "norridgewock"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "chapel"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "light"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "boat"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "ball_of_pallid_flame"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "scalp"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "knife"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "annual_mysterious_appearance",
+            "description": "A light appears off the coast of Pond Cove, Maine, every summer on a certain evening, rising from the sea to an old house where it vanishes.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "disappearance_initiates_conflict",
+            "description": "The disappearance of Jack Welch, a fisherman, coincided with the first appearance of this light. He was seen working on his boat but vanished in the morning and has not been seen since.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "initial_narrative_setup",
+            "description": "Twenty years later, three fishermen were hurrying up the bay when they saw a fog come in and it was late before they reached the wharf. A channel opened through the mist, and a ball of pallid flame came from the deep.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                2
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "character_introduction_with_plot_twist",
+            "description": "The light settled on Tom Wright's house, and next day one of his comrades called for him but he was gone, like Jack Welch, unexplained.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 3
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "exposure_of_past_deeds",
+            "description": "Twenty years after Wright's disappearance, his widow received a letter written in a weak hand signed by her husband. He confessed to killing Jack Welch, stealing his body to sea, and throwing it overboard.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "recurring_ghostlyomenation",
+            "description": "The dead man had been pursuing him ever since, and the light would appear every summer above the spot where his body sank, float to the scene of the murder, and then to Wright's house.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                0,
+                2
+            ],
+            "place": 3
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "hero_initial_context",
+            "description": "Ruth Bonython is a young woman whose father has promised her in marriage to Mogg Megone, an Indian chief. She loves Master Scammon but he deserted her.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "resolution_function",
+            "instance_name": "conflict_resolution_through_forgiveness",
+            "description": "Mogg shows Ruth the scalp of Scammon as proof that he avenged her grief, and she looks on in horror before forgiving him.",
+            "agents": [
+                2,
+                3
+            ],
+            "objects": [
+                4
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "conflict_escalation",
+            "description": "Bonython takes advantage of this moment to persuade Mogg to sign a transfer of land for which he is willing to sell his daughter, and Ruth kills Mogg with his own knife.",
+            "agents": [
+                2,
+                3
+            ],
+            "objects": [
+                4
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "counteraction_initiated",
+            "description": "Ruth flees into the woods, leaving Bonython stunned by her actions. Father Rasles in his chapel at Norridgewock is told about Ruth's killing of Mogg Megone, a chief who had been working for him to convert the Indians to Christianity.",
+            "agents": [
+                1,
+                4
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_escape",
+            "description": "Father Rasles tells Ruth that she can ask no pardon for killing Mogg, but she runs from the church and disappears. Some days later, old Baron Castine finds a woman sitting in the field strewn with ashes and human bones. She is cold.",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "character_revelation_discovery",
+            "description": "The woman is revealed to be Ruth Bonython, who has been dead for some time, her body frozen in place by some unknown force.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                2
+            ],
+            "place": 0
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "object": {
+        "children": {
+            "magical_object": {
+                "description": "An inanimate object endowed with supernatural or enchanted properties that allow it to produce effects beyond normal physical laws. For example, a cursed ring or a teleporting amulet."
+            },
+            "natural_object": {
+                "description": "An inanimate object that occurs naturally in the environment and is small enough to be handled. It may be picked up, carried, or used directly by characters in the story. This category excludes locations, places, or large natural formations. For example, a rock, a leaf or a feather."
+            },
+            "crafted_object": {
+                "description": "A human-made object that does not possess magical properties. For example, a chair or a machine."
+            }
+        }
+    }
+}

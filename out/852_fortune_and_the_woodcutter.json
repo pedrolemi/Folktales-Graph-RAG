@@ -1,0 +1,209 @@
+{
+    "uri": "https://fairytalez.com/fortune-and-the-wood-cutter",
+    "nation": "arabic",
+    "title": "Fortune and the Wood-Cutter",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "wood_cutter",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "depressive",
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "wood_cutter_wife",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "wife_helper"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "man_from_village",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "villain_minion"
+            },
+            "lives_in": 2
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "soldiers",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "impersonal"
+            ],
+            "has_role": {
+                "class_name": "tertiary_character",
+                "instance_name": "obstacle"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "friend"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "knows"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "forest",
+            "instance_name": "wood_cutter_forest"
+        },
+        {
+            "class_name": "town",
+            "instance_name": "neighbouring_town"
+        },
+        {
+            "class_name": "village",
+            "instance_name": "nearest_village"
+        },
+        {
+            "class_name": "field",
+            "instance_name": "hidden_field"
+        },
+        {
+            "class_name": "house",
+            "instance_name": "wood_cutter_house"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "woodcutter_axe"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "mules"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "sacks"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "introduction_to_main_characters",
+            "description": "A poor wood-cutter and his family lived in a forest for twenty years. Despite the father's hard work with his axe and two mules, they remained impoverished. The sons were grown up but still struggling to make ends meet.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0,
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "loss_of_motivation",
+            "description": "The wood-cutter lost hope and decided not to go to the forest anymore. He told himself that if he stayed in bed, Fortune might come to him one day.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "hero_departure",
+            "instance_name": "conflict_before_departure",
+            "description": "The next morning, the wife tried to wake her husband up for work, but he refused, saying there was no point in going to the forest as they would never get richer.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "initial_request_denied_then_compromised",
+            "description": "A man from a nearby village came to borrow the wood-cutter's mules, but the husband refused, saying he had sworn not to leave his bed. However, he agreed to lend him the mules instead.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "mule_gold_heist",
+            "description": "The villager took the mules and filled two sacks with gold coins from a hidden treasure belonging to the sultan. He then drove them back home, leaving the wife surprised when she saw the heavily laden mules arrive at their doorstep.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [
+                0,
+                1
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "fortune_discovered",
+            "description": "The wife cut open the sacks and found a huge pile of gold pieces in the courtyard. She ran to tell her husband, exclaiming that Fortune had finally come to them while they were waiting in bed.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                2
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "shift_in_perspective",
+            "description": "The wood-cutter was initially reluctant to get up but eventually joined his wife in the courtyard, where he was amazed by the treasure. He declared that he was right not to go chasing after Fortune, and that staying still was the key to her favor.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        }
+    ]
+}

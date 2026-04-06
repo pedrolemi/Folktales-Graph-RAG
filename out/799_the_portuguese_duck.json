@@ -1,0 +1,376 @@
+{
+    "uri": "https://fairytalez.com/the-portuguese-duck",
+    "nation": "scandinavian",
+    "title": "The Portuguese Duck",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "the_portuguese_duck",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "the_portuguese_duck"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_drake",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "antagonist",
+                "instance_name": "the_drake"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_little_singing_bird",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "sociable"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "the_little_singing_bird"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_cat",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "the_cat"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_cock",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "antagonist",
+                "instance_name": "the_cock"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_two_chinese_fowls",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "the_two_chinese_fowls"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_common_ducks",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "sociable"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "the_common_ducks"
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 0,
+            "other": 3,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 0,
+            "other": 4,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 6,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 1,
+            "other": 4,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 5,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 4,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 5,
+            "relationship": "knows"
+        },
+        {
+            "agent": 3,
+            "other": 6,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 4,
+            "other": 5,
+            "relationship": "knows"
+        },
+        {
+            "agent": 4,
+            "other": 6,
+            "relationship": "knows"
+        },
+        {
+            "agent": 5,
+            "other": 6,
+            "relationship": "knows"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "village",
+            "instance_name": "portuguese_village"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "lime_trees"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "watering_trough"
+        },
+        {
+            "class_name": "dwelling",
+            "instance_name": "portuguese_duck_house"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "neighborhood_settlement"
+        },
+        {
+            "class_name": "community_building",
+            "instance_name": "duck_yard_tavern"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "lime_tree"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "watering_trough"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "portulak"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "move",
+            "instance_name": "duck_arrival_and_fate",
+            "description": "A duck once arrived from Portugal. There were some who said she came from Spain, but that is almost the same thing. At all events, she was called the Portuguese duck, and she laid eggs, was killed and cooked, and that was the end of her.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "scene_setup",
+            "description": "The ducklings which crept forth from her eggs were also called Portuguese ducks, and about that there may be some question. But of all the family only one remained in the duck yard, which may be called a farmyard, since the chickens were admitted to it and the cock strutted about in a very hostile manner.",
+            "agents": [
+                0,
+                6
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "bird_dispute",
+            "description": "He annoys me with his loud crowing,” said the Portuguese duck, “but still, he’s a handsome bird, there’s no denying that, even if he is not a duck. He ought to moderate his voice, like those little birds who are singing in the lime trees over there in our neighbor’s garden—but that is an art only acquired in polite society.",
+            "agents": [
+                0,
+                4
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "bird_flees_pursuer",
+            "description": "While she was speaking, one of the little singing birds came tumbling head over heels from the roof into the yard. The cat was after him, but he had escaped from her with a broken wing and so came fluttering into the yard.",
+            "agents": [
+                0,
+                2,
+                3
+            ],
+            "objects": [
+                1
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "ducks_sympathize_with_singing_bird",
+            "description": "She pitied the little singing bird, and so did all the other ducks, who were not Portuguese.“Poor little creature!” they said, one after another, as they came up. “We can’t sing, certainly; but we have a sounding board, or something of the kind, within us, though we don’t talk about it.”",
+            "agents": [
+                0,
+                6
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "new_character_introduction",
+            "description": "The two Cochin-Chinese among them; they wear feathers on their legs and are well educated. They have been brought from a great distance, and consequently I treat them with greater respect than I do the others.",
+            "agents": [
+                5
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "conflict",
+            "instance_name": "criticism_offered",
+            "description": "“You are a real songster,” he said, “and you do as much with your little voice as it is possible to do; but more noise and shrillness is necessary if one wishes others to know who he is.”",
+            "agents": [
+                2
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "context_establishment",
+            "description": "The Chinese were quite enchanted with the appearance of the singing bird. His feathers had been much ruffled by his bath, so that he seemed to them quite like a tiny Chinese fowl.",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "species_introduction_encounter",
+            "description": "“We are of the same race as yourself,” they said. “The ducks, even the Portuguese, are all aquatic birds, as you must have noticed. You do not know us yet—very few, even of the fowls, know us or give themselves the trouble to make our acquaintance, though we were born to occupy a higher position in society than most of them.",
+            "agents": [
+                0,
+                5
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "character_advice_given",
+            "description": "“Don’t take any notice of what he says,” whispered the Portuguese; “he is very well in matters of business, and with him business is first. Now I shall lie down and have a little rest. It is a duty we owe to ourselves, so that we shall be nice and fat when we come to be embalmed with sage and onions and apples.”",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "fowls_arrive_at_duck_yard",
+            "description": "The fowls of the neighborhood were all awake, and, to tell the truth, they had paid a visit to the duck yard solely to find food for themselves. The Chinese were the first to leave, and the other fowls soon followed them.",
+            "agents": [
+                5
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "joke_sharing_moment",
+            "description": "“‘Doting ducky,'” they whispered; “oh, that’s too witty!” Then they repeated the joke about “portulak” and declared it was most amusing.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "accidental_harm_event",
+            "description": "The Portuguese awoke, too, and rushed over to the other side of the yard. In doing this she trod upon the little singing bird.“Tweet,” he cried; “you trod very hard upon me, madam.”",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "conflict_request",
+            "description": "“Now I want rest after my dinner,” said the Portuguese. “You must conform to the rules of the place while you are here. I want to sleep now.”The little bird was quite taken aback, for he meant it kindly.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "conflict_expression",
+            "description": "“Give that to a chicken,” she said, “and don’t be always standing in my way.”“Why are you angry with me?” replied the little singing bird; “what have I done?”“Done!” repeated the Portuguese duck; “your mode of expressing yourself is not very polite. I must call your attention to that fact.”",
+            "agents": [
+                0,
+                2,
+                5
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

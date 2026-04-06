@@ -1,0 +1,274 @@
+{
+    "uri": "https://fairytalez.com/what-the-man-in-the-moon-did",
+    "nation": "north_american_native",
+    "title": "What the Man in the Moon Did",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "quadjaq_boy",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "depressive",
+                "tense"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "young_girl",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "hero_helper"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "man_in_the_moon",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "magical_helper",
+                "instance_name": "moon_helper"
+            },
+            "lives_in": 3
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "friend"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "friend"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "knows"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "village",
+            "instance_name": "quadjaq_village"
+        },
+        {
+            "class_name": "hut",
+            "instance_name": "abusive_hut"
+        },
+        {
+            "class_name": "school",
+            "instance_name": "singing_school"
+        },
+        {
+            "class_name": "mountain",
+            "instance_name": "moon_mountain"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "moon_palace"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "iron_knife"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "moonlight_ray"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "boulder"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "iceberg"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "introduce_protagonist",
+            "description": "A long time ago, there was a poor little orphan boy named Quadjaq who lived in a village. He had no home or family to care for him, and all the inhabitants of the village neglected and abused him.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "lack_of_money",
+            "instance_name": "struggle_with_sustenance",
+            "description": "Quadjaq was forced to sleep outside among the dogs, with no proper shelter or warmth. The villagers only gave him scraps of tough walrus hide to eat, which he had to gnaw on like the dogs.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "helper_move",
+            "instance_name": "external_assistance_provided",
+            "description": "A young girl in the village took pity on Quadjaq and gave him a small piece of iron for a knife, telling him to keep it hidden from the men who would take it away.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "fight",
+            "instance_name": "physical_conflict_arises",
+            "description": "Quadjaq remained weak and undernourished, unable to join in with the other boys or participate in their games. The villagers mocked him, calling him 'a poor little shriveled bag of bones'.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "quadjaq_enters_singing_house",
+            "description": "When the villagers gathered at the singing house, Quadjaq would sneak in and peek over the threshold, sometimes being lifted by a man who made him carry out heavy jars of water with his nose.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "physical_consequence_occurs",
+            "description": "As a result of being frequently lifted by his nose, it grew very large, but Quadjaq himself remained small and weak.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "protagonist_rescue_initiated",
+            "description": "The Man in the Moon, who protects all Eskimo orphans, noticed how the villagers ill-treated Quadjaq and decided to help him. He harnessed his dappled dog to his sledge and drove down to the village.",
+            "agents": [
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "quadjaq_emerges",
+            "description": "When the Man from the Moon called out to Quadjaq, he initially refused to come out, fearing another beating from the men. But the Man's voice was softer than those of the villagers, and Quadjaq eventually emerged.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "branding",
+            "instance_name": "hero_disciplines_antagonist",
+            "description": "The Man from the Moon took Quadjaq to a place with large boulders and made him lie across one as if he were going to be paddled. He then whipped Quadjaq softly with a long, thin ray of moonlight.",
+            "agents": [
+                2
+            ],
+            "objects": [
+                1
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "externally_aided_power_gain",
+            "description": "After being whipped three times, Quadjaq was able to lift the boulder easily, feeling much stronger each time. The Man from the Moon told him that rays of light from the Moon would give him strength.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [
+                2
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_growth_event",
+            "description": "Every time a moonbeam hit Quadjaq, he felt himself growing. His feet became enormous, and by the time the Man left, he had become a good-sized man.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [],
+            "place": 3
+        },
+        {
+            "class_name": "fight",
+            "instance_name": "villager_encounter_with_external_force",
+            "description": "The next morning, three bears came to the village, growling and looking fierce. The villagers ran for cover, but Quadjaq put on his boots and ran down to meet the bears.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "quadjaq_defeats_bears",
+            "description": "Quadjaq easily overpowered the first two bears, smashing their heads against an iceberg. He then took the third bear in his arms and carried it up to the village, letting it eat some of his persecutors.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "wedding",
+            "instance_name": "villager_retribution_and_relationship_resolution",
+            "description": "The villagers who had abused Quadjaq were punished for their cruelty, while those who had been kind to him when he was a poor boy were spared, including the girl who gave him the knife. She became his wife.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "wedding",
+            "instance_name": "hero_marries",
+            "description": "With the villagers punished and the village at peace, Quadjaq lived happily with his new wife, finally having found a sense of belonging and protection.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

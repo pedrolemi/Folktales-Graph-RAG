@@ -1,0 +1,238 @@
+{
+    "uri": "https://fairytalez.com/the-master-and-his-pupil",
+    "nation": "english",
+    "title": "The Master and His Pupil",
+    "has_genre": "legend",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "master",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "eager"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "pupil",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "impulsive",
+                "tense"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "false_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "beelzebub",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "dwelling",
+            "instance_name": "masters_house"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "private_room"
+        },
+        {
+            "class_name": "community_building",
+            "instance_name": "apparatus_chamber"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "masters_laboratory"
+        },
+        {
+            "class_name": "river",
+            "instance_name": "distant_sea"
+        },
+        {
+            "class_name": "field",
+            "instance_name": "unknown_shore"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "black_book"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "iron_key"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "crucibles"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "mirror"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "geranium"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "initial_situation",
+            "instance_name": "main_character_introduction",
+            "description": "There was once a very learned man in the north-country who knew all the languages under the sun, and who was acquainted with all the mysteries of creation. He had one big book bound in black calf and clasped with iron, and with iron corners, and chained to a table which was made fast to the floor; and when he read out of this book, he unlocked it with an iron key, and none but he read from it, for it contained all the secrets of the spiritual world.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 3
+        },
+        {
+            "class_name": "move",
+            "instance_name": "pupil_enters_private_room",
+            "description": "The master had a pupil who was but a foolish lad, and he acted as servant to the great master, but never was he suffered to look into the black book, hardly to enter the private room. The master was out, and then the lad, as curious as could be, hurried to the chamber where his master kept his wondrous apparatus for changing copper into gold, and lead into silver, and where was his mirror in which he could see all that was passing in the world, and where was the shell which when held to the ear whispered all the words that were being spoken by anyone the master desired to know about.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0,
+                2,
+                3
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "attempt_failure",
+            "description": "The lad tried in vain with the crucibles to turn copper and lead into gold and silver—he looked long and vainly into the mirror; smoke and clouds passed over it, but he saw nothing plain, and the shell to his ear produced only indistinct murmurings, like the breaking of distant seas on an unknown shore. “I can do nothing,” he said; “as I don’t know the right words to utter, and they are locked up in yon book.”",
+            "agents": [
+                1
+            ],
+            "objects": [
+                2,
+                3
+            ],
+            "place": 5
+        },
+        {
+            "class_name": "move",
+            "instance_name": "book_opened",
+            "description": "He looked round, and, see! the book was unfastened; the master had forgotten to lock it before he went out. The boy rushed to it, and unclosed the volume. It was written with red and black ink, and much of it he could not understand; but he put his finger on a line and spelled it through.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "call_for_help",
+            "instance_name": "demon_summoned",
+            "description": "At once the room was darkened, and the house trembled; a clap of thunder rolled through the passage and the old room, and there stood before him a horrible, horrible form, breathing fire, and with eyes like burning lamps. It was the demon Beelzebub, whom he had called up to serve him.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "fight",
+            "instance_name": "spirit_threatens_child",
+            "description": "“Set me a task!” said he, with a voice like the roaring of an iron furnace.The boy only trembled, and his hair stood up.“Set me a task, or I shall strangle thee!”But the lad could not speak. Then the evil spirit stepped towards him, and putting forth his hands touched his throat.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "entity_performs_action_in_response_to_request",
+            "description": "The fingers burned his flesh. “Set me a task!”“Water yon flower,” cried the boy in despair, pointing to a geranium which stood in a pot on the floor. Instantly the spirit left the room, but in another instant he returned with a barrel on his back, and poured its contents over the flower; and again and again he went and came, and poured more and more water.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                4
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "villain_gains_information",
+            "instance_name": "villain_continues_malicious_action",
+            "description": "Till the floor of the room was ankle-deep.“Enough, enough!” gasped the lad; but the demon heeded him not; the lad didn’t know the words by which to send him away, and still he fetched water.It rose to the boy’s knees and still more water was poured. It mounted to his waist, and Beelzebub still kept on bringing barrels full.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "fight",
+            "instance_name": "rising_water_encounter",
+            "description": "It rose to his armpits, and he scrambled to the table-top. And now the water in the room stood up to the window and washed against the glass, and swirled around his feet on the table. It still rose; it reached his breast. In vain he cried; the evil spirit would not be dismissed, and to this day he would have been pouring water, and would have drowned all Yorkshire.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "interrupted_conflict_resolution",
+            "description": "But the master remembered on his journey that he had not locked his book, and therefore returned, and at the moment when the water was bubbling about the pupil’s chin, rushed into the room and spoke the words which cast Beelzebub back into his fiery home.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        }
+    ]
+}

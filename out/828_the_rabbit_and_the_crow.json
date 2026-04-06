@@ -1,0 +1,226 @@
+{
+    "uri": "https://fairytalez.com/the-rabbit-and-the-crow",
+    "nation": "north_american_native",
+    "title": "The Rabbit and the Crow",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "mr_rabbit",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "joyful",
+                "active"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 1
+        },
+        {
+            "class_name": "anthropomorphic_animal",
+            "instance_name": "mr_crow",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 2
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "natural_place",
+            "instance_name": "nearby_forest"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "hole"
+        },
+        {
+            "class_name": "community_building",
+            "instance_name": "nest"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "drum"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "introduce_protagonist",
+            "description": "Once upon a time, a rabbit lived all alone. Sometimes he felt very lonely.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "rabbit_feeling_lonely",
+            "description": "One day when he was feeling lonely, the rabbit picked up his drum and went outside to sing.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "main_action_introduction",
+            "description": "He sang: 'A crow was flying nearby and heard Mr. Rabbit singing and beating his drum.'",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "conflict_arises",
+            "description": "The crow flew down at once and said: 'That drum annoys me, Mr. Rabbit. You shall not beat it.'",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "fight",
+            "instance_name": "rabbit_arm_attack",
+            "description": "Then the crow caught Mr. Rabbit's right arm, pulled it out, and ate it.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_performs_action",
+            "description": "Next day, Mr. Rabbit came out of his hole and beat the drum with his left arm as he sang his song.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "rabbit_arm_attack",
+            "description": "The crow heard him again and flew down, pulling out Mr. Rabbit's left arm and eating it up.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "conflict_arises",
+            "description": "He said: 'I told you not to beat that drum.'",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "foot_loss_event",
+            "description": "On the third day, Mr. Rabbit beat the drum with his right foot, and Mr. Crow flew down and ate his right foot up.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_attacks_animal",
+            "description": "And on the fourth day, he ate up the rabbit's left foot.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "rabbit_performs_action",
+            "description": "So the fifth day, Mr. Rabbit came out to sing. He beat the drum with his head.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_reaction",
+            "description": "Immediately, Mr. Crow heard him and flew down.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "fox_attacks_rabbit",
+            "description": "He bit off Mr. Rabbit's head and ate it; and then he picked up what was left of poor Mr. Rabbit and carried him up to his baby crows in the nest.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 2
+        }
+    ]
+}

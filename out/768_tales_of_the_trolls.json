@@ -1,0 +1,368 @@
+{
+    "uri": "https://fairytalez.com/tales-of-the-trolls",
+    "nation": "swedish",
+    "title": "Tales of the Trolls",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "peasant",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "active"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "peasant_wife",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "troll_witch",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "aggressive",
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "heathen_woman",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 5
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "mower_one",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "prisoner"
+            },
+            "lives_in": 5
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "mower_two",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "prisoner"
+            },
+            "lives_in": 5
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "cotter",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "active"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "girl",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 4
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "troll_one",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "aggressive",
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 4
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 3,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 4,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 5,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 8,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 4,
+            "relationship": "knows"
+        },
+        {
+            "agent": 3,
+            "other": 6,
+            "relationship": "knows"
+        },
+        {
+            "agent": 4,
+            "other": 5,
+            "relationship": "knows"
+        },
+        {
+            "agent": 5,
+            "other": 6,
+            "relationship": "knows"
+        },
+        {
+            "agent": 5,
+            "other": 7,
+            "relationship": "knows"
+        },
+        {
+            "agent": 7,
+            "other": 8,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "village",
+            "instance_name": "jursagard_village"
+        },
+        {
+            "class_name": "forest",
+            "instance_name": "klintaberg_forest"
+        },
+        {
+            "class_name": "house",
+            "instance_name": "peasants_house"
+        },
+        {
+            "class_name": "hut",
+            "instance_name": "kusabo_hut"
+        },
+        {
+            "class_name": "mountain",
+            "instance_name": "kusas_mountain"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "norra_ryd_settlement"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "ornamented_kettle"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "klingaberg_hill"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "call_for_help",
+            "instance_name": "child_in_danger_alert",
+            "description": "A peasant from Jursagard in the parish of Hanger went to the forest the day before Christmas, and started out for home late in the evening. He was on his way when he heard someone call out: “Tell the malt-swine to come home, for her child has fallen into the fire!”",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "peasant_reports_to_wife",
+            "description": "The peasant reached home and told his wife about the shouted message. His wife had been brewing Yuletide ale and was complaining that it didn't have the right flavor.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "plot_twist_occurs",
+            "description": "Just then a troll-witch darted down from the stove and left behind a great kettle full of the best malt, which she had gathered during the brewing. This explained why the wife's brew lacked flavor.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "call_for_help",
+            "instance_name": "object_sold_at_auction",
+            "description": "The kettle was large, made of ornamented metal, and was long preserved in Hanger. It was later sold at auction in 1838 and melted down.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "branding",
+            "instance_name": "mother_defends_herself",
+            "description": "In former days, a child's mother was known as a “heathen” until she could take him to church to be christened. During this time, it wasn't safe for her to leave the house unless she carried steel about her in some shape or form.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "get_present",
+            "instance_name": "preparation_interrupted",
+            "description": "A woman from Norra Ryd in the parish of Hanger prepared lunch for the mowers and went out to call them in to eat. However, one of the mowers said he couldn’t come because his sheaf wasn't yet bound.",
+            "agents": [
+                6
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "hero_departure",
+            "instance_name": "mysterious_absence",
+            "description": "The woman offered to bind the sheaf for him, but after eating, the mowers didn't see or hear from her again. They searched for days but found nothing.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "setup_scene_establishment",
+            "description": "Time passed until it was late in the fall. One clear and sunny day, a cotter who lived at Kusabo on hill named Kusas went to look for his horse and saw the missing woman sitting on the hillside, sewing.",
+            "agents": [
+                8,
+                6
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "conflict_encounter",
+            "description": "The cotter recognized her immediately because she wasn't far from Norra Ryd. He said to her, “O, you poor thing, and here you sit!” The woman replied that she was only allowed to sit outside for a little while and must never mention it to Lars, her husband.",
+            "agents": [
+                3,
+                6
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "capture_resolution",
+            "description": "A girl went berry-picking on Kusabo mountain but was taken into the hill by the trolls. She wept day and night, which made the trolls angry, and they let her out again.",
+            "agents": [
+                7
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "physical_counteraction_impact",
+            "description": "However, as the trolls were releasing her, one of them hit her such a strong blow on the back that she became hump-backed for the rest of her life.",
+            "agents": [
+                8
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "past_event_reveal",
+            "description": "The girl herself told how she had been kept in the hill by the trolls. This event was known to have occurred at some point in time.",
+            "agents": [
+                7
+            ],
+            "objects": [],
+            "place": 1
+        }
+    ]
+}

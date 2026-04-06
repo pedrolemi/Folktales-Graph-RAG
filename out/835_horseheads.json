@@ -1,0 +1,184 @@
+{
+    "uri": "https://fairytalez.com/horseheads",
+    "nation": "north_american_native",
+    "title": "Horseheads",
+    "has_genre": "legend",
+    "agents": [
+        {
+            "class_name": "group_of_agents",
+            "instance_name": "general_sullivan_troops",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_character"
+            },
+            "lives_in": 2
+        },
+        {
+            "class_name": "group_of_agents",
+            "instance_name": "indian_group",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 3
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "village",
+            "instance_name": "horseheads_village"
+        },
+        {
+            "class_name": "river",
+            "instance_name": "chemung_river"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "general_sullivan_camp"
+        },
+        {
+            "class_name": "mountain",
+            "instance_name": "seneca_hill"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "horse_bones"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "rafts"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "move",
+            "instance_name": "village_renaming_sparks_inquiry",
+            "description": "The village in central New York, which had been called Horseheads for fifty years, was suddenly renamed Fairport or North Elmira by its residents. This change sparked an inquiry into the origin of the original name, Horseheads.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "troop_retreataction",
+            "description": "In 1779, General Sullivan led his troops on a campaign against the Indians in Genesee County and was retreating toward his base of supplies.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "regrouping_action",
+            "description": "General Sullivan's forces stopped near the village that would later be called Horseheads to rest and regroup after their campaign against the Indians.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0,
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "troop_relocation_by_water",
+            "description": "The country around the village was rough, unbroken, and infested with enemies, so General Sullivan ordered his troops to descend the Chemung River on rafts to gain time and avoid danger.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "resource_constrained_decision",
+            "description": "Since there were no large floats available, General Sullivan had to order the destruction of all non-essential supplies that could be gotten rid of, including the poor or superfluous horses.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "troop_action",
+            "description": "The general's order was carried out, and his troops killed the extra horses. The carcasses of these animals were left behind in the camp-ground.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "resolution",
+            "instance_name": "environmental_recovery",
+            "description": "After the troops departed, a pack of wolves emerged from their hiding places and began to devour the horse carcasses, leaving only clean-picked bones scattered across the camp-site.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "aftermath_of_conflict",
+            "description": "When the Indians returned to the region, they found the remnants of the horses' bodies and piled the skulls into heaps as a form of monument.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "settlement_naming_event",
+            "description": "White settlers who later arrived in the valley discovered these strange monuments and took note of them. They were inspired to name their village Horseheads in commemoration of these relics.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "initial_background",
+            "description": "The Indians had strong ties to this land, which they believed was originally inhabited by the Senecas. According to their tradition, a couple from the tribe had once lived on a hill near what would become known as Horseheads.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 3
+        }
+    ]
+}

@@ -1,0 +1,355 @@
+{
+    "uri": "https://fairytalez.com/the-three-green-twigs",
+    "nation": "german",
+    "title": "The Three Green Twigs",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "hermit",
+            "age_category": "senior",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "angel",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "magical_helper",
+                "instance_name": "angel_helper"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "poor_sinner",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "depressive",
+                "tense"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "villain"
+            },
+            "lives_in": 2
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "old_woman",
+            "age_category": "senior",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "robber_one",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "villain_minion"
+            },
+            "lives_in": 4
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "robber_two",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "villain_minion"
+            },
+            "lives_in": 4
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "friend"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "friend"
+        },
+        {
+            "agent": 0,
+            "other": 3,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 4,
+            "relationship": "friend"
+        },
+        {
+            "agent": 0,
+            "other": 5,
+            "relationship": "friend"
+        },
+        {
+            "agent": 2,
+            "other": 3,
+            "relationship": "friend"
+        },
+        {
+            "agent": 2,
+            "other": 5,
+            "relationship": "friend"
+        },
+        {
+            "agent": 3,
+            "other": 4,
+            "relationship": "knows"
+        },
+        {
+            "agent": 3,
+            "other": 5,
+            "relationship": "knows"
+        },
+        {
+            "agent": 4,
+            "other": 5,
+            "relationship": "knows"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "forest",
+            "instance_name": "hermit_forest"
+        },
+        {
+            "class_name": "mountain",
+            "instance_name": "water_mountain"
+        },
+        {
+            "class_name": "castle",
+            "instance_name": "gallows_castle"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "old_woman_home"
+        },
+        {
+            "class_name": "forest",
+            "instance_name": "robbers_forest"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "angelic_visit"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "dry_branch"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "move",
+            "instance_name": "hermit_daily_routine",
+            "description": "A hermit lived in a forest at the foot of a mountain, where he spent his days praying and performing good deeds. He carried two pails of water up the mountain every evening to quench the thirst of beasts and plants, which were parched by the constant wind.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "entity_assistance_occurs",
+            "description": "The hermit's piety caught the attention of an angel from God, who accompanied him on his daily trips and brought him food at the end of each task. The angel was visible only to the hermit's eyes.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "murder",
+            "instance_name": "execution_reflection",
+            "description": "As the hermit grew older in years, he witnessed a poor sinner being led to the gallows. He carelessly thought that the man deserved his fate, without considering God's judgment.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [
+                1
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "villainy",
+            "instance_name": "expectation_deflection",
+            "description": "One evening, while carrying water up the mountain, the angel failed to appear and bring food, leaving the hermit terrified and uncertain about how he had offended God.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "hermit_conflict_buildup",
+            "description": "The hermit spent days in prayer and fasting, but could not figure out what sin he had committed. He became increasingly troubled and wept bitterly, until a little bird began to sing nearby.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "counteraction_initiated",
+            "description": "The bird spoke to the hermit, revealing that his condemnation of the poor sinner was the cause of God's anger. The bird told him that he must do penance and repent his sins for forgiveness.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "hermit_task_assignment",
+            "description": "An angel then appeared with a dry branch in hand, instructing the hermit to carry it until three green twigs sprouted from it. He also had to beg for bread door-to-door, sleeping only one night at each place.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "protagonist_introduction_conflict",
+            "description": "The hermit began his penance journey, but faced rejection and hunger as many doors remained closed to him. One evening, he found a cave where an old woman lived with her three sons who were notorious robbers.",
+            "agents": [
+                0,
+                3
+            ],
+            "objects": [
+                1
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "preparation",
+            "instance_name": "permission_granted_before_sleep",
+            "description": "Despite initial hesitation, the old woman allowed the hermit to stay in the cave for the night, after he assured her that her sons would not harm them. He lay down beneath the stairs with the dry branch under his head.",
+            "agents": [
+                0,
+                3
+            ],
+            "objects": [
+                1
+            ],
+            "place": 3
+        },
+        {
+            "class_name": "connective_incident",
+            "instance_name": "confrontation_with_consequences",
+            "description": "When the old woman saw the hermit using the branch as a pillow, she asked him about it and learned of his penance for condemning an innocent man to death. She began to weep, fearing judgment for her own sons' misdeeds.",
+            "agents": [
+                0,
+                3
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "encountered_external_character",
+            "description": "At midnight, the robbers returned home and discovered the hermit lying beneath the stairs. Initially enraged, they later calmed down when their mother explained that he was a poor sinner doing penance.",
+            "agents": [
+                2,
+                3,
+                4
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "receipt_object",
+            "instance_name": "story_induced_change_of_heart",
+            "description": "The robbers were deeply moved by the hermit's story of sin and repentance, leading them to reflect on their own actions and begin a journey of heartfelt repentance.",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "villain_defeated",
+            "instance_name": "conflict_resolution",
+            "description": "In the morning, the hermit lay dead, but from the dry branch under his head had grown three green twigs. This sign indicated that God had forgiven him and taken him back into favor.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "physical_transformation",
+            "instance_name": "character_redemption",
+            "description": "The story concludes with the transformation of the robbers, who were once wicked and wild, now reflecting on their past actions and beginning a path towards redemption.",
+            "agents": [
+                4,
+                5
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        }
+    ]
+}

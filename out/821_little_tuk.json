@@ -1,0 +1,194 @@
+{
+    "uri": "https://fairytalez.com/little-tuk",
+    "nation": "nordic",
+    "title": "Little Tuk",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "little_tuk",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "active"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "gustava",
+            "age_category": "children",
+            "gender": "female",
+            "has_personality": [
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "hero_family_member"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "mother",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "old_washerwoman",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "korsor_sailor_boy",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "sociable"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "messenger"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "king_hroar",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "supporting_character"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "old_peasant_woman_from_soro",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "supporting_character"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 0,
+            "other": 3,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 4,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 5,
+            "relationship": "friend"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 3,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 1,
+            "other": 4,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 3,
+            "relationship": "knows"
+        },
+        {
+            "agent": 3,
+            "other": 5,
+            "relationship": "friend"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "town",
+            "instance_name": "kjoge_town"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "praesto_settlement"
+        },
+        {
+            "class_name": "city",
+            "instance_name": "vordingborg_city"
+        },
+        {
+            "class_name": "castle",
+            "instance_name": "kings_castle"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "roskilde_settlement"
+        },
+        {
+            "class_name": "town",
+            "instance_name": "soro_town"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "dream_book"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "geography_book"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "rose_flowers"
+        }
+    ],
+    "events": []
+}

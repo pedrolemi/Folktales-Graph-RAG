@@ -1,0 +1,307 @@
+{
+    "uri": "https://fairytalez.com/the-fish-and-the-leopards-wife-or-why-the-fish-lives-in-the-water",
+    "nation": "nigerian",
+    "title": "The Fish and the Leopard's Wife; or, Why the Fish lives in the Water",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "king_eyo",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_authority"
+            },
+            "lives_in": 2
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "leopard",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "aggressive"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "leopard_wife",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "hero_family"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "old_woman",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "fish",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "friend"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 1,
+            "other": 4,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 2,
+            "other": 3,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "natural_place",
+            "instance_name": "leopard_bush"
+        },
+        {
+            "class_name": "house",
+            "instance_name": "leopard_house"
+        },
+        {
+            "class_name": "palace",
+            "instance_name": "king_palace"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "land"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "palaver_platform"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "curse_of_the_fish"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "move",
+            "instance_name": "king_meets_leopard",
+            "description": "King Eyo of Calabar was a just ruler who befriended many creatures, including a leopard. The two would often spend time together in the bush.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "introduce_conflicting_interests",
+            "description": "The leopard had a beautiful and kind-hearted wife, whom he loved dearly. However, unbeknownst to her husband, she caught the eye of a fish that lived on land at the time.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "unfaithful_encounter",
+            "description": "The fish, smitten by the leopard's wife, would often sneak into their home when the leopard was away, and make love to her. This behavior continued for some time before an old woman in the neighborhood discovered it.",
+            "agents": [
+                2,
+                4
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "villain_gains_information",
+            "instance_name": "conflict_introduced",
+            "description": "The old woman informed the leopard of his wife's infidelity, but he was hesitant to believe such a thing about his trusted friend, the fish. He thought that perhaps there must be some mistake or misunderstanding.",
+            "agents": [
+                1,
+                3,
+                4
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "false_matrimony",
+            "instance_name": "discovered_infidelity",
+            "description": "One night, the leopard decided to return home unexpectedly and catch the fish in the act of making love to his wife. When he arrived, he found the two together, and his heart filled with anger and betrayal.",
+            "agents": [
+                1,
+                4
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "consider_external_support",
+            "description": "The leopard was furious at the fish's treachery and considered killing him on the spot. However, he thought better of it and decided to report the incident to King Eyo instead.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "leopard_informs_king",
+            "description": "The leopard went to see King Eyo and told him about the fish's affair with his wife. The king listened attentively and then called a big meeting, or 'palaver,' to discuss the matter further.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                1
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_confession",
+            "description": "At the palaver, the leopard recounted the events that led up to the discovery of the fish's infidelity. He explained how he had trusted the fish for so long and how it had betrayed him in such a terrible way.",
+            "agents": [
+                1,
+                4
+            ],
+            "objects": [
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "villainy",
+            "instance_name": "villainy_failure_to_defend",
+            "description": "When the fish was given the opportunity to defend himself, he remained silent. He seemed unable or unwilling to explain his actions, which only added to the evidence against him.",
+            "agents": [
+                0,
+                4
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "king_expresses_disappointment",
+            "description": "King Eyo addressed his subjects at the palaver, expressing his disappointment and anger at the fish's behavior. He emphasized how the fish had taken advantage of its friend's trust and how it had committed a grave offense by making love to the leopard's wife.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "king_makes_decision",
+            "description": "The king then made a decision that would change the fate of the fish forever. He ordered that from now on, the fish should live in the water and never return to land again.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "helper_move",
+            "instance_name": "resolved_consequence",
+            "description": "Furthermore, King Eyo decreed that if the fish ever ventured onto dry land again, it would be put to death immediately. This punishment was meant to serve as a warning to all creatures of the consequences of their actions.",
+            "agents": [
+                0,
+                4
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "solution_difficult_task",
+            "instance_name": "resolved_conflict",
+            "description": "Finally, the king instructed his subjects to hunt and eat the fish whenever they encountered it on land. He wanted to make sure that the fish never again threatened the trust and relationships between friends in Calabar.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "physical_transformation",
+            "instance_name": "relationship_mending",
+            "description": "And so, with the king's orders in place, the leopard and his wife were finally able to put their lives back together. They healed from the wounds of betrayal, and their friendship with King Eyo only grew stronger.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "transfiguration",
+            "instance_name": "new_life_consequences",
+            "description": "The fish, on the other hand, was forced to adapt to its new life in the water. It would never again be able to walk on land or enjoy the company of friends like the leopard in the same way.",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

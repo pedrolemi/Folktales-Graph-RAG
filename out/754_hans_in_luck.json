@@ -1,0 +1,304 @@
+{
+    "uri": "https://fairytalez.com/hans-in-luck",
+    "nation": "german",
+    "title": "Hans in Luck",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "the_countryman",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "the_good_man"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_lad",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "the_good_man"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_butcher",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "the_good_man"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_scissors_grinder",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "the_good_man"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "hans",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "the_good_man"
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 3,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 4,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "friend"
+        },
+        {
+            "agent": 1,
+            "other": 3,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 4,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 3,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 4,
+            "relationship": "friend"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "village",
+            "instance_name": "hans_mother_village"
+        },
+        {
+            "class_name": "field",
+            "instance_name": "nearby_field"
+        },
+        {
+            "class_name": "river",
+            "instance_name": "ditch_by_the_highway"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "inn_where_hans_stayed"
+        },
+        {
+            "class_name": "community_building",
+            "instance_name": "mayors_house"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "moor_hans_crossed"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "horse_bridle"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "withered_tree"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "flask"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "golden_lump"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "scissors_grinder_wheel"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "well"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "service_completion_reward",
+            "description": "Hans served his master for seven years, and after completing his service, he requested his wages. His master agreed to give him the reward in proportion to the service, and handed over a gold lump as big as Hans' head. Hans wrapped up the gold in his handkerchief and set out on his journey home.",
+            "agents": [
+                4
+            ],
+            "objects": [
+                3
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "call_for_help",
+            "instance_name": "offered_ride",
+            "description": "As Hans was walking along, he saw a horseman riding quickly by on a lively horse. He envied the rider's ability to sit comfortably while traveling without worrying about stumbling over stones or saving his shoes. The rider stopped and asked Hans why he was walking on foot when he had the opportunity to ride.",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "acquisition",
+            "instance_name": "horse_exchange_acquisition",
+            "description": "Hans explained that he couldn't hold his head straight due to the weight of the gold, but the rider proposed an exchange: the horse for the gold. Hans agreed, gave the rider the gold, and received the bridle in return. The rider told him to click his tongue and call out 'Jup! Jup!' to ride at a faster pace.",
+            "agents": [
+                4
+            ],
+            "objects": [
+                0,
+                1
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "fight",
+            "instance_name": "horse_rider_conflict",
+            "description": "Hans was delighted with his new horse and rode away, but soon began clicking his tongue and calling out 'Jup! Jup!' to make it go faster. However, the horse put itself into a sharp trot and threw Hans off, leaving him lying in a ditch.",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "exchange_offered",
+            "description": "A countryman stopped by and helped Hans up, while another man came along with a wheelbarrow containing a young pig. The butcher told Hans that the cow he had gotten from the rider was old and wouldn't give any milk. He offered to exchange the pig for the cow, which Hans gladly accepted.",
+            "agents": [
+                0,
+                4
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "new_element_arrives",
+            "description": "Hans drove his new cow quietly before him, thinking about how everything was going just as he wished. If he encountered any troubles, they were immediately resolved. A lad joined him on the road, carrying a fine white goose under his arm, and told Hans that he had made good bargains each time.",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "resolved_conflict_drive",
+            "description": "The lad warned Hans that it might not be all right with the pig he got from the butcher, as there was a possibility that it belonged to the Mayor who had recently had one stolen. The lad took the cord in hand and drove away the pig quickly along a by-path, leaving Hans free from care.",
+            "agents": [
+                1,
+                4
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "move",
+            "instance_name": "explanation_of_acquisition",
+            "description": "Hans continued on his journey with the goose under his arm, thinking about how he had gained even more than before. He encountered a scissors-grinder who sang while sharpening scissors and asked Hans where he got the fine goose. Hans explained that it was an exchange for his pig, which in turn was gotten from a cow he acquired for a horse.",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "move",
+            "instance_name": "exchange_arrangement",
+            "description": "The grinder told Hans that as a real grinder finds gold in his pocket every time, Hans had known how to look after himself well each time. The grinder offered Hans his grindstone in exchange for the goose, which Hans gladly accepted.",
+            "agents": [
+                4
+            ],
+            "objects": [
+                2,
+                4
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "geese_exchange_progress",
+            "description": "Hans handed over the goose and received the grindstone, along with an additional heavy stone from the grinder. He loaded up with both stones and went on his way, feeling contented. As he had been on his feet since daybreak, he began to feel tired and hungry.",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "unexpected_relief_from_burden",
+            "description": "As Hans rested by a well in a field, he laid the stones carefully by his side but then made a slip, causing them to fall into the water. Seeing this, Hans jumped for joy and thanked God for delivering him from those heavy burdens without any trouble.",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "arrival",
+            "instance_name": "arrival_resolution",
+            "description": "With a light heart and free from every burden, Hans ran on until he was with his mother at home.",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

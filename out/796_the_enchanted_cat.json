@@ -1,0 +1,247 @@
+{
+    "uri": "https://fairytalez.com/the-enchanted-cat",
+    "nation": "hungarian",
+    "title": "The Enchanted Cat",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "good_sultan_abu_hafiz",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "ruler"
+            }
+        }
+    ],
+    "relationships": [],
+    "places": [
+        {
+            "class_name": "city",
+            "instance_name": "persia"
+        },
+        {
+            "class_name": "palace",
+            "instance_name": "abu_hafiz_palace"
+        },
+        {
+            "class_name": "river",
+            "instance_name": "lake"
+        },
+        {
+            "class_name": "mountain",
+            "instance_name": "east"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "potion"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "skull"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "unicorn_s_horn"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "shark_tooth"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "frog_legs"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "spotted_snakes_skins"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "curiously_shaped_goblets"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "magic_circle"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "wand"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "long_wand"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "dark_liquid"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "magic_potions_in_curiously_shaped_goblets"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "introduce_kingdom",
+            "description": "In the far East, somewhere on the borders of Persia, there was once an extensive kingdom, over which ruled the good Sultan Abu Hafiz. The land was rich and fruitful; the trade prosperous; the people happy.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 3
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "established_character_state",
+            "description": "The only sorrowful person being the Sultan himself, and he was sadly wretched. He would walk on the terraces of his magnificent palace, and look over the fair gardens, but he never smiled, not even at the lovely goldfish that peered at him from out the crystal basins of the diminutive fountains.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "main_character_tragic_event",
+            "description": "The good Sultan, Abu Hafiz, had never been known to smile since the day when they brought home the beautiful Sultana Arizade dead. She had gone out walking one day, accompanied by her women, when at the very gate of the palace garden a great monster had bounded across her path, which so frightened the Sultana that she swooned away, and never recovered consciousness again.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "returning_with_failure",
+            "description": "The faithful servants did all they could to restore their beloved mistress to life, but in vain—the sweet lady was dead; and they had to return to their lord bearing the dead body of his beautiful wife.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "main_character_emotional_distress",
+            "description": "The Sultan was beside himself with grief, and nothing could console him. His people tried to comfort him, but it seemed as though nothing would ever bring back the light into his eyes again.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "introduce_problem_plan",
+            "description": "It was then that the Grand Vizier, Ben Achmed, came forward with a plan to find another wife for the Sultan, one who would bring joy and happiness back to their kingdom. The Sultan agreed, and soon they found a beautiful young woman, whom they brought back to the palace as the new Sultana.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "new_character_arrival",
+            "description": "The people were overjoyed at the arrival of the new Sultana, and the palace was filled with music and laughter once again. But little did anyone know that this new Sultana had secrets of her own, and she would stop at nothing to get what she wanted.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                8
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "introduce_conflictual_relationships",
+            "description": "As time went by, the young Prince Al Hafiz grew up, and he fell deeply in love with a beautiful young woman who was betrothed to him. But his wicked stepmother, the Sultana, had other plans for him, and she would do anything to keep him from marrying this woman.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "prince_transformation",
+            "description": "The Sultana concocted a plan to get rid of Prince Al Hafiz by turning him into a cat with the help of a wicked old magician. She poured a potion on his threshold, and when he crossed it, he was transformed into a black cat.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                10
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "princess_rescues_al_hafiz",
+            "description": "But little did the Sultana know that this would not be as easy as she thought. The young Princess, who had been betrothed to Al Hafiz, had seen him transform and had rescued him from being thrown into the lake by her attendants.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "counteraction_initiated",
+            "description": "The Sultana was furious when she found out what had happened, but she did not give up. She concocted another plan with her stepson to get rid of the black cat once and for all. They caught a fish and left it on the terrace, hoping that the cat would be tempted by its smell.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "counteraction_initiated",
+            "description": "But again, things did not go as planned. The young Prince Al Hafiz was now in his human form, and he fought back against his enemies. He overpowered Ben Haroun and saved himself from being thrown into the lake.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "expulsion",
+            "instance_name": "character_expulsion",
+            "description": "The Sultan was beside himself with rage when he found out what had happened. He ordered that both the Sultana and her stepson be expelled from their domains, and forbidden to return on penalty of death.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "resolution",
+            "instance_name": "conflict_closure",
+            "description": "As for the wicked old magician, he was hanged the next morning. The good old Sultan was now so happy to have found his son, whom he had believed dead, that he quite forgot all his past troubles.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "wedding",
+            "instance_name": "union_resolution",
+            "description": "There was a gorgeous wedding in the Palace for the young couple, and I have no doubt that if we were to go to that distant kingdom on the borders of Persia we should find the Sultan Abu Hafiz, the young Prince Al Hafiz and his wife, and probably also the Vizier, Ben Achmed, living happy and prosperous, even to this day.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        }
+    ]
+}

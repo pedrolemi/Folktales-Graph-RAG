@@ -1,0 +1,141 @@
+{
+    "uri": "https://fairytalez.com/the-thieves-and-the-cock",
+    "nation": "greek",
+    "title": "The Thieves and the Cock",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "thief_leader",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "thief_minion",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "villain_minion"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "cock",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "morning_helper"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "house",
+            "instance_name": "thieves_house"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "supper_table"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "pot"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "move",
+            "instance_name": "conflict_setup",
+            "description": "Some Thieves broke into a house",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "theft_occurs",
+            "description": "They found nothing worth taking except a Cock, which they seized and carried off with them",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "acquisition",
+            "instance_name": "character_targets_animal",
+            "description": "When preparing their supper, one of them caught up the Cock, and was about to wring his neck",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_plea",
+            "description": "The Cock cried out for mercy and said, “Pray do not kill me: you will find me a most useful bird, for I rouse honest men to their work in the morning by my crowing”",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "kidnapping",
+            "instance_name": "thief_counteraction",
+            "description": "One of the Thieves replied with some heat, “Yes, I know you do, making it still harder for us to get a livelihood. Into the pot you go!”",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        }
+    ]
+}

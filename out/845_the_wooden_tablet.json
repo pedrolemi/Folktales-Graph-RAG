@@ -1,0 +1,183 @@
+{
+    "uri": "https://fairytalez.com/wooden-tablet",
+    "nation": "chinese",
+    "title": "The Wooden Tablet",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "soldier_who_shouted_kill_the_kid",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "cold",
+                "aggressive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "foreign_soldier"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "kangp_u",
+            "age_category": "children",
+            "gender": "male",
+            "has_personality": [
+                "cold",
+                "aggressive"
+            ],
+            "has_role": {
+                "class_name": "hero",
+                "instance_name": "kangp_u"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "father_of_kangp_u",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "cold",
+                "aggressive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "kangp_u"
+            }
+        }
+    ],
+    "relationships": [],
+    "places": [
+        {
+            "class_name": "city",
+            "instance_name": "tang_shu_city"
+        },
+        {
+            "class_name": "village",
+            "instance_name": "kangs_pu_village"
+        },
+        {
+            "class_name": "house",
+            "instance_name": "lin_family_house"
+        },
+        {
+            "class_name": "house",
+            "instance_name": "grandfathers_big_house"
+        },
+        {
+            "class_name": "city",
+            "instance_name": "market_town_city"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "tablet"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "basket"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "chicken_feathers"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "return",
+            "instance_name": "setup_before_departure",
+            "description": "K'ang-p'u's father was just setting out for the city, to be gone all day. He had been telling K'ang-p'u about some work in the little garden, for the boy was a strong and willing helper.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "villainy",
+            "instance_name": "denial_of_villainy",
+            "description": "Mr. Lin laughed heartily. 'Why, there's nothing here for them to burn, if it comes to that!—a mud house, a grass roof, and a pile of ragged bedding. Surely they won't bother my little hut.'",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "establishing_background",
+            "description": "The little fellow had gasped with surprise at hearing this, for there was the big mulberry tree where the boys used to gather leaves for their silkworms.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "waking_to_uncertainty",
+            "description": "K'ang-p'u stood up and looked round him in trembling surprise. What could have taken place while he was sleeping? At first, he did not know what to do.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "new_obstacle_appears",
+            "description": "When K'ang-p'u passed round the corner and looked for the ruins of the village hovels, an amazing sight met his gaze. There, rising directly before him, was a great stone wall, like those he had seen round the rich people's houses when his father had taken him to the city.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "protagonist_return",
+            "description": "Many men and women servants bowed low as he passed, saluting with great respect and crying out: 'Yes, it is really the little master! He has come back to his own!'",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "resolution",
+            "instance_name": "family_reunion_resolution",
+            "description": "Then they entered a magnificent reception-hall on the other side of the garden. K'ang-p'u could not keep back his tears, for there stood his father waiting to meet him.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "protagonist_expects_event",
+            "description": "As he stared in surprise he almost expected to see the tiny figure swinging its legs over the top, and to hear the high-pitched voice of his grandfather.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "recognition",
+            "instance_name": "acknowledgment_to_ancestral_symbol",
+            "description": "Then father and son fell upon their knees before the wooden emblem, and bowed reverently nine times to the floor, thanking the spirit for all it had done for them.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 4
+        }
+    ]
+}

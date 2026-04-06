@@ -1,0 +1,167 @@
+{
+    "uri": "https://fairytalez.com/the-sacred-milk-of-koumongoe",
+    "nation": "north_american_native",
+    "title": "The Sacred Milk of Koumongoe",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "the_ogre",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "the_ogre"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "thakane",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "cold",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "hero",
+                "instance_name": "thakane"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "koane",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "aggressive"
+            ],
+            "has_role": {
+                "class_name": "antagonist",
+                "instance_name": "koane"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "masilo",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "hero",
+                "instance_name": "masilo"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_man",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "the_man"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_woman",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "the_woman"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "rabbit",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "rabbit"
+            }
+        }
+    ],
+    "relationships": [],
+    "places": [
+        {
+            "class_name": "city",
+            "instance_name": "great_city"
+        },
+        {
+            "class_name": "village",
+            "instance_name": "ogres_village"
+        },
+        {
+            "class_name": "river",
+            "instance_name": "large_lake_river"
+        },
+        {
+            "class_name": "field",
+            "instance_name": "corn_field"
+        },
+        {
+            "class_name": "mountain",
+            "instance_name": "hill_where_koumongoe_stood"
+        },
+        {
+            "class_name": "hut",
+            "instance_name": "ogres_hut"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "koumongoe_tree"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "willow_trees"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "stone"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "baby_dilah"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "river"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "lake"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "initial_situation",
+            "instance_name": "introduction_to_family_life",
+            "description": "In a very hot country, there lived a man and woman who had two children, a son named Koane and a daughter called Thakane. The parents worked hard in the fields, resting under the shade of trees when the sun was high.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

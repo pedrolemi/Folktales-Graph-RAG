@@ -1,0 +1,118 @@
+{
+    "uri": "https://fairytalez.com/the-fox-and-the-mask",
+    "nation": "greek",
+    "title": "The Fox and the Mask",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "anthropomorphic_animal",
+            "instance_name": "fox_in_theatre",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "impersonal"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 2
+        }
+    ],
+    "relationships": [],
+    "places": [
+        {
+            "class_name": "building",
+            "instance_name": "theatre_building"
+        },
+        {
+            "class_name": "dwelling",
+            "instance_name": "actor_house"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "store_room_natural_area"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "mask"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "character_introduction",
+            "description": "A Fox had by some means got into the store-room of a theatre.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "conflict",
+            "instance_name": "perceived_threat_arises",
+            "description": "The Fox observed a face glaring down on him and began to be very frightened;",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "object_inspection",
+            "description": "Upon closer inspection, he found it was only a Mask such as actors use to put over their face;",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "character_introduction_exchange",
+            "description": "The Fox said to the Mask, 'You look very fine';",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "character_insult",
+            "description": "He continued, 'It is a pity you have not got any brains.'",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "philosophical_reflection",
+            "description": "Outside show is a poor substitute for inner worth.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        }
+    ]
+}

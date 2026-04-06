@@ -1,0 +1,176 @@
+{
+    "uri": "https://fairytalez.com/the-ass-and-the-charger",
+    "nation": "greek",
+    "title": "The Ass and the Charger",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "soldier",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "quest_giver"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "ass",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "horse",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "false_hero"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "friend"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "natural_place",
+            "instance_name": "battlefield_area"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "horse_dwelling"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "enemy_camp"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "battlefield"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "arms_and_armor"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "initial_situation",
+            "instance_name": "initial_character_context",
+            "description": "An Ass and a Horse lived in the same village, with the Ass working hard to find food for himself while the Horse was ungrudgingly and carefully provided for by his owner.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "comparative_struggle",
+            "description": "The Ass often complained about his own hardships and envied the Horse's comfortable life.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "conflict_established",
+            "description": "One day, war broke out between their country and a neighboring state, and many soldiers were called upon to join the battle.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "soldier_mounts_vehicle",
+            "description": "A heavily armed soldier was sent on a mission to charge into the enemy lines, and he chose the strong and fast Horse as his mount.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "soldier_moves_towards_battle",
+            "description": "The soldier mounted the Horse and rode him towards the battlefield, where they clashed with the enemy forces.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "key_element_loss",
+            "description": "In the heat of battle, the Horse was severely wounded and fell dead on the battlefield, leaving the soldier stranded and dismounted.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "perspective_shift",
+            "description": "The Ass, who had been watching from a distance, saw the Horse's tragic fate and immediately changed his perspective on their different living situations.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "conflict",
+            "instance_name": "shift_in_perspective_conflict",
+            "description": "He realized that the Horse's sacrifice in the war effort was far greater than his own hardships, and he began to commiserate with the fallen Horse.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

@@ -1,0 +1,206 @@
+{
+    "uri": "https://fairytalez.com/the-coyote-and-the-turtle",
+    "nation": "north_american_native",
+    "title": "The Coyote and the Turtle",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "turtle",
+            "age_category": "senior",
+            "gender": "male",
+            "has_personality": [
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "anthropomorphic_animal",
+            "instance_name": "coyote",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [],
+    "places": [
+        {
+            "class_name": "river",
+            "instance_name": "turtle_home"
+        },
+        {
+            "class_name": "mountain",
+            "instance_name": "big_rock"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "hopi_village"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "river_water"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "turtle_shell"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "move",
+            "instance_name": "turtle_morning_expedition",
+            "description": "A turtle crawled out of his home in the river on a cool summer morning, hunting for food and exploring further from the river than he should have. He forgot about Father Sun's impending arrival.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "turtle_moves_under_heat",
+            "description": "As the sun rose over the hills, it shone directly down on the turtle, who realized his mistake and tried to return to the river but moved too slowly due to the heat.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "protagonist_refuge",
+            "description": "The turtle sought refuge in a shady hole within a large rock, where he began crying from distress.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "coyote_discovery",
+            "description": "A coyote, passing by, heard the turtle's cries and initially thought it was someone singing. He decided to investigate further.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "guidance",
+            "instance_name": "coyote_requests_song_teaching",
+            "description": "Upon peeping around the rock, the coyote spotted the turtle with tears in his eyes and asked him to teach the 'song' he had been singing.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                1
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "coyote_threatens_turtle",
+            "description": "The turtle denied singing, but the coyote insisted that he must be singing, threatening to swallow him whole if he didn't comply.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "verbal_confrontation_with_threats",
+            "description": "The turtle refused to sing, pointing out that his hard shell would hurt the coyote's throat. The coyote threatened to throw him into the hot sun instead.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "counter_threat",
+            "description": "The turtle countered by saying his shell would protect him from being thrown into the sun, prompting the coyote to threaten to throw him into the river.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "turtle_thrown_into_river",
+            "description": "The turtle pleaded with the coyote not to throw him in the river, fearing he might drown. The coyote then picked up the turtle and threw him into the river.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "turtle_escapes_covertly",
+            "description": "The little turtle swam away from the surface, hiding under the water where the coyote couldn't reach him.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "return_home",
+            "description": "He poked his head out of the water, thanking the coyote for throwing him back home, which was the river. He expressed gratitude for being returned to his home and acknowledged that he had no way to get there himself.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "coyote_reacts_to_trick",
+            "description": "The coyote, realizing he had been tricked, became very angry and walked away.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

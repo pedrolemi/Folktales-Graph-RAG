@@ -1,0 +1,285 @@
+{
+    "uri": "https://fairytalez.com/the-silver-tracks-the-story-of-the-poor-man-who-befriended-a-beggar",
+    "nation": "slavic",
+    "title": "The Silver Tracks - The Story of the Poor Man Who Befriended a Beggar",
+    "has_genre": "myth",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "the_rich_brother_who_fell_for_the_golden_bridge",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "depressive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "rich_brother"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_second_brother_who_fell_for_the_golden_bridge",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "depressive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "second_brother"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_poor_man_who_fell_for_the_golden_bridge",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "depressive"
+            ],
+            "has_role": {
+                "class_name": "hero",
+                "instance_name": "poor_man"
+            }
+        }
+    ],
+    "relationships": [],
+    "places": [
+        {
+            "class_name": "village",
+            "instance_name": "poor_man_village"
+        },
+        {
+            "class_name": "river",
+            "instance_name": "first_river"
+        },
+        {
+            "class_name": "field",
+            "instance_name": "rich_brother_field"
+        },
+        {
+            "class_name": "mountain",
+            "instance_name": "copper_bridge_mountain"
+        },
+        {
+            "class_name": "forest",
+            "instance_name": "golden_bridge_forest"
+        },
+        {
+            "class_name": "city",
+            "instance_name": "poor_man_city"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "silver_bolts"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "golden_horse_shoes"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "wooden_bridge"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "stone_bridge"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "iron_bridge"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "copper_bridge"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "silver_bridge"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "golden_bridge"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "diamond_wall"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "garden_gate"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "apple_tree"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "well"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "initial_situation",
+            "instance_name": "initial_brotherhood_context",
+            "description": "There were once three brothers who lived in the same village. One of them was very rich. He had houses and fields and barns. He had nothing to spend his money on for he had no children and his wife was as saving and hardworking as himself. The second brother was not so rich but he, too, was prosperous. He had one son and all his thought was to accumulate money and property in order to leave his son rich. He schemed and worked and slaved and made his wife do the same.The third brother was industrious but very poor. He worked day after day and all day and often far into the night to keep his children fed and clothed.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "different_brothers_react_to_arrival",
+            "description": "One night, a beggar came to their village. The rich man refused to give him anything, saying he had no use for it. The second brother offered him some food, but only because he wanted to get rid of him so that he could go back to work. The third brother took pity on the beggar and invited him into his home to eat and rest.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "gift_offering",
+            "description": "The beggar ate with them and then went on his way. He gave each of the brothers a gift: to the rich man, he left a pair of golden horse shoes; to the second brother, he left a set of silver bolts; and to the third brother, he left nothing but a promise that he would visit him someday.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                2,
+                3
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "consequences_of_choice",
+            "description": "Years went by, and the three brothers lived out their lives. The rich man grew old and died alone, with no one to mourn his passing. The second brother's son grew up to be wealthy, but he too was proud and selfish, and eventually lost everything. The third brother worked hard all his life, raising a large family and providing for them until they were grown and gone.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "character_reflection_setup",
+            "description": "One night, the poor man sat on his doorstep, thinking about his wife who had died and his children who had grown up and moved away. He remembered the beggar and the promise he had made to visit him someday, and felt a pang of regret for not having kept it sooner.",
+            "agents": [
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "encountering_obstacles",
+            "description": "The next morning, the poor man got into his old cart and set off to follow the silver tracks to find the beggar. As he journeyed, he saw many strange sights: two sows fighting over food; two bulls locked in combat; two bitches snapping at each other's heels; an old man with snow-white hair being eaten by oxen; a man trying to beat off ravens pecking at his eyes; and a hungry man reaching for apples that turned to ashes as soon as he touched them.",
+            "agents": [
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "crossing_bridges",
+            "description": "The poor man passed over the wooden bridge, the stone bridge, the iron bridge, the copper bridge, the silver bridge, and even the golden bridge. Beyond the golden bridge, he came to a Garden surrounded by a high wall of diamonds and rubies and sapphires that blazed as brightly as the sun itself.",
+            "agents": [
+                2
+            ],
+            "objects": [
+                8,
+                9,
+                10,
+                7
+            ],
+            "place": 5
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "cart_grazing_setup",
+            "description": "The poor man climbed down from his cart and set it out to graze on the tender grass that grew by the wayside. He took the bag with the golden horse shoes and the silver bolts, and went to the garden gate. The beggar himself opened the gate and welcomed him in.",
+            "agents": [
+                2
+            ],
+            "objects": [
+                9
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "gift_exchange_resolved",
+            "description": "Inside the Garden, the poor man gave the beggar his gifts and apologized for keeping them so long. The beggar smiled and said that he knew they were safe with the poor man and that he would bring them someday.",
+            "agents": [
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "peaceful_character_interaction",
+            "description": "The beggar put his arm around the poor man's shoulder and led him through the Garden, showing him the wonderful golden fruits and beautiful flowers. They sat down beside a fountain of crystal water and talked together until it was late afternoon.",
+            "agents": [
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "establishing_conflict",
+            "description": "The beggar invited the poor man to sup with him as he had once done with him before. The poor man went out to see how his donkey was, but when he came back, the donkey was gone. He searched for it everywhere, but could not find it anywhere.",
+            "agents": [
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "unfamiliar_environment_encounter",
+            "description": "When the poor man returned to the village where he thought he lived, everything looked different. Houses that he remembered had disappeared and others had taken their places. He couldn't even find his own little house or anyone who knew him or his family.",
+            "agents": [
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "acquisition",
+            "instance_name": "circumstances_shift_acquisition",
+            "description": "The poor man realized that he was not in his own world anymore, but in a spiritual realm. He followed the silver tracks all the way back to the Garden of Paradise, where the beggar welcomed him with open arms and said, 'You shall stay with me now forever and we shall be very happy together.'",
+            "agents": [
+                2
+            ],
+            "objects": [
+                6
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "perceptual_shift",
+            "description": "As the poor man looked into the beggar's face, he saw that it was not a beggar at all, but the Blessed Christ Himself. And then he knew that he was in the Garden of Paradise.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

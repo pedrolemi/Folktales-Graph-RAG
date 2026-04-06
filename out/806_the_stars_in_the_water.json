@@ -1,0 +1,175 @@
+{
+    "uri": "https://fairytalez.com/the-stars-in-the-water",
+    "nation": "irish",
+    "title": "The Stars in the Water",
+    "has_genre": "myth",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "kathleen",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "depressive",
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "kathleen"
+            }
+        }
+    ],
+    "relationships": [],
+    "places": [
+        {
+            "class_name": "kingdom",
+            "instance_name": "underhill"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "hall"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "the_good_people_hall"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "the_passage"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "the_pool"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "new_environment_encounter",
+            "description": "Kathleen was standing in a beautiful hall under a hill, surrounded by strange creatures called the Good People. They were dancing and having fun, but Kathleen felt out of place and longed for her own world.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1,
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "connective_incident",
+            "instance_name": "enforced_consequence",
+            "description": "The King came to her and told her that she had eaten the food given by Terence, which was enchanted and would allow her to leave the hill when she wanted to. He warned her not to eat their food again, or she would be trapped forever.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                2
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "character_interaction_setup",
+            "description": "Kathleen sat down next to the Queen and watched as she fed a baby. The Queen gave Kathleen a box of ointment to use on the baby's eyes in the morning.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "care_for_condition",
+            "description": "In the morning, Kathleen washed the baby and applied the ointment to his eyes. He looked brighter and more alert than before.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "characters_break_fasting",
+            "description": "The King and Queen went out for breakfast, and Kathleen followed them. She saw Terence again and ate breakfast with him.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "kathleens_daily_care",
+            "description": "All day, Kathleen sat with the Queen or cared for the baby. She only ate what Terence brought her.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1,
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "prevented_dance_plans",
+            "description": "In the evening, the King asked Kathleen to go dancing with them, but Terence warned her not to go. He told her that if she stayed, she would never be able to leave.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "departure_transition",
+            "description": "Kathleen promised to come back and see Terence again, but first she had to return home to her father and grandmother. She was worried about leaving them behind.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "protagonist_leads_to_special_location",
+            "description": "The King and Queen led Kathleen out of the hall and into a passage made of gold. They walked on water, surrounded by a yellow glow and violet lights.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "character_observation",
+            "description": "As they walked, Kathleen saw stars shining up through the water below her feet. She felt the cool outside air and realized she was standing on her own little pool.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                2
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "wedding_or_throne",
+            "instance_name": "communal_closure",
+            "description": "The Good People gathered around her, and then they began to dance.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                2
+            ],
+            "place": 1
+        }
+    ]
+}

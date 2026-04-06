@@ -1,0 +1,329 @@
+{
+    "uri": "https://fairytalez.com/the-crystal-ball",
+    "nation": "german",
+    "title": "The Crystal Ball",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "youth",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "eager"
+            ],
+            "has_role": {
+                "class_name": "hero",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "king_daughter",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "joyful",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "prisoner",
+                "instance_name": "hero_princess"
+            },
+            "lives_in": 1
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "enchanter",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 1
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "eagle_brother",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "active",
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "magical_helper"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "whale_brother",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "magical_helper"
+            },
+            "lives_in": 2
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "friend"
+        },
+        {
+            "agent": 0,
+            "other": 3,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 0,
+            "other": 4,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 1,
+            "other": 3,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 1,
+            "other": 4,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 3,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 2,
+            "other": 4,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 3,
+            "other": 4,
+            "relationship": "family_member"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "mountain",
+            "instance_name": "golden_sun_mountain"
+        },
+        {
+            "class_name": "castle",
+            "instance_name": "golden_sun_castle"
+        },
+        {
+            "class_name": "forest",
+            "instance_name": "great_forest"
+        },
+        {
+            "class_name": "village",
+            "instance_name": "fishing_village"
+        },
+        {
+            "class_name": "dwelling",
+            "instance_name": "fishermans_hut"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "wishing_cap"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "wild_bull"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "sword"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "crystal_ball"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "fisherman_hut"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "move",
+            "instance_name": "character_transformation",
+            "description": "There was once an enchantress who had three sons who loved each other as brothers. She changed the eldest into an eagle, which lived in the rocky mountains, and the second into a whale, which resided in the deep sea.",
+            "agents": [
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "initiative_taken",
+            "description": "The third son, afraid of being turned into a wild beast, went secretly away to seek out the Castle of the Golden Sun where a King’s daughter was imprisoned. He had heard that many attempts by others had failed, with three-and-twenty youths having already died miserably.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "protagonist_sets_out",
+            "description": "He caught at the idea of seeking out the Castle of the Golden Sun despite knowing the danger involved. After traveling for a long time without finding it, he stumbled upon a great forest and became lost in it.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "encounter_conflict_setup",
+            "description": "There, he encountered two giants who were quarreling over an old cap with special properties - it was a wishing-cap that allowed whoever wore it to wish themselves away wherever they liked instantly.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "youth_initiates_race",
+            "description": "The youth decided to resolve the dispute by suggesting a race. He put on the cap and went away, forgetting about the giants as he thought of the King’s daughter and the Castle of the Golden Sun. He walked continually onward until he sighed from the very bottom of his heart and cried out for help.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "protagonist_arrives_at_location",
+            "description": "Hardly had the words passed his lips than he was standing in front of the gate of the castle on a high mountain, having been transported there by the cap’s magic. He entered and went through all the rooms until he found the King’s daughter in the last one.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "true_form_revealed",
+            "description": "However, she appeared to him as an ugly old woman with an ashen-gray face, blear eyes, and red hair. The youth was shocked, but she told him that this was not her true form and handed him a mirror so he could see how beautiful she actually looked.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 3
+        },
+        {
+            "class_name": "call_for_help",
+            "instance_name": "obstacle_presented",
+            "description": "The King’s daughter explained that the only way to free her from her prison was for someone to get the crystal ball and hold it before the enchanter, which would destroy his power. However, many had attempted this and failed, including three-and-twenty youths who died miserably.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [
+                3
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "challenge_completed",
+            "description": "She told him that when he descended the mountain on which the castle stood, a wild bull would be waiting for him by a spring, and he must fight it to get the crystal ball. If he succeeded in killing the bull, a fiery bird would emerge from its body carrying a burning egg containing the crystal ball.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                2
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "confrontation_progress",
+            "description": "The youth went down to the spring and fought with the wild bull until he managed to kill it. Instantly, a fiery bird arose from its body, but was chased away by his brother, the eagle, who swooped down between the clouds and forced it towards the sea.",
+            "agents": [
+                0,
+                3
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "unforeseen_consequence_unleashed",
+            "description": "However, instead of falling into the sea, the egg dropped onto a fisherman’s hut on the shore, where it began to smoke and catch fire. The waves from the sea rose high as houses and streamed over the hut to extinguish the flames.",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "whale_extinguishes_fire",
+            "description": "The other brother, the whale, had swum up and driven the water high to help put out the fire. When the flames were extinguished, the youth found the egg and managed to take out the crystal ball unhurt because it was not yet melted.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                3
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "counteraction_initiated",
+            "description": "With the crystal ball in hand, the youth went back to the enchanter and held it before him, destroying his power and freeing the King’s daughter from her prison. The enchantress said that with this new power, he could also restore his brothers to their human form.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [
+                3
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "wedding",
+            "instance_name": "union_ceremony",
+            "description": "The youth hastened back to the King’s daughter and, when he entered the room, she was standing there in all her beauty. They joyfully exchanged rings as a symbol of their love and commitment to each other.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        }
+    ]
+}

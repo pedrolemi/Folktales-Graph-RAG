@@ -1,0 +1,199 @@
+{
+    "uri": "https://fairytalez.com/the-king-and-the-ju-ju-tree",
+    "nation": "nigerian",
+    "title": "The King and the Ju Ju Tree",
+    "has_genre": "legend",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "king_u_do_ubok_udom",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "king_s_daughter",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "sociable"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "hero_soulmate"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "idem_ju_ju_tree",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "spirit_man",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "villain_minion"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "skull",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "magical_helper"
+            },
+            "lives_in": 5
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 3,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 4,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "town",
+            "instance_name": "udo_ubok_udom_town"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "idem_ju_ju_tree"
+        },
+        {
+            "class_name": "house",
+            "instance_name": "king_house"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "spirit_land"
+        },
+        {
+            "class_name": "village",
+            "instance_name": "kingdom_village"
+        },
+        {
+            "class_name": "dwelling",
+            "instance_name": "fatting_house"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "ju_ju_tree"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "matchets"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "small_splinter_of_wood"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "baskets_of_flies"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "white_goat"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "white_chicken"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "piece_of_white_cloth"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "leaves_soaked_in_water"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "chalk"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "cow"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "pig"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "sheep"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "goat"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "dog"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "chicken"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "eggs"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "character_absence_setup",
+            "description": "Part 1: King Udo Ubok Udom's Absence from Home",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 2
+        }
+    ]
+}

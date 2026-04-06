@@ -1,0 +1,349 @@
+{
+    "uri": "https://fairytalez.com/hermod-and-hadvor",
+    "nation": "icelandic",
+    "title": "Hermod and Hadvor",
+    "has_genre": "legend",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "the_queen",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "cold",
+                "sociable"
+            ],
+            "name": "The Queen of Hetland the Good",
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "the_royal_witch"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "hermod",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "cold",
+                "sociable"
+            ],
+            "name": "Hermod",
+            "has_role": {
+                "class_name": "hero",
+                "instance_name": "the_royal_hero"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "hadvor",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "cold",
+                "sociable"
+            ],
+            "name": "Hadvor",
+            "has_role": {
+                "class_name": "hero",
+                "instance_name": "the_royal_hero"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "olof",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "cold",
+                "sociable"
+            ],
+            "name": "Olof",
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "the_royal_helper"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_king",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "cold",
+                "sociable"
+            ],
+            "name": "The King",
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "the_royal_villain"
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 0,
+            "other": 3,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 0,
+            "other": 4,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 1,
+            "other": 3,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 4,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 3,
+            "relationship": "friend"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "kingdom",
+            "instance_name": "hadvors_kingdom"
+        },
+        {
+            "class_name": "palace",
+            "instance_name": "hetlands_palace"
+        },
+        {
+            "class_name": "castle",
+            "instance_name": "hermod_castle"
+        },
+        {
+            "class_name": "forest",
+            "instance_name": "king_forest"
+        },
+        {
+            "class_name": "village",
+            "instance_name": "underworld_village"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "desert_island_settlement"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "lion_skin"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "boat"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "rope"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "clew"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "belt"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "introduce_main_characters",
+            "description": "Once upon a time there were a King and a Queen who had an only daughter, called Hadvor, who was fair and beautiful, and being an only child, was heir to the kingdom. The King and Queen had also a foster son, named Hermod, who was just about the same age as Hadvor, and was good-looking, as well as clever at most things.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "childhood_pledge",
+            "description": "Hermod and Hadvor often played together while they were children, and liked each other so much that while they were still young they secretly plighted their troth to each other.As time went on the Queen fell sick, and suspecting that it was her last illness, sent for the King to come to her.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "king_makes_promise",
+            "description": "When he came she told him that she had no long time to live, and therefore wished to ask one thing of him, which was, that if he married another wife he should promise to take no other one than the Queen of Hetland the Good. The King gave the promise, and thereafter the Queen died.",
+            "agents": [
+                0,
+                4
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "journey_through_obstacles",
+            "description": "Time went past, and the King, growing tired of living alone, fitted out his ship and sailed out to sea. As he sailed there came upon him so thick a mist that he altogether lost his bearings, but after long trouble he found land.",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "move",
+            "instance_name": "approach_encounter",
+            "description": "There he laid his ship to, and went on shore all alone. After walking for some time he came to a forest, into which he went a little way and stopped. Then he heard sweet music from a harp, and went in the direction of the sound until he came to a clearing, and there he saw three women, one of whom sat on a golden chair, and was beautifully and grandly dressed;",
+            "agents": [
+                0,
+                1,
+                2,
+                4
+            ],
+            "objects": [],
+            "place": 3
+        },
+        {
+            "class_name": "wedding",
+            "instance_name": "marriage_departure",
+            "description": "The King immediately asked her hand; she gladly received his proposal and accepted him at once. Thereafter they all set out, and made their way to the ship; and after that nothing is told of their voyage until the King reached his own country.",
+            "agents": [
+                0,
+                1,
+                2,
+                4
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "new_friendship_established",
+            "description": "Hermod and Hadvor took but little notice of the Queen and her daughter, but, on the other hand, Hadvor and the Queen’s maid, whose name was Olof, were very friendly, and Olof came often to visit Hadvor in her castle.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "queen_requests_marriage",
+            "description": "Before long the King went out to war, and no sooner was he away than the Queen came to talk with Hermod, and said that she wanted him to marry her daughter. Hermod told her straight and plain that he would not do so;",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "queen_imposes_punishment",
+            "description": "The Queen grew terribly angry, and said that in that case neither should he have Hadvor, for she would now lay this spell on him, that he should go to a desert island and there be a lion by day and a man by night.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                4
+            ],
+            "place": 5
+        },
+        {
+            "class_name": "move",
+            "instance_name": "spell_cast",
+            "description": "Hermod replied that he also laid a spell on the Queen and her daughter, that they would become a rat and a mouse, and fight with each other in the King’s hall.",
+            "agents": [
+                0,
+                1,
+                2,
+                4
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "characters_placed_in_situation",
+            "description": "The mound was all ready now, and the Giant laid in it, and into it Hadvor also had to go without being allowed to make any defence. After they were both left there everything happened just as Olof had said.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "move",
+            "instance_name": "successful_strait_crossing",
+            "description": "Hadvor now made her way down to the sea, to where she knew there was the shortest distance over to the island in which Hermod was. This strait she easily crossed, for the shoes kept her up.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 5
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "arrival_obstacle",
+            "description": "On reaching the island she found a sandy beach all along by the sea, and high cliffs above. Nor could she see any way to get up these, and so, being both sad at heart and tired with the long journey, she lay down and fell asleep.",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "move",
+            "instance_name": "recipient_advice",
+            "description": "As she slept she dreamed that a tall woman came to her and said, ‘I know that you are Princess Hadvor, and are searching for Hermod. He is on this island; but it will be hard for you to get to him if you have no one to help you’",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "counteraction_initiated",
+            "description": "The rope hung down from the cliff, and the clew and belt lay beside her. The belt she put on, the rope enabled her to climb up the cliff, and the clew led her on till she came to the mouth of a cave, which was not very big. She went into the cave, and saw there a low couch, under which she crept and lay down.When evening came she heard the noise of footsteps outside, and became aware that the lion had come to the mouth of the cave, and shook itself there, after which she heard a man coming towards the couch. She was sure this was Hermod, because she heard him speaking to himself about his own condition, and calling to mind Hadvor and other things in the old days. Hadvor made no sign, but waited till he had fallen asleep, and then crept out and burned the lion’s skin, which he had left outside. Then she went back into the cave and wakened Hermod, and they had a most joyful meeting.In the morning they talked over their plans, and were most at a loss to know how to get out of the island. Hadvor told Hermod her dream, and said she suspected there was some one in the island who would be able to help them. Hermod said he knew of a Witch there, who was very ready to help anyone, and that the only plan was to go to her. So they went to the Witch’s cave, and found her there with her fifteen young sons, and asked her to help them to get to the mainland.‘There are other things easier than that,’ said she, ‘for the Giant that was buried will be waiting for you, and will attack you on the way, as he has turned himself into a big whale’...",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [
+                2,
+                3
+            ],
+            "place": 5
+        }
+    ]
+}

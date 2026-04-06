@@ -1,0 +1,273 @@
+{
+    "uri": "https://fairytalez.com/lidushka-and-the-water-demons-wife",
+    "nation": "czechoslovak",
+    "title": "Lidushka and the Water Demon's Wife",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "lidushka",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "joyful",
+                "active"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 5
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "frog_husband",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "water_demon",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 3
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "knows"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "river",
+            "instance_name": "rivulet"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "frog_house"
+        },
+        {
+            "class_name": "tower",
+            "instance_name": "dam"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "water"
+        },
+        {
+            "class_name": "dwelling",
+            "instance_name": "lidushkas_home"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "nearby_village"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "rivulet_water"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "little_jars"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "water_demon_flowers"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "protagonist_encounters_anomalous_object",
+            "description": "In a certain place lived a young housewife named Lidushka. One day, as she was washing linen in a rivulet, a large, swollen frog swam towards her, looking so ugly that Lidushka jumped back a pace or two.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "fight",
+            "instance_name": "confrontation_setup",
+            "description": "The ugly-looking frog approached nearly to the spot where Lidushka had just been washing, spread its legs out on the top of the water, and opening its mouth as if it wished to say something, stood perfectly still. 'You great, fat frog,' said Lidushka to herself; 'what do you want here, and why do you open your mouth at me so?'",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "linen_thrown",
+            "description": "She then threw a piece of linen that she happened to have in her hand at the frog, wishing to drive it away that she might go on with her washing. The frog dived, and before Lidushka had time to look about her, it reappeared at the other side of the water, and began swimming directly towards her.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "persistent_interference",
+            "description": "Lidushka again drove it away; but the frog would persist in swimming towards her, opening its mouth all the time; it would not be driven away, but continued to interrupt her in her work. 'Go away, you great, fat thing!' cried Lidushka at last, quite angrily.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "frog_disappears",
+            "description": "The frog croaked, 'Very good, very good! Then it disappeared under the water, and disturbed Lidushka no more at her washing.'",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_encounter",
+            "description": "Not long afterwards, Lidushka came again to the rivulet to wash her linen at the usual place, when suddenly, the same frog she had before seen, only that it was much thinner now, swam towards her.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "request_for_promised_role",
+            "description": "'I have got my children now,' croaked the frog, 'and have come to ask you to be their godmother, as you promised.' Lidushka remembered that she had said, not long before, that if the frog had a little one, and would let her know, she would be its godmother.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "guidance_progression",
+            "description": "The promised godmother followed it sorrowfully along the bank of the rivulet. The frog swam on until it came to a dam, when it stopped and croaked, 'Fear not, fear not! Remove that stone, and under it you will see a flight of stairs; they will lead you down to my house.'",
+            "agents": [
+                1
+            ],
+            "objects": [
+                0,
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "followed_advice",
+            "description": "Having thus croaked, the frog disappeared under water, and Lidushka saw no other way to get out of her trouble than simply to do what the frog told her. She removed the stone, and saw that there was really a flight of stairs leading under the dam.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "hero_encounters_environment",
+            "description": "They were most wonderful stairs; neither of wood nor of stone, but as if made of the purest crystal, clear and transparent, like layers of water placed one below the other. Lidushka went timidly down a few steps, when the frog appeared hopping and croaking joyfully before her.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "approaching_setting",
+            "description": "Lidushka, without further hesitation, descended the remainder of the beautiful steps. They soon reached the object they had in view—the frog’s house. It also was built entirely of crystal water.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                2
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "resolution_function",
+            "instance_name": "resolution_celebration",
+            "description": "The frog, full of joy, hopped about Lidushka, and took her to her little ones. When the ceremony was over, Lidushka, in fulfilment of her promise, having taken her part in it as a godmother, a splendid entertainment followed.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "arrival_at_food",
+            "description": "There were various courses—boiled and pickled, roast and fried—but they all consisted of fish: the finest carp, jack, chad, trout, whiting, perch, and many other fish which Lidushka did not know even by name. She was amazed at the sight of all this.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "initial_setting_discovery",
+            "description": "The dinner at an end, she took a walk about the house to see everything more closely. In the course of her walk, she came to a small room, which looked like the kitchen.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "jar_lifted",
+            "description": "It was full of long shelves, and on the shelves stood rows of little jars. Lidushka was much surprised when she noticed that all the jars stood upside down. She was curious to know what was under them, and lifted one up.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 4
+        }
+    ]
+}

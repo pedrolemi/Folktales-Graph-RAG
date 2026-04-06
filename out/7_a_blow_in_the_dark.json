@@ -1,0 +1,278 @@
+{
+    "uri": "https://fairytalez.com/a-blow-in-the-dark",
+    "nation": "north_american_native",
+    "title": "A Blow in the Dark",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "tory_manheim",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 4
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "daughter_of_tory_manheim",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "hero",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 4
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "washington",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "eager"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "hero"
+            },
+            "lives_in": 2
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "farmhouse",
+            "instance_name": "manheim_farm"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "valley_forge_village"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "american_camp_barracks"
+        },
+        {
+            "class_name": "dwelling",
+            "instance_name": "manheim_house"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "tory_manheim_house"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "howes_settlement"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "candle"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "snow"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "villainy",
+            "instance_name": "villainous_warning",
+            "description": "The Tory Manheim sits brooding in his farmhouse near Valley Forge, with his daughter suffering from fever after secretly visiting the American camp to warn her lover, Washington, about an assassination attempt.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "call_for_help",
+            "instance_name": "warning_of_imminent_threat",
+            "description": "Manheim's daughter is worn and ill, having brought on a fever by exposure during her secret journey to the American camp, where she warned Washington of another attempt on his life.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "intersection_of_paths",
+            "description": "Washington must pass through Manheim's house on his return from a distant settlement; the Tory knows nothing about this and remains unaware of his daughter's actions.",
+            "agents": [
+                2
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "anticipation_rising",
+            "description": "The noise in the next room increases as the hours go by, but it suddenly hushes when a knock at the door is heard, and Manheim trembles with apprehension.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_arrives",
+            "description": "A tall, grave man enters the farmhouse; he is Washington, who has been riding far and asks for food and shelter until the storm clears up.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "surveillance_established",
+            "description": "Manheim sends his daughter to get refreshments while keeping an eye on Washington, but she fails to sign or speak to him as her father remains in sight and hearing.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "character_isolated",
+            "description": "After finishing his meal, Washington requests to be left alone for a while; he is then conducted to the room on the left of the landing by Manheim's daughter.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "setup_preparation",
+            "description": "Manheim holds the candle at the foot of the stairs until he sees Washington enter the room, then bids his daughter go to her own bed in the chamber on the right of the landing.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 3
+        },
+        {
+            "class_name": "move",
+            "instance_name": "planning_move",
+            "description": "There is busy whispering in the room below after that, and the dice box is shaken to see whose turn it will be to steal up those stairs and stab Washington in his sleep.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_secret_movement",
+            "description": "An hour passes, and all appear to be at rest; however, Manheim creeps upon his prey and softly enters the chamber on the left.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "villain_gains_information",
+            "instance_name": "critical_information_revealed",
+            "description": "The men listening at the foot of the stair hear a moan, and Manheim hurries back with a shout of gladness, believing Washington is no more.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "helper_move",
+            "instance_name": "departure_gratitude_transition",
+            "description": "Glasses are filled in celebration, but a step is heard on the stairs as Washington stands before them, thanking Manheim for his shelter and asking that his horse be brought to the door.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "shocking_discovery",
+            "description": "Manheim stares in shock, then rushes aloft and flings open the door of the room on the left, where he finds his daughter's lifeless body dabbled with red.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "separation_event",
+            "description": "The name of father is one that Manheim will never hear again in this world; he sinks to the floor as the candle falls from his hand.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "hero_departure",
+            "description": "Outside is heard the tramp of a horse, which belongs to Washington, who rides away unaware of the peril he has passed and the sacrifice made to save him.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 4
+        }
+    ]
+}

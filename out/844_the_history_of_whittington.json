@@ -1,0 +1,3602 @@
+{
+    "uri": "https://fairytalez.com/the-history-of-whittington",
+    "nation": "english",
+    "title": "The History of Whittington",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "whittington",
+            "age_category": "children",
+            "gender": "male",
+            "has_personality": [
+                "impulsive",
+                "depressive"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "whittington"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "wagoner",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "wagoner"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "fitzwarren",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "fitzwarren"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "cook",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "cook"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "alice",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "alice"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "factor",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "factor"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "captain",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "captain"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "king",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "king"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "queen",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "queen"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "henry_v",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "henry_v"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "sheriff",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "sheriff"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "aldermen",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "aldermen"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "stationer",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "stationer"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "artist",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "artist"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "poor_citizen",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "poor_citizen"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "governor",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "governor"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "nurse",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "nurse"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "student",
+            "age_category": "children",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "student"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "criminal",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "criminal"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "monk",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "monk"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "doctor",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "doctor"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "barber",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "barber"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "baker",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "baker"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "butcher",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "butcher"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "policeman",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "policeman"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "teacher",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "teacher"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "judge",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "judge"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "priest",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "priest"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "bailiff",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "bailiff"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "steward",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "steward"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "porter",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "porter"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "servant",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "servant"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "nobleman",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "nobleman"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "mayor",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "mayor"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "alderman",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "alderman"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "sheriff",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "sheriff"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "judge",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "judge"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "notary",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "notary"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "lawyer",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "lawyer"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "accountant",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "accountant"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "banker",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "banker"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "merchant",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "merchant"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "farmer",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "farmer"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "laborer",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "laborer"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "servant",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "servant"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "nobleman",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "nobleman"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "mayor",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "mayor"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "alderman",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "alderman"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "sheriff",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "sheriff"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "judge",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "judge"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "notary",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "notary"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "lawyer",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "lawyer"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "accountant",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "accountant"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "banker",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "banker"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "merchant",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "merchant"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "farmer",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "farmer"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "laborer",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "laborer"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "servant",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "servant"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "nobleman",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "nobleman"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "mayor",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "mayor"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "alderman",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "alderman"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "sheriff",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "sheriff"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "judge",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "judge"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "notary",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "notary"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "lawyer",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "lawyer"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "accountant",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "accountant"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "banker",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "banker"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "merchant",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "merchant"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "farmer",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "farmer"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "laborer",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "laborer"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "servant",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "servant"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "nobleman",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "nobleman"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "mayor",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "mayor"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "alderman",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "alderman"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "sheriff",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "sheriff"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "judge",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "judge"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "notary",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "notary"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "lawyer",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "lawyer"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "accountant",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "accountant"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "banker",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "banker"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "merchant",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "merchant"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "farmer",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "farmer"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "laborer",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "laborer"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "servant",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "servant"
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "friend"
+        },
+        {
+            "agent": 0,
+            "other": 5,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 8,
+            "relationship": "friend"
+        },
+        {
+            "agent": 0,
+            "other": 21,
+            "relationship": "friend"
+        },
+        {
+            "agent": 0,
+            "other": 31,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 35,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 41,
+            "relationship": "friend"
+        },
+        {
+            "agent": 0,
+            "other": 42,
+            "relationship": "friend"
+        },
+        {
+            "agent": 0,
+            "other": 44,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 45,
+            "relationship": "friend"
+        },
+        {
+            "agent": 0,
+            "other": 47,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 48,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 0,
+            "other": 56,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 0,
+            "other": 60,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 61,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 70,
+            "relationship": "friend"
+        },
+        {
+            "agent": 1,
+            "other": 6,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 13,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 14,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 30,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 52,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 55,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 56,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 57,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 60,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 66,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 68,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 69,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 70,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 83,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 9,
+            "relationship": "friend"
+        },
+        {
+            "agent": 2,
+            "other": 13,
+            "relationship": "friend"
+        },
+        {
+            "agent": 2,
+            "other": 15,
+            "relationship": "friend"
+        },
+        {
+            "agent": 2,
+            "other": 38,
+            "relationship": "friend"
+        },
+        {
+            "agent": 2,
+            "other": 41,
+            "relationship": "friend"
+        },
+        {
+            "agent": 2,
+            "other": 50,
+            "relationship": "friend"
+        },
+        {
+            "agent": 2,
+            "other": 54,
+            "relationship": "friend"
+        },
+        {
+            "agent": 2,
+            "other": 56,
+            "relationship": "friend"
+        },
+        {
+            "agent": 2,
+            "other": 65,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 2,
+            "other": 67,
+            "relationship": "friend"
+        },
+        {
+            "agent": 2,
+            "other": 74,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 2,
+            "other": 81,
+            "relationship": "friend"
+        },
+        {
+            "agent": 3,
+            "other": 4,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 13,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 16,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 18,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 21,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 24,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 25,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 26,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 27,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 28,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 30,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 36,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 39,
+            "relationship": "knows"
+        },
+        {
+            "agent": 3,
+            "other": 42,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 43,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 46,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 56,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 58,
+            "relationship": "friend"
+        },
+        {
+            "agent": 3,
+            "other": 63,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 65,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 72,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 75,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 4,
+            "other": 6,
+            "relationship": "knows"
+        },
+        {
+            "agent": 4,
+            "other": 7,
+            "relationship": "friend"
+        },
+        {
+            "agent": 4,
+            "other": 8,
+            "relationship": "knows"
+        },
+        {
+            "agent": 4,
+            "other": 13,
+            "relationship": "friend"
+        },
+        {
+            "agent": 4,
+            "other": 19,
+            "relationship": "friend"
+        },
+        {
+            "agent": 4,
+            "other": 20,
+            "relationship": "friend"
+        },
+        {
+            "agent": 4,
+            "other": 28,
+            "relationship": "friend"
+        },
+        {
+            "agent": 4,
+            "other": 33,
+            "relationship": "friend"
+        },
+        {
+            "agent": 4,
+            "other": 41,
+            "relationship": "friend"
+        },
+        {
+            "agent": 4,
+            "other": 42,
+            "relationship": "friend"
+        },
+        {
+            "agent": 4,
+            "other": 46,
+            "relationship": "friend"
+        },
+        {
+            "agent": 4,
+            "other": 47,
+            "relationship": "friend"
+        },
+        {
+            "agent": 4,
+            "other": 51,
+            "relationship": "friend"
+        },
+        {
+            "agent": 4,
+            "other": 52,
+            "relationship": "friend"
+        },
+        {
+            "agent": 4,
+            "other": 55,
+            "relationship": "friend"
+        },
+        {
+            "agent": 4,
+            "other": 56,
+            "relationship": "friend"
+        },
+        {
+            "agent": 4,
+            "other": 61,
+            "relationship": "friend"
+        },
+        {
+            "agent": 4,
+            "other": 63,
+            "relationship": "friend"
+        },
+        {
+            "agent": 4,
+            "other": 71,
+            "relationship": "friend"
+        },
+        {
+            "agent": 4,
+            "other": 73,
+            "relationship": "friend"
+        },
+        {
+            "agent": 4,
+            "other": 75,
+            "relationship": "friend"
+        },
+        {
+            "agent": 4,
+            "other": 76,
+            "relationship": "friend"
+        },
+        {
+            "agent": 4,
+            "other": 81,
+            "relationship": "friend"
+        },
+        {
+            "agent": 4,
+            "other": 82,
+            "relationship": "friend"
+        },
+        {
+            "agent": 5,
+            "other": 6,
+            "relationship": "knows"
+        },
+        {
+            "agent": 5,
+            "other": 15,
+            "relationship": "knows"
+        },
+        {
+            "agent": 5,
+            "other": 17,
+            "relationship": "knows"
+        },
+        {
+            "agent": 5,
+            "other": 32,
+            "relationship": "knows"
+        },
+        {
+            "agent": 5,
+            "other": 33,
+            "relationship": "knows"
+        },
+        {
+            "agent": 5,
+            "other": 34,
+            "relationship": "knows"
+        },
+        {
+            "agent": 5,
+            "other": 41,
+            "relationship": "knows"
+        },
+        {
+            "agent": 5,
+            "other": 47,
+            "relationship": "knows"
+        },
+        {
+            "agent": 5,
+            "other": 48,
+            "relationship": "knows"
+        },
+        {
+            "agent": 5,
+            "other": 58,
+            "relationship": "knows"
+        },
+        {
+            "agent": 5,
+            "other": 67,
+            "relationship": "knows"
+        },
+        {
+            "agent": 5,
+            "other": 79,
+            "relationship": "knows"
+        },
+        {
+            "agent": 5,
+            "other": 80,
+            "relationship": "knows"
+        },
+        {
+            "agent": 5,
+            "other": 81,
+            "relationship": "knows"
+        },
+        {
+            "agent": 6,
+            "other": 11,
+            "relationship": "friend"
+        },
+        {
+            "agent": 6,
+            "other": 13,
+            "relationship": "knows"
+        },
+        {
+            "agent": 6,
+            "other": 29,
+            "relationship": "knows"
+        },
+        {
+            "agent": 6,
+            "other": 32,
+            "relationship": "knows"
+        },
+        {
+            "agent": 6,
+            "other": 37,
+            "relationship": "knows"
+        },
+        {
+            "agent": 6,
+            "other": 50,
+            "relationship": "knows"
+        },
+        {
+            "agent": 6,
+            "other": 60,
+            "relationship": "knows"
+        },
+        {
+            "agent": 6,
+            "other": 70,
+            "relationship": "knows"
+        },
+        {
+            "agent": 6,
+            "other": 72,
+            "relationship": "knows"
+        },
+        {
+            "agent": 6,
+            "other": 78,
+            "relationship": "knows"
+        },
+        {
+            "agent": 6,
+            "other": 81,
+            "relationship": "knows"
+        },
+        {
+            "agent": 7,
+            "other": 9,
+            "relationship": "knows"
+        },
+        {
+            "agent": 7,
+            "other": 13,
+            "relationship": "friend"
+        },
+        {
+            "agent": 7,
+            "other": 33,
+            "relationship": "friend"
+        },
+        {
+            "agent": 7,
+            "other": 54,
+            "relationship": "knows"
+        },
+        {
+            "agent": 7,
+            "other": 70,
+            "relationship": "knows"
+        },
+        {
+            "agent": 7,
+            "other": 80,
+            "relationship": "friend"
+        },
+        {
+            "agent": 8,
+            "other": 11,
+            "relationship": "knows"
+        },
+        {
+            "agent": 8,
+            "other": 13,
+            "relationship": "knows"
+        },
+        {
+            "agent": 8,
+            "other": 26,
+            "relationship": "knows"
+        },
+        {
+            "agent": 8,
+            "other": 43,
+            "relationship": "friend"
+        },
+        {
+            "agent": 8,
+            "other": 44,
+            "relationship": "knows"
+        },
+        {
+            "agent": 8,
+            "other": 54,
+            "relationship": "knows"
+        },
+        {
+            "agent": 8,
+            "other": 59,
+            "relationship": "knows"
+        },
+        {
+            "agent": 8,
+            "other": 60,
+            "relationship": "knows"
+        },
+        {
+            "agent": 8,
+            "other": 67,
+            "relationship": "knows"
+        },
+        {
+            "agent": 8,
+            "other": 81,
+            "relationship": "knows"
+        },
+        {
+            "agent": 8,
+            "other": 83,
+            "relationship": "friend"
+        },
+        {
+            "agent": 9,
+            "other": 10,
+            "relationship": "knows"
+        },
+        {
+            "agent": 9,
+            "other": 11,
+            "relationship": "knows"
+        },
+        {
+            "agent": 9,
+            "other": 14,
+            "relationship": "knows"
+        },
+        {
+            "agent": 9,
+            "other": 22,
+            "relationship": "knows"
+        },
+        {
+            "agent": 9,
+            "other": 30,
+            "relationship": "friend"
+        },
+        {
+            "agent": 9,
+            "other": 31,
+            "relationship": "knows"
+        },
+        {
+            "agent": 9,
+            "other": 33,
+            "relationship": "knows"
+        },
+        {
+            "agent": 9,
+            "other": 35,
+            "relationship": "knows"
+        },
+        {
+            "agent": 9,
+            "other": 36,
+            "relationship": "knows"
+        },
+        {
+            "agent": 9,
+            "other": 37,
+            "relationship": "knows"
+        },
+        {
+            "agent": 9,
+            "other": 38,
+            "relationship": "knows"
+        },
+        {
+            "agent": 9,
+            "other": 49,
+            "relationship": "friend"
+        },
+        {
+            "agent": 9,
+            "other": 53,
+            "relationship": "friend"
+        },
+        {
+            "agent": 9,
+            "other": 57,
+            "relationship": "knows"
+        },
+        {
+            "agent": 9,
+            "other": 60,
+            "relationship": "friend"
+        },
+        {
+            "agent": 9,
+            "other": 70,
+            "relationship": "knows"
+        },
+        {
+            "agent": 9,
+            "other": 73,
+            "relationship": "knows"
+        },
+        {
+            "agent": 9,
+            "other": 74,
+            "relationship": "friend"
+        },
+        {
+            "agent": 9,
+            "other": 75,
+            "relationship": "knows"
+        },
+        {
+            "agent": 9,
+            "other": 77,
+            "relationship": "knows"
+        },
+        {
+            "agent": 9,
+            "other": 79,
+            "relationship": "knows"
+        },
+        {
+            "agent": 9,
+            "other": 80,
+            "relationship": "friend"
+        },
+        {
+            "agent": 10,
+            "other": 11,
+            "relationship": "knows"
+        },
+        {
+            "agent": 10,
+            "other": 12,
+            "relationship": "knows"
+        },
+        {
+            "agent": 10,
+            "other": 17,
+            "relationship": "knows"
+        },
+        {
+            "agent": 10,
+            "other": 30,
+            "relationship": "knows"
+        },
+        {
+            "agent": 10,
+            "other": 33,
+            "relationship": "knows"
+        },
+        {
+            "agent": 10,
+            "other": 42,
+            "relationship": "knows"
+        },
+        {
+            "agent": 10,
+            "other": 44,
+            "relationship": "knows"
+        },
+        {
+            "agent": 10,
+            "other": 45,
+            "relationship": "knows"
+        },
+        {
+            "agent": 10,
+            "other": 46,
+            "relationship": "knows"
+        },
+        {
+            "agent": 10,
+            "other": 47,
+            "relationship": "knows"
+        },
+        {
+            "agent": 10,
+            "other": 49,
+            "relationship": "knows"
+        },
+        {
+            "agent": 10,
+            "other": 58,
+            "relationship": "knows"
+        },
+        {
+            "agent": 10,
+            "other": 59,
+            "relationship": "knows"
+        },
+        {
+            "agent": 10,
+            "other": 60,
+            "relationship": "knows"
+        },
+        {
+            "agent": 10,
+            "other": 71,
+            "relationship": "knows"
+        },
+        {
+            "agent": 10,
+            "other": 72,
+            "relationship": "knows"
+        },
+        {
+            "agent": 10,
+            "other": 73,
+            "relationship": "knows"
+        },
+        {
+            "agent": 10,
+            "other": 77,
+            "relationship": "knows"
+        },
+        {
+            "agent": 11,
+            "other": 13,
+            "relationship": "knows"
+        },
+        {
+            "agent": 11,
+            "other": 14,
+            "relationship": "knows"
+        },
+        {
+            "agent": 11,
+            "other": 30,
+            "relationship": "knows"
+        },
+        {
+            "agent": 11,
+            "other": 35,
+            "relationship": "knows"
+        },
+        {
+            "agent": 11,
+            "other": 41,
+            "relationship": "knows"
+        },
+        {
+            "agent": 11,
+            "other": 46,
+            "relationship": "knows"
+        },
+        {
+            "agent": 11,
+            "other": 48,
+            "relationship": "knows"
+        },
+        {
+            "agent": 11,
+            "other": 53,
+            "relationship": "knows"
+        },
+        {
+            "agent": 11,
+            "other": 54,
+            "relationship": "friend"
+        },
+        {
+            "agent": 11,
+            "other": 57,
+            "relationship": "knows"
+        },
+        {
+            "agent": 11,
+            "other": 59,
+            "relationship": "knows"
+        },
+        {
+            "agent": 11,
+            "other": 60,
+            "relationship": "knows"
+        },
+        {
+            "agent": 11,
+            "other": 61,
+            "relationship": "knows"
+        },
+        {
+            "agent": 11,
+            "other": 69,
+            "relationship": "knows"
+        },
+        {
+            "agent": 11,
+            "other": 72,
+            "relationship": "knows"
+        },
+        {
+            "agent": 11,
+            "other": 74,
+            "relationship": "knows"
+        },
+        {
+            "agent": 11,
+            "other": 77,
+            "relationship": "knows"
+        },
+        {
+            "agent": 11,
+            "other": 78,
+            "relationship": "knows"
+        },
+        {
+            "agent": 11,
+            "other": 79,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 12,
+            "other": 13,
+            "relationship": "knows"
+        },
+        {
+            "agent": 12,
+            "other": 18,
+            "relationship": "friend"
+        },
+        {
+            "agent": 12,
+            "other": 20,
+            "relationship": "knows"
+        },
+        {
+            "agent": 12,
+            "other": 26,
+            "relationship": "knows"
+        },
+        {
+            "agent": 12,
+            "other": 28,
+            "relationship": "knows"
+        },
+        {
+            "agent": 12,
+            "other": 33,
+            "relationship": "friend"
+        },
+        {
+            "agent": 12,
+            "other": 34,
+            "relationship": "friend"
+        },
+        {
+            "agent": 12,
+            "other": 40,
+            "relationship": "knows"
+        },
+        {
+            "agent": 12,
+            "other": 42,
+            "relationship": "knows"
+        },
+        {
+            "agent": 12,
+            "other": 45,
+            "relationship": "knows"
+        },
+        {
+            "agent": 12,
+            "other": 46,
+            "relationship": "knows"
+        },
+        {
+            "agent": 12,
+            "other": 47,
+            "relationship": "knows"
+        },
+        {
+            "agent": 12,
+            "other": 51,
+            "relationship": "knows"
+        },
+        {
+            "agent": 12,
+            "other": 52,
+            "relationship": "friend"
+        },
+        {
+            "agent": 12,
+            "other": 54,
+            "relationship": "knows"
+        },
+        {
+            "agent": 12,
+            "other": 60,
+            "relationship": "friend"
+        },
+        {
+            "agent": 12,
+            "other": 61,
+            "relationship": "knows"
+        },
+        {
+            "agent": 12,
+            "other": 62,
+            "relationship": "knows"
+        },
+        {
+            "agent": 12,
+            "other": 68,
+            "relationship": "knows"
+        },
+        {
+            "agent": 12,
+            "other": 71,
+            "relationship": "knows"
+        },
+        {
+            "agent": 12,
+            "other": 72,
+            "relationship": "knows"
+        },
+        {
+            "agent": 12,
+            "other": 73,
+            "relationship": "knows"
+        },
+        {
+            "agent": 12,
+            "other": 82,
+            "relationship": "knows"
+        },
+        {
+            "agent": 13,
+            "other": 21,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 13,
+            "other": 26,
+            "relationship": "knows"
+        },
+        {
+            "agent": 13,
+            "other": 28,
+            "relationship": "friend"
+        },
+        {
+            "agent": 13,
+            "other": 32,
+            "relationship": "friend"
+        },
+        {
+            "agent": 13,
+            "other": 46,
+            "relationship": "friend"
+        },
+        {
+            "agent": 13,
+            "other": 73,
+            "relationship": "knows"
+        },
+        {
+            "agent": 13,
+            "other": 74,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 14,
+            "other": 19,
+            "relationship": "friend"
+        },
+        {
+            "agent": 14,
+            "other": 25,
+            "relationship": "friend"
+        },
+        {
+            "agent": 14,
+            "other": 54,
+            "relationship": "friend"
+        },
+        {
+            "agent": 14,
+            "other": 61,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 14,
+            "other": 74,
+            "relationship": "friend"
+        },
+        {
+            "agent": 14,
+            "other": 80,
+            "relationship": "friend"
+        },
+        {
+            "agent": 15,
+            "other": 18,
+            "relationship": "friend"
+        },
+        {
+            "agent": 15,
+            "other": 37,
+            "relationship": "friend"
+        },
+        {
+            "agent": 15,
+            "other": 38,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 15,
+            "other": 46,
+            "relationship": "friend"
+        },
+        {
+            "agent": 15,
+            "other": 72,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 15,
+            "other": 74,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 16,
+            "other": 67,
+            "relationship": "friend"
+        },
+        {
+            "agent": 17,
+            "other": 18,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 17,
+            "other": 29,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 17,
+            "other": 36,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 17,
+            "other": 42,
+            "relationship": "friend"
+        },
+        {
+            "agent": 17,
+            "other": 53,
+            "relationship": "friend"
+        },
+        {
+            "agent": 17,
+            "other": 54,
+            "relationship": "friend"
+        },
+        {
+            "agent": 17,
+            "other": 77,
+            "relationship": "friend"
+        },
+        {
+            "agent": 17,
+            "other": 78,
+            "relationship": "friend"
+        },
+        {
+            "agent": 17,
+            "other": 82,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 18,
+            "other": 34,
+            "relationship": "knows"
+        },
+        {
+            "agent": 18,
+            "other": 35,
+            "relationship": "friend"
+        },
+        {
+            "agent": 18,
+            "other": 54,
+            "relationship": "friend"
+        },
+        {
+            "agent": 18,
+            "other": 58,
+            "relationship": "friend"
+        },
+        {
+            "agent": 18,
+            "other": 68,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 18,
+            "other": 71,
+            "relationship": "friend"
+        },
+        {
+            "agent": 18,
+            "other": 80,
+            "relationship": "friend"
+        },
+        {
+            "agent": 20,
+            "other": 44,
+            "relationship": "knows"
+        },
+        {
+            "agent": 20,
+            "other": 49,
+            "relationship": "friend"
+        },
+        {
+            "agent": 20,
+            "other": 50,
+            "relationship": "friend"
+        },
+        {
+            "agent": 22,
+            "other": 69,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 22,
+            "other": 70,
+            "relationship": "knows"
+        },
+        {
+            "agent": 23,
+            "other": 48,
+            "relationship": "knows"
+        },
+        {
+            "agent": 23,
+            "other": 73,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 24,
+            "other": 44,
+            "relationship": "friend"
+        },
+        {
+            "agent": 24,
+            "other": 54,
+            "relationship": "friend"
+        },
+        {
+            "agent": 25,
+            "other": 27,
+            "relationship": "friend"
+        },
+        {
+            "agent": 25,
+            "other": 32,
+            "relationship": "friend"
+        },
+        {
+            "agent": 25,
+            "other": 33,
+            "relationship": "friend"
+        },
+        {
+            "agent": 25,
+            "other": 37,
+            "relationship": "friend"
+        },
+        {
+            "agent": 25,
+            "other": 42,
+            "relationship": "friend"
+        },
+        {
+            "agent": 25,
+            "other": 52,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 25,
+            "other": 60,
+            "relationship": "knows"
+        },
+        {
+            "agent": 25,
+            "other": 64,
+            "relationship": "friend"
+        },
+        {
+            "agent": 26,
+            "other": 44,
+            "relationship": "friend"
+        },
+        {
+            "agent": 26,
+            "other": 54,
+            "relationship": "friend"
+        },
+        {
+            "agent": 27,
+            "other": 78,
+            "relationship": "friend"
+        },
+        {
+            "agent": 28,
+            "other": 71,
+            "relationship": "knows"
+        },
+        {
+            "agent": 29,
+            "other": 82,
+            "relationship": "knows"
+        },
+        {
+            "agent": 30,
+            "other": 38,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 30,
+            "other": 44,
+            "relationship": "knows"
+        },
+        {
+            "agent": 30,
+            "other": 59,
+            "relationship": "friend"
+        },
+        {
+            "agent": 30,
+            "other": 61,
+            "relationship": "knows"
+        },
+        {
+            "agent": 31,
+            "other": 44,
+            "relationship": "knows"
+        },
+        {
+            "agent": 31,
+            "other": 49,
+            "relationship": "friend"
+        },
+        {
+            "agent": 31,
+            "other": 57,
+            "relationship": "knows"
+        },
+        {
+            "agent": 31,
+            "other": 60,
+            "relationship": "friend"
+        },
+        {
+            "agent": 31,
+            "other": 66,
+            "relationship": "friend"
+        },
+        {
+            "agent": 31,
+            "other": 70,
+            "relationship": "knows"
+        },
+        {
+            "agent": 31,
+            "other": 71,
+            "relationship": "friend"
+        },
+        {
+            "agent": 31,
+            "other": 74,
+            "relationship": "friend"
+        },
+        {
+            "agent": 31,
+            "other": 76,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 31,
+            "other": 81,
+            "relationship": "friend"
+        },
+        {
+            "agent": 31,
+            "other": 83,
+            "relationship": "knows"
+        },
+        {
+            "agent": 32,
+            "other": 46,
+            "relationship": "friend"
+        },
+        {
+            "agent": 32,
+            "other": 74,
+            "relationship": "knows"
+        },
+        {
+            "agent": 33,
+            "other": 44,
+            "relationship": "friend"
+        },
+        {
+            "agent": 33,
+            "other": 48,
+            "relationship": "knows"
+        },
+        {
+            "agent": 33,
+            "other": 58,
+            "relationship": "friend"
+        },
+        {
+            "agent": 33,
+            "other": 61,
+            "relationship": "knows"
+        },
+        {
+            "agent": 33,
+            "other": 74,
+            "relationship": "knows"
+        },
+        {
+            "agent": 34,
+            "other": 35,
+            "relationship": "knows"
+        },
+        {
+            "agent": 34,
+            "other": 45,
+            "relationship": "knows"
+        },
+        {
+            "agent": 34,
+            "other": 48,
+            "relationship": "knows"
+        },
+        {
+            "agent": 34,
+            "other": 56,
+            "relationship": "friend"
+        },
+        {
+            "agent": 34,
+            "other": 58,
+            "relationship": "knows"
+        },
+        {
+            "agent": 34,
+            "other": 59,
+            "relationship": "knows"
+        },
+        {
+            "agent": 34,
+            "other": 61,
+            "relationship": "knows"
+        },
+        {
+            "agent": 34,
+            "other": 67,
+            "relationship": "knows"
+        },
+        {
+            "agent": 34,
+            "other": 72,
+            "relationship": "knows"
+        },
+        {
+            "agent": 35,
+            "other": 43,
+            "relationship": "knows"
+        },
+        {
+            "agent": 35,
+            "other": 45,
+            "relationship": "knows"
+        },
+        {
+            "agent": 35,
+            "other": 48,
+            "relationship": "knows"
+        },
+        {
+            "agent": 35,
+            "other": 51,
+            "relationship": "knows"
+        },
+        {
+            "agent": 35,
+            "other": 54,
+            "relationship": "friend"
+        },
+        {
+            "agent": 35,
+            "other": 59,
+            "relationship": "knows"
+        },
+        {
+            "agent": 35,
+            "other": 61,
+            "relationship": "knows"
+        },
+        {
+            "agent": 35,
+            "other": 62,
+            "relationship": "knows"
+        },
+        {
+            "agent": 35,
+            "other": 63,
+            "relationship": "knows"
+        },
+        {
+            "agent": 35,
+            "other": 66,
+            "relationship": "knows"
+        },
+        {
+            "agent": 35,
+            "other": 68,
+            "relationship": "knows"
+        },
+        {
+            "agent": 35,
+            "other": 72,
+            "relationship": "knows"
+        },
+        {
+            "agent": 35,
+            "other": 73,
+            "relationship": "knows"
+        },
+        {
+            "agent": 35,
+            "other": 76,
+            "relationship": "knows"
+        },
+        {
+            "agent": 35,
+            "other": 80,
+            "relationship": "knows"
+        },
+        {
+            "agent": 35,
+            "other": 83,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 36,
+            "other": 44,
+            "relationship": "friend"
+        },
+        {
+            "agent": 36,
+            "other": 45,
+            "relationship": "friend"
+        },
+        {
+            "agent": 36,
+            "other": 48,
+            "relationship": "knows"
+        },
+        {
+            "agent": 36,
+            "other": 69,
+            "relationship": "friend"
+        },
+        {
+            "agent": 36,
+            "other": 75,
+            "relationship": "friend"
+        },
+        {
+            "agent": 37,
+            "other": 56,
+            "relationship": "knows"
+        },
+        {
+            "agent": 38,
+            "other": 47,
+            "relationship": "knows"
+        },
+        {
+            "agent": 38,
+            "other": 48,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 38,
+            "other": 58,
+            "relationship": "friend"
+        },
+        {
+            "agent": 38,
+            "other": 80,
+            "relationship": "friend"
+        },
+        {
+            "agent": 38,
+            "other": 83,
+            "relationship": "knows"
+        },
+        {
+            "agent": 39,
+            "other": 45,
+            "relationship": "friend"
+        },
+        {
+            "agent": 39,
+            "other": 48,
+            "relationship": "knows"
+        },
+        {
+            "agent": 40,
+            "other": 42,
+            "relationship": "friend"
+        },
+        {
+            "agent": 40,
+            "other": 44,
+            "relationship": "knows"
+        },
+        {
+            "agent": 40,
+            "other": 54,
+            "relationship": "knows"
+        },
+        {
+            "agent": 40,
+            "other": 57,
+            "relationship": "friend"
+        },
+        {
+            "agent": 40,
+            "other": 70,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 40,
+            "other": 73,
+            "relationship": "knows"
+        },
+        {
+            "agent": 41,
+            "other": 42,
+            "relationship": "friend"
+        },
+        {
+            "agent": 41,
+            "other": 44,
+            "relationship": "friend"
+        },
+        {
+            "agent": 41,
+            "other": 54,
+            "relationship": "friend"
+        },
+        {
+            "agent": 41,
+            "other": 57,
+            "relationship": "friend"
+        },
+        {
+            "agent": 41,
+            "other": 63,
+            "relationship": "friend"
+        },
+        {
+            "agent": 41,
+            "other": 71,
+            "relationship": "friend"
+        },
+        {
+            "agent": 41,
+            "other": 82,
+            "relationship": "friend"
+        },
+        {
+            "agent": 42,
+            "other": 59,
+            "relationship": "friend"
+        },
+        {
+            "agent": 43,
+            "other": 44,
+            "relationship": "knows"
+        },
+        {
+            "agent": 43,
+            "other": 45,
+            "relationship": "friend"
+        },
+        {
+            "agent": 43,
+            "other": 54,
+            "relationship": "friend"
+        },
+        {
+            "agent": 43,
+            "other": 66,
+            "relationship": "friend"
+        },
+        {
+            "agent": 44,
+            "other": 53,
+            "relationship": "friend"
+        },
+        {
+            "agent": 44,
+            "other": 61,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 44,
+            "other": 68,
+            "relationship": "friend"
+        },
+        {
+            "agent": 44,
+            "other": 71,
+            "relationship": "friend"
+        },
+        {
+            "agent": 44,
+            "other": 73,
+            "relationship": "friend"
+        },
+        {
+            "agent": 45,
+            "other": 48,
+            "relationship": "friend"
+        },
+        {
+            "agent": 45,
+            "other": 54,
+            "relationship": "friend"
+        },
+        {
+            "agent": 45,
+            "other": 69,
+            "relationship": "friend"
+        },
+        {
+            "agent": 46,
+            "other": 54,
+            "relationship": "friend"
+        },
+        {
+            "agent": 46,
+            "other": 61,
+            "relationship": "knows"
+        },
+        {
+            "agent": 46,
+            "other": 66,
+            "relationship": "friend"
+        },
+        {
+            "agent": 46,
+            "other": 73,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 46,
+            "other": 75,
+            "relationship": "knows"
+        },
+        {
+            "agent": 46,
+            "other": 76,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 46,
+            "other": 80,
+            "relationship": "friend"
+        },
+        {
+            "agent": 47,
+            "other": 48,
+            "relationship": "knows"
+        },
+        {
+            "agent": 47,
+            "other": 60,
+            "relationship": "knows"
+        },
+        {
+            "agent": 47,
+            "other": 61,
+            "relationship": "knows"
+        },
+        {
+            "agent": 47,
+            "other": 62,
+            "relationship": "knows"
+        },
+        {
+            "agent": 47,
+            "other": 67,
+            "relationship": "friend"
+        },
+        {
+            "agent": 47,
+            "other": 69,
+            "relationship": "knows"
+        },
+        {
+            "agent": 47,
+            "other": 72,
+            "relationship": "knows"
+        },
+        {
+            "agent": 47,
+            "other": 75,
+            "relationship": "knows"
+        },
+        {
+            "agent": 48,
+            "other": 55,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 48,
+            "other": 58,
+            "relationship": "knows"
+        },
+        {
+            "agent": 48,
+            "other": 59,
+            "relationship": "knows"
+        },
+        {
+            "agent": 48,
+            "other": 64,
+            "relationship": "knows"
+        },
+        {
+            "agent": 48,
+            "other": 69,
+            "relationship": "friend"
+        },
+        {
+            "agent": 48,
+            "other": 70,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 48,
+            "other": 73,
+            "relationship": "knows"
+        },
+        {
+            "agent": 48,
+            "other": 75,
+            "relationship": "knows"
+        },
+        {
+            "agent": 48,
+            "other": 76,
+            "relationship": "knows"
+        },
+        {
+            "agent": 48,
+            "other": 80,
+            "relationship": "knows"
+        },
+        {
+            "agent": 48,
+            "other": 83,
+            "relationship": "knows"
+        },
+        {
+            "agent": 51,
+            "other": 60,
+            "relationship": "knows"
+        },
+        {
+            "agent": 51,
+            "other": 74,
+            "relationship": "knows"
+        },
+        {
+            "agent": 53,
+            "other": 58,
+            "relationship": "friend"
+        },
+        {
+            "agent": 53,
+            "other": 69,
+            "relationship": "friend"
+        },
+        {
+            "agent": 54,
+            "other": 57,
+            "relationship": "friend"
+        },
+        {
+            "agent": 54,
+            "other": 62,
+            "relationship": "friend"
+        },
+        {
+            "agent": 54,
+            "other": 73,
+            "relationship": "friend"
+        },
+        {
+            "agent": 54,
+            "other": 82,
+            "relationship": "friend"
+        },
+        {
+            "agent": 56,
+            "other": 57,
+            "relationship": "friend"
+        },
+        {
+            "agent": 56,
+            "other": 68,
+            "relationship": "friend"
+        },
+        {
+            "agent": 56,
+            "other": 73,
+            "relationship": "friend"
+        },
+        {
+            "agent": 56,
+            "other": 80,
+            "relationship": "friend"
+        },
+        {
+            "agent": 56,
+            "other": 83,
+            "relationship": "knows"
+        },
+        {
+            "agent": 57,
+            "other": 67,
+            "relationship": "friend"
+        },
+        {
+            "agent": 57,
+            "other": 75,
+            "relationship": "friend"
+        },
+        {
+            "agent": 57,
+            "other": 82,
+            "relationship": "knows"
+        },
+        {
+            "agent": 58,
+            "other": 73,
+            "relationship": "knows"
+        },
+        {
+            "agent": 58,
+            "other": 81,
+            "relationship": "friend"
+        },
+        {
+            "agent": 59,
+            "other": 61,
+            "relationship": "knows"
+        },
+        {
+            "agent": 59,
+            "other": 71,
+            "relationship": "friend"
+        },
+        {
+            "agent": 59,
+            "other": 73,
+            "relationship": "knows"
+        },
+        {
+            "agent": 59,
+            "other": 74,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 60,
+            "other": 61,
+            "relationship": "knows"
+        },
+        {
+            "agent": 60,
+            "other": 62,
+            "relationship": "knows"
+        },
+        {
+            "agent": 60,
+            "other": 67,
+            "relationship": "friend"
+        },
+        {
+            "agent": 60,
+            "other": 70,
+            "relationship": "knows"
+        },
+        {
+            "agent": 60,
+            "other": 72,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 60,
+            "other": 73,
+            "relationship": "knows"
+        },
+        {
+            "agent": 60,
+            "other": 74,
+            "relationship": "knows"
+        },
+        {
+            "agent": 60,
+            "other": 75,
+            "relationship": "knows"
+        },
+        {
+            "agent": 60,
+            "other": 80,
+            "relationship": "friend"
+        },
+        {
+            "agent": 60,
+            "other": 82,
+            "relationship": "knows"
+        },
+        {
+            "agent": 61,
+            "other": 62,
+            "relationship": "knows"
+        },
+        {
+            "agent": 61,
+            "other": 65,
+            "relationship": "knows"
+        },
+        {
+            "agent": 61,
+            "other": 66,
+            "relationship": "knows"
+        },
+        {
+            "agent": 61,
+            "other": 67,
+            "relationship": "knows"
+        },
+        {
+            "agent": 61,
+            "other": 69,
+            "relationship": "friend"
+        },
+        {
+            "agent": 61,
+            "other": 70,
+            "relationship": "knows"
+        },
+        {
+            "agent": 61,
+            "other": 71,
+            "relationship": "knows"
+        },
+        {
+            "agent": 61,
+            "other": 72,
+            "relationship": "knows"
+        },
+        {
+            "agent": 61,
+            "other": 74,
+            "relationship": "knows"
+        },
+        {
+            "agent": 61,
+            "other": 75,
+            "relationship": "knows"
+        },
+        {
+            "agent": 61,
+            "other": 78,
+            "relationship": "knows"
+        },
+        {
+            "agent": 61,
+            "other": 80,
+            "relationship": "friend"
+        },
+        {
+            "agent": 61,
+            "other": 82,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 62,
+            "other": 74,
+            "relationship": "knows"
+        },
+        {
+            "agent": 67,
+            "other": 72,
+            "relationship": "friend"
+        },
+        {
+            "agent": 67,
+            "other": 80,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 69,
+            "other": 76,
+            "relationship": "friend"
+        },
+        {
+            "agent": 69,
+            "other": 80,
+            "relationship": "friend"
+        },
+        {
+            "agent": 69,
+            "other": 83,
+            "relationship": "friend"
+        },
+        {
+            "agent": 73,
+            "other": 77,
+            "relationship": "knows"
+        },
+        {
+            "agent": 73,
+            "other": 80,
+            "relationship": "knows"
+        },
+        {
+            "agent": 74,
+            "other": 79,
+            "relationship": "knows"
+        },
+        {
+            "agent": 74,
+            "other": 80,
+            "relationship": "knows"
+        },
+        {
+            "agent": 74,
+            "other": 82,
+            "relationship": "knows"
+        },
+        {
+            "agent": 74,
+            "other": 83,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 79,
+            "other": 81,
+            "relationship": "friend"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "city",
+            "instance_name": "london"
+        },
+        {
+            "class_name": "town",
+            "instance_name": "holloway"
+        },
+        {
+            "class_name": "mountain",
+            "instance_name": "barbary_mountains"
+        },
+        {
+            "class_name": "community_building",
+            "instance_name": "newgate_prison"
+        },
+        {
+            "class_name": "river",
+            "instance_name": "thames_river"
+        },
+        {
+            "class_name": "castle",
+            "instance_name": "palace_of_the_king_of_barbary"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "wagon"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "cat"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "cat"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "initial_situation",
+            "instance_name": "boy_arrives_in_london",
+            "description": "Dick Whittington was a very little boy when his father and mother died; so little, indeed, that he never knew them, nor the place where he was born. He strolled about the country as ragged as a colt, till he met with a wagoner who was going to London, and who gave him leave to walk all the way by the side of his wagon without paying anything for his passage.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "protagonist_arrives_in_new_location",
+            "description": "This pleased little Whittington very much, as he wanted to see London sadly, for he had heard that the streets were paved with gold, and he was willing to get a bushel of it; but how great was his disappointment, poor boy! when he saw the streets covered with dirt instead of gold, and found himself in a strange place, without a friend, without food, and without money.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "lack",
+            "instance_name": "physical_discomfort_turning_point",
+            "description": "Though the wagoner was so charitable as to let him walk up by the side of the wagon for nothing, he took care not to know him when he came to town, and the poor boy was, in a little time, so cold and hungry that he wished himself in a good kitchen and by a warm fire in the country.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "protagonist_receives_task",
+            "description": "In his distress he asked charity of several people, and one of them bid him “Go to work for an idle rogue.” “That I will,” said Whittington, “with all my heart; I will work for you if you will let me.”",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "physical_harm_initiated",
+            "description": "The man, who thought this savored of wit and impertinence (though the poor lad intended only to show his readiness to work), gave him a blow with a stick which broke his head so that the blood ran down.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "hunger_refusal",
+            "description": "In this situation, and fainting for want of food, he laid himself down at the door of one Mr. Fitzwarren, a merchant, where the cook saw him, and, being an ill-natured hussy, she did not help him but instead told him to go away.",
+            "agents": [
+                0,
+                2,
+                29
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "conflict",
+            "instance_name": "harassment_by_cook",
+            "description": "The merchant, however, took pity on Whittington and gave him some food and shelter, but the cook continued to be cruel to him and made his life miserable in the house.",
+            "agents": [
+                0,
+                3
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "preparation",
+            "instance_name": "defusing_tension",
+            "description": "Whittington was forced to clean the kitchen and do other menial tasks, but he did not complain and instead tried to make the best of the situation.",
+            "agents": [
+                0,
+                30
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "new_character_introduction",
+            "description": "One day, Whittington found a cat in the kitchen and adopted it as his own, naming her Miss Puss. The cat became Whittington's constant companion and friend.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "unaware_setup",
+            "description": "The merchant and his family were surprised by the cat's intelligence and cunning, but they did not know that she was about to become famous throughout the land.",
+            "agents": [
+                41
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "heroic_conflict_resolution",
+            "description": "One day, a factor from a ship arrived at the house with news of the cat's incredible exploits. The factor told them that Miss Puss had killed all the rats and mice on board the ship and had even saved the cargo from destruction.",
+            "agents": [
+                5
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "reward",
+            "instance_name": "post_story_recognition",
+            "description": "The King and Queen were so impressed by the story that they ordered the captain and factor to bring the cat to their court, where she would be rewarded for her services.",
+            "agents": [
+                8,
+                1,
+                4,
+                7
+            ],
+            "objects": [
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "news_reaction_leads_to_action",
+            "description": "When the captain and factor arrived at the house with the news, Mr. Fitzwarren was overjoyed and immediately went to get Whittington from his work in the kitchen.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "initial_emotional_response",
+            "description": "Whittington was amazed by the news and could not believe that his cat had become famous throughout the land. He thanked God for His providential care of such a poor and miserable creature.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "reward",
+            "instance_name": "hero_rewarded",
+            "description": "The captain and factor told Mr. Fitzwarren about the incredible exploits of Miss Puss, and he was so impressed that he decided to give Whittington all the treasure that the cat had earned.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        }
+    ]
+}

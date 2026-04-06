@@ -1,0 +1,287 @@
+{
+    "uri": "https://fairytalez.com/the-magic-cap",
+    "nation": "belgian",
+    "title": "The Magic Cap",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "jan",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful",
+                "active"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "peasant_wife",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful",
+                "active"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "student_who_purchased_cap",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful",
+                "active"
+            ],
+            "has_role": {
+                "class_name": "antagonist",
+                "instance_name": "main_antagonist"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "innkeeper",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful",
+                "active"
+            ],
+            "has_role": {
+                "class_name": "antagonist",
+                "instance_name": "supporting_antagonist"
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "friend"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "natural_place",
+            "instance_name": "market_town"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "inn_road_door"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "town_inn"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "peasant_home"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "market_town_settlement"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "magic_cap"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "calf"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "main_characters_introduced",
+            "description": "There once lived a poor countryman named Jan, who resided in the countryside with his wife. His neighbors often referred to him as being not very intelligent, and that he wouldn't do well on his own. The story begins when the countryman's wife suggests that Jan take their calf to market to sell it for at least 100 francs.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "main_character_arrival_setup",
+            "description": "Jan set off towards the market town with the calf behind him, feeling rather happy about being out on such a fine spring day. As he walked along, three students who were lounging outside an inn noticed his simple demeanor and decided to play a joke on him.",
+            "agents": [
+                0,
+                3
+            ],
+            "objects": [
+                1
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "price_negotiation",
+            "description": "The first student approached Jan and asked how much he was asking for the goat, despite the fact that it was clearly a calf. Jan explained that his wife had told him to sell their calf, but the student convinced him that his wife must have been joking.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "resolution_complication",
+            "description": "Jan continued on his way, still unsure about what animal he had with him. The second student met up with him and also asked how much he was asking for the goat, further confusing Jan.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "villain_gains_information",
+            "instance_name": "new_info_uncertainty_setup",
+            "description": "The third student joined in, telling Jan that it was indeed a goat and that he should not pretend otherwise at the market. This made Jan even more uncertain about what to do.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "villainy",
+            "instance_name": "conflict_reaction",
+            "description": "Jan's wife heard about his encounter with the students and became furious. She knew her husband's simplicity was due to his lack of intelligence rather than any fault of his own.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 3
+        },
+        {
+            "class_name": "move",
+            "instance_name": "plan_execution",
+            "description": "Jan's wife devised a plan to pay back the students for their joke. She went into town, paid for dinner at three inns, and instructed Jan on how to proceed with the plan when they next met at the market.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "repeated_interaction",
+            "description": "The next day, Jan set off towards the market again, meeting the same students who had played the joke on him before. They exchanged smiles and one of them asked about his goat once more.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "resolve_conflict_through_external_help",
+            "description": "Jan laughed it off and invited the students to join him for a drink at an inn. He then proceeded to order dinner for four and, after eating, paid with the magic cap by twirling it three times on his finger.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "magical_item_origin_explained",
+            "description": "The students were amazed and asked Jan how he was able to get food and drinks for nothing everywhere he went. He explained that the cap had magical properties, left to him by his great-great-grandmother who was a witch.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "price_negotiation_struggle",
+            "description": "A student offered to buy the magic cap from Jan for 200 francs, but Jan refused, saying it was worth much more according to his wife's opinion. The price kept going up until it reached 500 francs.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "unsuccessful_magic_use",
+            "description": "The students took advantage of the magic cap and invited a large group of friends to a feast at an inn in town. However, when they tried to use the cap to pay for everything, it did not work as expected.",
+            "agents": [
+                2,
+                3
+            ],
+            "objects": [
+                0
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "conflict_escalation",
+            "description": "One of the students realized he had twirled the cap the wrong way, but by then the damage was done. The host became angry and demanded payment before things got out of hand.",
+            "agents": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "forced_payment_event",
+            "description": "The three students were forced to promise to pay the innkeeper immediately in order to calm him down and avoid any trouble with the police. They ended up paying for the banquet themselves and had their guests contribute as well.",
+            "agents": [
+                3
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "branding",
+            "instance_name": "punishment_for_revenge",
+            "description": "Afterwards, they punished Jan and his wife by dipping them into a horse-trough as revenge for playing practical jokes on them.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 2
+        }
+    ]
+}

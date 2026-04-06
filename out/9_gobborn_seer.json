@@ -1,0 +1,185 @@
+{
+    "uri": "https://fairytalez.com/gobborn-seer",
+    "nation": "english",
+    "title": "Gobborn Seer",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "gobborn_seer",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 4
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "jack_seer",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "impulsive",
+                "tense"
+            ],
+            "has_role": {
+                "class_name": "hero",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 4
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "girl_at_bridge",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "magical_helper",
+                "instance_name": "fairy_godmother_helper"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "king",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "king_son",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "impulsive",
+                "tense"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "villain_minion"
+            },
+            "lives_in": 3
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "friend"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 0,
+            "other": 3,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 4,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 1,
+            "other": 3,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 1,
+            "other": 4,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 2,
+            "other": 3,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 2,
+            "other": 4,
+            "relationship": "friend"
+        },
+        {
+            "agent": 3,
+            "other": 4,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "river",
+            "instance_name": "stream_near_the_bridge"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "gobborn_seer_house"
+        },
+        {
+            "class_name": "community_building",
+            "instance_name": "local_tavern_or_inn"
+        },
+        {
+            "class_name": "castle",
+            "instance_name": "king_castle"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "gobborn_seer_and_jack_new_house"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "sheep_skin"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "stream_water"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "crooked_and_straight"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "pen_and_ink"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "chest"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "initial_situation",
+            "instance_name": "father_sends_protagonist_on_task",
+            "description": "Once there was a man called Gobborn Seer, and he had a son called Jack. One day he sent him out to sell a sheep skin, and Gobborn said, “You must bring me back the skin and the value of it as well.”",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

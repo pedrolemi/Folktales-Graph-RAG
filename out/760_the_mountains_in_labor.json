@@ -1,0 +1,143 @@
+{
+    "uri": "https://fairytalez.com/the-mountains-in-labor",
+    "nation": "greek",
+    "title": "The Mountains in Labor",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "magical_creature",
+            "instance_name": "mouse",
+            "age_category": "children",
+            "gender": "female",
+            "has_personality": [],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 1
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "countryman",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "active"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 2
+        }
+    ],
+    "relationships": [],
+    "places": [
+        {
+            "class_name": "mountain",
+            "instance_name": "mountains_in_labor"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "earth_at_their_feet"
+        },
+        {
+            "class_name": "forest",
+            "instance_name": "crashing_trees"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "mountain_rocks"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "trees"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "huge_rocks"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "move",
+            "instance_name": "environmental_disturbance_occurs",
+            "description": "The Countrymen noticed that the Mountains were in labour; smoke came out of their summits, the earth was quaking at their feet, trees were crashing, and huge rocks were tumbling. They felt sure that something horrible was going to happen.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                0,
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "setup_preparation",
+            "description": "They all gathered together in one place to see what terrible thing this could be.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "expulsion",
+            "instance_name": "unfulfilled_expectation",
+            "description": "They waited and they waited, but nothing came.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "conflict",
+            "instance_name": "environmental_disruption",
+            "description": "At last there was a still more violent earthquake, and a huge gap appeared in the side of the Mountains.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "fight",
+            "instance_name": "conflict_submission",
+            "description": "They all fell down upon their knees and waited.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "new_element_introduction",
+            "description": "At last, and at last, a teeny, tiny mouse poked its little head and bristles out of the gap and came running down towards them,",
+            "agents": [
+                0
+            ],
+            "objects": [
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "resolution",
+            "instance_name": "resolution_of_conflict",
+            "description": "and ever after they used to say: “Much outcry, little outcome.”",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

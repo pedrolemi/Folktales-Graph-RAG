@@ -1,0 +1,179 @@
+{
+    "uri": "https://fairytalez.com/odds-and-ends",
+    "nation": "german",
+    "title": "Odds and Ends",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "lazy_bride",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "aggressive",
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "industrious_servant",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful",
+                "active"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "bridegroom",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "eager"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "house",
+            "instance_name": "bride_house"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "village"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "pretty_dress"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "flax"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "struggle",
+            "instance_name": "flaw_exposed",
+            "description": "There was once a maiden who was pretty, but idle and negligent. She had a habit of getting out of temper when she spun flax, and would often pull out a whole heap of it if there was even a little knot in the flax.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "resource_acquisition",
+            "description": "Her servant, on the other hand, was industrious and gathered together all the bits of flax that were thrown away by the maiden. She cleaned them, span them fine, and made a beautiful gown for herself out of them.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "marriage_preparations",
+            "description": "A young man had wooed the lazy girl, and they were to be married soon. The wedding preparations were well underway.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "get_present",
+            "instance_name": "preparations_made",
+            "description": "On the eve of the wedding, the industrious servant was dancing merrily around in her new dress, made from the flax that the maiden had carelessly discarded.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "negative_reaction_to_servant",
+            "description": "The bride noticed the servant's beautiful gown and said to herself, 'Ah, how that girl does jump about, dressed in my odds and ends.'",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "acquisition",
+            "instance_name": "event_discussion",
+            "description": "The bridegroom overheard the bride's comment and asked her what she meant. The bride explained that the servant was wearing a dress made from the flax that the maiden had thrown away.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                0,
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "helper_move",
+            "instance_name": "perception_shift",
+            "description": "When the bridegroom heard this, he began to see the true nature of his intended bride - how idle and careless she was, and how hardworking and diligent the servant was.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "solution_difficult_task",
+            "instance_name": "resolved_incompatibility_choice",
+            "description": "He realized that he wanted someone who shared his values of industry and diligence, not someone as lazy as his current bride. So, he gave up on the marriage with the maiden and chose the industrious servant instead.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

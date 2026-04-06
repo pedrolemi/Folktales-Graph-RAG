@@ -1,0 +1,147 @@
+{
+    "uri": "https://fairytalez.com/the-jackal-and-the-pea-hen",
+    "nation": "indian",
+    "title": "The Jackal and the Pea-Hen",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "peahen",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "jackal",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 1
+        }
+    ],
+    "relationships": [],
+    "places": [
+        {
+            "class_name": "field",
+            "instance_name": "peahens_garden"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "jackals_home"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "plum_stones"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "bones_of_the_kid"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "move",
+            "instance_name": "establish_relationship",
+            "description": "A Jackal and a Pea-hen formed an eternal friendship and enjoyed their meals together daily.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "daily_activities_setup",
+            "description": "One day, the Pea-hen ate juicy plums and the Jackal had a young kid for dinner. After eating, the Pea-hen carefully sowed the plum-stones in a row, while the Jackal pretended to do the same with his bones.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0,
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "initial_situation_observation",
+            "description": "The pair visited their gardens daily, watching as the plum-stones began to grow into green stems, but the Jackal's bones showed no signs of growth.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "character_conflict",
+            "description": "As time passed, the Pea-hen became increasingly sarcastic towards the Jackal, who tried to downplay the lack of progress in his garden.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "lack_of_bride",
+            "instance_name": "teasing_conflict",
+            "description": "The plum-trees blossomed and bore fruit, and the Pea-hen sat down to a feast of ripe plums. She teased the hungry and unsuccessful Jackal about his non-growing bones.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "conflict_escalation",
+            "description": "The Jackal's anger boiled over, and he threatened the Pea-hen, but she continued to mock him, saying he would starve before harvest time.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "attack_and_consume",
+            "description": "In a fit of rage, the Jackal pounced on the Pea-hen and ate her. The moral of the story is that it is never safe to be wiser than one's friends.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        }
+    ]
+}

@@ -1,0 +1,355 @@
+{
+    "uri": "https://fairytalez.com/first-month",
+    "nation": "japanese",
+    "title": "First Month",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "little_good_boy",
+            "age_category": "children",
+            "gender": "male",
+            "has_personality": [
+                "impulsive"
+            ],
+            "name": "Little Good Boy",
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "little_good_boy"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "chrysanthemum",
+            "age_category": "children",
+            "gender": "female",
+            "has_personality": [
+                "depressive"
+            ],
+            "name": "Chrysanthemum",
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "chrysanthemum"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "yoshi_san",
+            "age_category": "children",
+            "gender": "male",
+            "has_personality": [
+                "depressive"
+            ],
+            "name": "Yoshi-san",
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "yoshi_san"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_mother",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "depressive"
+            ],
+            "name": "The Mother",
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "the_mother"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "plum_blossom",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "depressive"
+            ],
+            "name": "Plum-blossom",
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "plum_blossom"
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 0,
+            "other": 4,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 1,
+            "other": 4,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 3,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 2,
+            "other": 4,
+            "relationship": "knows"
+        },
+        {
+            "agent": 3,
+            "other": 4,
+            "relationship": "knows"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "natural_place",
+            "instance_name": "mountains"
+        },
+        {
+            "class_name": "house",
+            "instance_name": "hero_house"
+        },
+        {
+            "class_name": "school",
+            "instance_name": "yoshisan_school"
+        },
+        {
+            "class_name": "river",
+            "instance_name": "karas_river"
+        },
+        {
+            "class_name": "village",
+            "instance_name": "odawara_cho"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "bamboo_skewer"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "dango"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "hontawara_seaweed"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "lacquered_stand"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "father_pine_branch"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "hontawara_seaweed"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "grass_rope"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "mother_pine_branch"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "bamboo_arch"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "ship_of_luck"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "lotus_leaf_tray"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "paper_balled_wadding"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "scene_setup",
+            "description": "Little Good Boy had just finished eating the last of five rice cakes called “dango,” that had been strung on a skewer of bamboo and dipped in soy sauce, when he said to his little sister, called Chrysanthemum:—“O-Kiku, it is soon the great festival of the New Year.”",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                1
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "acquisition",
+            "instance_name": "preparations_for_feast",
+            "description": "Yoshi-san had his desired opening to hold forth on the coming delights, and he replied:—“Men will come the evening before the great feast-day and help Plum-blossom, our maid, to clean all the house with brush and broom. Others will set up the decoration in front of our honored gateway.”",
+            "agents": [
+                1,
+                2,
+                4
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "acquisition",
+            "instance_name": "objects_planted",
+            "description": "They will dig two small holes and plant a gnarled, black-barked father-pine branch on the left, and the slighter reddish mother-pine branch on the right. They will then put with these the tall knotted stem of a bamboo, with its smooth, hard green leaves that chatter when the wind blows.",
+            "agents": [
+                3
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "ritual_preparations_setup",
+            "description": "Next they will take a grass rope, about as long as a tall man, fringed with grass, and decorated with zigzag strips of white paper. These, our noble father says, are meant for rude images of men offering themselves in homage to the august gods.”",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "introduce_conflict",
+            "description": "Chrysanthemum interrupts, saying she has not forgotten this cord is stretched from bamboo to bamboo; and Plum-blossom says the rope is to bar out the nasty two-toed, red, gray, and black demons, the badgers, the foxes, and other evil spirits from crossing our threshold.",
+            "agents": [
+                1,
+                4
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "introduction_to_main_event",
+            "description": "Yoshi-san and his little sister had now reached the great gate ornamented with huge bronze fishes sitting on their throats and twisting aloft their forked tails, that was near their home. He told his sister she must wait to know more about the great festival till the time arrived.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "family_evening_ritual",
+            "description": "They shuffled off their shoes, bowed, till their foreheads touched the ground, to their parents, ate their evening bowl of rice and salt fish, said a prayer and burnt a stick of incense to many-armed Buddha at the family altar.",
+            "agents": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "family_outing_preparation",
+            "description": "The mother told Plum-blossom and the children to get their clogs and overcoats and hoods, for they were going out to buy some pictures. These pictures were each tied on their pillow to bring lucky dreams.",
+            "agents": [
+                0,
+                4
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "dream_disappearance",
+            "description": "Yoshi-san said he had dreamt he had a beautiful portmanteau full of nice foreign things, such as comforters, note-books, pencils, india-rubber, condensed milk, lama, wide-awakes, boots, and brass jewelry. Just as he opened it, everything vanished and he found only a torn fan, an odd chop-stick, a horse’s cast straw shoe, and a live crow.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "characters_prepare_for_event",
+            "description": "The children dressed in their best crepe, made up in three silken-wadded layers. Their crest was embroidered on the centre of the back and on the sleeves of the quaintly flowered long upper skirt.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "acquisition",
+            "instance_name": "acquires_new_interest",
+            "description": "Yoshi-san had begun to think battledore and balls too girlish an amusement. He preferred flying his eagle or mask-like kite, or playing at cards, verses, or lotteries.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "performer_introduction",
+            "description": "The strolling woman player on a guitar-like instrument, would be called in. Or, a party of Kangura boy performers afforded pastime by the quaint animal-like movements of the draped figure.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "helper_move",
+            "instance_name": "helper_procession",
+            "description": "Yoshi-san thought the 4th and 5th days of January great fun, because loud shoutings were heard. Running in the direction of the sound, he found the men of a fire-brigade who had formed a procession to carry their new paper standard, bamboo ladders, paper lanterns, etc.",
+            "agents": [
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "return_to_normalcy",
+            "description": "After about a week of fun, life at the villa, gradually resumed its usual course, the father returned to his office, the mother to her domestic employments, and the children to school, all having said for that new year their last joy-wishing greeting—omédéto (congratulations).",
+            "agents": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "objects": [
+                10
+            ],
+            "place": 1
+        }
+    ]
+}

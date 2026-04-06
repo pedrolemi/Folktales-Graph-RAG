@@ -1,0 +1,437 @@
+{
+    "uri": "https://fairytalez.com/the-old-woman-and-the-cat",
+    "nation": "armenian",
+    "title": "The Old Woman and the Cat",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "old_woman",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "aggressive",
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 2
+        },
+        {
+            "class_name": "anthropomorphic_animal",
+            "instance_name": "sly_cat",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "aggressive",
+                "depressive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain_minion"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "tree",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "magical_helper"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "goat",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "magical_helper"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "water_carrier",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "magical_helper"
+            },
+            "lives_in": 1
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "shoemaker",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "magical_helper"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "hen",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "magical_helper"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 3,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 4,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 5,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 6,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 3,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 4,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 5,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 6,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 3,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 4,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 5,
+            "relationship": "knows"
+        },
+        {
+            "agent": 3,
+            "other": 4,
+            "relationship": "knows"
+        },
+        {
+            "agent": 3,
+            "other": 5,
+            "relationship": "knows"
+        },
+        {
+            "agent": 3,
+            "other": 6,
+            "relationship": "knows"
+        },
+        {
+            "agent": 4,
+            "other": 5,
+            "relationship": "knows"
+        },
+        {
+            "agent": 4,
+            "other": 6,
+            "relationship": "knows"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "forest",
+            "instance_name": "nearby_forest"
+        },
+        {
+            "class_name": "river",
+            "instance_name": "water"
+        },
+        {
+            "class_name": "dwelling",
+            "instance_name": "old_womans_house"
+        },
+        {
+            "class_name": "castle",
+            "instance_name": "ogres_castle"
+        },
+        {
+            "class_name": "village",
+            "instance_name": "small_village"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "tree"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "pair_of_shoes"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "goat"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "cupboard"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "barley"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "resin"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "move",
+            "instance_name": "external_event_drives_narrative",
+            "description": "An old woman had a goat and milked it every day, keeping the milk in a cupboard; but a sly cat came and licked it up.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                2
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "punishment_action",
+            "description": "The old woman caught the cat and cut off her tail as punishment, letting her go.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "negotiation_offer",
+            "description": "The cat cried out for its tail back and offered to retrieve some milk from the goat in exchange.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "agreement_setup",
+            "description": "The goat agreed to give the cat milk if she brought boughs from a nearby tree.",
+            "agents": [
+                1,
+                2,
+                3
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "setup_plan_introduction",
+            "description": "The cat asked the tree for boughs, promising to use them to get milk from the goat and return it to the old woman.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                0,
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "conditional_arrangement",
+            "description": "The tree agreed to provide boughs if the cat first fetched some water from a water-carrier.",
+            "agents": [
+                1,
+                4
+            ],
+            "objects": [
+                2
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "counteraction_offer",
+            "description": "The cat went to the water-carrier and offered to bring her some shoes in exchange for water.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                5
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "request_initiated",
+            "description": "The water-carrier asked the cat to bring an egg from a hen, promising to give her shoes in return.",
+            "agents": [
+                1,
+                4
+            ],
+            "objects": [
+                1
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "char_request_transaction",
+            "description": "The cat visited the hen and requested that she lay an egg in exchange for barley from a threshing-floor.",
+            "agents": [
+                1,
+                6
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "cat_gathers_and_delivers_food",
+            "description": "The threshing-floor gave the cat scattered barley to gather, which it took to the hen.",
+            "agents": [
+                1,
+                6
+            ],
+            "objects": [
+                4
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "cat_gets_shoes",
+            "description": "With the barley, the hen laid an egg, which the cat used to get shoes from the shoemaker.",
+            "agents": [
+                1,
+                5,
+                6
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "resource_acquisition",
+            "description": "The cat then used the shoes to obtain water from the water-carrier and boughs from the tree.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                0,
+                2,
+                4
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "exchange_occurs",
+            "description": "The goat gave the cat milk in exchange for the boughs, which the cat took back to the old woman.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                2
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "solution_difficult_task",
+            "instance_name": "resolved_conflict_warning",
+            "description": "The old woman returned the cat's tail but warned her to be careful not to steal again.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "attempt_to_reattach_tail",
+            "description": "Despite trying various adhesives, the cat was unable to reattach its tail and remains tailless to this day.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

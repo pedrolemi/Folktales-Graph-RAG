@@ -1,0 +1,294 @@
+{
+    "uri": "https://fairytalez.com/the-magicians-magic",
+    "nation": "maori",
+    "title": "The Magician's Magic",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "ruarangi_husband",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "active",
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "ruarangi_wife",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "hero_family_member"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "magician",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "magical_helper"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "fairy_king",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "aggressive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "friend"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 3,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 3,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "city",
+            "instance_name": "fairy_city"
+        },
+        {
+            "class_name": "house",
+            "instance_name": "ruarangi_house"
+        },
+        {
+            "class_name": "field",
+            "instance_name": "sports_ground"
+        },
+        {
+            "class_name": "city",
+            "instance_name": "ruarangi_city"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "magic_ring"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "red_ochre"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "magic_eyes"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "wifes_abduction",
+            "description": "Ruarangi's wife was carried off to the Fairy King's city by the Fairy King, where he cast a charm on her to make her forget her former life.",
+            "agents": [
+                1,
+                3
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "search_for_solution",
+            "description": "Ruarangi searched for his missing wife but couldn't find any clues. He then went to see a Magician to help him locate his wife.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "obtain_external_assistance",
+            "description": "The Magician agreed to help Ruarangi in exchange for half of his sweet potato crop and used his magic ring and eyes to locate the Fairy King's city.",
+            "agents": [
+                2
+            ],
+            "objects": [
+                0,
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "get_present",
+            "instance_name": "resolve_captive",
+            "description": "Ruarangi learned that his wife was being kept captive by the Fairy King, who had cast a spell on her to forget her past. The Magician said he would cast a spell to make her remember everything when Ruarangi appeared.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 3
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "counteraction_initiation",
+            "description": "Ruarangi traveled to the fairy city and climbed the hill, but found it empty. However, his wife was there watching sports with the Fairy King.",
+            "agents": [
+                1,
+                3
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "memory_restoration_trigger",
+            "description": "The Magician's spell worked, and Ruarangi's wife suddenly remembered everything. She tried to escape, but her husband wasn't there yet.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "get_present",
+            "instance_name": "protective_reunion",
+            "description": "Ruarangi's wife met him as she walked downhill, and they reunited. Ruarangi rubbed red ochre on her face to protect her from the Fairy King's magic.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                1
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "king_prepares_for_war",
+            "description": "The Fairy King realized that his wife was missing and sent a messenger to find out what had happened. He then ordered his army to prepare for war against Ruarangi's city.",
+            "agents": [
+                1,
+                2,
+                3
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "receiving_threat_advice",
+            "description": "Ruarangi received warning of an impending attack by the fairy army, but the Magician advised him not to fight them directly.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "countermeasure_initiated",
+            "description": "The Magician told Ruarangi that red ochre and cooked food were the only things that could counteract the fairies' magic. He instructed the people to smear everything with red ochre and cook large quantities of food.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "fairy_force_rebuff",
+            "description": "The fairy army arrived at Ruarangi's city, but their magic was powerless against the red ochre and steaming food. They tried to fight back, but were repelled.",
+            "agents": [
+                2
+            ],
+            "objects": [
+                1
+            ],
+            "place": 3
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "magical_counteraction_escalation",
+            "description": "The Fairy King attempted to break the spell by chanting an incantation, but the Magician countered with a stronger spell of his own.",
+            "agents": [
+                2,
+                3
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "side_shifts_advantage",
+            "description": "The two opposing spells continued until the Fairy King realized he was beaten and ordered his army to retreat.",
+            "agents": [
+                2,
+                3
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "home_arrival",
+            "instance_name": "conflict_resolution_arrival",
+            "description": "Ruarangi and his wife returned home safely, where they were welcomed back with a feast. The fairy army never returned.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 1
+        }
+    ]
+}

@@ -1,0 +1,197 @@
+{
+    "uri": "https://fairytalez.com/weedah-mocking-bird",
+    "nation": "australian_ethnic",
+    "title": "Weedah the Mocking Bird",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "weedah",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "mullyan_eagle_hawk",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "magical_helper"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "beeargah",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "eager"
+            ],
+            "has_role": {
+                "class_name": "prisoner",
+                "instance_name": "main_prisoner"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "black_fellow_one",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "prisoner",
+                "instance_name": "villain_prisoner"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "black_fellow_two",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "prisoner",
+                "instance_name": "villain_prisoner"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "weedah_mocking_bird",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 3
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 0,
+            "other": 4,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 1,
+            "other": 3,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 1,
+            "other": 4,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 1,
+            "other": 5,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 2,
+            "other": 3,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 2,
+            "other": 4,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 2,
+            "other": 5,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 3,
+            "other": 4,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 4,
+            "other": 5,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "natural_place",
+            "instance_name": "weedahs_camp"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "grass_humpies"
+        },
+        {
+            "class_name": "dwelling",
+            "instance_name": "weedahs_dwelling"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "bush"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "weeahs_tower"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "grass_humpies"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "balah_trees"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "weeah_the_mocking_bird"
+        }
+    ],
+    "events": []
+}

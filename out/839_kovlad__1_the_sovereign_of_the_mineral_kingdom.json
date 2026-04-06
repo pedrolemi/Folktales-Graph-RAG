@@ -1,0 +1,302 @@
+{
+    "uri": "https://fairytalez.com/kovlad-1-the-sovereign-of-the-mineral-kingdom",
+    "nation": "slavic",
+    "title": "Kovlad - 1. The Sovereign of the Mineral Kingdom",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "widow_mother",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "mother_helper"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "daughter",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "aggressive",
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "false_hero",
+                "instance_name": "false_hero_prideful"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "young_farmer",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "farmer_helper"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "gentlemen",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "gentry_helper"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "prince_kovlad",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "eager"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "giant_zemotras",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "dwarfs_helper"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 3,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 1,
+            "other": 4,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "kingdom",
+            "instance_name": "kavlads_kingdom"
+        },
+        {
+            "class_name": "palace",
+            "instance_name": "golden_palace"
+        },
+        {
+            "class_name": "mountain",
+            "instance_name": "marvellous_mountains"
+        },
+        {
+            "class_name": "forest",
+            "instance_name": "large_forests"
+        },
+        {
+            "class_name": "river",
+            "instance_name": "none_mentioned"
+        },
+        {
+            "class_name": "field",
+            "instance_name": "vast_plains"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "ring_with_stones"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "golden_diadem"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "silver_carriage"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "brass_carriage"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "golden_mantle"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "aigrette_of_many_coloured_feathers"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "metal_bread"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "establish_characters",
+            "description": "A widow lived with a beautiful daughter who was spoiled by many admirers. The mother was content with their station in life, while the daughter was proud and ambitious.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "daughter_reacts_to_dream",
+            "description": "One night, the mother prayed for her daughter's happiness, but the daughter had a dream about a rich nobleman giving her a ring set with stars. She laughed when she woke up, and her mother scolded her for being too proud.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "false_matrimony",
+            "instance_name": "rejected_suitors_disapproval",
+            "description": "The next day, a handsome young farmer came to visit, but the daughter refused his invitation and insulted him. The mother scolded her again for being too proud.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "narrative_progression_event",
+            "description": "That night, the mother prayed again for her daughter's happiness, but the daughter had another dream about a nobleman giving her a golden diadem. She laughed when she woke up, and her mother was worried that something bad would happen.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                1
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "suitors_arrive",
+            "description": "The next day, three carriages arrived in the village: one of brass, one of silver, and one of gold. Gentlemen from the brass and silver carriages asked for the daughter's hand, but she recognised the prince from her dream in the golden carriage.",
+            "agents": [
+                1,
+                4
+            ],
+            "objects": [
+                2,
+                3,
+                5
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "proposals_begin",
+            "description": "The prince proposed to her and gave her a ring set with stars and a mantle of cloth of gold. The mother was worried that something bad would happen, but the daughter was happy and content.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0,
+                4
+            ],
+            "place": 5
+        },
+        {
+            "class_name": "move",
+            "instance_name": "journey_to_destination",
+            "description": "They drove through a dark cavern and emerged into a beautiful landscape of mountains and forests made of solid lead. They then arrived at a golden palace covered in precious stones.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "introducing_conflict",
+            "description": "The bride sat down to a feast prepared by dwarfs, where they ate metal food: brass, silver, and gold. But she couldn't eat anything because it was all metal.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                6
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "villainy",
+            "instance_name": "villainy_attempt_fails",
+            "description": "Kovlad, the God of Metals, offered her different kinds of bread made of metal, but she still couldn't eat anything. She began to weep and regret her decision.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "villain_gains_information",
+            "instance_name": "villain_gains_advantage",
+            "description": "The prince told her that nothing could recall the past, and that she had to live underground with him in his golden palace because she had set her heart on gold and never wished for anything better.",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "kidnapping",
+            "instance_name": "hero_interdiction",
+            "description": "The mother was left behind, weeping and praying for her daughter's safety. The daughter was now a prisoner in the golden palace, forced to eat metal food and live in darkness.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 1
+        }
+    ]
+}

@@ -1,0 +1,344 @@
+{
+    "uri": "https://fairytalez.com/the-crab-and-the-monkey",
+    "nation": "japanese",
+    "title": "The Crab and the Monkey",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "magical_creature",
+            "instance_name": "crab",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "anthropomorphic_animal",
+            "instance_name": "monkey",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 1
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "wasp",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "eager"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "hero_helper"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "rice_mortar",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "hero_helper"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "egg",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "assertive",
+                "eager"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "hero_helper"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "friend"
+        },
+        {
+            "agent": 0,
+            "other": 3,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 3,
+            "relationship": "friend"
+        },
+        {
+            "agent": 2,
+            "other": 3,
+            "relationship": "friend"
+        },
+        {
+            "agent": 2,
+            "other": 4,
+            "relationship": "knows"
+        },
+        {
+            "agent": 3,
+            "other": 4,
+            "relationship": "knows"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "mountain",
+            "instance_name": "shady_mountain"
+        },
+        {
+            "class_name": "forest",
+            "instance_name": "kaki_trees"
+        },
+        {
+            "class_name": "house",
+            "instance_name": "crabs_house"
+        },
+        {
+            "class_name": "dwelling",
+            "instance_name": "wasps_nest"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "farmers_house"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "rice_mortar"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "kaki_fruit_kernel"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "ripe_kakis"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "move",
+            "instance_name": "character_introduction",
+            "description": "A crab who lives on the shady side of a mountain is known for being an excellent housewife, taking great pride in keeping her hole neat and clean.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "encountered_resource",
+            "description": "One day, while out, the crab discovers a handful of cooked rice that a pilgrim had dropped near her hole. She picks it up and decides to carry it back to her home.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "negotiation_offer",
+            "description": "A monkey who lives nearby spots the crab carrying the rice and proposes an exchange: he wants half the rice in exchange for a kernel from a sweet red kaki fruit he has eaten.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0,
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "solution_difficult_task",
+            "instance_name": "conflict_resolution",
+            "description": "The crab agrees to the deal, and the monkey takes the rice. She returns home with the kernel of the kaki fruit.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0,
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "reencounter_initiative",
+            "description": "Some time passes before the crab sees the monkey again. When she does, he is sitting under a beautiful kaki tree near her hole and asks if she can spare him some fruit.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "hero_acquires_resource",
+            "description": "The crab politely declines to climb the tree for him but agrees that he can take the fruit himself as long as he throws down half of it to her.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "monkey_cheats_crab",
+            "description": "However, when the monkey starts eating the kakis, he only throws down rotten or unripe ones to the crab. She realizes she has been cheated.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                2
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "outsmarting_attempt",
+            "description": "The crab tries to outsmart the monkey by suggesting that his full stomach would make him unable to perform a somersault. The monkey prides himself on being able to do so and attempts three flips but ends up dropping all the kakis he had collected.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                2
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "fight",
+            "instance_name": "hero_defeated",
+            "description": "The crab quickly gathers the fallen fruit, but in her haste, she is caught by the monkey who beats her severely before leaving her for dead.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "planning_retribution",
+            "description": "Fortunately, a wasp finds the crab and nurses her back to health. The wasp then consults with other friends, including a rice-mortar and an egg, about how to punish the monkey when he returns.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                0,
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "preparation",
+            "instance_name": "strategic_setup",
+            "description": "The group devises a plan where the mortar will pretend to be ready for battle on the beam above the door, while the egg lies in wait on the ground, and the wasp hides the water-bucket nearby. The crab digs a deep hole to remain hidden.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                0,
+                1
+            ],
+            "place": 3
+        },
+        {
+            "class_name": "move",
+            "instance_name": "return_misinterpretation",
+            "description": "When the monkey returns, he begins a hypocritical speech asking for pardon but receives no answer. He then looks around but fails to find anyone home, except for the egg which he mistakenly takes as an offering.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                1,
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "fight",
+            "instance_name": "entity_conflict_escalation",
+            "description": "As soon as the monkey touches the egg with his hand, it bursts and its sharp shell scratches him on the face. The wasp stings him in the nose, causing the monkey great pain.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 3
+        },
+        {
+            "class_name": "move",
+            "instance_name": "protagonist_defeated",
+            "description": "In his distress, the monkey runs to the water-bucket but is hit by the mortar falling from above, striking him dead.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "transfiguration",
+            "instance_name": "transformation_after_resolution",
+            "description": "After this ordeal, the crab lives a long and peaceful life under her kaki tree until she eventually passes away.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        }
+    ]
+}

@@ -1,0 +1,144 @@
+{
+    "uri": "https://fairytalez.com/silky",
+    "nation": "english",
+    "title": "Silky",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "magical_creature",
+            "instance_name": "silky",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "joyful",
+                "active"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "brownie",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "magical_helper"
+            },
+            "lives_in": 4
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "village",
+            "instance_name": "black_heddon"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "belsay_crag"
+        },
+        {
+            "class_name": "river",
+            "instance_name": "lake_or_fish_pond"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "silky_s_seat_tree"
+        },
+        {
+            "class_name": "house",
+            "instance_name": "brownie_office"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "silky_silks"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "rude_chair"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "conflict",
+            "instance_name": "supernatural_mischief_ongoing",
+            "description": "The villagers of Black Heddon and its vicinity were plagued by the mischievous pranks of a preternatural being named Silky, who appeared as a female dressed in silk. She would often dog individuals on horseback, suddenly materializing behind them, and then vanish into thin air.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "character_setup",
+            "description": "Silky had a favorite haunt at Belsay, a romantic crag with a picturesque lake and waterfall. There, she was seen wandering under the trees, splitting stones or hewing branches, while the villagers would hear the howling of a tempest without seeing any movement in the trees.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "narrative_setup",
+            "description": "The villagers believed Silky to be a wayward and capricious being, who installed herself in various places, including the office of Brownie. However, her actions were always mischievous and never benevolent.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                1
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "silky_rearranges_houses",
+            "description": "Silky was known for turning houses topsy-turvy at night if they were clean, but arranging them neatly if they were disorderly. The villagers found it best to leave their homes in a state of disarray.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "sudden_absence",
+            "description": "A term had arrived to Silky's erratic course, and she abruptly disappeared. It was believed by some that she was the troubled phantom of someone who had died miserably due to hidden treasure.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "psychological_transformation",
+            "instance_name": "resolution_occurs",
+            "description": "One night, a domestic servant in Black Heddon was startled by something falling from the ceiling, which turned out to be a black, shapeless object filled with gold. The villagers were terrified at first, but it soon became clear that Silky's spirit was finally laid to rest.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        }
+    ]
+}

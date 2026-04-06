@@ -1,0 +1,289 @@
+{
+    "uri": "https://fairytalez.com/the-cruel-tribute",
+    "nation": "greek",
+    "title": "The Cruel Tribute",
+    "has_genre": "myth",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "king_minos",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "king_minos"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "aegeus",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "depressive",
+                "sociable"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "aegeus"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "theseus",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "theseus"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "ariadne",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "depressive",
+                "sociable"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "ariadne"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "androgeos",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "androgeos"
+            }
+        }
+    ],
+    "relationships": [],
+    "places": [
+        {
+            "class_name": "city",
+            "instance_name": "athens"
+        },
+        {
+            "class_name": "city",
+            "instance_name": "crete"
+        },
+        {
+            "class_name": "town",
+            "instance_name": "megara"
+        },
+        {
+            "class_name": "city",
+            "instance_name": "troezen"
+        },
+        {
+            "class_name": "mountain",
+            "instance_name": "saronic"
+        },
+        {
+            "class_name": "mountain",
+            "instance_name": "crete_mountains"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "sword"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "ball_of_silken_thread"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "minotaur"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "move",
+            "instance_name": "war_initiation",
+            "description": "Minos, king of Crete, had made war upon Athens. He had come with a great fleet of ships and an army, and had burned the merchant vessels in the harbor, and had overrun all the country and the coast even to Megara, which lies to the west.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "hero_departure",
+            "instance_name": "enemy_arrival_threat",
+            "description": "He had laid waste the fields and gardens round about Athens, had pitched his camp close to the walls, and had sent word to the Athenian rulers that on the morrow he would march into their city.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "negotiation_initiation",
+            "description": "The Athenians were in great fear of Minos and his army. They knew that they could not defeat him in battle, so they decided to send a delegation to meet with him and negotiate a peace treaty.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "king_demand_sacrifice",
+            "description": "Minos demanded that the Athenians surrender seven youths and seven maidens as a sacrifice to the Minotaur, a monstrous creature that lived in the Labyrinth on the island of Crete.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "conflict",
+            "instance_name": "conflict_resolution_attempt",
+            "description": "The Athenians were horrified by this demand, but they had no choice. They reluctantly agreed to send the young people to Crete as a sacrifice.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "characters_transferred_to_confined_space",
+            "description": "Minos was pleased with the decision and sent his soldiers to escort the youths and maidens to the Labyrinth, where they would meet their fate.",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "call_for_help",
+            "instance_name": "king_minos_demand",
+            "description": "King Minos of Crete demanded that Athens send seven youths and seven maidens as a sacrifice to the Minotaur. The Athenians were horrified but had no choice.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "arrival_preparation",
+            "description": "The ship set sail from Athens with the young people on board. They sailed for many days until they reached the island of Crete, where they were greeted by King Minos himself.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "introduction_to_setting",
+            "description": "King Minos led them to the Labyrinth, a complex maze designed by Daedalus, where the Minotaur lived. The youths and maidens were left to wander the labyrinthine passages, hoping to find their way out.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "hero_prepares_for_main_action",
+            "description": "Theseus, one of the Athenian youths, was determined to slay the Minotaur and escape from the Labyrinth. He had a plan and the help of Ariadne, King Minos's daughter.",
+            "agents": [
+                2,
+                3
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "provide_navigation_tool",
+            "description": "Ariadne fell in love with Theseus and decided to help him escape from the Labyrinth. She gave him a ball of silken thread to unwind as he navigated the maze, which would lead him back out when he was finished.",
+            "agents": [
+                2,
+                3
+            ],
+            "objects": [
+                1
+            ],
+            "place": 5
+        },
+        {
+            "class_name": "move",
+            "instance_name": "enterance_encounter",
+            "description": "Theseus entered the Labyrinth, determined to slay the Minotaur. He used the silken thread to guide himself through the winding passages and eventually came face-to-face with the monster.",
+            "agents": [
+                2
+            ],
+            "objects": [
+                1
+            ],
+            "place": 5
+        },
+        {
+            "class_name": "move",
+            "instance_name": "hero_defeats_monster",
+            "description": "The Minotaur was a fearsome creature, but Theseus was brave and fought valiantly. He managed to slay the beast and then followed the silken thread back out of the Labyrinth.",
+            "agents": [
+                2
+            ],
+            "objects": [
+                1
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "departure_from_enclosure",
+            "description": "When Theseus emerged from the Labyrinth, he found Ariadne waiting for him. Together they made their way back to the ship, which was ready to set sail for Athens.",
+            "agents": [
+                2,
+                3
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "escape_uncovered",
+            "description": "The people of Crete were shocked when they discovered that the youths and maidens had escaped. King Minos was particularly distraught, as his daughter Ariadne was missing.",
+            "agents": [
+                0,
+                3
+            ],
+            "objects": [
+                2
+            ],
+            "place": 1
+        }
+    ]
+}

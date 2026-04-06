@@ -1,0 +1,258 @@
+{
+    "uri": "https://fairytalez.com/the-deer-and-the-cyte",
+    "nation": "north_american_native",
+    "title": "The Deer and the Coyote",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "anthropomorphic_animal",
+            "instance_name": "coyote",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "deer_chief",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "eager"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "magical_helper"
+            },
+            "lives_in": 2
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "deer_group",
+            "age_category": "children",
+            "gender": "female",
+            "has_personality": [
+                "joyful",
+                "sociable"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 2
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "knows"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "mountain",
+            "instance_name": "coyote_mountain"
+        },
+        {
+            "class_name": "forest",
+            "instance_name": "nearby_forest"
+        },
+        {
+            "class_name": "dwelling",
+            "instance_name": "deer_home"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "sharpened_sticks"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "herbs"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "move",
+            "instance_name": "planning_to_migrate",
+            "description": "Six deer were lying in the sand talking and resting on a broad sandy place. One of them suggested going up on the mountain top to dance and sing.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "characters_move_to_location",
+            "description": "The six deer went to the mountain top, where they found a broad sandy place, and began to dance and sing.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "attempt_to_join_singing",
+            "description": "Mr. Coyote heard the singing of the deer from a distance and ran up the mountain to join in.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "villainy",
+            "instance_name": "villainy_rejection",
+            "description": "Upon arrival, Mr. Coyote asked the Chief of the Deer if he could dance with them, but was refused because he didn't have antlers on his head.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "helper_move",
+            "instance_name": "entity_transform",
+            "description": "The Chief of the Deer offered to make Mr. Coyote some antlers using a sharp stone and two sticks, which he hammered into the coyote's head.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0,
+                1
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "unexpected_consequence_thwarts_plan",
+            "description": "Mr. Coyote joined in the dance, expecting to grab one of the little deer and run away with it, but was instead overcome by his new antlers.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_movement_event",
+            "description": "After dancing only once around the circle, Mr. Coyote fainted from the sharp sticks in his head and began rolling down the mountain side.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "downslope_descent",
+            "description": "Mr. Coyote continued to roll over and over down the mountain until he was covered in bruises.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "healing_process",
+            "description": "The coyote had to rub himself with herbs for many moons to heal from his injuries.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "transfiguration",
+            "instance_name": "closure_transformation",
+            "description": "The six deer returned to their resting place, while Mr. Coyote lay injured at the foot of the mountain.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "transfiguration",
+            "instance_name": "behavioral_transformation",
+            "description": "Mr. Coyote learned a lesson from his experience and never bothered the deer again.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "post_conflict_recovery",
+            "description": "However, the coyote's injury was so severe that he had to spend many moons recovering.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "chief_observes_others",
+            "description": "The Chief of the Deer watched over the other deer as they returned to their normal activities.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "resolution",
+            "instance_name": "consequences_learnt",
+            "description": "The memory of Mr. Coyote's mishap served as a reminder to the other animals in the forest about the consequences of trying to imitate others.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "resolution",
+            "instance_name": "conflict_resolution_closure",
+            "description": "In the end, the six deer continued to live peacefully on the mountain top, and Mr. Coyote eventually recovered from his ordeal.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 2
+        }
+    ]
+}

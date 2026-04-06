@@ -1,0 +1,326 @@
+{
+    "uri": "https://fairytalez.com/the-girl-who-trod-on-the-loaf",
+    "nation": "danish",
+    "title": "The Girl Who Trod on the Loaf",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "inge",
+            "age_category": "children",
+            "gender": "female",
+            "has_personality": [
+                "cold",
+                "egocentric",
+                "aggressive",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "inge"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "mother",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "inge"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "master",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "inge"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "mistress",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "inge"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "cowherd",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "inge"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "old_woman",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "inge"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "peasant",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "inge"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "children",
+            "age_category": "children",
+            "gender": "female",
+            "has_personality": [
+                "sociable"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "inge"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "angel",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "inge"
+            }
+        }
+    ],
+    "relationships": [],
+    "places": [
+        {
+            "class_name": "village",
+            "instance_name": "inges_native_place"
+        },
+        {
+            "class_name": "mountain",
+            "instance_name": "the_moor"
+        },
+        {
+            "class_name": "house",
+            "instance_name": "bogeys_domain"
+        },
+        {
+            "class_name": "farmhouse",
+            "instance_name": "her_former_home"
+        },
+        {
+            "class_name": "town",
+            "instance_name": "some_town"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "the_loaf"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "the_pins"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "the_corn"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "move",
+            "instance_name": "narrative_setup",
+            "description": "The story of the girl who trod on the loaf, to avoid soiling her shoes, and of the misfortunes that befell this girl, is well known. It has been written, and even printed.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "main_character_introduction",
+            "description": "The girl's name was Ingé; she was a poor child, but proud and presumptuous; there was a bad foundation in her.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "main_character_behavior_established",
+            "description": "She had a habit of trampling on things, including the feelings of others, and would often get her way by being selfish and demanding.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "character_introduction",
+            "description": "Ingé was known for her haughty spirit and her tendency to look down on others. She thought herself superior to everyone else and believed that she was entitled to special treatment.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "childhood_behavior_revelation",
+            "description": "As a child, Ingé had been cruel and heartless towards her mother, who loved her dearly but tried to teach her right from wrong.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "villainy",
+            "instance_name": "negative_behavior_conflict",
+            "description": "Ingé's mother had always warned her about the dangers of being proud and selfish, but Ingé refused to listen. She continued to behave badly, causing her mother much sorrow and grief.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "inciting_action",
+            "description": "One day, when Ingé was grown up, she did something that would change her life forever. She trod on a loaf of bread, not just any loaf, but one that had been given to her as a gift by someone who loved her.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "conflict",
+            "instance_name": "trapped_by_guilt",
+            "description": "The consequences of Ingé's actions were severe. She felt the weight of her sins bearing down on her and realized that she was trapped in a place where she could not escape.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "fight",
+            "instance_name": "past_action_confrontation",
+            "description": "Ingé heard the words of her mother, spoken from afar, 'Greatly hast thou grieved thy mother, Ingé,' and it cut through her hardened heart like a knife.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "exposure_of_villain",
+            "instance_name": "punishment_reputation",
+            "description": "Years passed, and Ingé's story became a cautionary tale told to children. They would sing songs about the proud girl who trod on the loaf, and how she was punished for her sins.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "helper_move",
+            "instance_name": "external_help_arrives",
+            "description": "But one day, something changed. A little girl heard the story of Ingé and wept tears of compassion for her. She said, 'I'll give my doll and all my playthings if she may only come up.'",
+            "agents": [
+                8
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "solution_difficult_task",
+            "instance_name": "resolution_experience",
+            "description": "These words penetrated to Ingé's inmost heart, and it seemed to do her good. It was the first time anyone had shown her mercy and kindness.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "resolution",
+            "instance_name": "relationship_closure",
+            "description": "Years went by, and Ingé heard the name of her former mistress spoken one last time. The woman said, 'Shall I ever see thee again, Ingé? One knows not what may happen.'",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "resolution",
+            "instance_name": "emotional_closure",
+            "description": "But Ingé knew that she would never be reunited with those who had loved her on earth.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "state_transformation_redeemed",
+            "description": "Time went on, and Ingé heard the name of the little girl spoken one more time. The child was now an old woman, and in her final hours, she remembered how she had cried for 'poor Ingé' when she was a child. The old woman's eyes closed, and her soul was opened to see the deep sorrow that Ingé had endured. She wept for the girl, and her tears and prayers reached Ingé's tormented soul, bringing her comfort and peace. An angel joined in their prayer, and together they brought about Ingé's redemption, changing her stony form into a bird and setting her free to soar into the world of men.",
+            "agents": [
+                0,
+                8,
+                5
+            ],
+            "objects": [],
+            "place": 1
+        }
+    ]
+}

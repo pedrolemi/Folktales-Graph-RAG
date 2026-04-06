@@ -1,0 +1,342 @@
+{
+    "uri": "https://fairytalez.com/jack-the-dullard",
+    "nation": "nordic",
+    "title": "Jack the Dullard",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "first_brother",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "eager"
+            ],
+            "has_role": {
+                "class_name": "hero",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "second_brother",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "eager"
+            ],
+            "has_role": {
+                "class_name": "hero",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "jack_the_dullard",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "impulsive",
+                "tense"
+            ],
+            "has_role": {
+                "class_name": "hero",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "princess",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "quest_giver",
+                "instance_name": "princess"
+            },
+            "lives_in": 5
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "old_head_clerk",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "impersonal",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "clerk"
+            },
+            "lives_in": 5
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "father",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "father"
+            },
+            "lives_in": 5
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 5,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 5,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 3,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 5,
+            "relationship": "knows"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "natural_place",
+            "instance_name": "high_street"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "baronial_hall"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "little_town"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "highroad"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "castle"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "kingdom"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "black_horse"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "milk_white_steed"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "billy_goat"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "dead_crow"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "old_wooden_shoe"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "clay_from_ditch"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "cooking_utensil_with_tin_handle"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "initial_situation",
+            "instance_name": "narrative_beginning",
+            "description": "Introduction",
+            "agents": [
+                5
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "acquisition",
+            "instance_name": "romantic_setup",
+            "description": "The Brothers Prepare for the Wooing",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "hero_introduces_family",
+            "description": "Jack the Dullard Joins His Brothers",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "move",
+            "instance_name": "journey_to_destination",
+            "description": "The Journey to the King's Court",
+            "agents": [
+                2,
+                4
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "arrival_at_location",
+            "description": "Arrival at the Town-Gate",
+            "agents": [
+                5
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_organization",
+            "description": "The Suitors are Numbered and Placed in Rows",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "narrative_transition_setup",
+            "description": "First Brother's Turn",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "protagonist_shift",
+            "description": "Second Brother's Turn",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "main_character_shift",
+            "description": "Jack the Dullard's Turn",
+            "agents": [
+                0,
+                2,
+                5
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_unplanned_speech",
+            "description": "Jack's Impromptu Speech",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "princess_recognition",
+            "description": "The Princess is Impressed",
+            "agents": [
+                3
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "setup_introduction",
+            "description": "The Clerks Take Note",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "get_throne",
+            "instance_name": "ascension_to_power",
+            "description": "The Announcement of Jack as King",
+            "agents": [
+                5
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "resolution",
+            "instance_name": "story_closure",
+            "description": "Conclusion",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        }
+    ]
+}

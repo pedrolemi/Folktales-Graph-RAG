@@ -1,0 +1,250 @@
+{
+    "uri": "https://fairytalez.com/the-wonderful-plough",
+    "nation": "scandinavian",
+    "title": "The Wonderful Plough",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "farmer",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "eager"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "little_black_dwarf",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 2
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "insect",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "false_hero",
+                "instance_name": "villain_minion"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "dog_water",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "hero_sidekick"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 3,
+            "relationship": "friend"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "natural_place",
+            "instance_name": "farmers_ground"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "stone_cross"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "black_sooty_iron_pot"
+        },
+        {
+            "class_name": "community_building",
+            "instance_name": "dark_cold_room"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "stone_cross"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "iron_pot"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "iron_plough"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "encountering_an_unusual_entity",
+            "description": "A farmer on the Isle of Rugen had a peculiar encounter with an insect near a stone cross on his daily commute. The insect was extremely bright and seemed to be in pain, running back and forth on the cross.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "suspecting_background",
+            "description": "The farmer suspected that the insect might be one of the underground people, known for being malicious and obstinate. He remembered stories about how they are held fast by holy objects and cannot escape.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "entity_transformation_occurs",
+            "description": "Despite his suspicions, the farmer let the insect stay near the cross for a few days, but when he saw it again, he decided to take action. He grasped the insect tightly, and to his surprise, it transformed into a small black dwarf about six inches long.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "farmer_little_man_confrontation",
+            "description": "The farmer was astounded by this transformation and began questioning the little man, who refused to speak or reveal any information. The farmer tried coaxing him with gentle words but also resorted to whipping and slapping him, still getting no response.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "kidnapping",
+            "instance_name": "farmer_imprisons_little_man",
+            "description": "Frustrated, the farmer decided to imprison the little man in a dark, cold room, hoping that hunger and confinement would break his spirit. He left the little one there for six weeks, visiting twice a week to ask if he would now speak.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 3
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_release",
+            "description": "Finally, after six weeks of imprisonment, the little black dwarf asked to be released, promising to answer all questions truthfully. The farmer agreed and released him from the pot.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "transformation_catch",
+            "description": "The little man explained that he was one of the underground people who had been held fast by the holy cross. He turned into an insect to avoid being recognized but was caught by the farmer. He apologized for his earlier silence, stating they have a natural aversion to being taken in a man's hand.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "challenge_accepted",
+            "description": "The farmer, pleased with the little man's explanation, proposed a bargain: he would release him if he made him an iron plough that could be drawn by even the smallest foal without getting tired. The little man agreed and swore to do so.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "receipt_object",
+            "instance_name": "receipt_of_external_assistance",
+            "description": "With his promise given, the farmer released the little man, who vanished instantly. Next morning, the farmer found a new iron plough in his yard, which he used with great success. His dog, Water, could easily draw it through heavy clayland, impressing everyone who saw it.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "solution_difficult_task",
+            "instance_name": "problem_resolved_with_tool",
+            "description": "The farmer's new plough brought him immense wealth and a happy life, as he no longer needed to worry about horse-flesh costs. He continued using the plough for many years, amazed by its ease of use even with small animals.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "resolution",
+            "instance_name": "resolution_moderation_lesson",
+            "description": "This story teaches that moderation is key to success and happiness. The farmer did not covet too much, but instead, focused on what was truly important: a good life and contentment.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

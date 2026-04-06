@@ -1,0 +1,328 @@
+{
+    "uri": "https://fairytalez.com/lazy-jack",
+    "nation": "english",
+    "title": "Lazy Jack",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "lazy_jack",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "impulsive",
+                "tense"
+            ],
+            "name": "Jack",
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "lazy_jack_mother",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "assertive"
+            ],
+            "name": "Lazy Jack's Mother",
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "rich_man",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive"
+            ],
+            "name": "Rich Man",
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "quest_giver"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "deaf_dumb_daughter",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "joyful"
+            ],
+            "name": "Deaf and Dumb Daughter",
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "hero_soulmate"
+            },
+            "lives_in": 3
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 0,
+            "other": 3,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 3,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 2,
+            "other": 3,
+            "relationship": "family_member"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "field",
+            "instance_name": "jacks_common"
+        },
+        {
+            "class_name": "river",
+            "instance_name": "brook_near_home"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "lazy_jack_house"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "rich_man_village"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "rich_man_house"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "brook"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "jar_of_milk"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "cream_cheese"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "tom_cat"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "shoulder_of_mutton"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "string"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "donkey"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "main_character_introduction",
+            "description": "Lazy Jack's Introduction",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "conflict_established",
+            "description": "Jack's Mother Threatens Him",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                5
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "jack_hires_service",
+            "description": "Jack Hires Himself to the Neighbouring Farmer for a Penny",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "lack_of_money",
+            "instance_name": "financial_setback",
+            "description": "Jack Loses His Earning and Learns a Lesson",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                6
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "setup_agreement_established",
+            "description": "Jack Hires Himself to the Cow-Keeper for a Jar of Milk",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                1
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "jack_milk_spill",
+            "description": "Jack Spills the Jar of Milk and Learns Another Lesson",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                1
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "jack_hires_farmer",
+            "description": "Jack Hires Himself to the Farmer for a Cream Cheese",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [
+                5
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "conflict",
+            "instance_name": "mother_child_disagreement",
+            "description": "The Spoilt Cream Cheese and Jack's Mother's Disappointment",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                2
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "main_character_arrives",
+            "description": "Lazy Jack Hires Himself to the Baker for a Tom-Cat",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                3
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "introducing_conflict_setup",
+            "description": "The Mischievous Tom-Cat and Jack's Mistake",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                3,
+                5
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_arrival",
+            "description": "Lazy Jack Hires Himself to the Butcher for a Shoulder of Mutton",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "introducing_conflict",
+            "description": "The Spoilt Meat and His Mother's Outrage",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_setup_happens",
+            "description": "Lazy Jack Hires Himself to the Cattle-Keeper for a Donkey",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "hero_journey",
+            "description": "Jack's Comical Journey Home with the Donkey",
+            "agents": [
+                0
+            ],
+            "objects": [
+                5,
+                6
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "conflict",
+            "instance_name": "resolution_of_conflict",
+            "description": "The Rich Man's Daughter Laughs and Recovers Her Speech and Hearing",
+            "agents": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "objects": [],
+            "place": 4
+        }
+    ]
+}

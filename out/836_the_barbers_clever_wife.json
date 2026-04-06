@@ -1,0 +1,293 @@
+{
+    "uri": "https://fairytalez.com/the-barbers-clever-wife",
+    "nation": "indian",
+    "title": "The Barber's Clever Wife",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "barber",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "depressive",
+                "sociable"
+            ],
+            "name": "Barber",
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "barber"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "wife",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "depressive",
+                "sociable"
+            ],
+            "name": "Wife",
+            "has_role": {
+                "class_name": "hero",
+                "instance_name": "wife"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "king",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "depressive",
+                "sociable"
+            ],
+            "name": "King",
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "king"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "corn_dealer",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "depressive",
+                "sociable"
+            ],
+            "name": "Corn Dealer",
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "corn_dealer"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "thief_who_promised_to_keep_secret",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "depressive",
+                "sociable"
+            ],
+            "name": "Thief",
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "thief"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "captain_of_the_band",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "depressive",
+                "sociable"
+            ],
+            "name": "Captain",
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "captain"
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 3,
+            "relationship": "knows"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "city",
+            "instance_name": "barber_city"
+        },
+        {
+            "class_name": "palace",
+            "instance_name": "king_palace"
+        },
+        {
+            "class_name": "field",
+            "instance_name": "waste_field"
+        },
+        {
+            "class_name": "shop",
+            "instance_name": "corn_shop"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "barber_house"
+        },
+        {
+            "class_name": "forest",
+            "instance_name": "thicket"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "razor"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "banyan_tree"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "hornets_nest"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "fight",
+            "instance_name": "barber_conflict_escalates",
+            "description": "Once upon a time there lived a barber who was such a poor silly creature that he couldn’t even ply his trade decently, but snipped off his customers’ ears instead of their hair, and cut their throats instead of shaving them. So of course he grew poorer every day, till at last he found himself with nothing left in his house but his wife and his razor, both of whom were as sharp as sharp could be.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "lack_of_money",
+            "instance_name": "financial_struggle",
+            "description": "For his wife was an exceedingly clever person, who was continually rating her husband for his stupidity; and when she saw they hadn’t a farthing left, she fell as usual to scolding. But the barber took it very calmly. ‘What is the use of making such a fuss, my dear?’ said he; ‘you’ve told me all this before, and I quite agree with you. I never did work, I never could work, and I never will work.That is the fact!’",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "helper_move",
+            "instance_name": "requested_external_assistance",
+            "description": "‘Then you must beg!’ returned his wife, ‘for I will not starve to please you! Go to the palace, and beg something of the King. There is a wedding feast going on, and he is sure to give alms to the poor.’‘Very well, my dear!’ said the barber submissively.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "character_arrives_at_requester_location",
+            "description": "He was rather afraid of his clever wife, so he did as he was bid, and going to the palace, begged of the King to give him something. ‘Something?’ asked the King; ‘what thing?’ Now the barber’s wife had not told him what to say, but she had not expected this.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "call_for_help",
+            "instance_name": "barber_requests_bread",
+            "description": "The barber thought for a moment and then said, ‘A piece of bread, please.’ The King laughed and said, ‘You shall have all the bread you can eat. But first, tell me why you want it so badly.’",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "acquisition",
+            "instance_name": "job_offered_with_challenge",
+            "description": "The barber explained that he was very hungry and had not eaten for days. The King, moved by his story, decided to give him a chance to prove himself. He offered the barber a place as his Wazîr if he could bring back a certain amount of grain from the fields.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "alliance_formed",
+            "description": "The barber accepted the challenge and set off towards the fields. As he was walking, he met a group of thieves who were planning to rob the King’s granaries. The barber, not knowing any better, joined forces with them.",
+            "agents": [
+                0,
+                4
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "thwarted_attempt",
+            "description": "Together, they reached the granaries and began to steal grain. But just as they were about to leave, the barber’s wife appeared out of nowhere and started cutting off the noses of the thieves one by one.",
+            "agents": [
+                1,
+                4
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "punishment",
+            "instance_name": "punishment_consequences",
+            "description": "The thieves, confused and frightened, ran away in all directions. The barber’s wife then gathered up the nose tips and put them in a little box. She knew that the thieves would not be able to get their revenge without getting their noses cut again.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "obstacle_escape",
+            "description": "Meanwhile, the hot weather set in, and the barber and his wife had to sleep outside. One night, the thieves came back and carried off the barber’s wife while she was asleep. But she managed to escape by swinging herself into a nearby banyan tree.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                2
+            ],
+            "place": 5
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "love_fooling_thieves",
+            "description": "The thieves, thinking that they had succeeded in their plan, lay down to rest under the tree. But the barber’s wife had other plans. She began to sing softly, and the robber captain, who was on watch, fell in love with her supposed beauty.",
+            "agents": [
+                1,
+                4,
+                5
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "helper_move",
+            "instance_name": "thwarted_approach_leads_to_external_help",
+            "description": "However, when he tried to get closer to her, she bit off the tip of his tongue, and he tumbled off the branch. The thieves, thinking that they were under attack by a ghost, fled in terror. The barber’s wife then came down from the tree and went home.",
+            "agents": [
+                1,
+                4
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "resolution_function",
+            "instance_name": "positive_case_resolution",
+            "description": "The next day, the thieves went to law to claim their share of the grain. But the barber’s wife pleaded her own case so well, bringing out the nose and tongue tips as witnesses, that the King made the barber his Wazîr, saying, ‘He will never do a foolish thing as long as his wife is alive!’",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

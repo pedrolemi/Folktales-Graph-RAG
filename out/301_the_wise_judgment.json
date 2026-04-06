@@ -1,0 +1,257 @@
+{
+    "uri": "https://fairytalez.com/the-wise-judgment",
+    "nation": "czechoslovak",
+    "title": "The Wise Judgment",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "king_hradibor",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "king_hradibor"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "libena",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "eager"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "libena"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_queen",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "the_queen"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_eldest_prince",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "eager"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "the_eldest_prince"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_second_prince",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "eager"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "the_second_prince"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_youngest_prince",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "eager"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "the_youngest_prince"
+            }
+        }
+    ],
+    "relationships": [],
+    "places": [
+        {
+            "class_name": "city",
+            "instance_name": "king_hradibor_palace"
+        },
+        {
+            "class_name": "village",
+            "instance_name": "poorest_village"
+        },
+        {
+            "class_name": "town",
+            "instance_name": "crowded_town"
+        },
+        {
+            "class_name": "palace",
+            "instance_name": "royal_palace"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "the_little_carriage"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "the_wonderful_looking_glass"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "the_magic_apples"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "king_selection",
+            "description": "King Hradibor, a wise and clever king, would travel about the country under an assumed name to observe life without being recognized. He visited a poor woman's hut where he saw twelve daughters and decided to take one of them with him when he returned.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "family_conflict_setup",
+            "description": "The old woman was overjoyed at the prospect of her daughter leaving her poverty-stricken home, but her daughters were not so pleased. They began discussing who should be taken by the king, each claiming they were the most eligible.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "sibling_disagreement",
+            "description": "The eldest sister argued that she should go first according to custom, but the others disagreed, saying the king might choose whoever he liked best. The youngest daughter, Libena, was the most beautiful of them all and seemed to be the object of their discussion.",
+            "agents": [
+                0,
+                1,
+                2,
+                5
+            ],
+            "objects": [
+                1
+            ],
+            "place": 3
+        },
+        {
+            "class_name": "physical_transformation",
+            "instance_name": "adoption_occurs",
+            "description": "The king soon returned and took Libena by the hand, announcing that he would adopt her as his own daughter since he had no children at home. He gave the old woman a generous gift and departed with Libena.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "romantic_introduction",
+            "description": "Libena was taken to the palace where she met the king's family. The youngest prince fell deeply in love with her and thought of nothing but winning her hand in marriage.",
+            "agents": [
+                1,
+                4
+            ],
+            "objects": [
+                0
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "quest_for_resources",
+            "description": "The three princes set out to find extraordinary things that would help them win Libena. The eldest prince found a little carriage that could transport him anywhere he wanted, the second prince discovered a looking-glass that showed him anything he desired, and the youngest prince bought three apples from an old woman who claimed they had magical properties.",
+            "agents": [
+                0,
+                1,
+                3,
+                4,
+                5
+            ],
+            "objects": [
+                0,
+                1,
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "princes_react_to_crisis",
+            "description": "The princes used their newfound objects to see what was happening at home. They saw through the looking-glass that their parents and Libena were on the brink of death. The youngest prince immediately ran back to the palace with his brothers, using the little carriage to transport them quickly.",
+            "agents": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "objects": [
+                0,
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "hero_departure",
+            "instance_name": "prince_leads_into_conflict",
+            "description": "Upon arriving at the palace, the youngest prince gave an apple to each of the king's family members, who miraculously recovered from their illness. A dispute arose among the princes as to which one should marry Libena.",
+            "agents": [
+                0,
+                1,
+                2,
+                4,
+                5
+            ],
+            "objects": [
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "conflict_preparation",
+            "description": "The learned men of the kingdom were called in to settle the dispute but couldn't agree on a solution. The king eventually grew tired of the delay and decided to allow his subjects to come forward with their opinions.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "proposed_union",
+            "description": "A little old man appeared, proposing that the youngest prince, who had no other extraordinary object but had used the magical apples to save the king's family, should be awarded Libena in marriage.",
+            "agents": [
+                0,
+                1,
+                2,
+                4,
+                5
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

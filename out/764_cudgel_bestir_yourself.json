@@ -1,0 +1,326 @@
+{
+    "uri": "https://fairytalez.com/cudgel-bestir-yourself",
+    "nation": "slavic",
+    "title": "Cudgel, Bestir Yourself!",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "cobbler",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "active",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "cobbler_wife",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "family_member"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "cobbler_children",
+            "age_category": "children",
+            "gender": "female",
+            "has_personality": [
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "tertiary_character",
+                "instance_name": "family_member"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "old_shepherd",
+            "age_category": "senior",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "gossip",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "aggressive",
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 1
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 0,
+            "other": 3,
+            "relationship": "friend"
+        },
+        {
+            "agent": 0,
+            "other": 4,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 1,
+            "other": 4,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 2,
+            "other": 4,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "house",
+            "instance_name": "cobblers_home"
+        },
+        {
+            "class_name": "tavern",
+            "instance_name": "gossips_tavern"
+        },
+        {
+            "class_name": "village",
+            "instance_name": "nearby_village"
+        },
+        {
+            "class_name": "castle",
+            "instance_name": "old_shepherds_castle"
+        },
+        {
+            "class_name": "school",
+            "instance_name": "none"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "lamb_with_ducats"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "tablecloth_spreading_food_and_drink"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "cudgel_with_silver_mounting"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "move",
+            "instance_name": "preparatory_movement",
+            "description": "A cobbler was busy on Saturday mending old shoes so he could attend church on Sunday. He worked late into the evening, finished his work, dressed himself, and took his book to service. In church, he heard a doctrine that if one dedicates their property to the church, God will recompense them a hundredfold in another form.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "initiation_of_countermeasure",
+            "description": "The cobbler was poor and decided to sell his cottage and goods and give the money to the priest at the church. He went home and told his wife of his intentions. In a few days, the money was in the hands of the parson.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "cobbler_searches_for_help",
+            "description": "However, as day passed after day, nothing seemed to be recompensed. The cobbler grew hungry and decided to seek out God. He dressed himself like an old beggar and wandered for two days until he met with an old shepherd who was pasturing a large flock of lambs.",
+            "agents": [
+                0,
+                3
+            ],
+            "objects": [],
+            "place": 3
+        },
+        {
+            "class_name": "move",
+            "instance_name": "received_conditioned_gift",
+            "description": "The old shepherd compassionated the poor cobbler and gave him a lamb that scattered ducats at every call, but under the condition that in one village through which he was obliged to pass, he was not to enter the house of his old gossip. The cobbler thanked the old man and started with speed on his way home.",
+            "agents": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "perception_shift",
+            "description": "As he went behind the hill, the cobbler began to distrust the words of the old shepherd, thinking that an ordinary lamb would not scatter ducats. He placed the lamb on the ground and uttered the old man's words: 'Lamb, shake yourself!' and when at the same moment he espied ducats round the lamb's feet, he considered himself the most fortunate man in the whole world.",
+            "agents": [
+                0,
+                3
+            ],
+            "objects": [
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "absentation",
+            "instance_name": "character_journey_preparation",
+            "description": "The cobbler put the lamb on his back and went on towards home. However, when he passed by his gossip's tavern, she begged him to pay her a visit, for they had not seen each other for a very long time. The cobbler at first hesitated but wished to show that he had ducats in his pocket.",
+            "agents": [
+                0,
+                4
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_gets_intoxicated",
+            "description": "He went into the tavern and gave his present from the old man to his gossip with the words: 'But don't say to him, Lamb, shake yourself!' He drank off a noggin of brandy and soon became drunk. His gossip took the lamb into another room and said to it: 'Lamb, shake yourself!'",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "task_failure_leads_to_conflict",
+            "description": "When the cobbler came home, he placed the tablecloth on the table and cried: 'Table-cloth, spread yourself!' But the tablecloth didn't stir, and the cobbler began to despair and revile his gossip. He returned again to the old man, begged pardon of him on his knees for not fulfilling the condition that time also.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "assignment_received",
+            "description": "The old man gave him a cudgel with a silver mounting set with precious stones and ordered him this time to visit his gossip and take note of these words: 'Cudgel, bestir yourself!' The cobbler thanked the old man and made haste towards his wife and children.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "provocation_attacked",
+            "description": "However, when behind the hill, he was curious to know what the cudgel meant and wished to satisfy himself. He said: 'Cudgel, bestir yourself!' In a moment, there stood before him a couple of stout fellows who began to thrash him mercilessly.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "fight",
+            "instance_name": "physical_confrontation_with_violence",
+            "description": "The cobbler, seized by cruel terror, did not know how to order them to cease beating him; at last, when already well beaten, he cried out: 'Cudgel, leave off!' Instantly the fellows disappeared and the cudgel stood before him. 'You're good, you're good!' said the cobbler, getting up from the ground.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "cobbler_arrives_at_acquaintance_house",
+            "description": "The cobbler arrived at the village where his gossip lived and stepped into her house, making himself at home as with an old acquaintance. She was glad to see him, for she thought she would again make a good profit, entertained him well, and afterwards began to inquire whether he hadn't something for her to take charge of.",
+            "agents": [
+                0,
+                4
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "disobedient_instruction",
+            "description": "The cobbler gave up to her his cudgel with the request not to say: 'Cudgel, bestir yourself!' The old woman laughed in her sleeve at the simpleton, thinking to herself, He wouldn't tell me without cause what I'm not to say! She went at once with the cudgel into the other room and said to it: 'Cudgel, bestir yourself!'",
+            "agents": [
+                0,
+                1,
+                4
+            ],
+            "objects": [
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "solution_difficult_task",
+            "instance_name": "difficult_task_resolution",
+            "description": "The cobbler all the time kept calling out: 'Go it, cudgel! go it! till they give me back my lamb and my tablecloth!' Then nothing remained to his gossip but to give up her property to him. She ordered the lamb and tablecloth to be brought.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "resolution",
+            "instance_name": "conflict_resolution",
+            "description": "As soon as the cobbler had satisfied himself that this was really done, he shouted 'Cudgel, leave off!' and went with the three gifts as quick as he could to his wife and children. Then there was great joy, for they had money and victuals in abundance; and did not withal forget God and other people, but assisted every poor person.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

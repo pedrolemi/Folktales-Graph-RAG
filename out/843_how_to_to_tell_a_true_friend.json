@@ -1,0 +1,403 @@
+{
+    "uri": "https://fairytalez.com/tell-true-friend",
+    "nation": "italian",
+    "title": "How to To Tell a True Friend",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "king",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "depressive",
+                "cold",
+                "cold",
+                "cold"
+            ],
+            "name": "king",
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "king"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "queen",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "depressive",
+                "sociable",
+                "cold"
+            ],
+            "name": "queen",
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "queen"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "young_man",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "name": "young_man",
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "young_man"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "stranger",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "name": "stranger",
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "stranger"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "king_son",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "name": "king_son",
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "king_son"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "servant",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "name": "servant",
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "servant"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "holy_man",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "name": "holy_man",
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "holy_man"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "dead_friend",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "name": "dead_friend",
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "dead_friend"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "kings_daughter",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "name": "kings_daughter",
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "kings_daughter"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "baby",
+            "age_category": "children",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "name": "baby",
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "baby"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "old_man",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "name": "old_man",
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "old_man"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "doctor",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "name": "doctor",
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "doctor"
+            }
+        }
+    ],
+    "relationships": [],
+    "places": [
+        {
+            "class_name": "city",
+            "instance_name": "big_city"
+        },
+        {
+            "class_name": "palace",
+            "instance_name": "royal_palace"
+        },
+        {
+            "class_name": "shop",
+            "instance_name": "inn_by_the_road_side"
+        },
+        {
+            "class_name": "castle",
+            "instance_name": "king_s_castle"
+        },
+        {
+            "class_name": "town",
+            "instance_name": "town_where_king_dwelt"
+        },
+        {
+            "class_name": "shop",
+            "instance_name": "inn_by_shrine_of_st_james"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "apples"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "horses"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "setup_king_queen_pilgrimage_vow",
+            "description": "Once upon a time there lived a king and queen who longed to have a son. As none came, one day they made a vow at the shrine of St. James that if their prayers were granted the boy should set out on a pilgrimage as soon as he had passed his eighteenth birthday.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "king_returns_home",
+            "description": "And fancy their delight when one evening the king returned home from hunting and saw a baby lying in the cradle.All the people came crowding round to peep at it, and declared it was the most beautiful baby that ever was seen. Of course that is what they always say, but this time it happened to be true.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "boy_reaches_adulthood",
+            "description": "Of course that is what they always say, but this time it happened to be true. And every day the boy grew bigger and stronger till he was twelve years old, when the king died, and he was left alone to take care of his mother.In this way six years passed.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "initial_situation_setup",
+            "description": "In this way six years passed. One day the queen said to her son, 'You are now eighteen years old, my child, and must keep your vow to St. James.' The boy replied, 'I will do so, dear mother, but I am afraid of being away from you for such a long time.',",
+            "agents": [
+                1,
+                4
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "helper_move",
+            "instance_name": "mother_blessing",
+            "description": "The queen replied, 'Do not be afraid, my son; the Lord will take care of us both. Now go and fulfill your vow, and may God bless you on your journey.' And with these words she gave him her blessing.",
+            "agents": [
+                0,
+                1,
+                4
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "departure_from_home",
+            "description": "And with these words she gave him her blessing. The young man took leave of his mother, mounted his horse, and set off towards the shrine of St. James, accompanied by a friend he had made on his travels.",
+            "agents": [
+                2,
+                5
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "characters_arrive_in_city",
+            "description": "It took them a whole year to reach the shrine, and they passed through many different lands on their way. One day they arrived tired and half-starved in a big city, and said to one another, 'Let us stay here for a little and rest before we set forth again.',",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "king_observes_young_men",
+            "description": "So they hired a small house close to the royal castle, and took up their abode there.The following morning the king of the country happened to step on to his balcony, and saw the young men in the garden, and said to himself, 'Dear me, those are wonderfully handsome youths; but one is handsomer than the other, and to him will I give my daughter to wife;',",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [],
+            "place": 3
+        },
+        {
+            "class_name": "acquisition",
+            "instance_name": "king_invites_young_men_to_dinner",
+            "description": "and indeed the king's son excelled his friend in beauty.In order to set about his plan the king asked both the young men to dinner, and when they arrived at the castle he received them with the utmost kindness, and sent for his daughter, who was more lovely than both the sun and moon put together.",
+            "agents": [
+                0,
+                2,
+                4
+            ],
+            "objects": [],
+            "place": 3
+        },
+        {
+            "class_name": "villainy",
+            "instance_name": "villainous_plot_development",
+            "description": "But at bed-time the king caused the other young man to be given a poisoned drink, which killed him in a few minutes, for he thought to himself, 'If his friend dies the other will forget his pilgrimage, and will stay here and marry my daughter.'",
+            "agents": [
+                0,
+                1,
+                2,
+                4
+            ],
+            "objects": [],
+            "place": 3
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "character_notification",
+            "description": "When the king's son awoke the next morning he inquired of the servants where his friend had gone, as he did not see him. 'He died suddenly last night,' said they, 'and is to be buried immediately.',",
+            "agents": [
+                4,
+                5
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "counteraction_move",
+            "description": "But the king's son sprang up, and cried, 'If my friend is dead I can stay here no longer, and cannot linger an hour in this house.' 'Oh, give up your journey and remain here,' exclaimed the king, 'and you shall have my daughter for your wife.'",
+            "agents": [
+                0,
+                4
+            ],
+            "objects": [
+                1
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "departure_from_family",
+            "description": "The king's son allowed himself to be persuaded and took leave of his father-in-law, and set out with his wife on his journey home.Meanwhile the poor friend had been unable to get through his task in the short time appointed by the king,",
+            "agents": [
+                0,
+                1,
+                4
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "task_assignment",
+            "description": ",and when at last he returned the king said to him,'Your comrade is a long way off by now; you had better see if you can overtake him.'So the young man bowed and left the king's presence, and followed after his friend on foot,",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "arrival_at_destination",
+            "description": "for he had no horse. Night and day he ran, till at length he reached the place where the king's son had pitched his tent, and sank down before him, a miserable object, worn out and covered with mud and dust. But the king's son welcomed him with joy, and tended him as he would his brother.,",
+            "agents": [
+                2,
+                4
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

@@ -1,0 +1,250 @@
+{
+    "uri": "https://fairytalez.com/galah-oolah-lizard",
+    "nation": "australian_ethnic",
+    "title": "The Galah, and Oolah the Lizard",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "anthropomorphic_animal",
+            "instance_name": "oolaht_the_lizard",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "active",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "anthropomorphic_animal",
+            "instance_name": "galaht_the_galah",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "aggressive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 3
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "friend"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "natural_place",
+            "instance_name": "sun_bathing_spot"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "bush_home"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "bindeah_bush"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "galahs_country"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "bubberah"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "bindeah_bush"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "bird_crest"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "character_initiates_action",
+            "description": "Oolah the lizard was tired of lying in the sun, doing nothing. So he said, “I will go and play.”",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "acquisition",
+            "instance_name": "acquiring_resources_and_planning",
+            "description": "He took his boomerangs out, and began to practise throwing them.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "boomerang_return",
+            "description": "While he was doing so a Galah came up, and stood near, watching the boomerangs come flying back,",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "boomerang_thrown",
+            "description": "Oolah was proud of having the gay Galah to watch his skill. In his pride he gave the bubberah an extra twist, and threw it with all his might.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "ball_hits_head",
+            "description": "Whizz, whizzing through the air, back it came, hitting, as it passed her, the Galah on the top of her head,",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "conflict_setup",
+            "description": "taking both feathers and skin clean off. The Galah set up a hideous, cawing, croaking shriek,",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "protagonist_behavior_drives_conflict",
+            "description": "and flew about, stopping every few minutes to knock her head on the ground like a mad bird.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "conflict_realization",
+            "description": "Oolah was so frightened when he saw what he had done, and noticed that the blood was flowing from the Galah’s head,",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_hides",
+            "description": "that he glided away to hide under a bindeah bush. But the Galah saw him.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                2
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "protagonist_reacts_to_chaos",
+            "description": "She never stopped the hideous noise she was making for a minute, but, still shrieking, followed Oolah.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                2
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_confrontation_initiation",
+            "description": "When she reached the bindeah bush she rushed at Oolah, seized him with her beak,",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                2
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "ritualistic_torture",
+            "description": "rolled him on the bush until every bindeah had made a hole in his skin. Then she rubbed his skin with her own bleeding head.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "task_assignment",
+            "description": "'Now then,' she said, 'you Oolah shall carry bindeahs on you always, and the stain of my blood.'",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "receive_injury",
+            "instance_name": "physical_confrontation",
+            "description": "Oolah replied, 'And you,' said Oolah, as he hissed with pain from the tingling of the prickles,",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "challenge_made",
+            "description": "'shall be a bald-headed bird as long as I am a red prickly lizard.'",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                2
+            ],
+            "place": 3
+        }
+    ]
+}

@@ -1,0 +1,271 @@
+{
+    "uri": "https://fairytalez.com/the-peasant-in-heaven",
+    "nation": "german",
+    "title": "The Peasant in Heaven",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "poor_peasant",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "depressive"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 2
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "rich_lord",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "false_hero"
+            },
+            "lives_in": 2
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "saint_peter",
+            "age_category": "senior",
+            "gender": "male",
+            "has_personality": [
+                "impersonal"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "quest_giver"
+            },
+            "lives_in": 1
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "knows"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "castle",
+            "instance_name": "heaven_gate"
+        },
+        {
+            "class_name": "community_building",
+            "instance_name": "saint_peters_office"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "earth"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "key_to_heaven"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "narrative_setup",
+            "description": "{ Part 1: Introduction of Setting and Characters }",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "social_status_gate_arrival",
+            "description": "A poor pious peasant died and arrived before the gate of heaven. At the same time, a very rich lord came there who also wanted to get into heaven.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "initial_context",
+            "description": "",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "narrative_segment_transition",
+            "description": "{ Part 2: Saint Peter's Decision }",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_interaction_set_up",
+            "description": "Saint Peter came with the key and opened the door, letting the great man in but apparently did not see the peasant, and shut the door again.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "event_occurs",
+            "description": "",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "narrative_turning_point",
+            "description": "{ Part 3: The Peasant's Realization }",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "resolution",
+            "instance_name": "celebration_closure",
+            "description": "The peasant outside heard how the great man was received in heaven with all kinds of rejoicing, music, and singing within. All became quiet again.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "general_movement",
+            "description": "",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "gate_opened",
+            "description": "{ Part 4: Saint Peter Opens the Gate for the Peasant }",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "helper_move",
+            "instance_name": "external_help_arrival",
+            "description": "Saint Peter came and opened the gate of heaven, letting the peasant in.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "story_beginning",
+            "description": "",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "setup_transition",
+            "description": "{ Part 5: The Peasant's Expectation vs Reality }",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "new_location_arrival",
+            "description": "The peasant expected that they would make music and sing when he went in also, but all remained quite quiet; he was received with great affection, it is true, and the angels came to meet him.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "episode_progression",
+            "description": "{ Part 6: The Peasant's Inquiry }",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "uri": "https://fairytalez.com/the-peacock-and-juno",
+    "nation": "greek",
+    "title": "The Peacock and Juno",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "magical_creature",
+            "instance_name": "peacock",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "false_hero"
+            },
+            "lives_in": 1
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "juno",
+            "age_category": "senior",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 1
+        }
+    ],
+    "relationships": [],
+    "places": [
+        {
+            "class_name": "natural_place",
+            "instance_name": "mountainous_region"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "juno_palace"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "petition"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "peacock"
+        }
+    ],
+    "events": []
+}

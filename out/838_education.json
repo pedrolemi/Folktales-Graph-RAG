@@ -1,0 +1,147 @@
+{
+    "uri": "https://fairytalez.com/education",
+    "nation": "french",
+    "title": "Education",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "lapluck_brother",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "hero",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 1
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "caesar_brother",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "family_member"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "forest",
+            "instance_name": "boundless_wood"
+        },
+        {
+            "class_name": "house",
+            "instance_name": "kitchen"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "wooden_kitchen"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "forest"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "initial_situation",
+            "instance_name": "character_background_origin",
+            "description": "Lapluck and Cæsar brothers were descended from dogs by Fame the most commended.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "separation_event",
+            "description": "They fell to different masters in their puppyhood, with one dwelling and hunting in the boundless wood, while the other kept a kitchen free from thieves.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "name_stick_due_to_upbringing",
+            "description": "Initially, each brother had a different name, but through their upbringing, Lapluck's name stuck as he grew into a sordid creature.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "caesar_hunts",
+            "description": "In contrast, Cæsar improved upon his nature and became known for his high exploits in hunting, putting many stags at bay and tearing down trophies from boars.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "caesar_noble_background",
+            "description": "Cæsar was recognized by the world as the first of his crew to embody noble blood, and great care was taken to ensure that he did not mate with a baser partner, lest his lineage degenerate.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "transfiguration",
+            "instance_name": "transformation_result",
+            "description": "However, Lapluck's descendants became a countless nation, specifically the common turnspits throughout France, who are characterized by their reluctance to advance in the face of danger.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "hero_departure",
+            "instance_name": "conflict_preparation",
+            "description": "This situation is likened to the Antipodes of what is considered noble and strong, as exemplified by Cæsar and his kind.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "consequences_of_neglect",
+            "description": "It is noted that often sons fall below their sire's estate due to a lack of care and proper nurturing, leading to degeneration and a loss of natural gifts.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        }
+    ]
+}

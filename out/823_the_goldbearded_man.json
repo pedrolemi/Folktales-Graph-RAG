@@ -1,0 +1,69 @@
+{
+    "uri": "https://fairytalez.com/gold-bearded-man",
+    "nation": "hungarian",
+    "title": "The Gold-Bearded Man",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "the_prince",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "cold",
+                "depressive"
+            ],
+            "has_role": {
+                "class_name": "princess",
+                "instance_name": "thepoorboy"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_king",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "cold",
+                "depressive"
+            ],
+            "has_role": {
+                "class_name": "princess",
+                "instance_name": "theking"
+            }
+        }
+    ],
+    "relationships": [],
+    "places": [
+        {
+            "class_name": "palace",
+            "instance_name": "the_king_palace"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "wood_pigeon_who_spoke_to_the_prince_and_helped_him_sort_grain_by_color"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "wild_duck_who_spoke_to_the_prince_and_helped_him_find_the_ring_in_the_brook"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "stork_who_spoke_to_the_prince_and_brought_a_baby_to_play_music_for_him"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "move",
+            "instance_name": "prince_escape",
+            "description": "The story begins with a young prince who is forced to run away from his stepfather's cruelty. He encounters three birds - a wood-pigeon, a wild duck, and a stork - each of whom owes him a debt for saving their lives in the past. The first bird helps him sort wheat and barley, the second finds a lost ring, and the third produces a baby who can speak all languages and play musical instruments. The prince is eventually recognized as a true prince and marries the king's daughter. The two soldiers who had plotted against him are punished for their envy.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

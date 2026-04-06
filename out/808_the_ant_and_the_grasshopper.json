@@ -1,0 +1,143 @@
+{
+    "uri": "https://fairytalez.com/the-ant-and-the-grasshopper",
+    "nation": "greek",
+    "title": "The Ant and the Grasshopper",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "anthropomorphic_animal",
+            "instance_name": "grasshopper",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "joyful",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "false_hero",
+                "instance_name": "lazy_protagonist"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "anthropomorphic_animal",
+            "instance_name": "ant",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "active"
+            ],
+            "has_role": {
+                "class_name": "hero",
+                "instance_name": "wise_hero"
+            },
+            "lives_in": 3
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "field",
+            "instance_name": "summer_field"
+        },
+        {
+            "class_name": "river",
+            "instance_name": "no_ribe_found_in_the_story"
+        },
+        {
+            "class_name": "forest",
+            "instance_name": "no_forest_found_in_the_story"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "ants_nest"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "ear_of_corn"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "stores"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "main_character_introduction",
+            "description": "In a field one summer’s day, a Grasshopper was hopping about, chirping and singing to its heart's content.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "ant_carries_food",
+            "description": "An Ant passed by, bearing along with great toil an ear of corn he was taking to the nest. “Why not come and chat with me,” said the Grasshopper, “instead of toiling and moiling in that way?”",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 3
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "advisory_rejection",
+            "description": "“I am helping to lay up food for the winter,” said the Ant, “and recommend you to do the same.” “Why bother about winter?” said the Grasshopper; we have got plenty of food at present.”",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 3
+        },
+        {
+            "class_name": "move",
+            "instance_name": "story_progression_event",
+            "description": "But the Ant went on its way and continued its toil. When the winter came...",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 3
+        },
+        {
+            "class_name": "lack_of_bride",
+            "instance_name": "unprepared_hunger_crisis",
+            "description": "the Grasshopper had no food and found itself dying of hunger, while it saw the ants distributing every day corn and grain from the stores they had collected in the summer.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0,
+                1
+            ],
+            "place": 3
+        },
+        {
+            "class_name": "preparation",
+            "instance_name": "preparation_realization",
+            "description": "Then the Grasshopper knew: It is best to prepare for the days of necessity.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 3
+        }
+    ]
+}

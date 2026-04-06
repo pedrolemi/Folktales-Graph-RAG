@@ -1,0 +1,212 @@
+{
+    "uri": "https://fairytalez.com/the-cortelyou-elopement",
+    "nation": "north_american_native",
+    "title": "The Cortelyou Elopement",
+    "has_genre": "legend",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "cortelyou_daughter",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "joyful",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "cortelyou_father",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "cortelyou_son",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "brother_helper"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "redcoat_officer",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "hero_soulmate"
+            },
+            "lives_in": 1
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 0,
+            "other": 3,
+            "relationship": "friend"
+        },
+        {
+            "agent": 1,
+            "other": 3,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "dwelling",
+            "instance_name": "cortelyou_manor"
+        },
+        {
+            "class_name": "field",
+            "instance_name": "cortelyou_fields"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "flatbush_camp"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "brooklyn_harbor"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "daisies"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "ladder"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "moonlight_path"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "struggle",
+            "instance_name": "revolutionary_struggle",
+            "description": "In the Bath district of Brooklyn stands Cortelyou manor, built one hundred and fifty years ago, a place of defence during the Revolution when the British made sallies from their camp in Flatbush and worried the neighborhood.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "initial_encounter",
+            "description": "A gallant officer of red-coats met a pretty lass in the fields of Cortelyou while on a foray with his troops in search of pigs and chickens. He stilled her alarm by aiding her to gather wild-flowers, and it came about that the girl often went into the fields and came back with prodigious bouquets of daisies.",
+            "agents": [
+                0,
+                3
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "expulsion",
+            "instance_name": "family_disapproval_of_secret_relationship",
+            "description": "The elder Cortelyou had no inkling of this adventure until one of his sons saw her tryst with the red-coat at a distance. Be sure the whole family joined him in remonstrance. As the girl declared that she would not forego the meetings with her lover, the father swore that she should never leave his roof again.",
+            "agents": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "absentation",
+            "instance_name": "preparation_interrupted",
+            "description": "The damsel took her imprisonment as any girl of spirit would, but was unable to effect her escape until one evening, as she sat at her window, watching the moon go down and paint the harbor with a path of light. A tap at the pane, as of a pebble thrown against it, roused her from her revery.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "escape_initiation",
+            "description": "It was her lover on the lawn. At her eager signal he ran forward with a light ladder, planted it against the window-sill, and in less than a minute the twain were running toward the beach; but the creak of the ladder had been heard, and grasping their muskets two of the men hurried out.",
+            "agents": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "fight",
+            "instance_name": "unprovoked_attack",
+            "description": "In the track of the moon the pursuers descried a moving form, and, without waiting to challenge, they levelled the guns and fired. A woman’s cry followed the report; then a dip of oars was heard that fast grew fainter until it faded from hearing.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "branding",
+            "instance_name": "mental_state_impact",
+            "description": "On returning to the house they found the girl’s room empty, and next morning her slipper was brought in from the mud at the landing. Nobody inside of the American lines ever learned what that shot had done, but if it failed to take a life it robbed Cortelyou of his mind.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "confinement_beginning",
+            "description": "He spent the rest of his days in a single room, chained to a staple in the floor, tramping around and around, muttering and gesturing, and sometimes startling the passer-by as he showed his white face and ragged beard at the window.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

@@ -1,0 +1,183 @@
+{
+    "uri": "https://fairytalez.com/the-fisherman-and-the-merman",
+    "nation": "scottish",
+    "title": "The Fisherman and the Merman",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "magical_creature",
+            "instance_name": "ollavitinus",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "joyful",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "gioga",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "hero_family",
+                "instance_name": "mother_protector"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "shetlander",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "active",
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "knows"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "settlement",
+            "instance_name": "papa_stour"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "shetland_isles"
+        },
+        {
+            "class_name": "mountain",
+            "instance_name": "crags_at_one_of_the_stacks"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "skeo_at_hamna_voe"
+        },
+        {
+            "class_name": "river",
+            "instance_name": "atlantic"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "boat"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "seal_skin"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "amphibious_hides"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "move",
+            "instance_name": "introduce_imaginary_world",
+            "description": "In the Shetland Isles, strange stories are told about mermen and merwomen who inhabit a vast underwater territory. They possess habitations made of pearls and coral and have limited supernatural powers.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "introduction_of_key_species",
+            "description": "These beings have lungs adapted to atmospheric air but can enter the skin of an animal that can exist in the sea, allowing them to traverse between worlds. Their most common form is that of a seal or Haaf-fish.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "hero_departure",
+            "instance_name": "hero_left_behind",
+            "description": "A group of boatmen landed on a stack to attack seals, but one man was left behind when a tremendous swell arose. He was stranded with no prospect of rescue, facing perishing from cold and hunger or being washed into the sea.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "seals_transform_into_merpeople",
+            "description": "The stranded Shetlander witnessed many seals approaching the skerry, disrobing themselves, and resuming their merman and merwoman forms. They lamented the loss of their skins and the fate of Ollavitinus, who had been stripped of his seal's skin.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [
+                1
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "absentation",
+            "instance_name": "rescue_plan_proposal",
+            "description": "Gioga, mother of Ollavitinus, proposed a plan to rescue her son by carrying the stranded man across the sea on her back in exchange for Ollavitinus's seal-skin. A bargain was struck and Gioga donned her amphibious garb.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                2
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "absentation",
+            "instance_name": "character_request_for_preparation",
+            "description": "The Shetlander requested that Gioga allow him to cut holes in her skin to secure himself better during their journey, which she granted. He grasped the neck of the seal and committed himself to her care.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                2
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "contract_return",
+            "description": "Gioga safely landed the man at Acres Gio in Papa Stour. From there, he immediately went to a skeo at Hamna Voe where Ollavitinus's skin was deposited, fulfilling his part of the contract by returning the skin to Gioga.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 3
+        }
+    ]
+}

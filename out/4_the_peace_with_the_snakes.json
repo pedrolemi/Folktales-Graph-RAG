@@ -1,0 +1,91 @@
+{
+    "uri": "https://fairytalez.com/the-peace-with-the-snakes",
+    "nation": "north_american_native",
+    "title": "The Peace with the Snakes",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "owl_bear",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "cold",
+                "depressive"
+            ],
+            "name": "Owl Bear",
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "leader"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_snake",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "cold",
+                "depressive"
+            ],
+            "name": "The Snake",
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "leader"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_old_medicine_man",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "cold",
+                "depressive"
+            ],
+            "name": "The Old Medicine Man",
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "adviser"
+            }
+        }
+    ],
+    "relationships": [],
+    "places": [
+        {
+            "class_name": "mountain",
+            "instance_name": "elk_mountain"
+        },
+        {
+            "class_name": "river",
+            "instance_name": "elk_river"
+        },
+        {
+            "class_name": "city",
+            "instance_name": "piegan_camp"
+        },
+        {
+            "class_name": "forest",
+            "instance_name": "thick_pine_woods"
+        },
+        {
+            "class_name": "mountain",
+            "instance_name": "first_mountain"
+        },
+        {
+            "class_name": "village",
+            "instance_name": "snake_camp"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "dreams"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "knife"
+        }
+    ],
+    "events": []
+}

@@ -1,0 +1,328 @@
+{
+    "uri": "https://fairytalez.com/grandfather-grandson-eagle-woman",
+    "nation": "north_american_native",
+    "title": "Grandfather and Grandson and an Eagle Woman",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "grandfather",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "grandson",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "joyful",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "spider",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "magical_helper",
+                "instance_name": "fairy_godmother_helper"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "old_woman",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "cold",
+                "depressive"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "villain"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "young_woman",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "villain"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 0,
+            "other": 4,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 3,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "natural_place",
+            "instance_name": "north_natural_area"
+        },
+        {
+            "class_name": "forest",
+            "instance_name": "coons_forest"
+        },
+        {
+            "class_name": "field",
+            "instance_name": "fishing_grounds_field"
+        },
+        {
+            "class_name": "river",
+            "instance_name": "lake_river"
+        },
+        {
+            "class_name": "house",
+            "instance_name": "grandfather_house"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "home_settlement"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "coon_trap"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "bow_and_arrows"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "beaver"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "spider_rope"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "corn_pounder"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "sweat_house_flint"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "move",
+            "instance_name": "initial_confrontation_setup",
+            "description": "A GRANDFATHER and grandson lived far away from any village. All the people of their nation had been carried off. The grandfather was very careful of his grandson for he was the only comfort he had.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "boy_shares_woods_experience",
+            "description": "One day the boy ran into the cabin, and said, “Grandfather, I heard something out in the woods crying, ‘kidjidi! kidjidi!'”“Oh,” said the grandfather, “that was a chickadee, that is the first game hunters kill.”",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "successful_hunt",
+            "description": "The boy went out with his bow and arrows and after many attempts he killed a chickadee. When he took it home the old man danced with joy, singing as he danced, “My grandson will be a great hunter! My grandson will be a great hunter!”",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                1,
+                4
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "connective_incident",
+            "instance_name": "coon_encounter_discussion",
+            "description": "Another day the boy ran in crying, “O Grandfather, I’ve seen something with four legs, and a tail with four black stripes around it!“That was a coon,” said the grandfather. “That is the second game hunters kill.”",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "protagonist_ability_preview",
+            "description": "The boy killed a coon, and the old man danced and sang, “Oh, my grandson will be a great hunter! Oh, my grandson will be a great hunter!”",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "boy_reports_unusual_encounter",
+            "description": "The next day the boy ran in crying, “O, Grandfather, I’ve seen a strange thing walking on two legs. Red skin hangs from its head, and it makes a great noise.”“That was a turkey,” said the grandfather. “That is the third game a hunter kills.”",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "protagonist_engages_in_hunting",
+            "description": "The boy went to the woods and when he saw a flock of turkeys, he ran till he caught one of them. Again the old man danced and sang, “My grandson will be a great hunter.”",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "encounter_with_mysterious_entity",
+            "description": "The boy went out another day and saw a long creature with thin legs and something, like the branches of a tree, on its head. He was frightened; he ran home and told his grandfather what he had seen.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "hunting_skills_assessment",
+            "description": "The old man said, “That is the fourth and largest game; that was a deer. When a man can kill a deer he is a good hunter.”",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "guidance",
+            "instance_name": "mentorship_transition",
+            "description": "The next clay the boy killed a deer.The old man didn’t dance or sing this time; it was a solemn occasion. He taught the boy how to dress the deer and stretch the skin, then he said, “You are a young man now. You needn’t run in to tell me what you have seen, kill anything that comes along. A man that can kill a deer can kill all kinds of game. When hunting you can go in any direction except the North, wicked women live in the North; women who have killed many of our people.”",
+            "agents": [
+                0,
+                1,
+                4
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "direction_change",
+            "description": "The young man went toward the South, but he kept thinking about the women who had killed his relatives and at last he turned and went North.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "observes_evidence",
+            "description": "He came to a tree that was covered with scratches, like the scratches made by a coon’s nails. He said in his mind, “It must be that there are a great many coons in this tree.”",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "coyon_hunt",
+            "description": "He threw off his blanket, took a stick and his bow and arrows and climbed up till he came to a hole in the tree; he looked into the hole and, seeing a number of coons, poked his stick down, killed two or three of them, pulled them up and threw them to the ground.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                1
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "summoned_interaction",
+            "description": "As he did this he looked down and he saw, near the foot of the tree, a beautiful young woman.As soon as he saw her, she called out, “Come down, I want to talk to you.”",
+            "agents": [
+                1,
+                4
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "attempt_at_reconnaissance",
+            "instance_name": "woodpecker_transformation",
+            "description": "He paid no attention to the woman, but kept on killing coons. She called again and again. At last he went to the other side of the tree, turned himself into a red-headed woodpecker and went up the tree pecking the bark. When he got to the top he shot an arrow off toward home. The arrow whizzed through the air, making a noise like a woodpecker.The woman, thinking that the boy was in the arrow, hurried after it.The young man took his own form, slipped down from the tree, put on his clothes, gathered up the coons and went home. The grandfather was glad to get the coons, but when he knew where his grandson had been he was angry. “You must not go there again,” said he. “If you do, great harm will come to us.”",
+            "agents": [
+                1,
+                4
+            ],
+            "objects": [
+                5
+            ],
+            "place": 0
+        }
+    ]
+}

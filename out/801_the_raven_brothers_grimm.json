@@ -1,0 +1,504 @@
+{
+    "uri": "https://fairytalez.com/the-raven-brothers-grimm",
+    "nation": "german",
+    "title": "The Raven (Brothers Grimm)",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "the_queen",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "impulsive",
+                "impersonal"
+            ],
+            "has_role": {
+                "class_name": "magical_helper",
+                "instance_name": "magical_mother"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_raven_child",
+            "age_category": "children",
+            "gender": "female",
+            "has_personality": [
+                "impulsive",
+                "impersonal"
+            ],
+            "has_role": {
+                "class_name": "magical_helper",
+                "instance_name": "magical_daughter"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_man",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "impulsive",
+                "impersonal"
+            ],
+            "has_role": {
+                "class_name": "magical_helper",
+                "instance_name": "magical_rescuer"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_giant",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "impulsive",
+                "impersonal"
+            ],
+            "has_role": {
+                "class_name": "magical_helper",
+                "instance_name": "magical_guide"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_giant_brother",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "impulsive",
+                "impersonal"
+            ],
+            "has_role": {
+                "class_name": "magical_helper",
+                "instance_name": "magical_guide"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_robbber_one",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "impulsive",
+                "impersonal"
+            ],
+            "has_role": {
+                "class_name": "magical_helper",
+                "instance_name": "magical_guide"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_robbber_two",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "impulsive",
+                "impersonal"
+            ],
+            "has_role": {
+                "class_name": "magical_helper",
+                "instance_name": "magical_guide"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_robbber_three",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "impulsive",
+                "impersonal"
+            ],
+            "has_role": {
+                "class_name": "magical_helper",
+                "instance_name": "magical_guide"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_old_woman",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "impulsive",
+                "impersonal"
+            ],
+            "has_role": {
+                "class_name": "magical_helper",
+                "instance_name": "magical_guide"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_coachman",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "impulsive",
+                "impersonal"
+            ],
+            "has_role": {
+                "class_name": "magical_helper",
+                "instance_name": "magical_guide"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "the_child",
+            "age_category": "children",
+            "gender": "male",
+            "has_personality": [
+                "impulsive",
+                "impersonal"
+            ],
+            "has_role": {
+                "class_name": "magical_helper",
+                "instance_name": "magical_guide"
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 0,
+            "other": 3,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 0,
+            "other": 8,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "friend"
+        },
+        {
+            "agent": 1,
+            "other": 6,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 9,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 3,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 4,
+            "relationship": "friend"
+        },
+        {
+            "agent": 2,
+            "other": 5,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 2,
+            "other": 7,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 10,
+            "relationship": "knows"
+        },
+        {
+            "agent": 3,
+            "other": 4,
+            "relationship": "friend"
+        },
+        {
+            "agent": 3,
+            "other": 5,
+            "relationship": "knows"
+        },
+        {
+            "agent": 3,
+            "other": 6,
+            "relationship": "friend"
+        },
+        {
+            "agent": 3,
+            "other": 9,
+            "relationship": "knows"
+        },
+        {
+            "agent": 3,
+            "other": 10,
+            "relationship": "friend"
+        },
+        {
+            "agent": 4,
+            "other": 9,
+            "relationship": "friend"
+        },
+        {
+            "agent": 4,
+            "other": 10,
+            "relationship": "friend"
+        },
+        {
+            "agent": 5,
+            "other": 6,
+            "relationship": "knows"
+        },
+        {
+            "agent": 5,
+            "other": 7,
+            "relationship": "knows"
+        },
+        {
+            "agent": 6,
+            "other": 7,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 7,
+            "other": 10,
+            "relationship": "knows"
+        },
+        {
+            "agent": 8,
+            "other": 10,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "palace",
+            "instance_name": "queen_palace"
+        },
+        {
+            "class_name": "forest",
+            "instance_name": "dark_forest"
+        },
+        {
+            "class_name": "house",
+            "instance_name": "old_woman_house"
+        },
+        {
+            "class_name": "castle",
+            "instance_name": "golden_castle_stromberg"
+        },
+        {
+            "class_name": "tower",
+            "instance_name": "glass_mountain_tower"
+        },
+        {
+            "class_name": "village",
+            "instance_name": "giant_village"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "gold_ring"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "stick"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "glass_mountain"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "mantle_of_invisibility"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "horse"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "initial_situation",
+            "instance_name": "initial_character_transformation",
+            "description": "Part 1: The Queen's Impatience - A young princess is transformed into a raven by her mother's curse after the child refuses to be quiet.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "introduce_conflict_setup",
+            "description": "Part 2: The Man in the Forest - A man stumbles upon the raven and learns of its true identity as a king's daughter, bewitched by an old woman.",
+            "agents": [
+                1,
+                10
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "attempt_at_reconnaissance",
+            "instance_name": "attempt_at_deception",
+            "description": "Part 3: The Old Woman's Deception - The old woman tries to deceive the man into falling asleep by offering him food and drink, but he resists at first.",
+            "agents": [
+                8,
+                9
+            ],
+            "objects": [
+                1
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "persuasion_failure",
+            "description": "Part 4: The Man Falls Asleep - Despite his initial resistance, the man eventually falls asleep after being persuaded by the old woman to take a single drink.",
+            "agents": [
+                8,
+                2
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "protagonist_realization",
+            "description": "Part 5: The Raven's Grief - The raven returns to find the man sleeping and realizes that she will not be set free.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "villainy",
+            "instance_name": "villainy_resistance_continues",
+            "description": "Part 6: The Old Woman's Deception Continues - The old woman continues to try and deceive the man into staying asleep, but he resists again.",
+            "agents": [
+                8
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "hero_interdiction",
+            "instance_name": "hero_interdiction_drugged",
+            "description": "Part 7: The Man Falls Asleep Again - Despite his resistance, the man eventually falls asleep again after being persuaded by the old woman to take another drink.",
+            "agents": [
+                9,
+                10
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "raven_arrives_with_gift",
+            "description": "Part 8: The Raven's Final Visit - The raven returns to find the man sleeping and decides to leave him a gift, including a ring and a letter with instructions on how to set her free.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                0,
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "narrative_resumption",
+            "description": "Part 9: The Man Wakes Up - The man wakes up to find that he has slept for an unknown amount of time and realizes that he must continue his journey to set the raven free.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "journey_progression",
+            "description": "Part 10: The Man's Journey Continues - The man sets out on a long journey, walking through forests and eventually coming across a giant's house.",
+            "agents": [
+                2,
+                3
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "giant_encounter",
+            "description": "Part 11: Meeting the Giant - The man is initially afraid of the giant but eventually befriends him by offering to share his food and drink that never runs out.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "search_location",
+            "description": "Part 12: Asking for Directions - The man asks the giant if he knows where the golden castle of Stromberg is, and they search through various maps together.",
+            "agents": [
+                2,
+                3
+            ],
+            "objects": [],
+            "place": 3
+        },
+        {
+            "class_name": "move",
+            "instance_name": "receiving_external_help",
+            "description": "Part 13: Reaching the Golden Castle - With the help of the giant's brother, they finally find the location of the golden castle, but it is many thousand miles away.",
+            "agents": [
+                8
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "expulsion",
+            "instance_name": "attempted_ascent_failure",
+            "description": "Part 14: Climbing the Glass-Mountain - The man rides a magical horse up the glass-mountain to reach the golden castle, but finds that he cannot climb back down.",
+            "agents": [
+                9,
+                10
+            ],
+            "objects": [
+                4
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "wedding",
+            "instance_name": "character_unification",
+            "description": "Part 15: Setting the Raven Free - The man uses a stick to open the door of the castle and meets the raven in person. They get married the next day.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        }
+    ]
+}

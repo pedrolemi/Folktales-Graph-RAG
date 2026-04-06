@@ -1,0 +1,284 @@
+{
+    "uri": "https://fairytalez.com/children-one-eye",
+    "nation": "canadian_native",
+    "title": "The Children with One Eye",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "mother",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "aggressive",
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_character"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "boy",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "impulsive",
+                "tense"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "girl",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "joyful",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "old_woman",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "magical_helper"
+            },
+            "lives_in": 4
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 1,
+            "other": 3,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 2,
+            "other": 3,
+            "relationship": "knows"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "forest",
+            "instance_name": "canadian_forest"
+        },
+        {
+            "class_name": "house",
+            "instance_name": "their_home"
+        },
+        {
+            "class_name": "village",
+            "instance_name": "neighbouring_village"
+        },
+        {
+            "class_name": "forest",
+            "instance_name": "hunting_forest"
+        },
+        {
+            "class_name": "castle",
+            "instance_name": "land_of_little_people_castle"
+        },
+        {
+            "class_name": "town",
+            "instance_name": "nearby_town"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "eye_of_sight"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "burning_stick_wood"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "initial_context_establishment",
+            "description": "Two little children, a boy and a girl, lived long ago with their widowed mother in the Canadian forest. The woman was very poor, for her husband had long been dead and she had to work very hard to provide food for herself and her children.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "parental_absence_consequences",
+            "description": "The woman often had to go far from home in search of fish and game, leaving her children behind, which led them to grow up with little oversight or discipline. They became unruly and disobedient as they grew older.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "potential_conflict_introduced",
+            "description": "One day the woman left a large pot of bear-fat boiling on the fire while visiting a neighbor. She warned the children not to meddle with it, but the boy suggested dropping a burning stick into the fat to see what would happen.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                1
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "fire_escalation",
+            "description": "The fat sputtered and then burst into flames, scorching the children's faces and hair. They ran from the house crying in pain, but found they couldn't see because their eyes had been blinded by the fire.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [
+                1
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "branding",
+            "instance_name": "punishment_failure",
+            "description": "Their mother came home to find them stumbling around in darkness, crying for help. She tried various remedies to restore their sight, but none worked, and she said they would remain blind as punishment for their disobedience.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "behavior_shift",
+            "description": "The children lived in darkness for a long time, but they became less troublesome to their mother as they no longer refused to do her bidding.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "receipt_object",
+            "instance_name": "magical_gift_received",
+            "description": "An old woman came along while the mother was away hunting. She gave the children an eye from the Land of the Little People, allowing them to see at different times and handle it with care.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "boy_enters_forest_and_hunts_deer",
+            "description": "The boy used the eye when he went into the forest with his bow and arrows, killing a fat young deer that was too heavy for him to carry home alone.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 3
+        },
+        {
+            "class_name": "helper_move",
+            "instance_name": "obtained_external_assistance",
+            "description": "He called his sister to help cut up the deer and make a basket to carry the meat. She wove a large basket from green twigs using the eye's guidance.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 5
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "preparation_setup",
+            "description": "The boy then finished cutting up the meat, and they decided to have a meal there instead of carrying it home. The girl cooked the meal while the boy packed the meat into the basket.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "conflict_arises",
+            "description": "However, their argument over who should use the eye next led to them both losing it when a wood-pecker swooped down and gobbled it up.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 3
+        },
+        {
+            "class_name": "villainy",
+            "instance_name": "punishment_transformation",
+            "description": "The old woman appeared, having been hiding among the trees, and saw the wood-pecker flying away with her gift. She punished the children for lying and disobeying by changing the boy into a mole and the girl into a bat.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                0,
+                1
+            ],
+            "place": 3
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_transformation",
+            "description": "At once, the boy and the girl were transformed, and they became the Mole and the Bat, living blind upon the earth with only their sense of sound to guide them.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        }
+    ]
+}

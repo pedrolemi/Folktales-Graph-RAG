@@ -1,0 +1,357 @@
+{
+    "uri": "https://fairytalez.com/shoemakers-apron-story-man-sits-near-golden-gate",
+    "nation": "czechoslovak",
+    "title": "The Shoemaker's Apron: The Story of the Man Who Sits Near the Golden Gate",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "shoemaker",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "active",
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "shoemaker_s_wife",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "devil",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "christ",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "eager"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "st_peter",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 4
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "little_shoemaker",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "active",
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 0,
+            "other": 3,
+            "relationship": "friend"
+        },
+        {
+            "agent": 1,
+            "other": 5,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 2,
+            "other": 3,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 2,
+            "other": 5,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 4,
+            "relationship": "knows"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "dwelling",
+            "instance_name": "shoemakers_cottage"
+        },
+        {
+            "class_name": "community_building",
+            "instance_name": "village_school"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "garden_with_pear_tree"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "golden_gate_of_heaven"
+        },
+        {
+            "class_name": "community_building",
+            "instance_name": "heavenly_community_building"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "hellish_natural_place"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "cobbler_stool"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "window"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "pear_tree"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "initial_situation",
+            "instance_name": "initial_poverty_unveiled",
+            "description": "There was once a shoemaker who made so little at his trade that his wife suffered and his children went hungry. In desperation, he offered to sell his soul to a devil.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "connective_incident",
+            "instance_name": "devilish_proposal",
+            "description": "The devil agreed to give him work enough to provide a good livelihood for himself, his wife, and his children in exchange for his soul.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "resolution",
+            "instance_name": "positive_outcome_from_contract_signing",
+            "description": "After the contract was signed, the shoemaker's trade improved significantly, and he became prosperous.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "characters_arrive_location",
+            "description": "One night, Christ and St. Peter stopped at the little shoemaker's cottage, asking for a night's lodging.",
+            "agents": [
+                0,
+                3,
+                4,
+                5
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "hosting_guests",
+            "description": "The shoemaker received them most hospitably, offering them supper and his own bed to sleep on, while he and his wife slept in the garret.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "acquisition",
+            "instance_name": "pre_journey_provisions_obtained",
+            "description": "In the morning, the shoemaker prepared breakfast for Christ and St. Peter before taking them on their way for a mile or two.",
+            "agents": [
+                0,
+                4
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "resolution",
+            "instance_name": "hero_recognizes_contributor",
+            "description": "As they parted ways, St. Peter whispered to Christ that the little shoemaker had shown kindness and deserved a reward.",
+            "agents": [
+                3,
+                4
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "setup_grant_permission",
+            "description": "Christ agreed with St. Peter and told the shoemaker that he could make three wishes, which would be granted.",
+            "agents": [
+                0,
+                3,
+                4
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "stool_condition_setup",
+            "description": "The shoemaker made his first wish: whoever sat on his cobbler's stool couldn't get up until he permitted it.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "sets_trap",
+            "description": "He then made his second wish: whoever looked into his cottage window had to stand there until he let them go.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "makes_final_wish",
+            "description": "Finally, the shoemaker made his third and last wish: whoever shook the pear-tree in his garden would stick to it until he set them free.",
+            "agents": [
+                0,
+                5
+            ],
+            "objects": [
+                2
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "devil_arrives",
+            "description": "Years went by, and eventually the devil appeared again, this time before the little shoemaker's cottage.",
+            "agents": [
+                2,
+                5
+            ],
+            "objects": [
+                0,
+                1
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "devils_defeat",
+            "description": "The devil tried to sit on the cobbler's stool but was unable to get up; instead, he begged for help, promising seven more years of peace if the shoemaker would release him.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "solution_difficult_task",
+            "instance_name": "agreement_resolution",
+            "description": "The shoemaker freed the devil from the stool and the devil kept his promise, not returning for seven years.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "devil_demands_release",
+            "description": "When the devil returned the second time, he stood at the window but was unable to move; again, he begged for help, promising more years of peace if released by the shoemaker.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

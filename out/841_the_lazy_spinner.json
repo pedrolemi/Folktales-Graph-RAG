@@ -1,0 +1,203 @@
+{
+    "uri": "https://fairytalez.com/the-lazy-spinner",
+    "nation": "german",
+    "title": "The Lazy Spinner",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "man",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "active",
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "wife",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "aggressive",
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "village",
+            "instance_name": "their_village"
+        },
+        {
+            "class_name": "forest",
+            "instance_name": "the_forest"
+        },
+        {
+            "class_name": "house",
+            "instance_name": "their_house"
+        },
+        {
+            "class_name": "kingdom",
+            "instance_name": "no_kingdom_mentioned_in_the_story"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "woolen_reel_curse"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "couple_conflict_setup",
+            "description": "In a certain village, there lived a man and his wife who were struggling with household chores. The wife was extremely idle and would never work at anything her husband gave her to spin. She would let the yarn remain entangled in a heap.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "call_for_help",
+            "instance_name": "manipulative_deflection",
+            "description": "The wife's idleness caused her husband to scold her, but she always had an excuse ready. When he asked for a reel to wind the yarn, she told him to go into the forest and get one, knowing that if he did, he would make her a reel and she would have to continue spinning.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "call_for_help",
+            "instance_name": "wife_issues_prophecy",
+            "description": "The wife secretly followed her husband into the forest, where he was cutting wood for reels. She crept into a thicket below and cried out a warning, saying: “He who cuts wood for reels shall die,And he who winds shall perish.”",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "conflict_progression",
+            "description": "The man heard the cry but thought it was just his ears playing tricks on him. He continued to cut the wood, but after a second warning from the mysterious voice, he began to feel afraid and alarmed.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "man_encounters_obstacle",
+            "description": "Despite his fear, the man tried to ignore the warnings and continued cutting the wood for a third time. However, the voice shouted out loudly once more: “He who cuts wood for reels shall die,And he who winds shall perish.”",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "warning_caused_action_change",
+            "description": "This time, the man took heed of the warning and hastily descended the tree, abandoning his task of getting wood for reels. He returned home, where his wife greeted him innocently.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "dismissal_of_warning",
+            "description": "When her husband told her about the strange occurrences in the forest, she appeared unconcerned and asked if he had brought any wood for making reels. The man replied that he saw no sense in winding yarn anymore, and left her alone about it.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "trickery",
+            "instance_name": "trickery_attempt",
+            "description": "However, after some time passed, the man began to complain again about the disorder in their home due to his wife's idleness with spinning. He suggested they try a new method: she would throw the yarn up to him in the loft, and he would then pass it down to her.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "counteraction_initiated",
+            "description": "The woman agreed to this plan, but secretly devised another trick as soon as her husband had left for the loft. She went into the kitchen and put a lump of tow into the kettle instead of the yarn.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "branding",
+            "instance_name": "spinning_failure",
+            "description": "When her husband got up in the morning to check on the yarn, he found only tow in the kettle. He was devastated, thinking that he must have neglected his task, and vowed never to mention spinning again.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "resolution_function",
+            "instance_name": "negative_outcome_commentary",
+            "description": "The man's wife had successfully manipulated him into giving up on their household chores once more. The story concludes with a commentary on her odious behavior.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 2
+        }
+    ]
+}

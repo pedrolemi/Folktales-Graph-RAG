@@ -1,0 +1,125 @@
+{
+    "uri": "https://fairytalez.com/the-fox-and-the-mosquitos",
+    "nation": "greek",
+    "title": "The Fox and the Mosquitos",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "anthropomorphic_animal",
+            "instance_name": "fox_in_danger",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "anthropomorphic_animal",
+            "instance_name": "hedgehog_helper",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "eager"
+            ],
+            "has_role": {
+                "class_name": "helper",
+                "instance_name": "hero_friend"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "anthropomorphic_animal",
+            "instance_name": "mosquitoes_troop",
+            "age_category": "children",
+            "gender": "female",
+            "has_personality": [
+                "aggressive",
+                "impersonal"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "villain_ally"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "knows"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "river",
+            "instance_name": "fox_crossing_river"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "nearby_forest"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "bush"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "tail"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "hero_interdiction",
+            "instance_name": "hero_entanglement",
+            "description": "A Fox after crossing a river got its tail entangled in a bush, and could not move.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "branding",
+            "instance_name": "mosquito_feeding_event",
+            "description": "A number of Mosquitoes seeing its plight settled upon it and enjoyed a good meal undisturbed by its tail.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "helper_move",
+            "instance_name": "external_pity_intervention",
+            "description": "A hedgehog strolled by, taking pity on the Fox's situation.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        }
+    ]
+}

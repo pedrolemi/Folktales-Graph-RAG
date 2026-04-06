@@ -1,0 +1,360 @@
+{
+    "uri": "https://fairytalez.com/father-frost",
+    "nation": "russian",
+    "title": "Father Frost",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "stepmother",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "aggressive",
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 5
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "father",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "hero_family_member"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "stepdaughter",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "father_frost",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "magical_helper",
+                "instance_name": "fairy_godmother_helper"
+            },
+            "lives_in": 2
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "stepsister",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "impulsive",
+                "tense"
+            ],
+            "has_role": {
+                "class_name": "tertiary_character",
+                "instance_name": "unrelated_character"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "little_dog",
+            "age_category": "children",
+            "gender": "male",
+            "has_personality": [
+                "impulsive",
+                "sociable"
+            ],
+            "has_role": {
+                "class_name": "tertiary_character",
+                "instance_name": "unrelated_character"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 0,
+            "other": 5,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 4,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 2,
+            "other": 3,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 2,
+            "other": 5,
+            "relationship": "knows"
+        },
+        {
+            "agent": 3,
+            "other": 4,
+            "relationship": "family_member"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "natural_place",
+            "instance_name": "wide_fields"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "izba"
+        },
+        {
+            "class_name": "forest",
+            "instance_name": "woods"
+        },
+        {
+            "class_name": "dwelling",
+            "instance_name": "schouba"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "village"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "kitchen"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "frost"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "sleigh"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "tree"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "initial_situation",
+            "instance_name": "initial_stepmother_conflict",
+            "description": "In a far-away country, somewhere in Russia, there lived a stepmother who had a stepdaughter and also a daughter of her own. Her own daughter was dear to her, and always whatever she did the mother was the first to praise her, to pet her; but there was but little praise for the stepdaughter; although good and kind, she had no other reward than reproach.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "villainy",
+            "instance_name": "stepmother_manipulation",
+            "description": "The stepmother's jealousy towards the stepdaughter becomes so intense that she convinces her husband to abandon their daughter in the cold winter field, hoping she will die from the harsh conditions. The father reluctantly agrees, but is torn between his love for his daughter and his fear of his wife's wrath.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "hero_departure",
+            "instance_name": "father_leaves_daughter_alone",
+            "description": "The old father helped the young girl into the sleigh and drove her nearly to the woods, leaving her alone and unattended in the cold winter field. He speedily drove away, not wanting to see his daughter's death, but was unable to bring himself to abandon her completely.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "interaction_setups_conflict",
+            "description": "Alone and terrified, the stepdaughter repeated fervently all the prayers she knew, seeking help from a higher power. Father Frost, the almighty sovereign of the land, clad in furs and with a shining crown on his white head, approached her and asked if she knew him.",
+            "agents": [
+                3
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "gift_given",
+            "description": "Father Frost was charmed by the stepdaughter's kindness and gentle manners, and decided to treat her differently from others. He gave her a large heavy trunk filled with many beautiful things, including a rich schouba lined with precious furs, silk quilts, and a blue sarafan ornamented with silver and pearls.",
+            "agents": [
+                2,
+                3
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "physical_transformation",
+            "instance_name": "protagonist_resolution",
+            "description": "The stepdaughter put on the beautiful garments given by Father Frost and became such a stunning maiden that even the sun smiled at her. She was now a wealthy and happy girl, unlike before when she was left in the cold winter field.",
+            "agents": [
+                0,
+                2,
+                3
+            ],
+            "objects": [
+                0
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "preparation",
+            "instance_name": "funeral_preparations",
+            "description": "Meanwhile, the stepmother was busy baking pancakes for the meal to be served after the usual service for the dead, planning to give them to the priests and friends as part of the funeral rites. She convinced her husband to take their daughter's body back home, intending to bury it.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "receipt_object",
+            "instance_name": "statement_sparks_reaction",
+            "description": "The little dog in the corner, who had been watching the scene unfold, wagged its tail and said: ‘Bow-wow! bow-wow! the old man’s daughter is on her way home, beautiful and happy as never before, and the old woman’s daughter is wicked as ever before.’ The stepmother was furious at the dog's words.",
+            "agents": [
+                0,
+                2,
+                5
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "arrival",
+            "instance_name": "protagonist_homecoming",
+            "description": "The little dog continued to repeat its words despite being punished with pancakes and whippings. Somebody opened the gate, voices were heard laughing and talking outside, and the stepmother looked out in amazement. The stepdaughter had returned home like a princess, bright and happy in her beautiful garments.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "move",
+            "instance_name": "stepmother_reacts_to_daughter_return",
+            "description": "The stepmother was furious when she saw her daughter's return, but her anger quickly turned to despair as she realized that her own daughter would suffer the same fate as before. She ordered her husband to take their daughter back to the wide fields.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "hostile_guest_arrival",
+            "description": "Old Frost looked at his new guest and asked if she was comfortable. The stepdaughter, now a hardened girl, harshly answered: ‘Let me alone; canst thou not see that my feet and my hands are about stiff from the cold?’",
+            "agents": [
+                3
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "punishment_imposed",
+            "description": "The Frost became angry with the stepdaughter's impolite answer and decided to freeze her to death. He kept crackling and asking questions for quite a while, but obtaining no polite answer.",
+            "agents": [
+                3
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "prophetic_statement_made",
+            "description": "The little dog in the corner said: ‘Bow-wow! bow-wow! the old man’s daughter will marry soon; the old woman’s daughter shall be buried soon.’ The stepmother tried to silence it with pancakes and whippings, but the dog continued to repeat its words.",
+            "agents": [
+                0,
+                4,
+                5
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "resolution",
+            "instance_name": "mother_realizes_guilt",
+            "description": "The gate opened, and the old woman ran out to kiss her frozen daughter's lips. She wept and wept, finally understanding that through her own wickedness and envy her child had perished.",
+            "agents": [
+                0,
+                2
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "exposure_of_villain",
+            "instance_name": "villain_punished",
+            "description": "The stepmother realized too late that her actions had led to her own daughter's demise. The little dog's words were proven true: the old man’s daughter would marry soon, while the old woman’s daughter would be buried soon.",
+            "agents": [
+                0,
+                5
+            ],
+            "objects": [],
+            "place": 4
+        }
+    ]
+}

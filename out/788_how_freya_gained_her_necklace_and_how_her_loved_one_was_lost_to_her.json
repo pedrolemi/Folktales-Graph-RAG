@@ -1,0 +1,337 @@
+{
+    "uri": "https://fairytalez.com/freya-gained-necklace-loved-one-lost",
+    "nation": "nordic",
+    "title": "How Freya Gained Her Necklace and How Her Loved One Was Lost to Her",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "freya",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "odur",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "eager"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "hero_family"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "gulveig",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "aggressive",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 1
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "freya_child",
+            "age_category": "children",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "hero_family"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "frigga",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "hero_family"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "heimdall",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "eager"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "hero_family"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "friend"
+        },
+        {
+            "agent": 0,
+            "other": 3,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 0,
+            "other": 4,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 2,
+            "other": 4,
+            "relationship": "knows"
+        },
+        {
+            "agent": 3,
+            "other": 5,
+            "relationship": "knows"
+        },
+        {
+            "agent": 4,
+            "other": 5,
+            "relationship": "knows"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "city",
+            "instance_name": "asgard_city"
+        },
+        {
+            "class_name": "mountain",
+            "instance_name": "giant_mountain"
+        },
+        {
+            "class_name": "palace",
+            "instance_name": "freyas_palace"
+        },
+        {
+            "class_name": "dwelling",
+            "instance_name": "odurs_house"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "svartheim_village"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "gladsheim_hall"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "brisingamen"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "cocks_of_svartheim"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "consequences_of_mischief",
+            "description": "Loki went through Asgard silent and with head bent, and the Dwellers in Asgard said one unto the other, “This will teach Loki to work no more mischief.” They did not know that what Loki had done had sown the seeds of mischief and that these seeds were to sprout up and bring sorrow to the beautiful Vana Freya, to Freya whom the Giant wanted to carry off with the Sun and the Moon as payment for his building the wall around Asgard.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "admires_loki_gifts",
+            "description": "Freya had looked upon the wonders that Loki had brought into Asgard—the golden threads that were Sif’s hair, and Frey’s boar that shed light from its bristles as it flew. The gleam of these golden things dazzled her, and made her dream in the day time and the night time of the wonders that she herself might possess.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "giant_arrival_at_asgard",
+            "description": "Long ere this, when the wall around their City was not yet built, and when the Gods had set up only the court with their twelve seats and the Hall that was for Odin and the Hall that was for the Goddesses, there had come into Asgard Three Giant Women. They came after the Gods had set up a forge and had begun to work metal for their buildings.",
+            "agents": [
+                4
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "hero_departure",
+            "instance_name": "behavioral_shift_leads_to_consequences",
+            "description": "The Gods began to value gold and to hoard it. They played with it no more. And the happy innocence of their first days departed from them. At last the Three were banished from Asgard.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "character_reflection",
+            "description": "Freya, the lovely Vanir bride, thought upon the Giant Women and on the wonderful things of gold they had flashed through their hands. But not to Odur, her husband, did she speak her thoughts; for Odur, more than any of the other dwellers in Asgard, was wont to think on the days of happy innocence, before gold came to be hoarded and valued.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "departure_from_palace",
+            "description": "Freya left their palace, leaving Odur, her husband, playing with their little child Hnossa. She left the palace and went down to the Earth. There she stayed for a while, tending the flowers that were her charge.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "queen_initiates_counteraction",
+            "description": "She asked the Elves to tell her where the mountain was on which the Three Giant Women stayed. The Elves were frightened and would not tell her, although she was queen over them. She left them and stole down into the caves of the Dwarfs.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "kidnapping",
+            "instance_name": "detention_by_hostiles",
+            "description": "The Dwarfs showed her the way to the seat of the Giant Women, but before they showed her the way they made her feel shame and misery. They wanted her to stay with them until the cocks in Svartheim crowed.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "villainy",
+            "instance_name": "villainous_mistreatment",
+            "description": "Freya stayed with the Dwarfs until the cocks of Svartheim crowed. The Dwarfs kissed her and made her sit down beside them on the heaps of skins they had. When she wept they screamed at her and beat her.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_introduction",
+            "description": "The Giant Women sat overlooking the World of Men, and one who was called Gulveig said to Freya, “What would you have from us, wife of Odur?”",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "conflict",
+            "instance_name": "conflict_setup",
+            "description": "Freya took the shining necklace Brisingamen and clasped it round her throat. She could not bring herself to thank the Giant Women, for she saw that there was evil in their eyes.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_arrival_with_reactions",
+            "description": "Freya hardly stopped to speak to anyone as she made her way back into Asgard. All who greeted her looked long and with wonder upon the necklace that she wore. And into the eyes of the Goddesses there came a look of longing when they saw Brisingamen.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "character_leaves_due_to_conflict",
+            "description": "Frigga, the queenly Goddess, told Freya that Odur had gone from Asgard because he was unhappy about what Freya had done for the sake of a shining thing.",
+            "agents": [
+                0,
+                1,
+                4
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "husband_search",
+            "description": "Freya went down to Midgard to search for her lost husband. She journeyed over all the Earth, but in no place did she find a trace of him.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "new_information_received",
+            "description": "When Freya reached Bifröst, Heimdall, the Watcher for the Gods, told her that Odur was in every place where the searcher had not come; Odur is in every place that the searcher has left; those who seek him will never find Odur.",
+            "agents": [
+                0,
+                1,
+                5
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

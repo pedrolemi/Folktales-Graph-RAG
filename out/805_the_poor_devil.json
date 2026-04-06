@@ -1,0 +1,247 @@
+{
+    "uri": "https://fairytalez.com/the-poor-devil",
+    "nation": "swedish",
+    "title": "The Poor Devil",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "peasant",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 1
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "devil",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 3
+        }
+    ],
+    "relationships": [],
+    "places": [
+        {
+            "class_name": "natural_place",
+            "instance_name": "spring_pasture"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "peasants_house"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "swamp_area"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "bush_location"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "swamp"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "bush"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "daily_routine_setup",
+            "description": "A peasant led his cow to pasture in the spring, praying to God to have her in His care.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "villain_gains_information",
+            "instance_name": "villain_obtains_secret",
+            "description": "The evil one was sitting in a bush and overheard the peasant's prayer.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                1
+            ],
+            "place": 3
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "devil_reflects_on_his_behavior",
+            "description": "The devil thought to himself: 'When things turn out well, they thank God for it; but if anything goes wrong, then I am always to blame!'",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "cow_enters_swamp",
+            "description": "A few days later, the cow strayed into a swamp while the peasant was away.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "villainy",
+            "instance_name": "villainy_accusation",
+            "description": "The peasant came upon his cow in the swamp and blamed the devil for her misfortune: 'Look at that! The devil has had his finger in the pie again!'",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0,
+                1
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "devil_reflection_event",
+            "description": "The devil, sitting in his bush, thought to himself: 'Just what I might have expected.'",
+            "agents": [
+                1
+            ],
+            "objects": [
+                1
+            ],
+            "place": 3
+        },
+        {
+            "class_name": "move",
+            "instance_name": "initiating_rescue_plan",
+            "description": "The peasant went off to fetch people to help drag the cow out of the swamp.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "receipt_object",
+            "instance_name": "devil_intervenes",
+            "description": "While the peasant was away, the devil slipped from his bush and helped the cow get back onto dry land.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0,
+                1
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "devil_monologue_setup",
+            "description": "The devil thought to himself: 'Now he will have something to thank me for too.'",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "helper_move",
+            "instance_name": "arrival_assistance",
+            "description": "The peasant returned with a group of people to help drag the cow out, but found her already on dry land thanks to the devil's intervention.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0,
+                1
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "villain_defeated",
+            "instance_name": "conflict_resolution",
+            "description": "The peasant gave all the credit to God instead of thanking the devil for his help: 'Thank God, she’s out again!'",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0,
+                1
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "reflection_after_defeat",
+            "description": "The devil realized that he had been tricked by the peasant and thought to himself about his own foolishness.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "resolution",
+            "instance_name": "unresolved_outcome",
+            "description": "The story ends with no further developments or conclusions drawn from the events that transpired.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "conflict",
+            "instance_name": "conflict_setup",
+            "description": "There is no mention of any consequences for the actions taken by either the peasant or the devil.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 2
+        },
+        {
+            "class_name": "exposure_of_villain",
+            "instance_name": "overlooked_villainous_intention",
+            "description": "The story concludes with a sense of irony, as the peasant attributes all credit to God while the devil's intentions were not acknowledged.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 2
+        }
+    ]
+}

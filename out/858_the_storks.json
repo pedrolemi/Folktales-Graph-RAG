@@ -1,0 +1,372 @@
+{
+    "uri": "https://fairytalez.com/the-storks",
+    "nation": "danish",
+    "title": "The Storks",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "boy_singing_song",
+            "age_category": "children",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "tertiary_character",
+                "instance_name": "villain_minion"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "mother_stork",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "father_stork",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "young_stork_boy",
+            "age_category": "children",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "tertiary_character",
+                "instance_name": "villain_minion"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "good_boy_peter",
+            "age_category": "children",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "tertiary_character",
+                "instance_name": "hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "dead_child_peter",
+            "age_category": "children",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "tertiary_character",
+                "instance_name": "villain_minion"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 0,
+            "other": 3,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 0,
+            "other": 5,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 3,
+            "relationship": "friend"
+        },
+        {
+            "agent": 2,
+            "other": 3,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 3,
+            "other": 4,
+            "relationship": "friend"
+        },
+        {
+            "agent": 3,
+            "other": 5,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "village",
+            "instance_name": "stork_village"
+        },
+        {
+            "class_name": "house",
+            "instance_name": "hero_house"
+        },
+        {
+            "class_name": "forest",
+            "instance_name": "nearby_forest"
+        },
+        {
+            "class_name": "river",
+            "instance_name": "egyptian_river"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "pyramid_building"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "stork_settlement"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "frogs"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "clouds"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "pyramids"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "hail"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "snow"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "rattle"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "initial_situation",
+            "instance_name": "village_setting_established",
+            "description": "In a village, on the last house, there lay a stork's nest with a mother stork sitting in it with her four little ones. Her husband, the father stork, stood sentry on the roof, drawing one leg up under him as is the manner of storks.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "children_interact_with_storks",
+            "description": "Below in the street, a crowd of children were playing and noticed the storks. One of them began to sing an old song about the stork, which went like this: 'Stork, stork, fly away; Stand not on one leg to-day...' The other children joined in, each singing their own version of the words.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "stork_calms_frightened_young",
+            "description": "The mother stork tried to comfort her young ones, telling them not to listen to what the boys said. She explained that they were just singing a song and didn't mean any harm. But the little ones were frightened by the song's lyrics, which mentioned hanging, shooting, and burning.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "conflict_resolution",
+            "description": "The children sang their song again the next day, and the young storks asked their mother if it was true that they would be hanged or burned. The mother reassured them, saying they would learn to fly and then visit the frogs in a warm country.",
+            "agents": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "parent_interaction",
+            "description": "As the days passed, the nestlings grew stronger and more curious. They watched as their father brought them food, performing tricks and telling stories to entertain them.",
+            "agents": [
+                1,
+                2,
+                3
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "acquisition",
+            "instance_name": "acquisition_of_flight_skill",
+            "description": "The mother stork decided it was time for her young ones to learn how to fly. She took them to the roof and taught them how to hold their heads and balance on their feet.",
+            "agents": [
+                1,
+                3
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "learning_to_fly",
+            "description": "At first, the young storks struggled to fly, but with each attempt, they became more confident. They began to take clumsy little leaps off the roof, flapping their wings wildly as they tried to soar through the air.",
+            "agents": [
+                1,
+                3
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "helper_move",
+            "instance_name": "conflict_prevented_by_external_help",
+            "description": "The boys in the street sang their song again, and the young storks were tempted to peck at them in revenge. But their mother cautioned them against it, saying they should focus on learning to fly instead.",
+            "agents": [
+                1,
+                2,
+                3
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "improvement_practice",
+            "description": "As the young storks continued to practice flying, they became more skilled and confident. They began to take longer flights, soaring over the rooftops and practicing their landings.",
+            "agents": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "seasonal_setup",
+            "description": "The autumn season arrived, and all the storks began to assemble for their annual migration to warmer countries. The young storks were excited to join in the festivities and show off their flying skills.",
+            "agents": [
+                1,
+                2,
+                3
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "young_storks_impress_general",
+            "description": "At the great review, the young storks impressed the general with their flying abilities. They received a mark of 'Remarkably well' and were rewarded with a frog and a snake to eat.",
+            "agents": [
+                1,
+                2,
+                3
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "preparation",
+            "instance_name": "plan_disclosure",
+            "description": "With their revenge now within reach, the mother stork revealed her plan to the young storks. She told them they would fly to a pond where human babies lay waiting for the storks to collect them and bring them back to their parents.",
+            "agents": [
+                1,
+                3
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "punishment_reward_announcement",
+            "description": "The young storks were tasked with bringing back a baby for each child who had not sung the naughty song that made fun of the storks. The very naughty boy who began the song was given a little dead brother, while the good boy Peter received both a brother and a sister.",
+            "agents": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "arrival",
+            "instance_name": "hero_recognition_arrival",
+            "description": "As the mother stork's plan came to fruition, the young storks successfully retrieved babies from the pond and returned them to their grateful parents. From that day on, they were named Peter in honor of the kind-hearted boy who had stood up for them.",
+            "agents": [
+                1,
+                2,
+                3
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "arrival",
+            "instance_name": "story_conclusion_arrival",
+            "description": "The story concludes with the young storks, now named Peter, flying off into the distance, leaving behind the village where they had learned to fly and exacted their revenge on those who had mocked them.",
+            "agents": [
+                0,
+                4
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

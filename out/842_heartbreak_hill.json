@@ -1,0 +1,167 @@
+{
+    "uri": "https://fairytalez.com/heartbreak-hill",
+    "nation": "north_american_native",
+    "title": "Heartbreak Hill",
+    "has_genre": "legend",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "lovers_sailor",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "joyful",
+                "active"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "lovers_maiden",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "hero_family"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [],
+    "places": [
+        {
+            "class_name": "natural_place",
+            "instance_name": "heartbreak_hill"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "agawam_settlement"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "ship_wreck"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "shore"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "heartbreak_hill"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "ship_timbers"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "initial_situation",
+            "instance_name": "initial_context_established",
+            "description": "The name of Heartbreak Hill refers to an Indian settlement called Agawam in Ipswich, which existed before the English colony settled there.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "return",
+            "instance_name": "character_enters_new_environment",
+            "description": "A sailor strayed ashore from his ship and lived with the simple natives of Agawam for a time, finding their ways full of novelty.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "protagonist_leaves_loved_one",
+            "description": "When he found means to return to England, he took with him the love of a maiden from the tribe but left her behind, promising to return before many moons.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "character_setup",
+            "description": "The girl waited on Heartbreak Hill every day, looking seaward for any sign of her lover's return, as months turned into years.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "ship_struggles_in_gale",
+            "description": "One day, she saw a ship struggling to make harbor in a fierce gale, being pushed close to shore by the breakers and lashing against rocks and sand.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                0,
+                1
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "ship_crash",
+            "description": "She kept watch until the vessel became unmanageable and was hurled against the shore, where it smashed into a thousand pieces.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 3
+        },
+        {
+            "class_name": "branding",
+            "instance_name": "lover_loss_event",
+            "description": "As its timbers were tossed away on the frothing waves, she saw her lover's white face lifted to hers for an instant before it sank beneath the surface forever.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "villainy",
+            "instance_name": "character_decline_and_death",
+            "description": "The girl wasted away rapidly from that day, consumed by grief and despair, until she eventually passed away.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "villain_defeated",
+            "instance_name": "closure_arrival",
+            "description": "She is buried beside the ledge where she used to watch the sea, a poignant reminder of her tragic love story.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

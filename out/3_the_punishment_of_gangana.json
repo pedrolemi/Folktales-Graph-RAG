@@ -1,0 +1,144 @@
+{
+    "uri": "https://fairytalez.com/the-punishment-of-gangana",
+    "nation": "french",
+    "title": "The Punishment of Gangana",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "the_queen",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "cold",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "magical_helper",
+                "instance_name": "fairy_of_the_fields"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "petaldo",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "cold",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "magical_helper",
+                "instance_name": "fairy_of_the_fields"
+            }
+        }
+    ],
+    "relationships": [],
+    "places": [
+        {
+            "class_name": "field",
+            "instance_name": "island_of_bambini"
+        },
+        {
+            "class_name": "field",
+            "instance_name": "kingdom_of_petaldo"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "the_fairy_of_the_fields"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "gangana"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "conflict_introduction",
+            "description": "The story begins with Petaldo's children being taken away by a fairy named Gangana. She had been using her magic to make them behave badly so she could turn them into marionettes and keep them as pets. The Fairy of the Fields, who is a kind and wise fairy, discovers this and decides to help Petaldo and his family.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "get_present",
+            "instance_name": "request_for_aid",
+            "description": "The Fairy of the Fields visits the queen of the fairies in another island to ask for her help in rescuing Cadichon from Gangana's clutches. She gives the fairy queen a precious phial that contains a liquid that will make anyone invisible, but it won't work on mortals. The fairy queen advises her to use this power wisely and gives her some advice on how to deal with Gangana.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "fairy_countermeasures_begin",
+            "description": "The Fairy of the Fields returns home and decides to rescue Cadichon herself. She discovers that he is being kept in an enchanted island surrounded by a rapid river and guarded by 24 dragons. She uses the water of invisibility to sneak past the dragons and enter the island. Inside, she finds Gangana talking to a genius who is carrying out her orders.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                0,
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "plan_thwarted_twist",
+            "description": "Gangana tells the genius to fetch some griffins from the stables and take them to the Isle of Bambini to kidnap Petaldo's children. The Fairy of the Fields overhears this plan and decides to act quickly to prevent it. She flies back to the island where she was, but instead finds a barren rock with an ostrich on top carrying Cadichon and Gangana's niece.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "villain_defeated",
+            "instance_name": "villain_punishment_imposed",
+            "description": "The ostrich spreads its wings and flies off towards the Fortunate Isle, followed by the Fairy of the Fields. When they arrive at the palace, Gangana is waiting for them in her new form as an ostrich. The queen of the fairies sentences Gangana to lose all her fairy privileges and become the slave of a wicked genie for 200 years.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "wedding_or_throne",
+            "instance_name": "ruler_transition",
+            "description": "The children are brought up at the queen's court until they grow old enough to be married. Then, the Fairy of the Fields takes them back to the kingdom where Petaldo is now reigning. He and his wife decide to abdicate the throne and pass it on to Cadichon and his bride, who turn out to be good rulers and bring happiness to their people.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 1
+        },
+        {
+            "class_name": "wedding_or_throne",
+            "instance_name": "peaceful_transition_closure",
+            "description": "The story ends with the people rejoicing at the change in government and whispering to each other about how everything comes to those who know how to wait.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        }
+    ]
+}

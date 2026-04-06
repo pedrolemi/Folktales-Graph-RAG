@@ -1,0 +1,273 @@
+{
+    "uri": "https://fairytalez.com/girl-always-cried",
+    "nation": "north_american_native",
+    "title": "The Girl Who Always Cried",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "owl_man",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "girl",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "depressive",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "false_hero"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "old_man",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "magical_helper"
+            },
+            "lives_in": 0
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "enemy"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "dwelling",
+            "instance_name": "owl_mans_house"
+        },
+        {
+            "class_name": "settlement",
+            "instance_name": "nearby_village"
+        },
+        {
+            "class_name": "river",
+            "instance_name": "great_water"
+        },
+        {
+            "class_name": "forest",
+            "instance_name": "owl_mans_forest"
+        },
+        {
+            "class_name": "house",
+            "instance_name": "girl_house"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "basket"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "berries"
+        },
+        {
+            "class_name": "magical_object",
+            "instance_name": "magic_power"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "character_introduction",
+            "description": "On the bank of a stream far in the West, Owl-man lived long ago in a little house under the ground. He had very strange habits. He always kept away from the Great Water and he dwelt for the most part in the forest. He had very few friends, and he usually went hunting by himself. He lived on toads and frogs and flies. He would say but little, and when other people sat around him talking pleasantly, he was always silent, gazing into space with wide-open eyes, and trying to look wiser than he really was.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "disturbing_neighborhood",
+            "description": "Not far away lived a man and a woman who had one adopted daughter. Because she was the only child in the house, she was much petted, and she was never satisfied, and she cried and fretted all the time, and kept always asking for things she could not get. She disturbed all the neighbors round about so that they could not sleep because of her constant wailing and complaining.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "magical_intervention",
+            "description": "At last her foster parents grew tired of her weeping and they said, “The Owl-man will carry you off if you do not stop crying.” But still she pouted and fretted. And the old man of the house said, “I wish the Owl-man would come and take her away.” Now the old man was a great magician, and as he wished, so it came to pass.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "protagonist_encounters_an_old_character",
+            "description": "That evening it happened that the people were gathered at a feast of shellfish on the beach by the bright moonlight, as was their weekly custom. But the sorrowful girl would not go with the others. She stayed at home and sulked. As she sat alone in the house, old Owl-man came along carrying his basket full of toads and frogs.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "capture_abduction",
+            "description": "The girl was still crying when he came in. “I have come for you,” he said, “as the old man wished.”And he put her in his basket with the toads and frogs and carried her off. She yelled and kicked and scratched, but the lid of the basket was tightly closed and Owl-man laughed to himself and said, “Now I have a wife at last. I shall be alone no more, and the people will not think I am so strange.”",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "girl_disappearance",
+            "description": "So he took her to his underground house by the stream. That night the people noticed that the girl’s cries were no longer heard and they said, “What can have cured Sour-face; what can have pleased Cry-Baby into silence?” And the girl’s foster mother wondered where she had gone.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "girl_relocation",
+            "description": "But only the old man knew that it had happened as he had wished, because of his magic power, and that Owl-man had taken her away. The girl was not happy in her new home, for she would not be happy in any place.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "hero_departure",
+            "instance_name": "daily_hunting_routine_conflict",
+            "description": "She still kept up her caterwauling and there was no peace in the house. Owl-man was a great hunter. Every day he went out hunting with his big basket on his arm, but he always locked his wife in the house before he went away.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "conflict",
+            "instance_name": "marital_dispute_over_meals",
+            "description": "He was always very successful in the chase, and each night he came back with his basket full of toads and frogs and field-mice and flies. But his wife would eat none of them and she threw them in his face when he offered them to her, and said in a bad temper, “I will not eat your filthy food. It is not fit food for gentle-folk.”",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "lack_of_money",
+            "instance_name": "financial_strain",
+            "description": "And Owl-man said, “Gentle-folk indeed! You should find a more suitable name; you are not gentle; you are a wild evil thing, but I am going to tame you.” And the girl wept again and sulked and stamped her feet in her temper.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "alleviating_hunger",
+            "description": "At last the girl became very hungry, for there was little to eat except the food that Owl-man brought home for himself. He gathered a few berries for her, but even these did not satisfy her hunger.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                1
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "execution_of_escape_plan",
+            "description": "So she thought out a plan of escape. One day when Owl-man was away, she took some oil she found in the house and rubbed it all over her face and hair.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "helper_move",
+            "instance_name": "compliment_response",
+            "description": "When Owl-man came home in the evening, he said, “You are very pretty tonight. What have you done to make yourself look so sleek and shiny?”And she answered, “I have put on my face and hair gum which I picked from the trees last night when I went walking with you.”",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "initial_request_setup",
+            "description": "And he said, “I should like to put some on too, for perhaps it would make me beautiful.” The girl told him that if he would go out and gather some gum she would put it on his face and hair for him.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "transformation_preparation",
+            "description": "So he went out and gathered a great store of gum from the trees and brought it back to her. She melted it on a hot stove until it was balsam again and would pour easily out.Then she said, “Shut your eyes so that it will not harm your sight, and I will make your face and hair beautiful and shining like mine.”",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 4
+        }
+    ]
+}

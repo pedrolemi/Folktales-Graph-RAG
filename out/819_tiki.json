@@ -1,0 +1,388 @@
+{
+    "uri": "https://fairytalez.com/tiki",
+    "nation": "maori",
+    "title": "Tiki",
+    "has_genre": "myth",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "tane",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "joyful",
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "tiki",
+            "age_category": "young",
+            "gender": "male",
+            "has_personality": [
+                "joyful",
+                "active"
+            ],
+            "has_role": {
+                "class_name": "hero",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 1
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "goddesses",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "magical_helper",
+                "instance_name": "godly_helper"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "tu",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "egocentric"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "tane_brothers",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "joyful",
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "tane_brothers_roongo",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "joyful",
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "tane_brothers_haumia",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "joyful",
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "tane_brothers_tangaroa",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "joyful",
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 3
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "tane_brother_wife",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "joyful",
+                "active"
+            ],
+            "has_role": {
+                "class_name": "hero",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 1
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "friend"
+        },
+        {
+            "agent": 0,
+            "other": 3,
+            "relationship": "knows"
+        },
+        {
+            "agent": 0,
+            "other": 4,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 0,
+            "other": 6,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 0,
+            "other": 7,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 0,
+            "other": 8,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 1,
+            "other": 5,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 1,
+            "other": 8,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 5,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 8,
+            "relationship": "knows"
+        },
+        {
+            "agent": 3,
+            "other": 4,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 5,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 6,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 3,
+            "other": 7,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 4,
+            "other": 5,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 4,
+            "other": 6,
+            "relationship": "knows"
+        },
+        {
+            "agent": 4,
+            "other": 7,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 5,
+            "other": 6,
+            "relationship": "knows"
+        },
+        {
+            "agent": 5,
+            "other": 7,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 6,
+            "other": 8,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 7,
+            "other": 8,
+            "relationship": "family_member"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "natural_place",
+            "instance_name": "red_clay_site"
+        },
+        {
+            "class_name": "forest",
+            "instance_name": "forest_trees"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "sunrise_palace"
+        },
+        {
+            "class_name": "natural_place",
+            "instance_name": "barren_plain"
+        },
+        {
+            "class_name": "river",
+            "instance_name": "lake_of_glowing_light"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "red_clay"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "life_giving_song_book"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "sunshine"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "move",
+            "instance_name": "preparation",
+            "description": "Tāne discovered red clay exposed on a cliff face and recognized its sacred significance, envisioning an opportunity to create something greater.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "being_creation",
+            "description": "Tāne gathered the red clay, fashioned it into his likeness, and breathed life into it. Slowly, the figure began to take shape and breathe as if in sleep.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "creation_of_first_man",
+            "description": "Tāne stood and chanted a life-giving song, infusing the figure with vitality. The limbs received their powers, eyes opened, and the shape arose and walked as Tiki, the first man.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                1
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "main_character_introduction",
+            "description": "The goddesses watched Tiki walk across the barren plain towards the forest trees, where birds sang. They decided that he needed a companion to alleviate his loneliness.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 3
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "character_creation_through_magic",
+            "description": "The goddesses wove a fine mist from the Sunshine and Echo in the forest, shaping it limb by limb into a woman. They sent her out to meet Tiki, and he was no longer alone.",
+            "agents": [
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "move",
+            "instance_name": "location_change_setup",
+            "description": "Tāne went to live in the shining Sunrise Land, beside the Lake of Glowing Light, leaving Tu as master of the garden among the giant-brothers.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "tu_teaches_fighting_skills",
+            "description": "Tu, the only brother left, taught the men and women in the garden the art of fighting, bestowing an evil gift upon them. Despite this, they worshipped him more than any other brother.",
+            "agents": [
+                3
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "struggle",
+            "instance_name": "influence_leads_to_conflict",
+            "description": "The people began to revere Tu as their god of war, abandoning peace on earth, a result of his influence.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

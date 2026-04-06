@@ -1,0 +1,109 @@
+{
+    "uri": "https://fairytalez.com/oxen-axle-trees",
+    "nation": "greek",
+    "title": "The Oxen and the Axle-Trees",
+    "has_genre": "fable",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "oxen_owner",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_character"
+            },
+            "lives_in": 0
+        },
+        {
+            "class_name": "group_of_agents",
+            "instance_name": "oxen",
+            "age_category": "young",
+            "gender": "female",
+            "has_personality": [
+                "assertive",
+                "tense"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            },
+            "lives_in": 2
+        }
+    ],
+    "relationships": [],
+    "places": [
+        {
+            "class_name": "natural_place",
+            "instance_name": "highway"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "waggon"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "yoke"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "crafted_object",
+            "instance_name": "yoke"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "axletrees"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "move",
+            "instance_name": "wagon_moving",
+            "description": "A pair of Oxen were drawing a heavily loaded waggon along the highway.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "oxen_struggle",
+            "description": "The Axletrees creaked and groaned terribly as the Oxen tugged and strained at the yoke.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 2
+        },
+        {
+            "class_name": "move",
+            "instance_name": "oxen_protest",
+            "description": "The Oxen turned round indignantly and addressed someone, saying, 'Hullo, you there! Why do you make such a noise when we do all the work?'",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "complaint_illustration",
+            "description": "This complaint from the Oxen illustrates that people complain most who suffer least.",
+            "agents": [
+                1
+            ],
+            "objects": [],
+            "place": 0
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "uri": "https://fairytalez.com/holiday-adventures",
+    "nation": "german",
+    "title": "Holiday Adventures",
+    "has_genre": "fairy_tale",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "mother",
+            "age_category": "adult",
+            "gender": "female",
+            "has_personality": [
+                "impersonal",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "main_character",
+                "instance_name": "main_characte"
+            }
+        }
+    ],
+    "relationships": [],
+    "places": [
+        {
+            "class_name": "farmhouse",
+            "instance_name": "their_home"
+        },
+        {
+            "class_name": "forest",
+            "instance_name": "the_fairy_heath"
+        },
+        {
+            "class_name": "hut",
+            "instance_name": "the_landlady"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "the_forest"
+        },
+        {
+            "class_name": "natural_object",
+            "instance_name": "the_fire"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "move",
+            "instance_name": "character_encounter",
+            "description": "The story begins with a description of a farm in Germany, where two children, Trudel and Lottchen, live with their mother. They spend their summer holidays at the farm, surrounded by nature and its wonders. One day, while walking through the woods, they come across a strange figure - a little man dressed in green, who introduces himself as the tree man. He tells them that he lives in the hollow of an ancient oak tree and is married to a fairy. The children are enchanted by his stories and spend their days exploring the forest with him. They learn about the different plants and animals that live there and even get to see some fairies dancing around a fire one evening. As they prepare to leave the farm, the tree man gives them a special gift - a sketch of himself standing in front of the hollow oak tree. The children return home, excitedly telling their mother about their adventures with the tree man. To their surprise, she shows them her own sketch of the little man, which she had done earlier that summer. This discovery proves that even adults can see and appreciate the magic of nature.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 1
+        }
+    ]
+}

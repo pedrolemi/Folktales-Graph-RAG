@@ -1,0 +1,164 @@
+{
+    "uri": "https://read.gov/aesop/025",
+    "has_genre": "fable",
+    "title": "The Hare and The Tortoise",
+    "nation": "greek",
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "enemy"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 2,
+            "relationship": "knows"
+        }
+    ],
+    "agents": [
+        {
+            "class_name": "anthropomorphic_animal",
+            "instance_name": "tortoise",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "eager"
+            ],
+            "name": "Tortoise",
+            "has_role": {
+                "class_name": "hero",
+                "instance_name": "hero"
+            }
+        },
+        {
+            "class_name": "anthropomorphic_animal",
+            "instance_name": "hare",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "egocentric",
+                "impulsive"
+            ],
+            "name": "Hare",
+            "has_role": {
+                "class_name": "antagonist",
+                "instance_name": "hero_rival"
+            }
+        },
+        {
+            "class_name": "anthropomorphic_animal",
+            "instance_name": "fox",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "impersonal"
+            ],
+            "name": "Fox",
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "race_jugde"
+            }
+        }
+    ],
+    "places": [
+        {
+            "class_name": "forest",
+            "instance_name": "race_track"
+        }
+    ],
+    "objects": [],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "challenge_issued",
+            "agents": [
+                0,
+                1
+            ],
+            "place": 0,
+            "objects": []
+        },
+        {
+            "class_name": "conflict",
+            "instance_name": "antagonist_mocking_hero",
+            "agents": [
+                0,
+                1
+            ],
+            "place": 0,
+            "objects": []
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "challenge_accepted",
+            "agents": [
+                0
+            ],
+            "place": 0,
+            "objects": []
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "race_begins",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "place": 0,
+            "objects": []
+        },
+        {
+            "class_name": "conflict",
+            "instance_name": "antagonist_naps_during_race",
+            "agents": [
+                1
+            ],
+            "place": 0,
+            "objects": []
+        },
+        {
+            "class_name": "move",
+            "instance_name": "hero_steady_progress",
+            "agents": [
+                0
+            ],
+            "place": 0,
+            "objects": []
+        },
+        {
+            "class_name": "connective_incident",
+            "instance_name": "hero_passing_antagonist",
+            "agents": [
+                0,
+                1
+            ],
+            "place": 0,
+            "objects": []
+        },
+        {
+            "class_name": "resolution",
+            "instance_name": "antagonist_rushes_to_finish_line",
+            "agents": [
+                1
+            ],
+            "place": 0,
+            "objects": []
+        },
+        {
+            "class_name": "victory",
+            "instance_name": "hero_wins_race",
+            "agents": [
+                0
+            ],
+            "place": 0,
+            "objects": []
+        }
+    ]
+}

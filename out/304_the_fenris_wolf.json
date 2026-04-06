@@ -1,0 +1,336 @@
+{
+    "uri": "https://fairytalez.com/the-fenris-wolf",
+    "nation": "nordic",
+    "title": "The Fenris-Wolf",
+    "has_genre": "myth",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "loke",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "cold"
+            ],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            }
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "fenris_wolf",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "aggressive",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "villain",
+                "instance_name": "main_villain"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "odin",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "sociable",
+                "joyful"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "helper"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "tyr",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "assertive",
+                "eager"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "hero_family"
+            }
+        },
+        {
+            "class_name": "magical_creature",
+            "instance_name": "sleipner",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "active",
+                "assertive"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "magical_helper"
+            }
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "dwarfs",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [
+                "active",
+                "impulsive"
+            ],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "quest_giver"
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "family_member"
+        },
+        {
+            "agent": 0,
+            "other": 2,
+            "relationship": "knows"
+        },
+        {
+            "agent": 1,
+            "other": 3,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 3,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 4,
+            "relationship": "knows"
+        },
+        {
+            "agent": 2,
+            "other": 5,
+            "relationship": "friend"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "castle",
+            "instance_name": "lokes_castle"
+        },
+        {
+            "class_name": "forest",
+            "instance_name": "jotunheim_forest"
+        },
+        {
+            "class_name": "tower",
+            "instance_name": "odin_tower"
+        },
+        {
+            "class_name": "dwelling",
+            "instance_name": "frenir_wolf_den"
+        },
+        {
+            "class_name": "building",
+            "instance_name": "dwarfs_hut"
+        },
+        {
+            "class_name": "river",
+            "instance_name": "rainbow_bridge_river"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "magical_object",
+            "instance_name": "chain_of_tyr"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "hammer_of_thor"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "initial_situation",
+            "instance_name": "loke_character_introduction",
+            "description": "The story begins with Loke, a mischievous fellow, always getting other gods into trouble. Despite his cunning nature, they often let him out of confinement because he can help them accomplish things they cannot do for themselves.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "main_story_progress",
+            "description": "Loke crosses the rainbow bridge to Jotunheim, the land of giants, and brings home a giantess as his wife, resulting in the birth of unusual children.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 1
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "introducing_threatening_character",
+            "description": "One of Loke's children is Fenris-wolf, named Fenrer, who appears to be a normal wolf but grows larger and larger with time. The gods initially see no harm in him.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "absentation",
+            "instance_name": "hesitant_preparation",
+            "description": "As Fenrir grows stronger, the gods begin to fear that he might one day surpass their strength. However, they are unable to bring themselves to kill him due to his gentle nature.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 3
+        },
+        {
+            "class_name": "get_present",
+            "instance_name": "prepare_countermeasure",
+            "description": "The gods put off dealing with Fenrir for too long and soon find it is almost too late to do anything about him. They decide to forge a chain strong enough to bind the wolf.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "god_deception_preparation",
+            "description": "All the gods work together day and night to create a chain, but they know that binding Fenrir against his will won't be possible. To trick him into submission, they propose games with Thor showcasing his strength.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "preparation",
+            "instance_name": "preparing_for_bonding",
+            "description": "The gods engage in various competitions, including crushing mountains with hammers, lifting, leaping, and wrestling. They then bring out the forged chain to bind Fenrir.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [
+                0
+            ],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "chain_shattered",
+            "description": "Fenrir knows he can break the first chain but allows himself to be bound, only to easily shatter it upon taking a deep breath. The gods are left in despair at their failure.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "expulsion",
+            "instance_name": "chain_breakage",
+            "description": "The gods forge an even stronger chain, but Fenrir breaks that one as well. They realize they cannot create a more powerful chain and fear the wolf's growing strength.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "move",
+            "instance_name": "journey_prep",
+            "description": "Odin takes his horse Sleipner on a seven-day journey to the home of the dwarfs, skilled blacksmiths who live deep in the earth and are responsible for precious items.",
+            "agents": [
+                2,
+                4
+            ],
+            "objects": [],
+            "place": 4
+        },
+        {
+            "class_name": "acquisition",
+            "instance_name": "preparatory_object_creation",
+            "description": "The dwarfs agree to make a special chain that can bind Fenrir, assuring Odin it will be unbreakable. They craft the chain as light and delicate as a spider's web but with immense strength.",
+            "agents": [
+                0,
+                1,
+                2,
+                4
+            ],
+            "objects": [
+                0
+            ],
+            "place": 5
+        },
+        {
+            "class_name": "move",
+            "instance_name": "obstacle_presented",
+            "description": "When Fenrir sees the new chain, he is afraid of its power and refuses to let himself be bound unless a god's hand is put into his mouth. The gods are hesitant to comply.",
+            "agents": [
+                0,
+                1,
+                2
+            ],
+            "objects": [],
+            "place": 0
+        },
+        {
+            "class_name": "beginning_of_counteraction",
+            "instance_name": "god_sacrifices_hand_to_bind_monster",
+            "description": "Tyr, the bravest of all the gods, volunteers to put his hand into Fenrir's mouth, allowing the binding of the wolf with the unbreakable chain.",
+            "agents": [
+                1,
+                2,
+                3
+            ],
+            "objects": [
+                0
+            ],
+            "place": 3
+        },
+        {
+            "class_name": "branding",
+            "instance_name": "hero_suffers_setback",
+            "description": "As soon as the chain touches Fenrir, he realizes it cannot be broken and bites off Tyr's hand. However, this seals Fenrir's fate, and he is bound forever.",
+            "agents": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "objects": [
+                0
+            ],
+            "place": 5
+        }
+    ]
+}

@@ -1,0 +1,176 @@
+{
+    "uri": "https://fairytalez.com/anthonys-nose",
+    "nation": "north_american_native",
+    "title": "Anthony's Nose",
+    "has_genre": "legend",
+    "agents": [
+        {
+            "class_name": "human_being",
+            "instance_name": "anthony_van_corlaer",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [],
+            "has_role": {
+                "class_name": "primary_character",
+                "instance_name": "main_hero"
+            },
+            "lives_in": 5
+        },
+        {
+            "class_name": "human_being",
+            "instance_name": "peter_stuyvesant",
+            "age_category": "adult",
+            "gender": "male",
+            "has_personality": [],
+            "has_role": {
+                "class_name": "secondary_character",
+                "instance_name": "quest_giver"
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "agent": 0,
+            "other": 1,
+            "relationship": "knows"
+        }
+    ],
+    "places": [
+        {
+            "class_name": "mountain",
+            "instance_name": "bear_mountain"
+        },
+        {
+            "class_name": "mountain",
+            "instance_name": "sugar_loaf"
+        },
+        {
+            "class_name": "mountain",
+            "instance_name": "storm_king"
+        },
+        {
+            "class_name": "mountain",
+            "instance_name": "dunderberg"
+        },
+        {
+            "class_name": "mountain",
+            "instance_name": "breakneck_hill"
+        },
+        {
+            "class_name": "mountain",
+            "instance_name": "anthony_nose"
+        }
+    ],
+    "objects": [
+        {
+            "class_name": "natural_object",
+            "instance_name": "breakneck_hill"
+        },
+        {
+            "class_name": "crafted_object",
+            "instance_name": "sturgeon"
+        }
+    ],
+    "events": [
+        {
+            "class_name": "setup",
+            "instance_name": "region_description",
+            "description": "The Hudson Highlands are suggestively named Bear Mountain, Sugar Loaf, Cro’ Nest, Storm King, called by the Dutch Boterberg, or Butter Hill, from its likeness to a pat of butter; Beacon Hill, where the fires blazed to tell the country that the Revolutionary war was over; Dunderberg, Mount Taurus, so called because a wild bull that had terrorized the Highlands was chased out of his haunts on this height, and was killed by falling from a cliff on an eminence to the northward, known, in consequence, as Breakneck Hill.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "establishing_view",
+            "description": "These, with Anthony’s Nose, are the principal points of interest in the lovely and impressive panorama that unfolds before the view as the boats fly onward.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "geographical_introduction",
+            "description": "Concerning the last-named elevation, the aquiline promontory that abuts on the Hudson opposite Dunderberg, it takes title from no resemblance to the human feature",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "initial_situation",
+            "instance_name": "sturgeon_killed",
+            "description": "but is so named because Anthony Van Corlaer, the trumpeter, who afterwards left a reason for calling the upper boundary of Manhattan Island Spuyten Duyvil Creek, killed the first sturgeon ever eaten at the foot of this mountain.",
+            "agents": [
+                0
+            ],
+            "objects": [
+                1
+            ],
+            "place": 5
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "anthony_nose_discovered",
+            "description": "It happened in this wise: By assiduous devotion to keg and flagon Anthony had begotten a nose that was the wonder and admiration of all who knew it, for its size was prodigious;",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "object_description",
+            "description": "in color it rivalled the carbuncle, and it shone like polished copper.",
+            "agents": [
+                0
+            ],
+            "objects": [],
+            "place": 5
+        },
+        {
+            "class_name": "setup",
+            "instance_name": "incident_setup",
+            "description": "As Anthony was lounging over the quarter of Peter Stuyvesant’s galley one summer morning this nose caught a ray from the sun and reflected it hissing into the water, where it killed a sturgeon that was rising beside the vessel.",
+            "agents": [
+                0,
+                1
+            ],
+            "objects": [
+                0,
+                1
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "fish_consumed",
+            "description": "The fish was pulled aboard, eaten, and declared good, though the singed place savored of brimstone,",
+            "agents": [
+                1
+            ],
+            "objects": [
+                1
+            ],
+            "place": 4
+        },
+        {
+            "class_name": "move",
+            "instance_name": "mountain_named",
+            "description": "and in commemoration of the event Stuyvesant dubbed the mountain that rose above his vessel Anthony’s Nose.",
+            "agents": [
+                1
+            ],
+            "objects": [
+                0
+            ],
+            "place": 5
+        }
+    ]
+}
