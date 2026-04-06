@@ -1,92 +1,65 @@
 from models.folktale import AnnotatedFolktale
-from matplotlib.figure import Figure
 from loguru import logger
-import pandas as pd
 from typing import Any
+import pandas as pd
 import json
 import os
 
 def load_json(path: str):
-	"""
-	Carga un archivo JSON desde disco y lo devuelve como un objeto Python.
-	:param path: Ruta al archivo JSON
-	:return: Datos JSON parseados (dict o list)
-	"""
 	with open(path, "r", encoding="utf-8") as f:
 		data = json.load(f)
 
 	return data
 
 def save_json(path: str, data: dict[str, Any]):
+	if not path.endswith(".json"):
+		path += ".json"
+
+	os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+
 	with open(path, "w", encoding="utf-8") as f:
 		json.dump(data, f, ensure_ascii=False, indent=4)
 
-def load_json_folder(dir: str):
-	"""
-	Carga todos los archivos .json de un directorio en un diccionario.
-	La clave es el nombre del archivo sin extensión.
-	:param dir: Directorio que contiene los archivos JSON
-	:return: Dict[str, Any]
-	"""
+def load_folder(dir: str, extension: str):
 	files = {}
-	for file in os.listdir(dir):
-		if file.endswith(".json"):
-			filename = os.path.splitext(file)[0]
+	
+	for file_name in os.listdir(dir):
+		if file_name.endswith(extension):
+			key = os.path.splitext(file_name)[0]
+			full_path = os.path.join(dir, file_name)
 
-			path = os.path.join(dir, file)
-			json = load_json(path)
-			files[filename] = json
+			if extension == ".json":
+				files[key] = load_json(full_path)
+			else:
+				with open(full_path, "r", encoding="utf-8") as f:
+					files[key] = f.read()
+
 	return files
+
+def load_json_folder(dir: str):
+	return load_folder(dir, ".json")
 
 def load_txt_folder(dir: str):
-	"""
-	Carga todos los archivos .txt de un directorio en un diccionario.
-	La clave es el nombre del archivo sin extensión.
-	:param dir: Directorio que contiene los archivos de texto
-	:return: Dict[str, str]
-	"""
-	files = {}
-	for file in os.listdir(dir):
-		if file.endswith(".txt"):
-			filename = os.path.splitext(file)[0]
+	return load_folder(dir, ".txt")
 
-			path = os.path.join(dir, file)
-			with open(path, "r", encoding="utf-8") as f:
-				text = f.read()
-			files[filename] = text
-	return files
-
-def save_structured_folktale(folktale: AnnotatedFolktale, dir: str, filename: str):
-	os.makedirs(dir, exist_ok=True)
-
+def save_structured_folktale(folktale: AnnotatedFolktale, path: str):
 	folktale_json = folktale.model_dump(
 		mode="json",
 		exclude_none=True
 	)
 
-	output_file = filename + ".json"
-	path = os.path.join(dir, output_file)
-
 	save_json(path, folktale_json)
 
-	logger.success(f"Annotated folktale saved sucessfully. Filename: {os.path.basename(path)}.")
+	logger.success(f"Annotated folktale saved sucessfully in {path}")
 
-data_dir = "./data"
+def load_csv(path: str):
+	return pd.read_csv(path)
 
-def load_folktale_csv():
-	file = "folk_tales_deduplicated.csv"
-	path = os.path.join(data_dir, file)
+def save_csv(path: str, df: pd.DataFrame):
+	if not path.endswith(".csv"):
+		path += ".csv"
 
-	df = pd.read_csv(path)
+	os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+
+	df.to_csv(path)
 	
-	return df
-
-out_dir = "./out"
-
-def save_annotated_folktale(folktale: AnnotatedFolktale, filename: str):
-	annotated_dir = os.path.join(out_dir, "annotated")
-
-	save_structured_folktale(folktale, annotated_dir, filename)
-
-def save_fig(fig: Figure, filename: str):
-	fig.savefig(filename, dpi=300, bbox_inches="tight")

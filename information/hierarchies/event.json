@@ -1,0 +1,270 @@
+{
+    "event": {
+        "children": {
+            "move": {
+                "description": "Main action of the story, including setup, conflict, preparation, counteractions and external help that drives the narrative.",
+                "children": {
+                    "setup": {
+                        "description": "Initial context and situation of the hero, showing their state, environment and relationships before any conflict.",
+                        "children": {
+                            "initial_situation": {
+                                "description": "Hero's initial state before the conflict, including their environment and relationships, laying the foundation for the story.",
+                                "children": {}
+                            }
+                        }
+                    },
+                    "conflict": {
+                        "description": "Problems and obstacles faced by the hero, including interdictions, lacks, struggles, marks received, connective incidents and villain advantages.",
+                        "children": {
+                            "hero_interdiction": {
+                                "description": "Obstacles that prevent the hero from acting freely.",
+                                "children": {}
+                            },
+                            "villainy": {
+                                "description": "Malicious acts by the antagonist that hinder the hero's action.",
+                                "children": {
+                                    "false_matrimony": {
+                                        "description": "Deceptions related to marriages or false promises that complicate the hero's situation.",
+                                        "children": {}
+                                    },
+                                    "expulsion": {
+                                        "description": "Expulsion of the hero from a safe environment, forcing their departure.",
+                                        "children": {}
+                                    },
+                                    "kidnapping": {
+                                        "description": "Kidnapping that separates the hero or important characters from their environment.",
+                                        "children": {}
+                                    },
+                                    "murder": {
+                                        "description": "Murder that aggravates the conflict and generates greater obstacles.",
+                                        "children": {}
+                                    },
+                                    "lack": {
+                                        "description": "Deficiencies that motivate the hero's action, including absence of a partner or material resources.",
+                                        "children": {
+                                            "lack_of_bride": {
+                                                "description": "Absence of a necessary partner to achieve the hero's objectives.",
+                                                "children": {}
+                                            },
+                                            "lack_of_money": {
+                                                "description": "Lack of essential material resources that drives action.",
+                                                "children": {}
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "hero_departure": {
+                                "description": "Moment when the hero leaves their initial environment to face challenges.",
+                                "children": {}
+                            },
+                            "struggle": {
+                                "description": "Physical or moral conflicts of the hero, including direct confrontations with antagonists or their agents.",
+                                "children": {
+                                    "fight": {
+                                        "description": "Direct combat with the antagonist or their allies.",
+                                        "children": {}
+                                    }
+                                }
+                            },
+                            "branding": {
+                                "description": "Marks or physical signs the hero receives during conflict, either permanent or temporary injuries.",
+                                "children": {
+                                    "receive_mark": {
+                                        "description": "Permanent signs that identify the hero.",
+                                        "children": {}
+                                    },
+                                    "receive_injury": {
+                                        "description": "Physical injuries suffered during fights or confrontations.",
+                                        "children": {}
+                                    }
+                                }
+                            },
+                            "connective_incident": {
+                                "description": "Events that connect and advance the narrative, such as requests for help or decisions to depart.",
+                                "children": {
+                                    "call_for_help": {
+                                        "description": "Requests for assistance that drive the hero's or allies' actions.",
+                                        "children": {}
+                                    },
+                                    "departure_decision": {
+                                        "description": "Hero's decision to embark on their journey or mission.",
+                                        "children": {}
+                                    }
+                                }
+                            },
+                            "villain_gains_information": {
+                                "description": "Moments when the antagonist gains an advantage through information, increasing difficulty for the hero.",
+                                "children": {}
+                            }
+                        }
+                    },
+                    "preparation": {
+                        "description": "Planning and acquiring resources to face challenges, including temporary absence, violation of interdictions, obtaining objects and allies, guidance from mentors, strategies and contact with the enemy.",
+                        "children": {
+                            "absentation": {
+                                "description": "Temporary separation from the environment to prepare the action.",
+                                "children": {}
+                            },
+                            "breaking_interdiction": {
+                                "description": "Violation of restrictions to advance the mission.",
+                                "children": {}
+                            },
+                            "acquisition": {
+                                "description": "Obtaining essential objects, allies or knowledge, including gifts or tools.",
+                                "children": {
+                                    "get_present": {
+                                        "description": "Receiving gifts that aid the hero's mission.",
+                                        "children": {}
+                                    }
+                                }
+                            },
+                            "guidance": {
+                                "description": "Advice or direction provided by mentors to guide the hero.",
+                                "children": {}
+                            },
+                            "return": {
+                                "description": "Partial or full return of the hero to a previous environment during preparation.",
+                                "children": {}
+                            },
+                            "make_contact_with_enemy": {
+                                "description": "Direct interaction with the antagonist, either to confront or investigate.",
+                                "children": {}
+                            },
+                            "mediation": {
+                                "description": "Intervention of third parties to facilitate conflict resolution.",
+                                "children": {}
+                            },
+                            "trickery": {
+                                "description": "Strategies or deceptions used to overcome obstacles and adversaries.",
+                                "children": {}
+                            }
+                        }
+                    },
+                    "beginning_of_counteraction": {
+                        "description": "Start of the hero's active response to conflicts and obstacles.",
+                        "children": {}
+                    },
+                    "helper_move": {
+                        "description": "Intervention of allies or external forces to support the hero, including obtaining objects, resolving lacks and rescues.",
+                        "children": {
+                            "receipt_object": {
+                                "description": "Obtaining magical, symbolic or strategic objects that facilitate the mission.",
+                                "children": {}
+                            },
+                            "liquidiation_of_lack": {
+                                "description": "Resolution of initial deficiencies, such as freeing characters or the hero from captivity.",
+                                "children": {
+                                    "release_from_captivity": {
+                                        "description": "Release of detained characters or the hero themselves.",
+                                        "children": {}
+                                    }
+                                }
+                            },
+                            "pursuit_and_rescue": {
+                                "description": "Chasing the antagonist to rescue captives or secure victory.",
+                                "children": {}
+                            }
+                        }
+                    },
+                    "false_hero_make_unfounded_claim": {
+                        "description": "Appearance of a false hero who claims undeserved credit.",
+                        "children": {}
+                    },
+                    "attempt_at_reconnaissance": {
+                        "description": "Attempts to explore or gather information about the enemy to plan action.",
+                        "children": {}
+                    }
+                }
+            },
+            "resolution": {
+                "description": "Closure of the story with conflict resolution, hero's victory, recognition, punishment of the villain, transformations and symbolic closure such as weddings or thrones.",
+                "children": {
+                    "victory": {
+                        "description": "Hero's success, including definitive defeat of the antagonist.",
+                        "children": {
+                            "villain_defeated": {
+                                "description": "Definitive defeat of the antagonist, ensuring the hero's victory.",
+                                "children": {}
+                            }
+                        }
+                    },
+                    "arrival": {
+                        "description": "Hero's return or arrival at a new state, sometimes initially unrecognized.",
+                        "children": {
+                            "unrecognised_arrival": {
+                                "description": "Arrival without initial recognition, which may lead to the hero's final return home.",
+                                "children": {
+                                    "home_arrival": {
+                                        "description": "Hero's definitive return to their home or original environment.",
+                                        "children": {}
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "difficult_task_with_solution": {
+                        "description": "Resolution of complex challenges, from their posing to the action that solves them.",
+                        "children": {
+                            "difficult_task": {
+                                "description": "Significant challenge that the hero must overcome.",
+                                "children": {}
+                            },
+                            "solution_difficult_task": {
+                                "description": "Action that resolves the posed challenge, closing that part of the narrative.",
+                                "children": {}
+                            }
+                        }
+                    },
+                    "resolution_function": {
+                        "description": "Conclusion that establishes justice, recognition and reward, including punishment of the villain and reward for the hero.",
+                        "children": {
+                            "recognition": {
+                                "description": "Acknowledgment of the hero's merits for their actions.",
+                                "children": {}
+                            },
+                            "punishment": {
+                                "description": "Sanctioning the antagonist for their deeds.",
+                                "children": {}
+                            },
+                            "reward": {
+                                "description": "Reward given to the hero after overcoming conflicts.",
+                                "children": {}
+                            }
+                        }
+                    },
+                    "exposure_of_villain": {
+                        "description": "Revealing the true nature of the antagonist, showing their guilt.",
+                        "children": {}
+                    },
+                    "transfiguration": {
+                        "description": "Transformations after resolution, both physical and psychological of the hero.",
+                        "children": {
+                            "physical_transformation": {
+                                "description": "Visible physical changes reflecting the hero's evolution.",
+                                "children": {}
+                            },
+                            "psychological_transformation": {
+                                "description": "Hero's internal evolution, including maturity and character changes.",
+                                "children": {}
+                            }
+                        }
+                    },
+                    "wedding_or_throne": {
+                        "description": "Symbolic or literal closure of the story, including marriages or ascension to power.",
+                        "children": {
+                            "wedding": {
+                                "description": "Marriage as a symbol of union and narrative resolution.",
+                                "children": {}
+                            },
+                            "get_throne": {
+                                "description": "Ascension to power or prominent position as closure of the hero's arc.",
+                                "children": {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

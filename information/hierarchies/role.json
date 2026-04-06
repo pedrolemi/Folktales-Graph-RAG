@@ -1,0 +1,60 @@
+{
+    "role": {
+        "children": {
+            "primary_character": {
+                "description": "Central figure, usually the hero.",
+                "children": {
+                    "main_character": {
+                        "description": "The protagonist, often an ordinary person with extraordinary destiny.",
+                        "children": {
+                            "hero": {
+                                "description": "The character who embarks on a quest, overcoming challenges."
+                            }
+                        }
+                    },
+                    "antagonist": {
+                        "description": "The opposing force to the hero.",
+                        "children": {
+                            "villain": {
+                                "description": "The evil character."
+                            }
+                        }
+                    },
+                    "false_hero": {
+                        "description": "A deceitful character posing as a hero but ultimately a false figure."
+                    }
+                }
+            },
+            "secondary_character": {
+                "description": "Supporting characters who aid or hinder the hero's journey.",
+                "children": {
+                    "helper": {
+                        "description": "A character who assists the hero, offering wisdom or aid.",
+                        "children": {
+                            "magical_helper": {
+                                "description": "A supernatural being that provides powerful assistance."
+                            }
+                        }
+                    },
+                    "prisoner": {
+                        "description": "A trapped character, often driving the hero's actions.",
+                        "children": {
+                            "princess": {
+                                "description": "The hero's love interest."
+                            }
+                        }
+                    },
+                    "quest_giver": {
+                        "description": "A character who sends the hero on their journey, offering a mission or guidance."
+                    },
+                    "hero_family": {
+                        "description": "Family members who support the hero."
+                    }
+                }
+            },
+            "tertiary_character": {
+                "description": "Minor characters who play smaller role."
+            }
+        }
+    }
+}
