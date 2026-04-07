@@ -6,7 +6,7 @@
     "summary": "A quarrelsome tailor constantly abused his kind and hardworking wife. Authorities imprisoned him to reform his behavior, and he promised to treat her well. However, he soon resumed his abusive ways, this time tearing her hair and throwing objects at her. Neighbors intervened, and he was summoned again. When questioned, he twisted his actions as 'sharing joy and sorrow' with his wife, claiming hitting her brought him joy and her sorrow, and missing her brought the reverse. The judges were outraged and punished him appropriately.",
     "agents": [
         {
-            "id": 0,
+            "id": "agent-tailor",
             "race": "Human Being",
             "name": "Tailor",
             "age_group": "adult",
@@ -20,10 +20,10 @@
                 "neuroticism": 0.5
             },
             "role": "villain",
-            "lives_in": 0
+            "lives_in": "place-house"
         },
         {
-            "id": 1,
+            "id": "agent-wife",
             "race": "Human Being",
             "name": "Wife",
             "age_group": "adult",
@@ -37,10 +37,10 @@
                 "neuroticism": 0.5
             },
             "role": "primary_character",
-            "lives_in": 0
+            "lives_in": "place-house"
         },
         {
-            "id": 2,
+            "id": "agent-magistrate",
             "race": "Human Being",
             "name": "Magistrate",
             "age_group": "adult",
@@ -54,10 +54,10 @@
                 "neuroticism": 0.5
             },
             "role": "secondary_character",
-            "lives_in": 1
+            "lives_in": "place-magistrate-office"
         },
         {
-            "id": 3,
+            "id": "agent-neighbours",
             "race": "Human Being",
             "name": "Neighbours",
             "age_group": "adult",
@@ -70,24 +70,24 @@
                 "neuroticism": 0.5
             },
             "role": "secondary_character",
-            "lives_in": 0
+            "lives_in": "place-house"
         }
     ],
     "places": [
         {
-            "id": 0,
+            "id": "place-house",
             "type": "house",
             "name": "Tailor House",
             "description": "The tailor's home where most of the domestic conflict occurs; a symbol of private life and domestic strife."
         },
         {
-            "id": 1,
+            "id": "place-magistrate-office",
             "type": "community_building",
             "name": "Magistrate Office",
             "description": "The office of local authorities where justice is administered and the tailor is punished."
         },
         {
-            "id": 2,
+            "id": "place-yard",
             "type": "field",
             "name": "Yard",
             "description": "An open area near the house where the wife tries to escape and where confrontations take place."
@@ -95,13 +95,13 @@
     ],
     "objects": [
         {
-            "id": 0,
+            "id": "object-yard-measure",
             "type": "crafted_object",
             "name": "Yard Measure",
             "description": "A measuring tool the tailor uses as a weapon during a chase in the yard."
         },
         {
-            "id": 1,
+            "id": "object-scissors",
             "type": "crafted_object",
             "name": "Scissors",
             "description": "A pair of scissors used by the tailor to threaten or attack his wife."
@@ -109,22 +109,22 @@
     ],
     "relationships": [
         {
-            "source": 0,
-            "target": 1,
+            "source_id": "agent-tailor",
+            "target_id": "agent-wife",
             "type": "enemy",
             "description": "The tailor constantly abuses his wife",
             "strength": 0.9
         },
         {
-            "source": 1,
-            "target": 2,
+            "source_id": "agent-wife",
+            "target_id": "agent-magistrate",
             "type": "enemy",
             "description": "The wife knows the magistrate and appeals to him for help",
             "strength": 0.7
         },
         {
-            "source": 1,
-            "target": 3,
+            "source_id": "agent-wife",
+            "target_id": "agent-neighbours",
             "type": "knows",
             "description": "The wife relies on neighbors for support",
             "strength": 0.7
@@ -132,13 +132,13 @@
     ],
     "events": [
         {
-            "id": 0,
+            "id": "event-0",
             "type": "initial_situation",
             "name": "Initial Context",
             "description": "A quarrelsome tailor lives with his kind, industrious wife, constantly scolding her despite her efforts.",
             "agents": [
                 {
-                    "id": 0,
+                    "id": "agent-tailor",
                     "action": [
                         "Scolds his wife repeatedly",
                         "Shows dissatisfaction with her efforts"
@@ -146,7 +146,7 @@
                     "importance": 0.9
                 },
                 {
-                    "id": 1,
+                    "id": "agent-wife",
                     "action": [
                         "Performs household duties diligently",
                         "Maintains patience despite abuse"
@@ -155,16 +155,16 @@
                 }
             ],
             "objects": [],
-            "place": 0
+            "place": "place-house"
         },
         {
-            "id": 1,
+            "id": "event-1",
             "type": "move",
             "name": "Punishment Imposed",
-            "description": "Authorities imprison the abusive tailor to reform his behavior, keeping him on bread and water before releasing him.",
+            "description": "Authorities imprison the abusive tailor to reform his behavior.",
             "agents": [
                 {
-                    "id": 0,
+                    "id": "agent-tailor",
                     "action": [
                         "Is summoned by magistrate",
                         "Is imprisoned temporarily"
@@ -172,7 +172,7 @@
                     "importance": 0.8
                 },
                 {
-                    "id": 2,
+                    "id": "agent-magistrate",
                     "action": [
                         "Summons the tailor",
                         "Enforces imprisonment"
@@ -181,237 +181,177 @@
                 }
             ],
             "objects": [
-                1
+                "object-scissors"
             ],
-            "place": 1
+            "place": "place-magistrate-office"
         },
         {
-            "id": 2,
+            "id": "event-2",
             "type": "solution_difficult_task",
             "name": "Conflict Resolution",
-            "description": "The tailor promises not to beat his wife and to share joy and sorrow appropriately as a married couple.",
+            "description": "Authorities imprison the abusive tailor to reform his behavior.",
             "agents": [
                 {
-                    "id": 0,
+                    "id": "agent-tailor",
                     "action": [
-                        "Promises to reform",
-                        "Agrees to live peacefully with his wife"
+                        "Promises to reform"
                     ],
                     "importance": 0.8
                 },
                 {
-                    "id": 1,
+                    "id": "agent-wife",
                     "action": [
-                        "Listens to the promise",
                         "Hopes for peace"
                     ],
                     "importance": 0.7
                 }
             ],
             "objects": [],
-            "place": 0
+            "place": "place-house"
         },
         {
-            "id": 3,
+            "id": "event-3",
             "type": "fight",
-            "name": "Physical Confrontation with Violence",
-            "description": "The tailor breaks his promise, seizing and pulling out his wife's hair.",
+            "name": "Physical Confrontation",
+            "description": "Authorities imprison the abusive tailor to reform his behavior.",
             "agents": [
                 {
-                    "id": 0,
+                    "id": "agent-tailor",
                     "action": [
-                        "Seizes wife's hair",
-                        "Breaks his promise"
+                        "Pulls wife's hair"
                     ],
                     "importance": 0.9
                 },
                 {
-                    "id": 1,
+                    "id": "agent-wife",
                     "action": [
-                        "Suffers abuse",
                         "Tries to protect herself"
                     ],
                     "importance": 0.8
                 }
             ],
             "objects": [],
-            "place": 0
+            "place": "place-house"
         },
         {
-            "id": 4,
+            "id": "event-4",
             "type": "struggle",
-            "name": "Tailor Pursues Wife",
-            "description": "The wife escapes to the yard; the tailor chases her, throwing yard-measure and scissors.",
+            "name": "Chase in Yard",
+            "description": "Authorities imprison the abusive tailor to reform his behavior.",
             "agents": [
                 {
-                    "id": 0,
+                    "id": "agent-tailor",
                     "action": [
                         "Chases wife",
-                        "Throws yard-measure",
-                        "Throws scissors"
+                        "Throws objects"
                     ],
                     "importance": 0.9
                 },
                 {
-                    "id": 1,
+                    "id": "agent-wife",
                     "action": [
-                        "Runs to escape from tailor"
+                        "Runs away"
                     ],
                     "importance": 0.8
                 }
             ],
             "objects": [
-                0,
-                1
+                "object-yard-measure",
+                "object-scissors"
             ],
-            "place": 2
+            "place": "place-yard"
         },
         {
-            "id": 5,
+            "id": "event-5",
             "type": "helper_move",
             "name": "Neighbors Intervene",
-            "description": "Neighbors help the wife, and the tailor is summoned again to face the magistrates.",
+            "description": "Authorities imprison the abusive tailor to reform his behavior.",
             "agents": [
                 {
-                    "id": 0,
+                    "id": "agent-neighbours",
                     "action": [
-                        "Is confronted by neighbors",
-                        "Summoned again by magistrates"
+                        "Intervene"
                     ],
                     "importance": 0.8
                 },
                 {
-                    "id": 1,
+                    "id": "agent-magistrate",
                     "action": [
-                        "Receives help from neighbors"
-                    ],
-                    "importance": 0.7
-                },
-                {
-                    "id": 2,
-                    "action": [
-                        "Summons tailor for second hearing"
+                        "Summons tailor"
                     ],
                     "importance": 0.9
-                },
-                {
-                    "id": 3,
-                    "action": [
-                        "Intervenes on behalf of the wife"
-                    ],
-                    "importance": 0.8
                 }
             ],
-            "objects": [
-                1
-            ],
-            "place": 1
+            "objects": [],
+            "place": "place-magistrate-office"
         },
         {
-            "id": 6,
+            "id": "event-6",
             "type": "struggle",
-            "name": "Defensive Explanation",
-            "description": "The tailor tries to justify his actions as caring gestures (“combing her hair with his hand”).",
+            "name": "Excuses",
+            "description": "Authorities imprison the abusive tailor to reform his behavior.",
             "agents": [
                 {
-                    "id": 0,
+                    "id": "agent-tailor",
                     "action": [
-                        "Claims he only tried to comb her hair with hand",
                         "Denies abuse"
-                    ],
-                    "importance": 0.8
-                },
-                {
-                    "id": 1,
-                    "action": [
-                        "Responds passively to justification"
-                    ],
-                    "importance": 0.7
-                }
-            ],
-            "objects": [
-                1
-            ],
-            "place": 2
-        },
-        {
-            "id": 7,
-            "type": "move",
-            "name": "Tailor Chases Protagonist",
-            "description": "He further claims that chasing her and throwing objects was meant as admonition to bring her back to duty.",
-            "agents": [
-                {
-                    "id": 0,
-                    "action": [
-                        "Claims chasing was to teach a lesson",
-                        "Throws objects at wife"
-                    ],
-                    "importance": 0.9
-                },
-                {
-                    "id": 1,
-                    "action": [
-                        "Attempts to evade tailor"
-                    ],
-                    "importance": 0.8
-                }
-            ],
-            "objects": [
-                1
-            ],
-            "place": 0
-        },
-        {
-            "id": 8,
-            "type": "fight",
-            "name": "Domestic Tension Escalation",
-            "description": "He argues that hitting her shared joy and sorrow: his joy matched her sorrow, and vice versa when he missed her.",
-            "agents": [
-                {
-                    "id": 0,
-                    "action": [
-                        "Justifies hitting as sharing joy and sorrow",
-                        "Explains his twisted reasoning"
-                    ],
-                    "importance": 0.9
-                },
-                {
-                    "id": 1,
-                    "action": [
-                        "Experiences abuse",
-                        "Passively listens"
                     ],
                     "importance": 0.8
                 }
             ],
             "objects": [],
-            "place": 2
+            "place": "place-yard"
         },
         {
-            "id": 9,
-            "type": "reward",
-            "name": "Judgment and Consequence",
-            "description": "Judges, outraged by the tailor's actions, punish him appropriately.",
+            "id": "event-7",
+            "type": "move",
+            "name": "More Justifications",
+            "description": "Authorities imprison the abusive tailor to reform his behavior.",
             "agents": [
                 {
-                    "id": 0,
+                    "id": "agent-tailor",
                     "action": [
-                        "Is punished by the judges"
+                        "Justifies violence"
                     ],
                     "importance": 0.9
-                },
-                {
-                    "id": 1,
-                    "action": [
-                        "Witnesses justice being served"
-                    ],
-                    "importance": 0.7
                 }
             ],
-            "objects": [
-                0
+            "objects": [],
+            "place": "place-house"
+        },
+        {
+            "id": "event-8",
+            "type": "fight",
+            "description": "Authorities imprison the abusive tailor to reform his behavior.",
+            "name": "Twisted Logic",
+            "agents": [
+                {
+                    "id": "agent-tailor",
+                    "action": [
+                        "Explains logic"
+                    ],
+                    "importance": 0.9
+                }
             ],
-            "place": 0
+            "objects": [],
+            "place": "place-yard"
+        },
+        {
+            "id": "event-9",
+            "type": "reward",
+            "description": "Authorities imprison the abusive tailor to reform his behavior.",
+            "name": "Judgment",
+            "agents": [
+                {
+                    "id": "agent-magistrate",
+                    "action": [
+                        "Punishes tailor"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [],
+            "place": "place-magistrate-office"
         }
     ]
 }
