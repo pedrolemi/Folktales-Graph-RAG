@@ -1,5 +1,5 @@
 {
-    "event": {
+    "function": {
         "children": {
             "move": {
                 "description": "Main action of the story, including setup, conflict, preparation, counteractions and external help that drives the narrative.",

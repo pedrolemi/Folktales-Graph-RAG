@@ -6,6 +6,9 @@ import json
 import os
 
 def load_json(path: str):
+	if not path.endswith(".json"):
+		path += ".json"
+
 	with open(path, "r", encoding="utf-8") as f:
 		data = json.load(f)
 
@@ -53,6 +56,9 @@ def save_structured_folktale(folktale: AnnotatedFolktale, path: str):
 	logger.success(f"Annotated folktale saved sucessfully in {path}")
 
 def load_csv(path: str):
+	if not path.endswith(".csv"):
+		path += ".csv"
+
 	return pd.read_csv(path)
 
 def save_csv(path: str, df: pd.DataFrame):

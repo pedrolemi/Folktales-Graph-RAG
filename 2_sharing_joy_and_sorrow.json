@@ -2,14 +2,14 @@
     "url": "https://fairytalez.com/sharing-joy-and-sorrow",
     "title": "Sharing Joy and Sorrow",
     "nation": "german",
-    "has_genre": "fable",
+    "genre": "fable",
     "summary": "A quarrelsome tailor constantly abused his kind and hardworking wife. Authorities imprisoned him to reform his behavior, and he promised to treat her well. However, he soon resumed his abusive ways, this time tearing her hair and throwing objects at her. Neighbors intervened, and he was summoned again. When questioned, he twisted his actions as 'sharing joy and sorrow' with his wife, claiming hitting her brought him joy and her sorrow, and missing her brought the reverse. The judges were outraged and punished him appropriately.",
     "agents": [
         {
             "id": 0,
-            "race": "human_being",
-            "name": "tailor",
-            "age_category": "adult",
+            "race": "Human Being",
+            "name": "Tailor",
+            "age_group": "adult",
             "gender": "male",
             "description": "A quarrelsome and abusive man who mistreats his hardworking wife; he is the story's main villain.",
             "personality": {
@@ -19,14 +19,14 @@
                 "agreeableness": 0.5,
                 "neuroticism": 0.5
             },
-            "has_role": "villain",
+            "role": "villain",
             "lives_in": 0
         },
         {
             "id": 1,
-            "race": "human_being",
-            "name": "wife",
-            "age_category": "adult",
+            "race": "Human Being",
+            "name": "Wife",
+            "age_group": "adult",
             "gender": "female",
             "description": "A kind, industrious, and pious woman who suffers abuse but remains virtuous; she is the protagonist.",
             "personality": {
@@ -36,14 +36,14 @@
                 "agreeableness": 0.5,
                 "neuroticism": 0.5
             },
-            "has_role": "primary_character",
+            "role": "primary_character",
             "lives_in": 0
         },
         {
             "id": 2,
-            "race": "human_being",
-            "name": "magistrate",
-            "age_category": "adult",
+            "race": "Human Being",
+            "name": "Magistrate",
+            "age_group": "adult",
             "gender": "male",
             "description": "An authority figure who enforces justice and attempts to correct the tailor's behavior.",
             "personality": {
@@ -53,14 +53,14 @@
                 "agreeableness": 0.5,
                 "neuroticism": 0.5
             },
-            "has_role": "secondary_character",
+            "role": "secondary_character",
             "lives_in": 1
         },
         {
             "id": 3,
-            "race": "human_being",
-            "name": "neighbours",
-            "age_category": "adult",
+            "race": "Human Being",
+            "name": "Neighbours",
+            "age_group": "adult",
             "description": "Community members who intervene to protect the wife from the tailor's abuse.",
             "personality": {
                 "openness": 0.5,
@@ -69,7 +69,7 @@
                 "agreeableness": 0.5,
                 "neuroticism": 0.5
             },
-            "has_role": "secondary_character",
+            "role": "secondary_character",
             "lives_in": 0
         }
     ],
@@ -77,19 +77,19 @@
         {
             "id": 0,
             "type": "house",
-            "name": "tailor_house",
+            "name": "Tailor House",
             "description": "The tailor's home where most of the domestic conflict occurs; a symbol of private life and domestic strife."
         },
         {
             "id": 1,
             "type": "community_building",
-            "name": "magistrates_office",
+            "name": "Magistrate Office",
             "description": "The office of local authorities where justice is administered and the tailor is punished."
         },
         {
             "id": 2,
             "type": "field",
-            "name": "yard",
+            "name": "Yard",
             "description": "An open area near the house where the wife tries to escape and where confrontations take place."
         }
     ],
@@ -97,13 +97,13 @@
         {
             "id": 0,
             "type": "crafted_object",
-            "name": "yard_measure",
+            "name": "Yard Measure",
             "description": "A measuring tool the tailor uses as a weapon during a chase in the yard."
         },
         {
             "id": 1,
             "type": "crafted_object",
-            "name": "scissors",
+            "name": "Scissors",
             "description": "A pair of scissors used by the tailor to threaten or attack his wife."
         }
     ],
@@ -118,7 +118,7 @@
         {
             "source": 1,
             "target": 2,
-            "type": "knows",
+            "type": "enemy",
             "description": "The wife knows the magistrate and appeals to him for help",
             "strength": 0.7
         },
@@ -134,7 +134,7 @@
         {
             "id": 0,
             "type": "initial_situation",
-            "name": "initial_context",
+            "name": "Initial Context",
             "description": "A quarrelsome tailor lives with his kind, industrious wife, constantly scolding her despite her efforts.",
             "agents": [
                 {
@@ -160,7 +160,7 @@
         {
             "id": 1,
             "type": "move",
-            "name": "punishment_imposed",
+            "name": "Punishment Imposed",
             "description": "Authorities imprison the abusive tailor to reform his behavior, keeping him on bread and water before releasing him.",
             "agents": [
                 {
@@ -188,7 +188,7 @@
         {
             "id": 2,
             "type": "solution_difficult_task",
-            "name": "conflict_resolution",
+            "name": "Conflict Resolution",
             "description": "The tailor promises not to beat his wife and to share joy and sorrow appropriately as a married couple.",
             "agents": [
                 {
@@ -214,7 +214,7 @@
         {
             "id": 3,
             "type": "fight",
-            "name": "physical_confrontation_with_violence",
+            "name": "Physical Confrontation with Violence",
             "description": "The tailor breaks his promise, seizing and pulling out his wife's hair.",
             "agents": [
                 {
@@ -240,7 +240,7 @@
         {
             "id": 4,
             "type": "struggle",
-            "name": "tailor_pursues_wife",
+            "name": "Tailor Pursues Wife",
             "description": "The wife escapes to the yard; the tailor chases her, throwing yard-measure and scissors.",
             "agents": [
                 {
@@ -269,7 +269,7 @@
         {
             "id": 5,
             "type": "helper_move",
-            "name": "neighbors_intervene",
+            "name": "Neighbors Intervene",
             "description": "Neighbors help the wife, and the tailor is summoned again to face the magistrates.",
             "agents": [
                 {
@@ -310,7 +310,7 @@
         {
             "id": 6,
             "type": "struggle",
-            "name": "defensive_explanation",
+            "name": "Defensive Explanation",
             "description": "The tailor tries to justify his actions as caring gestures (“combing her hair with his hand”).",
             "agents": [
                 {
@@ -337,7 +337,7 @@
         {
             "id": 7,
             "type": "move",
-            "name": "tailor_chases_protagonist",
+            "name": "Tailor Chases Protagonist",
             "description": "He further claims that chasing her and throwing objects was meant as admonition to bring her back to duty.",
             "agents": [
                 {
@@ -364,7 +364,7 @@
         {
             "id": 8,
             "type": "fight",
-            "name": "domestic_tension_escalation",
+            "name": "Domestic Tension Escalation",
             "description": "He argues that hitting her shared joy and sorrow: his joy matched her sorrow, and vice versa when he missed her.",
             "agents": [
                 {
@@ -390,7 +390,7 @@
         {
             "id": 9,
             "type": "reward",
-            "name": "judgment_and_consequence",
+            "name": "Judgment and Consequence",
             "description": "Judges, outraged by the tailor's actions, punish him appropriately.",
             "agents": [
                 {

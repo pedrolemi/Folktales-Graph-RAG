@@ -50,6 +50,18 @@ def snake_case_to_title_case(text: str):
 	words = text.split('_')
 	return " ".join(word.capitalize() for word in words)
 
+def snake_case_to_words(text: str):
+	"""
+	Convierte un string snake_case en words.
+	
+	Ejemplos:
+		hello_world			->	hello world
+		user_profile_name	->	user profile name
+	"""
+	
+	words = text.split('_')
+	return " ".join(word.lower() for word in words)
+
 def snake_case_to_pascal_case(text: str):
 	"""
 	Convierte un string snake_case en PascalCase.
@@ -76,7 +88,7 @@ def snake_case_to_camel_case(text: str):
 	words = text.split('_')
 	return words[0].lower() + "".join(word.capitalize() for word in words[1:])
 
-def camel_to_snake(name: str) -> str:
+def camel_case_to_snake_case(name: str) -> str:
 	"""
 	Convierte un string snake_case en camelCase.
 
