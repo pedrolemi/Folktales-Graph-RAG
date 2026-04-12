@@ -1,7 +1,3 @@
-from models.agent import Agent
-from models.object import Object
-from models.place import Place
-
 def _format_hierarchy(hierarchy: dict, n_tabs: int):
 	lines = []
 	for name, info in hierarchy.items():
@@ -37,20 +33,3 @@ def format_classes(hierarchy: dict):
 	root = next(iter(hierarchy.values()))
 	children = root.get("children", {})
 	return ", ".join(name for name in _format_classes(children))
-
-def format_agents(agents: list[Agent]):
-	formatted_agents = []
-	for i, agent in enumerate(agents):
-		instance_name = agent.name
-
-		if agent.name:
-			formatted_agents.append(f"- {i}. {instance_name} ({agent.name})")
-		else:
-			formatted_agents.append(f"- {i}. {instance_name}")
-	return "\n".join(formatted_agents)
-
-def format_places(places: list[Place]):
-	return "\n".join(f"- {i}. {place.name}" for i, place in enumerate(places))
-
-def format_objects(objects: list[Object]):
-	return "\n".join(f"- {i}. {object.name}" for i, object in enumerate(objects))

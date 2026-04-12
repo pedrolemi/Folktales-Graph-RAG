@@ -1,4 +1,4 @@
-from models.folktale import AnnotatedFolktale
+from models.folktale import Folktale
 from loguru import logger
 from typing import Any
 import pandas as pd
@@ -45,7 +45,7 @@ def load_json_folder(dir: str):
 def load_txt_folder(dir: str):
 	return load_folder(dir, ".txt")
 
-def save_structured_folktale(folktale: AnnotatedFolktale, path: str):
+def save_structured_folktale(folktale: Folktale, path: str):
 	folktale_json = folktale.model_dump(
 		mode="json",
 		exclude_none=True

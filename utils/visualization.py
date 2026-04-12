@@ -1,19 +1,12 @@
 import matplotlib.pyplot as plt
-from models.folktale import GenreClass, AnnotatedFolktale
+from models.folktale import GenreClass, Folktale
 from collections import Counter
 import pandas as pd
 
-def plot_genre_distribution(folktales: list[AnnotatedFolktale]):
-	"""
-	Muestra la distribución de géneros de un conjunto de folktales en un gráfico de barras normalizado.
-
-	Args:
-		folktales (list[AnnotatedFolktale]): Lista de folktales anotados con información de género.
-
-	"""
+def plot_genre_distribution(folktales: list[Folktale]):
 	labels = [genre.value for genre in GenreClass]
 	
-	genre_counts = Counter(folktale.has_genre for folktale in folktales)
+	genre_counts = Counter(folktale.genre for folktale in folktales)
 	
 	total = sum(genre_counts.values())
 

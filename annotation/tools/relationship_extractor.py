@@ -73,11 +73,12 @@ def extract_relationships(model: BaseChatModel, folktale: str, agents: list[Agen
 		})
 		
 		relationship = cast(RelationshipLLM, relationship)
-		relationship = Relationship.from_llm(relationship, agents, i, j)
-		relationships.append(relationship)
-		
-		logger.debug(
-			f"Relationship: {agent_i.name} -> {agent_j.name} = {relationship.type} (strength={relationship.strength}, description={relationship.description})"
-		)
+		if relationship.type != "none":
+			relationship = Relationship.from_llm(relationship, agents, i, j)
+			relationships.append(relationship)
+			
+			logger.debug(
+				f"Relationship: {agent_i.name} -> {agent_j.name} = {relationship.type} (strength={relationship.strength}, description={relationship.description})"
+			)
 
 	return relationships

@@ -1,0 +1,379 @@
+{
+    "url": "https://fairytalez.com/momotaro/",
+    "nation": "japanese",
+    "title": "Momotaro",
+    "genre": "fairy_tale",
+    "summary": "",
+    "agents": [
+        {
+            "race": "human",
+            "name": "Old Man",
+            "age_group": "adult",
+            "gender": "male",
+            "description": "The father of Momotaro, a kind and poor old man.",
+            "role": "main_character",
+            "lives_in": "place_41cdf630f1c648bba17747ac3bf4a71f",
+            "id": "agent_6c28f50032774a9b950fd516f661db3b",
+            "personality": {
+                "openness": 0.5,
+                "conscientiousness": 0.8,
+                "extraversion": 0.2,
+                "agreeableness": 0.9,
+                "neuroticism": 0.1
+            }
+        },
+        {
+            "race": "human",
+            "name": "Old Woman",
+            "age_group": "adult",
+            "gender": "female",
+            "description": "The mother of Momotaro, a kind and poor old woman.",
+            "role": "main_character",
+            "lives_in": "place_41cdf630f1c648bba17747ac3bf4a71f",
+            "id": "agent_ff2206890c4a416d8a905af9eac2eb80",
+            "personality": {
+                "openness": 0.6,
+                "conscientiousness": 0.7,
+                "extraversion": 0.3,
+                "agreeableness": 0.8,
+                "neuroticism": 0.2
+            }
+        },
+        {
+            "race": "human",
+            "name": "Momotaro",
+            "age_group": "young",
+            "gender": "male",
+            "description": "The hero of the story, a brave and strong young man born from a peach.",
+            "role": "primary_character",
+            "lives_in": "place_41cdf630f1c648bba17747ac3bf4a71f",
+            "id": "agent_db37801b0cf646f280a2d0589e50c821",
+            "personality": {
+                "openness": 0.8,
+                "conscientiousness": 0.9,
+                "extraversion": 0.7,
+                "agreeableness": 0.85,
+                "neuroticism": 0.2
+            }
+        },
+        {
+            "race": "primate",
+            "name": "Monkey",
+            "age_group": "adult",
+            "gender": "male",
+            "description": "A brave and loyal companion of Momotaro, who joins him on his adventure.",
+            "role": "secondary_character",
+            "lives_in": "place_b28f6e6dfbed4dd192be01ef95c12d80",
+            "id": "agent_0a3362432b8a4494b58cc131392cb08d",
+            "personality": {
+                "openness": 0.8,
+                "conscientiousness": 0.6,
+                "extraversion": 0.9,
+                "agreeableness": 0.7,
+                "neuroticism": 0.2
+            }
+        },
+        {
+            "race": "bird",
+            "name": "Pheasant",
+            "age_group": "adult",
+            "gender": "male",
+            "description": "A brave and loyal companion of Momotaro, who joins him on his adventure.",
+            "role": "secondary_character",
+            "lives_in": "place_b28f6e6dfbed4dd192be01ef95c12d80",
+            "id": "agent_de0660c801e84df19adef0eb9f761e0a",
+            "personality": {
+                "openness": 0.5,
+                "conscientiousness": 0.6,
+                "extraversion": 0.8,
+                "agreeableness": 0.7,
+                "neuroticism": 0.2
+            }
+        },
+        {
+            "race": "canine",
+            "name": "Dog",
+            "age_group": "adult",
+            "gender": "male",
+            "description": "A brave and loyal companion of Momotaro, who joins him on his adventure.",
+            "role": "secondary_character",
+            "lives_in": "place_b28f6e6dfbed4dd192be01ef95c12d80",
+            "id": "agent_7fef67a5c70e44c590d56a6e7b672a4d",
+            "personality": {
+                "openness": 0.5,
+                "conscientiousness": 0.6,
+                "extraversion": 0.7,
+                "agreeableness": 0.8,
+                "neuroticism": 0.4
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "type": "friend",
+            "description": "The old man and old woman raise and care for Momotaro together, showing a close relationship.",
+            "strength": 1.0,
+            "source": "Old Man",
+            "source_id": "agent_6c28f50032774a9b950fd516f661db3b",
+            "target": "Old Woman",
+            "target_id": "agent_ff2206890c4a416d8a905af9eac2eb80"
+        },
+        {
+            "type": "friend",
+            "description": "Old Man and Momotaro have a close bond, with Old Man referring to Momotaro as 'the eldest son of the peach' and taking care of him. Momotaro also refers to them as his parents.",
+            "strength": 1.0,
+            "source": "Old Man",
+            "source_id": "agent_6c28f50032774a9b950fd516f661db3b",
+            "target": "Momotaro",
+            "target_id": "agent_db37801b0cf646f280a2d0589e50c821"
+        },
+        {
+            "type": "friend",
+            "description": "Momotaro and Monkey share a friendly relationship, as evident from their conversations and collaborative actions in the story.",
+            "strength": 1.0,
+            "source": "Old Man",
+            "source_id": "agent_6c28f50032774a9b950fd516f661db3b",
+            "target": "Monkey",
+            "target_id": "agent_0a3362432b8a4494b58cc131392cb08d"
+        },
+        {
+            "type": "friend",
+            "description": "The pheasant joins forces with Momotaro and his companions to attack the Ogres' Island, showing a collaborative and supportive relationship.",
+            "strength": 1.0,
+            "source": "Old Man",
+            "source_id": "agent_6c28f50032774a9b950fd516f661db3b",
+            "target": "Pheasant",
+            "target_id": "agent_de0660c801e84df19adef0eb9f761e0a"
+        },
+        {
+            "type": "knows",
+            "description": "The old man is aware of the Dog's presence and even greets it upon its departure from the Ogres' Island.",
+            "strength": 0.6,
+            "source": "Old Man",
+            "source_id": "agent_6c28f50032774a9b950fd516f661db3b",
+            "target": "Dog",
+            "target_id": "agent_7fef67a5c70e44c590d56a6e7b672a4d"
+        },
+        {
+            "type": "friend",
+            "description": "Old Woman and Momotaro share a close bond as they care for him, provide him with food (kimi-dango), and show affection ('Sayonara, and good luck to you, Momotaro!' and 'Sayonara! Sayonara!'). They also work together to make important decisions for his well-being.",
+            "strength": 1.0,
+            "source": "Old Woman",
+            "source_id": "agent_ff2206890c4a416d8a905af9eac2eb80",
+            "target": "Momotaro",
+            "target_id": "agent_db37801b0cf646f280a2d0589e50c821"
+        },
+        {
+            "type": "knows",
+            "description": "Old Woman is a neighbor who provides millet dumplings to Momotaro before he goes on his adventure.",
+            "strength": 0.6,
+            "source": "Old Woman",
+            "source_id": "agent_ff2206890c4a416d8a905af9eac2eb80",
+            "target": "Monkey",
+            "target_id": "agent_0a3362432b8a4494b58cc131392cb08d"
+        },
+        {
+            "type": "friend",
+            "description": "The pheasant joins Momotaro's group and fights alongside him against the Ogres.",
+            "strength": 1.0,
+            "source": "Old Woman",
+            "source_id": "agent_ff2206890c4a416d8a905af9eac2eb80",
+            "target": "Pheasant",
+            "target_id": "agent_de0660c801e84df19adef0eb9f761e0a"
+        },
+        {
+            "type": "knows",
+            "description": "The old woman and the Dog interacted when Momotaro gave the Dog a millet dumpling to join him on his journey.",
+            "strength": 0.6,
+            "source": "Old Woman",
+            "source_id": "agent_ff2206890c4a416d8a905af9eac2eb80",
+            "target": "Dog",
+            "target_id": "agent_7fef67a5c70e44c590d56a6e7b672a4d"
+        },
+        {
+            "type": "friend",
+            "description": "Momotaro and Monkey form an alliance to defeat the Ogres together, sharing a common goal and working in tandem during the battle.",
+            "strength": 1.0,
+            "source": "Momotaro",
+            "source_id": "agent_db37801b0cf646f280a2d0589e50c821",
+            "target": "Monkey",
+            "target_id": "agent_0a3362432b8a4494b58cc131392cb08d"
+        },
+        {
+            "type": "friend",
+            "description": "Momotaro and Pheasant work together to overcome the Ogres on the island, with the pheasant flying over the castle gate to peck at the Ogres.",
+            "strength": 1.0,
+            "source": "Momotaro",
+            "source_id": "agent_db37801b0cf646f280a2d0589e50c821",
+            "target": "Pheasant",
+            "target_id": "agent_de0660c801e84df19adef0eb9f761e0a"
+        },
+        {
+            "type": "friend",
+            "description": "The dog joins Momotaro's group on his journey to Ogres' Island and participates in the battle against the Ogres.",
+            "strength": 1.0,
+            "source": "Momotaro",
+            "source_id": "agent_db37801b0cf646f280a2d0589e50c821",
+            "target": "Dog",
+            "target_id": "agent_7fef67a5c70e44c590d56a6e7b672a4d"
+        },
+        {
+            "type": "friend",
+            "description": "Momotaro shares millet dumplings with the pheasant and asks for its help in getting to the Ogres' Island.",
+            "strength": 0.8,
+            "source": "Monkey",
+            "source_id": "agent_0a3362432b8a4494b58cc131392cb08d",
+            "target": "Pheasant",
+            "target_id": "agent_de0660c801e84df19adef0eb9f761e0a"
+        },
+        {
+            "type": "friend",
+            "description": "Monkey joins Momotaro on his journey to Ogres' Island and participates in the battle against the Ogres.",
+            "strength": 0.8,
+            "source": "Monkey",
+            "source_id": "agent_0a3362432b8a4494b58cc131392cb08d",
+            "target": "Dog",
+            "target_id": "agent_7fef67a5c70e44c590d56a6e7b672a4d"
+        },
+        {
+            "type": "friend",
+            "description": "The pheasant joins Momotaro on his journey and helps him by flying over the castle gate to peck at the Ogres.",
+            "strength": 1.0,
+            "source": "Pheasant",
+            "source_id": "agent_de0660c801e84df19adef0eb9f761e0a",
+            "target": "Dog",
+            "target_id": "agent_7fef67a5c70e44c590d56a6e7b672a4d"
+        }
+    ],
+    "places": [
+        {
+            "type": "mountain",
+            "name": "The Mountains",
+            "description": "Where the old man went to gather sticks for their fire.",
+            "id": "place_b28f6e6dfbed4dd192be01ef95c12d80"
+        },
+        {
+            "type": "river",
+            "name": "The Stream",
+            "description": "Where the old woman washed clothes and found a peach.",
+            "id": "place_d53db376156d4f5ea75fbda726c89013"
+        },
+        {
+            "type": "castle",
+            "name": "The Ogres' Island Castle",
+            "description": "A fortress on the Ogres' Island where Momotaro and his companions fought and defeated the Ogres.",
+            "id": "place_b7c4106fe59745a0a1367dc9be688f99"
+        },
+        {
+            "type": "village",
+            "name": "Their Village",
+            "description": "Where Momotaro, his mother, and the old man lived before going to the Ogres' Island.",
+            "id": "place_41cdf630f1c648bba17747ac3bf4a71f"
+        },
+        {
+            "type": "city",
+            "name": "Japan",
+            "description": "The country where the story takes place, mentioned as the origin of millet dumplings (kimi-dango).",
+            "id": "place_2b9a9a3b813748a7974aae6246dcbe67"
+        }
+    ],
+    "objects": [
+        {
+            "type": "magical_object",
+            "name": "Peach",
+            "description": "A peach that contains a baby and serves as a plot device for the story's beginning.",
+            "id": "object_392abc1e1fa04d8aa9151618409e7bfd"
+        },
+        {
+            "type": "crafted_object",
+            "name": "Wallet",
+            "description": "Momotaro carries millet dumplings in this wallet, which is used to recruit allies on his journey.",
+            "id": "object_6929c8e9f81b4929ab5156b9a09efe03"
+        },
+        {
+            "type": "natural_object",
+            "name": "Millet Dumplings (Kimi-dango)",
+            "description": "The millet dumplings serve as a plot device for recruiting the monkey, pheasant, and dog to help Momotaro in his adventure.",
+            "id": "object_fe2a36f3f6a4415fbe708626fb590349"
+        }
+    ],
+    "events": [
+        {
+            "type": "move",
+            "name": "",
+            "description": "In a time when beasts talked to men and magic was common, an old man and his wife lived alone by themselves in a small village.",
+            "agents": [],
+            "objects": [],
+            "place": "place_41cdf630f1c648bba17747ac3bf4a71f"
+        },
+        {
+            "type": "move",
+            "name": "",
+            "description": "The old woman found a peach floating down the stream while washing clothes, which turned out to be a baby boy after being cut open.",
+            "agents": [],
+            "objects": [
+                "object_392abc1e1fa04d8aa9151618409e7bfd"
+            ],
+            "place": "place_d53db376156d4f5ea75fbda726c89013"
+        },
+        {
+            "type": "move",
+            "name": "",
+            "description": "Momotaro, the young boy born from the peach, grew up strong and brave under the care of the old man and his wife. He was loved by the neighbors and soon became known as the finest young man in the area.",
+            "agents": [],
+            "objects": [],
+            "place": "place_41cdf630f1c648bba17747ac3bf4a71f"
+        },
+        {
+            "type": "move",
+            "name": "",
+            "description": "One day, Momotaro asked his mother to make him some kimi-dango (millet dumplings) for an upcoming journey to the Ogres' Island, where he aimed to retrieve their treasure.",
+            "agents": [],
+            "objects": [],
+            "place": "place_2b9a9a3b813748a7974aae6246dcbe67"
+        },
+        {
+            "type": "move",
+            "name": "",
+            "description": "Momotaro set off on his adventure, and along the way, he met a monkey who was attracted by the millet dumplings in Momotaro's wallet. The monkey joined him after being given one of the dumplings.",
+            "agents": [],
+            "objects": [
+                "object_6929c8e9f81b4929ab5156b9a09efe03",
+                "object_fe2a36f3f6a4415fbe708626fb590349"
+            ],
+            "place": "place_b28f6e6dfbed4dd192be01ef95c12d80"
+        },
+        {
+            "type": "move",
+            "name": "",
+            "description": "As they continued their journey, they encountered a pheasant who also heard about the millet dumplings. After giving one to the pheasant, the three of them traveled together until they met a dog who was drawn to the same delicious treat.",
+            "agents": [],
+            "objects": [],
+            "place": "place_b7c4106fe59745a0a1367dc9be688f99"
+        },
+        {
+            "type": "move",
+            "name": "",
+            "description": "The four companions - Momotaro and his animal friends - arrived at the Ogres' Island and devised a plan to conquer the Ogres by using their unique skills: the pheasant would peck the Ogres, the monkey would pinch them, while Momotaro and the dog would break through the castle gates.",
+            "agents": [],
+            "objects": [],
+            "place": "place_b7c4106fe59745a0a1367dc9be688f99"
+        },
+        {
+            "type": "move",
+            "name": "",
+            "description": "Momotaro and his companions executed their plan and fought bravely against the Ogres until sundown. They took prisoners and gathered the island's treasure, which included magical jewels, invisible caps and coats, gold, silver, jade, coral, amber, tortoise-shell, mother-of-pearl, and other precious items.",
+            "agents": [],
+            "objects": [],
+            "place": "place_b7c4106fe59745a0a1367dc9be688f99"
+        },
+        {
+            "type": "move",
+            "name": "",
+            "description": "Momotaro shared the treasure with his companions, allowing them to choose as much wealth as they desired. The monkey, pheasant, and dog thanked Momotaro for their share of the treasure and their roles in retrieving it.",
+            "agents": [],
+            "objects": [],
+            "place": "place_b7c4106fe59745a0a1367dc9be688f99"
+        }
+    ]
+}

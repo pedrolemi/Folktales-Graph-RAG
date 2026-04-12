@@ -31,7 +31,7 @@ class Role(StrEnum):
 	# Tertiary characters
 	TERTIARY_CHARACTER = "tertiary_character"
 
-class Personality(BaseModel):
+class PersonalityLLM(BaseModel):
 	"""Big Five personality traits scored from 0 (low) to 100 (high)."""
 
 	openness: int = Field(..., ge=0, le=100, description="Creativity, curiosity, openness to experience.")
@@ -39,6 +39,13 @@ class Personality(BaseModel):
 	extraversion: int = Field(..., ge=0, le=100, description="Sociability, energy, assertiveness.")
 	agreeableness: int = Field(..., ge=0, le=100, description="Kindness, cooperation, empathy.")
 	neuroticism: int = Field(..., ge=0, le=100, description="Emotional instability, anxiety, reactivity.")
+
+class Personality(BaseModel):
+	openness: float
+	conscientiousness: float
+	extraversion: float
+	agreeableness: float
+	neuroticism: float
 	
 class AgentLLM(BaseModel):
 	'''A character that appears within the folktale.'''
@@ -51,11 +58,9 @@ class AgentLLM(BaseModel):
 	
 	age_group: Literal["children", "young", "adult", "senior"] = Field(..., description="Approximate age category of the character.")
 
-	gender: Optional[Literal["male", "female"]] = Field(None, description="Biological or narrative gender of the character, if explicitly stated.")
+	gender: Literal["male", "female"] = Field(..., description="Biological or narrative gender of the character, if explicitly stated.")
 
 	description: str = Field(..., description="A concise summary of the character's role, behavior and narrative function.")
-
-	personality: Personality = Field(..., description="A list of personality traits based on the Big 5 personality traits theory. These traits define the character's personality.")
 	
 	role: Role = Field(..., description="The narrative function of the character (e.g., hero, villain, helper).")
 
@@ -77,21 +82,30 @@ class Agent(AgentLLM):
 		pattern=agent_regex
 	)
 
+	personality: Personality
+
 	lives_in: Optional[str] = Field(None, pattern=place_regex)
 
 	@classmethod
-	def from_llm(cls, llm_obj: AgentLLM, places: list[Place]):
-		data = llm_obj.model_dump()
-		
-		lives_in_idx = data.pop("lives_in", None)
+	def from_llm(cls, llm_obj: AgentLLM, llm_personality: PersonalityLLM, places: list[Place]):
+		personality = Personality(
+			**{
+				trait: getattr(llm_personality, trait) / 100.0
+				for trait in type(llm_personality).model_fields
+			}
+		)
 
-		place_map = {i: place.id for i, place in enumerate(places)}
-
-		lives_in_uuid = None
-		if lives_in_idx is not None and lives_in_idx in place_map:
-			lives_in_uuid = place_map[lives_in_idx]
+		lives_in_id = None
+		if llm_obj.lives_in is not None:
+			lives_in_id = places[llm_obj.lives_in].id
 
 		return cls(
-			**data,
-			lives_in=lives_in_uuid,
+			race=llm_obj.race,
+			name=llm_obj.name,
+			age_group=llm_obj.age_group,
+			gender=llm_obj.gender,
+			description=llm_obj.description,
+			role=llm_obj.role,
+			personality=personality,
+			lives_in=lives_in_id,
 		)

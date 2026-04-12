@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field, model_validator
+from pydantic import BaseModel, Field
 from models.agent import Agent
 from models.relationship import Relationship
 from models.place import Place
@@ -17,8 +17,8 @@ class Genre(BaseModel):
 	'''The genre classification of a foltkale, based on its theme, characters and narrative structure.'''
 	genre: GenreClass = Field(..., description="The genre assigned to the folktale, chosen from a set of predefined categories.")
 
-class AnnotatedFolktale(BaseModel):
-	uri: str
+class Folktale(BaseModel):
+	url: str
 	nation: str
 	title: str
 	genre: GenreClass

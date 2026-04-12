@@ -1,12 +1,9 @@
-from pydantic import BaseModel, ConfigDict, Field, field_validator
-from utils.regex_utils import snake_case_regex
-from utils.regex_utils import agent_regex
+from pydantic import BaseModel, ConfigDict, Field, field_validator, StringConstraints
+from typing import Annotated
+from .object import Object
+from .place import Place
 from enum import StrEnum
-from typing import Optional
-from models.agent import Agent
-from models.object import Object
-from models.place import Place
-from utils.format_utils import format_agents, format_objects, format_places
+from utils.regex_utils import place_regex, object_regex
 
 class EventClass(StrEnum):
 	EVENT = "event"
@@ -114,63 +111,43 @@ class Event(BaseModel):
 	name: str
 	description: str
 
-	agents: list[str] = Field(default_factory=list)
-	objects: list[Event] = Field(default_factory=list)
-	place: str
+	agents: list[EventAgent] = Field(default_factory=list)
+	objects: list[Annotated[str, StringConstraints(pattern=object_regex)]] = Field(default_factory=list)
+	place: str = Field(..., pattern=place_regex)
 
 MIN_EVENTS = 3
 MAX_EVENTS = 15
 
 class StorySegments(BaseModel):
+	'''A collection representing the individual segments into which the story is divided.'''
+
 	model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
 
-	'''A collection representing the individual segments into which the story is divided.'''
 	segments: list[str] = Field(
 		..., 
-		description="A list of textual segments, each representing a distinct event or part of the story.",
+		description="Ordered list of story segments.",
 		max_length=MAX_EVENTS
 	)
 	
-class EventElements(BaseModel):
+class EntitesLLM(BaseModel):
 	'''It represents the narrative elements involved in a specific segment of the story.'''
 
 	model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
 
-	agents: list[int] = Field(
-		..., 
-		description="Indeces of the characters involved in the segment of the story.",
-		min_length=1
-	)
 	objects: list[int] = Field(default_factory=list, description="Indices of the objects that play a relevant role in this segment of the story.")
 	place: int = Field(..., description="Index of the location where this segment of the story takes place.")
-
-	@field_validator('agents', mode='after')  
-	@classmethod
-	def validate_agents(cls, value: list[int]) -> list[int]:
-		return list(set(value))
 	
 	@field_validator('objects', mode='after')  
 	@classmethod
 	def validate_objects(cls, value: list[int]) -> list[int]:
 		return list(set(value))
 	
-	def validate_indices(self, agents: list[Agent], objects: list[Object], places: list[Place]):
-		formatted_agents = format_agents(agents)
-		formatted_objects = format_objects(objects)
-		formatted_places = format_places(places)
+	def validate_indices(self, objects: list[Object], places: list[Place]):
+		formatted_objects = "\n".join(f"- {i}. {obj.name}" for i, obj in enumerate(objects))
+		formatted_places = "\n".join(f"- {i}. {place.name}" for i, place in enumerate(places))
 
-		n_agents = len(agents)
 		n_objects = len(objects)
 		n_places = len(places)
-
-		for agent_idx in self.agents:
-			if agent_idx < 0 or agent_idx >= n_agents:
-				content = (
-					f"Agent index {agent_idx} is out of bounds. It must be between 0 and {n_agents - 1}. "
-					f"Please choose a valid character from the list below, or remove it if no longer needed:\n"
-					f"{formatted_agents}"
-				)
-				return content
 
 		for object_idx in self.objects:
 			if object_idx < 0 or object_idx >= n_objects:
@@ -190,3 +167,13 @@ class EventElements(BaseModel):
 			return content
 		
 		return None
+	
+	def get_ids(self, objects: list[Object], places: list[Place]):
+		place_id = places[self.place].id
+
+		objects_ids = [
+			objects[idx].id
+			for idx in self.objects
+		]
+
+		return objects_ids, place_id

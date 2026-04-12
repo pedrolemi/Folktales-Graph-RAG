@@ -16,8 +16,10 @@ class FolktaleGraphBuilder:
 
         self.manager = Neo4jManager()
 
-    def reset_database(self):
+    def clear_database(self):
         self.manager.execute_query("MATCH (n) DETACH DELETE n")
+
+    def create_constraints(self):
         constraints = [
             # Cuento popular
             "CREATE CONSTRAINT folktale_url IF NOT EXISTS FOR (f:Folktale) REQUIRE f.url IS UNIQUE",
@@ -111,8 +113,6 @@ class FolktaleGraphBuilder:
         }
 
         self.manager.execute_query(query, params)
-
-        return folktale
     
     def insert_entities(self, label: str, items: list[dict]):
         query = f"""
@@ -280,18 +280,42 @@ class FolktaleGraphBuilder:
                 "prev_id": events[i - 1]["id"],
                 "current_id": events[i]["id"]
             })
+
+    def find_loose_entities(self):
+        query = """
+        MATCH (o:Object)
+        WHERE NOT (o)<-[:HAS_OBJECT]-(:Event)
+        RETURN 'Object' AS type, o.id AS id, o.name AS name, 'No event link' AS reason
+
+        UNION ALL
+
+        MATCH (a:Agent)
+        WHERE NOT (a)<-[:HAS_AGENT]-(:Event)
+        RETURN 'Agent' AS type, a.id AS id, a.name AS name, 'No event participation' AS reason
+
+        UNION ALL
+
+        MATCH (p:Place)
+        WHERE NOT (p)<-[:TAKES_PLACE_IN]-(:Event)
+        AND NOT (p)<-[:LIVES_IN]-(:Agent)
+        RETURN 'Place' AS type, p.id AS id, p.name AS name, 'No event usage and uninhabited' AS reason
+        """
+
+        return self.manager.execute_query(query)
     
-    def run(self, folktale: dict):
-        self.reset_database()
+    def setup(self):
+        self.clear_database()
+        self.create_constraints()
         self.load_collections()
         self.load_structures()
 
-        folktale = self.insert_folktale(folktale)
-
+    def finalize(self):
+        self.manager.close()
+    
+    def add_folktale(self, folktale: dict):
+        self.insert_folktale(folktale)
         self.insert_entities("Object", folktale["objects"])
         self.insert_entities("Place", folktale["places"])
         self.insert_agents(folktale["agents"])
         self.insert_relationships(folktale["relationships"])
         self.insert_events(folktale["events"], folktale["url"])
-
-        self.manager.close()

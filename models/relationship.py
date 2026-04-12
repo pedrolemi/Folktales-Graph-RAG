@@ -11,24 +11,23 @@ class RelationshipLLM(BaseModel):
 
 class Relationship(RelationshipLLM):
 	type: Optional[str] = None
+	source: str
 	source_id: str = Field(..., pattern=agent_regex)
+	target: str
 	target_id: str = Field(..., pattern=agent_regex)
+	strength: float
 
 	@classmethod
 	def from_llm(cls, llm_obj: RelationshipLLM, agents: list[Agent], agent_1: int, agent_2: int):
-
-		agent_map = {i: agent.id for i, agent in enumerate(agents)}
-
-		source_id = agent_map[agent_1]
-		target_id = agent_map[agent_2]
-		
-		type_lit = llm_obj.type
-		resolved_type = None if type_lit == "none" else type_lit
+		source_agent = agents[agent_1]
+		target_agent = agents[agent_2]		
 
 		return cls(
-			type=resolved_type,
+			type=llm_obj.type,
 			description=llm_obj.description,
-			strength=llm_obj.strength,
-			source_id=source_id,
-			target_id=target_id,
+			source=source_agent.name,
+			source_id=source_agent.id,
+			target=target_agent.name,
+			target_id=target_agent.id,
+			strength=llm_obj.strength/5.0
 		)
