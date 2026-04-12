@@ -1,5 +1,6 @@
 from pydantic import BaseModel, ConfigDict, Field, field_validator
 from utils.regex_utils import snake_case_regex
+from utils.regex_utils import agent_regex
 from enum import StrEnum
 from typing import Optional
 from models.agent import Agent
@@ -103,14 +104,19 @@ class EventClass(StrEnum):
 	WEDDING = "wedding"
 	GET_THRONE = "get_throne"
 
-class Event(BaseModel):
-	class_name: EventClass
-	instance_name: str = Field(..., pattern=snake_case_regex)
-	description: Optional[str] = None
+class EventAgent(BaseModel):
+	id: str
+	action: list[str]
+	importance: int
 
-	agents: list[int] = Field(default_factory=list)
-	objects: list[int] = Field(default_factory=list)
-	place: int
+class Event(BaseModel):
+	type: EventClass
+	name: str
+	description: str
+
+	agents: list[str] = Field(default_factory=list)
+	objects: list[Event] = Field(default_factory=list)
+	place: str
 
 MIN_EVENTS = 3
 MAX_EVENTS = 15
@@ -122,7 +128,8 @@ class StorySegments(BaseModel):
 	segments: list[str] = Field(
 		..., 
 		description="A list of textual segments, each representing a distinct event or part of the story.",
-		max_length=MAX_EVENTS)
+		max_length=MAX_EVENTS
+	)
 	
 class EventElements(BaseModel):
 	'''It represents the narrative elements involved in a specific segment of the story.'''
@@ -183,13 +190,3 @@ class EventElements(BaseModel):
 			return content
 		
 		return None
-
-class EventMetadata(BaseModel):
-	title: str
-	agents: list[Agent]
-	objects: list[Object]
-	places: list[Place]
-	story_segment: str
-
-class EventExample(EventMetadata):
-	output: EventElements

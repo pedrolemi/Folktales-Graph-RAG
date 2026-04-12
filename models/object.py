@@ -1,33 +1,44 @@
 from pydantic import Field, BaseModel, ConfigDict
-from utils.regex_utils import snake_case_regex
 from enum import StrEnum
+from utils.regex_utils import object_regex
+import uuid
 
-class ObjectClass(StrEnum):
+class ObjectType(StrEnum):
 	'''Enumeration of object categories that may appear in a folktale.'''
-	
-	# Inanimate objects
+
 	MAGICAL_OBJECT = "magical_object"
 	NATURAL_OBJECT = "natural_object"
 	CRAFTED_OBJECT = "crafted_object"
 
-class Object(BaseModel):
+class ObjectLLM(BaseModel):
 	'''A distinct object that plays a role in the narrative of a folktale.'''
 
 	model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
 	
-	class_name: ObjectClass = Field(..., description="The classification of the object, indicating its type.")
-	instance_name: str = Field(
-		...,
-		description="A descriptive, unique identifier for the object in snake_case. This name must clearly distinguish this object within the context of the folktale.",
-		pattern=snake_case_regex,
-		examples=["glass_slipper", "carriage", "ball_gown", "straw", "stick", "brick", "magic_sword", "ancient_parchment"]
-	)
+	type: ObjectType = Field(..., description="The classification of the object, indicating its type.")
 
-class Objects(BaseModel):
+	name: str = Field(..., description="A descriptive name for the object, which identifies it within the folktale.")
+
+	description: str = Field(..., description="A short sentence describing the object and its role in the folktale, using only information explicitly stated or clearly implied.")
+
+class ObjectsLLM(BaseModel):
 	'''Collection of all the relevant objects that appear within the folktale.'''
 
 	model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
 
-	objects: list[Object] = Field(
+	objects: list[ObjectLLM] = Field(
 		...,
-		description="List of all the objects necessary required for the coherent development and representation of the folktale.")
+		description="List of all the objects necessary required for the coherent development and representation of the folktale."
+	)
+
+class Object(ObjectLLM):
+    id: str = Field(
+        default_factory=lambda: f"object_{uuid.uuid4().hex}",
+		pattern=object_regex
+    )
+
+    @classmethod
+    def from_llm(cls, llm_obj: ObjectLLM):
+        return cls(
+            **llm_obj.model_dump(),
+        )

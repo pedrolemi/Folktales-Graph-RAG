@@ -1,73 +1,91 @@
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate
-from models.agent import Agents, Agent
+from models.agent import AgentsLLM, Agent
 from models.place import Place
 from langchain_core.language_models.chat_models import BaseChatModel
-from utils.format_utils import format_hierarchy, format_places
+from utils.format_utils import format_hierarchy
 from loguru import logger
-import json
 from typing import cast
 
 agent_prompt = ChatPromptTemplate.from_messages(
 	[
-		SystemMessagePromptTemplate.from_template(template='''You are an AI that extracts characters from a folktale. For each character mentioned, extract the relevant details as described below. Each character must be described with the following attributes:
-
-Exactly, you have to assign this information to each character:
-- 'class_name': the agent type.
-- 'instance_name': create a unique identifier that describes the character type, written in snake_case.
-- 'age_category': the character's age group.
-- 'gender': the character's gender, which can be either 'feminine' or 'masculine'.
-- 'has_personality': a list of character traits based on the Big 5 personality traits theory.
-- 'name' (optional): the character's name, if available.
-- 'has_role': the character's role based on Prop's theory of the five spheres of action.
-- 'lives_in' (optional): the place where the character lives, selected from the list below. Omit if the character has no specified location.
+		SystemMessagePromptTemplate.from_template(template='''You are an AI that extracts characters from a folktale and returns structured data STRICTLY matching a predefined schema.
+                                            
+Your task is to identify ALL explicitly mentioned characters and describe them using the exact fields and formats below.
+                                            
+You MUST follow the schema exactly. Do not invent fields. Do not omit required fields.
 
 FIELD DEFINITIONS:
+                                        
+1. 'race' (string):
+Type of entity.
 
-1. 'class_name':
-Select the most specific type of character, from the following:
--  'individual_agent', 'human_being', 'anthropomorphic_animal', 'magical_creature', 'group_of_agents'.
+2. 'name' (sgtring):
+The name or label used to refer to the character within the story.
 
-2. 'instance_name':
-- A unique identifier written in snake_case.
-- Do not include spaces, hyphens, or punctuation.
-- Descriptive but concise.
-- Examples: 'main_hero', 'villain_minion'.
+3. 'age_group':
+Choose one: 
+- 'children', 'young', 'adult', 'senior'.
 
-3. 'age_category':
-Choose one: 'children', 'young', 'adult', 'senior'.
+4. 'gender' (string):
+- 'feminine' or 'masculine'.
+- Omit if unknown.
+                                            
+5. 'personality':
+Big Five traits as integers from 0 to 100:
+- openness
+- conscientiousness
+- extraversion
+- agreeableness
+- neuroticism
 
-4. 'gender':
-Choose either: 'feminine' or 'masculine'.
+Use reasonable estimates based on behavior:
+- Heroes: high agreeableness, high conscientiousness
+- Villains: low agreeableness, higher neuroticism or low conscientiousness
 
-5. 'has_personality':
-A list of character traits that reflect the character's behavior and personality, selected from the following options:
-- 'sociable', 'joy', 'active', 'assertive', 'anxious', 'depressive', 'tense', 'aggressive', 'cold', 'egotism', 'impersonal', 'impulsive'.
+7. 'role':
+Must be EXACTLY one of the following values:
+{roles}
 
-6. 'name':
-The character's name. Use title case, capitalizing the first letter of each word (e.g., 'Cinderella', 'Lady Tremaine', 'Haze'). If no name is provided, leave this field blank.
-
-7. 'has_role':
-The role the character plays, inspired by Prop's theory of the five spheres of action. Specify both:
-- 'class_name': the type of role the character plays within the story, based on the hierarchy outlined below.
-- 'instance_name': a more specific instance of the role, written in snake_case (e.g., 'main_hero', 'villain_minion'). Multiple characters can share the same 'instance_name' if they fulfill the exact same role within the story.
-
-Role hierarchy:
-{role_hierarchy}
-
-8. 'lives_in':
-Each character may live in one of the following locations:
+8. 'lives_in' (optional):
+- Integer index of the place from the list below:
 {places}
-If no location is specified, omit this field.
+- If unknown, omit.
 
+IMPORTANT RULES:
+                                            
+- Output MUST be a valid JSON object matching the schema.
+- No explanations, no comments, no extra text.
+- All fields must match expected types exactly.
+- Ensure all numeric personality values are integers between 0 and 100.
+- Do NOT hallucinate characters not explicitly mentioned.
+                                            
 OUTPUT FORMAT:
-Your output must be a valid JSON array, with one object per character. Each object must adhere strictly to the "Agent" schema.
 
-Ensure your output contains NO extra text, comments, or explanations. Here's the required format:
+Return a JSON object with this structure:
 
-{example}
+{{
+  "agents": [
+    {{
+      "race": "...",
+      "name": "...",
+      "age_group": "...",
+      "gender": "...",
+      "description": "...",
+      "personality": {{
+        "openness": 0,
+        "conscientiousness": 0,
+        "extraversion": 0,
+        "agreeableness": 0,
+        "neuroticism": 0
+      }},
+      "role": "...",
+      "lives_in": 0
+    }}
+  ]
+}}
 '''),
 
-		HumanMessagePromptTemplate.from_template(template='''Extract all characters and their characteristics explicitly mentioned in the folktale below. For each character, assign one role and one agent type based on the provided rules.
+		HumanMessagePromptTemplate.from_template(template='''Extract all characters and their characteristics explicitly mentioned in the folktale below.
 
 Folktale:
 {folktale}
@@ -75,7 +93,7 @@ Folktale:
 	]
 )
 
-def extract_agents(model: BaseChatModel, folktale: str, example: list[Agent], places: list[Place], role_hierarchy: dict):
+def extract_agents(model: BaseChatModel, folktale: str, places: list[Place], role_dict: dict, personality_dict):
     """
     Extrae los agentes de un cuento utilizando un modelo de lenguaje con salida estructurada.
 
@@ -95,28 +113,38 @@ def extract_agents(model: BaseChatModel, folktale: str, example: list[Agent], pl
         list[Agent]:
             Lista de agentes extraídos.
     """
-    example_json = json.dumps(
-        [agent.model_dump(mode="json") for agent in example],
-        indent=4
-    )
-    formatted_places = format_places(places)
-    formatted_hierarchy = format_hierarchy(role_hierarchy)
+    formatted_places = "\n".join(f"- {i}. {place.name}" for i, place in enumerate(places))
+    formatted_roles = format_hierarchy(role_dict)
+    formatted_personality = "\n".join(f"- '{k}': {v}" for k, v in personality_dict.items())
     
-    agent_chain = agent_prompt | model.with_structured_output(Agents)
+    agent_chain = agent_prompt | model.with_structured_output(AgentsLLM)
+
+    print(agent_prompt.format(
+        folktale=folktale,
+        places=formatted_places,
+        roles=formatted_roles,
+        personality=formatted_personality
+    ))
+
     agents = agent_chain.invoke({
         "folktale": folktale,
-        "example": example_json,
         "places": formatted_places,
-        "role_hierarchy": formatted_hierarchy
+        "roles": formatted_roles,
+        # "personality": formatted_personality
     })
     
-    agents = cast(Agents, agents).agents
+    agents = cast(AgentsLLM, agents).agents
 
     n_places = len(places)
     for agent in agents:
         if agent.lives_in is not None and agent.lives_in >= n_places:
-            logger.warning(f"In agents: {agent.instance_name}. 'lives_in': {agent.lives_in} is out of bounds. It must be less than {n_places}.")
+            logger.warning(f"In agents: {agent.name}. 'lives_in': {agent.lives_in} is out of bounds. It must be less than {n_places}.")
             agent.lives_in = None
+
+    agents = [
+		Agent.from_llm(obj, places)
+		for obj in agents
+	]
     
     logger.debug(f"Characters: {agents}")
 

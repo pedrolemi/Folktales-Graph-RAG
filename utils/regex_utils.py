@@ -8,6 +8,14 @@ relationship_regex = r"Therefore, their relationship is:\s*['\"]?([^'\"\s.]+)"
 
 clean_regex = r"[^\w\s]"
 
+agent_regex = r"^agent_[a-f0-9]{32}$"
+
+place_regex = r"^place_[a-f0-9]{32}$"
+
+event_regex = r"^event_[a-f0-9]{32}$"
+
+object_regex = r"^object_[a-f0-9]{32}$"
+
 def split_camel_case(text: str):
 	'''Inserta espacios entre las minúsculas y mayúsculas.
 	

@@ -3,7 +3,7 @@
     "title": "Sharing Joy and Sorrow",
     "nation": "german",
     "genre": "fable",
-    "summary": "A quarrelsome tailor constantly abused his kind and hardworking wife. Authorities imprisoned him to reform his behavior, and he promised to treat her well. However, he soon resumed his abusive ways, this time tearing her hair and throwing objects at her. Neighbors intervened, and he was summoned again. When questioned, he twisted his actions as 'sharing joy and sorrow' with his wife, claiming hitting her brought him joy and her sorrow, and missing her brought the reverse. The judges were outraged and punished him appropriately.",
+    "summary": "A quarrelsome tailor constantly abused his kind and hardworking wife. Authorities imprisoned him to reform his behavior, and he promised to treat her well. However, he soon resumed his abusive ways, this time tearing her hair and throwing objects at her. Neighbors intervened, and he was summoned again. When questioned, he twisted his actionss as 'sharing joy and sorrow' with his wife, claiming hitting her brought him joy and her sorrow, and missing her brought the reverse. The judges were outraged and punished him appropriately.",
     "agents": [
         {
             "id": "agent-tailor",
@@ -139,15 +139,15 @@
             "agents": [
                 {
                     "id": "agent-tailor",
-                    "action": [
+                    "actionss": [
                         "Scolds his wife repeatedly",
-                        "Shows dissatisfaction with her efforts"
+                        "Shows dissatisfactions with her efforts"
                     ],
                     "importance": 0.9
                 },
                 {
                     "id": "agent-wife",
-                    "action": [
+                    "actionss": [
                         "Performs household duties diligently",
                         "Maintains patience despite abuse"
                     ],
@@ -165,7 +165,7 @@
             "agents": [
                 {
                     "id": "agent-tailor",
-                    "action": [
+                    "actions": [
                         "Is summoned by magistrate",
                         "Is imprisoned temporarily"
                     ],
@@ -173,7 +173,7 @@
                 },
                 {
                     "id": "agent-magistrate",
-                    "action": [
+                    "actions": [
                         "Summons the tailor",
                         "Enforces imprisonment"
                     ],
@@ -193,14 +193,14 @@
             "agents": [
                 {
                     "id": "agent-tailor",
-                    "action": [
+                    "actions": [
                         "Promises to reform"
                     ],
                     "importance": 0.8
                 },
                 {
                     "id": "agent-wife",
-                    "action": [
+                    "actions": [
                         "Hopes for peace"
                     ],
                     "importance": 0.7
@@ -217,14 +217,14 @@
             "agents": [
                 {
                     "id": "agent-tailor",
-                    "action": [
+                    "actions": [
                         "Pulls wife's hair"
                     ],
                     "importance": 0.9
                 },
                 {
                     "id": "agent-wife",
-                    "action": [
+                    "actions": [
                         "Tries to protect herself"
                     ],
                     "importance": 0.8
@@ -241,7 +241,7 @@
             "agents": [
                 {
                     "id": "agent-tailor",
-                    "action": [
+                    "actions": [
                         "Chases wife",
                         "Throws objects"
                     ],
@@ -249,7 +249,7 @@
                 },
                 {
                     "id": "agent-wife",
-                    "action": [
+                    "actions": [
                         "Runs away"
                     ],
                     "importance": 0.8
@@ -269,14 +269,14 @@
             "agents": [
                 {
                     "id": "agent-neighbours",
-                    "action": [
+                    "actions": [
                         "Intervene"
                     ],
                     "importance": 0.8
                 },
                 {
                     "id": "agent-magistrate",
-                    "action": [
+                    "actions": [
                         "Summons tailor"
                     ],
                     "importance": 0.9
@@ -293,7 +293,7 @@
             "agents": [
                 {
                     "id": "agent-tailor",
-                    "action": [
+                    "actions": [
                         "Denies abuse"
                     ],
                     "importance": 0.8
@@ -310,7 +310,7 @@
             "agents": [
                 {
                     "id": "agent-tailor",
-                    "action": [
+                    "actions": [
                         "Justifies violence"
                     ],
                     "importance": 0.9
@@ -327,7 +327,7 @@
             "agents": [
                 {
                     "id": "agent-tailor",
-                    "action": [
+                    "actions": [
                         "Explains logic"
                     ],
                     "importance": 0.9
@@ -344,7 +344,7 @@
             "agents": [
                 {
                     "id": "agent-magistrate",
-                    "action": [
+                    "actions": [
                         "Punishes tailor"
                     ],
                     "importance": 0.9

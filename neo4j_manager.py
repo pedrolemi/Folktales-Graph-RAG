@@ -14,54 +14,53 @@ class Neo4jManager:
         """Cierra la conexión con Neo4j."""
         self.driver.close()
 
-    def execute_query(
-            self,
-            query: str,
-            parameters: Optional[dict[str, Any]] = None
-    ) -> list[dict[str, Any]]:
+    def execute_query(self, query: str, parameters: Optional[dict[str, Any]] = None) -> list[dict[str, Any]]:
         """Ejecuta una query en Neo4j."""
         with self.driver.session() as session:
             result = session.run(query, parameters or {})
             return [record.data() for record in result]
 
-    def create_constraints(self):
+    def create_constraints(self, constraints: list[str]):
         """Crea las constraints necesarias en Neo4j."""
-        # constraints = [
-        #     "CREATE CONSTRAINT entity_id IF NOT EXISTS FOR (e:Entity) REQUIRE e.id IS UNIQUE",
-        #     "CREATE CONSTRAINT chunk_id IF NOT EXISTS FOR (c:Chunk) REQUIRE c.id IS UNIQUE",
-        #     "CREATE CONSTRAINT document_id IF NOT EXISTS FOR (d:Document) REQUIRE d.id IS UNIQUE",
-        # ]
-
-        constraints = [
-            "CREATE CONSTRAINT folktale_url IF NOT EXISTS FOR (f:Folktale) REQUIRE f.url IS UNIQUE",
-            "CREATE CONSTRAINT genre_name IF NOT EXISTS FOR (g:Genre) REQUIRE g.name IS UNIQUE",
-            "CREATE CONSTRAINT nation_name IF NOT EXISTS FOR (n:Nation) REQUIRE n.name IS UNIQUE",
-            "CREATE CONSTRAINT event_name IF NOT EXISTS FOR (e:Event) REQUIRE e.name IS UNIQUE",
-            "CREATE CONSTRAINT object_name IF NOT EXISTS FOR (o:Object) REQUIRE o.name IS UNIQUE"
-            "CREATE CONSTRAINT place_name IF NOT EXISTS FOR (p:Place) REQUIRE p.name IS UNIQUE",
-            "CREATE CONSTRAINT agent_name IF NOT EXISTS FOR (a:Agent) REQUIRE a.name IS UNIQUE"
-
-        ]
-
         for constraint in constraints:
             try:
                 self.execute_query(constraint)
             except Exception as e:
                 print(f"Constraint ya existe o error: {e}")
 
-    def create_vector_index(self, index_name: str = "chunk_embeddings"):
+    def create_vector_index(self, index_name: str = "chunk_embeddings", label: str = "Chunk", property_name: str = "embedding", dimensions: int = 768, similarity: str = "cosine", overwrite: bool = False):
         """Crea un índice vectorial."""
-        query = f"""
+        check_query = """
+        SHOW INDEXES YIELD name, type, entityType, labelsOrTypes, properties, options
+        WHERE name = $name
+        RETURN name, options
+        """
+
+        result = self.execute_query(check_query, {"name": index_name})
+
+        if result:
+            if not overwrite:
+                print(f"El índice vectorial '{index_name}' ya existe. Saltando.")
+                return
+            else:
+                print(f"Eliminando el índice existente '{index_name}'...")
+                self.execute_query(f"DROP INDEX {index_name}")
+
+        create_query = f"""
         CREATE VECTOR INDEX {index_name} IF NOT EXISTS
-        FOR (c:Chunk)
-        ON c.embedding
+        FOR (n:{label})
+        ON n.{property_name}
         OPTIONS {{indexConfig: {{
-            `vector.dimensions`: 768,
-            `vector.similarity_function`: 'cosine'
+            `vector.dimensions`: $dimensions,
+            `vector.similarity_function`: $similarity
         }}}}
         """
         try:
-            self.execute_query(query)
+            self.execute_query(create_query, {
+            "dimensions": dimensions,
+            "similarity": similarity
+            })
+            print(f"Índice vectorial '{index_name}' creado.")
         except Exception as e:
             print(f"Índice vectorial ya existe o error: {e}")
 

@@ -41,7 +41,7 @@ def format_classes(hierarchy: dict):
 def format_agents(agents: list[Agent]):
 	formatted_agents = []
 	for i, agent in enumerate(agents):
-		instance_name = agent.instance_name
+		instance_name = agent.name
 
 		if agent.name:
 			formatted_agents.append(f"- {i}. {instance_name} ({agent.name})")
@@ -50,7 +50,7 @@ def format_agents(agents: list[Agent]):
 	return "\n".join(formatted_agents)
 
 def format_places(places: list[Place]):
-	return "\n".join(f"- {i}. {place.instance_name}" for i, place in enumerate(places))
+	return "\n".join(f"- {i}. {place.name}" for i, place in enumerate(places))
 
 def format_objects(objects: list[Object]):
-	return "\n".join(f"- {i}. {object.instance_name}" for i, object in enumerate(objects))
+	return "\n".join(f"- {i}. {object.name}" for i, object in enumerate(objects))

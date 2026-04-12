@@ -1,61 +1,97 @@
-from typing import Literal, Optional
-from models.role import Role
 from pydantic import ConfigDict, Field, BaseModel
-from utils.regex_utils import snake_case_regex
+from .place import Place
+from utils.regex_utils import agent_regex, place_regex
+from typing import Literal, Optional
 from enum import StrEnum
+import uuid
 
-RelationshipClass = Literal["knows", "friend", "enemy", "family_member"]
+class Role(StrEnum):
+	'''Enumeration used to classify the roles of characters within a story.
 
-class Relationship(BaseModel):
-	agent: int
-	other: int
-	relationship: RelationshipClass
+	This classification aligns with the spheres of action from Propp's narrative theory, categorizing roles
+	into primary, secondary, and tertiary types based on their importance and function in the story.'''
 
-class AgentClass(StrEnum):
-	'''Enumeration to classify characters in the context of a folktale. This defines whether a character is an individual or a group, as well as its possible subcategories.'''
+	# Primary characters
+	PRIMARY_CHARACTER = "primary_character"
+	MAIN_CHARACTER = "main_character"
+	HERO = "hero"
+	ANTAGONIST = "antagonist"
+	VILLAIN = "villain"
+	FALSE_HERO = "false_hero"
+
+	# Secondary characters
+	SECONDARY_CHARACTER = "secondary_character"
+	HELPER = "helper"
+	MAGICAL_HELPER = "magical_helper"
+	PRISONER = "prisoner"
+	PRINCESS = "princess"
+	QUEST_GIVER = "quest_giver"
+	HERO_FAMILY = "hero_family" 
+
+	# Tertiary characters
+	TERTIARY_CHARACTER = "tertiary_character"
+
+class Personality(BaseModel):
+	"""Big Five personality traits scored from 0 (low) to 100 (high)."""
+
+	openness: int = Field(..., ge=0, le=100, description="Creativity, curiosity, openness to experience.")
+	conscientiousness: int = Field(..., ge=0, le=100, description="Discipline, organization, reliability.")
+	extraversion: int = Field(..., ge=0, le=100, description="Sociability, energy, assertiveness.")
+	agreeableness: int = Field(..., ge=0, le=100, description="Kindness, cooperation, empathy.")
+	neuroticism: int = Field(..., ge=0, le=100, description="Emotional instability, anxiety, reactivity.")
 	
-	# Individual agents
-	INDIVIDUAL_AGENT = "individual_agent"
-	HUMAN_BEING = "human_being"
-	ANTHROPOMORPHIC_ANIMAL = "anthropomorphic_animal"
-	MAGICAL_CREATURE = "magical_creature"
-	
-	# Group of agents
-	GROUP_OF_AGENTS = "group_of_agents"
-	
-class Agent(BaseModel):
+class AgentLLM(BaseModel):
 	'''A character that appears within the folktale.'''
 
 	model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
-	
-	class_name: AgentClass = Field(..., description="The type of character, whether it is an individual or a group, and its subcategories.")
 
-	instance_name: str = Field(
-		..., 
-		description="A descriptive, unique identifier for the agent in snake_case format. This name must clearly identify the location within the context of the folktale.",
-		examples=["cinderella", "stepmother", "stepsister_one", "stepsister_one", "prince", "fairy_godmother", "tortoise", "hare", "fox", "pig_one", "pig_two", "pig_three", "big_bad_wolf"],
-		pattern=snake_case_regex)
+	race: str = Field(..., description="The ontological category of the character.")
+
+	name: str = Field(..., description="A unique identifier for the character as referenced in the story.")	
 	
-	age_category: Literal["children", "young", "adult", "senior"] = Field(..., description="The age group to which the character belongs.")
-	gender: Literal["male", "female"] = Field(..., description="The gender of the character, either 'male' or 'female'.")
-	has_personality: list[Literal["sociable", "joyful", "active", "assertive", "eager", "depressive", "tense", "aggressive", "cold", "egocentric", "impersonal", "impulsive"]] = Field(
-		..., 
-		description="A list of personality traits based on the Big 5 personality traits theory. These traits define the character's personality.")
-	name: Optional[str] = Field(
-		None,
-		description="The character's name.",
-		examples=["Cinderella", "Lady Tremaine", "Anastasia", "Drizella", "Tortoise", "Haze", "Fox"],
-		min_length=1
-		# pattern=name_regex
-	)
+	age_group: Literal["children", "young", "adult", "senior"] = Field(..., description="Approximate age category of the character.")
+
+	gender: Optional[Literal["male", "female"]] = Field(None, description="Biological or narrative gender of the character, if explicitly stated.")
+
+	description: str = Field(..., description="A concise summary of the character's role, behavior and narrative function.")
+
+	personality: Personality = Field(..., description="A list of personality traits based on the Big 5 personality traits theory. These traits define the character's personality.")
 	
-	has_role: Role = Field(..., description="The characters's role in the story, such as protagonist, antagonist or supporting character.")
-	lives_in: Optional[int] = Field(None, description="The index of the place in the story where the agent resides, referring to the places array, if applicable.")
+	role: Role = Field(..., description="The narrative function of the character (e.g., hero, villain, helper).")
+
+	lives_in: Optional[int] = Field(None, description="Index of the place in the story where the agent resides, referring to the provided places list. Must be omitted if unknown or not explicitly stated.")
 	  
-class Agents(BaseModel):
+class AgentsLLM(BaseModel):
 	"""A collection of the characters that appear within the folktale."""
 
 	model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
 
-	agents: list[Agent] = Field(..., description="List of all the characters that appear in the story.")
+	agents: list[AgentLLM] = Field(
+		..., 
+		description="List of all the characters that appear in the story."
+	)
 	
+class Agent(AgentLLM):
+	id: str = Field(
+		default_factory=lambda: f"agent_{uuid.uuid4().hex}",
+		pattern=agent_regex
+	)
+
+	lives_in: Optional[str] = Field(None, pattern=place_regex)
+
+	@classmethod
+	def from_llm(cls, llm_obj: AgentLLM, places: list[Place]):
+		data = llm_obj.model_dump()
+		
+		lives_in_idx = data.pop("lives_in", None)
+
+		place_map = {i: place.id for i, place in enumerate(places)}
+
+		lives_in_uuid = None
+		if lives_in_idx is not None and lives_in_idx in place_map:
+			lives_in_uuid = place_map[lives_in_idx]
+
+		return cls(
+			**data,
+			lives_in=lives_in_uuid,
+		)

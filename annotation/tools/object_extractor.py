@@ -1,9 +1,8 @@
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate
-from models.object import Objects
+from models.object import ObjectsLLM, Object
 from langchain_core.language_models.chat_models import BaseChatModel
 from typing import cast
 from loguru import logger
-from utils.format_utils import format_hierarchy, format_classes
 
 object_prompt = ChatPromptTemplate.from_messages(
 	[
@@ -17,30 +16,28 @@ DO NOT extract:
 - Locations, places, settings or environments (e.g., castles, forests, villages). 
 
 Each object MUST include:
-- Exactly one 'class_name' chosen from the allowed list.
-- One appropriate 'instance_name', that describes the object.
+- Exactly one 'type' chosen from the allowed list.
+- One appropriate 'name', that describes the object.
 
-ALLOWED 'class_name' VALUES:
-- {objects}
-
-HIERARCHY (FOR REASONING):
-{object_hierarchy}
+ALLOWED 'type' VALUES:
+{objects}
 
 CLASS SELECTION RULES:
 1. ALWAYS choose the MOST SPECIFIC class available.
-	- Example: If the location is a glass slipper, use 'crafted_object' rather than 'inanimate_object'.
-	- Example: If the location is an apple, use 'natural_obejct' rather than 'inanimate_object'.
+	- Example: If the object is a glass slipper, use 'crafted_object'.
+	- Example: If the object is an apple, use 'natural_object'.
 
-2. Each object MUST have exactly ONE 'class_name'.
+2. Each object MUST have exactly ONE 'type'.
 	- Do NOT combine multiple classes.
 	- Do NOT repeat fields.
 
-INSTANCE NAME RULES:
-- 'instance_name' must be written in snake_case.
-- Use lowercase letters and underscores only.
+NAME RULES:
 - Be descriptive but concise.
-- Do NOT include spaces, hyphens, or punctuation.
-- Examples: 'glass_slipper', 'ball_gown', 'oak_tree'.
+						
+DESCRIPTION RULES:
+- 'description' must be a short sentence describing the object and its role in the story.
+- Use only information explicitly stated or clearly implied.
+- Do NOT invent new details.										
 '''),
 
 		HumanMessagePromptTemplate.from_template(template='''Given the folktale below, identify the essential objects that are required for the story to function or progress.
@@ -57,7 +54,7 @@ Folktale:
 	]
 )
 
-def extract_objects(model: BaseChatModel, folktale: str, object_hierarchy: dict):
+def extract_objects(model: BaseChatModel, folktale: str, objects_dict: dict):
 	"""
 	Extrae los objetos presentes en un texto.
 
@@ -70,26 +67,29 @@ def extract_objects(model: BaseChatModel, folktale: str, object_hierarchy: dict)
 		list[str]: Lista de objetos.
 
 	"""
-	formatted_hierarchy = format_hierarchy(object_hierarchy)
-	formatted_classes = format_classes(object_hierarchy)
 
-	object_chain = object_prompt | model.with_structured_output(Objects)
+	formatted = "\n".join(f"- '{k}': {v}" for k, v in objects_dict.items())
+
+	object_chain = object_prompt | model.with_structured_output(ObjectsLLM)
+
+	print(object_prompt.format(
+		folktale=folktale,
+		objects=formatted
+	))
+
 	objects = object_chain.invoke({
 		"folktale": folktale,
-		"object_hierarchy": formatted_hierarchy,
-		"objects": formatted_classes
+		"objects": formatted
 	})
 	
-	# logger.info(
-	#    object_prompt.format(
-	#       folktale = folktale,
-	#       object_hierarchy = formatted_hierarchy,
-	#       objects = formatted_classes
-	#    )
-	# )
 	
 	logger.debug(f"Objects: {objects}")
 
-	objects = cast(Objects, objects)
+	objects = cast(ObjectsLLM, objects)
 
-	return objects.objects
+	objects = [
+		Object.from_llm(obj)
+		for obj in objects.objects
+	]
+
+	return objects

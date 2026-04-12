@@ -1,6 +1,6 @@
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate, MessagesPlaceholder
 from langchain_core.messages import ToolMessage, HumanMessage, AIMessage, BaseMessage
-from models.event import StorySegments, MAX_EVENTS, EventElements, EventMetadata, EventExample
+from models.event import StorySegments, MAX_EVENTS, EventElements
 from utils.format_utils import format_agents, format_objects, format_places
 from langchain_core.language_models.chat_models import BaseChatModel
 from pydantic_core import ValidationError
@@ -41,15 +41,10 @@ def extract_story_segments(model: BaseChatModel, folktale: str):
 
 	event_chain = event_prompt | model.with_structured_output(StorySegments)
 
-	# logger.info(
-	# 	event_prompt.format(
-	# 		folktale=folktale,
-	# 		max_events=MAX_EVENTS
-	# 	)
-	# )
-
-	events = event_chain.invoke({"folktale": folktale,
-							  	"max_events": MAX_EVENTS})
+	events = event_chain.invoke({
+		"folktale": folktale,
+		"max_events": MAX_EVENTS
+	})
 
 	events = cast(StorySegments, events)
 	
