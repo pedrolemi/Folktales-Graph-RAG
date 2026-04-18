@@ -1,4 +1,4 @@
-from pydantic import BaseModel, ConfigDict, Field, field_validator, StringConstraints
+from pydantic import BaseModel, ConfigDict, Field, field_validator
 from utils.regex_utils import place_regex, object_regex, agent_regex, event_regex
 from typing import Annotated
 from .object import Object
@@ -110,9 +110,9 @@ class EventAgentLLM(BaseModel):
 
 	id: int = Field(..., description="Index of the agent within the list of the agent for the entire folktale.")
 
-	actions: list[str] = Field(
-		..., 
-		description="List of actions, behaviors, or roles performed by the agent in this event. Each item a single sentence.",
+	actions: list[Annotated[str, Field(min_length=1)]] = Field(
+		...,
+		description="List of actions, behaviors, or roles performed by the agent in this event. Each item is a single character.",
 		min_length=1
 	)
 
@@ -159,7 +159,7 @@ class Event(BaseModel):
 	thoughts: list[str]
 
 	agents: list[EventAgent] = Field(default_factory=list)
-	objects: list[Annotated[str, StringConstraints(pattern=object_regex)]] = Field(default_factory=list)
+	objects: list[Annotated[str, Field(pattern=object_regex)]] = Field(default_factory=list)
 	place: str = Field(..., pattern=place_regex)
 
 MIN_EVENTS = 3
