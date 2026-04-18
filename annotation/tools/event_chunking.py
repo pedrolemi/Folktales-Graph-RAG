@@ -1,24 +1,57 @@
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate
+from langchain_core.output_parsers import BaseOutputParser
+from langchain_core.exceptions import OutputParserException
 from langchain_core.language_models.chat_models import BaseChatModel
-from models.event import StorySegments, MAX_EVENTS
-from typing import cast
+from schemas.event import MAX_EVENTS
 from loguru import logger
 
+class ChunkParser(BaseOutputParser[list[str]]):
+	def parse(self, text: str) -> list[str]:
+		chunks = [c.strip() for c in text.split("<<<CHUNK>>>") if c.strip()]
+
+		if not chunks:
+			raise OutputParserException("No chunks found in output")
+
+		return chunks
+	
+	@property
+	def _type(self) -> str:
+		return "chunk_parser"
 
 event_prompt = ChatPromptTemplate.from_messages(
 	[
-		SystemMessagePromptTemplate.from_template(template='''You are an AI designed to break down a folktale into distinct parts, each corresponding to a different event or progression in the story. Your task is to carefully analyze the story, identify key events, and divide it into sections, while maintaining the integrity of the original content.
+		SystemMessagePromptTemplate.from_template(template='''You are an AI that divides a folktale into contiguous narrative segments.
 
-Each section must be SUMMARY of a major event or progression in the story. Do NOT add or omit essential details in the story, only divide and condense the original content into meaningful segments. Each segment must represent a complete event or progression, and when combined, all the segments must make up the full story without any loss of information.
+Your goal is NOT to analyze or restructure the story, but to SPLIT it into meaningful parts.
 
-The sections must follow a logical and sequential order. For instance, the first part should introduces an event, and each subsequent section should progress naturally from the previous one, maintaining a smooth narrative flow. Each part should be distinct but also contribute to the overall coherence and development of the story, ensuring that the progression of events feels continuous and well-structured.
+DEFINITION OF AN EVENT:
+An event is a meaningful change, action or development in the story involving characters, goals or situations.
 
-Focus on the key elements within each section, explicitly naming the characters involved, the significant objects to the development of the event and the setting.
+INSTRUCTIONS:
+- Split the story into AT MOST {max_events} events.
+- Each part must preserve the ORIGINAL wording as much as possible.
+- Do NOT rewrite, summarize, or reinterpret the text.
+- Do NOT omit any information.
+- Do NOT add any new information.
+- Each part must be a CONTIGUOUS chunk of the original text.
+- Together, all parts must reconstruct the FULL story exactly.
+
+OUTPUT FORMAT:
+Return only the chunks separated by the delimiter:
+
+<<<CHUNK>>>
+
+Do not include this delimiter inside any chunk.
+
+<text chunk>
+<<<CHUNK>>>
+<text chunk>
+<<<CHUNK>>>
+<text chunk>
+
 '''),
 
-		HumanMessagePromptTemplate.from_template(template='''Given the following folktale, divide it into at most {max_events} parts, with each part is a summary of a key event or progression. Do not to omit or alter any information in any section.
-
-Folktale:
+		HumanMessagePromptTemplate.from_template(template='''Folktale:
 {folktale}
 ''')
 	]
@@ -37,16 +70,15 @@ def extract_story_segments(model: BaseChatModel, folktale: str):
 
 	"""
 
-	event_chain = event_prompt | model.with_structured_output(StorySegments)
+	parser = ChunkParser()
+	event_chain = event_prompt | model | parser
 
-	events = event_chain.invoke({
+	chunks = event_chain.invoke({
 		"folktale": folktale,
 		"max_events": MAX_EVENTS
 	})
-
-	events = cast(StorySegments, events)
 	
-	for i, event in enumerate(events.segments):
+	for i, event in enumerate(chunks):
 		logger.debug(f"Event {i+1}: {event}")
 
-	return events.segments
+	return chunks

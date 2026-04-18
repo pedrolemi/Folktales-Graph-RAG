@@ -57,8 +57,8 @@ class Neo4jManager:
         """
         try:
             self.execute_query(create_query, {
-            "dimensions": dimensions,
-            "similarity": similarity
+                "dimensions": dimensions,
+                "similarity": similarity
             })
             print(f"Índice vectorial '{index_name}' creado.")
         except Exception as e:

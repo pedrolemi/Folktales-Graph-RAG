@@ -1,5 +1,5 @@
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate
-from models.object import ObjectsLLM, Object
+from schemas.object import ObjectsLLM, Object
 from langchain_core.language_models.chat_models import BaseChatModel
 from typing import cast
 from loguru import logger

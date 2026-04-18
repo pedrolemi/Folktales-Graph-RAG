@@ -1,51 +1,77 @@
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate
-from models.agent import Agent
-from models.relationship import RelationshipLLM, Relationship
+from schemas.agent import Agent
+from schemas.relationship import RelationshipLLM, Relationship
 from langchain_core.language_models.chat_models import BaseChatModel
 from itertools import combinations
 from loguru import logger
 from typing import cast
 
-relationship_prompt = ChatPromptTemplate.from_messages(
-	[
-		SystemMessagePromptTemplate.from_template(template='''You are an AI tasked with identifying the relationships between two characters in a folktale. 
-											
+relationship_system_prompt = SystemMessagePromptTemplate.from_template(template='''You are an expert AI system that identifies relationships between two characters in a folktale.
+
 You must classify the relationship into EXACTLY ONE of the following types:
 - 'knows': The characters are acquaintances, but not close friends or enemies.
 - 'friend': The characters share a close bond and help each other whenever needed.
 - 'enemy': The characters have a rivalry or antagonism, typically involving conflict.
-- 'family_member': The characters are related by blood, marriage, or adoption, regardless of the quality of their relationship.
+- 'family_member': The characters are related by blood, marriage or adoption, regardless of the quality of their relationship.
 - 'none': The characters do not meet or interact in the story.
+
+You must also provide:
+- A short description of their relationship based only the sotry.
+- A strength score of their relationship from 1 to 5:
+	1: very weak / minimal interaction
+	3: moderate interaction
+	5: very strong / central relationship in the story
 
 IMPORTANT RULES:
 - Only use evidence from the folktale.
-- Do NOT infer beyond what is explicitly or clearly implied.
+- Do NO infer relationships that are not explicitly or clearly implied.
 - If the characters never interact or are unrelated in the story, use "none".
-- If ambiguous, default to "knows".
+- If the evidence is ambiguous or weak, default to "none".
+''')
 
-You must also provide:
-- A short justification based only on the story.
-- A strength score from 1 to 5:
-	1 = very weak / minimal interaction
-	3 = moderate interaction
-	5 = very strong / central relationship in the story
-		
-OUTPUT REQUIREMENTS (STRICT):
-You MUST output structured data matching:
-- type: one of ["knows", "friend", "enemy", "family_member", "none"]
-- description: a concise explanation of evidence from the story
-- strength: integer between 1 and 5
-'''),
+context_human_prompt = HumanMessagePromptTemplate.from_template(template='''Extract ONLY factual interaction evidence between two characters.
 
-		HumanMessagePromptTemplate.from_template(template='''Based on the folktale below, determine the relationship between "{agent_1}" and "{agent_2}".
+Characters:
+- {agent_1}: {agent_1_description}
+- {agent_2}: {agent_2_description}
 
 Folktale:
 {folktale}
 
-Return ONLY the structured result.
+Return:
+- direct interactions
+- shared events
+- co-occurrences
+
+If none exist, say: "no interaction found"
 ''')
-	]
-)
+
+relationship_context_prompt = ChatPromptTemplate.from_messages([
+	relationship_system_prompt,
+	context_human_prompt
+])
+
+structured_prompt = HumanMessagePromptTemplate.from_template(template='''Based on the folktale and the extracted interaction context below, determine the relationship between two characters.
+
+Characters:
+- {agent_1}: {agent_1_description}
+- {agent_2}: {agent_2_description}
+
+Folktale:
+{folktale}
+
+Interaction context:
+{context}
+
+Return ONLY a structured JSON result.
+No explanations.
+No extra text.
+''')
+
+relationship_structured_prompt = ChatPromptTemplate.from_messages([
+	relationship_system_prompt,
+	structured_prompt
+])
 
 def extract_relationships(model: BaseChatModel, folktale: str, agents: list[Agent]):
 	"""
@@ -59,26 +85,45 @@ def extract_relationships(model: BaseChatModel, folktale: str, agents: list[Agen
 	Returns:
 		list[Relationship]: Lista de relaciones identificadas entre los agentes.
 	"""
-	relationship_chain = relationship_prompt | model.with_structured_output(RelationshipLLM)
+
+	context_chain = relationship_context_prompt | model
+	classification_chain = relationship_structured_prompt | model.with_structured_output(RelationshipLLM)
 
 	relationships = []
 	for i, j in combinations(range(len(agents)), 2):
 		agent_i = agents[i]
 		agent_j = agents[j]
 
-		relationship  = relationship_chain.invoke({
+		ai_message = context_chain.invoke({
 			"folktale": folktale,
-			"agent_1": agent_i.name,
-			"agent_2": agent_j.name
+            "agent_1": agent_i.name,
+            "agent_2": agent_j.name,
+            "agent_1_description": agent_i.description,
+            "agent_2_description": agent_j.description
+		})
+
+		print(ai_message)
+
+		relationship = classification_chain.invoke({
+			"folktale": folktale,
+            "agent_1": agent_i.name,
+            "agent_2": agent_j.name,
+            "agent_1_description": agent_i.description,
+            "agent_2_description": agent_j.description,
+            "context": ai_message.content
 		})
 		
 		relationship = cast(RelationshipLLM, relationship)
+
 		if relationship.type != "none":
 			relationship = Relationship.from_llm(relationship, agents, i, j)
 			relationships.append(relationship)
 			
 			logger.debug(
-				f"Relationship: {agent_i.name} -> {agent_j.name} = {relationship.type} (strength={relationship.strength}, description={relationship.description})"
-			)
+                f"Relationship: {agent_i.name} -> {agent_j.name} | "
+                f"type={relationship.type} | "
+                f"strength={relationship.strength} | "
+                f"description={relationship.description}"
+            )
 
 	return relationships

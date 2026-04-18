@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from models.folktale import GenreClass, Folktale
+from schemas.folktale import GenreClass, Folktale
 from collections import Counter
 import pandas as pd
 

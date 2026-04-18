@@ -1,6 +1,6 @@
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate
-from models.agent import AgentsLLM, Agent, PersonalityLLM
-from models.place import Place
+from schemas.agent import AgentsLLM, Agent, PersonalityLLM
+from schemas.place import Place
 from langchain_core.language_models.chat_models import BaseChatModel
 from utils.format_utils import format_hierarchy
 from loguru import logger
@@ -15,11 +15,11 @@ Your task is to identify ALL explicitly mentioned characters and describe them u
 You MUST follow the schema exactly. Do not invent fields. Do not omit required fields.
 
 FIELD DEFINITIONS:
-										
+
 1. 'race' (string):
 The ontological or categorical type of the character.
 											
-2. 'name' (sgtring):
+2. 'name' (string):
 The name or label used to refer to the character within the story.
 
 3. 'age_group' (string):
@@ -28,7 +28,7 @@ Must be exactly one of:
 
 4. 'gender' (string):
 Must be exactly one of:
-- 'masculine' or 'femenine'.
+- 'male' or 'female'.
 											
 5. 'description' (string):
 A concise summary of the character's role, behavior and narrative function in the story.
@@ -53,19 +53,19 @@ IMPORTANT RULES:
 OUTPUT FORMAT:
 
 Return a JSON object with this structure:
-
+											
 {{
-  "agents": [
-	{{
-	  "race": "...",
-	  "name": "...",
-	  "age_group": "...",
-	  "gender": "...",
-	  "description": "...",
-	  "role": "...",
-	  "lives_in": 0
-	}}
-  ]
+    "agents": [
+        {{
+            "race": "...",
+            "name": "...",
+            "age_group": "...",
+            "gender": "...",
+            "description": "...",
+            "role": "...",
+            "lives_in": 0
+        }}
+    ]
 }}
 '''),
 
@@ -112,7 +112,6 @@ Description: {description}
 )
 
 
-
 def extract_agents(model: BaseChatModel, folktale: str, places: list[Place], role_dict: dict, traits_dict: dict):
 	"""
 	Extrae los agentes de un cuento utilizando un modelo de lenguaje con salida estructurada.
@@ -133,7 +132,7 @@ def extract_agents(model: BaseChatModel, folktale: str, places: list[Place], rol
 		list[Agent]:
 			Lista de agentes extraídos.
 	"""
-	formatted_places = "\n".join(f"- {i}. {place.name}" for i, place in enumerate(places))
+	formatted_places = "\n".join(f"{i}. {place.name}" for i, place in enumerate(places))
 	formatted_roles = format_hierarchy(role_dict)
 	formatted_traits = "\n".join(f"- '{k}': {v}" for k, v in traits_dict.items())
 	

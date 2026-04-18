@@ -1,5 +1,5 @@
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate
-from models.place import PlacesLLM, Place, MAX_PLACES
+from schemas.place import PlacesLLM, Place, MAX_PLACES
 from langchain_core.language_models.chat_models import BaseChatModel
 from typing import cast
 from loguru import logger

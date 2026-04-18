@@ -1,4 +1,4 @@
-from models.folktale import Folktale
+from schemas.folktale import Folktale
 from loguru import logger
 from typing import Any
 import pandas as pd

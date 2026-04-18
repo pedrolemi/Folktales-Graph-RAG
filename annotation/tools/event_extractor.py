@@ -1,13 +1,12 @@
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate, MessagesPlaceholder
 from langchain_core.language_models.chat_models import BaseChatModel
 from langchain_core.messages import HumanMessage, AIMessage
-from models.event import EntitesLLM
+from schemas.event import EntitesLLM
 from pydantic import ValidationError
-from models.object import Object
-from models.place import Place
+from schemas.object import Object
+from schemas.place import Place
 from typing import cast
 from loguru import logger
-from tqdm import tqdm
 
 extractor_prompt = ChatPromptTemplate.from_messages(
 	[
@@ -21,7 +20,7 @@ You will be given:
 - A list of candidate objects.
 - A list of candidate locations.
 
-EXTRACTION RULES
+EXTRACTION RULES:
    
 1. Objects:
 	- Select only objects that are explicitly mentioned or clearly used in the segment.
@@ -32,9 +31,8 @@ EXTRACTION RULES
 	- Select the SINGLE most relevant location where the segment occurs.
 	- If multiple locations are mentioned, choose the primary setting.
 	- If the location is unclear, choose the best option from context.
-								
-STRICT CONSTRAINTS
-											
+			
+STRICT CONSTRAINTS:						
 - You MUST ONLY select elements from the provided lists.
 - You MUST return indices (integers), NOT names.
 - Each index can appear ONLY ONCE.
@@ -93,8 +91,8 @@ def extract_event_elements(model: BaseChatModel, title: str, story_segment: str,
 
 	elements_chain = elements_prompt | model.with_structured_output(EntitesLLM)
 
-	formatted_objects = "\n".join(f"- {i}. {place.name}" for i, place in enumerate(objects))
-	formatted_places = "\n".join(f"- {i}. {place.name}" for i, place in enumerate(places))
+	formatted_objects = "\n".join(f"{i}. {place.name}" for i, place in enumerate(objects))
+	formatted_places = "\n".join(f"{i}. {place.name}" for i, place in enumerate(places))
 
 	for attempt in range(max_attempts):
 		try:

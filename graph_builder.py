@@ -3,6 +3,11 @@ from utils.loader import load_json_folder
 from neo4j_manager import Neo4jManager
 from config import get_settings
 from typing import Optional
+from schemas.folktale import Folktale
+from schemas.agent import Agent, Personality
+from schemas.relationship import Relationship
+from schemas.event import Event
+from utils.models import get_embeddings
 import os
 
 
@@ -15,6 +20,7 @@ class FolktaleGraphBuilder:
         self.settings = get_settings()
 
         self.manager = Neo4jManager()
+        self.model = get_embeddings()
 
     def clear_database(self):
         self.manager.execute_query("MATCH (n) DETACH DELETE n")
@@ -38,6 +44,16 @@ class FolktaleGraphBuilder:
             "CREATE CONSTRAINT function_name IF NOT EXISTS FOR (f:Function) REQUIRE f.name IS UNIQUE",
         ]
         self.manager.create_constraints(constraints)
+
+    def create_vector_database(self):
+        self.manager.create_vector_index(
+            index_name="event_embeddings",
+            label="Event",
+            property_name="embedding",
+            dimensions=768,
+            similarity="cosine",
+            overwrite=True
+        )
     
     def load_collections(self):
         collections = load_json_folder(self.collections_dir)
@@ -87,11 +103,10 @@ class FolktaleGraphBuilder:
 
             self._insert_node(snake_case_to_pascal_case(label), label, root_node)
 
-    def insert_folktale(self, folktale: dict):
+    def insert_folktale(self, folktale: Folktale):
         query = """
         MERGE (f:Folktale {url: $url})
         SET f.title = $title,
-            f.summary = $summary
 
         WITH f
         MATCH (g:Genre {name: $genre})
@@ -105,16 +120,15 @@ class FolktaleGraphBuilder:
         """
 
         params = {
-            "url": folktale["url"],
-            "title": folktale["title"],
-            "summary": folktale["summary"],
-            "genre": folktale["genre"],
-            "nation": folktale["nation"]
+            "url": folktale.url,
+            "title": folktale.title,
+            "genre": folktale.genre,
+            "nation": folktale.nation
         }
 
         self.manager.execute_query(query, params)
     
-    def insert_entities(self, label: str, items: list[dict]):
+    def insert_entities(self, label: str, items: list):
         query = f"""
         MERGE (n:{label} {{id: $id}})
         SET n.type = $type,
@@ -131,7 +145,7 @@ class FolktaleGraphBuilder:
             }
             self.manager.execute_query(query, params)
 
-    def insert_agents(self, agents: list[dict]):
+    def insert_agents(self, agents: list[Agent]):
         agent_query = """
         MERGE (a:Agent {id: $agent_id})
         SET a.race = $race,
@@ -159,34 +173,34 @@ class FolktaleGraphBuilder:
         """
 
         for agent in agents:
-            agent_id = agent["id"]
+            agent_id = agent.id
 
             params = {
                 "agent_id": agent_id,
-                "role": agent["role"],
-                "race": agent["race"],
-                "name": agent["name"],
-                "age_group": agent["age_group"],
-                "description": agent["description"],
-                "gender": agent.get("gender")
+                "role": agent.role,
+                "race": agent.race,
+                "name": agent.name,
+                "age_group": agent.age_group,
+                "description": agent.description,
+                "gender": agent.gender
             }
 
             self.manager.execute_query(agent_query, params)
 
-            if agent.get("lives_in"):
+            if agent.lives_in:
                 self.manager.execute_query(place_query, {
                     "agent_id": agent_id,
-                    "place_id": agent["lives_in"]
+                    "place_id": agent.lives_in
                 })
 
-            for trait, strength in agent["personality"].items():
+            for trait, strength in zip(Personality.model_fields, agent.personality):
                 self.manager.execute_query(trait_query, {
                     "agent_id": agent_id,
                     "trait": trait,
                     "strength": strength
                 })
 
-    def insert_relationships(self, relationships: list[dict]):
+    def insert_relationships(self, relationships: list[Relationship]):
         query = """
         MATCH (a:Agent {id: $source_id})
         MATCH (b:Agent {id: $target_id})
@@ -197,19 +211,21 @@ class FolktaleGraphBuilder:
 
         for rel in relationships:
             self.manager.execute_query(query, {
-                "source_id": rel["source_id"],
-                "target_id": rel["target_id"],
-                "type": rel["type"],
-                "description": rel["description"],
-                "strength": rel["strength"]
+                "source_id": rel.source_id,
+                "target_id": rel.target_id,
+                "type": rel.type,
+                "description": rel.description,
+                "strength": rel.strength
             })
     
-    def insert_events(self, events: list[dict], folktale_url: str):
+    def insert_events(self, events: list[Event], folktale_url: str):
         event_query = """
         MERGE (e:Event {id: $event_id})
         SET e.description = $description,
             e.name = $name,
             e.order = $order
+            e.thoughts = $thoughts
+            e.embedding = $embedding,
 
         WITH e
         MATCH (p:Place {id: $place_id})
@@ -249,36 +265,42 @@ class FolktaleGraphBuilder:
         MERGE (e2)-[:PRE_EVENT]->(e1)
         """
 
+        descriptions = [event.description for event in events]
+        embeddings = self.model.embed_documents(descriptions)
+
         for idx, event in enumerate(events):
+
             self.manager.execute_query(event_query, {
-                "event_id": event["id"],
-                "description": event["description"],
-                "name": event["name"],
+                "event_id": event.id,
+                "description": event.description,
+                "embedding": embeddings[idx],
+                "name": event.name,
                 "order": idx,
-                "place_id": event["place"],
-                "function": event["type"],
+                "thoughts": event.thoughts,
+                "place_id": event.place,
+                "function": event.type,
                 "url": folktale_url,
                 "is_first": idx == 0
             })
 
-            for agent in event["agents"]:
+            for agent in event.agents:
                 self.manager.execute_query(agent_event_query, {
-                    "event_id": event["id"],
-                    "agent_id": agent["id"],
-                    "importance": agent["importance"],
-                    "actions": agent["actions"]
+                    "event_id": event.id,
+                    "agent_id": agent.id,
+                    "importance": agent.importance,
+                    "actions": agent.actions
                 })
 
-            for obj_id in event["objects"]:
+            for obj_id in event.objects:
                 self.manager.execute_query(object_event_query, {
-                    "event_id": event["id"],
+                    "event_id": event.id,
                     "object_id": obj_id
                 })
 
         for i in range(1, len(events)):
             self.manager.execute_query(event_order_query, {
-                "prev_id": events[i - 1]["id"],
-                "current_id": events[i]["id"]
+                "prev_id": events[i - 1].id,
+                "current_id": events[i].id
             })
 
     def find_loose_entities(self):
@@ -306,16 +328,17 @@ class FolktaleGraphBuilder:
     def setup(self):
         self.clear_database()
         self.create_constraints()
+        self.create_vector_database()
         self.load_collections()
         self.load_structures()
 
     def finalize(self):
         self.manager.close()
     
-    def add_folktale(self, folktale: dict):
+    def add_folktale(self, folktale: Folktale):
         self.insert_folktale(folktale)
-        self.insert_entities("Object", folktale["objects"])
-        self.insert_entities("Place", folktale["places"])
-        self.insert_agents(folktale["agents"])
-        self.insert_relationships(folktale["relationships"])
-        self.insert_events(folktale["events"], folktale["url"])
+        self.insert_entities("Object", folktale.objects)
+        self.insert_entities("Place", folktale.places)
+        self.insert_agents(folktale.agents)
+        self.insert_relationships(folktale.relationships)
+        self.insert_events(folktale.events, folktale.url)

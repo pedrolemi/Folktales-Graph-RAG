@@ -1,5 +1,5 @@
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate
-from models.folktale import Genre
+from schemas.folktale import Genre
 from langchain_core.language_models.chat_models import BaseChatModel
 from typing import cast
 from loguru import logger

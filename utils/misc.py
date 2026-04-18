@@ -1,5 +1,5 @@
 from loguru import logger
-from models.folktale import Folktale
+from schemas.folktale import Folktale
 
 def filter_valid_folktales(folktales: list[Folktale], min_events: int):
     valid_folktales = []

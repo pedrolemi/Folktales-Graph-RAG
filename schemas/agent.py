@@ -52,13 +52,13 @@ class AgentLLM(BaseModel):
 
 	model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
 
-	race: str = Field(..., description="The ontological category of the character.")
+	race: str = Field(..., description="The ontological category of the character.", min_length=1)
 
-	name: str = Field(..., description="A unique identifier for the character as referenced in the story.")	
+	name: str = Field(..., description="A unique identifier for the character as referenced in the story.", min_length=1)	
 	
 	age_group: Literal["children", "young", "adult", "senior"] = Field(..., description="Approximate age category of the character.")
 
-	gender: Literal["male", "female"] = Field(..., description="Biological or narrative gender of the character, if explicitly stated.")
+	gender: Literal["male", "female"] = Field(..., description="Gender of the character.")
 
 	description: str = Field(..., description="A concise summary of the character's role, behavior and narrative function.")
 	

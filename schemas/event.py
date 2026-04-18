@@ -1,13 +1,15 @@
 from pydantic import BaseModel, ConfigDict, Field, field_validator, StringConstraints
+from utils.regex_utils import place_regex, object_regex, agent_regex, event_regex
 from typing import Annotated
 from .object import Object
 from .place import Place
+from .agent import Agent
 from enum import StrEnum
-from utils.regex_utils import place_regex, object_regex
+import uuid
 
 class EventClass(StrEnum):
 	EVENT = "event"
-	
+
 	# Move
 	MOVE = "move"
 
@@ -101,15 +103,60 @@ class EventClass(StrEnum):
 	WEDDING = "wedding"
 	GET_THRONE = "get_throne"
 
-class EventAgent(BaseModel):
-	id: str
-	action: list[str]
-	importance: int
+class EventAgentLLM(BaseModel):
+	'''Represent an agent involved in a specific event within a folktale, along with their actions and relative importance.'''
+
+	model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
+
+	id: int = Field(..., description="Index of the agent within the list of the agent for the entire folktale.")
+
+	actions: list[str] = Field(
+		..., 
+		description="List of actions, behaviors, or roles performed by the agent in this event. Each item a single sentence.",
+		min_length=1
+	)
+
+	importance: int = Field(
+		..., 
+		description="Integer score between 0 (minimal relevance) and 10 (critical role) indicating the importance of the agent in the event.",
+		ge=1,
+		le=10
+	)
+
+class EventAgentsLLM(BaseModel):
+	'''Collection of all agents involved in a single event within a folktale.'''
+
+	model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
+
+	agents: list[EventAgentLLM] = Field(
+		...,
+		description="List of all the agents participating in the event.",
+		min_length=1,
+	)
+
+class EventAgent(EventAgentLLM):
+	id: str = Field(..., pattern=agent_regex)
+	importance: float
+
+	@classmethod
+	def from_llm(cls, llm_obj: EventAgentLLM, agents: list[Agent]):
+		agent_id = agents[llm_obj.id].id
+
+		return cls(
+			id=agent_id,
+			actions=llm_obj.actions,
+			importance=llm_obj.importance/10
+		)
 
 class Event(BaseModel):
+	id: str = Field(
+        default_factory=lambda: f"event_{uuid.uuid4().hex}",
+		pattern=event_regex
+    )
 	type: EventClass
 	name: str
 	description: str
+	thoughts: list[str]
 
 	agents: list[EventAgent] = Field(default_factory=list)
 	objects: list[Annotated[str, StringConstraints(pattern=object_regex)]] = Field(default_factory=list)
@@ -118,17 +165,6 @@ class Event(BaseModel):
 MIN_EVENTS = 3
 MAX_EVENTS = 15
 
-class StorySegments(BaseModel):
-	'''A collection representing the individual segments into which the story is divided.'''
-
-	model_config = ConfigDict(str_strip_whitespace=True, extra="forbid")
-
-	segments: list[str] = Field(
-		..., 
-		description="Ordered list of story segments.",
-		max_length=MAX_EVENTS
-	)
-	
 class EntitesLLM(BaseModel):
 	'''It represents the narrative elements involved in a specific segment of the story.'''
 
@@ -136,15 +172,15 @@ class EntitesLLM(BaseModel):
 
 	objects: list[int] = Field(default_factory=list, description="Indices of the objects that play a relevant role in this segment of the story.")
 	place: int = Field(..., description="Index of the location where this segment of the story takes place.")
-	
-	@field_validator('objects', mode='after')  
+
+	@field_validator('objects', mode='after')
 	@classmethod
 	def validate_objects(cls, value: list[int]) -> list[int]:
 		return list(set(value))
-	
+
 	def validate_indices(self, objects: list[Object], places: list[Place]):
-		formatted_objects = "\n".join(f"- {i}. {obj.name}" for i, obj in enumerate(objects))
-		formatted_places = "\n".join(f"- {i}. {place.name}" for i, place in enumerate(places))
+		formatted_objects = "\n".join(f"{i}. {obj.name}" for i, obj in enumerate(objects))
+		formatted_places = "\n".join(f"{i}. {place.name}" for i, place in enumerate(places))
 
 		n_objects = len(objects)
 		n_places = len(places)
@@ -165,9 +201,9 @@ class EntitesLLM(BaseModel):
 				f"{formatted_places}"
 			)
 			return content
-		
+
 		return None
-	
+
 	def get_ids(self, objects: list[Object], places: list[Place]):
 		place_id = places[self.place].id
 
