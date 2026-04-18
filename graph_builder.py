@@ -6,6 +6,7 @@ from typing import Optional
 from schemas.folktale import Folktale
 from schemas.agent import Agent, Personality
 from schemas.relationship import Relationship
+from pydantic import BaseModel
 from schemas.event import Event
 from utils.models import get_embeddings
 import os
@@ -45,14 +46,14 @@ class FolktaleGraphBuilder:
         ]
         self.manager.create_constraints(constraints)
 
-    def create_vector_database(self):
+    def create_vector_database(self, overwrite: bool):
         self.manager.create_vector_index(
             index_name="event_embeddings",
             label="Event",
             property_name="embedding",
             dimensions=768,
             similarity="cosine",
-            overwrite=True
+            overwrite=overwrite
         )
     
     def load_collections(self):
@@ -106,7 +107,7 @@ class FolktaleGraphBuilder:
     def insert_folktale(self, folktale: Folktale):
         query = """
         MERGE (f:Folktale {url: $url})
-        SET f.title = $title,
+        SET f.title = $title
 
         WITH f
         MATCH (g:Genre {name: $genre})
@@ -128,21 +129,16 @@ class FolktaleGraphBuilder:
 
         self.manager.execute_query(query, params)
     
-    def insert_entities(self, label: str, items: list):
+    def insert_entities(self, label: str, items: list[BaseModel]):
         query = f"""
         MERGE (n:{label} {{id: $id}})
         SET n.type = $type,
             n.name = $name,
             n.description = $description
         """
-
+        
         for item in items:
-            params = {
-                "id": item["id"],
-                "type": item["type"],
-                "name": item["name"],
-                "description": item["description"]
-            }
+            params = item.model_dump(include={"id", "type", "name", "description"})
             self.manager.execute_query(query, params)
 
     def insert_agents(self, agents: list[Agent]):
@@ -193,13 +189,15 @@ class FolktaleGraphBuilder:
                     "place_id": agent.lives_in
                 })
 
-            for trait, strength in zip(Personality.model_fields, agent.personality):
+            personality = agent.personality.model_dump()
+            for trait, strength in personality.items():
+                # print(trait, strength)
                 self.manager.execute_query(trait_query, {
                     "agent_id": agent_id,
                     "trait": trait,
-                    "strength": strength
+                    "strength": float(strength)
                 })
-
+                
     def insert_relationships(self, relationships: list[Relationship]):
         query = """
         MATCH (a:Agent {id: $source_id})
@@ -223,9 +221,9 @@ class FolktaleGraphBuilder:
         MERGE (e:Event {id: $event_id})
         SET e.description = $description,
             e.name = $name,
-            e.order = $order
-            e.thoughts = $thoughts
-            e.embedding = $embedding,
+            e.order = $order,
+            e.thoughts = $thoughts,
+            e.embedding = $embedding
 
         WITH e
         MATCH (p:Place {id: $place_id})
@@ -269,6 +267,8 @@ class FolktaleGraphBuilder:
         embeddings = self.model.embed_documents(descriptions)
 
         for idx, event in enumerate(events):
+
+            print(idx == 0)
 
             self.manager.execute_query(event_query, {
                 "event_id": event.id,
@@ -328,7 +328,7 @@ class FolktaleGraphBuilder:
     def setup(self):
         self.clear_database()
         self.create_constraints()
-        self.create_vector_database()
+        # self.create_vector_database()
         self.load_collections()
         self.load_structures()
 
@@ -341,4 +341,5 @@ class FolktaleGraphBuilder:
         self.insert_entities("Place", folktale.places)
         self.insert_agents(folktale.agents)
         self.insert_relationships(folktale.relationships)
+        print(folktale.url)
         self.insert_events(folktale.events, folktale.url)
