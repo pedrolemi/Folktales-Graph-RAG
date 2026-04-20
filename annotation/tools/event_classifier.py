@@ -399,7 +399,7 @@ def extract_event_name(model: BaseChatModel, event_type: str, event_text: str, t
 	parser = StrOutputParser()
 	name_chain = name_prompt | model | parser
 
-	print(name_prompt.format(
+	logger.info(name_prompt.format(
 		event_type=event_type,
 		event_text=event_text,
 		thinking="\n".join(f"- {thought}" for thought in thoughts)
@@ -488,7 +488,7 @@ def extract_event_agents(model: BaseChatModel, event_text: str, thoughts: list[s
 
 	event_agent_chain = event_agent_prompt | model.with_structured_output(EventAgentsLLM)
 
-	print(event_agent_prompt.format(
+	logger.info(event_agent_prompt.format(
 		title=title,
 		event_text=event_text,
 		thinking="\n".join(f"- {thought}" for thought in thoughts),

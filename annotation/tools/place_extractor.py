@@ -68,7 +68,7 @@ def extract_places(model: BaseChatModel, folktale: str, places_dict: dict):
 
    place_chain = place_prompt | model.with_structured_output(PlacesLLM)
 
-   print(place_prompt.format(
+   logger.info(place_prompt.format(
       folktale=folktale,
       max_places=MAX_PLACES,
       places=formatted

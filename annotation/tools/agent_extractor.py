@@ -138,7 +138,7 @@ def extract_agents(model: BaseChatModel, folktale: str, places: list[Place], rol
 	
 	agent_chain = agent_prompt | model.with_structured_output(AgentsLLM)
 
-	print(agent_prompt.format(
+	logger.info(agent_prompt.format(
 		folktale=folktale,
 		places=formatted_places,
 		roles=formatted_roles,
@@ -152,7 +152,7 @@ def extract_agents(model: BaseChatModel, folktale: str, places: list[Place], rol
 	
 	agents_llm = cast(AgentsLLM, agents_llm)
 
-	print(agents_llm)
+	logger.info(agents_llm)
 
 	personality_chain = personality_prompt | model.with_structured_output(PersonalityLLM)
 
@@ -160,7 +160,7 @@ def extract_agents(model: BaseChatModel, folktale: str, places: list[Place], rol
 
 	n_places = len(places)
 	for agent_llm in agents_llm.agents:
-		print(personality_prompt.format(
+		logger.info(personality_prompt.format(
 			traits=formatted_traits,
 			folktale=folktale,
 			character=agent_llm.name,

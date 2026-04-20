@@ -102,7 +102,7 @@ def extract_relationships(model: BaseChatModel, folktale: str, agents: list[Agen
             "agent_2_description": agent_j.description
 		})
 
-		print(ai_message)
+		logger.info(ai_message)
 
 		relationship = classification_chain.invoke({
 			"folktale": folktale,

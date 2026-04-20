@@ -38,10 +38,11 @@ def extract_genre(model: BaseChatModel, folktale: str, genres: dict):
 
 	genre_chain = genre_prompt | model.with_structured_output(Genre)
 
-	print(genre_prompt.format(
+	logger.info(genre_prompt.format(
 		folktale=folktale,
 		genres=formatted
 	))
+
 
 	genre = genre_chain.invoke({
 		"folktale": folktale,

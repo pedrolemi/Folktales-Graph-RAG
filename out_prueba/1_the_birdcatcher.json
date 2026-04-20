@@ -1,0 +1,1980 @@
+{
+    "url": "https://fairytalez.com/the-birdcatcher/",
+    "nation": "serbian",
+    "title": "The Birdcatcher",
+    "genre": "fairy_tale",
+    "agents": [
+        {
+            "race": "human",
+            "name": "birdcatcher",
+            "age_group": "adult",
+            "gender": "male",
+            "description": "The main character of the story, a bird catcher who is tasked with various missions by the emperor.",
+            "role": "main_character",
+            "lives_in": "place_3a8828fbe6f2454eae53e0c38f95a062",
+            "id": "agent_2605dd618e9d4117878c0300693097a8",
+            "personality": {
+                "openness": 0.55,
+                "conscientiousness": 0.6,
+                "extraversion": 0.45,
+                "agreeableness": 0.4,
+                "neuroticism": 0.5
+            }
+        },
+        {
+            "race": "human",
+            "name": "wife",
+            "age_group": "adult",
+            "gender": "female",
+            "description": "The bird catcher's wife, who is often the cause of his troubles.",
+            "role": "secondary_character",
+            "lives_in": "place_3a8828fbe6f2454eae53e0c38f95a062",
+            "id": "agent_7252f1cf8d6e41f7b83566f879070d72",
+            "personality": {
+                "openness": 0.4,
+                "conscientiousness": 0.5,
+                "extraversion": 0.3,
+                "agreeableness": 0.2,
+                "neuroticism": 0.6
+            }
+        },
+        {
+            "race": "human",
+            "name": "emperor",
+            "age_group": "adult",
+            "gender": "male",
+            "description": "The ruler of the land, who is impressed by the bird catcher's abilities and tasks him with various missions.",
+            "role": "primary_character",
+            "lives_in": "place_3a8828fbe6f2454eae53e0c38f95a062",
+            "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+            "personality": {
+                "openness": 0.6,
+                "conscientiousness": 0.7,
+                "extraversion": 0.5,
+                "agreeableness": 0.8,
+                "neuroticism": 0.4
+            }
+        },
+        {
+            "race": "bird",
+            "name": "crow",
+            "age_group": "adult",
+            "gender": "female",
+            "description": "A clever and wise bird who helps the bird catcher in his missions.",
+            "role": "magical_helper",
+            "lives_in": "place_3a8828fbe6f2454eae53e0c38f95a062",
+            "id": "agent_7ea4dba7830b4842ba27a4929d2b47ec",
+            "personality": {
+                "openness": 0.8,
+                "conscientiousness": 0.6,
+                "extraversion": 0.4,
+                "agreeableness": 0.7,
+                "neuroticism": 0.3
+            }
+        },
+        {
+            "race": "bird",
+            "name": "nightingale",
+            "age_group": "adult",
+            "gender": "female",
+            "description": "A beautiful bird who is the object of the emperor's affection.",
+            "role": "princess",
+            "lives_in": "place_3a8828fbe6f2454eae53e0c38f95a062",
+            "id": "agent_1feacc28be3646499b11b43ec8330ce8",
+            "personality": {
+                "openness": 0.6,
+                "conscientiousness": 0.4,
+                "extraversion": 0.5,
+                "agreeableness": 0.3,
+                "neuroticism": 0.0
+            }
+        },
+        {
+            "race": "human",
+            "name": "sultana",
+            "age_group": "adult",
+            "gender": "female",
+            "description": "The nightingale, who is the emperor's love interest.",
+            "role": "princess",
+            "lives_in": "place_3a8828fbe6f2454eae53e0c38f95a062",
+            "id": "agent_c1d6419c2c6741bea816b1beaa39acad",
+            "personality": {
+                "openness": 0.8,
+                "conscientiousness": 0.4,
+                "extraversion": 0.5,
+                "agreeableness": 0.2,
+                "neuroticism": 0.6
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "type": "enemy",
+            "description": "The birdcatcher's wife consistently causes him problems and seems to take pleasure in his misfortunes.",
+            "strength": 1.0,
+            "source": "birdcatcher",
+            "source_id": "agent_2605dd618e9d4117878c0300693097a8",
+            "target": "wife",
+            "target_id": "agent_7252f1cf8d6e41f7b83566f879070d72"
+        },
+        {
+            "type": "friend",
+            "description": "The birdcatcher and the emperor have a strong, mutually beneficial relationship, with the emperor tasking the birdcatcher with various missions and rewarding him for his successes.",
+            "strength": 1.0,
+            "source": "birdcatcher",
+            "source_id": "agent_2605dd618e9d4117878c0300693097a8",
+            "target": "emperor",
+            "target_id": "agent_3f8015eda01e426d87c25581bdac91a6"
+        },
+        {
+            "type": "friend",
+            "description": "The birdcatcher and the crow have a close bond, with the crow often advising and helping the birdcatcher in his missions.",
+            "strength": 1.0,
+            "source": "birdcatcher",
+            "source_id": "agent_2605dd618e9d4117878c0300693097a8",
+            "target": "crow",
+            "target_id": "agent_7ea4dba7830b4842ba27a4929d2b47ec"
+        },
+        {
+            "type": "friend",
+            "description": "The birdcatcher catches the nightingales at the behest of the crow, but later brings their mother before the emperor and receives a reward.",
+            "strength": 1.0,
+            "source": "birdcatcher",
+            "source_id": "agent_2605dd618e9d4117878c0300693097a8",
+            "target": "nightingale",
+            "target_id": "agent_1feacc28be3646499b11b43ec8330ce8"
+        },
+        {
+            "type": "family_member",
+            "description": "The birdcatcher marries the sultana after she becomes the emperor's wife.",
+            "strength": 0.8,
+            "source": "birdcatcher",
+            "source_id": "agent_2605dd618e9d4117878c0300693097a8",
+            "target": "sultana",
+            "target_id": "agent_c1d6419c2c6741bea816b1beaa39acad"
+        },
+        {
+            "type": "enemy",
+            "description": "The birdcatcher's wife causes him troubles, and he ultimately gives her a good beating.",
+            "strength": 0.8,
+            "source": "wife",
+            "source_id": "agent_7252f1cf8d6e41f7b83566f879070d72",
+            "target": "emperor",
+            "target_id": "agent_3f8015eda01e426d87c25581bdac91a6"
+        },
+        {
+            "type": "enemy",
+            "description": "The birdcatcher's wife is antagonistic and plots revenge against him.",
+            "strength": 0.8,
+            "source": "wife",
+            "source_id": "agent_7252f1cf8d6e41f7b83566f879070d72",
+            "target": "crow",
+            "target_id": "agent_7ea4dba7830b4842ba27a4929d2b47ec"
+        },
+        {
+            "type": "friend",
+            "description": "The crow helps the birdcatcher out of trouble multiple times and provides him with clever advice.",
+            "strength": 1.0,
+            "source": "wife",
+            "source_id": "agent_7252f1cf8d6e41f7b83566f879070d72",
+            "target": "nightingale",
+            "target_id": "agent_1feacc28be3646499b11b43ec8330ce8"
+        },
+        {
+            "type": "friend",
+            "description": "The crow helps the birdcatcher multiple times, providing advice and assistance in completing tasks for the emperor.",
+            "strength": 1.0,
+            "source": "emperor",
+            "source_id": "agent_3f8015eda01e426d87c25581bdac91a6",
+            "target": "crow",
+            "target_id": "agent_7ea4dba7830b4842ba27a4929d2b47ec"
+        },
+        {
+            "type": "friend",
+            "description": "The birdcatcher consistently helps the emperor in his tasks, and the emperor rewards him handsomely.",
+            "strength": 1.0,
+            "source": "emperor",
+            "source_id": "agent_3f8015eda01e426d87c25581bdac91a6",
+            "target": "nightingale",
+            "target_id": "agent_1feacc28be3646499b11b43ec8330ce8"
+        },
+        {
+            "type": "friend",
+            "description": "The Birdcather has helped the Emperor multiple times, and the Emperor rewards and trusts him.",
+            "strength": 1.0,
+            "source": "emperor",
+            "source_id": "agent_3f8015eda01e426d87c25581bdac91a6",
+            "target": "sultana",
+            "target_id": "agent_c1d6419c2c6741bea816b1beaa39acad"
+        },
+        {
+            "type": "friend",
+            "description": "The crow provides guidance and advice to the birdcatcher in various situations.",
+            "strength": 1.0,
+            "source": "crow",
+            "source_id": "agent_7ea4dba7830b4842ba27a4929d2b47ec",
+            "target": "nightingale",
+            "target_id": "agent_1feacc28be3646499b11b43ec8330ce8"
+        },
+        {
+            "type": "friend",
+            "description": "The crow helps the birdcatcher in his missions, providing advice and assistance to achieve their goals.",
+            "strength": 1.0,
+            "source": "crow",
+            "source_id": "agent_7ea4dba7830b4842ba27a4929d2b47ec",
+            "target": "sultana",
+            "target_id": "agent_c1d6419c2c6741bea816b1beaa39acad"
+        },
+        {
+            "type": "friend",
+            "description": "The Nightingale/Sultana and Birdcatcher have a friendly relationship, with the birdcatcher helping the Sultana in her quest for love.",
+            "strength": 1.0,
+            "source": "nightingale",
+            "source_id": "agent_1feacc28be3646499b11b43ec8330ce8",
+            "target": "sultana",
+            "target_id": "agent_c1d6419c2c6741bea816b1beaa39acad"
+        }
+    ],
+    "places": [
+        {
+            "type": "city",
+            "name": "Constantinople",
+            "description": "A large city near where the birdcatcher lived.",
+            "id": "place_3a8828fbe6f2454eae53e0c38f95a062"
+        },
+        {
+            "type": "palace",
+            "name": "The Emperor's Palace",
+            "description": "The emperor's official residence, located on a quay.",
+            "id": "place_2878975d2a89423bb94ffb6c2fca4069"
+        },
+        {
+            "type": "house",
+            "name": "The Birdcacher's Home",
+            "description": "The birdcatcher's family home, where he and his wife lived with their children.",
+            "id": "place_d4fcbd5005e04f9a89bbfd99b21d2d15"
+        },
+        {
+            "type": "village",
+            "name": "The Village Where the Crow Was Found",
+            "description": "A rural settlement near where the crow was first encountered.",
+            "id": "place_004c97bf971e414ea919202eaa598299"
+        },
+        {
+            "type": "town",
+            "name": "The Town Near the Mosque",
+            "description": "A medium-sized settlement located near a grand mosque.",
+            "id": "place_5d010ce664374aa099683c707f55b417"
+        }
+    ],
+    "objects": [
+        {
+            "type": "magical_object",
+            "name": "crow",
+            "description": "The birdcatcher's magical crow helps him find the mother of the nightingales and later becomes a key figure in his transformation into a young man.",
+            "id": "object_a6416b16376542868db2a0467d3d3279"
+        },
+        {
+            "type": "natural_object",
+            "name": "nightingales",
+            "description": "Their singing attracts people to the mosque, leading to the emperor's discovery of them and their mother.",
+            "id": "object_88a34d1f7a124aa6b94d72ea8adae331"
+        },
+        {
+            "type": "crafted_object",
+            "name": "cage",
+            "description": "The birdcatcher uses a cage to capture the mother of the nightingales.",
+            "id": "object_b12d162a130441ff8d05cb5c26f67d66"
+        },
+        {
+            "type": "natural_object",
+            "name": "oil",
+            "description": "The birdcatcher pours oil into the sea, causing a violent agitation that allows the crow to find the missing ring fragment.",
+            "id": "object_fa239a45a81f4095b8a210a9f119e633"
+        },
+        {
+            "type": "crafted_object",
+            "name": "boat",
+            "description": "The birdcatcher uses the boat to transport people and goods, including the nightingales' mother.",
+            "id": "object_78837d45865f427794bdeb3604c4ce32"
+        },
+        {
+            "type": "magical_object",
+            "name": "ring fragment",
+            "description": "The crow finds this piece of a ring in the sea, which is crucial to reuniting it with its other half.",
+            "id": "object_0ecdd0e5a0fb48b4b4244e5976e824f8"
+        }
+    ],
+    "events": [
+        {
+            "id": "event_756b9118bfdc46af84af92b3741c6eb4",
+            "type": "setup",
+            "name": "The Birdcatcher's Daily Life",
+            "description": "Near Constantinople there lived a man who knew no other occupation but that of catching birds; his neighbours called him the birdcatcher. Some he used to sell, others served him for food, and thus he maintained himself.",
+            "thoughts": [
+                "The text describes a static situation about a man's profession and daily life. It doesn't advance the plot or resolve any conflict, so it can be classified as part of the setup.",
+                "The event describes the daily life of a birdcatcher and his habits without any conflict or action that drives the story forward. It seems more like an exposition or introduction to the character.",
+                "The provided text describes a man's occupation and how he sustains himself, which implies that it serves as background information or setup for further events. It doesn't drive the story forward through conflict, preparation, or external help like option 0 suggests.",
+                "The text describes the daily life of a birdcatcher and his habits without any conflict or action that drives the story forward. It serves as background information or introduction to the character.",
+                "The text describes a static situation about a man's profession and daily life without any conflict or action that drives the story forward. It provides background information on the character, which is consistent with option 1.",
+                "The text describes a static situation about a man's profession and daily life without advancing the plot or resolving any conflict. It appears to be background information or an introduction to the character.",
+                "The text describes a static situation about a man's profession and daily life without advancing the plot or resolving any conflict. It provides background information on the character.",
+                "The text describes a static situation about a man's profession and daily life without any conflict or action that drives the story forward. It provides background information on the character.",
+                "The text provides background information on a character's occupation and daily life without advancing the plot or resolving any conflict. It serves as an introduction to the character."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "catching birds",
+                        "selling birds",
+                        "using birds for food"
+                    ],
+                    "importance": 0.7
+                }
+            ],
+            "objects": [],
+            "place": "place_3a8828fbe6f2454eae53e0c38f95a062"
+        },
+        {
+            "id": "event_8a859784d75e4a6986efbdff34b591ec",
+            "type": "move",
+            "name": "Catches Crow for Children",
+            "description": "One day he caught a crow, and wanted to let it go, but then he had nothing to take home. ‘If I can’t catch anything to-day, I’ll take my children the crow, that they may amuse themselves; and they have no other birds at hand.’ So he intended, and so he did.",
+            "thoughts": [
+                "The event involves the birdcatcher acting within his occupation and making a decision based on his circumstances. It's an action-oriented event that shows the character's problem-solving skills.",
+                "The event involves the hero acting within the core plot. He catches a crow and decides what to do with it, considering his children's amusement as an alternative to selling or eating it.",
+                "The event involves the hero acting within the core plot of his daily life as a birdcatcher. It doesn't involve conflict or any significant plot advancement, but rather a practical decision based on his current circumstances.",
+                "The event shows the hero acting within his occupation as a birdcatcher, making a decision based on his current circumstances. It's an everyday action that doesn't involve conflict or significant plot advancement.",
+                "The event involves the hero acting within his daily life as a birdcatcher, making a practical decision based on his current circumstances. It's not about conflict or significant plot advancement, but rather a mundane action.",
+                "The birdcatcher's decision to take the crow home for his children's amusement doesn't advance the plot or introduce conflict. It shows a practical problem-solving action within his daily life as a birdcatcher."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "caught a crow",
+                        "decided to take the crow home for his children's amusement"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_7ea4dba7830b4842ba27a4929d2b47ec",
+                    "actions": [
+                        "was caught by the birdcatcher"
+                    ],
+                    "importance": 0.4
+                }
+            ],
+            "objects": [
+                "object_b12d162a130441ff8d05cb5c26f67d66"
+            ],
+            "place": "place_3a8828fbe6f2454eae53e0c38f95a062"
+        },
+        {
+            "id": "event_7c24494486d244ea8f3269a95e60e171",
+            "type": "move",
+            "name": "Wife Threatens Crow's Life",
+            "description": "His wife, on seeing the crow, said: ‘What mischief have you brought me? Wring the worthless thing’s neck!’ The crow, on hearing that sentence, besought the birdcatcher to let her go, and promised to be always at his service. ‘I will bring birds to you; through me you will become prosperous.’",
+            "thoughts": [
+                "The event is not a direct continuation of the previous one. The birdcatcher has already caught and decided to take home the crow as entertainment for his children. However, the wife's reaction introduces conflict that drives the story forward.",
+                "The event involves the birdcatcher's wife reacting to the crow, setting off a chain of events that leads to the crow making promises and the birdcatcher becoming hopeful for prosperity. This is an escalation in the narrative, as it introduces a new element that will likely drive the story forward.",
+                "The event involves the hero's wife reacting to the crow, setting up a conflict or challenge for the birdcatcher. It's part of the main narrative action and drives the story forward.",
+                "The wife's reaction introduces a conflict that drives the story forward, but it also sets up a new element that will likely drive the story forward. This is an escalation in the narrative.",
+                "The wife's reaction introduces a conflict that drives the story forward by threatening the crow and creating tension. This event escalates the narrative as it sets up a challenge for the birdcatcher."
+            ],
+            "agents": [
+                {
+                    "id": "agent_7252f1cf8d6e41f7b83566f879070d72",
+                    "actions": [
+                        "wringed the crow's neck",
+                        "introduced conflict"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_7ea4dba7830b4842ba27a4929d2b47ec",
+                    "actions": [
+                        "besought the birdcatcher to let her go",
+                        "promised to bring birds and grant prosperity"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [
+                "object_b12d162a130441ff8d05cb5c26f67d66",
+                "object_0ecdd0e5a0fb48b4b4244e5976e824f8"
+            ],
+            "place": "place_3a8828fbe6f2454eae53e0c38f95a062"
+        },
+        {
+            "id": "event_c1901311f99d45e19f92cdaf3fc15d0c",
+            "type": "helper_move",
+            "name": "Crow Brings Nightingales",
+            "description": "‘Even if you’re lying, it’s no great loss,’ said the birdcatcher to himself, and set the crow at liberty.On the morrow the birdcatcher went out birdcatching as usual, and the crow kept her word; she brought him two nightingales;",
+            "thoughts": [
+                "The birdcatcher releases the crow and receives a promise of future service. This event builds on the previous one where the crow promised to be at the birdcatcher's service in exchange for its freedom.",
+                "The birdcatcher and the crow have developed a relationship where the crow brings birds to the birdcatcher. This shows a form of cooperation or mutually beneficial interaction between them, rather than conflict or resolution.",
+                "The birdcatcher releases the crow and receives a promise of future service. This event builds on the previous one where the crow promised to be at the birdcatcher's service in exchange for its freedom. The relationship between them is cooperative rather than conflictual.",
+                "The birdcatcher releases the crow and receives a promise of future service. This event builds on the previous one where the crow promised to be at the birdcatcher's service in exchange for its freedom. The relationship between them has been established as mutually beneficial, with the crow bringing birds to the birdcatcher.",
+                "The birdcatcher receives a promised favor from the crow, which directly benefits him at a critical moment. The relationship between them has been established as mutually beneficial.",
+                "The birdcatcher receives a promise of future service from the crow, who has been set free. This event builds on the previous one where the crow promised to be at the birdcatcher's service in exchange for its freedom. The relationship between them is cooperative rather than conflictual.",
+                "The birdcatcher receives a promise of future service from the crow as a result of releasing it, which aligns with their previously established mutually beneficial relationship. This event showcases the cooperation and fulfillment of the crow's initial promise."
+            ],
+            "agents": [
+                {
+                    "id": "agent_7ea4dba7830b4842ba27a4929d2b47ec",
+                    "actions": [
+                        "brought him two nightingales"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "released the crow",
+                        "received a promise of future service"
+                    ],
+                    "importance": 1.0
+                }
+            ],
+            "objects": [
+                "object_a6416b16376542868db2a0467d3d3279",
+                "object_88a34d1f7a124aa6b94d72ea8adae331"
+            ],
+            "place": "place_004c97bf971e414ea919202eaa598299"
+        },
+        {
+            "id": "event_dafa26bf06c845b2b246d00565a20436",
+            "type": "resolution",
+            "name": "Grand Vizier Takes Nightingales",
+            "description": "he caught them both, and took them home. The nightingales were not long with the birdcatcher, for the grand vizier heard of them, sent for the birdcatcher, took the two nightingales from him,",
+            "thoughts": [
+                "The event involves the birdcatcher being intervened upon by a higher authority, taking away the nightingales from him. This is not part of the main action or conflict, but rather an external factor affecting the story.",
+                "The birdcatcher takes the nightingales from the grand vizier, resolving a conflict and resolving an open question about what will happen to them. This is a turning point in the story, where the main character's fortunes change.",
+                "The grand vizier's intervention resolves a conflict and closes an open question about the fate of the nightingales. This marks a turning point in the story where the birdcatcher's fortunes change.",
+                "The event involves the birdcatcher losing possession of the nightingales due to an external factor. This resolves a conflict and marks a turning point in the story where the main character's fortunes change.",
+                "The birdcatcher resolves an open conflict by giving up his newly caught birds, which was a turning point, and now the grand vizier takes them away from him. This resolves the situation created in the previous events."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "caught them both",
+                        "took them home"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_c1d6419c2c6741bea816b1beaa39acad",
+                    "actions": [
+                        "sent for the birdcatcher",
+                        "took the two nightingales from him"
+                    ],
+                    "importance": 1.0
+                }
+            ],
+            "objects": [
+                "object_88a34d1f7a124aa6b94d72ea8adae331"
+            ],
+            "place": "place_d4fcbd5005e04f9a89bbfd99b21d2d15"
+        },
+        {
+            "id": "event_474bf7ad084a4523bd10851c11353f51",
+            "type": "setup",
+            "name": "Nightingales Settle in Mosque",
+            "description": "and placed them in the new mosque. The nightingales were able to sing sweetly and agreeably; the people collected in front of the mosque and listened to their beautiful singing;",
+            "thoughts": [
+                "The event involves no conflict or external help; it's a neutral moment where the nightingales are being settled into their new environment. This doesn't drive the plot forward or resolve an open conflict.",
+                "The event text describes a peaceful scene where people gather to listen to the singing nightingales that were previously taken from the birdcatcher by the grand vizier. This is not a pivotal moment in the conflict between the birdcatcher and the grand vizier.",
+                "The event describes a peaceful scene where people gather to listen to the singing nightingales after they were previously taken from the birdcatcher by the grand vizier. This is not a pivotal moment in the conflict between the birdcatcher and the grand vizier, nor does it involve any external help or significant action.",
+                "The event describes a peaceful scene where people gather to listen to the singing nightingales that were previously taken from the birdcatcher by the grand vizier. This is not a pivotal moment in the conflict between the birdcatcher and the grand vizier, nor does it introduce or develop any problem. The narrative has just begun to describe the world before any significant conflict or disruption.",
+                "The event text describes a peaceful scene where people gather to listen to the singing nightingales. It's not directly related to the conflict between the birdcatcher and the grand vizier. The nightingales were previously taken from the birdcatcher by the grand vizier, but this event is about them being settled into their new environment and entertaining a crowd.",
+                "The text describes a peaceful scene where people gather to listen to the singing nightingales after they were previously taken from the birdcatcher by the grand vizier. This is not a pivotal moment in the conflict between the birdcatcher and the grand vizier, nor does it involve any external help or significant action.",
+                "The event describes a peaceful scene where people gather to listen to the singing nightingales after they were previously taken from the birdcatcher by the grand vizier. This is not a pivotal moment in the conflict between the birdcatcher and the grand vizier, nor does it introduce or develop any problem."
+            ],
+            "agents": [
+                {
+                    "id": "agent_c1d6419c2c6741bea816b1beaa39acad",
+                    "actions": [
+                        "are being settled into their new environment",
+                        "sing sweetly and agreeably"
+                    ],
+                    "importance": 0.7
+                },
+                {
+                    "id": "agent_1feacc28be3646499b11b43ec8330ce8",
+                    "actions": [
+                        "are being settled into their new environment",
+                        "sing sweetly and agreeably"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [
+                "object_88a34d1f7a124aa6b94d72ea8adae331"
+            ],
+            "place": "place_5d010ce664374aa099683c707f55b417"
+        },
+        {
+            "id": "event_785b91e4f47a4b37807c3441ef94490a",
+            "type": "move",
+            "name": "The Emperor Takes Nightingales",
+            "description": "and the wonder came to the ears of the emperor. The emperor summoned the grand vizier, took the birds from him,",
+            "thoughts": [
+                "The event involves the grand vizier acting upon the birdcatcher's actions, which drives the story forward through external help. The wonder of the nightingales' singing is still unfolding, and no conflict or issue is being resolved.",
+                "The emperor's action of taking the nightingales from the grand vizier does not resolve an open conflict or bring a new stable state. Instead, it continues the story's progression and introduces a new element.",
+                "The emperor's action of taking the nightingales from the grand vizier continues the story's progression and introduces a new element. The wonder of the nightingales' singing is still unfolding, and no conflict or issue is being resolved."
+            ],
+            "agents": [
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "summoned the grand vizier",
+                        "took the birds from him"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "initially in possession of the nightingales",
+                        "from whom the emperor took the birds"
+                    ],
+                    "importance": 0.6
+                }
+            ],
+            "objects": [
+                "object_88a34d1f7a124aa6b94d72ea8adae331"
+            ],
+            "place": "place_2878975d2a89423bb94ffb6c2fca4069"
+        },
+        {
+            "id": "event_b81b684d0b8f4becb3759a5dadfbbb10",
+            "type": "move",
+            "name": "Birdcatcher Summons",
+            "description": "and inquired whence he had got them. When the emperor had thought the matter over, he sent his cavasses, and they summoned the birdcatcher.",
+            "thoughts": [
+                "The event involves the birdcatcher being summoned by the emperor's cavasses after a series of events where the nightingales are taken away from him and eventually reach the emperor. This suggests that the event is part of the main narrative action, driving the story forward through conflict.",
+                "The birdcatcher had just returned home with two nightingales caught by the crow's help. The grand vizier heard of them and took them away from him. However, there is no conflict or tension in this event regarding the birdcatcher's actions or reactions.",
+                "The birdcatcher has just been summoned by the emperor's cavasses after two nightingales he caught were taken from him by the grand vizier. This event is a response to a previous action and leads to further consequences.",
+                "The birdcatcher has been summoned by the emperor's cavasses after a series of events where the nightingales were taken away from him and eventually reached the emperor. This suggests that the event is part of the main narrative action, driving the story forward through conflict.",
+                "The birdcatcher has just been summoned by the emperor's cavasses after two nightingales he caught were taken from him by the grand vizier. This event is a response to a previous action and leads to further consequences.",
+                "The birdcatcher has just been summoned by the emperor's cavasses after two nightingales he caught were taken from him by the grand vizier. This event is a direct response to a previous action and leads to further consequences, indicating that it drives the story forward through conflict."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "was summoned by the emperor's cavasses"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "sent his cavasses to summon the birdcatcher"
+                    ],
+                    "importance": 1.0
+                }
+            ],
+            "objects": [
+                "object_b12d162a130441ff8d05cb5c26f67d66"
+            ],
+            "place": "place_2878975d2a89423bb94ffb6c2fca4069"
+        },
+        {
+            "id": "event_0a9f9c868ee14e67a1d5e909e5631a7d",
+            "type": "move",
+            "name": "Summoned by the Emperor",
+            "description": "‘It’s no joke to go before the emperor! I know why he summons me; no half torture will be mine. I am guilty of nothing, I owe nothing; but the emperor’s will, that’s my crime!’ said the birdcatcher,",
+            "thoughts": [
+                "The birdcatcher's event involves preparation or external help for the main plot. The grand vizier took the nightingales from the birdcatcher and informed the emperor, who then summons the birdcatcher. This sets the stage for the main action to unfold.",
+                "The birdcatcher is being summoned by the emperor as part of a larger plot where he and his crow are somehow connected to the grand vizier's acquisition of two nightingales that sang beautifully. This event marks an escalation in tension, setting up the possibility of conflict.",
+                "The event involves the hero acting within the core plot. The birdcatcher is summoned by the emperor due to his possession of the nightingales, which are of great interest to the emperor.",
+                "The event involves the hero acting within the core plot as he is summoned by the emperor due to his possession of the nightingales, which are of great interest. This marks an escalation in tension and sets up the possibility of conflict.",
+                "The event marks a turning point where external help or preparation sets the stage for the main action to unfold. The birdcatcher's possessions of the nightingales have attracted significant attention from the emperor and grand vizier, setting up an escalation in tension."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "is summoned by the emperor"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "summons the birdcatcher",
+                        "has interest in the nightingales"
+                    ],
+                    "importance": 1.0
+                }
+            ],
+            "objects": [],
+            "place": "place_d4fcbd5005e04f9a89bbfd99b21d2d15"
+        },
+        {
+            "id": "event_8dcc75cd5b194e01851bfa42583ace84",
+            "type": "move",
+            "name": "Summoned by the Emperor",
+            "description": "and went into the emperor’s presence all pale with fear.‘Birdcatcher, sirrah! are you the catcher of those nightingales which were at the new mosque.’",
+            "thoughts": [
+                "The event involves the hero acting within the core plot. The emperor summons the birdcatcher because of the nightingales' singing, which was a result of the birdcatcher's interaction with the crow and his subsequent actions. This is not a resolution or closing conflict, but rather an escalation of the consequences of those events.",
+                "The event is part of the main narrative action: the birdcatcher is summoned by the emperor, which drives the story forward through conflict and external help. The hero's actions and reactions are crucial to the plot.",
+                "The birdcatcher is summoned by the emperor due to his possession of the nightingales, but it doesn't appear that any conflict or action has been resolved. This event seems to be part of the main narrative action, driving the story forward through external help (the summons) and reaction (the birdcatcher's fear).",
+                "The event involves the hero acting within the core plot. The emperor summons the birdcatcher because of the nightingales' singing, which was a result of the birdcatcher's interaction with the crow and his subsequent actions.",
+                "The birdcatcher's fear and past actions with the crow lead to a summons by the emperor due to his possession of the nightingales. This event is part of the main narrative action: it drives the story forward through external help (the summons) and reaction (the birdcatcher's fear).",
+                "The hero's actions and reactions are crucial to the plot as he is summoned by the emperor due to his possession of the nightingales. This event drives the story forward through conflict and external help."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "entered the emperor's presence",
+                        "showed fear"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "summoned the birdcatcher",
+                        "asked about the nightingales"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [
+                "object_88a34d1f7a124aa6b94d72ea8adae331"
+            ],
+            "place": "place_004c97bf971e414ea919202eaa598299"
+        },
+        {
+            "id": "event_f26240f4d046441094a0e3aa0a233007",
+            "type": "move",
+            "name": "Summoned by the Emperor",
+            "description": "The birdcatcher told the truth: ‘Where your slipper is, there is my face!–I am.’ ‘Sirrah!’ again said the emperor,",
+            "thoughts": [
+                "The birdcatcher is summoned by the emperor to answer for catching nightingales, which are a valuable gift to the new mosque. This event implies tension and conflict between the birdcatcher's actions and the emperor's expectations.",
+                "The birdcatcher has been summoned by the emperor, and he's fearful of being punished. This event marks a turning point in his story, but it doesn't resolve any conflict or reach a new stable state yet.",
+                "The birdcatcher has been summoned by the emperor and is fearful of being punished. This event marks a turning point in his story as he transitions from passive reaction to potential action against the conflict.",
+                "The birdcatcher has been summoned by the emperor, and he's fearful of being punished. This event marks a turning point in his story, but it doesn't resolve any conflict or reach a new stable state yet.",
+                "The birdcatcher has been summoned by the emperor, and he's fearful of being punished. This event marks a turning point in his story, but it doesn't resolve any conflict or reach a new stable state yet."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "told the truth",
+                        "claimed to be where the emperor's slipper was"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "summoned the birdcatcher"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [
+                "object_b12d162a130441ff8d05cb5c26f67d66"
+            ],
+            "place": "place_2878975d2a89423bb94ffb6c2fca4069"
+        },
+        {
+            "id": "event_dfcbbb0f72264e4cb732f4d1800d92ef",
+            "type": "move",
+            "name": "Summoned to Question",
+            "description": "‘I wish you to find their mother; doubtless your reward will be forthcoming. But do you hear? You may be quite sure of it; if you don’t, there will be no head on your shoulders.’",
+            "thoughts": [
+                "The birdcatcher is being summoned by the emperor and appears to be facing some form of retribution or questioning for catching the nightingales. However, there is no indication that the event will resolve an open conflict or confirm the hero's success in this particular instance.",
+                "The event involves the birdcatcher being summoned by the emperor and questioned about the nightingales. This is a specific action within the main plot, not a climactic moment or a resolution.",
+                "The birdcatcher has been summoned by the emperor and is about to face a potential punishment or consequence for catching the nightingales. This event drives the story forward and involves the hero reacting to external forces.",
+                "The birdcatcher is being summoned by the emperor and questioned about the nightingales. This specific action within the main plot drives the story forward and involves the hero reacting to external forces.",
+                "The birdcatcher has been summoned by the emperor and questioned about the nightingales. This is a specific action within the main plot, not a climactic moment or a resolution.",
+                "The birdcatcher is being summoned by the emperor and questioned about the nightingales. This is a specific action within the main plot, not a climactic moment or a resolution."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "being summoned by the emperor",
+                        "facing questioning about the nightingales"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "summoning the birdcatcher"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [],
+            "place": "place_d4fcbd5005e04f9a89bbfd99b21d2d15"
+        },
+        {
+            "id": "event_8651436664fe462cbfaa468c79cb2854",
+            "type": "move",
+            "name": "Birdcatcher receives imperial summons.",
+            "description": "On arriving at home he found his crow at the window: ‘Has some misfortune again occurred to you?’ ‘Don’t ask,’ replied the birdcatcher;",
+            "thoughts": [
+                "The birdcatcher's encounter with the emperor marks a turning point where he is tasked with finding the mother of the nightingales. This involves external help and sets in motion a chain of events that will lead to further conflict or preparation.",
+                "The birdcatcher has just been summoned by the emperor, and there's a sense of tension and foreboding. However, the outcome of this event is not yet resolved; it's more of an escalation or turning point in the story.",
+                "The birdcatcher has been summoned by the emperor and tasked with finding the mother of the nightingales. This creates tension and raises the stakes for the birdcatcher, setting up a potential conflict or challenge that will drive the story forward.",
+                "The birdcatcher has been summoned by the emperor and tasked with finding the mother of the nightingales, which raises the stakes for him and sets up a potential conflict or challenge that will drive the story forward. This event is not just an external help but also involves the hero acting or reacting within the core plot.",
+                "The birdcatcher has been summoned by the emperor and tasked with finding the mother of the nightingales, which creates tension and raises the stakes for him. This event is a turning point in the story where external help is provided to drive the plot forward.",
+                "The birdcatcher has been summoned by the emperor and tasked with finding the mother of the nightingales. This creates tension and raises the stakes for the birdcatcher, setting up a potential conflict or challenge that will drive the story forward."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "replied",
+                        "has some misfortune"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_7ea4dba7830b4842ba27a4929d2b47ec",
+                    "actions": [
+                        "none"
+                    ],
+                    "importance": 0.4
+                }
+            ],
+            "objects": [
+                "object_a6416b16376542868db2a0467d3d3279",
+                "object_b12d162a130441ff8d05cb5c26f67d66"
+            ],
+            "place": "place_d4fcbd5005e04f9a89bbfd99b21d2d15"
+        },
+        {
+            "id": "event_3bc26d0442e44cebae2acf3d04e8b72b",
+            "type": "move",
+            "name": "Birdcatcher Receives Imperial Order",
+            "description": "‘one still blacker and more miserable!’ and told her all in detail, what it was and how it was. ‘Don’t trouble your head much about that,’ said the crow.",
+            "thoughts": [
+                "The event is a pivotal moment in the story where the birdcatcher receives a task from the emperor. This sets the stage for further action and creates tension.",
+                "The event involves the hero acting in response to a request from the emperor, and it drives the story forward through external help and new developments.",
+                "The event involves the hero acting and reacting within the core plot. The birdcatcher receives a new task from the emperor to find the mother of the nightingales, which drives the story forward.",
+                "The event involves the hero acting and reacting within the core plot. The birdcatcher receives a new task from the emperor to find the mother of the nightingales, which drives the story forward.",
+                "The birdcatcher receives a new task from the emperor to find the mother of the nightingales, which drives the story forward through external help and new developments.",
+                "The event involves the hero acting and reacting within the core plot. The birdcatcher receives a new task from the emperor to find the mother of the nightingales, which drives the story forward."
+            ],
+            "agents": [
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "tasked the birdcatcher with finding the mother of the nightingales"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "received a new task from the emperor"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [
+                "object_a6416b16376542868db2a0467d3d3279"
+            ],
+            "place": "place_d4fcbd5005e04f9a89bbfd99b21d2d15"
+        },
+        {
+            "id": "event_32bf57c9b69043a6bd6d3fa6be8fc0b9",
+            "type": "move",
+            "name": "Ask for Imperial Aid",
+            "description": "Be quick; ask the emperor for a boat full of all manner of wares. Then we will push off on the deep sea; when people hear that the emperor’s agent is bringing wares, the people will assemble,",
+            "thoughts": [
+                "The event involves the hero acting within the core plot. The birdcatcher is instructed by a mysterious crow to ask the emperor for a boat full of wares, which will drive the story forward.",
+                "The event describes a plan to be put into action by the birdcatcher and the emperor's agent, which will drive the story forward. It involves external help from the emperor, rather than the hero acting or reacting within the core plot.",
+                "The current event involves the birdcatcher receiving a task from the emperor to find the mother of the nightingales. This is a new directive that drives the story forward and sets up further action.",
+                "The birdcatcher receives a task from the emperor to find the mother of the nightingales. This directive drives the story forward and sets up further action.",
+                "The birdcatcher receives a new task from the emperor to find the mother of the nightingales, which drives the story forward and sets up further action.",
+                "The birdcatcher receives a new directive from the emperor to find the mother of the nightingales, which drives the story forward and sets up further action."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "ask the emperor for a boat full of all manner of wares"
+                    ],
+                    "importance": 0.6
+                },
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "tasking the birdcatcher to find the mother of the nightingales"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [],
+            "place": "place_5d010ce664374aa099683c707f55b417"
+        },
+        {
+            "id": "event_6a7b885910404fe58f925f8574f4d1e3",
+            "type": "acquisition",
+            "name": "Emperor assigns new quest.",
+            "description": "and that lady is sure to come; the one on which I perch is she; up anchor and off with the boat!’ This the birdcatcher remembered well. What he asked of the emperor,",
+            "thoughts": [
+                "The birdcatcher is asking the emperor for a boat full of wares as part of a plan to leave with his crow and presumably escape any consequences. This event involves preparation or external help, rather than direct conflict resolution.",
+                "The birdcatcher is given a new task by the emperor to find the mother of the nightingales. This is not closing or resolving an open conflict, but rather setting up a new action for the hero.",
+                "The birdcatcher receives a new task from the emperor: finding the mother of the nightingales. This event does not resolve any conflict or close a story thread; instead, it introduces a new challenge and sets the plot forward.",
+                "The birdcatcher receives a new task from the emperor: finding the mother of the nightingales. This event does not resolve any conflict or close a story thread; instead, it introduces a new challenge and sets the plot forward.",
+                "The birdcatcher receives a new task from the emperor: finding the mother of the nightingales. This event does not resolve any conflict or close a story thread; instead, it introduces a new challenge and sets the plot forward.",
+                "The birdcatcher receives a new task from the emperor: finding the mother of the nightingales. This event does not resolve any conflict or close a story thread; instead, it introduces a new challenge and sets the plot forward.",
+                "The birdcatcher receives a new task from the emperor: finding the mother of the nightingales. This event does not resolve any conflict or close a story thread; instead, it introduces a new challenge and sets the plot forward.",
+                "The birdcatcher receives a new task from the emperor: finding the mother of the nightingales. This event does not resolve any conflict or close a story thread; instead, it introduces a new challenge and sets the plot forward.",
+                "The birdcatcher receives a new task from the emperor: finding the mother of the nightingales. This event does not resolve any conflict or close a story thread; instead, it introduces a new challenge and sets the plot forward.",
+                "The birdcatcher receives a new task from the emperor: finding the mother of the nightingales. This event does not resolve any conflict or close a story thread; instead, it introduces a new challenge and sets the plot forward."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "asks the emperor for a boat full of wares"
+                    ],
+                    "importance": 0.7
+                },
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "tasks the birdcatcher with finding the mother of the nightingales"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [
+                "object_b12d162a130441ff8d05cb5c26f67d66",
+                "object_fa239a45a81f4095b8a210a9f119e633"
+            ],
+            "place": "place_5d010ce664374aa099683c707f55b417"
+        },
+        {
+            "id": "event_0c0f5e2824d6461e9da2851627983a11",
+            "type": "move",
+            "name": "Crow Gets Boat Wares",
+            "description": "that he gave him, and he pushed the boat over the sea; his bringing wares for sale went from mouth to mouth; people came and purchased the wares.",
+            "thoughts": [
+                "The event involves a request made by the birdcatcher to the emperor for a boat full of wares, which drives the story forward and sets up future action. This is part of the main narrative action.",
+                "The event involves the hero acting within the core plot, driving the story forward through external help from the crow. The hero's success is not yet confirmed.",
+                "The event involves the hero acting within the core plot and drives the story forward through conflict and external help. The birdcatcher's actions are a response to the emperor's request, but also involve his own cunning plan with the crow's assistance.",
+                "The event involves a request made by the birdcatcher to the emperor for a boat full of wares, which drives the story forward and sets up future action. This is part of the main narrative action.",
+                "The event involves a request made by the birdcatcher to the emperor for a boat full of wares, which drives the story forward and sets up future action. This is part of the main narrative action.",
+                "The event involves a request made by the birdcatcher to the emperor for a boat full of wares, which drives the story forward and sets up future action. The hero's success is not yet confirmed, but it shows his ability to act within the core plot."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "gave a request to the emperor",
+                        "pushed the boat over the sea"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "received the request from the bird catcher",
+                        "purchased wares from the boat"
+                    ],
+                    "importance": 0.6
+                }
+            ],
+            "objects": [
+                "object_fa239a45a81f4095b8a210a9f119e633",
+                "object_78837d45865f427794bdeb3604c4ce32"
+            ],
+            "place": "place_5d010ce664374aa099683c707f55b417"
+        },
+        {
+            "id": "event_803fe11d571e487d8e3cd3c5c1ec31b6",
+            "type": "move",
+            "name": "Birdcatcher's Wife Arrives",
+            "description": "At last came the mistress of the birds also, and began to examine the wares; the crow perched on her shoulder;",
+            "thoughts": [
+                "The birdcatcher's wife was summoned by the emperor, and her subsequent arrival at the market stall on the boat with various wares coincides with the event. The crow's cunning plan is revealed to the reader as it manipulates the birdcatcher to gather people and their target, the mistress of the birds.",
+                "The event involves the hero acting within the core plot by asking the emperor for a boat full of wares and subsequently using it to drive the story forward. The hero's success is not yet confirmed, and the conflict escalates as they prepare to meet the mistress of the birds.",
+                "The birdcatcher's conversation with the crow at home after being summoned by the emperor shows a turning point in the story as the crow suggests a plan to find the nightingale's mother. This is not a climactic moment of conflict resolution but rather a shift in strategy.",
+                "The birdcatcher's conversation with the crow at home after being summoned by the emperor shows a turning point in the story as the crow suggests a plan to find the nightingale's mother. This is not a climactic moment of conflict resolution but rather a shift in strategy.",
+                "The birdcatcher asks the emperor for a boat full of wares as part of his plan with the crow, which is a deliberate initiative against the source of conflict (the mistress of the birds). This marks a turning point from passive to active action."
+            ],
+            "agents": [
+                {
+                    "id": "agent_7252f1cf8d6e41f7b83566f879070d72",
+                    "actions": [
+                        "began to examine the wares",
+                        "the crow perched on her shoulder"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_7ea4dba7830b4842ba27a4929d2b47ec",
+                    "actions": [
+                        "perched on her shoulder",
+                        "manipulates the birdcatcher to gather people and their target"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [
+                "object_b12d162a130441ff8d05cb5c26f67d66",
+                "object_78837d45865f427794bdeb3604c4ce32"
+            ],
+            "place": "place_3a8828fbe6f2454eae53e0c38f95a062"
+        },
+        {
+            "id": "event_ff4f9bc59bee46008c5e449b0429508a",
+            "type": "move",
+            "name": "The Birdcatcher Meets Emperor",
+            "description": "the anchor was raised, and in a short time the birdcatcher brought the boat to under the emperor’s quay. When the birdcatcher brought her before the emperor,",
+            "thoughts": [
+                "The event described is the birdcatcher asking the emperor for a boat full of wares, which leads to the eventual meeting with the mother of the nightingales. This action drives the story forward and sets up the next development in the plot.",
+                "The birdcatcher receives a new task from the emperor: finding the mother of the nightingales. This event is part of the main narrative action and drives the story forward through external help.",
+                "The birdcatcher receives a new task from the emperor: finding the mother of the nightingales. This event is part of the main narrative action and drives the story forward through external help.",
+                "The birdcatcher's request for a boat full of wares leads to the eventual meeting with the mother of the nightingales, driving the story forward and setting up the next development in the plot.",
+                "The birdcatcher receives a new task from the emperor: finding the mother of the nightingales. This event is part of the main narrative action and drives the story forward through external help."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "asked the emperor for a boat full of wares",
+                        "received a new task from the emperor"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "assigned a new task to the birdcatcher"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [
+                "object_88a34d1f7a124aa6b94d72ea8adae331",
+                "object_fa239a45a81f4095b8a210a9f119e633"
+            ],
+            "place": "place_5d010ce664374aa099683c707f55b417"
+        },
+        {
+            "id": "event_28480d9997e14049aab58ba9884d375e",
+            "type": "resolution",
+            "name": "The Birdcatcher Succeeds",
+            "description": "the emperor was astounded. He didn’t know which to admire most, the birdcatcher’s cleverness or her beauty.",
+            "thoughts": [
+                "The emperor summons the birdcatcher and gives him a task: to find the mother of the nightingales. This event resolves the conflict that was escalating throughout the story.",
+                "The birdcatcher has successfully completed his task and is bringing the mistress of the birds before the emperor, which implies a resolution or culmination of the events set in motion earlier.",
+                "The conflict escalates throughout the story, leading up to the emperor's request for the birdcatcher to find the mother of the nightingales. The birdcatcher successfully completes his task and brings the mistress of the birds before the emperor, implying a resolution or culmination of the events.",
+                "The story has been building up to the birdcatcher's task of finding the mother of the nightingales, and now that he has successfully completed it by bringing her before the emperor, the conflict is resolved.",
+                "The event marks the culmination of the story's central conflict, where the birdcatcher successfully completes his task and brings the mistress of the birds before the emperor."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "brought the mistress of the birds before the emperor"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "summons the birdcatcher and gives him a task: to find the mother of the nightingales",
+                        "admir[ed] the birdcatcher's cleverness or her beauty"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [],
+            "place": "place_2878975d2a89423bb94ffb6c2fca4069"
+        },
+        {
+            "id": "event_0306a42ea8504137ad7402344d277bbd",
+            "type": "move",
+            "name": "Birdcatcher Meets Sultana",
+            "description": "Her beauty overpowered the emperor’s mind; he rewarded the birdcatcher handsomely, and placed the sultana in his house. ‘You are the dearest to me of all,’ said the emperor several times to her;",
+            "thoughts": [
+                "The birdcatcher's actions lead directly to the emperor discovering the sultana. This sequence of events drives the story forward through the hero acting, reacting, or being acted upon within the core plot.",
+                "The event involves the hero acting within the core plot, driving the story forward and leading towards the climax.",
+                "The event involves the hero acting within the core plot, driving the story forward and leading towards the climax. The birdcatcher's actions are directly responsible for the emperor discovering the sultana, which is a critical moment in the narrative.",
+                "The event involves the hero acting within the core plot, driving the story forward and leading towards the climax.",
+                "The birdcatcher's actions lead directly to the emperor discovering the sultana. This sequence of events drives the story forward through the hero acting, reacting, or being acted upon within the core plot."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "rewarded the birdcatcher handsomely",
+                        "placed the sultana in his house"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_c1d6419c2c6741bea816b1beaa39acad",
+                    "actions": [
+                        "was discovered by the emperor thanks to the birdcatcher's actions"
+                    ],
+                    "importance": 0.6
+                }
+            ],
+            "objects": [
+                "object_b12d162a130441ff8d05cb5c26f67d66"
+            ],
+            "place": "place_d4fcbd5005e04f9a89bbfd99b21d2d15"
+        },
+        {
+            "id": "event_887e0d81045b425aaeea019c210fcd1c",
+            "type": "move",
+            "name": "The Emperor Makes Proposal.",
+            "description": "‘if I were to banish you, I should be sorry for it.’ The emperor wished by every means to induce the young lady to marry him,",
+            "thoughts": [
+                "The event involves the hero acting within the core plot, driving the story forward through conflict and external help. The birdcatcher is summoned by the emperor and tasked with finding the mother of the nightingales, which leads to a series of events that ultimately result in his success.",
+                "The birdcatcher's success in finding the sultana and the emperor's subsequent actions lead to a successful marriage proposal from the emperor. This is a turning point in the story where the main character's efforts are rewarded.",
+                "The birdcatcher's success in finding the sultana and the emperor's subsequent actions lead to a successful marriage proposal from the emperor. This is a turning point in the story where the main character's efforts are rewarded.",
+                "The birdcatcher's success in finding the sultana leads to a successful marriage proposal from the emperor, which is a turning point in the story where the main character's efforts are rewarded. The event involves the hero acting within the core plot, driving the story forward through conflict and external help.",
+                "The birdcatcher's efforts are rewarded with a successful marriage proposal from the emperor. This event marks a turning point in the story where the main character's actions drive the story forward through conflict and external help."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "finding the sultana"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "issuing a task to find the mother of the nightingales"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_c1d6419c2c6741bea816b1beaa39acad",
+                    "actions": [
+                        "being found by the birdcatcher"
+                    ],
+                    "importance": 0.7
+                }
+            ],
+            "objects": [],
+            "place": "place_2878975d2a89423bb94ffb6c2fca4069"
+        },
+        {
+            "id": "event_c7ead57ddb3f49a183376f7c1d733be4",
+            "type": "resolution",
+            "name": "Birdcatcher Receives Reward",
+            "description": "and to have a formal wedding. She for a long time declined, but at last said: ‘If it is your will, I consent, but only on condition that before our wedding you destroy that birdcatcher.’",
+            "thoughts": [
+                "The event described is a culmination of the birdcatcher's cleverness and the crow's assistance. The emperor has already fallen in love with the sultana, and the birdcatcher has successfully brought her to the palace. This event marks a turning point in the narrative where the hero's success is confirmed.",
+                "The event involves the birdcatcher's success being confirmed and his reward for finding the sultana. The emperor rewards him handsomely and places the sultana in his house, indicating a resolution to the open conflict.",
+                "The event described marks a turning point in the narrative where the hero's success is confirmed. The birdcatcher has successfully brought the sultana to the palace, and the emperor rewards him handsomely, placing her in his house.",
+                "The event described marks a turning point in the narrative where the hero's success is confirmed. The birdcatcher has successfully brought the sultana to the palace, and the emperor rewards him handsomely.",
+                "The birdcatcher's success is confirmed and he receives a reward for finding the sultana. The emperor rewards him handsomely and places the sultana in his house, indicating a resolution to the open conflict."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "requests that the birdcatcher destroys his birdcatcher before their wedding"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_c1d6419c2c6741bea816b1beaa39acad",
+                    "actions": [
+                        "consents to marry the emperor after the birdcatcher's request is fulfilled"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [
+                "object_fa239a45a81f4095b8a210a9f119e633"
+            ],
+            "place": "place_d4fcbd5005e04f9a89bbfd99b21d2d15"
+        },
+        {
+            "id": "event_170439d30cd641cd8f86dc65d300af10",
+            "type": "conflict",
+            "name": "Emperor faces destructive request.",
+            "description": "The emperor now found himself between two fires. It was agony to destroy his benefactor,",
+            "thoughts": [
+                "The emperor's current predicament is a result of his previous actions and relationships. He has placed himself between two fires: the birdcatcher, who can potentially be harmed due to his involvement with the sultana, and the sultana herself, who has requested the destruction of the birdcatcher as a condition for marrying the emperor.",
+                "The emperor is now being asked by the sultana to destroy the birdcatcher, his benefactor, as a condition of their marriage. This event creates tension and conflict between the emperor's love for the sultana and his gratitude towards the birdcatcher.",
+                "The event involves the emperor acting under pressure from his new partner, the sultana, who has just been found by the birdcatcher. The emperor is torn between his loyalty to his benefactor, the birdcatcher, and his desire for the sultana's love.",
+                "The emperor is now being asked by the sultana to destroy his benefactor, the birdcatcher, as a condition of their marriage. This event creates tension and conflict between the emperor's love for the sultana and his gratitude towards the birdcatcher.",
+                "The event introduces a problem: a threat or obstacle that disrupts the hero's world. The emperor is now being asked by the sultana to destroy the birdcatcher, his benefactor, as a condition of their marriage. This creates tension and conflict between the emperor's love for the sultana and his gratitude towards the birdcatcher.",
+                "The emperor is now facing a conflict between his love for the sultana and his gratitude towards the birdcatcher. The sultana has requested that the emperor destroy the birdcatcher as a condition of their marriage.",
+                "The emperor is now being asked by the sultana to destroy his benefactor, the birdcatcher, as a condition of their marriage. This creates tension and conflict between the emperor's love for the sultana and his gratitude towards the birdcatcher.",
+                "The emperor is now being asked by the sultana to destroy his benefactor, the birdcatcher, as a condition of their marriage. This creates tension and conflict between the emperor's love for the sultana and his gratitude towards the birdcatcher.",
+                "The emperor is now being asked by the sultana to destroy his benefactor, the birdcatcher, as a condition of their marriage. This creates tension and conflict between the emperor's love for the sultana and his gratitude towards the birdcatcher."
+            ],
+            "agents": [
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "being asked to destroy the birdcatcher",
+                        "facing a conflict between love and gratitude"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_c1d6419c2c6741bea816b1beaa39acad",
+                    "actions": [
+                        "requesting the destruction of the birdcatcher as a condition for marriage"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [
+                "object_b12d162a130441ff8d05cb5c26f67d66"
+            ],
+            "place": "place_2878975d2a89423bb94ffb6c2fca4069"
+        },
+        {
+            "id": "event_222879a1d590429ea601bc9e3549a658",
+            "type": "conflict",
+            "name": "Love vs Imperial Duty",
+            "description": "it was worse agony not to be able to withstand his heart, and to give up the love of the young lady.",
+            "thoughts": [
+                "The birdcatcher's concern about destroying him due to the sultana's condition is a conflict that needs to be resolved. This event marks a turning point where the emperor has to choose between his benefactor and the woman he loves.",
+                "The birdcatcher's love for the young lady creates an internal conflict that drives the plot forward. This event involves the hero reacting and making decisions within the core plot.",
+                "The birdcatcher's situation has escalated to a point where he must choose between his life and his benefactor. The emperor's request for the sultana's hand in marriage is contingent on destroying the birdcatcher, who is being seen as an obstacle. This creates a conflict that drives the story forward.",
+                "The birdcatcher's concern about destroying him due to the sultana's condition is a conflict that needs to be resolved. This event marks a turning point where the emperor has to choose between his benefactor and the woman he loves.",
+                "The birdcatcher's situation has escalated to a point where he must choose between his life and his benefactor. The emperor's request for the sultana's hand in marriage is contingent on destroying the birdcatcher, who is being seen as an obstacle.",
+                "The birdcatcher's situation has escalated to a point where he must choose between his life and his benefactor. The emperor's request for the sultana's hand in marriage is contingent on destroying the birdcatcher, who is being seen as an obstacle. This creates a conflict that drives the story forward.",
+                "The birdcatcher's situation has escalated to a point where he must choose between his life and his benefactor. The emperor's request for the sultana's hand in marriage is contingent on destroying the birdcatcher, who is being seen as an obstacle.",
+                "The birdcatcher's concern about destroying him due to the sultana's condition creates a conflict that drives the story forward. The emperor has to choose between his benefactor and the woman he loves, marking a turning point in the plot.",
+                "The birdcatcher's concern about destroying him due to the sultana's condition is a conflict that needs to be resolved. This event marks a turning point where the emperor has to choose between his benefactor and the woman he loves."
+            ],
+            "agents": [
+                {
+                    "id": "agent_7252f1cf8d6e41f7b83566f879070d72",
+                    "actions": [
+                        "feeling love for the young lady",
+                        "experiencing internal conflict"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "requesting the sultana's hand in marriage"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [],
+            "place": "place_2878975d2a89423bb94ffb6c2fca4069"
+        },
+        {
+            "id": "event_942d9c37d3254866b22036d9fd381dc2",
+            "type": "resolution",
+            "name": "Emperor Chooses Sultana Over Duty.",
+            "description": "He summoned the birdcatcher, commended him for having so often fulfilled his will,",
+            "thoughts": [
+                "The birdcatcher has successfully found the sultana and brought her before the emperor. The emperor is now faced with a difficult decision: destroying his benefactor or giving up his love for the young lady.",
+                "The event involves the birdcatcher acting on a request from the emperor to find the mother of the nightingales, which is resolved when he successfully brings the sultana before the emperor. The main conflict is also resolved as the emperor's love for the sultana takes precedence over his duty to destroy the birdcatcher.",
+                "The main conflict has been resolved as the emperor's love for the sultana takes precedence over his duty to destroy the birdcatcher. This event marks a new stable state, where the hero and villain are acknowledged, and a new relationship is established.",
+                "The event involves the birdcatcher bringing the sultana before the emperor, and the main conflict is resolved as the emperor's love for the sultana takes precedence over his duty to destroy the birdcatcher."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "summoned",
+                        "commended"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_c1d6419c2c6741bea816b1beaa39acad",
+                    "actions": [
+                        "brought before the emperor"
+                    ],
+                    "importance": 0.6
+                }
+            ],
+            "objects": [],
+            "place": "place_d4fcbd5005e04f9a89bbfd99b21d2d15"
+        },
+        {
+            "id": "event_511bf64a65684154af47618766d406ce",
+            "type": "move",
+            "name": "New Conflict Emerges",
+            "description": "and told him that he deserved to sit in the grand vizier’s seat. ‘But there is nothing else for it, but you must go home, take leave of your wife, children,",
+            "thoughts": [
+                "The event described is a turning point in the story where the birdcatcher's success and the emperor's desire for the sultana create tension, but it doesn't directly resolve any conflicts. Instead, it sets up a new challenge for the hero.",
+                "The event doesn't resolve an open conflict or confirm the hero's success. It also doesn't involve the hero acting, reacting, or being acted upon within the core plot. However, it is a crucial part of the story progression and drives the narrative forward.",
+                "The event described sets up a new challenge for the hero and drives the narrative forward by creating tension between the emperor's desire for the sultana and his obligation to destroy the birdcatcher. It doesn't directly resolve any conflicts or confirm the hero's success, but rather escalates the situation.",
+                "The event described is a turning point in the story where the birdcatcher's success and the emperor's desire for the sultana create tension. The birdcatcher has successfully brought the sultana to the emperor, but now there's a new challenge: the sultana wants the birdcatcher dead before she can marry the emperor."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "told the grand vizier that he deserved to sit in his seat",
+                        "must go home, take leave of his wife and children"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_c1d6419c2c6741bea816b1beaa39acad",
+                    "actions": [
+                        "desired to marry the emperor",
+                        "wanted the birdcatcher dead before she could marry the emperor"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [],
+            "place": "place_d4fcbd5005e04f9a89bbfd99b21d2d15"
+        },
+        {
+            "id": "event_95caee5f4ded4e9aadf140dd64c41d19",
+            "type": "move",
+            "name": "Sultana proposes marriage condition.",
+            "description": "and friends, of whom I will undertake the care; in the afternoon come; you must of necessity jump into the fire.’",
+            "thoughts": [
+                "The event does not close or resolve an open conflict. Instead, it sets up a new situation for the birdcatcher and the emperor.",
+                "The birdcatcher and the sultana's wedding plans are set in motion, but with a condition that creates conflict for the emperor. The main conflict is not resolved yet, so this event is part of the narrative progression towards its climax.",
+                "The event sets up a new situation for the birdcatcher and the emperor by introducing a condition that creates conflict. The sultana's wedding plans are set in motion, but with a requirement to destroy the birdcatcher.",
+                "The birdcatcher and the sultana's wedding plans are set in motion, but with a condition that creates conflict for the emperor. This event sets up a new situation, introducing tension and setting the stage for future events.",
+                "The birdcatcher and the sultana's wedding plans are set in motion, but with a condition that creates conflict for the emperor. This is not a resolution or a turning point, but rather a progression of the narrative towards its climax."
+            ],
+            "agents": [
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "impose condition on birdcatcher",
+                        "create conflict"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_c1d6419c2c6741bea816b1beaa39acad",
+                    "actions": [
+                        "get married plans set in motion"
+                    ],
+                    "importance": 0.6
+                }
+            ],
+            "objects": [],
+            "place": "place_3a8828fbe6f2454eae53e0c38f95a062"
+        },
+        {
+            "id": "event_0793b48c09cd48b0bd714fbff1b38c79",
+            "type": "move",
+            "name": "Birdcatcher Receives Emperor's Task",
+            "description": "The birdcatcher went home, and the crow came to meet him. He told her all that was to be done with him in the afternoon,",
+            "thoughts": [
+                "The birdcatcher goes home after receiving a task from the emperor: finding the mother of the nightingales. The crow's suggestion and subsequent events are set in motion.",
+                "The birdcatcher is summoned by the emperor and asked to find the mother of the nightingales. He successfully accomplishes this task with the help of the crow, and as a reward, the sultana is placed in his house. However, the event that marks the resolution of the narrative is not yet reached. The current event sets up the conflict between the emperor's love for the sultana and his obligation to destroy the birdcatcher.",
+                "The birdcatcher is given a task by the emperor, which leads him to a solution. This event involves external help and drives the story forward through conflict.",
+                "The birdcatcher is given a task by the emperor, which leads him to a solution with the help of the crow. This event drives the story forward through conflict and involves external help.",
+                "The birdcatcher receives a task from the emperor and sets it in motion with the help of the crow, driving the story forward through conflict."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "went home",
+                        "told her all that was to be done"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_7ea4dba7830b4842ba27a4929d2b47ec",
+                    "actions": [
+                        "came to meet the birdcatcher"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [],
+            "place": "place_d4fcbd5005e04f9a89bbfd99b21d2d15"
+        },
+        {
+            "id": "event_9a71a3414c414317b057669fe3950e7e",
+            "type": "move",
+            "name": "Emperor Issues Ultimatum",
+            "description": "and said to her: If you do not help me as usual now, I am done for, not through my fault, nor through the emperor’s, but owing to you.’",
+            "thoughts": [
+                "The emperor summons the birdcatcher and gives him an ultimatum: either destroy the birdcatcher or give up his love for the sultana. This event is a turning point in the narrative as it sets in motion the events leading to the climax.",
+                "The event involves the hero (birdcatcher) acting and reacting within the core plot, specifically being summoned by the emperor to find the mother of the nightingales. The birdcatcher's success is confirmed as he finds the sultana and brings her before the emperor.",
+                "The emperor summons the birdcatcher and gives him an ultimatum: either destroy the birdcatcher or give up his love for the sultana. This event is a turning point in the narrative as it sets in motion the events leading to the climax.",
+                "The emperor summons the birdcatcher and gives him an ultimatum: either destroy the crow or give up his love for the sultana. This event is a turning point in the narrative as it sets in motion the events leading to the climax.",
+                "The emperor summons the birdcatcher and gives him an ultimatum: either destroy the birdcatcher or give up his love for the sultana. This event is a turning point in the narrative as it sets in motion the events leading to the climax."
+            ],
+            "agents": [
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "summons",
+                        "gives ultimatum"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "receives ultimatum"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [],
+            "place": "place_3a8828fbe6f2454eae53e0c38f95a062"
+        },
+        {
+            "id": "event_062ebe0a2db94657bcc08f5c860fa5c9",
+            "type": "move",
+            "name": "The crow informs him harshly.",
+            "description": "The crow informed him what to do, but before he went, he was to give his wife a thoroughly good beating. His wife departed this life from so many blows.",
+            "thoughts": [
+                "The event involves the hero acting within the core plot. The birdcatcher is summoned by the emperor and given a task that drives the story forward.",
+                "The birdcatcher has been told by the emperor that he must go home and take leave of his family before being burned at the stake. This event is a turning point in the story where the conflict escalates, but it's not yet resolved.",
+                "The birdcatcher has been told by the emperor that he must go home and take leave of his family before being burned at the stake. This event is a turning point in the story where the conflict escalates, but it's not yet resolved.",
+                "The birdcatcher has been told by the emperor that he must go home and take leave of his family before being burned at the stake. This event is a turning point in the story where the conflict escalates, but it's not yet resolved."
+            ],
+            "agents": [
+                {
+                    "id": "agent_7252f1cf8d6e41f7b83566f879070d72",
+                    "actions": [
+                        "was given a thoroughly good beating",
+                        "departed this life"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "gave his wife a thoroughly good beating"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [
+                "object_fa239a45a81f4095b8a210a9f119e633"
+            ],
+            "place": "place_5d010ce664374aa099683c707f55b417"
+        },
+        {
+            "id": "event_67d27acd97ff4c20b957ed6ad93031a6",
+            "type": "move",
+            "name": "Fate Sealed by Emperor Decision",
+            "description": "A fire was flaming before the great mosque, the Turks came out of the mosque, the emperor came,",
+            "thoughts": [
+                "The event describes the birdcatcher being summoned by the emperor and subsequently instructed to take his own life by jumping into a fire. This marks a critical turning point in the story where the protagonist's fate is sealed.",
+                "The emperor's decision to have the birdcatcher 'jump into the fire' has been made, but its execution has not yet occurred. This situation creates tension and conflict that will be resolved by a specific event in the narrative.",
+                "The event described is not part of the main conflict resolution or a major plot twist. The birdcatcher's fate is decided by the emperor, but it doesn't resolve the overall story arc.",
+                "The birdcatcher's fate is sealed by the emperor's decision, creating tension and conflict that will be resolved by a specific event in the narrative. The emperor has decided on the birdcatcher's execution, but it doesn't resolve the overall story arc.",
+                "The birdcatcher's fate has been decided by the emperor. The event marks a turning point where the protagonist's life is sealed, creating tension and conflict that will be resolved by a specific event in the narrative.",
+                "The event described marks a critical turning point where the protagonist's fate is sealed by the emperor. The decision has been made, and the execution of it will determine the story's progression."
+            ],
+            "agents": [
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "has decided on the birdcatcher's execution"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "is instructed to take his own life by jumping into a fire"
+                    ],
+                    "importance": 0.6
+                }
+            ],
+            "objects": [],
+            "place": "place_5d010ce664374aa099683c707f55b417"
+        },
+        {
+            "id": "event_5ed8ffa945c94bfe9b678d609e05ae8c",
+            "type": "move",
+            "name": "Birdcatcher Accused by Emperor",
+            "description": "the people swarmed round the fire The birdcatcher came cheerfully before the emperor.Everyone deemed him a malefactor.",
+            "thoughts": [
+                "The event is a part of the main narrative action, driving the story forward through conflict and external help. The birdcatcher's fate is sealed, but it also sets up the emperor's internal conflict and the crow's influence.",
+                "The event described is the climax and turning point of the story, where the birdcatcher's fate is sealed. The emperor has to decide between his benefactor and his love for the sultana. However, this decision is not yet resolved, so it doesn't quite fit as a 'resolution' event. Instead, it represents a critical moment in the narrative that will lead to the final confrontation.",
+                "The birdcatcher's fate is sealed, and it serves as a turning point in the story, driving the conflict forward. The emperor must decide between his benefactor and his love for the sultana, which will lead to the final confrontation.",
+                "The event described is the climax and turning point of the story where the birdcatcher's fate is sealed. The emperor has to decide between his benefactor and his love for the sultana.",
+                "The event described is the climax and turning point of the story, where the birdcatcher's fate is sealed. The emperor has to decide between his benefactor and his love for the sultana."
+            ],
+            "agents": [
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "deemed him a malefactor",
+                        "has to decide between his benefactor and his love for the sultana"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "came cheerfully before the emperor"
+                    ],
+                    "importance": 0.7
+                }
+            ],
+            "objects": [],
+            "place": "place_2878975d2a89423bb94ffb6c2fca4069"
+        },
+        {
+            "id": "event_9d89e01abedc4086acd8300a05042f4d",
+            "type": "move",
+            "name": "The Birdcacher is Ordered Burned.",
+            "description": "‘Fortunate Padishah, it is your pleasure to burn me to death. I am happy to be able to be a sacrifice for you.’",
+            "thoughts": [
+                "The event marks a turning point where the birdcatcher must make a choice and face the consequences. The emperor's demand for the birdcatcher to jump into the fire creates tension and sets up the final confrontation.",
+                "The text describes an event where the birdcatcher is about to be sacrificed by the emperor as part of a plot to marry the sultana. The event appears to be a turning point in the narrative, but it doesn't resolve any conflicts or bring closure to the story.",
+                "The event marks a turning point where the birdcatcher's fate is sealed and he must comply with the emperor's request. The crowd's presence and the emperor's decision to have him burned alive indicate that this is a critical moment in the narrative.",
+                "The birdcatcher has been summoned by the emperor and ordered to jump into the fire as part of a plot to marry the sultana. This event marks a turning point where the birdcatcher must make a choice and face the consequences.",
+                "The event marks a turning point where the birdcatcher's fate is sealed and he must comply with the emperor's request. The crowd's presence and the emperor's decision to have him burned alive indicate that this is a critical moment in the narrative.",
+                "The birdcatcher is about to be sacrificed by the emperor as part of a plot to marry the sultana. This event marks a turning point where his fate is sealed and he must comply with the emperor's request."
+            ],
+            "agents": [
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "orders the birdcatcher to jump into the fire",
+                        "demands the birdcatcher's sacrifice"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_c1d6419c2c6741bea816b1beaa39acad",
+                    "actions": [
+                        "is the object of the emperor's affection",
+                        "is part of the plot to marry her to the emperor"
+                    ],
+                    "importance": 0.4
+                }
+            ],
+            "objects": [
+                "object_88a34d1f7a124aa6b94d72ea8adae331"
+            ],
+            "place": "place_d4fcbd5005e04f9a89bbfd99b21d2d15"
+        },
+        {
+            "id": "event_a9682ec1ead3472a85e225f63a284e7c",
+            "type": "move",
+            "name": "The Birdcatcher Faces Death.",
+            "description": "It has occurred to my mind, I am anxious to have a ride on a good horse: permit me so to do before I jump into the fire.’ The emperor smiled,",
+            "thoughts": [
+                "The event involves the hero acting and reacting within the core plot, but it also leads to a turning point in the story where the emperor faces a difficult decision. However, considering the specific context of this moment, which includes the birdcatcher's cheerful acceptance of his fate, I would categorize this event as part of the main narrative action.",
+                "The birdcatcher is about to face death by fire at the emperor's request. This event seems to be a pivotal moment in the story where the conflict escalates and the protagonist is set for his final act.",
+                "The birdcatcher is about to 'jump into the fire' as a result of the emperor's order, which indicates an attempt to resolve the conflict between the birdcatcher and the sultana. However, the tone suggests that this event may not be the final resolution.",
+                "The birdcatcher's cheerful acceptance of his fate and the emperor's difficult decision lead me to categorize this event as part of the main narrative action. However, considering the specific context, it seems that this moment is a pivotal one where the conflict escalates and the protagonist faces his final act.",
+                "The birdcatcher is about to face death by fire at the emperor's request, and this event seems to be a pivotal moment in the story where the conflict escalates and the protagonist is set for his final act. The tone suggests that this may not be the final resolution.",
+                "The birdcatcher has been summoned by the emperor and sentenced to death by fire. However, considering the previous events where the crow helped the birdcatcher, it seems that there is still a possibility of resolving the conflict or finding an alternative solution."
+            ],
+            "agents": [
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "ordered death by fire"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "about to jump into the fire",
+                        "cheerful acceptance of his fate"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [],
+            "place": "place_5d010ce664374aa099683c707f55b417"
+        },
+        {
+            "id": "event_136c87c2890f4043b0e5ef615305d11c",
+            "type": "move",
+            "name": "Birdcatcher Requests Horse Ride",
+            "description": "and ordered his best horse to be brought for him. He mounted, and made the horse gallop well; when the horse sweated,",
+            "thoughts": [
+                "The birdcatcher has been summoned by the emperor and told to prepare for his own execution. However, he asks for a short reprieve to ride on a good horse before jumping into the fire. This event is not part of the main narrative action or the resolution, but rather an attempt by the birdcatcher to alleviate his impending doom.",
+                "The event describes a scene where the birdcatcher requests a horse ride from the emperor before he jumps into the fire. This event is part of the main narrative action and serves as a lead-up to the climax.",
+                "The birdcatcher asks for a horse ride before his execution. This is not part of the main conflict resolution or an external help event but rather a moment of character action as he faces his impending doom.",
+                "The birdcatcher has been summoned by the emperor and told to prepare for his own execution. He asks for a short reprieve to ride on a good horse before jumping into the fire.",
+                "The birdcatcher has been summoned by the emperor and told to prepare for his own execution. However, he asks for a short reprieve to ride on a good horse before jumping into the fire.",
+                "The birdcatcher has been summoned by the emperor and told to prepare for his own execution. He asks for a short reprieve to ride on a good horse before jumping into the fire, which is an attempt by him to alleviate his impending doom."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "asked for a horse ride",
+                        "mounted the horse",
+                        "made the horse gallop"
+                    ],
+                    "importance": 0.7
+                },
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "ordered his best horse to be brought"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [
+                "object_78837d45865f427794bdeb3604c4ce32"
+            ],
+            "place": "place_004c97bf971e414ea919202eaa598299"
+        },
+        {
+            "id": "event_964da60ff83340749eec66879b4714f9",
+            "type": "move",
+            "name": "Birdcatcher Darts into Fire.",
+            "description": "he dismounted, anointed himself with the horse’s foam, remounted, darted up to the fire, then dismounted, and darted into the fire.",
+            "thoughts": [
+                "The birdcatcher's request for a ride on a good horse and his subsequent actions of anointing himself with the horse's foam, remounting, darting up to the fire, dismounting, and darting into the fire suggest that this event is part of the main narrative action, driving the story forward through conflict. This specific sequence of events indicates that the birdcatcher is acting within the core plot, and his actions are pivotal to resolving the conflict.",
+                "The given event occurs after the birdcatcher's request for a boat full of wares has been granted by the emperor. The scene involves the birdcatcher dismounting and remounting his horse before entering the fire, which is being prepared by the Turks outside the great mosque.",
+                "The event is part of a larger plot where the birdcatcher's life is about to be sacrificed by the emperor. However, it does not resolve any open conflict or close the main storyline. The protagonist is still in a precarious situation, and the outcome is uncertain.",
+                "The birdcatcher's request for a good horse and his subsequent actions of anointing himself with the horse's foam, remounting, darting up to the fire, dismounting, and darting into the fire suggest that this event is part of the main narrative action, driving the story forward through conflict. This specific sequence of events indicates that the birdcatcher is acting within the core plot, and his actions are pivotal to resolving the conflict.",
+                "The birdcatcher's actions are pivotal to resolving the conflict as he prepares for his sacrifice. He engages with the main antagonist (the emperor) and takes deliberate action (requesting a horse ride), which is part of the core plot.",
+                "The birdcatcher's actions are pivotal to resolving the conflict, and his request for a ride on a good horse is a specific sequence of events that indicates he is acting within the core plot."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "anointed himself with the horse's foam",
+                        "remounted",
+                        "darted up to the fire",
+                        "dismounted",
+                        "darted into the fire"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [],
+            "place": "place_3a8828fbe6f2454eae53e0c38f95a062"
+        },
+        {
+            "id": "event_29e0dcf359a044d68cdaf100df9f0c29",
+            "type": "move",
+            "name": "Crosses Flames Six Times",
+            "description": "The people looked on; five times, six times did he cross the flames, sprang out of the fire,",
+            "thoughts": [
+                "The birdcatcher's actions are part of the main narrative action as he tries to find a way out of his predicament. However, in this specific event, it seems that the conflict is being escalated and not resolved. The birdcatcher is about to jump into the fire, which indicates that this event is more aligned with escalation rather than resolution.",
+                "The birdcatcher's actions are part of the main narrative action as they drive the story forward through conflict and external help. The event involves the hero reacting within the core plot.",
+                "The event described is part of the main narrative action, as it involves the hero acting and reacting within the core plot. The birdcatcher is fulfilling a task given by the emperor, which drives the story forward.",
+                "The birdcatcher is about to jump into the fire as a sacrifice for the emperor. This event escalates the conflict and tension in the story, rather than resolving it.",
+                "The birdcatcher's actions are part of the main narrative action as they drive the story forward through conflict and external help. The event involves the hero reacting within the core plot.",
+                "The birdcatcher's actions are part of the main narrative action as they drive the story forward through conflict and external help. The event involves the hero reacting within the core plot."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "crossed the flames",
+                        "sprang out of the fire"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "tasked him with various missions",
+                        "impressed by the bird catcher's abilities"
+                    ],
+                    "importance": 0.4
+                }
+            ],
+            "objects": [],
+            "place": "place_5d010ce664374aa099683c707f55b417"
+        },
+        {
+            "id": "event_ae220b9392d24d5da16f4200ed87724c",
+            "type": "move",
+            "name": "Birdcatcher Stands Before Emperor",
+            "description": "and stood before the emperor as a youth of twenty years of age, sound, young, goodly, and handsome. The people cried: ‘Mercy, emperor! He has fulfilled his penalty.’",
+            "thoughts": [
+                "The birdcatcher's situation has reached a point where he must be 'burned at the stake' as punishment for the sultana's sake. This event is not resolving an open conflict or closing the story, but rather setting up the next major plot point. The main narrative action continues with the birdcatcher's actions and reactions.",
+                "The event involves the hero acting within the core plot. The birdcatcher is summoned by the emperor and is about to meet his supposed fate, but the details of the story show that this event will likely drive the narrative forward through conflict.",
+                "The birdcatcher has been sentenced by the emperor and is about to be executed by being thrown into a fire. However, he is given permission to ride a good horse before his execution, and he uses this opportunity to escape from the flames. This event represents the climax of the story, where the hero (the birdcatcher) faces a life-threatening situation and manages to find a creative way out.",
+                "The birdcatcher's situation has reached a point where he must be 'burned at the stake' as punishment for the sultana's sake. This event is not resolving an open conflict or closing the story, but rather setting up the next major plot point.",
+                "The birdcatcher's situation has reached a point where he must be 'burned at the stake' as punishment for the sultana's sake. This event is not resolving an open conflict or closing the story, but rather setting up the next major plot point.",
+                "The birdcatcher's situation has reached a point where he must be 'burned at the stake' as punishment for the sultana's sake. This event is not resolving an open conflict or closing the story, but rather setting up the next major plot point. The main narrative action continues with the birdcatcher's actions and reactions."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "appears before the emperor",
+                        "facing execution"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "summons the birdcatcher to his presence"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [],
+            "place": "place_2878975d2a89423bb94ffb6c2fca4069"
+        },
+        {
+            "id": "event_cf586114eac44a09bb185f05fdb57510",
+            "type": "transfiguration",
+            "name": "Transformation into Youthful Man.",
+            "description": "And the emperor graciously pardoned him. The emperor now longed to become young and handsome also.",
+            "thoughts": [
+                "The event marks a significant turning point and closure to an open conflict between the birdcatcher's life and the emperor's obsession with the sultana. The birdcatcher's transformation into a young and handsome man is both a physical change and a resolution of his situation, as he has fulfilled his penalty.",
+                "The event marks a significant turning point in the story where the birdcatcher's fate is sealed. The emperor's decision to destroy him is put into action, but instead of being burned, the birdcatcher undergoes a transformation, achieving his desire for youth and beauty. This development concludes the main conflict and resolves the tension built up throughout the narrative.",
+                "The event marks a turning point where the birdcatcher's life is at stake, but instead of resolving to his death, it resolves to a dramatic transformation. The emperor's actions and the outcome of the event lead to a new state for the protagonist.",
+                "The birdcatcher's transformation into a young and handsome man marks a significant turning point and closure to an open conflict between his life and the emperor's obsession with the sultana. This event resolves the tension built up throughout the narrative.",
+                "The birdcatcher's transformation into a young and handsome man marks a significant turning point and closure to an open conflict between the birdcatcher's life and the emperor's obsession with the sultana. This event resolves the tension built up throughout the narrative, fulfilling the birdcatcher's penalty.",
+                "The birdcatcher undergoes a transformation that marks the end of his arc, fulfilling his penalty and resolving his situation.",
+                "The birdcatcher undergoes a physical transformation into a young and handsome man, which marks the end of his arc and fulfills his penalty.",
+                "The birdcatcher undergoes a physical transformation into a young and handsome man as a result of his journey, which marks the end of his arc and fulfills his penalty."
+            ],
+            "agents": [
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "graciously pardoned",
+                        "longed to become young and handsome also"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "undergoes a transformation into a young and handsome man"
+                    ],
+                    "importance": 1.0
+                }
+            ],
+            "objects": [],
+            "place": "place_2878975d2a89423bb94ffb6c2fca4069"
+        },
+        {
+            "id": "event_f39e1db27ecb46bd9499e498ca5f3f4b",
+            "type": "resolution",
+            "name": "Pardoning of the Birdcatcher",
+            "description": "He made the birdcatcher grand vizier, merely that he might tell him the secret. He said to him: ‘My lord,",
+            "thoughts": [
+                "The birdcatcher has just been pardoned by the emperor after being thrown into a fire and emerging unscathed. This event marks a turning point in his fortunes, resolving the conflict that had arisen when the sultana demanded his death before she would marry the emperor.",
+                "The most specific classification for this event is 'resolution' because it closes or resolves an open conflict: the birdcatcher's success in fulfilling his task and being transformed into a young man fulfills the emperor's will, and he is subsequently pardoned.",
+                "The event closes or resolves an open conflict. The birdcatcher's success is confirmed, and he is granted a reward by the emperor.",
+                "The birdcatcher has been pardoned by the emperor after being thrown into a fire and emerging unscathed. This event marks a turning point in his fortunes, resolving the conflict that had arisen when the sultana demanded his death before she would marry the emperor.",
+                "The birdcatcher has just been pardoned by the emperor after being thrown into a fire and emerging unscathed. This event marks a turning point in his fortunes, resolving the conflict that had arisen when the sultana demanded his death before she would marry the emperor.",
+                "The birdcatcher has just been pardoned by the emperor after being thrown into a fire and emerging unscathed. This event marks a turning point in his fortunes, resolving the conflict that had arisen when the sultana demanded his death before she would marry the emperor."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "being pardoned by the emperor",
+                        "having his fortunes turned around"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "pardoning the birdcatcher",
+                        "granting a reward to the birdcatcher"
+                    ],
+                    "importance": 1.0
+                }
+            ],
+            "objects": [],
+            "place": "place_004c97bf971e414ea919202eaa598299"
+        },
+        {
+            "id": "event_8ece83fb75e8434ba724364a8215cee8",
+            "type": "move",
+            "name": "Rides Horse to Restore Youth",
+            "description": "it is easy. Take a good horse, gallop about an hour as I did, dismount when the horse sweats, anoint yourself with his perspiration,",
+            "thoughts": [
+                "The birdcatcher's actions are part of the main narrative action, driving the story forward through conflict and external help. The event involves the hero acting within the core plot.",
+                "The event is part of a climactic moment where the birdcatcher's fate is sealed and he must find a way to escape his penalty. The description focuses on his actions before jumping into the fire, which drives the narrative forward.",
+                "The event described is a final attempt by the birdcatcher to demonstrate his loyalty and cleverness before being sacrificed. He asks for a horse ride, uses its sweat as a magical ointment to restore his youth, and then jumps into the fire, emerging unscathed. This action leads directly to his pardon and subsequent elevation to grand vizier.",
+                "The birdcatcher's actions are part of the main narrative action, driving the story forward through conflict and external help. The event involves the hero acting within the core plot, particularly in a climactic moment where his fate is sealed and he must find a way to escape his penalty.",
+                "The birdcatcher's actions are part of the main narrative action, driving the story forward through conflict and external help. The event involves the hero acting within the core plot, specifically at a climactic moment where his fate is sealed and he must find a way to escape his penalty.",
+                "The birdcatcher's actions are part of a climactic moment where his fate is sealed and he must find a way to escape his penalty. He asks for a horse ride, uses its sweat as a magical ointment to restore his youth, and then jumps into the fire, emerging unscathed. This action leads directly to his pardon and subsequent elevation to grand vizier."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "asked for a horse ride",
+                        "used the horse's sweat as a magical ointment to restore his youth",
+                        "jumped into the fire, emerging unscathed"
+                    ],
+                    "importance": 1.0
+                },
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "provided the horse for the birdcatcher's ride"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [],
+            "place": "place_5d010ce664374aa099683c707f55b417"
+        },
+        {
+            "id": "event_4d5c92c5fb2a424f9bca9e0ca9acd7c0",
+            "type": "resolution",
+            "name": "Emperor Grants Pardon.",
+            "description": "jump into the fire, and you will come out such as I am.’ Friday dawned; the emperor’s best horse was saddled for him;",
+            "thoughts": [
+                "The birdcatcher's transformation through fire and subsequent actions are a turning point in the story, leading towards resolution of his situation.",
+                "The birdcatcher's transformation and the emperor's pardon are key elements of a turning point in the story. The event marks a shift from tension and conflict to resolution and a new state. Therefore, it is most specific and concrete to classify this event as: 1. resolution.",
+                "The birdcatcher's transformation and subsequent actions lead towards a turning point in the story where his situation is resolved. The emperor's pardon marks the shift from tension and conflict to resolution and a new state.",
+                "The birdcatcher's transformation through fire and subsequent actions lead towards resolution of his situation. The emperor's pardon marks a shift from tension and conflict to resolution and a new state."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "jump into the fire"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "saddle his best horse",
+                        "pardon the birdcatcher"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [],
+            "place": "place_2878975d2a89423bb94ffb6c2fca4069"
+        },
+        {
+            "id": "event_1b5beb600ca04a608286e5f6d8185487",
+            "type": "move",
+            "name": "Birdcatcher Emerge Unharmed",
+            "description": "everybody thought that he was going to the mosque. A fire was burning furiously in front of the mosque.",
+            "thoughts": [
+                "The birdcatcher is being burned at the stake as punishment, but he emerges from the flames unharmed and youthful. This marks a turning point in his life, and it's not necessarily resolving an open conflict but rather setting up a new development.",
+                "The birdcatcher's 'punishment' of being thrown into the fire has a surprising and magical outcome. He emerges rejuvenated and youthful, which is not a typical 'resolution' event. However, this outcome is closely tied to the emperor's desire for youth and beauty. The emperor's actions in the previous event are also resolved here as he pardons the birdcatcher and becomes obsessed with becoming young and handsome.",
+                "The birdcatcher emerges from the flames unharmed and youthful, which marks a turning point in his life. The emperor's actions in the previous event are also resolved here as he pardons the birdcatcher and becomes obsessed with becoming young and handsome.",
+                "The birdcatcher's punishment of being burned at the stake has a surprising and magical outcome. He emerges rejuvenated and youthful, which is not a typical 'resolution' event but rather sets up a new development.",
+                "The birdcatcher's punishment of being burned at the stake has a surprising and magical outcome. He emerges rejuvenated and youthful, which is not a typical 'resolution' event, but rather sets up a new development."
+            ],
+            "agents": [
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "punished the birdcatcher with being burned at the stake"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "was thrown into the fire",
+                        "emerged from the flames unharmed and youthful"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [
+                "object_fa239a45a81f4095b8a210a9f119e633"
+            ],
+            "place": "place_5d010ce664374aa099683c707f55b417"
+        },
+        {
+            "id": "event_59b9bc0cf6f44ecab9647c0bccfdbddc",
+            "type": "move",
+            "name": "Birdcatcher Jumps Into Fire",
+            "description": "The people said: ‘There’s somebody going to jump in again,’ and they were under no delusion. The emperor darted up to the fire all alone,",
+            "thoughts": [
+                "The birdcatcher's fate has been sealed by the emperor, and he must jump into the fire as a penalty. However, instead of meeting his demise, the birdcatcher is transformed back to his youth through his actions in the fire. This event marks a turning point where the birdcatcher's situation escalates from one of potential death to one of miraculous transformation.",
+                "The birdcatcher's action of jumping into the fire is part of the main narrative action as it drives the story forward through conflict and external help. The event involves the hero acting within the core plot.",
+                "The birdcatcher's action of jumping into the fire is a pivotal moment that drives the story forward through conflict and external help. This event marks a turning point where the birdcatcher's situation escalates from one of potential death to one of miraculous transformation.",
+                "The birdcatcher jumps into the fire as a penalty, but instead of meeting his demise, he is transformed back to his youth through his actions in the fire. This event marks a turning point where the birdcatcher's situation escalates from one of potential death to one of miraculous transformation.",
+                "The birdcatcher's action of jumping into the fire marks a turning point where his situation escalates from one of potential death to miraculous transformation. This event involves the hero acting within the core plot, driving the story forward through conflict and external help."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "jumps into the fire"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "imposed penalty, darted up to the fire"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [
+                "object_b12d162a130441ff8d05cb5c26f67d66"
+            ],
+            "place": "place_3a8828fbe6f2454eae53e0c38f95a062"
+        },
+        {
+            "id": "event_c3655730a326438ea13566fd7aba4e7b",
+            "type": "move",
+            "name": "Emperor Jumps into Fire",
+            "description": "the people looked on to see what was going to happen. The emperor dismounted with great speed, and sprang into the fire.",
+            "thoughts": [
+                "The event in question involves the emperor dismounting with great speed and jumping into the fire. This is a pivotal moment in the narrative as it leads to the emperor's transformation into a young and handsome man.",
+                "The event is part of the main narrative action: it drives the story forward through conflict and external help. The emperor is acting within the core plot to become young and handsome.",
+                "The birdcatcher's decision to jump into the fire is not a resolution of an open conflict, but rather the culmination of a series of events. The emperor has commanded him to do so as a punishment, and he accepts it willingly. However, the event that follows, where the birdcatcher emerges from the fire transformed, is a critical point in the narrative.",
+                "The emperor's transformation into a young and handsome man is a pivotal moment in the narrative. It involves him acting within the core plot, driving the story forward through conflict and external help.",
+                "The event involves the emperor acting within the core plot to become young and handsome. It drives the story forward through conflict and external help, but also serves as a pivotal moment in the narrative.",
+                "The birdcatcher's transformation into a young and handsome man is a pivotal moment in the narrative, leading to the emperor's desire for similar transformation. This event drives the story forward through conflict and external help, as the birdcatcher acts within the core plot."
+            ],
+            "agents": [
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "dismounted with great speed",
+                        "sprang into the fire"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "jumped into the fire as a punishment commanded by the emperor"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [
+                "object_b12d162a130441ff8d05cb5c26f67d66"
+            ],
+            "place": "place_2878975d2a89423bb94ffb6c2fca4069"
+        },
+        {
+            "id": "event_30268fa99acd42e097bf378001d170cc",
+            "type": "move",
+            "name": "Birdcatcher Emerges Unharmed Again",
+            "description": "The people crowded to rescue the emperor–’twas all in vain. The emperor was burned to death. ‘He was crazy!’ shouted the chief men and soldiers.",
+            "thoughts": [
+                "The event described is the birdcatcher being burned to death by the emperor's order. However, unlike previous attempts, he emerges from the fire unharmed and young again. This is a turning point in the narrative as it shows the birdcatcher's ability to cheat death and potentially sets up future events.",
+                "The event described is the birdcatcher's 'punishment' by being burned to death, but he miraculously survives and emerges from the flames as a young man. This is followed closely by the emperor's attempt to repeat this process, which is also a key moment in the narrative.",
+                "The event is not part of the main conflict resolution or closure. The story has been building up to a point where the emperor wants to become young and handsome like the birdcatcher. This event marks a turning point in the narrative, but it's still in the escalation phase as the emperor's obsession with youth and beauty continues.",
+                "The birdcatcher emerges from the flames unharmed and young again. This marks a turning point as it shows his ability to cheat death, potentially setting up future events.",
+                "The birdcatcher is burned to death by the emperor's order, but miraculously emerges from the flames as a young man. This event marks a turning point in the narrative, setting up the emperor's desire to become young and handsome like the birdcatcher."
+            ],
+            "agents": [
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "ordered to burn the birdcatcher to death"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "burned to death",
+                        "emerged from flames as a young man"
+                    ],
+                    "importance": 1.0
+                }
+            ],
+            "objects": [],
+            "place": "place_3a8828fbe6f2454eae53e0c38f95a062"
+        },
+        {
+            "id": "event_1c200f33fba744a2b79519c1998abc86",
+            "type": "move",
+            "name": "The Birdcatcher Becomes Emperor",
+            "description": "They conducted the birdcatcher into the mosque, and girt him with the emperor’s sword. Then the birdcatcher became emperor,",
+            "thoughts": [
+                "The birdcatcher has been summoned by the emperor once again and is now facing a new challenge. The previous events have led up to this point, where the emperor wants him to jump into the fire as punishment. However, with the crow's help, the birdcatcher successfully avoids death and emerges from the fire transformed. In this event, the emperor attempts to replicate the transformation but fails, resulting in his own demise.",
+                "The birdcatcher has been given a death sentence by the emperor but uses the crow's advice and the process of transformation to escape his fate. He goes through the process of jumping into the fire multiple times, each time emerging younger and more handsome.",
+                "The birdcatcher has been sentenced to death by fire, but instead of being burned, he emerges from the flames as a young and handsome man. This event is part of the main narrative action, as it drives the story forward through conflict and external help.",
+                "The birdcatcher has successfully escaped death through transformation, and now the emperor attempts to replicate this process but fails.",
+                "The birdcatcher has been sentenced to death by fire, but instead of being burned, he emerges from the flames as a young and handsome man. This event is part of the main narrative action, as it drives the story forward through conflict and external help.",
+                "The birdcatcher has successfully transformed into a young and handsome man by jumping into the fire multiple times with the help of the crow. The emperor attempts to replicate this transformation but fails, resulting in his own demise."
+            ],
+            "agents": [
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "conducted the birdcatcher into the mosque",
+                        "girt him with the emperor’s sword"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "became emperor"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [],
+            "place": "place_004c97bf971e414ea919202eaa598299"
+        },
+        {
+            "id": "event_c0ea2aaf29c5482582ff89e7084ee412",
+            "type": "resolution",
+            "name": "Birdcatcher Becomes Emperor",
+            "description": "the damsel he selected sultana, and the crow the chief lady at court.",
+            "thoughts": [
+                "The most specific and concrete option is that the event closes or resolves an open conflict. The hero's success is confirmed, the villain is dealt with, and the world reaches a new stable state.",
+                "The event described is the resolution of the conflict between the birdcatcher and the emperor. The emperor's death and the birdcatcher becoming emperor are a conclusion to their storyline.",
+                "The text describes the resolution of the conflict between the birdcatcher and the emperor. The emperor's death and the birdcatcher becoming emperor are a conclusion to their storyline.",
+                "The event described is the resolution of the conflict between the birdcatcher and the emperor. The emperor's death and the birdcatcher becoming emperor are a conclusion to their storyline.",
+                "The event described is a resolution of the conflict between the birdcatcher and the emperor. The emperor's death and the birdcatcher becoming emperor are a conclusion to their storyline."
+            ],
+            "agents": [
+                {
+                    "id": "agent_2605dd618e9d4117878c0300693097a8",
+                    "actions": [
+                        "became emperor"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_3f8015eda01e426d87c25581bdac91a6",
+                    "actions": [
+                        "died"
+                    ],
+                    "importance": 1.0
+                },
+                {
+                    "id": "agent_c1d6419c2c6741bea816b1beaa39acad",
+                    "actions": [
+                        "was selected by the birdcatcher as sultana"
+                    ],
+                    "importance": 0.4
+                }
+            ],
+            "objects": [
+                "object_a6416b16376542868db2a0467d3d3279"
+            ],
+            "place": "place_3a8828fbe6f2454eae53e0c38f95a062"
+        }
+    ]
+}

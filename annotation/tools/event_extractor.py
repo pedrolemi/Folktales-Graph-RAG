@@ -98,7 +98,7 @@ def extract_event_elements(model: BaseChatModel, title: str, story_segment: str,
 		try:
 			logger.debug(f"Attempt {attempt + 1}/{max_attempts} for segment")
 
-			print(elements_prompt.format(
+			logger.info(elements_prompt.format(
 				title=title,
 				objects=formatted_objects,
 				places=formatted_places,

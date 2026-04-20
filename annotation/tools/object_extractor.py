@@ -72,7 +72,8 @@ def extract_objects(model: BaseChatModel, folktale: str, objects_dict: dict):
 
 	object_chain = object_prompt | model.with_structured_output(ObjectsLLM)
 
-	print(object_prompt.format(
+
+	logger.info(object_prompt.format(
 		folktale=folktale,
 		objects=formatted
 	))

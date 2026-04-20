@@ -29,6 +29,8 @@ def get_batch(df: DataFrame, start: int, size: int):
 def main():
 	model = get_llm(0.7)
 
+	logger.remove()
+
 	data_dir = "./data"
 	processed_dir = os.path.join(data_dir, "processed")
 	folktales_path = os.path.join(processed_dir, "folk_tales_deduplicated.csv")
