@@ -46,14 +46,14 @@ DECISION GUIDELINES:
 - Prefer the MOST SPECIFIC and CONCRETE option available.
 - Only choose general options if no specific match exists.
 - Use all available context to improve classification accuracy.
-																
+
 REASONING GUIDELINES:
 - Keep "thinking" concise.
 - Base the justification strictly on the evidence from the text and context.
-
+															   
+{hierarchy_rule}
 AVAILABLE OPTIONS:
 {options}
-
 PREVIOUS THOUGHTS:
 {previous_thought}
 
@@ -82,6 +82,25 @@ type_prompt = ChatPromptTemplate.from_messages([
 	type_human_prompt,
 ])
 
+def get_hierarchy_rule():
+	return 
+"""
+HIERARCHY RULE:
+The options follow a hierarchical structure where:
+
+- Option 0 is the parent (most general category).
+- All other options (1, 2, ...) are more specific child categories.
+
+Selection guidelines:
+- Always prefer the MOST SPECIFIC option (child categories).
+- If the narrative matches a specific child option, select it.
+- In case of doubt, still favor the more specific option when reasonably supported.
+- Select option 0 (parent) ONLY if none of the specific child options fit the narrative.
+
+The parent (option 0) acts strictly as a fallback category.
+
+""" 
+
 def _build_options_prompt(node: dict, self_name: Optional[str] = None):
 	"""
 	Construye un prompt de opciones basado en un nodo y sus hijos, 
@@ -97,12 +116,12 @@ def _build_options_prompt(node: dict, self_name: Optional[str] = None):
 			- list: Lista de tuplas (node_id, description) correspondientes a cada opción.
 	"""
 	options = []
+	if self_name:
+		options.append((self_name, node["description"]))
 	
 	for child_id, info in node.get("children", {}).items():
 		options.append((child_id, info["description"]))
 
-	if self_name:
-		options.append((self_name, node["description"]))
 
 	lines = [
 		f"{idx}. {node_id}: {description}" 
@@ -128,7 +147,7 @@ def _build_options_prompt_by_list(options: list[tuple]):
 	]
 	return "\n".join(lines)
 
-def _extract_event(model: BaseChatModel, folktale_event: str, past_story: str, event_index: int, total_events: int, options: str, previous_thoughts: list[str]):
+def _extract_event(model: BaseChatModel, folktale_event: str, past_story: str, event_index: int, total_events: int, options: str, previous_thoughts: list[str], hierarchy_rule: str=""):
 	"""
 	Extrae un evento relevante de exto utilizando un modelo de lenguaje.
 
@@ -156,6 +175,7 @@ def _extract_event(model: BaseChatModel, folktale_event: str, past_story: str, e
 	# ))
 
 	response = type_chain.invoke({
+		"hierarchy_rule":hierarchy_rule,
 		"options": options,
 		"event": folktale_event,
 		"past_story": past_story,
@@ -214,6 +234,9 @@ def hierarchical_event_classification(model: BaseChatModel, event_index: int, st
 
 		# Preguntar al LLM n_rounds veces
 		for i in range(n_rounds):
+			hierarchy_rule = ""
+			if level > 0:
+				hierarchy_rule = get_hierarchy_rule()
 			event, thinking = _extract_event(
 				model=model,
 				folktale_event=event_text,
@@ -221,7 +244,8 @@ def hierarchical_event_classification(model: BaseChatModel, event_index: int, st
 				event_index=event_index,
 				total_events=total_events,
 				options=options_str,
-				previous_thoughts=final_thoughts
+				previous_thoughts=final_thoughts,
+				hierarchy_rule=hierarchy_rule
 			)
 
 			if 0 <= event < len(options_list):
