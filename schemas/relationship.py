@@ -10,7 +10,7 @@ class RelationshipLLM(BaseModel):
 	strength: int = Field(..., ge=0, le=5, description="Strength of the relationship.")
 
 class Relationship(RelationshipLLM):
-	type: Optional[str] = None
+	type: str
 	source: str
 	source_id: str = Field(..., pattern=agent_regex)
 	target: str
