@@ -75,9 +75,9 @@ def extract_places(model: BaseChatModel, folktale: str, places_dict: dict):
    ))
 
    places = place_chain.invoke({
-	  "folktale": folktale,
-	  "max_places": MAX_PLACES,
-	  "places": formatted
+      "folktale": folktale,
+	   "max_places": MAX_PLACES,
+	   "places": formatted
    })
    
    

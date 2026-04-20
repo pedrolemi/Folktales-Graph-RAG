@@ -82,10 +82,10 @@ personality_prompt = ChatPromptTemplate.from_messages(
 		SystemMessagePromptTemplate.from_template(template='''You are an AI that assigns personality traits to a character based on a folktale.
 
 Your job is to infer their personality using the Big Five model.
-															
+
 TRAITS (integer values from 0 to 100):
 {traits}
-													
+
 GUIDELINES:
 - Base your estimates ONLY on behaviors, actions, and descriptions present in the folktale.
 - Do NOT invent traits not supported by the text.

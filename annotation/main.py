@@ -66,7 +66,7 @@ def main():
 		agents = extract_agents(model, text, places, structures["role"], collections["trait"])
 
 		relationships = extract_relationships(model, text, agents)
-
+		
 		story_segments = []
 		story_segments = extract_story_segments(model, text)
 

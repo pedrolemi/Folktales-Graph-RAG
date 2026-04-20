@@ -835,7 +835,7 @@
                 {
                     "id": "agent_08b67762f65a48388363dfe4f4881086",
                     "actions": [
-                        ""
+                        "hola"
                     ],
                     "importance": 0.2
                 }
