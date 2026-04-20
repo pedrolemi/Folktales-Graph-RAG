@@ -351,90 +351,93 @@
     ],
     "events": [
         {
-            "id": "event_9d943e3565394063bd864ffabadb82bb",
+            "id": "event_d38936852f9446a4945771fb295fac99",
             "type": "setup",
-            "name": "A Time of Magic Abounds",
+            "name": "Magical Era Begins",
             "description": "If you’ll believe me there was a time when the fairies were none so shy as they are now. That was the time when beasts talked to men, when there were spells and enchantments and magic every day, when there was great store of hidden treasure to be dug up, and adventures for the asking.",
             "thoughts": [
-                "The text describes a past time when magic and adventure were common, indicating a nostalgic or historical context. This event sets up the world before any conflict or disruption has occurred.",
-                "The text describes a past time when magic and adventure were common, setting the scene for a story that likely involves a hero's journey or quest. This event is part of the main narrative action: it drives the story forward by establishing the world and its possibilities.",
-                "The text describes a past time when magic and adventure were common, indicating a nostalgic or historical context. This is a setup for the story, providing background information about the world before any conflict or disruption occurs."
+                "The text describes a past time when magic was common and adventures were plentiful. This sets up the world before any conflict or disruption has occurred.",
+                "The event text describes a past time when magic and adventure were common, establishing the world before any conflict or disruption has occurred. This matches option 1: setup."
             ],
             "agents": [
                 {
-                    "id": "agent_e2585747170a48d7a0eaece78d9bb641",
+                    "id": "agent_c7143304d6c24f368f16a7ed72afad4e",
                     "actions": [
-                        "told a story"
+                        "None"
                     ],
-                    "importance": 0.3
+                    "importance": 0.1
                 },
                 {
-                    "id": "agent_2415f8e846a149dda5e7bb1ee3f58804",
+                    "id": "agent_6cd1b1765d624129a502272096d596eb",
                     "actions": [
-                        "listened to the story"
+                        "None"
                     ],
-                    "importance": 0.3
+                    "importance": 0.1
+                },
+                {
+                    "id": "agent_0dde1212c7ee4322974123f05371dea3",
+                    "actions": [
+                        "None"
+                    ],
+                    "importance": 0.1
                 }
             ],
             "objects": [],
             "place": "place_90a5b51f13674691bb11189cab13491c"
         },
         {
-            "id": "event_45646cf1d4b94e94b65467571af2e29a",
+            "id": "event_f015ea5976bd4092b6b29200b06ecc14",
             "type": "setup",
-            "name": "Old Couple's Ordinary Life",
+            "name": "Old Man and Woman Live Alone",
             "description": "At that time, you must know, an old man and an old woman lived alone by themselves. They were good and they were poor and they had no children at all.",
             "thoughts": [
-                "The event describes the world or the hero before any conflict or disruption has occurred. The old man and woman are established as the main characters in a peaceful setting.",
-                "The event describes the world or the hero before any conflict or disruption has occurred. The old man and woman are portrayed as good but poor, without children, which sets a baseline state for their lives.",
-                "The event describes the world or the hero before any conflict or disruption has occurred. It presents the ordinary life of an old man and an old woman, their poverty, and lack of children, without any threat or villain present yet."
+                "The event describes the world or the hero before any conflict or disruption has occurred. The old man and woman are presented as a baseline state without any threat or lack.",
+                "The text describes a peaceful scene where an old man and woman live alone, with no mention of conflict or disruption. This fits the description of 'setup' as it presents the hero's ordinary life before any conflict has occurred."
             ],
             "agents": [
                 {
                     "id": "agent_e2585747170a48d7a0eaece78d9bb641",
                     "actions": [
-                        "lived alone",
-                        "were good",
-                        "were poor"
-                    ],
-                    "importance": 0.8
-                },
-                {
-                    "id": "agent_2415f8e846a149dda5e7bb1ee3f58804",
-                    "actions": [
-                        "lived alone",
-                        "were good",
-                        "were poor"
-                    ],
-                    "importance": 0.8
-                }
-            ],
-            "objects": [],
-            "place": "place_0c329b7ce94440ffa53fd7cedc8fb17f"
-        },
-        {
-            "id": "event_30e989be575e4f05824d66a755a20938",
-            "type": "initial_situation",
-            "name": "Old Couple's Morning Routine Begins",
-            "description": "One fine day, “What are you doing this morning, good man?” says the old woman. “Oh,” says the old man, “I’m off to the mountains with my billhook to gather a faggot of sticks for our fire. And what are you doing, good wife?” “Oh,” says the old woman, “I’m off to the stream to wash clothes. It’s my washing day,” she adds.",
-            "thoughts": [
-                "The event describes the ordinary life of the old man and woman before any conflict or disruption has occurred. It presents their home, family situation (no children), social role, and daily routine.",
-                "The event describes the ordinary life of the old man and woman before any conflict or disruption has occurred. It presents their daily routine and social role in a peaceful setting.",
-                "The event describes the ordinary life of the old man and woman before any conflict or disruption has occurred. It presents their home, family situation (no children), social role, and daily routine."
-            ],
-            "agents": [
-                {
-                    "id": "agent_e2585747170a48d7a0eaece78d9bb641",
-                    "actions": [
-                        "is washing clothes",
-                        "mentions it's her washing day"
+                        "live alone",
+                        "are good"
                     ],
                     "importance": 0.4
                 },
                 {
                     "id": "agent_2415f8e846a149dda5e7bb1ee3f58804",
                     "actions": [
-                        "gathers a faggot of sticks for their fire with his billhook"
+                        "live alone",
+                        "are good",
+                        "have no children"
+                    ],
+                    "importance": 0.4
+                }
+            ],
+            "objects": [],
+            "place": "place_90a5b51f13674691bb11189cab13491c"
+        },
+        {
+            "id": "event_21aca5e419ef44e29d3a9e6cf19d0fed",
+            "type": "initial_situation",
+            "name": "Old Couple's Morning Routine",
+            "description": "One fine day, “What are you doing this morning, good man?” says the old woman. “Oh,” says the old man, “I’m off to the mountains with my billhook to gather a faggot of sticks for our fire. And what are you doing, good wife?” “Oh,” says the old woman, “I’m off to the stream to wash clothes. It’s my washing day,” she adds.",
+            "thoughts": [
+                "The event describes the ordinary life of an old man and an old woman before any conflict or disruption has occurred. It presents their daily routine without any threat, villain, or lack present yet.",
+                "The text describes the ordinary life of an old man and his wife before any conflict or disruption has occurred. The scene focuses on their daily routine and chores.",
+                "The provided text describes the ordinary life of the old man and his wife before any conflict or disruption has occurred. It sets up their daily routine, showing what they do on a typical day, without introducing any threat or villainy."
+            ],
+            "agents": [
+                {
+                    "id": "agent_e2585747170a48d7a0eaece78d9bb641",
+                    "actions": [
+                        "is off to the stream to wash clothes"
+                    ],
+                    "importance": 0.4
+                },
+                {
+                    "id": "agent_2415f8e846a149dda5e7bb1ee3f58804",
+                    "actions": [
+                        "is off to the mountains with his billhook to gather a faggot of sticks for their fire"
                     ],
                     "importance": 0.5
                 }
@@ -443,20 +446,81 @@
             "place": "place_3232e848cbbf41f5ab29f6efb68bc44d"
         },
         {
-            "id": "event_083cf8ee6ec547e88a410ae07eae406b",
+            "id": "event_419fd2f4b1fd45f080cf904714f49d09",
             "type": "initial_situation",
-            "name": "Old Woman Washes Clothes",
+            "name": "Old Woman Finds Floating Peach",
             "description": "So the old man went to the mountains and the old woman went to the stream. Now, while she was washing the clothes, what should she see but a fine ripe peach that came floating down the stream? The peach was big enough, and rosy red on both sides.",
             "thoughts": [
-                "The event describes a peaceful and ordinary scene where the old woman is washing clothes by the stream. The peach floating down the stream is an unexpected but not threatening element. This scene appears to be part of the setup or initial situation in the narrative.",
-                "The event describes a peaceful scene where the old woman is washing clothes by the stream and finds a ripe peach floating down. This scene appears to be part of the setup or initial situation in the story, as it establishes the ordinary life of the old couple before any conflict or disruption occurs."
+                "The story continues with a peaceful and mundane scene, where the old woman washes clothes by the stream. The introduction of the peach floating down the stream creates an element of surprise and possibly foreshadowing, but it doesn't escalate the conflict or tension.",
+                "The event is a calm and peaceful scene where the old woman finds a peach floating down the stream. Given that this is early in the narrative (event 3/24), it's likely part of the setup or initial situation section. The context provided earlier establishes the setting, characters, and their daily routine, making this event consistent with the 'initial_situation' category."
             ],
             "agents": [
                 {
                     "id": "agent_e2585747170a48d7a0eaece78d9bb641",
                     "actions": [
-                        "washing clothes",
-                        "found a ripe peach"
+                        "was washing clothes by the stream",
+                        "saw a fine ripe peach floating down the stream"
+                    ],
+                    "importance": 0.6
+                }
+            ],
+            "objects": [],
+            "place": "place_0c329b7ce94440ffa53fd7cedc8fb17f"
+        },
+        {
+            "id": "event_2efad31945a74b219c45d8e354156120",
+            "type": "initial_situation",
+            "name": "She Finds Lucky Peach for Him",
+            "description": "“I’m in luck this morning,” said the dame, and she pulled the peach to shore with a split bamboo stick. By-and-by, when her good man came home from the hills, she set the peach before him. “Eat, good man,” she said; “this is a lucky peach I found in the stream and brought home for you.”",
+            "thoughts": [
+                "The event presents a peaceful scene where an old woman brings home a peach as a gift for her husband. This is a continuation of the setup phase, showing the ordinary life of the couple before any conflict or disruption has occurred.",
+                "The event describes the old woman's ordinary life: her daily routine and tasks. She is preparing for her washing day, which indicates a stable state before any conflict or disruption has occurred.",
+                "The event describes the old woman finding a peach in the stream while washing clothes. This action doesn't drive the story forward with conflict or introduce a problem; it's part of setting up the ordinary life and establishing the characters' daily routine."
+            ],
+            "agents": [
+                {
+                    "id": "agent_e2585747170a48d7a0eaece78d9bb641",
+                    "actions": [
+                        "pulled a peach to shore",
+                        "brought home a peach as a gift for her husband"
+                    ],
+                    "importance": 0.6
+                },
+                {
+                    "id": "agent_2415f8e846a149dda5e7bb1ee3f58804",
+                    "actions": [
+                        "ate the peach"
+                    ],
+                    "importance": 0.4
+                }
+            ],
+            "objects": [
+                "object_219a37fdcdc64f2a802d68dbbcc8f4c8",
+                "object_7007bac8c1f04aebb064479b590a1ae4"
+            ],
+            "place": "place_3232e848cbbf41f5ab29f6efb68bc44d"
+        },
+        {
+            "id": "event_ece808e4df08431382dc2a43342c0bbf",
+            "type": "lack",
+            "name": "Peach Transforms into Baby Boy",
+            "description": "But the old man never got a taste of the peach. And why did he not? All of a sudden the peach burst in two and there was no stone to it, but a fine boy baby where the stone should have been.",
+            "thoughts": [
+                "The event introduces a magical element that upsets the ordinary life of the old couple. The peach's sudden transformation into a baby replaces the expected stone, creating an extraordinary situation."
+            ],
+            "agents": [
+                {
+                    "id": "agent_a16a007a1bc04f3db5c50a354be4bdfa",
+                    "actions": [
+                        "was inside the peach",
+                        "was born"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_2415f8e846a149dda5e7bb1ee3f58804",
+                    "actions": [
+                        "did not get a taste of the peach"
                     ],
                     "importance": 0.4
                 }
@@ -464,73 +528,32 @@
             "objects": [
                 "object_2b0f190a9ddc4cc38c615c38dfc667de"
             ],
-            "place": "place_0c329b7ce94440ffa53fd7cedc8fb17f"
-        },
-        {
-            "id": "event_94635b092e3247ab8f31097c84d3cfd7",
-            "type": "setup",
-            "name": "She Finds Lucky Peach Home",
-            "description": "“I’m in luck this morning,” said the dame, and she pulled the peach to shore with a split bamboo stick. By-and-by, when her good man came home from the hills, she set the peach before him. “Eat, good man,” she said; “this is a lucky peach I found in the stream and brought home for you.”",
-            "thoughts": [
-                "The event describes a peaceful scene where an old woman finds a peach in the stream and brings it home for her husband. This scene is part of the setup phase, establishing the ordinary life of the couple before any conflict or disruption occurs.",
-                "The event describes a peaceful scene where an old woman finds a peach in the stream and brings it home for her husband. This is part of the setup phase, establishing the ordinary life of the couple before any conflict or disruption occurs.",
-                "The event describes a peaceful scene where an old woman finds a peach in the stream and brings it home for her husband. This scene is part of the setup phase, establishing the daily life and routine of the old couple before any conflict or disruption occurs."
-            ],
-            "agents": [
-                {
-                    "id": "agent_e2585747170a48d7a0eaece78d9bb641",
-                    "actions": [
-                        "pulled the peach to shore",
-                        "set the peach before her husband"
-                    ],
-                    "importance": 0.8
-                },
-                {
-                    "id": "agent_2415f8e846a149dda5e7bb1ee3f58804",
-                    "actions": [
-                        "was given the peach by his wife"
-                    ],
-                    "importance": 0.4
-                }
-            ],
-            "objects": [
-                "object_2b0f190a9ddc4cc38c615c38dfc667de",
-                "object_7007bac8c1f04aebb064479b590a1ae4"
-            ],
             "place": "place_90a5b51f13674691bb11189cab13491c"
         },
         {
-            "id": "event_5e7701a6bbbd4836b7274b34b7b999be",
-            "type": "move",
-            "name": "Peach Turns into Baby Boy",
-            "description": "But the old man never got a taste of the peach. And why did he not? All of a sudden the peach burst in two and there was no stone to it, but a fine boy baby where the stone should have been.",
+            "id": "event_cd463ee946d5404c9bb93e83d42f1872",
+            "type": "lack_of_bride",
+            "name": "Peach Transforms into Baby Boy",
+            "description": "“Mercy me!” says the old woman. “Mercy me!” says the old man. The boy baby first ate up one half of the peach and then he ate up the other half. When he had done this he was finer and stronger than ever.",
             "thoughts": [
-                "The event describes a magical or supernatural occurrence that disrupts the ordinary world of the old man and woman. The peach's sudden transformation into a baby is an unexpected and fantastical event.",
-                "The event describes a magical or supernatural occurrence that disrupts the ordinary world of the old man and his wife. The peach bursting into two and revealing a baby instead of a stone is an unexpected and fantastical event."
+                "The event describes a magical or extraordinary situation, specifically an unexpected transformation of a peach into a baby. This is not part of the main conflict or action yet; it's more of an astonishing occurrence that sets up the story.",
+                "The event describes a miraculous birth, where an old woman finds a peach with no stone and instead discovers a baby. This marks the beginning of a new stage in the story, introducing a key character and creating a sense of wonder."
             ],
             "agents": [
                 {
                     "id": "agent_a16a007a1bc04f3db5c50a354be4bdfa",
                     "actions": [
-                        "is born from a peach"
+                        "ate up one half of the peach",
+                        "ate up the other half of the peach"
                     ],
                     "importance": 0.9
                 },
                 {
                     "id": "agent_e2585747170a48d7a0eaece78d9bb641",
                     "actions": [
-                        "holds the peach",
-                        "experiences the magical transformation of the peach into a baby"
+                        "found a peach with no stone instead of a baby"
                     ],
-                    "importance": 0.8
-                },
-                {
-                    "id": "agent_2415f8e846a149dda5e7bb1ee3f58804",
-                    "actions": [
-                        "holds the peach",
-                        "experiences the magical transformation of the peach into a baby"
-                    ],
-                    "importance": 0.7
+                    "importance": 0.4
                 }
             ],
             "objects": [
@@ -539,360 +562,95 @@
             "place": "place_90a5b51f13674691bb11189cab13491c"
         },
         {
-            "id": "event_84ee19af290b4487a60285a852015b53",
-            "type": "lack_of_bride",
-            "name": "Peach Reveals Baby Boy",
-            "description": "“Mercy me!” says the old woman. “Mercy me!” says the old man. The boy baby first ate up one half of the peach and then he ate up the other half. When he had done this he was finer and stronger than ever.",
-            "thoughts": [
-                "The event describes the old woman finding a peach in the stream and giving it to her husband. However, when he tries to eat it, the peach bursts open and a baby boy is inside instead of a stone.",
-                "The event describes a magical and unexpected occurrence that leads to the birth of a boy baby. This event is part of the past story context, which sets up the world where magic and enchantments are common. The peach bursting into two and revealing a baby instead of a stone is an extraordinary and fantastical event."
-            ],
-            "agents": [
-                {
-                    "id": "agent_e2585747170a48d7a0eaece78d9bb641",
-                    "actions": [
-                        "gave a peach to her husband",
-                        "found the peach in the stream"
-                    ],
-                    "importance": 0.8
-                },
-                {
-                    "id": "agent_2415f8e846a149dda5e7bb1ee3f58804",
-                    "actions": [
-                        "tried to eat the peach",
-                        "was surprised by the peach bursting open"
-                    ],
-                    "importance": 0.7
-                }
-            ],
-            "objects": [
-                "object_2b0f190a9ddc4cc38c615c38dfc667de"
-            ],
-            "place": "place_90a5b51f13674691bb11189cab13491c"
-        },
-        {
-            "id": "event_50fa60e338a4477386931afa70016d33",
-            "type": "lack_of_bride",
+            "id": "event_385da084f7444565bfcdacfc6ceabea2",
+            "type": "initial_situation",
             "name": "Baby Born from Peach",
             "description": "“Momotaro! Momotaro!” cries the old man; “the eldest son of the peach.” “Truth it is indeed,” says the old woman; “he was born in a peach.”",
             "thoughts": [
-                "The event describes the origin of Momotaro, a key character in the story. The old man and woman find a peach with a baby inside, which is a magical and extraordinary occurrence.",
-                "The event describes the origin story of Momotaro, a key character in the narrative. The old man and woman discover a peach containing a baby boy, which is a magical and extraordinary event."
-            ],
-            "agents": [
-                {
-                    "id": "agent_a16a007a1bc04f3db5c50a354be4bdfa",
-                    "actions": [
-                        "born from a peach"
-                    ],
-                    "importance": 0.9
-                },
-                {
-                    "id": "agent_e2585747170a48d7a0eaece78d9bb641",
-                    "actions": [
-                        "confirms the truth about Momotaro's birth"
-                    ],
-                    "importance": 0.4
-                },
-                {
-                    "id": "agent_2415f8e846a149dda5e7bb1ee3f58804",
-                    "actions": [
-                        "confirms the truth about Momotaro's birth"
-                    ],
-                    "importance": 0.4
-                }
-            ],
-            "objects": [
-                "object_2b0f190a9ddc4cc38c615c38dfc667de"
-            ],
-            "place": "place_90a5b51f13674691bb11189cab13491c"
-        },
-        {
-            "id": "event_a48c1d42440c45208fa315e998fa92d4",
-            "type": "initial_situation",
-            "name": "Momotaro is praised by neighbours.",
-            "description": "Both of them took such good care of Momotaro that soon he was the stoutest and bravest boy of all that country-side. He was a credit to them, you may believe. The neighbours nodded their heads and they said, “Momotaro is the fine young man!”",
-            "thoughts": [
-                "The event describes the ordinary life of Momotaro before any conflict or disruption has occurred. The neighbors nod their heads in approval, and everyone acknowledges him as a fine young man.",
-                "The event describes the ordinary life of Momotaro before any conflict or disruption has occurred. The neighbors nod their heads in approval, and everyone acknowledges him as a fine young man.",
-                "The event describes the ordinary life of Momotaro before any conflict or disruption has occurred. The neighbors nod their heads in approval, and everyone acknowledges him as a fine young man."
+                "The event describes a miraculous birth where a boy baby emerges from a peach. This event occurs at the beginning of the story and sets up the protagonist's origins.",
+                "The narrative is setting up the hero's origin story, specifically explaining how Momotaro was born from a magical peach. This event presents the ordinary life of the old man and old woman before the extraordinary incident occurs."
             ],
             "agents": [
                 {
                     "id": "agent_e2585747170a48d7a0eaece78d9bb641",
                     "actions": [
-                        "took good care of Momotaro"
-                    ],
-                    "importance": 0.8
-                },
-                {
-                    "id": "agent_2415f8e846a149dda5e7bb1ee3f58804",
-                    "actions": [
-                        "took good care of Momotaro"
-                    ],
-                    "importance": 0.8
-                }
-            ],
-            "objects": [],
-            "place": "place_0c329b7ce94440ffa53fd7cedc8fb17f"
-        },
-        {
-            "id": "event_f7532377de7749a4a7a8bd3cfde2592c",
-            "type": "initial_situation",
-            "name": "Momotaro Requests Dumplings",
-            "description": "“Mother,” says Momotaro one day to the old woman, “make me a good store of kimi-dango” (which is the way that they call millet dumplings in those parts).",
-            "thoughts": [
-                "The event describes a request made by Momotaro to his mother for a specific food item, which is a normal part of the hero's life before any conflict or disruption has occurred. This event presents the hero's ordinary life: their home, family, social role, or daily routine."
-            ],
-            "agents": [
-                {
-                    "id": "agent_a16a007a1bc04f3db5c50a354be4bdfa",
-                    "actions": [
-                        "asked for food"
-                    ],
-                    "importance": 0.9
-                },
-                {
-                    "id": "agent_e2585747170a48d7a0eaece78d9bb641",
-                    "actions": [
-                        "made kimi-dango"
-                    ],
-                    "importance": 0.8
-                }
-            ],
-            "objects": [
-                "object_7007bac8c1f04aebb064479b590a1ae4"
-            ],
-            "place": "place_0c329b7ce94440ffa53fd7cedc8fb17f"
-        },
-        {
-            "id": "event_c40d17ce6846461b917d83dfb7e4970c",
-            "type": "hero_departure",
-            "name": "Momotaro Requests Food Supplies",
-            "description": "“What for do you want kimi-dango?” says his mother. “Why,” says Momotaro, “I’m going on a journey, or as you may say, an adventure, and I shall be needing the kimi-dango on the way.”",
-            "thoughts": [
-                "The event describes Momotaro preparing for his journey by asking his mother to make kimi-dango. This is a specific action taken by the hero before embarking on their adventure.",
-                "The event describes Momotaro preparing for his journey by asking his mother to make kimi-dango. This is a specific action taken by the hero before embarking on his adventure.",
-                "The event describes Momotaro preparing for his journey by asking his mother to make kimi-dango. This is a specific action taken by the hero before embarking on their adventure."
-            ],
-            "agents": [
-                {
-                    "id": "agent_a16a007a1bc04f3db5c50a354be4bdfa",
-                    "actions": [
-                        "asked his mother to make kimi-dango"
-                    ],
-                    "importance": 0.9
-                },
-                {
-                    "id": "agent_e2585747170a48d7a0eaece78d9bb641",
-                    "actions": [
-                        "made kimi-dango for Momotaro's journey"
-                    ],
-                    "importance": 0.8
-                }
-            ],
-            "objects": [
-                "object_2b0f190a9ddc4cc38c615c38dfc667de"
-            ],
-            "place": "place_90a5b51f13674691bb11189cab13491c"
-        },
-        {
-            "id": "event_5c6b89bb9fd44539845ba73355a12b19",
-            "type": "hero_departure",
-            "name": "Momotaro Prepares to Leave",
-            "description": "“Where are you going, Momotaro?” says his mother. “I’m off to the Ogres’ Island,” says Momotaro, “to get their treasure, and I should be obliged if you’d let me have the kimi-dango as soon as may be,” he says.",
-            "thoughts": [
-                "The event describes Momotaro's ordinary life and his mother's concern for him as he prepares to leave. This is a moment of transition from the setup phase to the main action."
-            ],
-            "agents": [
-                {
-                    "id": "agent_a16a007a1bc04f3db5c50a354be4bdfa",
-                    "actions": [
-                        "asked his mother where he's going",
-                        "told his mother about his plan to get the ogres' treasure"
-                    ],
-                    "importance": 0.9
-                },
-                {
-                    "id": "agent_e2585747170a48d7a0eaece78d9bb641",
-                    "actions": [
-                        "expressed concern for her son's safety",
-                        "agreed to give Momotaro kimi-dango as soon as possible"
-                    ],
-                    "importance": 0.8
-                }
-            ],
-            "objects": [],
-            "place": "place_ea267171476e4cc182baf7460537da2b"
-        },
-        {
-            "id": "event_32335c0f68b5483a8223cc5efacd4f88",
-            "type": "acquisition",
-            "name": "Momotaro Acquires Kimi-Dango",
-            "description": "So they made him the kimi-dango, and he put them in a wallet, and he tied the wallet to his girdle and off he set. “Sayonara, and good luck to you, Momotaro!” cried the old man and the old woman. “Sayonara! Sayonara!” cried Momotaro.",
-            "thoughts": [
-                "The event describes Momotaro preparing for his journey by acquiring kimi-dango from his mother. This is a specific action that sets the stage for his adventure on Ogres' Island.",
-                "The event describes Momotaro preparing for his journey by acquiring kimi-dango from his mother. This is a specific action that sets the stage for his adventure on Ogres' Island.",
-                "The event describes Momotaro preparing for his journey by acquiring kimi-dango from his mother. This is a specific action that shows the hero's proactive behavior and sets him up for his adventure."
-            ],
-            "agents": [
-                {
-                    "id": "agent_a16a007a1bc04f3db5c50a354be4bdfa",
-                    "actions": [
-                        "acquired kimi-dango from his mother"
-                    ],
-                    "importance": 0.9
-                },
-                {
-                    "id": "agent_e2585747170a48d7a0eaece78d9bb641",
-                    "actions": [
-                        "gave kimi-dango to Momotaro"
-                    ],
-                    "importance": 0.4
-                }
-            ],
-            "objects": [
-                "object_219a37fdcdc64f2a802d68dbbcc8f4c8"
-            ],
-            "place": "place_ea267171476e4cc182baf7460537da2b"
-        },
-        {
-            "id": "event_4f743e1ed27d4bc2b5120f5eb2ed7b31",
-            "type": "hero_departure",
-            "name": "Momotaro Heads to Ogres' Island",
-            "description": "He hadn’t gone far when he fell in with a monkey. “Kia! Kia!” says the monkey. “Where are you off to, Momotaro?” Says Momotaro, “I’m off to the Ogres’ Island for an adventure.”",
-            "thoughts": [
-                "The event describes the hero's departure from his familiar environment to begin the journey or mission. This is a key moment in the narrative as it sets the stage for Momotaro's adventure and marks a turning point in the story.",
-                "The event describes the hero's departure from his familiar environment to begin the journey or mission. This is a key moment in the story where Momotaro leaves his home and family to face challenges on the Ogres' Island.",
-                "The event describes the hero's departure from his familiar environment to begin the journey or mission. This is a crucial moment in the story as Momotaro sets out to the Ogres' Island for an adventure."
-            ],
-            "agents": [
-                {
-                    "id": "agent_a16a007a1bc04f3db5c50a354be4bdfa",
-                    "actions": [
-                        "left his home",
-                        "began his journey"
-                    ],
-                    "importance": 0.9
-                },
-                {
-                    "id": "agent_c7143304d6c24f368f16a7ed72afad4e",
-                    "actions": [
-                        "joined Momotaro on his journey",
-                        "initiated conversation with Momotaro"
-                    ],
-                    "importance": 0.4
-                }
-            ],
-            "objects": [
-                "object_219a37fdcdc64f2a802d68dbbcc8f4c8"
-            ],
-            "place": "place_ea267171476e4cc182baf7460537da2b"
-        },
-        {
-            "id": "event_30aaf0fe8d5f422981dee4c9ccfd6326",
-            "type": "move",
-            "name": "Momotaro Meets Pheasant",
-            "description": "So Momotaro gave a millet dumpling to the monkey, and the two of them jogged on together. They hadn’t gone far when they fell in with a pheasant. “Ken! Ken!” said the pheasant. “Where are you off to, Momotaro?”",
-            "thoughts": [
-                "The event describes Momotaro's journey and his interactions with other characters as he prepares for battle. The hero has already been established, and the story is now focusing on their actions and decisions.",
-                "The event describes Momotaro's journey and his interactions with other characters as he prepares for battle. This is a key moment in the story where the hero begins to take action against the antagonist."
-            ],
-            "agents": [
-                {
-                    "id": "agent_a16a007a1bc04f3db5c50a354be4bdfa",
-                    "actions": [
-                        "gave a millet dumpling to the monkey",
-                        "jogged on together with the monkey"
-                    ],
-                    "importance": 0.8
-                },
-                {
-                    "id": "agent_c7143304d6c24f368f16a7ed72afad4e",
-                    "actions": [
-                        "was given a millet dumpling by Momotaro",
-                        "jogged on together with Momotaro"
-                    ],
-                    "importance": 0.6
-                },
-                {
-                    "id": "agent_6cd1b1765d624129a502272096d596eb",
-                    "actions": [
-                        "met Momotaro and the monkey while jogging",
-                        "asked where they were off to"
-                    ],
-                    "importance": 0.5
-                }
-            ],
-            "objects": [
-                "object_7007bac8c1f04aebb064479b590a1ae4"
-            ],
-            "place": "place_90a5b51f13674691bb11189cab13491c"
-        },
-        {
-            "id": "event_395d68191ac14db9899de63790501763",
-            "type": "preparation",
-            "name": "Momotaro Acquires Travel Companion",
-            "description": "So Momotaro gave a millet dumpling to the pheasant, and the three of them jogged on together. They hadn’t gone far when they fell in with a dog. “Bow! Wow! Wow!” says the dog. “Where are you off to, Momotaro?”",
-            "thoughts": [
-                "The event describes a character acquiring what they need — objects, knowledge, allies, or strategy — before facing the main antagonist. This is preparation for Momotaro's journey."
-            ],
-            "agents": [
-                {
-                    "id": "agent_a16a007a1bc04f3db5c50a354be4bdfa",
-                    "actions": [
-                        "gave a millet dumpling to the pheasant",
-                        "jogged on together"
-                    ],
-                    "importance": 0.9
-                },
-                {
-                    "id": "agent_6cd1b1765d624129a502272096d596eb",
-                    "actions": [
-                        "received a millet dumpling from Momotaro",
-                        "jogged on together"
+                        "cries",
+                        "speaks"
                     ],
                     "importance": 0.7
                 },
                 {
-                    "id": "agent_0dde1212c7ee4322974123f05371dea3",
+                    "id": "agent_2415f8e846a149dda5e7bb1ee3f58804",
                     "actions": [
-                        "joined the group",
-                        "asked where they were off to"
+                        "cries",
+                        "speaks"
+                    ],
+                    "importance": 0.7
+                }
+            ],
+            "objects": [],
+            "place": "place_3232e848cbbf41f5ab29f6efb68bc44d"
+        },
+        {
+            "id": "event_6a6a83bba482422c8d6a503dab5cd536",
+            "type": "initial_situation",
+            "name": "Momotaro Grows into Manhood",
+            "description": "Both of them took such good care of Momotaro that soon he was the stoutest and bravest boy of all that country-side. He was a credit to them, you may believe. The neighbours nodded their heads and they said, “Momotaro is the fine young man!”",
+            "thoughts": [
+                "The event describes the hero's ordinary life: their home, family, social role, or daily routine. Momotaro has grown strong and brave under the care of his adoptive parents, and he is now a fine young man according to the neighbours.",
+                "The narrative context suggests that Momotaro's upbringing and development are being highlighted. The neighbors' positive opinion of him indicates a stable and peaceful situation.",
+                "The event describes Momotaro's ordinary life and his positive relationship with the old man and woman who raised him. The neighbors acknowledge him as a fine young man, which suggests that he has already reached a certain level of maturity and respect in the community."
+            ],
+            "agents": [
+                {
+                    "id": "agent_e2585747170a48d7a0eaece78d9bb641",
+                    "actions": [
+                        "took care of Momotaro",
+                        "raised him"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_2415f8e846a149dda5e7bb1ee3f58804",
+                    "actions": [
+                        "took care of Momotaro",
+                        "raised him"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_a16a007a1bc04f3db5c50a354be4bdfa",
+                    "actions": [
+                        "was taken care of by the old woman and man"
                     ],
                     "importance": 0.6
                 }
             ],
-            "objects": [
-                "object_7007bac8c1f04aebb064479b590a1ae4"
-            ],
-            "place": "place_90a5b51f13674691bb11189cab13491c"
+            "objects": [],
+            "place": "place_0c329b7ce94440ffa53fd7cedc8fb17f"
         },
         {
-            "id": "event_87a64c7e6322455cba8f430944929d08",
-            "type": "hero_departure",
-            "name": "Momotaro Meets Animal Allies",
-            "description": "So Momotaro gave a millet dumpling to the dog, and the four of them jogged on together. By-and-by they came to the Ogres’ Island.",
+            "id": "event_b8a409db5f414782ba6b55351229d112",
+            "type": "preparation",
+            "name": "Momotaro Requests Millet Dumplings.",
+            "description": "“Mother,” says Momotaro one day to the old woman, “make me a good store of kimi-dango” (which is the way that they call millet dumplings in those parts).",
             "thoughts": [
-                "The event describes a key moment in the hero's journey where he meets and befriends various animals on his way to the Ogres' Island. This is a preparatory step for the main conflict.",
-                "The event describes a key moment of preparation and gathering allies for the hero's journey. Momotaro gives millet dumplings to his animal companions, forming a team that will aid him in his quest."
+                "The hero, Momotaro, requests food from his mother, which is a typical action for someone about to embark on a journey. This event fits the category of 'preparation' as it shows the hero acquiring what they need before facing challenges."
             ],
             "agents": [
                 {
                     "id": "agent_a16a007a1bc04f3db5c50a354be4bdfa",
                     "actions": [
-                        "gave a millet dumpling to the dog",
-                        "jogged on together with the four of them"
+                        "requests food from his mother"
                     ],
-                    "importance": 0.9
+                    "importance": 0.8
                 },
                 {
-                    "id": "agent_0dde1212c7ee4322974123f05371dea3",
+                    "id": "agent_e2585747170a48d7a0eaece78d9bb641",
                     "actions": [
-                        "received a millet dumpling from Momotaro",
-                        "jogged on together with the four of them"
+                        "makes kimi-dango for her son"
                     ],
-                    "importance": 0.4
+                    "importance": 0.9
                 }
             ],
             "objects": [
@@ -902,94 +660,395 @@
             "place": "place_ea267171476e4cc182baf7460537da2b"
         },
         {
-            "id": "event_7145c027263a4b7288be6f3093fa1fbe",
-            "type": "move",
-            "name": "Momotaro Outlines Battle Plan",
-            "description": "“Now, brothers,” says Momotaro, “listen to my plan. The pheasant must fly over the castle gate and peck the Ogres. The monkey must climb over the castle wall and pinch the Ogres. The dog and I will break the bolts and bars. He will bite the Ogres, and I will fight the Ogres.”",
+            "id": "event_88c0585807f3467cbca90517b002e4e7",
+            "type": "preparation",
+            "name": "Momotaro Asks for Provisions",
+            "description": "“What for do you want kimi-dango?” says his mother. “Why,” says Momotaro, “I’m going on a journey, or as you may say, an adventure, and I shall be needing the kimi-dango on the way.”",
             "thoughts": [
-                "The event describes Momotaro's plan to defeat the Ogres with the help of his animal allies. This is a key moment in the story where the hero outlines their strategy and prepares for action.",
-                "The event describes Momotaro's plan to defeat the Ogres with the help of his animal allies. This is a key moment in the story where the hero outlines their strategy and prepares for action.",
-                "The event describes Momotaro's plan to defeat the Ogres with the help of his animal allies. This is a key moment in the story where the hero outlines their strategy and prepares for action."
+                "The event describes the hero's request for a specific item, kimi-dango, before embarking on his journey. This aligns with the preparation phase, as Momotaro is acquiring what he needs to face challenges ahead."
             ],
             "agents": [
                 {
                     "id": "agent_a16a007a1bc04f3db5c50a354be4bdfa",
                     "actions": [
-                        "outlines strategy",
-                        "prepares for action"
+                        "requests kimi-dango from his mother"
                     ],
                     "importance": 0.9
                 },
                 {
-                    "id": "agent_c7143304d6c24f368f16a7ed72afad4e",
+                    "id": "agent_e2585747170a48d7a0eaece78d9bb641",
                     "actions": [
-                        "climbs over the castle wall",
-                        "pinches the Ogres"
+                        "provides the requested item, kimi-dango to Momotaro"
                     ],
                     "importance": 0.8
+                }
+            ],
+            "objects": [],
+            "place": "place_3232e848cbbf41f5ab29f6efb68bc44d"
+        },
+        {
+            "id": "event_d1328beb12e6444e93ab1bccabef4f56",
+            "type": "hero_departure",
+            "name": "Momotaro Requests Food Supply",
+            "description": "“Where are you going, Momotaro?” says his mother. “I’m off to the Ogres’ Island,” says Momotaro, “to get their treasure, and I should be obliged if you’d let me have the kimi-dango as soon as may be,” he says.",
+            "thoughts": [
+                "The event is a request from Momotaro to his mother for kimi-dango before embarking on his journey to the Ogres' Island. This event marks the beginning of Momotaro's adventure and shows him preparing for the challenges ahead.",
+                "The event describes the hero's preparation for a journey and their request for food that will be needed on the way. This is an instance of the hero requesting something essential before embarking on a quest."
+            ],
+            "agents": [
+                {
+                    "id": "agent_e2585747170a48d7a0eaece78d9bb641",
+                    "actions": [
+                        "Let Momotaro have kimi-dango"
+                    ],
+                    "importance": 0.6
                 },
                 {
-                    "id": "agent_6cd1b1765d624129a502272096d596eb",
+                    "id": "agent_a16a007a1bc04f3db5c50a354be4bdfa",
                     "actions": [
-                        "flies over the castle gate",
-                        "pecks the Ogres"
+                        "Requesting food from his mother",
+                        "Preparing for the journey by asking for food"
                     ],
-                    "importance": 0.7
-                },
-                {
-                    "id": "agent_0dde1212c7ee4322974123f05371dea3",
-                    "actions": [
-                        "breaks bolts and bars",
-                        "bites the Ogres"
-                    ],
-                    "importance": 0.8
+                    "importance": 0.9
                 }
             ],
             "objects": [],
             "place": "place_ea267171476e4cc182baf7460537da2b"
         },
         {
-            "id": "event_6a6cc72a57f74827a917326972c5e586",
-            "type": "preparation",
-            "name": "Momotaro Prepares for Battle",
-            "description": "Then there was the great battle. Japanese Fairy tale Series, 1 of 16. Griffiin, Farran and Co. Unknown author and illustrator. Published around the 1890’s.",
+            "id": "event_b5d35b3ec44e488e8326d1c248a82f88",
+            "type": "hero_departure",
+            "name": "Momotaro Prepares to Leave Home",
+            "description": "So they made him the kimi-dango, and he put them in a wallet, and he tied the wallet to his girdle and off he set. “Sayonara, and good luck to you, Momotaro!” cried the old man and the old woman. “Sayonara! Sayonara!” cried Momotaro.",
             "thoughts": [
-                "The event describes Momotaro's plan to defeat the Ogres on their island. This is a strategic preparation for the final confrontation and marks an escalation in the conflict.",
-                "The event describes Momotaro's preparation for his journey to the Ogres' Island. He acquires what he needs — objects, knowledge, and allies — before facing the main antagonist."
+                "The event describes the hero's preparation for his journey by acquiring a necessary object, which marks a turning point in the story as he sets off towards the main conflict.",
+                "The event describes Momotaro preparing for his journey by receiving kimi-dango from his mother. This is a specific action taken by the hero before facing the main conflict on Ogres' Island."
             ],
             "agents": [
                 {
                     "id": "agent_a16a007a1bc04f3db5c50a354be4bdfa",
                     "actions": [
-                        "acquired objects for his journey",
-                        "gained knowledge about the Ogres' Island",
-                        "recruited allies (monkey, pheasant, dog)"
+                        "put kimi-dango in wallet",
+                        "tied wallet to girdle"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_e2585747170a48d7a0eaece78d9bb641",
+                    "actions": [
+                        "gave kimi-dango to Momotaro"
+                    ],
+                    "importance": 0.6
+                }
+            ],
+            "objects": [
+                "object_2b0f190a9ddc4cc38c615c38dfc667de",
+                "object_219a37fdcdc64f2a802d68dbbcc8f4c8"
+            ],
+            "place": "place_b1ae4db1f085405e8e507c86d20f6d0e"
+        },
+        {
+            "id": "event_40c73383eaa9482ab0c266f8593ecb12",
+            "type": "hero_departure",
+            "name": "Momotaro Departs Island",
+            "description": "He hadn’t gone far when he fell in with a monkey. “Kia! Kia!” says the monkey. “Where are you off to, Momotaro?” Says Momotaro, “I’m off to the Ogres’ Island for an adventure.”",
+            "thoughts": [
+                "The event shows the hero leaving his familiar environment to begin the journey or mission. The previous context establishes Momotaro's background and motivation for traveling to the Ogres' Island.",
+                "The event describes the hero's departure from his familiar environment to begin the journey or mission. The previous narrative context sets up Momotaro's adventure and provides background information on how he was born in a peach and is now setting out to get the Ogres' treasure."
+            ],
+            "agents": [
+                {
+                    "id": "agent_a16a007a1bc04f3db5c50a354be4bdfa",
+                    "actions": [
+                        "left his familiar environment",
+                        "began the journey or mission"
                     ],
                     "importance": 0.9
                 },
                 {
                     "id": "agent_c7143304d6c24f368f16a7ed72afad4e",
                     "actions": [
-                        "joined Momotaro on his journey",
-                        "provided companionship and support"
+                        "interacted with Momotaro",
+                        "joined him on the journey"
                     ],
                     "importance": 0.4
+                }
+            ],
+            "objects": [],
+            "place": "place_ea267171476e4cc182baf7460537da2b"
+        },
+        {
+            "id": "event_b161634ed6bb4d7694639f4eff88f169",
+            "type": "make_contact_with_enemy",
+            "name": "Momotaro Meets Pheasant Ally",
+            "description": "So Momotaro gave a millet dumpling to the monkey, and the two of them jogged on together. They hadn’t gone far when they fell in with a pheasant. “Ken! Ken!” said the pheasant. “Where are you off to, Momotaro?”",
+            "thoughts": [
+                "The narrative has progressed from setting up Momotaro's origin and home life to preparing him for his journey. The old woman's discovery of the peach and its transformation into a baby boy is the pivotal event that sets the story in motion. Now, as Momotaro embarks on his adventure, he gives millet dumplings to the monkey, indicating their partnership. The encounter with the pheasant adds another character to the journey, further escalating the stakes and complexity of the narrative.",
+                "The event describes Momotaro making contact with his first ally, a monkey, as he embarks on his journey to the Ogres' Island. This is an important moment in the story, marking the beginning of Momotaro's interactions with other characters that will aid him in his quest."
+            ],
+            "agents": [
+                {
+                    "id": "agent_a16a007a1bc04f3db5c50a354be4bdfa",
+                    "actions": [
+                        "gave a millet dumpling to the monkey",
+                        "jogged on together"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_c7143304d6c24f368f16a7ed72afad4e",
+                    "actions": [
+                        "received a millet dumpling",
+                        "jogged on with Momotaro"
+                    ],
+                    "importance": 0.8
                 },
                 {
                     "id": "agent_6cd1b1765d624129a502272096d596eb",
                     "actions": [
-                        "joined Momotaro on his journey",
-                        "provided companionship and support"
+                        "met Momotaro and the monkey",
+                        "called out to Momotaro"
                     ],
-                    "importance": 0.4
+                    "importance": 0.7
+                }
+            ],
+            "objects": [
+                "object_219a37fdcdc64f2a802d68dbbcc8f4c8",
+                "object_7007bac8c1f04aebb064479b590a1ae4"
+            ],
+            "place": "place_ea267171476e4cc182baf7460537da2b"
+        },
+        {
+            "id": "event_c1bf8626ebcb45ab87a24fc7bb9a7f33",
+            "type": "hero_departure",
+            "name": "Momotaro Meets Pheasant Ally",
+            "description": "So Momotaro gave a millet dumpling to the pheasant, and the three of them jogged on together. They hadn’t gone far when they fell in with a dog. “Bow! Wow! Wow!” says the dog. “Where are you off to, Momotaro?”",
+            "thoughts": [
+                "The text describes Momotaro giving millet dumplings to his animal companions as they journey together. This event is part of the preparation phase, where Momotaro acquires allies and support for his quest.",
+                "The event describes a friendly encounter between the hero Momotaro and a pheasant, where they jog on together after exchanging millet dumplings. This scene is part of the preparation phase as Momotaro gathers allies for his journey to the Ogres' Island."
+            ],
+            "agents": [
+                {
+                    "id": "agent_a16a007a1bc04f3db5c50a354be4bdfa",
+                    "actions": [
+                        "gave a millet dumpling to the pheasant",
+                        "jogged on together with the pheasant"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_6cd1b1765d624129a502272096d596eb",
+                    "actions": [
+                        "received a millet dumpling from Momotaro",
+                        "jogged on together with Momotaro"
+                    ],
+                    "importance": 0.8
                 },
                 {
                     "id": "agent_0dde1212c7ee4322974123f05371dea3",
                     "actions": [
-                        "joined Momotaro on his journey",
-                        "provided companionship and support"
+                        "met Momotaro and the pheasant",
+                        "exchanged greetings with Momotaro"
                     ],
                     "importance": 0.4
+                }
+            ],
+            "objects": [
+                "object_7007bac8c1f04aebb064479b590a1ae4"
+            ],
+            "place": "place_3232e848cbbf41f5ab29f6efb68bc44d"
+        },
+        {
+            "id": "event_fec3a5b334e340a7867ac491aabd4c05",
+            "type": "move",
+            "name": "Momotaro Wins Dog Ally",
+            "description": "So Momotaro gave a millet dumpling to the dog, and the four of them jogged on together. By-and-by they came to the Ogres’ Island.",
+            "thoughts": [
+                "The hero, Momotaro, is on a journey to the Ogres' Island and is gathering allies for his adventure. The event presents a series of encounters where he shares his millet dumplings with other animals, who then join him on his quest."
+            ],
+            "agents": [
+                {
+                    "id": "agent_a16a007a1bc04f3db5c50a354be4bdfa",
+                    "actions": [
+                        "gave a millet dumpling to the dog",
+                        "jogged on together with the dog and other companions"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_0dde1212c7ee4322974123f05371dea3",
+                    "actions": [
+                        "received a millet dumpling from Momotaro",
+                        "jogged on together with Momotaro and other companions"
+                    ],
+                    "importance": 0.4
+                }
+            ],
+            "objects": [
+                "object_7007bac8c1f04aebb064479b590a1ae4"
+            ],
+            "place": "place_ea267171476e4cc182baf7460537da2b"
+        },
+        {
+            "id": "event_bfd059616637477db77c77dd76f0df09",
+            "type": "preparation",
+            "name": "Momotaro Plans Attack Strategy",
+            "description": "“Now, brothers,” says Momotaro, “listen to my plan. The pheasant must fly over the castle gate and peck the Ogres. The monkey must climb over the castle wall and pinch the Ogres. The dog and I will break the bolts and bars. He will bite the Ogres, and I will fight the Ogres.”",
+            "thoughts": [
+                "The hero, Momotaro, and his animal companions plan their attack on the Ogres' Island. This event is part of the preparation phase, where the hero acquires allies and strategies for the main conflict.",
+                "The event describes Momotaro and his animal allies devising a plan of action before approaching the Ogres' Island. This planning is part of their preparation phase as they gather resources and acquire knowledge to aid in their mission."
+            ],
+            "agents": [
+                {
+                    "id": "agent_a16a007a1bc04f3db5c50a354be4bdfa",
+                    "actions": [
+                        "plan",
+                        "fight"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_c7143304d6c24f368f16a7ed72afad4e",
+                    "actions": [
+                        "fly over the castle gate",
+                        "peck the Ogres"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_6cd1b1765d624129a502272096d596eb",
+                    "actions": [
+                        "climb over the castle wall",
+                        "pinch the Ogres"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_0dde1212c7ee4322974123f05371dea3",
+                    "actions": [
+                        "bite the Ogres"
+                    ],
+                    "importance": 0.7
+                }
+            ],
+            "objects": [],
+            "place": "place_ea267171476e4cc182baf7460537da2b"
+        },
+        {
+            "id": "event_8530a48bbe49425ca1db40444471d6d6",
+            "type": "helper_move",
+            "name": "Momotaro Prepares for Battle",
+            "description": "Then there was the great battle. Japanese Fairy tale Series, 1 of 16. Griffiin, Farran and Co. Unknown author and illustrator. Published around the 1890’s.",
+            "thoughts": [
+                "The narrative has progressed from a peaceful setting with an old couple to the birth of Momotaro and his subsequent journey. The current event describes Momotaro's preparation for battle against the Ogres on their island, gathering allies along the way."
+            ],
+            "agents": [
+                {
+                    "id": "agent_c7143304d6c24f368f16a7ed72afad4e",
+                    "actions": [
+                        "Joins Momotaro on his journey",
+                        "Fights against the ogres"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_6cd1b1765d624129a502272096d596eb",
+                    "actions": [
+                        "Joins Momotaro on his journey",
+                        "Fights against the ogres"
+                    ],
+                    "importance": 0.7
+                },
+                {
+                    "id": "agent_0dde1212c7ee4322974123f05371dea3",
+                    "actions": [
+                        "Joins Momotaro on his journey",
+                        "Fights against the ogres"
+                    ],
+                    "importance": 0.6
+                },
+                {
+                    "id": "agent_a16a007a1bc04f3db5c50a354be4bdfa",
+                    "actions": [
+                        "Prepares for battle against the Ogres"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [
+                "object_219a37fdcdc64f2a802d68dbbcc8f4c8"
+            ],
+            "place": "place_ea267171476e4cc182baf7460537da2b"
+        },
+        {
+            "id": "event_57fb2237427943ecb905e1247d666775",
+            "type": "make_contact_with_enemy",
+            "name": "Pheasant Signals Final Approach",
+            "description": "The pheasant flew over the castle gate: “Ken! Ken! Ken!” Momotaro broke the bolts and bars, and the dog leapt into the castle courtyard. “Bow! Wow! Wow!”",
+            "thoughts": [
+                "The pheasant's call of 'Ken! Ken!' signals a turning point as Momotaro and his companions approach the Ogres' Island. They have just arrived at the final destination of their journey and are about to put their plan into action.",
+                "The pheasant's arrival marks a turning point as Momotaro's group forms and their plan of action begins to take shape."
+            ],
+            "agents": [
+                {
+                    "id": "agent_6cd1b1765d624129a502272096d596eb",
+                    "actions": [
+                        "flew over the castle gate"
+                    ],
+                    "importance": 0.7
+                },
+                {
+                    "id": "agent_0dde1212c7ee4322974123f05371dea3",
+                    "actions": [
+                        "leapt into the castle courtyard"
+                    ],
+                    "importance": 0.6
+                }
+            ],
+            "objects": [
+                "object_219a37fdcdc64f2a802d68dbbcc8f4c8"
+            ],
+            "place": "place_ea267171476e4cc182baf7460537da2b"
+        },
+        {
+            "id": "event_f8991daf5c1e4829a9ff7b82c3d5a722",
+            "type": "move",
+            "name": "Momotaro Defeats the Ogres.",
+            "description": "The brave companions fought till sundown and overcame the Ogres. Those that were left alive they took prisoners and bound with cords—a wicked lot they were.",
+            "thoughts": [
+                "The event describes a significant moment in the story where Momotaro and his companions fight against the Ogres. This is an action-oriented part of the narrative that drives the plot forward. The previous events have set up the journey to the Ogres' Island, and this event escalates the conflict.",
+                "The event describes a key moment in the story where Momotaro and his companions overcome the Ogres, but it's not a direct confrontation or a turning point. It's more of an intermediate stage."
+            ],
+            "agents": [
+                {
+                    "id": "agent_a16a007a1bc04f3db5c50a354be4bdfa",
+                    "actions": [
+                        "fought",
+                        "overcame the Ogres"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_c7143304d6c24f368f16a7ed72afad4e",
+                    "actions": [
+                        "fought"
+                    ],
+                    "importance": 0.7
+                },
+                {
+                    "id": "agent_6cd1b1765d624129a502272096d596eb",
+                    "actions": [
+                        "fought"
+                    ],
+                    "importance": 0.7
+                },
+                {
+                    "id": "agent_0dde1212c7ee4322974123f05371dea3",
+                    "actions": [
+                        "fought",
+                        "took prisoners and bound with cords"
+                    ],
+                    "importance": 0.8
                 }
             ],
             "objects": [
@@ -998,106 +1057,21 @@
             "place": "place_90a5b51f13674691bb11189cab13491c"
         },
         {
-            "id": "event_ab6f7eea6af74a53ba5077f1ad262d5a",
-            "type": "connective_incident",
-            "name": "Momotaro Enters Castle",
-            "description": "The pheasant flew over the castle gate: “Ken! Ken! Ken!” Momotaro broke the bolts and bars, and the dog leapt into the castle courtyard. “Bow! Wow! Wow!”",
-            "thoughts": [
-                "The event describes a connective incident that links two narrative segments without being a conflict or resolution in itself. It moves the plot forward mechanically by introducing new characters and forming alliances.",
-                "The event describes a connective incident that links two narrative segments without being a conflict or resolution in itself. It moves the plot forward mechanically by introducing new characters and allies for Momotaro.",
-                "The event describes a connective incident that links two narrative segments without being a conflict or resolution in itself. It moves the plot forward mechanically by introducing new characters and allies for Momotaro."
-            ],
-            "agents": [
-                {
-                    "id": "agent_a16a007a1bc04f3db5c50a354be4bdfa",
-                    "actions": [
-                        "broke the bolts and bars"
-                    ],
-                    "importance": 0.9
-                },
-                {
-                    "id": "agent_6cd1b1765d624129a502272096d596eb",
-                    "actions": [
-                        "flew over the castle gate",
-                        "cried out: “Ken! Ken! Ken!”"
-                    ],
-                    "importance": 0.8
-                },
-                {
-                    "id": "agent_0dde1212c7ee4322974123f05371dea3",
-                    "actions": [
-                        "leapt into the castle courtyard"
-                    ],
-                    "importance": 0.7
-                }
-            ],
-            "objects": [
-                "object_219a37fdcdc64f2a802d68dbbcc8f4c8"
-            ],
-            "place": "place_ea267171476e4cc182baf7460537da2b"
-        },
-        {
-            "id": "event_d569424e62a64e01830a9d7d3fd4b080",
-            "type": "move",
-            "name": "Companions Overcome Ogre Forces",
-            "description": "The brave companions fought till sundown and overcame the Ogres. Those that were left alive they took prisoners and bound with cords—a wicked lot they were.",
-            "thoughts": [
-                "The event describes a key moment in the story where Momotaro and his companions prepare for battle against the Ogres. The previous events have set up the journey and the plan of action, and this event marks an escalation towards the climax.",
-                "The event describes a key moment in the story where Momotaro and his companions fight against the Ogres. This is a turning point in their journey as they overcome a significant obstacle.",
-                "The event describes a key moment in the story where Momotaro and his companions fight against the Ogres. This is a turning point in their journey as they overcome the main obstacle on their path."
-            ],
-            "agents": [
-                {
-                    "id": "agent_c7143304d6c24f368f16a7ed72afad4e",
-                    "actions": [
-                        "fought against the Ogres"
-                    ],
-                    "importance": 0.9
-                },
-                {
-                    "id": "agent_6cd1b1765d624129a502272096d596eb",
-                    "actions": [
-                        "fought against the Ogres"
-                    ],
-                    "importance": 0.8
-                },
-                {
-                    "id": "agent_0dde1212c7ee4322974123f05371dea3",
-                    "actions": [
-                        "fought against the Ogres"
-                    ],
-                    "importance": 0.7
-                },
-                {
-                    "id": "agent_730809ef68454b4a8ae5dae214a5c6d8",
-                    "actions": [
-                        "were fought against by Momotaro and his companions",
-                        "were taken prisoners and bound with cords"
-                    ],
-                    "importance": 1.0
-                }
-            ],
-            "objects": [
-                "object_219a37fdcdc64f2a802d68dbbcc8f4c8"
-            ],
-            "place": "place_ea267171476e4cc182baf7460537da2b"
-        },
-        {
-            "id": "event_943a36d0461042c6ad682b32c293b9bf",
+            "id": "event_49f0dd8934d142aeae5e0fb3e5241d82",
             "type": "departure_decision",
-            "name": "Momotaro Prepares Departure Plan",
+            "name": "Momotaro Chooses Treasure Quest",
             "description": "“Now, brothers,” says Momotaro, “bring out the Ogres’ treasure.” So they did. The treasure was worth having, indeed. There were magic jewels there, and caps and coats to make you invisible.",
             "thoughts": [
-                "The event describes Momotaro's decision to leave for the Ogres' Island and his plan of action with his animal companions. This is a key moment in the story where the hero consciously decides to take action against the antagonist.",
-                "The event describes Momotaro's decision to leave for the Ogres' Island and his plan of action with his animal companions. This is a key moment in the story where the hero consciously decides to take action against the antagonist.",
-                "The event describes Momotaro's decision to leave for the Ogres' Island and his plan of action with his animal companions. This is a key moment in the story where the hero consciously decides to take action against the antagonist."
+                "The event describes Momotaro's decision to leave and begin his mission to get the Ogres' treasure. This is a pivotal moment in the story where Momotaro takes initiative and sets off on his adventure.",
+                "The event describes Momotaro's decision to leave and begin his mission to the Ogres' Island. The decision itself is the event, not the departure.",
+                "The event describes Momotaro's decision to leave and begin his mission to retrieve the Ogres' treasure. The previous context establishes the hero's ordinary life, his motivation for going on an adventure, and his preparation. This event marks a turning point in the narrative as it sets the stage for the main conflict."
             ],
             "agents": [
                 {
                     "id": "agent_a16a007a1bc04f3db5c50a354be4bdfa",
                     "actions": [
-                        "decided to leave for the Ogres' Island",
-                        "planned action with animal companions"
+                        "brought out Ogres' treasure",
+                        "decided to leave for the mission"
                     ],
                     "importance": 0.9
                 },
@@ -1123,47 +1097,36 @@
                     "importance": 0.4
                 }
             ],
-            "objects": [
-                "object_2b0f190a9ddc4cc38c615c38dfc667de"
-            ],
+            "objects": [],
             "place": "place_ea267171476e4cc182baf7460537da2b"
         },
         {
-            "id": "event_208597760f2743b9b7e17b5ed1c4fc4b",
+            "id": "event_812a446148804ee1a7a8bd53e02fbc7d",
             "type": "make_contact_with_enemy",
-            "name": "Offer Treasure to Allies",
+            "name": "Momotaro Shares Spoils",
             "description": "There was gold and silver, and jade and coral, and amber and tortoise-shell and mother-of-pearl. “Here’s riches for all,” says Momotaro. “Choose, brothers, and take your fill.”",
             "thoughts": [
-                "The event describes Momotaro's plan for overcoming the Ogres' Island and retrieving their treasure. This is a key moment in the story where the hero outlines his strategy for success.",
-                "The event describes Momotaro's plan to overcome the Ogres' Island and retrieve their treasure. This is a key moment in the story where the hero outlines his strategy for success."
+                "The event describes a key moment in the story where Momotaro's plan comes together and his companions help him overcome the Ogres. This is a turning point in the narrative as they successfully breach the castle and begin to achieve their goal."
             ],
             "agents": [
                 {
-                    "id": "agent_a16a007a1bc04f3db5c50a354be4bdfa",
-                    "actions": [
-                        "outlines his strategy for success",
-                        "offers riches to his brothers"
-                    ],
-                    "importance": 0.9
-                },
-                {
                     "id": "agent_c7143304d6c24f368f16a7ed72afad4e",
                     "actions": [
-                        "listened to Momotaro's plan"
+                        "joins Momotaro on his journey"
                     ],
                     "importance": 0.4
                 },
                 {
                     "id": "agent_6cd1b1765d624129a502272096d596eb",
                     "actions": [
-                        "listened to Momotaro's plan"
+                        "joins Momotaro on his journey"
                     ],
                     "importance": 0.4
                 },
                 {
                     "id": "agent_0dde1212c7ee4322974123f05371dea3",
                     "actions": [
-                        "listened to Momotaro's plan"
+                        "joins Momotaro on his journey"
                     ],
                     "importance": 0.4
                 }
@@ -1172,43 +1135,39 @@
             "place": "place_90a5b51f13674691bb11189cab13491c"
         },
         {
-            "id": "event_c89d726a0a1a492d8e64f7129f41d788",
+            "id": "event_aa03722efe8a47039cd3b36ee7989ee6",
             "type": "preparation",
-            "name": "Momotaro Prepares His Allies",
+            "name": "Momotaro Assembles Allies",
             "description": "“Kia! Kia!” says the monkey. “Thanks, my Lord Momotaro.” “Ken! Ken!” says the pheasant. “Thanks, my Lord Momotaro.” “Bow! Wow! Wow!” says the dog. “Thanks, my dear Lord Momotaro.”",
             "thoughts": [
-                "The event describes the hero acquiring what they need — objects, knowledge, allies, or strategy — before facing the main antagonist. Momotaro and his animal companions are preparing for their mission by gathering food and planning their attack.",
-                "The event describes the hero acquiring what they need — objects, knowledge, allies, or strategy — before facing the main antagonist. Momotaro and his companions are preparing for their mission by gathering food and planning their attack.",
-                "The event describes the hero acquiring what they need — objects, knowledge, allies, or strategy — before facing the main antagonist. Momotaro and his companions are preparing for their mission by gathering food and planning their attack."
+                "The event describes Momotaro gathering his companions before beginning the battle against the Ogres. This is part of the preparation phase where he acquires what he needs — allies and a plan — to face the main antagonist.",
+                "The event shows the hero acquiring what they need — objects, knowledge, allies, or strategy — before facing the main antagonist. The story has progressed beyond setup and initial situation; the hero is now preparing for a journey, gathering companions and making plans to conquer the Ogres' Island."
             ],
             "agents": [
                 {
                     "id": "agent_c7143304d6c24f368f16a7ed72afad4e",
                     "actions": [
-                        "thanks",
-                        "gathering food"
+                        "greets Momotaro"
                     ],
                     "importance": 0.6
                 },
                 {
                     "id": "agent_6cd1b1765d624129a502272096d596eb",
                     "actions": [
-                        "thanks",
-                        "gathering food"
+                        "greets Momotaro"
                     ],
                     "importance": 0.6
                 },
                 {
                     "id": "agent_0dde1212c7ee4322974123f05371dea3",
                     "actions": [
-                        "thanks",
-                        "gathering food"
+                        "greets Momotaro"
                     ],
                     "importance": 0.6
                 }
             ],
             "objects": [],
-            "place": "place_90a5b51f13674691bb11189cab13491c"
+            "place": "place_0c329b7ce94440ffa53fd7cedc8fb17f"
         }
     ]
 }

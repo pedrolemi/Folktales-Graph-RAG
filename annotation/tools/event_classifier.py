@@ -349,6 +349,89 @@ def hierarchical_event_classification(model: BaseChatModel, event_index: int, st
 
 	return previous_event, final_thoughts
 
+
+
+
+def collect_options(node):
+    options = []
+    
+    for child_id, info in node.get("children", {}).items():
+        # añadir el hijo actual
+        options.append((child_id, info["description"]))
+        
+        # procesar sus hijos (recursivo)
+        options.extend(collect_options(info))
+    
+    return options
+
+
+def event_classification(model: BaseChatModel, event_index: int, story_segments: list[str], taxonomy_tree: dict, n_rounds: int = 3, verbose: bool = False):
+	event_text = story_segments[event_index]
+	past_story = "\n".join(story_segments[:event_index])
+	total_events = len(story_segments)
+	votes = []
+	thoughts = []
+	final_thoughts = []
+	options_list = collect_options(taxonomy_tree["function"])
+	options_str = _build_options_prompt_by_list(options_list)
+	for i in range(n_rounds):
+		event, thinking = _extract_event(
+			model=model,
+			folktale_event=event_text,
+			past_story=past_story,
+			event_index=event_index,
+			total_events=total_events,
+			options=options_str,
+			previous_thoughts=final_thoughts
+		)
+
+		if 0 <= event < len(options_list):
+			votes.append(event)
+			thoughts.append(thinking)
+
+	if not votes:
+		return None, final_thoughts
+
+	# Voto por mayoría
+	vote_count = Counter(votes)
+	max_freq = max(vote_count.values())
+	most_frequent = [v for v, c in vote_count.items() if c == max_freq]
+
+	winning_event_idx = most_frequent[0]
+
+	if len(most_frequent) > 1:
+		selected = [options_list[i] for i in most_frequent]
+		selected_str = _build_options_prompt_by_list(selected)
+
+		event, thinking = _extract_event(
+			model=model,
+			folktale_event=event_text,
+			past_story=past_story,
+			event_index=event_index,
+			total_events=total_events,
+			options=selected_str,
+			previous_thoughts=final_thoughts
+		)
+
+		if (0 <= event < len(selected)):
+			winning_event_idx = most_frequent[event]
+
+	final_thoughts.extend(
+		thoughts[i] for i, v in enumerate(votes) if v == winning_event_idx
+	)
+	
+	winning_event = options_list[winning_event_idx][0]
+
+	return winning_event, final_thoughts
+
+
+
+
+
+
+
+###############################################################
+
 name_system_prompt = SystemMessagePromptTemplate.from_template(
 	template="""You are an expert narrative annotation assistant.
 Your task is to generate a concise for a narrative event.
