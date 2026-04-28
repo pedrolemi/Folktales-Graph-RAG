@@ -7,8 +7,11 @@ requires-python = ">=3.12"
 dependencies = [
     "dotenv>=0.9.9",
     "ipykernel>=7.2.0",
+    "langchain>=1.2.15",
+    "langchain-classic>=1.0.4",
     "langchain-core>=1.2.26",
     "langchain-ollama>=1.0.1",
+    "langgraph>=1.1.9",
     "loguru>=0.7.3",
     "matplotlib>=3.10.8",
     "neo4j>=6.1.0",

@@ -4,7 +4,7 @@ from neo4j_manager import Neo4jManager
 from config import get_settings
 from typing import Optional
 from schemas.folktale import Folktale
-from schemas.agent import Agent, Personality
+from schemas.agent import Agent
 from schemas.relationship import Relationship
 from pydantic import BaseModel
 from schemas.event import Event
@@ -13,18 +13,18 @@ import os
 
 
 class FolktaleGraphBuilder:
-    def __init__(self, metadata_dir: str = "./metadata"):
+    def __init__(self, neo4j: Neo4jManager, metadata_dir: str = "./metadata"):
+        self.neo4j = neo4j
         self.metadata_dir = metadata_dir
         self.structure_dir = os.path.join(metadata_dir, "structure")
         self.collections_dir = os.path.join(metadata_dir, "collections")
 
         self.settings = get_settings()
 
-        self.manager = Neo4jManager()
         self.model = get_embeddings()
 
     def clear_database(self):
-        self.manager.execute_query("MATCH (n) DETACH DELETE n")
+        self.neo4j.execute_query("MATCH (n) DETACH DELETE n")
 
     def create_constraints(self):
         constraints = [
@@ -44,10 +44,10 @@ class FolktaleGraphBuilder:
             "CREATE CONSTRAINT trait_name IF NOT EXISTS FOR (t:Trait) REQUIRE t.name IS UNIQUE",
             "CREATE CONSTRAINT function_name IF NOT EXISTS FOR (f:Function) REQUIRE f.name IS UNIQUE",
         ]
-        self.manager.create_constraints(constraints)
+        self.neo4j.create_constraints(constraints)
 
-    def create_vector_database(self, overwrite: bool):
-        self.manager.create_vector_index(
+    def create_vector_databases(self, overwrite: bool = False):
+        self.neo4j.create_vector_index(
             index_name="event_embeddings",
             label="Event",
             property_name="embedding",
@@ -68,7 +68,7 @@ class FolktaleGraphBuilder:
             """
 
             for name, description in collection.items():
-                self.manager.execute_query(query, {
+                self.neo4j.execute_query(query, {
                     "name": name,
                     "description": description
                 })
@@ -90,7 +90,7 @@ class FolktaleGraphBuilder:
             "parent": parent
         }
 
-        self.manager.execute_query(query, params)
+        self.neo4j.execute_query(query, params)
 
         for child_name, child_node in node.get("children", {}).items():
             self._insert_node(label, child_name, child_node, name)
@@ -127,7 +127,7 @@ class FolktaleGraphBuilder:
             "nation": folktale.nation
         }
 
-        self.manager.execute_query(query, params)
+        self.neo4j.execute_query(query, params)
     
     def insert_entities(self, label: str, items: list[BaseModel]):
         query = f"""
@@ -139,7 +139,7 @@ class FolktaleGraphBuilder:
         
         for item in items:
             params = item.model_dump(include={"id", "type", "name", "description"})
-            self.manager.execute_query(query, params)
+            self.neo4j.execute_query(query, params)
 
     def insert_agents(self, agents: list[Agent]):
         agent_query = """
@@ -181,18 +181,17 @@ class FolktaleGraphBuilder:
                 "gender": agent.gender
             }
 
-            self.manager.execute_query(agent_query, params)
+            self.neo4j.execute_query(agent_query, params)
 
             if agent.lives_in:
-                self.manager.execute_query(place_query, {
+                self.neo4j.execute_query(place_query, {
                     "agent_id": agent_id,
                     "place_id": agent.lives_in
                 })
 
             personality = agent.personality.model_dump()
             for trait, strength in personality.items():
-                # print(trait, strength)
-                self.manager.execute_query(trait_query, {
+                self.neo4j.execute_query(trait_query, {
                     "agent_id": agent_id,
                     "trait": trait,
                     "strength": float(strength)
@@ -208,7 +207,7 @@ class FolktaleGraphBuilder:
         """
 
         for rel in relationships:
-            self.manager.execute_query(query, {
+            self.neo4j.execute_query(query, {
                 "source_id": rel.source_id,
                 "target_id": rel.target_id,
                 "type": rel.type,
@@ -267,10 +266,7 @@ class FolktaleGraphBuilder:
         embeddings = self.model.embed_documents(descriptions)
 
         for idx, event in enumerate(events):
-
-            print(idx == 0)
-
-            self.manager.execute_query(event_query, {
+            self.neo4j.execute_query(event_query, {
                 "event_id": event.id,
                 "description": event.description,
                 "embedding": embeddings[idx],
@@ -284,7 +280,7 @@ class FolktaleGraphBuilder:
             })
 
             for agent in event.agents:
-                self.manager.execute_query(agent_event_query, {
+                self.neo4j.execute_query(agent_event_query, {
                     "event_id": event.id,
                     "agent_id": agent.id,
                     "importance": agent.importance,
@@ -292,13 +288,13 @@ class FolktaleGraphBuilder:
                 })
 
             for obj_id in event.objects:
-                self.manager.execute_query(object_event_query, {
+                self.neo4j.execute_query(object_event_query, {
                     "event_id": event.id,
                     "object_id": obj_id
                 })
 
         for i in range(1, len(events)):
-            self.manager.execute_query(event_order_query, {
+            self.neo4j.execute_query(event_order_query, {
                 "prev_id": events[i - 1].id,
                 "current_id": events[i].id
             })
@@ -323,17 +319,12 @@ class FolktaleGraphBuilder:
         RETURN 'Place' AS type, p.id AS id, p.name AS name, 'No event usage and uninhabited' AS reason
         """
 
-        return self.manager.execute_query(query)
+        return self.neo4j.execute_query(query)
     
     def setup(self):
-        self.clear_database()
         self.create_constraints()
-        # self.create_vector_database()
         self.load_collections()
         self.load_structures()
-
-    def finalize(self):
-        self.manager.close()
     
     def add_folktale(self, folktale: Folktale):
         self.insert_folktale(folktale)
@@ -341,5 +332,4 @@ class FolktaleGraphBuilder:
         self.insert_entities("Place", folktale.places)
         self.insert_agents(folktale.agents)
         self.insert_relationships(folktale.relationships)
-        print(folktale.url)
         self.insert_events(folktale.events, folktale.url)
