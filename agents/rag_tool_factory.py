@@ -8,7 +8,7 @@ from .terminal_tool_factory import BaseToolFactory
 from typing import Any
 
 class QueryInput(BaseModel):
-    query: str = Field(..., description="Natural language query")
+    query: str = Field(..., description="Cypher natural language query.")
 
 class RAGToolFactory(BaseToolFactory):
     def __init__(self, neo4j_manager: Neo4jManager, vector_index: str, fulltext_index: str, node_label: str, text_property: str):

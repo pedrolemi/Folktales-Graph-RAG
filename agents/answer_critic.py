@@ -3,11 +3,10 @@ from utils.models import get_llm
 from pydantic import BaseModel, Field
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
 
-class CritiqueResult(BaseModel):
-    is_complete: bool = Field(description="Whether the answer fully addresses the question")
-    is_faithful: bool = Field(description="Whether the answer is supported by the context")
-    missing_info: list[str] = Field(default_factory=list, description="Missing information or follow-up questions")
-    feedback: str = Field(description="Short explanation of the evaluation")
+class Critique(BaseModel):
+    is_complete: bool = Field(description="True if the answer fully addresses every part of the question without omissions.")
+    is_faithful: bool = Field(description="True if each statement in the answer is explicitly supported by the provided context.")
+    missing_info: list[str] = Field(default_factory=list, description="Specific missing facts, constraints or sub-questions needed to fully answer the question.")
 
 class AnswerCritic:
     def __init__(self):
@@ -15,38 +14,55 @@ class AnswerCritic:
 
         system_prompt = """You are an expert at evaluating answers to questions based on provided context.
 
-Your task is to determine:
-1. Is the answer complete? (Does it fully address all parts of the question?)
-2. Is the answer faithful? (Is it supported by the provided context?)
-3. What information is missing, if any?
+You must evaluate an ANSWER using ONLY the provided CONTEXT.
 
-Respond ONLY with valid JSON in this format:
-{{
-    "is_complete": true/false,
-    "is_faithful": true/false,
-    "missing_info": ["additional question 1", "additional question 2"],
-    "feedback": "brief explanation"
-}}
+Your are NOT ALLOWED to use outside knowledge.
 
-If the answer is complete and faithful, missing_info should be an empty list."""
+EVALUATION RULES:
+
+1. COMPLETENESS (is_complete)
+- True ONLY if the answer fully addresses ALL the parts of the question.
+- False if any sub-question, restriction or fact is missing.
+
+2. FAITHFULNESS (is_faithful)
+- True ONLY if each statement in the answer is explicitly supported by the context.
+- False if:
+    - the answer more information than that suggested by the context.
+    - the answer paraphrases beyond what is supported.
+
+3. MISSING INFORMATION (missing_info)
+- List ONLY what is necessar yto complete the answer.
+- Express it as brief, specific missing items or as follow-up questions.
+- If nothing is missing, return an empty list.
+
+CRITICAL RULES:
+- Do NOT use external knowledge.
+- Do NOT infer missing facts.
+- Be strict and conservative in judgments.
+
+OUTPUT FORMAT:
+Return ONLY valid JSON matching the schema."""
 
         prompt = ChatPromptTemplate.from_messages([
             ("system", system_prompt),
-            HumanMessagePromptTemplate.from_template(template="""Question: {question}
+            HumanMessagePromptTemplate.from_template(template="""
+QUESTION: 
+{question}
 
-Context:
+CONTEXT:
 {context}
 
-Answer: {answer}
+ANSWER:
+{answer}
 
-Evaluate this answer.
+Evaluate strictly according to the rules.
 """)
         ])
 
-        self.chain = prompt | client.with_structured_output(CritiqueResult)
+        self.chain = prompt | client.with_structured_output(Critique)
 
 
-    def critique(self, question: str, context: list[str], answer: str) -> CritiqueResult:
+    def critique(self, question: str, context: list[str], answer: str) -> Critique:
         context_str = "\n\n".join(
             f"[{i + 1}] {c}" for i, c in enumerate(context)
         )
@@ -57,5 +73,5 @@ Evaluate this answer.
             "answer": answer,
         })
 
-        return cast(CritiqueResult, result)
+        return cast(Critique, result)
     
