@@ -14,8 +14,7 @@ class BaseToolFactory:
 
     def _build_tool_map(self, tools: list[BaseTool]):
         self.tool_map = {tool.name: tool for tool in tools}
-        print(self.tool_map.keys())
-
+        
     def is_terminal_tool(self, name: str) -> bool:
         tool = self.tool_map.get(name)
 

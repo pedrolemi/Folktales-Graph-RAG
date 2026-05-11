@@ -1,12 +1,12 @@
 from utils.regex_utils import snake_case_to_pascal_case
 from utils.loader import load_json_folder
 from neo4j_manager import Neo4jManager
+from pydantic import BaseModel
 from config import get_settings
 from typing import Optional
 from schemas.folktale import Folktale
 from schemas.agent import Agent
 from schemas.relationship import Relationship
-from pydantic import BaseModel
 from schemas.event import Event
 from utils.models import get_embeddings
 import os
@@ -50,6 +50,33 @@ class FolktaleGraphBuilder:
         self.neo4j.create_vector_index(
             index_name="event_embeddings",
             label="Event",
+            property_name="embedding",
+            dimensions=768,
+            similarity="cosine",
+            overwrite=overwrite
+        )
+
+        self.neo4j.create_vector_index(
+            index_name="agent_embeddings",
+            label="Agent",
+            property_name="embedding",
+            dimensions=768,
+            similarity="cosine",
+            overwrite=overwrite
+        )
+
+        self.neo4j.create_vector_index(
+            index_name="place_embeddings",
+            label="Place",
+            property_name="embedding",
+            dimensions=768,
+            similarity="cosine",
+            overwrite=overwrite
+        )
+
+        self.neo4j.create_vector_index(
+            index_name="object_embeddings",
+            label="Object",
             property_name="embedding",
             dimensions=768,
             similarity="cosine",
@@ -129,26 +156,52 @@ class FolktaleGraphBuilder:
 
         self.neo4j.execute_query(query, params)
     
-    def insert_entities(self, label: str, items: list[BaseModel]):
+    def insert_entities(self, label: str, items: list[BaseModel], folktale: Folktale):
         query = f"""
         MERGE (n:{label} {{id: $id}})
         SET n.type = $type,
             n.name = $name,
-            n.description = $description
+            n.description = $description,
+            n.embedding = $embedding
         """
         
-        for item in items:
-            params = item.model_dump(include={"id", "type", "name", "description"})
+        params_list = [
+            item.model_dump(include={"id", "type", "name", "description"})
+            for item in items
+        ]
+
+        def build_entity_embedding_text(label: str, item: dict, folktale: Folktale) -> str:
+            return f"""Folktale: {folktale.title}
+
+{label}: {item["name"]}
+Type: {item["type"]}
+
+Description:
+{item["description"]}
+"""
+
+        descriptions = [
+            build_entity_embedding_text(label, item, folktale)
+            for item in params_list
+        ]
+
+        print(descriptions)
+
+        embeddings = self.model.embed_documents(descriptions)
+
+        for params, embedding in zip(params_list, embeddings):
+            params["embedding"] = embedding
             self.neo4j.execute_query(query, params)
 
-    def insert_agents(self, agents: list[Agent]):
+    def insert_agents(self, agents: list[Agent], folktale: Folktale):
         agent_query = """
         MERGE (a:Agent {id: $agent_id})
         SET a.race = $race,
             a.name = $name,
             a.ageGroup = $age_group,
             a.gender = $gender,
-            a.description = $description
+            a.description = $description,
+            a.embedding = $embedding
 
         WITH a
         MERGE (r:Role {name: $role})
@@ -168,7 +221,37 @@ class FolktaleGraphBuilder:
         SET r.strength = $strength
         """
 
-        for agent in agents:
+        def build_agent_embedding_text(agent: Agent, folktale: Folktale) -> str:
+            personality_dict = agent.personality.model_dump()
+
+            personality_text = "\n".join(
+                f"- {key.title()}: {value}"
+                for key, value in personality_dict.items()
+            )
+
+            return f"""Folktale: {folktale.title}
+
+Character: {agent.name}
+Role in story: {agent.role}
+Race: {agent.race}
+Gender: {agent.gender}
+Age group: {agent.age_group}
+
+Personality traits:
+{personality_text}
+
+Description:
+{agent.description}
+"""
+
+        descriptions = [
+            build_agent_embedding_text(agent, folktale)
+            for agent in agents
+        ]
+        
+        embeddings = self.model.embed_documents(descriptions)
+
+        for idx, agent in enumerate(agents):
             agent_id = agent.id
 
             params = {
@@ -178,7 +261,8 @@ class FolktaleGraphBuilder:
                 "name": agent.name,
                 "age_group": agent.age_group,
                 "description": agent.description,
-                "gender": agent.gender
+                "gender": agent.gender,
+                "embedding": embeddings[idx]
             }
 
             self.neo4j.execute_query(agent_query, params)
@@ -215,7 +299,7 @@ class FolktaleGraphBuilder:
                 "strength": rel.strength
             })
     
-    def insert_events(self, events: list[Event], folktale_url: str):
+    def insert_events(self, events: list[Event], folktale: Folktale):
         event_query = """
         MERGE (e:Event {id: $event_id})
         SET e.description = $description,
@@ -262,7 +346,24 @@ class FolktaleGraphBuilder:
         MERGE (e2)-[:PRE_EVENT]->(e1)
         """
 
-        descriptions = [event.description for event in events]
+        def build_event_embedding_text(event: Event, folktale: Folktale, order: int):
+            return f"""Folktale: {folktale.title}
+
+Event: {event.name}
+Order in story: {order}
+Narrative function: {event.type}
+
+Place: {event.place}
+
+Description:
+{event.description}
+"""
+
+        descriptions = [
+            build_event_embedding_text(event, folktale, idx)
+            for idx, event in enumerate(events)
+        ]
+
         embeddings = self.model.embed_documents(descriptions)
 
         for idx, event in enumerate(events):
@@ -275,7 +376,7 @@ class FolktaleGraphBuilder:
                 "thoughts": event.thoughts,
                 "place_id": event.place,
                 "function": event.type,
-                "url": folktale_url,
+                "url": folktale.url,
                 "is_first": idx == 0
             })
 
@@ -328,8 +429,8 @@ class FolktaleGraphBuilder:
     
     def add_folktale(self, folktale: Folktale):
         self.insert_folktale(folktale)
-        self.insert_entities("Object", folktale.objects)
-        self.insert_entities("Place", folktale.places)
-        self.insert_agents(folktale.agents)
+        self.insert_entities("Object", folktale.objects, folktale)
+        self.insert_entities("Place", folktale.places, folktale)
+        self.insert_agents(folktale.agents, folktale)
         self.insert_relationships(folktale.relationships)
-        self.insert_events(folktale.events, folktale.url)
+        self.insert_events(folktale.events, folktale)

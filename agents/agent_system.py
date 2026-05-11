@@ -5,6 +5,7 @@ from langgraph.graph import StateGraph, MessagesState, START, END
 from utils.models import get_llm
 from .tool_factory import BaseToolFactory
 from .answer_critic import AnswerCritic, Critique
+from .question_descomposer import QuestionDecomposer
 from langgraph.prebuilt import ToolNode
 from pydantic import BaseModel
 import json
@@ -16,15 +17,25 @@ class AgentResult(BaseModel):
     context: list[str]
     critique: Critique
 
+class AgentResponse(BaseModel):
+    question: str
+    answer: str
+    iterations: list[AgentResult]
+    final_critique: Critique
+
 class AgentSystem:
     def __init__(self):
         self.model = get_llm(0.0)
         self.critic = AnswerCritic()
+        self.decomposer = QuestionDecomposer()
         self.graph = None
         self.tool_manager: Optional[BaseToolFactory] = None
         self.system_prompt = ""
 
-    def _log(self, title: str, content: Any = "", indent: int = 0):
+    def _log(self, title: str, content: Any = "", indent: int = 0, verbose: bool = False):
+        if not verbose:
+            return
+
         prefix = " " * indent
         print(f"\n{prefix}{'=' * 10} {title} {'=' * 10}")
 
@@ -34,26 +45,31 @@ class AgentSystem:
             else:
                 print(prefix + str(content))
 
-    def _render_completed_message(self, message: AnyMessage):
-        print("\n")
+    def _render_completed_message(self, message: AnyMessage, verbose: bool = False):
+        if verbose:
+            print("\n")
+
         if isinstance(message, AIMessage):
             if message.tool_calls:
                 self._log(
                     "AI -> TOOL CALL",
                     message.tool_calls,
                     indent=2,
+                    verbose=verbose
                 )
             else:
                 self._log(
                     "AI -> FINAL ANSWER",
                     message.content,
                     indent=2,
+                    verbose=verbose
                 )
         elif isinstance(message, ToolMessage):
             self._log(
                 f"TOOL -> RESPONSE ({message.name})",
                 message.content_blocks,
                 indent=4,
+                verbose=verbose
             )
 
     def _build_agent(self, tool_manager: BaseToolFactory, system_prompt: str):
@@ -81,17 +97,23 @@ class AgentSystem:
                 return "tools"
             return END
         
+        def after_tools(state: MessagesState):
+            if self._is_terminal(state["messages"]):
+                return END
+
+            return "agent"
+        
         workflow = StateGraph(MessagesState)
         workflow.add_node("agent", call_model)
         workflow.add_node("tools", tool_node)
 
         workflow.add_edge(START, "agent")
         workflow.add_conditional_edges("agent", should_continue, {"tools": "tools", END: END})
-        workflow.add_edge("tools", "agent")
+        workflow.add_conditional_edges("tools", after_tools, {"agent": "agent", END: END})
 
         self.graph = workflow.compile(checkpointer=InMemorySaver())
     
-    def _run_agent(self, question: str, thread_id: str):
+    def _run_agent(self, question: str, thread_id: str, verbose: bool = False):
         input_message = {
             "role": "user",
             "content": question
@@ -111,7 +133,7 @@ class AgentSystem:
             for _, update in chunk.items():
                 if "messages" in update:
                     for msg in update["messages"]:
-                        self._render_completed_message(msg)
+                        self._render_completed_message(msg, verbose)
                         messages.append(msg)
 
         answer = messages[-1].content
@@ -143,89 +165,116 @@ class AgentSystem:
     def _is_terminal(self, messages: list[AnyMessage]) -> bool:
         if not self.tool_manager:
             return False
+        
+        last_message = messages[-1]
 
-        for msg in reversed(messages):
-            if isinstance(msg, ToolMessage) and self.tool_manager.is_terminal_tool(msg.name):
-                return True
-        return False
+        if not isinstance(last_message, ToolMessage):
+            return False
+    
+        return self.tool_manager.is_terminal_tool(last_message.name)
 
-    def answer(self, question: str, thread_id: str = "default", max_iterations: int = 2) -> dict[str, Any]:
+    def answer(self, question: str, thread_id: str = "default", max_iterations: int = 2, verbose: bool = False) -> AgentResponse:
         iterations: list[AgentResult] = []
-        current_question = question
+        # current_question = question
 
-        for i in range(max_iterations):
-            self._log(f"ITERATION {i + 1}")
-            self._log("QUESTION", current_question, indent=2)
+        queries = self.decomposer.run(question)
+        self._log("DECOMPOSED QUERIES", indent=0, verbose=verbose)
+        for i, query in enumerate(queries, 1):
+            self._log(f"Query {i}", query, indent=2, verbose=verbose)
 
-            answer, messages = self._run_agent(current_question, thread_id)
+        for idx, query in enumerate(queries):
+            parts = []
 
-            if self._is_terminal(messages):
+            if iterations:
+                previous_answer = iterations[-1].answer
+                previous_question = queries[idx - 1]
+
+                parts.append(
+                    "Previous Q&A:\n"
+                    f"- Question: {previous_question}\n"
+                    f"- Answer: {previous_answer}"
+                )
+
+            parts.append(f"Question: {query}")
+
+            current_question = "\n".join(parts)
+
+            for i in range(max_iterations):
+                self._log(f"ITERATION {i + 1}", verbose=verbose)
+                self._log(f"QUESTION {idx + 1}", current_question, indent=2, verbose=verbose)
+
+                answer, messages = self._run_agent(current_question, thread_id, verbose=verbose)
+
+                if self._is_terminal(messages):
+                    iterations.append(AgentResult(
+                        iteration=i+1,
+                        question=current_question,
+                        answer=answer,
+                        context=[],
+                        critique=Critique(
+                            is_complete=True,
+                            is_faithful=True,
+                            # missing_info=[]
+                        )
+                    ))
+                    break
+
+                context = self._extract_context(messages)
+                self._log("CONTEXT", context, indent=2, verbose=verbose)
+
+                if not context:
+                    iterations.append(AgentResult(
+                        iteration=i+1,
+                        question=current_question,
+                        answer="This information is not in the knowledge base.",
+                        context=[],
+                        critique=Critique(
+                            is_complete=False,
+                            is_faithful=True,
+                            # missing_info=[]
+                        )
+                    ))
+                    break
+
+                critique = self.critic.critique(
+                    current_question,
+                    context,
+                    answer
+                )
+
+                self._log("CRITIQUE", {
+                    "is_complete": critique.is_complete,
+                    "is_faithful": critique.is_faithful,
+                    "missing_info": critique.missing_info,
+                }, indent=2, verbose=verbose)
+
                 iterations.append(AgentResult(
                     iteration=i+1,
                     question=current_question,
                     answer=answer,
-                    context=[],
-                    critique=Critique(
-                        is_complete=True,
-                        is_faithful=True,
-                        missing_info=[]
-                    )
+                    context=context,
+                    critique=critique
                 ))
-                break
 
-            context = self._extract_context(messages)
-            self._log("CONTEXT", context, indent=2)
+                if critique.is_complete and critique.is_faithful:
+                    break
 
-            if not context:
-                iterations.append(AgentResult(
-                    iteration=i+1,
-                    question=current_question,
-                    answer="This information is not in the knowledge base.",
-                    context=[],
-                    critique=Critique(
-                        is_complete=False,
-                        is_faithful=True,
-                        missing_info=[]
-                    )
-                ))
-                break
+                if critique.missing_info and i < max_iterations - 1:
+                    missing = "\n".join(f"- {item}" for item in critique.missing_info)
 
-            critique = self.critic.critique(
-                current_question,
-                context,
-                answer
-            )
-
-            self._log("CRITIQUE", {
-                "is_complete": critique.is_complete,
-                "is_faithful": critique.is_faithful,
-                "missing_info": critique.missing_info,
-            }, indent=2)
-
-            iterations.append(AgentResult(
-                iteration=i+1,
-                question=current_question,
-                answer=answer,
-                context=context,
-                critique=critique
-            ))
-
-            if critique.is_complete and critique.is_faithful:
-                break
-
-            if critique.missing_info and i < max_iterations - 1:
-                current_question = (
-                    f"{current_question}\n"
-                    f"Follow-up requirements: {' '.join(critique.missing_info)}"
-                )
+                    current_question = "\n".join([
+                        current_question,
+                        "Missing info:",
+                        missing,
+                    ])
 
         final = iterations[-1]
 
-        self._log("LOOP FINISHED")
+        self._log("LOOP FINISHED", verbose=verbose)
 
-        return {
-            "question": question,
-            "answer": final.answer,
-            "iterations": iterations,
-            "final_critique": final.critique,
-        }    
+        return AgentResponse(
+            question=question,
+            answer=final.answer,
+            iterations=iterations,
+            final_critique=final.critique,
+        )

@@ -1,5 +1,5 @@
 from typing import Any
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from neo4j_manager import Neo4jManager
 from utils.models import get_llm
 from langchain_core.prompts import (
@@ -12,20 +12,25 @@ from .base_retriever import BaseRetriever
 from typing import cast
 
 class CypherQuery(BaseModel):
-    cypher: str
-
+    cypher: str = Field(
+		...,
+		description=(
+			"Cypher query to execute against the Neo4j knowledge graph. "
+			"Must be a valid Cypher statement using the folktale schema "
+			"(e.g., nodes like Folktale, Event, Agent, Nation and relationships "
+			"such as HAS_EVENT, HAS_AGENT, FROM_NATION, POST_EVENT)."
+		),
+	)
 
 class Text2CypherRetriever(BaseRetriever):
     def __init__(self, neo4j_manager: Neo4jManager):
-        self.neo4j = neo4j_manager
+        super().__init__(neo4j_manager, "")
         self.model = get_llm(0.0)
         self.few_shot_examples = []
 
         schema = self.neo4j.get_schema()
         self.schema_str = self.neo4j.format_schema(schema)
         self.schema_str = self.schema_str.replace("{", "{{").replace("}", "}}")
-
-        print(self.schema_str)
 
         self._build_chain()
 
@@ -51,19 +56,38 @@ class Text2CypherRetriever(BaseRetriever):
             examples=self.few_shot_examples,
         )
 
-        system_prompt = (
-            "You are an expert at converting natural language questions into Cypher queries for Neo4j.\n\n"
-            f"Graph Schema:\n{self.schema_str}\n\n"
-            "Rules:\n"
-            "1. Use only the node labels, relationship types, and properties shown in the schema.\n"
-            "2. Output ONLY the Cypher query in the 'cypher' field — no explanations, no markdown.\n"
-            "3. The query must be syntactically correct Neo4j Cypher."
+        cypher_query = """
+        MATCH (f:Folktale)
+        RETURN f.title as title,
+            f.url as url
+        """
+
+        results = self.neo4j.execute_query(cypher_query)
+
+        folktales = "\n".join(
+            f"- {row['title']}: {row['url']}"
+            for row in results
         )
+
+        system_prompt = f"""
+You are an expert at converting natural language questions into Cypher queries for Neo4j.
+
+Graph Schema:
+{self.schema_str}
+
+There are the following folktales in the graph:
+{folktales}
+
+Rules:
+1. Use only the node labels, relationship types, and properties shown in the schema.
+2. Output ONLY the Cypher query in the 'cypher' field — no explanations, no markdown.
+3. The query must be syntactically correct Neo4j Cypher.
+"""        
 
         prompt = ChatPromptTemplate.from_messages(
             [
                 SystemMessagePromptTemplate.from_template(template=system_prompt),
-                # few_shot_prompt,
+                few_shot_prompt,
                 HumanMessagePromptTemplate.from_template(template="{question}")
             ]
         )

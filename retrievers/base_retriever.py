@@ -1,27 +1,25 @@
 from typing import Optional, Any
 from neo4j_manager import Neo4jManager
-from utils.models import get_embeddings
 
 class BaseRetriever:
-    def __init__(self, neo4j_manager: Neo4jManager, index_name: str, return_fields: Optional[dict[str, str]] = None):
+    def __init__(self, neo4j_manager: Neo4jManager, index_name: str, return_projection: Optional[dict[str, str]] = None, extra_match: str = "", include_score: bool = True):
         self.neo4j = neo4j_manager
         self.index_name = index_name
-        self.return_fields = return_fields
+        self.include_score = include_score
+        self.extra_match = extra_match
 
-        self.return_fields = return_fields or {
-            "description": "description",
-            "id": "chunk_id"
+        self.return_projection = return_projection or {
+            "description": "node.description",
+            "chunk_id": "node.id"
         }
 
-    def _build_return_clause(self, node_alias: str, include_score : bool = True):
+    def _build_return_clause(self):
         fields = []
 
-        for prop, alias in self.return_fields.items():
-            fields.append(f"{node_alias}.{prop} AS {alias}")
-        else:
-            fields.append(node_alias)
+        for alias, expr in self.return_projection.items():
+            fields.append(f"{expr} AS {alias}")
 
-        if include_score:
+        if self.include_score:
             fields.append("score")
 
         return ", ".join(fields)

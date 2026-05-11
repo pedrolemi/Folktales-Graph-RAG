@@ -4,29 +4,27 @@ from .fulltext_retriever import FullTextRetriever
 from typing import Optional, Any
 
 class HybridRetriever(FullTextRetriever):
-    def __init__(self, neo4j_manager: Neo4jManager, vector_index: str, fulltext_index: str, node_label: str, text_property: str, vector_weight: float = 0.5, return_fields: Optional[dict[str, str]] = None):
-        super().__init__(neo4j_manager, fulltext_index, node_label, text_property, return_fields)
+    def __init__(self, neo4j_manager: Neo4jManager, vector_index: str, fulltext_index: str, node_label: str, text_property: str, vector_weight: float = 0.5, return_projection: Optional[dict[str, str]] = None, extra_match: str = "", include_score: bool = True):
+        super().__init__(neo4j_manager, fulltext_index, node_label, text_property, return_projection, extra_match, include_score)
         self.vector_index = vector_index
         self.neo4j = neo4j_manager
         self.embedding_gen = get_embeddings()
         self.vector_weight = vector_weight
-        # self.settings = get_settings()
-        # self._create_fulltext_index()
 
     def retrieve(self, query: str, top_k: Optional[int] = 2) -> list[dict[str, Any]]:
         """
         Recupera chunks usando búsqueda híbrida (vectorial + texto completo).
         """
-        # top_k = top_k or self.settings.top_k_results
         query_embedding = self.embedding_gen.embed_query(query)
 
-        return_clause = self._build_return_clause("node")
+        return_clause = self._build_return_clause()
 
         cypher_query = f"""
         CALL () {{
             // Vector search
             CALL db.index.vector.queryNodes($vector_index, $top_k, $query_embedding)
             YIELD node, score
+            
             WITH collect({{node: node, score: score}}) AS nodes, max(score) AS maxScore, min(score) AS minScore
             UNWIND nodes AS n
             RETURN n.node AS node,
@@ -51,6 +49,9 @@ class HybridRetriever(FullTextRetriever):
         WITH node, sum(score) AS score
         ORDER BY score DESC
         LIMIT $top_k
+
+        {self.extra_match}
+
         RETURN {return_clause}
         """
 

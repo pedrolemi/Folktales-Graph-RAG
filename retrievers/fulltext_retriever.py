@@ -3,8 +3,8 @@ from neo4j_manager import Neo4jManager
 from .base_retriever import BaseRetriever
 
 class FullTextRetriever(BaseRetriever):
-    def __init__(self, neo4j_manager: Neo4jManager, index_name: str, node_label: str, text_property: str, return_fields: Optional[dict[str, str]]):
-        super().__init__(neo4j_manager, index_name, return_fields)
+    def __init__(self, neo4j_manager: Neo4jManager, index_name: str, node_label: str, text_property: str, return_projection: Optional[dict[str, str]], extra_match: str = "", include_score: bool = True):
+        super().__init__(neo4j_manager, index_name, return_projection, extra_match, include_score)
         self.node_label = node_label
         self.text_property = text_property
         
@@ -26,9 +26,8 @@ class FullTextRetriever(BaseRetriever):
         """
         Recupera chunks usando búsqueda vectorial pura de texto completo.
         """
-        # top_k = top_k or self.settings.top_k_results
-
-        return_clause = self._build_return_clause("node")
+        
+        return_clause = self._build_return_clause()
 
         cypher_query = f"""
         // Fulltext search
@@ -36,6 +35,9 @@ class FullTextRetriever(BaseRetriever):
         YIELD node, score
         ORDER BY score DESC
         LIMIT $top_k
+
+        {self.extra_match}
+
         RETURN {return_clause}
         """
 

@@ -3,15 +3,15 @@ from langchain_core.tools import StructuredTool
 from neo4j_manager import Neo4jManager
 from .rag_tool_factory import RAGToolFactory
 from pydantic import BaseModel, Field
-from .agent_system import AgentSystem
+from .agent_system import AgentSystem, AgentResult
 from typing import Optional
 import uuid
 
 class RAGToolInput(BaseModel):
-    queries: list[str] = Field(..., description="User questions to anser using the RAG Ssytem.")
+    query: str = Field(..., description="User question to answer using the RAG system.")
 
 class AgenticRAG(AgentSystem):
-    def __init__(self, neo4j_manager: Neo4jManager, embedding_index: str, fulltext_index: str, node_label: str, text_property: str, system_prompt: Optional[str] = None, tool_name: str = "rag_tool", description: str = "Answers questions using RAG over a knowledge base."):
+    def __init__(self, neo4j_manager: Neo4jManager, embedding_index: str, fulltext_index: str, node_label: str, text_property: str, return_projection: dict[str, str], extra_match: str = "", system_prompt: Optional[str] = None, tool_name: str = "rag_tool", description: str = "Answers questions using RAG over a knowledge base."):
         super().__init__()
 
         tool_manager = RAGToolFactory(
@@ -19,7 +19,9 @@ class AgenticRAG(AgentSystem):
             embedding_index, 
             fulltext_index, 
             node_label, 
-            text_property
+            text_property,
+            return_projection,
+            extra_match
         )
 
         self.system_prompt = system_prompt or """You are a concise question-answering assistant.
@@ -39,23 +41,23 @@ STRICT RULES:
         self.tool_description = description
     
     def as_tool(self, max_iterations: int = 2) -> StructuredTool:
-        def _run(queries: list[str]) -> dict[str, Any]:
-            question = "\n".join(queries)
+        def _run(query: str) -> dict[str, Any]:
+            # question = "\n".join(queries)
 
             result = self.answer(
-                question=question,
+                question=query,
                 thread_id=f"subagent-{uuid.uuid4()}",
                 max_iterations=max_iterations
             )
 
-            iterations = result.get("iterations", [])
+            iterations: list[AgentResult] = result.iterations
 
             last_context = []
             if iterations:
-                last_context = iterations[-1].get("context", [])
+                last_context = iterations[-1].context
 
             return {
-                "answer": result.get("answer"),
+                "answer": result.answer,
                 "context": last_context,
             }
 

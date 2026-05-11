@@ -4,9 +4,10 @@ from pydantic import BaseModel, Field
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
 
 class Critique(BaseModel):
-    is_complete: bool = Field(description="True if the answer fully addresses every part of the question without omissions.")
+    """Structured evaluation of a response in relation to a question and its supporting context."""
+    is_complete: bool = Field(description="True if the answer fully addresses every part of the question.")
     is_faithful: bool = Field(description="True if each statement in the answer is explicitly supported by the provided context.")
-    missing_info: list[str] = Field(default_factory=list, description="Specific missing facts, constraints or sub-questions needed to fully answer the question.")
+    missing_info: list[str] = Field(default_factory=list, description="A list of specific missing elements necessary to fully and precisely answer the question.")
 
 class AnswerCritic:
     def __init__(self):
@@ -31,8 +32,8 @@ EVALUATION RULES:
     - the answer paraphrases beyond what is supported.
 
 3. MISSING INFORMATION (missing_info)
-- List ONLY what is necessar yto complete the answer.
-- Express it as brief, specific missing items or as follow-up questions.
+- List ONLY what is necessary to complete the answer.
+- Express it as brief and specific missing elements.
 - If nothing is missing, return an empty list.
 
 CRITICAL RULES:
