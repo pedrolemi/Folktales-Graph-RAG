@@ -14,21 +14,21 @@ How many Event nodes are in the graph?;MATCH (e:Event) RETURN toString(count(e))
 How many Character nodes are in the graph?;MATCH (a:Character) RETURN toString(count(a)) + " character(s)" AS ground_truth;aggregation
 How many Place nodes are in the graph?;MATCH (p:Place) RETURN toString(count(p)) + " place(s)" AS ground_truth;aggregation
 How many Object nodes are in the graph?;MATCH (o:Object) RETURN toString(count(o)) + " place(s)" AS ground_truth;aggregation
-How many typed relationships are in the graph?;MATCH ()-[r]->() RETURN count(DISTINCT type(r)) AS relationship_type_count;aggregation
+How many typed relationships are in the graph?;MATCH ()-[r]->() RETURN count(DISTINCT type(r)) AS ground_truth;aggregation
 What is the nationality of the folktale 'The Birdcatcher'?;MATCH (f:Folktale {title: "The Birdcatcher"})-[:FROM_NATION]->(n:Nation) RETURN n.name AS ground_truth LIMIT 1;simple_fact
 Where does Momotaro live?;MATCH (a:Character)-[:LIVES_IN]->(p:Place) WHERE toLower(a.name) CONTAINS "momotaro" RETURN p.name AS ground_truth LIMIT 1;simple_fact
-What race is Momotaro?;MATCH (a:Character) WHERE toLower(a.name) CONTAINS "momotaro" RETURN a.race AS ground_truth LIMIT 1;simple_fact
+What is the race of the character Momotaro?;MATCH (a:Character) WHERE toLower(a.name) CONTAINS "momotaro" RETURN a.race AS ground_truth LIMIT 1;simple_fact
 What type of place is Constantinople?;MATCH (p:Place) WHERE toLower(p.name) CONTAINS "constantinople" RETURN p.type AS ground_truth LIMIT 1;simple_fact
 Who is the tailor's wife from 'Sharing Joy and Sorrow'?;MATCH (c:Character) WHERE c.name CONTAINS "tailor's wife" RETURN c.description AS ground_truth;simple_fact
 What is the description of The Magistrates' Court?;MATCH (p:Place) WHERE toLower(p.name) CONTAINS "court" RETURN p.description AS ground_truth LIMIT 1;simple_fact
 What genre is 'Momotaro' folktale?;MATCH (f:Folktale {title: "Momotaro"})-[:HAS_GENRE]->(g:Genre) RETURN g.name AS ground_truth LIMIT 1;simple_fact
-What is the gender of the birdcatcher?;MATCH (a:Character) WHERE toLower(a.name) CONTAINS "birdcatcher" RETURN a.gender AS ground_truth LIMIT 1;simple_fact
+What is the gender of the character birdcatcher?;MATCH (a:Character) WHERE toLower(a.name) CONTAINS "birdcatcher" RETURN a.gender AS ground_truth LIMIT 1;simple_fact
 How did Momotaro convince the animals to join him on his journey?;RETURN "Momotaro convinced the animals by sharing his kibidango (millet dumplings) with them." AS ground_truth;simple_fact
 What is Momotaro's Role?;MATCH (f:Folktale {title: "Momotaro"})-[:HAS_EVENT]->(:Event)-[:HAS_CHARACTER]->(a:Character {name: "Momotaro"})-[:HAS_ROLE]->(r:Role) RETURN r.name AS ground_truth LIMIT 1;relational_query
 List all the events in the folktale 'The Thieves and the Cock';MATCH (f:Folktale {title: "The Thieves and the Cock"})-[:HAS_EVENT]->(e:Event) RETURN e.name AS ground_truth ORDER BY e.name;relational_query
 What Event nodes take place in Constantinople?;MATCH (e:Event)-[:TAKES_PLACE_IN]->(p) WHERE toLower(p.name) CONTAINS 'constantinople' RETURN DISTINCT e.name AS ground_truth;relational_query
 Who are Momotaro's friends?;MATCH (a:Character)-[r]->(b:Character) WHERE toLower(a.name) CONTAINS "momotaro" AND r.type = "friend" RETURN DISTINCT b.name AS ground_truth;relational_query
-Which characters appear in 'The Thieves and the Cock'?;MATCH (f:Folktale {title: "The Thieves and the Cock"})-[:HAS_EVENT]->(:Event)-[:HAS_CHARACTER]->(a:Character) RETURN DISTINCT a.name AS ground_truth;relational_query
+Which characters appear in the folktale 'The Thieves and the Cock'?;MATCH (f:Folktale {title: "The Thieves and the Cock"})-[:HAS_EVENT]->(:Event)-[:HAS_CHARACTER]->(a:Character) RETURN DISTINCT a.name AS ground_truth;relational_query
 What are the personality traits of the tiger character?;MATCH (a:Character)-[r:HAS_TRAIT]->(t:Trait) WHERE toLower(a.name) CONTAINS "tiger" RETURN t.name + ' (' + toString(r.strength) + ')' AS ground_truth ORDER BY r.strength DESC LIMIT 5;relational_query
 Give me the first 3 events of 'How the Tiger Got Its Stripes.';MATCH (f:Folktale {title: "How the Tiger Got His Stripes"})-[:HAS_EVENT]->(e:Event) RETURN e.name AS ground_truth ORDER BY e.order ASC LIMIT 3;complex_query
 What happened to Momotaro and his companions when they were in The Ogres' Island castle?;MATCH (p:Place)<-[:TAKES_PLACE_IN]-(e:Event) WHERE toLower(p.name) CONTAINS "ogres' island castle" RETURN e.description AS ground_truth ORDER BY e.order;complex_query
