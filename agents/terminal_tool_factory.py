@@ -8,7 +8,7 @@ class EmptyInput(BaseModel):
 
 class TerminalToolFactory(BaseToolFactory):
     _GREETING_RESPONSE = (
-        "Hello! I’m a knowledge assistant focused on folktales from all around the world. You can ask me about their characters, relationships, themes or how they are structured."
+        "Hello! I'm a knowledge assistant focused on folktales from all around the world. You can ask me about their characters, relationships, themes or how they are structured."
     )
 
     _OUT_OF_SCOPE_RESPONSE = (
@@ -16,7 +16,7 @@ class TerminalToolFactory(BaseToolFactory):
     )
 
     _SKILLS_RESPONSE = (
-        "I can answer questions about folktales: their origins, characters, themes, narrative structures, cultural contexts and the relationships between characters."
+        "I can answer questions about folktales: their narrative structure, the characters that make them up and their features, the relevant places and objects that appear, among others."
     )
 
     def get_tools(self) -> list[BaseTool]:
@@ -34,7 +34,7 @@ class TerminalToolFactory(BaseToolFactory):
             StructuredTool.from_function(
                 name="out_of_scope",
                 description=(
-                    "Handle questions unrelated to folktales."
+                    "Handle questions that are not related to folktales or the associated knowledge graph."
                 ),
                 args_schema=EmptyInput,
                 func=self._out_of_scope,

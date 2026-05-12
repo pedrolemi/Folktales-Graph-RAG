@@ -1,6 +1,7 @@
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate
 from schemas.folktale import Genre
 from langchain_core.language_models.chat_models import BaseChatModel
+from utils.models import get_llm
 from typing import cast
 from loguru import logger
 
@@ -21,7 +22,7 @@ Folktale:
 	]
 )
 
-def extract_genre(model: BaseChatModel, folktale: str, genres: dict):
+def extract_genre(folktale: str, genres: dict):
 	"""
 	Extrae el género de un cuento.
 
@@ -33,6 +34,8 @@ def extract_genre(model: BaseChatModel, folktale: str, genres: dict):
 		str: Género.
 
 	"""
+
+	model = get_llm(0.0)
 
 	formatted = "\n".join(f"- '{k}': {v}" for k, v in genres.items())
 

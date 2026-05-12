@@ -1,6 +1,6 @@
 from neo4j import GraphDatabase
 from typing import Any, Optional
-from config import get_settings
+from utils.config import get_settings
 
 class Neo4jManager:
     def __init__(self):

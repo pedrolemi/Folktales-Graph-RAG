@@ -1,8 +1,8 @@
 from utils.regex_utils import snake_case_to_pascal_case
 from utils.loader import load_json_folder
-from neo4j_manager import Neo4jManager
+from .neo4j_manager import Neo4jManager
 from pydantic import BaseModel
-from config import get_settings
+from utils.config import get_settings
 from typing import Optional
 from schemas.folktale import Folktale
 from schemas.agent import Agent
@@ -184,8 +184,6 @@ Description:
             build_entity_embedding_text(label, item, folktale)
             for item in params_list
         ]
-
-        print(descriptions)
 
         embeddings = self.model.embed_documents(descriptions)
 
@@ -402,24 +400,74 @@ Description:
 
     def find_loose_entities(self):
         query = """
-        MATCH (o:Object)
-        WHERE NOT (o)<-[:HAS_OBJECT]-(:Event)
-        RETURN 'Object' AS type, o.id AS id, o.name AS name, 'No event link' AS reason
+        CALL {
+            MATCH (o:Object)
+            WHERE NOT EXISTS {
+                MATCH (o)<-[:HAS_OBJECT]-(:Event)
+            }
+            RETURN 'Object' AS type, o.id AS id, o.name AS name,
+                'No event link' AS reason, o AS node
 
-        UNION ALL
+            UNION ALL
 
-        MATCH (a:Agent)
-        WHERE NOT (a)<-[:HAS_AGENT]-(:Event)
-        RETURN 'Agent' AS type, a.id AS id, a.name AS name, 'No event participation' AS reason
+            MATCH (a:Agent)
+            WHERE NOT EXISTS {
+                MATCH (a)<-[:HAS_AGENT]-(:Event)
+            }
+            RETURN 'Agent' AS type, a.id AS id, a.name AS name,
+                'No event participation' AS reason, a AS node
 
-        UNION ALL
+            UNION ALL
 
-        MATCH (p:Place)
-        WHERE NOT (p)<-[:TAKES_PLACE_IN]-(:Event)
-        AND NOT (p)<-[:LIVES_IN]-(:Agent)
-        RETURN 'Place' AS type, p.id AS id, p.name AS name, 'No event usage and uninhabited' AS reason
+            MATCH (p:Place)
+            WHERE NOT EXISTS {
+                MATCH (p)<-[:TAKES_PLACE_IN]-(:Event)
+            }
+            AND NOT EXISTS {
+                MATCH (p)<-[:LIVES_IN]-(:Agent)
+            }
+            RETURN 'Place' AS type, p.id AS id, p.name AS name,
+                'No event usage and unlinked' AS reason, p AS node
+        }
+        RETURN type, id, name, reason
         """
 
+        return self.neo4j.execute_query(query)
+    
+    def delete_loose_entities(self):
+        query = """
+        CALL {
+            MATCH (o:Object)
+            WHERE NOT EXISTS { MATCH (o)<-[:HAS_OBJECT]-(:Event) }
+            WITH collect(DISTINCT o) AS nodes
+            WITH nodes, [n IN nodes | n.name] AS names
+            UNWIND nodes AS o
+            DETACH DELETE o
+            RETURN 'Object' AS type, names
+
+            UNION ALL
+
+            MATCH (a:Agent)
+            WHERE NOT EXISTS { MATCH (a)<-[:HAS_AGENT]-(:Event) }
+            WITH collect(DISTINCT a) AS nodes
+            WITH nodes, [n IN nodes | n.name] AS names
+            UNWIND nodes AS a
+            DETACH DELETE a
+            RETURN 'Agent' AS type, names
+
+            UNION ALL
+
+            MATCH (p:Place)
+            WHERE NOT EXISTS { MATCH (p)<-[:TAKES_PLACE_IN]-(:Event) }
+            AND NOT EXISTS { MATCH (p)<-[:LIVES_IN]-(:Agent) }
+            WITH collect(DISTINCT p) AS nodes
+            WITH nodes, [n IN nodes | n.name] AS names
+            UNWIND nodes AS p
+            DETACH DELETE p
+            RETURN 'Place' AS type, names
+        }
+        RETURN type, names
+        """
         return self.neo4j.execute_query(query)
     
     def setup(self):

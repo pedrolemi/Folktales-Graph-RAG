@@ -1,6 +1,6 @@
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate
 from schemas.place import PlacesLLM, Place, MAX_PLACES
-from langchain_core.language_models.chat_models import BaseChatModel
+from utils.models import get_llm
 from typing import cast
 from loguru import logger
 
@@ -50,7 +50,7 @@ Folktale:
 	]
 )
 
-def extract_places(model: BaseChatModel, folktale: str, places_dict: dict):
+def extract_places(folktale: str, places_dict: dict):
    """
    Extrae los lugares presentes en un cuento.
 
@@ -63,6 +63,8 @@ def extract_places(model: BaseChatModel, folktale: str, places_dict: dict):
 	  list[str]: Lista de lugares.
 
    """
+
+   model = get_llm(0.0)
 
    formatted = "\n".join(f"- '{k}': {v}" for k, v in places_dict.items())
 

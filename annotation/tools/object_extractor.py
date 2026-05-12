@@ -1,6 +1,6 @@
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate
 from schemas.object import ObjectsLLM, Object
-from langchain_core.language_models.chat_models import BaseChatModel
+from utils.models import get_llm
 from typing import cast
 from loguru import logger
 
@@ -54,7 +54,7 @@ Folktale:
 	]
 )
 
-def extract_objects(model: BaseChatModel, folktale: str, objects_dict: dict):
+def extract_objects(folktale: str, objects_dict: dict):
 	"""
 	Extrae los objetos presentes en un texto.
 
@@ -67,6 +67,8 @@ def extract_objects(model: BaseChatModel, folktale: str, objects_dict: dict):
 		list[str]: Lista de objetos.
 
 	"""
+
+	model = get_llm(0.0)
 
 	formatted = "\n".join(f"- '{k}': {v}" for k, v in objects_dict.items())
 

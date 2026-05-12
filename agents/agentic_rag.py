@@ -1,6 +1,6 @@
 from typing import Any
 from langchain_core.tools import StructuredTool
-from neo4j_manager import Neo4jManager
+from graph.neo4j_manager import Neo4jManager
 from .rag_tool_factory import RAGToolFactory
 from pydantic import BaseModel, Field
 from .agent_system import AgentSystem, AgentResult
@@ -11,8 +11,8 @@ class RAGToolInput(BaseModel):
     query: str = Field(..., description="User question to answer using the RAG system.")
 
 class AgenticRAG(AgentSystem):
-    def __init__(self, neo4j_manager: Neo4jManager, embedding_index: str, fulltext_index: str, node_label: str, text_property: str, return_projection: dict[str, str], extra_match: str = "", system_prompt: Optional[str] = None, tool_name: str = "rag_tool", description: str = "Answers questions using RAG over a knowledge base."):
-        super().__init__()
+    def __init__(self, neo4j_manager: Neo4jManager, embedding_index: str, fulltext_index: str, node_label: str, text_property: str, return_projection: dict[str, str], extra_match: str = "", system_prompt: Optional[str] = None, tool_name: str = "rag_tool", description: str = "Answers questions using RAG over a knowledge base.", verbose: bool = False):
+        super().__init__(verbose)
 
         tool_manager = RAGToolFactory(
             neo4j_manager, 
@@ -42,12 +42,10 @@ STRICT RULES:
     
     def as_tool(self, max_iterations: int = 2) -> StructuredTool:
         def _run(query: str) -> dict[str, Any]:
-            # question = "\n".join(queries)
-
             result = self.answer(
                 question=query,
                 thread_id=f"subagent-{uuid.uuid4()}",
-                max_iterations=max_iterations
+                max_iterations=max_iterations,
             )
 
             iterations: list[AgentResult] = result.iterations

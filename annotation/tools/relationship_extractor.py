@@ -1,7 +1,7 @@
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate
 from schemas.agent import Agent
 from schemas.relationship import RelationshipLLM, Relationship
-from langchain_core.language_models.chat_models import BaseChatModel
+from utils.models import get_llm
 from itertools import combinations
 from loguru import logger
 from typing import cast
@@ -73,7 +73,7 @@ relationship_structured_prompt = ChatPromptTemplate.from_messages([
 	structured_prompt
 ])
 
-def extract_relationships(model: BaseChatModel, folktale: str, agents: list[Agent]):
+def extract_relationships(folktale: str, agents: list[Agent]):
 	"""
 	Extrae las relaciones entre agentes de un cuento.
 
@@ -85,6 +85,8 @@ def extract_relationships(model: BaseChatModel, folktale: str, agents: list[Agen
 	Returns:
 		list[Relationship]: Lista de relaciones identificadas entre los agentes.
 	"""
+
+	model = get_llm(0.0)
 
 	context_chain = relationship_context_prompt | model
 	classification_chain = relationship_structured_prompt | model.with_structured_output(RelationshipLLM)

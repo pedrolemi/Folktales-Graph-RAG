@@ -13,7 +13,7 @@ class AnswerCritic:
     def __init__(self):
         client = get_llm(0.0)
 
-        system_prompt = """You are an expert at evaluating answers to questions based on provided context.
+        system_prompt = """You are an expert at evaluating answers to questions based on the provided context.
 
 You must evaluate an ANSWER using ONLY the provided CONTEXT.
 
@@ -28,7 +28,7 @@ EVALUATION RULES:
 2. FAITHFULNESS (is_faithful)
 - True ONLY if each statement in the answer is explicitly supported by the context.
 - False if:
-    - the answer more information than that suggested by the context.
+    - the answer contains more information than that suggested by the context.
     - the answer paraphrases beyond what is supported.
 
 3. MISSING INFORMATION (missing_info)

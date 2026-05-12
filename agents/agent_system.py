@@ -24,16 +24,17 @@ class AgentResponse(BaseModel):
     final_critique: Critique
 
 class AgentSystem:
-    def __init__(self):
+    def __init__(self, verbose: bool = False):
         self.model = get_llm(0.0)
         self.critic = AnswerCritic()
         self.decomposer = QuestionDecomposer()
         self.graph = None
         self.tool_manager: Optional[BaseToolFactory] = None
         self.system_prompt = ""
+        self.verbose = verbose
 
-    def _log(self, title: str, content: Any = "", indent: int = 0, verbose: bool = False):
-        if not verbose:
+    def _log(self, title: str, content: Any = "", indent: int = 0):
+        if not self.verbose:
             return
 
         prefix = " " * indent
@@ -45,8 +46,8 @@ class AgentSystem:
             else:
                 print(prefix + str(content))
 
-    def _render_completed_message(self, message: AnyMessage, verbose: bool = False):
-        if verbose:
+    def _render_completed_message(self, message: AnyMessage):
+        if self.verbose:
             print("\n")
 
         if isinstance(message, AIMessage):
@@ -55,21 +56,18 @@ class AgentSystem:
                     "AI -> TOOL CALL",
                     message.tool_calls,
                     indent=2,
-                    verbose=verbose
                 )
             else:
                 self._log(
                     "AI -> FINAL ANSWER",
                     message.content,
                     indent=2,
-                    verbose=verbose
                 )
         elif isinstance(message, ToolMessage):
             self._log(
                 f"TOOL -> RESPONSE ({message.name})",
                 message.content_blocks,
                 indent=4,
-                verbose=verbose
             )
 
     def _build_agent(self, tool_manager: BaseToolFactory, system_prompt: str):
@@ -113,7 +111,7 @@ class AgentSystem:
 
         self.graph = workflow.compile(checkpointer=InMemorySaver())
     
-    def _run_agent(self, question: str, thread_id: str, verbose: bool = False):
+    def _run_agent(self, question: str, thread_id: str):
         input_message = {
             "role": "user",
             "content": question
@@ -133,7 +131,7 @@ class AgentSystem:
             for _, update in chunk.items():
                 if "messages" in update:
                     for msg in update["messages"]:
-                        self._render_completed_message(msg, verbose)
+                        self._render_completed_message(msg)
                         messages.append(msg)
 
         answer = messages[-1].content
@@ -173,14 +171,13 @@ class AgentSystem:
     
         return self.tool_manager.is_terminal_tool(last_message.name)
 
-    def answer(self, question: str, thread_id: str = "default", max_iterations: int = 2, verbose: bool = False) -> AgentResponse:
+    def answer(self, question: str, thread_id: str = "default", max_iterations: int = 2) -> AgentResponse:
         iterations: list[AgentResult] = []
-        # current_question = question
 
         queries = self.decomposer.run(question)
-        self._log("DECOMPOSED QUERIES", indent=0, verbose=verbose)
+        self._log("DECOMPOSED QUERIES", indent=0)
         for i, query in enumerate(queries, 1):
-            self._log(f"Query {i}", query, indent=2, verbose=verbose)
+            self._log(f"Query {i}", query, indent=2)
 
         for idx, query in enumerate(queries):
             parts = []
@@ -200,10 +197,10 @@ class AgentSystem:
             current_question = "\n".join(parts)
 
             for i in range(max_iterations):
-                self._log(f"ITERATION {i + 1}", verbose=verbose)
-                self._log(f"QUESTION {idx + 1}", current_question, indent=2, verbose=verbose)
+                self._log(f"ITERATION {i + 1}")
+                self._log(f"QUESTION {idx + 1}", current_question, indent=2)
 
-                answer, messages = self._run_agent(current_question, thread_id, verbose=verbose)
+                answer, messages = self._run_agent(current_question, thread_id)
 
                 if self._is_terminal(messages):
                     iterations.append(AgentResult(
@@ -220,7 +217,7 @@ class AgentSystem:
                     break
 
                 context = self._extract_context(messages)
-                self._log("CONTEXT", context, indent=2, verbose=verbose)
+                self._log("CONTEXT", context, indent=2)
 
                 if not context:
                     iterations.append(AgentResult(
@@ -246,7 +243,7 @@ class AgentSystem:
                     "is_complete": critique.is_complete,
                     "is_faithful": critique.is_faithful,
                     "missing_info": critique.missing_info,
-                }, indent=2, verbose=verbose)
+                }, indent=2)
 
                 iterations.append(AgentResult(
                     iteration=i+1,
@@ -270,7 +267,7 @@ class AgentSystem:
 
         final = iterations[-1]
 
-        self._log("LOOP FINISHED", verbose=verbose)
+        self._log("LOOP FINISHED")
 
         return AgentResponse(
             question=question,

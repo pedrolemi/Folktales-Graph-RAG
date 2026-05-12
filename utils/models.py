@@ -1,4 +1,4 @@
-from config import get_settings
+from .config import get_settings
 from langchain_ollama import ChatOllama, OllamaEmbeddings
 
 def get_llm(temperature: float):

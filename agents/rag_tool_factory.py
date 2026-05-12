@@ -3,7 +3,7 @@ from pydantic import BaseModel, Field
 from retrievers.vector_retriever import VectorRetriever
 from retrievers.hybrid_retriever import HybridRetriever
 from retrievers.text2cyper import Text2CypherRetriever
-from neo4j_manager import Neo4jManager
+from graph.neo4j_manager import Neo4jManager
 from .terminal_tool_factory import BaseToolFactory
 from typing import Any
 
@@ -36,9 +36,9 @@ class RAGToolFactory(BaseToolFactory):
 
 	def _add_few_shots(self):
 		self.text2cypher.add_few_shot_example(
-			"What happens in Momotaro, in order, and which characters are involved in each event?",
+			"What happens in the folktale 'Momotaro', in order, and which characters are involved in each event?",
 			"""
-MATCH (f:Folktale {url: "https://fairytalez.com/momotaro/"})-[:HAS_EVENT]->(e:Event)
+MATCH (f:Folktale {title: "Momotaro"})-[:HAS_EVENT]->(e:Event)
 OPTIONAL MATCH (e)-[:HAS_AGENT]->(a:Agent)
 RETURN e.order AS order,
 	e.name AS event,
@@ -83,6 +83,15 @@ MATCH (e:Event {name: "Momotaro gives dog a dumpling."})-[:POST_EVENT]->(next:Ev
 RETURN e.name AS current_event,
 	next.name AS next_event
 			"""
+		)
+
+		self.text2cypher.add_few_shot_example(
+			"What is the genre of the 'The Birdatcher' folktale?",
+			"""
+MATCH (f:Folktale {title: "The Birdatcher"})-[:HAS_GENRE]->(g:Genre)
+RETURN g.name AS ground_truth
+LIMIT 1
+"""
 		)
 
 	_GREETING_RESPONSE = (
@@ -144,7 +153,7 @@ RETURN e.name AS current_event,
 		)
 
 	def _vector_search(self, query: str) -> list[str]:
-		results = self.vector_retriever.retrieve(query)
+		results = self.vector_retriever.retrieve(query, top_k=1)
 
 		return [
 			self._format_record(r)
@@ -153,7 +162,7 @@ RETURN e.name AS current_event,
 		# return [r["description"] for r in results]
 	
 	def _hybrid_search(self, query: str) -> list[str]:
-		results = self.hybrid_retriever.retrieve(query)
+		results = self.hybrid_retriever.retrieve(query, top_k=1)
 
 		return [
 			self._format_record(r)

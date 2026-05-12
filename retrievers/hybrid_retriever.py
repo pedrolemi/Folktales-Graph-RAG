@@ -1,4 +1,4 @@
-from neo4j_manager import Neo4jManager
+from graph.neo4j_manager import Neo4jManager
 from utils.models import get_embeddings
 from .fulltext_retriever import FullTextRetriever
 from typing import Optional, Any

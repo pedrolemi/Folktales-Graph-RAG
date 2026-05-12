@@ -1,0 +1,220 @@
+{
+    "url": "https://fairytalez.com/the-thieves-and-the-cock/",
+    "nation": "greek",
+    "title": "The Thieves and the Cock",
+    "genre": "fable",
+    "agents": [
+        {
+            "race": "animal",
+            "name": "Cock",
+            "age_group": "adult",
+            "gender": "male",
+            "description": "A bird that rouses honest men to their work in the morning by its crowing.",
+            "role": "tertiary_character",
+            "lives_in": "place_983b1b63722247a992547f937ac4a5db",
+            "id": "agent_582c78c856cc49499c4b9e12e103229f",
+            "personality": {
+                "openness": 0.6,
+                "conscientiousness": 0.4,
+                "extraversion": 0.5,
+                "agreeableness": 0.8,
+                "neuroticism": 0.2
+            }
+        },
+        {
+            "race": "human",
+            "name": "Thief",
+            "age_group": "adult",
+            "gender": "male",
+            "description": "A person who broke into a house and stole the Cock.",
+            "role": "primary_character",
+            "lives_in": "place_45d2e06fec1246fcad41a0e15317f9e6",
+            "id": "agent_dfe255ab22f64814b419fc56d99eca18",
+            "personality": {
+                "openness": 0.4,
+                "conscientiousness": 0.2,
+                "extraversion": 0.6,
+                "agreeableness": 0.1,
+                "neuroticism": 0.5
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "type": "enemy",
+            "description": "The Thief and the Cock have an antagonistic relationship, with the Thief attempting to kill the Cock for its perceived usefulness.",
+            "strength": 0.8,
+            "source": "Cock",
+            "source_id": "agent_582c78c856cc49499c4b9e12e103229f",
+            "target": "Thief",
+            "target_id": "agent_dfe255ab22f64814b419fc56d99eca18"
+        }
+    ],
+    "places": [
+        {
+            "type": "house",
+            "name": "The Thieves' Victim's House",
+            "description": "A typical residential building where the thieves broke in.",
+            "id": "place_983b1b63722247a992547f937ac4a5db"
+        },
+        {
+            "type": "town",
+            "name": "The Town Where the Thieves Lived",
+            "description": "A medium-sized settlement larger than a village, where the thieves resided.",
+            "id": "place_45d2e06fec1246fcad41a0e15317f9e6"
+        }
+    ],
+    "objects": [
+        {
+            "type": "natural_object",
+            "name": "Cock",
+            "description": "The Cock's crowing is crucial to its survival and serves as a plot point.",
+            "id": "object_6c91a23ef8c54567bc77c6d5f17d482a"
+        },
+        {
+            "type": "crafted_object",
+            "name": "Pot",
+            "description": "The Pot is the object used by the Thief to cook their supper, which indirectly affects the story through the Cock's fate.",
+            "id": "object_fd5fc9a6012c49beb44561f2b475d22f"
+        }
+    ],
+    "events": [
+        {
+            "id": "event_956f2649b88c4987b6f97a1527144bed",
+            "type": "conflict",
+            "name": "Thieves steal a Cock.",
+            "description": "Some Thieves broke into a house, and found nothing worth taking except a Cock, which they seized and carried off with them.",
+            "thoughts": [
+                "The event involves external characters acting within the core plot, driving it forward. It's not a resolution as there's no conflict closure yet.",
+                "The event involves external action by Thieves, which drives the story forward through conflict and sets up a potential plot point.",
+                "The event involves external action: thieves breaking into a house and taking an item. This drives the story forward by escalating the situation.",
+                "The event involves external action by Thieves, which drives the story forward through conflict and sets up a potential plot point. This matches option 2: conflict, as it introduces or develops a problem: the theft of the Cock.",
+                "The event involves external characters acting within the core plot, driving it forward. The Thieves' action escalates the situation and introduces conflict.",
+                "The event involves external characters acting within the core plot, driving it forward. The thieves' action escalates the situation by taking an item from the house.",
+                "The event involves external characters acting within the core plot, driving it forward. The Thieves' action escalates the situation and introduces conflict.",
+                "The event involves external characters acting within the core plot, driving it forward. The Thieves' action escalates the situation and introduces conflict by taking an item from the house."
+            ],
+            "agents": [
+                {
+                    "id": "agent_dfe255ab22f64814b419fc56d99eca18",
+                    "actions": [
+                        "broke into a house",
+                        "stole the Cock"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [
+                "object_6c91a23ef8c54567bc77c6d5f17d482a"
+            ],
+            "place": "place_983b1b63722247a992547f937ac4a5db"
+        },
+        {
+            "id": "event_bbc629e1fda040afa81b564af247fa58",
+            "type": "struggle",
+            "name": "Thief Wrings Cock's Neck",
+            "description": "When they were preparing their supper, one of them caught up the Cock, and was about to wring his neck,",
+            "thoughts": [
+                "The event doesn't drive the story forward through conflict or external help. Instead, it's a moment of escalation where the thieves' actions are about to have consequences for the Cock.",
+                "The event described is part of the main narrative action, driving the story forward through conflict. The Thieves are acting upon their previous actions, and the hero's success is not yet confirmed.",
+                "The event involves the hero acting within the core plot, specifically reacting to a previous action by the thieves. This drives the story forward through conflict.",
+                "The event involves the hero acting within the core plot, reacting to a previous action by the thieves. This drives the story forward through conflict.",
+                "The event involves the hero acting within the core plot, reacting to a previous action by the thieves. This drives the story forward through conflict.",
+                "The event involves the hero acting within the core plot, reacting to a previous action by the thieves. This drives the story forward through conflict.",
+                "The event involves the hero acting within the core plot, reacting to a previous action by the thieves. This drives the story forward through conflict.",
+                "The event involves the hero acting within the core plot, reacting to a previous action by the thieves. This drives the story forward through conflict.",
+                "The event involves the hero acting within the core plot, reacting to a previous action by the thieves. This drives the story forward through conflict.",
+                "The hero (the Cock) is being threatened by the thieves' actions, which drives the story forward through conflict. This is a moment of escalation where the consequences of the thieves' previous actions are about to unfold.",
+                "The hero (the Cock) is being threatened by the antagonist's agent (the thief), and a confrontation or duel is imminent. This matches option 0: struggle."
+            ],
+            "agents": [
+                {
+                    "id": "agent_dfe255ab22f64814b419fc56d99eca18",
+                    "actions": [
+                        "caught up the Cock",
+                        "was about to wring his neck"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [
+                "object_6c91a23ef8c54567bc77c6d5f17d482a"
+            ],
+            "place": "place_983b1b63722247a992547f937ac4a5db"
+        },
+        {
+            "id": "event_37d5f278b52847b4a5f7b20755e6265c",
+            "type": "conflict",
+            "name": "Cock Pleads for Mercy",
+            "description": "when he cried out for mercy and said, “Pray do not kill me: you will find me a most useful bird, for I rouse honest men to their work in the morning by my crowing.”",
+            "thoughts": [
+                "The event involves the hero (the Cock) reacting to a threat and attempting to persuade its captors not to kill it. This is part of the main narrative action as it drives the story forward through conflict.",
+                "The event involves the hero (the Cock) acting/reacting within the core plot. The Thieves are trying to kill the Cock, but it tries to persuade them not to by offering its usefulness.",
+                "The event involves a character acting within the core plot, specifically trying to persuade their captors not to kill them. This is part of the main narrative action and drives the story forward.",
+                "The hero (the Cock) reacts to a threat by attempting to persuade its captors not to kill it. This is part of the main narrative action as it drives the story forward through conflict.",
+                "The event involves the hero (the Cock) reacting to a threat and attempting to persuade its captors not to kill it. This is part of the main narrative action as it drives the story forward through conflict.",
+                "The hero (the Cock) reacts to a threat by attempting to persuade its captors not to kill it. This is part of the main narrative action as it drives the story forward through conflict.",
+                "The hero (the Cock) reacts to a threat by attempting to persuade its captors not to kill it. This is part of the main narrative action as it drives the story forward through conflict.",
+                "The hero (the Cock) reacts to a threat by attempting to persuade its captors not to kill it. This is part of the main narrative action as it drives the story forward through conflict."
+            ],
+            "agents": [
+                {
+                    "id": "agent_582c78c856cc49499c4b9e12e103229f",
+                    "actions": [
+                        "cried out for mercy",
+                        "said 'Pray do not kill me'",
+                        "offered to be a useful bird"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_dfe255ab22f64814b419fc56d99eca18",
+                    "actions": [
+                        "trying to kill the Cock"
+                    ],
+                    "importance": 0.4
+                }
+            ],
+            "objects": [
+                "object_6c91a23ef8c54567bc77c6d5f17d482a"
+            ],
+            "place": "place_983b1b63722247a992547f937ac4a5db"
+        },
+        {
+            "id": "event_8d57ee350a3944ef90bbf7da8fb76751",
+            "type": "move",
+            "name": "Thief throws Cock into pot.",
+            "description": "But the Thief replied with some heat, “Yes, I know you do, making it still harder for us to get a livelihood. Into the pot you go!”",
+            "thoughts": [
+                "The Thief's action escalates the conflict between the Thieves and the Cock. The Cock's plea for mercy does not resolve any open conflict but rather adds a new layer of tension.",
+                "The Thief's action escalates the conflict between him and the Cock, but it doesn't resolve any open conflict. The previous events have set up a situation where the Thieves are struggling for livelihood, and the Cock's plea for mercy adds to this tension.",
+                "The Thief's action escalates the conflict between him and the Cock, which has been established as a useful bird. The event involves the hero acting within the core plot.",
+                "The Thief's action escalates the conflict between him and the Cock, which has been established as a useful bird. The event involves the hero acting within the core plot.",
+                "The Thief's action escalates the conflict between him and the Cock, which has been established as a useful bird. The event involves the hero acting within the core plot.",
+                "The Thief's action escalates the conflict between him and the Cock, which has been established as a useful bird. The event involves the hero acting within the core plot."
+            ],
+            "agents": [
+                {
+                    "id": "agent_dfe255ab22f64814b419fc56d99eca18",
+                    "actions": [
+                        "replied with some heat",
+                        "put the Cock into the pot"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_582c78c856cc49499c4b9e12e103229f",
+                    "actions": [
+                        "pleaded for mercy"
+                    ],
+                    "importance": 0.4
+                }
+            ],
+            "objects": [
+                "object_6c91a23ef8c54567bc77c6d5f17d482a",
+                "object_fd5fc9a6012c49beb44561f2b475d22f"
+            ],
+            "place": "place_45d2e06fec1246fcad41a0e15317f9e6"
+        }
+    ]
+}

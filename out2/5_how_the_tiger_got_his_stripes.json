@@ -1,0 +1,1693 @@
+{
+    "url": "https://fairytalez.com/how-the-tiger-got-his-stripes/",
+    "nation": "brazilian",
+    "title": "How the Tiger Got His Stripes",
+    "genre": "fable",
+    "agents": [
+        {
+            "race": "animal",
+            "name": "tiger",
+            "age_group": "adult",
+            "gender": "male",
+            "description": "The owner of the farm, who seeks a workman to clear the ground.",
+            "role": "primary_character",
+            "lives_in": "place_b7584f1d1c5d44479896e58ab93067fa",
+            "id": "agent_575897648c174caea9b3974dcbd558c4",
+            "personality": {
+                "openness": 0.4,
+                "conscientiousness": 0.6,
+                "extraversion": 0.8,
+                "agreeableness": 0.2,
+                "neuroticism": 0.5
+            }
+        },
+        {
+            "race": "animal",
+            "name": "rabbit",
+            "age_group": "adult",
+            "gender": "male",
+            "description": "A clever and resourceful character who outsmarts the tiger.",
+            "role": "main_character",
+            "lives_in": "place_94afe975001741f79c1ef49bcd70b7e7",
+            "id": "agent_783a2070a485488a9ed45684d94ea587",
+            "personality": {
+                "openness": 0.8,
+                "conscientiousness": 0.7,
+                "extraversion": 0.4,
+                "agreeableness": 0.6,
+                "neuroticism": 0.3
+            }
+        },
+        {
+            "race": "animal",
+            "name": "monkey",
+            "age_group": "adult",
+            "gender": "male",
+            "description": "A lazy and incompetent character who fails to impress the tiger.",
+            "role": "secondary_character",
+            "lives_in": "place_94afe975001741f79c1ef49bcd70b7e7",
+            "id": "agent_a09f2e8ce9a04c60af14a3683822e5cb",
+            "personality": {
+                "openness": 0.3,
+                "conscientiousness": 0.2,
+                "extraversion": 0.4,
+                "agreeableness": 0.6,
+                "neuroticism": 0.5
+            }
+        },
+        {
+            "race": "animal",
+            "name": "goat",
+            "age_group": "adult",
+            "gender": "male",
+            "description": "A foolish and scatterbrained character who fails to impress the tiger.",
+            "role": "secondary_character",
+            "lives_in": "place_94afe975001741f79c1ef49bcd70b7e7",
+            "id": "agent_6cc93ec5a0594d7294ff061f919d2163",
+            "personality": {
+                "openness": 0.4,
+                "conscientiousness": 0.3,
+                "extraversion": 0.2,
+                "agreeableness": 0.5,
+                "neuroticism": 0.6
+            }
+        },
+        {
+            "race": "animal",
+            "name": "armadillo",
+            "age_group": "adult",
+            "gender": "male",
+            "description": "A strong but gluttonous character who fails to impress the tiger.",
+            "role": "secondary_character",
+            "lives_in": "place_94afe975001741f79c1ef49bcd70b7e7",
+            "id": "agent_36a51e654d3a49618253d290eb01250a",
+            "personality": {
+                "openness": 0.4,
+                "conscientiousness": 0.3,
+                "extraversion": 0.5,
+                "agreeableness": 0.2,
+                "neuroticism": 0.6
+            }
+        },
+        {
+            "race": "animal",
+            "name": "tiger's son",
+            "age_group": "young",
+            "gender": "male",
+            "description": "The tiger's child, who is deceived by the rabbit.",
+            "role": "tertiary_character",
+            "lives_in": "place_b7584f1d1c5d44479896e58ab93067fa",
+            "id": "agent_12c6e147cb5d461b8a0807320a4182a1",
+            "personality": {
+                "openness": 0.4,
+                "conscientiousness": 0.6,
+                "extraversion": 0.3,
+                "agreeableness": 0.2,
+                "neuroticism": 0.5
+            }
+        },
+        {
+            "race": "animal",
+            "name": "cock",
+            "age_group": "adult",
+            "gender": "male",
+            "description": "A minor character who is heard crowing in the distance.",
+            "role": "tertiary_character",
+            "lives_in": "place_94afe975001741f79c1ef49bcd70b7e7",
+            "id": "agent_6bfe6cc2aa824578b802933d5f2e9ded",
+            "personality": {
+                "openness": 0.4,
+                "conscientiousness": 0.5,
+                "extraversion": 0.2,
+                "agreeableness": 0.6,
+                "neuroticism": 0.3
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "type": "friend",
+            "description": "The tiger and rabbit have a complex and multifaceted relationship, with moments of kindness and friendship amidst attempts to trick or manipulate each other.",
+            "strength": 0.8,
+            "source": "tiger",
+            "source_id": "agent_575897648c174caea9b3974dcbd558c4",
+            "target": "rabbit",
+            "target_id": "agent_783a2070a485488a9ed45684d94ea587"
+        },
+        {
+            "type": "friend",
+            "description": "The tiger and the rabbit had a complex relationship where they helped each other but also took advantage of each other.",
+            "strength": 0.8,
+            "source": "tiger",
+            "source_id": "agent_575897648c174caea9b3974dcbd558c4",
+            "target": "monkey",
+            "target_id": "agent_a09f2e8ce9a04c60af14a3683822e5cb"
+        },
+        {
+            "type": "friend",
+            "description": "The tiger and rabbit have a close bond, with the tiger showing appreciation for the rabbit's work and the rabbit eventually giving the tiger a piece of the ox.",
+            "strength": 1.0,
+            "source": "tiger",
+            "source_id": "agent_575897648c174caea9b3974dcbd558c4",
+            "target": "goat",
+            "target_id": "agent_6cc93ec5a0594d7294ff061f919d2163"
+        },
+        {
+            "type": "friend",
+            "description": "The rabbit helped the tiger multiple times, and the tiger showed appreciation for the rabbit's help.",
+            "strength": 1.0,
+            "source": "tiger",
+            "source_id": "agent_575897648c174caea9b3974dcbd558c4",
+            "target": "armadillo",
+            "target_id": "agent_36a51e654d3a49618253d290eb01250a"
+        },
+        {
+            "type": "knows",
+            "description": "The characters are acquaintances, but not close friends or enemies.",
+            "strength": 0.4,
+            "source": "tiger",
+            "source_id": "agent_575897648c174caea9b3974dcbd558c4",
+            "target": "tiger's son",
+            "target_id": "agent_12c6e147cb5d461b8a0807320a4182a1"
+        },
+        {
+            "type": "friend",
+            "description": "The tiger and the rabbit have a close bond, with the tiger showing appreciation for the rabbit's work and the rabbit being willing to help the tiger in times of need.",
+            "strength": 1.0,
+            "source": "tiger",
+            "source_id": "agent_575897648c174caea9b3974dcbd558c4",
+            "target": "cock",
+            "target_id": "agent_6bfe6cc2aa824578b802933d5f2e9ded"
+        },
+        {
+            "type": "friend",
+            "description": "The rabbit outsmarts the tiger multiple times, but also shows kindness and helps the tiger in need.",
+            "strength": 1.0,
+            "source": "rabbit",
+            "source_id": "agent_783a2070a485488a9ed45684d94ea587",
+            "target": "monkey",
+            "target_id": "agent_a09f2e8ce9a04c60af14a3683822e5cb"
+        },
+        {
+            "type": "friend",
+            "description": "The rabbit outsmarts the tiger multiple times, but also shows kindness and generosity towards him.",
+            "strength": 1.0,
+            "source": "rabbit",
+            "source_id": "agent_783a2070a485488a9ed45684d94ea587",
+            "target": "goat",
+            "target_id": "agent_6cc93ec5a0594d7294ff061f919d2163"
+        },
+        {
+            "type": "knows",
+            "description": "The rabbit and the tiger's son have a brief interaction where the rabbit asks the tiger's son questions about the ox.",
+            "strength": 0.4,
+            "source": "rabbit",
+            "source_id": "agent_783a2070a485488a9ed45684d94ea587",
+            "target": "tiger's son",
+            "target_id": "agent_12c6e147cb5d461b8a0807320a4182a1"
+        },
+        {
+            "type": "friend",
+            "description": "The tiger and the rabbit develop a close bond and work together multiple times.",
+            "strength": 1.0,
+            "source": "rabbit",
+            "source_id": "agent_783a2070a485488a9ed45684d94ea587",
+            "target": "cock",
+            "target_id": "agent_6bfe6cc2aa824578b802933d5f2e9ded"
+        },
+        {
+            "type": "friend",
+            "description": "The rabbit worked for the tiger, cleared the farm, and eventually gave the tiger a piece of the ox. The rabbit built a stockade around the tiger, and the tiger got trapped inside.",
+            "strength": 1.0,
+            "source": "monkey",
+            "source_id": "agent_a09f2e8ce9a04c60af14a3683822e5cb",
+            "target": "goat",
+            "target_id": "agent_6cc93ec5a0594d7294ff061f919d2163"
+        },
+        {
+            "type": "friend",
+            "description": "The tiger and the rabbit share a close bond and help each other whenever needed.",
+            "strength": 1.0,
+            "source": "monkey",
+            "source_id": "agent_a09f2e8ce9a04c60af14a3683822e5cb",
+            "target": "armadillo",
+            "target_id": "agent_36a51e654d3a49618253d290eb01250a"
+        },
+        {
+            "type": "knows",
+            "description": "The tiger's son interacts with the rabbit and provides information to him.",
+            "strength": 0.6,
+            "source": "monkey",
+            "source_id": "agent_a09f2e8ce9a04c60af14a3683822e5cb",
+            "target": "tiger's son",
+            "target_id": "agent_12c6e147cb5d461b8a0807320a4182a1"
+        },
+        {
+            "type": "friend",
+            "description": "The tiger and the rabbit have a close bond, with the tiger initially hiring the rabbit for work and later asking for his help in building a stockade.",
+            "strength": 1.0,
+            "source": "monkey",
+            "source_id": "agent_a09f2e8ce9a04c60af14a3683822e5cb",
+            "target": "cock",
+            "target_id": "agent_6bfe6cc2aa824578b802933d5f2e9ded"
+        },
+        {
+            "type": "friend",
+            "description": "The tiger and rabbit share a close bond and help each other whenever needed.",
+            "strength": 1.0,
+            "source": "goat",
+            "source_id": "agent_6cc93ec5a0594d7294ff061f919d2163",
+            "target": "armadillo",
+            "target_id": "agent_36a51e654d3a49618253d290eb01250a"
+        },
+        {
+            "type": "friend",
+            "description": "The tiger initially deceives the rabbit, but they eventually develop a complex relationship where the tiger asks for help from the rabbit multiple times.",
+            "strength": 0.8,
+            "source": "goat",
+            "source_id": "agent_6cc93ec5a0594d7294ff061f919d2163",
+            "target": "tiger's son",
+            "target_id": "agent_12c6e147cb5d461b8a0807320a4182a1"
+        },
+        {
+            "type": "friend",
+            "description": "They have a close bond, with the rabbit helping the tiger and the tiger showing appreciation for the rabbit's work.",
+            "strength": 1.0,
+            "source": "goat",
+            "source_id": "agent_6cc93ec5a0594d7294ff061f919d2163",
+            "target": "cock",
+            "target_id": "agent_6bfe6cc2aa824578b802933d5f2e9ded"
+        },
+        {
+            "type": "knows",
+            "description": "The armadillo and the tiger's son do not interact directly, but they co-occur in one scene where the rabbit asks the tiger's son about the ox.",
+            "strength": 0.2,
+            "source": "armadillo",
+            "source_id": "agent_36a51e654d3a49618253d290eb01250a",
+            "target": "tiger's son",
+            "target_id": "agent_12c6e147cb5d461b8a0807320a4182a1"
+        },
+        {
+            "type": "friend",
+            "description": "They have a complex and multifaceted relationship, with moments of kindness, trickery, and mutual benefit.",
+            "strength": 1.0,
+            "source": "armadillo",
+            "source_id": "agent_36a51e654d3a49618253d290eb01250a",
+            "target": "cock",
+            "target_id": "agent_6bfe6cc2aa824578b802933d5f2e9ded"
+        },
+        {
+            "type": "knows",
+            "description": "The characters have a superficial acquaintance, with some direct interactions and shared events.",
+            "strength": 0.4,
+            "source": "tiger's son",
+            "source_id": "agent_12c6e147cb5d461b8a0807320a4182a1",
+            "target": "cock",
+            "target_id": "agent_6bfe6cc2aa824578b802933d5f2e9ded"
+        }
+    ],
+    "places": [
+        {
+            "type": "farmhouse",
+            "name": "The Tiger's Farm",
+            "description": "A rural house associated with agriculture, owned by the tiger.",
+            "id": "place_94afe975001741f79c1ef49bcd70b7e7"
+        },
+        {
+            "type": "river",
+            "name": "The River",
+            "description": "A large natural flowing body of water near the tiger's farm.",
+            "id": "place_f796e13c74754d5b88acfb642395ee30"
+        },
+        {
+            "type": "village",
+            "name": "The Tiger's House",
+            "description": "A small rural settlement where the tiger lives with his son.",
+            "id": "place_b7584f1d1c5d44479896e58ab93067fa"
+        },
+        {
+            "type": "field",
+            "name": "The Farm Ground",
+            "description": "An open area with grass or crops, cleared by the rabbit for planting.",
+            "id": "place_f7617767a55c4e34ad87e88cffb7e912"
+        },
+        {
+            "type": "tower",
+            "name": "The Stockade",
+            "description": "A standalone tall structure built around the tiger to protect him from danger.",
+            "id": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        }
+    ],
+    "objects": [
+        {
+            "type": "crafted_object",
+            "name": "stockade",
+            "description": "The rabbit built a stockade around the tiger to protect himself.",
+            "id": "object_f2b61b2f20b94ab18d8266d9d4a6ba1b"
+        },
+        {
+            "type": "natural_object",
+            "name": "ox",
+            "description": "The reward for clearing the farm, which the rabbit was supposed to kill in a mosquito-free area but ended up giving to the tiger instead.",
+            "id": "object_4217ca5975864763bc93c11f081ee6a8"
+        },
+        {
+            "type": "crafted_object",
+            "name": "staves of wood",
+            "description": "Used by the rabbit to build the stockade around the tiger.",
+            "id": "object_81d893cca8fe4adb8ae7acbc97b09130"
+        }
+    ],
+    "events": [
+        {
+            "id": "event_20fa701385de4fe59ee41dae0ae754f3",
+            "type": "setup",
+            "name": "Tiger Seeks Farm Worker",
+            "description": "Once upon a time, ages and ages ago, so long ago that the tiger had no stripes upon his back, and the rabbit still had his tail, there was a tiger who had a farm. The farm was very much overgrown with underbrush and the owner sought a workman to clear the ground for him to plant.",
+            "thoughts": [
+                "The event is part of the main narrative action: it sets up a situation that will drive the story forward. The tiger's farm is in disarray and needs clearing, which implies conflict or challenge to be resolved.",
+                "The event describes a problem or situation that needs to be addressed, which drives the story forward. It's not an action taken by the hero, nor is it a resolution of conflict. This matches option 0 as it sets up the main narrative action.",
+                "The event describes a situation where the tiger seeks help for his farm, which indicates a need or problem that will likely be addressed in future events. This is not part of the main action or conflict resolution.",
+                "The event describes a situation where the tiger seeks help for his farm, which indicates a need or problem that will likely be addressed in future events. This is not part of the main action or conflict resolution.",
+                "The event describes a situation where the tiger seeks help for his farm, which indicates a need or problem that will likely be addressed in future events. This is not part of the main action or conflict resolution.",
+                "The event describes a problem or situation that needs to be addressed, which drives the story forward. The tiger's farm is in disarray and needs clearing, implying conflict or challenge to be resolved.",
+                "The event describes a situation where the tiger seeks help for his farm, which indicates a need or problem that will likely be addressed in future events. This is not part of the main action or conflict resolution."
+            ],
+            "agents": [
+                {
+                    "id": "agent_575897648c174caea9b3974dcbd558c4",
+                    "actions": [
+                        "seeks a workman to clear the ground"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_6bfe6cc2aa824578b802933d5f2e9ded",
+                    "actions": [
+                        "is heard crowing in the distance"
+                    ],
+                    "importance": 0.1
+                }
+            ],
+            "objects": [
+                "object_4217ca5975864763bc93c11f081ee6a8"
+            ],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_84afc6d9924d408d87af276dde38203e",
+            "type": "move",
+            "name": "Tiger Offers Work Reward",
+            "description": "The tiger called all the beasts together and said to them when they had assembled, “I need a good workman at once to clear my farm of the underbrush. To the one of you who will do this work I offer an ox in payment.”",
+            "thoughts": [
+                "The event involves the tiger calling all beasts together and offering a reward, which sets up the problem of clearing the underbrush. This is part of the main narrative action as it drives the story forward through preparation.",
+                "The event is part of the main narrative action: it introduces a problem that needs to be solved and sets up the conflict. The tiger's request for a workman drives the story forward by creating an opportunity for the hero (the workman) to act.",
+                "The event is part of the main narrative action: it involves the tiger acting within the core plot. The tiger needs a workman to clear his farm, which sets up the story's central conflict.",
+                "The tiger's request sets up the problem of clearing the underbrush and introduces a conflict that needs to be solved. This event drives the story forward by creating an opportunity for the hero (the workman) to act.",
+                "The tiger's request sets up the problem of clearing the underbrush and introduces a conflict that needs to be solved. This event drives the story forward by creating an opportunity for the hero (the workman) to act."
+            ],
+            "agents": [
+                {
+                    "id": "agent_575897648c174caea9b3974dcbd558c4",
+                    "actions": [
+                        "called all beasts together",
+                        "offered a reward"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_6bfe6cc2aa824578b802933d5f2e9ded",
+                    "actions": [
+                        "was heard crowing in the distance"
+                    ],
+                    "importance": 0.1
+                }
+            ],
+            "objects": [
+                "object_4217ca5975864763bc93c11f081ee6a8"
+            ],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_73922e0637884616b0adda33a3ecfdbc",
+            "type": "conflict",
+            "name": "Tiger Rejects Monkey Worker",
+            "description": "The monkey was the first one to step forward and apply for the position. The tiger tried him for a little while but he was not a good workman at all. He did not work steadily enough to accomplish anything. The tiger discharged him very soon and he did not pay him.",
+            "thoughts": [
+                "The event involves the tiger acting on and reacting to a job applicant, which drives the story forward by introducing conflict and testing the hero's worthiness for the position.",
+                "The event involves a character (the monkey) being tested and rejected by another character (the tiger), which drives the story forward through conflict and preparation for the main plot.",
+                "The event involves the tiger acting as a farmer and trying out different workmen, which drives the story forward by setting up potential future events. This is an action-oriented part of the main plot.",
+                "The event involves a character (the monkey) being tested and rejected by another character (the tiger), which drives the story forward through conflict and preparation for the main plot.",
+                "The event introduces a problem: a threat or obstacle that disrupts the hero's world. The tiger tests and rejects the monkey as a workman, which sets up potential future events and drives the story forward through conflict.",
+                "The event introduces a problem: a threat or obstacle that disrupts the hero's world. The tiger tests and rejects the monkey as a workman, which sets up potential future events and drives the story forward through conflict.",
+                "The event introduces a problem: a threat or obstacle that disrupts the hero's world. The tiger tests and rejects the monkey as a workman, which sets up potential future events and drives the story forward through conflict."
+            ],
+            "agents": [
+                {
+                    "id": "agent_a09f2e8ce9a04c60af14a3683822e5cb",
+                    "actions": [
+                        "applied for a position",
+                        "was tested by the tiger"
+                    ],
+                    "importance": 0.6
+                },
+                {
+                    "id": "agent_575897648c174caea9b3974dcbd558c4",
+                    "actions": [
+                        "tried the monkey as a workman",
+                        "discharged him"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [
+                "object_4217ca5975864763bc93c11f081ee6a8"
+            ],
+            "place": "place_94afe975001741f79c1ef49bcd70b7e7"
+        },
+        {
+            "id": "event_ccc761e05bde4195b6927d37316bde15",
+            "type": "move",
+            "name": "Tiger Discharges Unreliable Goat",
+            "description": "Then the tiger hired the goat to do the work. The goat worked faithfully enough but he did not have the brains to do the work well. He would clear a little of the farm in one place and then he would go away and work on another part of it. He never finished anything neatly. The tiger discharged him very soon without paying him.",
+            "thoughts": [
+                "The goat's hiring by the tiger and subsequent dismissal is a continuation of the story's setup phase, where the tiger tries out different animals for farm work. This event is not part of the main conflict or plot progression.",
+                "The event involves the tiger acting upon a previous hire, discharging the goat for poor work and not paying him. This is part of the main narrative action as it drives the story forward by showing the tiger's continued struggle to find a suitable worker.",
+                "The event describes the tiger discharging another failed workman, the goat, without resolving any conflict or plot point. The story is still in its escalating phase, with multiple attempts by the tiger to find a suitable worker.",
+                "The event involves the tiger acting upon a previous hire, discharging the goat for poor work and not paying him. This is part of the main narrative action as it drives the story forward by showing the tiger's continued struggle to find a suitable worker.",
+                "The event involves the tiger acting upon a previous hire, discharging the goat for poor work and not paying him. This is part of the main narrative action as it drives the story forward by showing the tiger's continued struggle to find a suitable worker.",
+                "The event involves the tiger acting upon a previous hire, discharging the goat for poor work and not paying him. This is part of the main narrative action as it drives the story forward by showing the tiger's continued struggle to find a suitable worker."
+            ],
+            "agents": [
+                {
+                    "id": "agent_575897648c174caea9b3974dcbd558c4",
+                    "actions": [
+                        "hired the goat",
+                        "discharged the goat without paying him"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_6cc93ec5a0594d7294ff061f919d2163",
+                    "actions": [
+                        "worked on the farm but poorly"
+                    ],
+                    "importance": 0.4
+                }
+            ],
+            "objects": [
+                "object_4217ca5975864763bc93c11f081ee6a8"
+            ],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_899507984083449ba01d2487e6186b8e",
+            "type": "move",
+            "name": "Armadillo Fails Farm Task",
+            "description": "Next the tiger tried the armadillo. The armadillo was very strong and he did the work well. The trouble with him was that he had such a big appetite. There were a great many ants about the place and the armadillo could never pass by a sweet tender juicy ant without stopping to eat it.",
+            "thoughts": [
+                "The armadillo's attempt to clear the farm is another test by the tiger to find a suitable workman. The armadillo shows promise but ultimately fails due to his insatiable appetite.",
+                "The armadillo's attempt to clear the farm is another trial by the tiger to find a suitable workman. The armadillo's strength and appetite are presented as his positive and negative qualities, but he doesn't succeed in clearing the farm due to his distraction.",
+                "The armadillo's attempt to clear the farm is part of the main narrative action. The story is still in its setup phase, and the tiger is trying different animals for the job.",
+                "The armadillo's attempt to clear the farm is part of the main narrative action. The story is still in its setup phase, and the tiger is trying different animals for the job.",
+                "The armadillo's attempt to clear the farm is part of the main narrative action. The story is still in its setup phase, and the tiger is trying different animals for the job. This event involves the hero (armadillo) acting within the core plot.",
+                "The armadillo's attempt to clear the farm is part of the main narrative action. The story is still in its setup phase, and the tiger is trying different animals for the job."
+            ],
+            "agents": [
+                {
+                    "id": "agent_36a51e654d3a49618253d290eb01250a",
+                    "actions": [
+                        "tried to clear the farm",
+                        "ate ants while working"
+                    ],
+                    "importance": 0.6
+                }
+            ],
+            "objects": [
+                "object_4217ca5975864763bc93c11f081ee6a8"
+            ],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_8c5e370490794c26b7018522d6455548",
+            "type": "acquisition",
+            "name": "Tiger Dismisses Armadillo Worker",
+            "description": "It was lunch time all day long with him. The tiger discharged him and sent him away without paying him anything. At last the rabbit applied for the position.",
+            "thoughts": [
+                "The event involves the tiger acting upon the rabbit's application for a new position on the farm. This is part of the main narrative action as it drives the story forward through the process of finding a suitable workman.",
+                "The event involves the tiger acting upon the rabbit's application for a job on his farm. This is part of the main narrative action as it drives the story forward through conflict and external help.",
+                "The event involves the tiger acting upon another character, specifically discharging and not paying him. This action drives the story forward by introducing a new character, the rabbit, who will apply for the position.",
+                "The event involves the tiger acting upon another character, specifically discharging and not paying him. This action drives the story forward by introducing a new character, the rabbit, who will apply for the position.",
+                "The event involves the tiger acting upon another character, specifically discharging and not paying him. This action drives the story forward by introducing a new character, the rabbit, who will apply for the position.",
+                "The tiger discharging and not paying the armadillo drives the story forward by introducing a new character, the rabbit, who will apply for the position. This event is similar to previous events where the tiger tried other animals for the job but ultimately dismissed them without payment.",
+                "The tiger discharging and not paying another character drives the story forward by introducing a new character who will apply for the position. This action is part of the main narrative action as it creates conflict and introduces the rabbit's application.",
+                "The tiger discharges and doesn't pay another character, specifically the armadillo, which introduces a new character who will apply for the position. This is similar to previous events where other animals were tried but ultimately dismissed without payment.",
+                "The tiger discharges and doesn't pay another character, introducing a new character who will apply for the position. This action creates conflict and drives the story forward.",
+                "The tiger discharges and doesn't pay another character, introducing a new character who will apply for the position. This action creates conflict and drives the story forward."
+            ],
+            "agents": [
+                {
+                    "id": "agent_575897648c174caea9b3974dcbd558c4",
+                    "actions": [
+                        "discharged",
+                        "sent away without paying"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "applied for the position"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_ba89f58a75a84ae2877e4b5b62040a2b",
+            "type": "move",
+            "name": "Tiger Selects New Candidate",
+            "description": "The tiger laughed at him and said, “Why, little rabbit, you are too small to do the work. The monkey, the goat, and the armadillo have all failed to give satisfaction. Of course a little beast like you will fail too.” However, there were no other beasts who applied for the position, so the tiger sent for the rabbit and told him that he would try him for a little while.",
+            "thoughts": [
+                "The event involves the tiger acting on previous events and selecting a new candidate for the job. This is part of the main narrative action as it drives the story forward through conflict and external help.",
+                "The event involves the hero acting within the core plot, as the rabbit applies for and begins working on the farm clearing task. This event drives the story forward by introducing a new character and escalating the conflict of finding a suitable workman.",
+                "The tiger's decision to try the rabbit despite his initial skepticism and past failures suggests a turning point or a moment of consideration in the story. However, it does not yet resolve any conflicts or reach a new stable state.",
+                "The event involves the tiger acting on previous events and selecting a new candidate for the job. This is part of the main narrative action as it drives the story forward through conflict and external help.",
+                "The event involves the tiger acting on previous events and selecting a new candidate for the job. This is part of the main narrative action as it drives the story forward through conflict and external help.",
+                "The event involves the hero acting within the core plot as he applies for and begins working on the farm clearing task. This drives the story forward by introducing a new character and escalating the conflict of finding a suitable workman."
+            ],
+            "agents": [
+                {
+                    "id": "agent_575897648c174caea9b3974dcbd558c4",
+                    "actions": [
+                        "sent for the rabbit",
+                        "told him that he would try him for a little while"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "applied for the position",
+                        "began working on the farm clearing task"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_cde4571485c64e488dc2eee9fd0fe33d",
+            "type": "resolution",
+            "name": "Tiger Leaves for Hunting Trip",
+            "description": "The rabbit worked faithfully and well, and soon he had cleared a large portion of the ground. The next day he worked just as well. The tiger thought that he had been very lucky to hire the rabbit. He got tired staying around to watch the rabbit work. The rabbit seemed to know just how to do the work anyway, without orders, so the tiger decided to go away on a hunting trip.",
+            "thoughts": [
+                "The event shows the tiger's satisfaction with the rabbit's work and his decision to go away on a hunting trip, indicating that the initial conflict or problem has been resolved. The tiger no longer needs to supervise the rabbit, and the narrative context suggests that the rabbit has successfully cleared a large portion of the ground.",
+                "The event shows the tiger's satisfaction with the rabbit's work and his decision to go away on a hunting trip, which implies that the conflict or task at hand has been resolved. The rabbit has successfully cleared a large portion of the ground, and the tiger no longer feels the need to supervise him.",
+                "The conflict or task at hand has been resolved as the rabbit successfully cleared a large portion of the ground and the tiger no longer feels the need to supervise him. This is a clear indication that the story has reached its resolution.",
+                "The event shows the tiger's satisfaction with the rabbit's work and his decision to go away on a hunting trip, indicating that the initial conflict or problem has been resolved. The tiger no longer needs to supervise the rabbit, and the narrative context suggests that the rabbit has successfully cleared a large portion of the ground.",
+                "The event shows the tiger's satisfaction with the rabbit's work and his decision to go away on a hunting trip, indicating that the initial conflict or problem has been resolved. The tiger no longer needs to supervise the rabbit, and the narrative context suggests that the rabbit has successfully cleared a large portion of the ground."
+            ],
+            "agents": [
+                {
+                    "id": "agent_575897648c174caea9b3974dcbd558c4",
+                    "actions": [
+                        "hired the rabbit",
+                        "went away on a hunting trip"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "worked faithfully and well",
+                        "cleared a large portion of the ground"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [
+                "object_4217ca5975864763bc93c11f081ee6a8"
+            ],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_74384bb7c1bf49c4857285e818970305",
+            "type": "acquisition",
+            "name": "Rabbit Inspects Tiger's Gift",
+            "description": "He left his son to watch the rabbit. After the tiger had gone away, the rabbit said to the tiger’s son, “The ox your father is going to give me is marked with a white spot on his left ear and another on his right side, isn’t he?” “O, no,” replied the tiger’s son.",
+            "thoughts": [
+                "The event involves the hero acting within the core plot. The rabbit is working faithfully and well, clearing a large portion of the ground, while the tiger has gone away on a hunting trip.",
+                "The event involves the hero acting within the core plot. The rabbit's conversation with the tiger's son is a part of the ongoing story and doesn't resolve any open conflict or reach a new stable state.",
+                "The event involves the hero acting within the core plot. The rabbit is working faithfully and well, clearing a large portion of the ground without orders from the tiger. This action drives the story forward through preparation for the next event.",
+                "The event involves the hero acting within the core plot. The rabbit is working faithfully and well, clearing a large portion of the ground without orders from the tiger. This action drives the story forward through preparation for the next event.",
+                "The rabbit continues working faithfully and well after the tiger has gone away. This action drives the story forward through preparation for the next event.",
+                "The rabbit continues working faithfully and well after the tiger has gone away. This action drives the story forward through preparation for the next event.",
+                "The rabbit continues working faithfully and well after the tiger has gone away. This action drives the story forward through preparation for the next event.",
+                "The rabbit continues working faithfully and well after the tiger has gone away. This action drives the story forward through preparation for the next event.",
+                "The rabbit continues working faithfully and well after the tiger has gone away. This action drives the story forward through preparation for the next event.",
+                "The rabbit continues working faithfully and well after the tiger has gone away. This action drives the story forward through preparation for the next event.",
+                "The rabbit continues working faithfully and well after the tiger has gone away. This action drives the story forward through preparation for the next event."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "said to the tiger's son",
+                        "continued working faithfully and well after the tiger had gone away"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_12c6e147cb5d461b8a0807320a4182a1",
+                    "actions": [
+                        "replied to the rabbit"
+                    ],
+                    "importance": 0.6
+                }
+            ],
+            "objects": [
+                "object_4217ca5975864763bc93c11f081ee6a8"
+            ],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_ebc1e393904d4cb49eb37d80e5de6bf2",
+            "type": "setup",
+            "name": "Rabbit Asks About Ox",
+            "description": "“He is red all over with just a tiny white spot on his right ear.” The rabbit worked for a while longer and then he said, “The ox which your father is going to give me is kept by the river, isn’t he?” “Yes,” replied the tiger’s son.",
+            "thoughts": [
+                "The event involves a conversation between the rabbit and the tiger's son about the ox, which is a plot point related to the previous events. However, it doesn't seem to be a turning point or a conflict resolver. The rabbit has been working well, but this conversation is more of a continuation of the story rather than a resolution.",
+                "The event involves the hero acting and reacting within the core plot. The rabbit is working on clearing the farm, and then asks a question about the ox that his father is going to give him as payment.",
+                "The event involves a conversation between the rabbit and the tiger's son about the ox that the tiger promised as payment. This conversation does not drive the story forward through conflict or external help, nor is it part of the main narrative action. Instead, it seems to be a detail that adds depth to the world and characters.",
+                "The conversation between the rabbit and the tiger's son about the ox does not drive the story forward through conflict or external help. It seems to be a detail that adds depth to the world and characters.",
+                "The conversation between the rabbit and the tiger's son about the ox is a detail that adds depth to the world and characters. It doesn't drive the story forward through conflict or external help, nor is it part of the main narrative action.",
+                "The conversation between the rabbit and the tiger's son about the ox's markings does not drive the story forward through conflict or external help. It seems to be a detail that adds depth to the world and characters."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "asked about the ox",
+                        "worked for a while"
+                    ],
+                    "importance": 0.6
+                },
+                {
+                    "id": "agent_12c6e147cb5d461b8a0807320a4182a1",
+                    "actions": [
+                        "replied to the rabbit's question"
+                    ],
+                    "importance": 0.4
+                }
+            ],
+            "objects": [
+                "object_f2b61b2f20b94ab18d8266d9d4a6ba1b"
+            ],
+            "place": "place_f796e13c74754d5b88acfb642395ee30"
+        },
+        {
+            "id": "event_d78626aef7e347c7809bfd35b4da0330",
+            "type": "resolution",
+            "name": "Rabbit clears the farm.",
+            "description": "The rabbit had made a plan to go and get the ox without waiting to finish his work. Just as he started off he saw the tiger returning. The tiger noticed that the rabbit had not worked so well when he was away. After that, he stayed and watched the rabbit until the whole farm was cleared.",
+            "thoughts": [
+                "The rabbit makes a plan to go and get the ox without waiting to finish his work, but then sees the tiger returning. The tiger stays and watches the rabbit until the whole farm is cleared. This event represents a turning point in the narrative where the rabbit's success is confirmed, and the story takes a new direction.",
+                "The rabbit makes a plan to get the ox without waiting for his work to be finished. However, he sees the tiger returning and decides to stay and watch him until the farm is cleared. This event resolves the previous conflict of the rabbit wanting to leave and the tiger's son watching over him.",
+                "The rabbit's success is confirmed as he completes clearing the farm with the tiger watching over him. This marks a turning point in the narrative where the story takes a new direction.",
+                "The rabbit's success is confirmed as he clears the whole farm with the tiger watching over him. This marks a turning point in the narrative where the story takes a new direction.",
+                "The rabbit's success is confirmed as he completes his task of clearing the farm, and the story takes a new direction with the tiger staying to watch him. This event marks a turning point in the narrative where the previous conflict (the tiger's skepticism and the rabbit's initial failure to get the ox) is resolved."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "made a plan to go and get the ox",
+                        "decided to stay and watch the tiger"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_575897648c174caea9b3974dcbd558c4",
+                    "actions": [
+                        "returned home",
+                        "watched the rabbit until the whole farm was cleared"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [
+                "object_4217ca5975864763bc93c11f081ee6a8"
+            ],
+            "place": "place_94afe975001741f79c1ef49bcd70b7e7"
+        },
+        {
+            "id": "event_57b936f9b1f3487081cae2a37adccbc1",
+            "type": "move",
+            "name": "Tiger Gives Rabbit the Ox",
+            "description": "Then the tiger gave the rabbit the ox as he had promised. “You must kill this ox,” he said to the rabbit, “in a place where there are neither flies nor mosquitoes.”",
+            "thoughts": [
+                "The event involves the hero acting within the core plot. The tiger gives the rabbit an ox as promised, but with a condition that drives the story forward.",
+                "The event involves the hero acting within the core plot. The tiger has promised an ox to the rabbit as payment for clearing his farm, and now the rabbit is receiving it. This event drives the story forward by fulfilling a promise made earlier in the narrative.",
+                "The event involves the hero acting within the core plot. The tiger gives the rabbit an ox as promised, but with a condition that drives the story forward.",
+                "The event involves the hero acting within the core plot. The tiger gives the rabbit an ox as promised, but with a condition that drives the story forward.",
+                "The event involves the hero acting within the core plot. The tiger gives the rabbit an ox as promised, but with a condition that drives the story forward."
+            ],
+            "agents": [
+                {
+                    "id": "agent_575897648c174caea9b3974dcbd558c4",
+                    "actions": [
+                        "gives an ox to the rabbit",
+                        "sets a condition for the rabbit"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "receives the ox from the tiger",
+                        "must kill the ox in a specific place"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [
+                "object_f2b61b2f20b94ab18d8266d9d4a6ba1b",
+                "object_81d893cca8fe4adb8ae7acbc97b09130"
+            ],
+            "place": "place_f796e13c74754d5b88acfb642395ee30"
+        },
+        {
+            "id": "event_9a08f79a673a4de9b6eb7695619d35af",
+            "type": "move",
+            "name": "Rabbit Plans to Kill Ox",
+            "description": "The rabbit went away with the ox. After he had gone for some distance he thought he would kill him. He heard a cock, however, crowing in the distance and he knew that there must be a farm yard near.",
+            "thoughts": [
+                "The event is part of the main narrative action: it drives the story forward through conflict or external help. The rabbit's plan to get the ox without waiting to finish his work creates tension and leads to a turning point in the story.",
+                "The event involves the hero acting within the core plot. The rabbit has just received a reward for completing his task and now has a new goal: killing the ox. This is a direct continuation of the narrative action.",
+                "The event is part of the main narrative action and drives the story forward through conflict. The rabbit's plan to get the ox without waiting to finish his work creates tension and escalates the plot.",
+                "The event involves the hero acting within the core plot. The rabbit has just received a reward for completing his task and now has a new goal: killing the ox. This is a direct continuation of the narrative action.",
+                "The event involves the hero acting within the core plot. The rabbit has just received a reward for completing his task and now has a new goal: killing the ox. This is a direct continuation of the narrative action.",
+                "The event involves the hero acting within the core plot. The rabbit has just received a reward for completing his task and now has a new goal: killing the ox. This is a direct continuation of the narrative action."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "went away with the ox",
+                        "thought he would kill him"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_6bfe6cc2aa824578b802933d5f2e9ded",
+                    "actions": [
+                        "crowing in the distance"
+                    ],
+                    "importance": 0.2
+                }
+            ],
+            "objects": [
+                "object_4217ca5975864763bc93c11f081ee6a8"
+            ],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_a8998b48309747d3af30eb99ec728564",
+            "type": "acquisition",
+            "name": "Rabbit decides against killing ox.",
+            "description": "There would be flies, of course. He went on farther and again he thought that he would kill the ox. The ground looked moist and damp and so did the leaves on the bushes. Since the rabbit thought there would be mosquitoes there he decided not to kill the ox.",
+            "thoughts": [
+                "The rabbit's decision not to kill the ox is based on his consideration of the environment and potential consequences. He thinks about flies and mosquitoes, indicating that he wants to avoid a situation where he would have to deal with them. This event does not resolve any open conflict or reach a new stable state; instead, it represents a moment of hesitation and decision-making within the ongoing narrative.",
+                "The rabbit's decision not to kill the ox due to potential flies and mosquitoes is a preparatory action that drives the story forward. The hero is reacting to the tiger's promise and considering the consequences of his actions.",
+                "The rabbit's decision not to kill the ox is based on his previous experience and knowledge of the tiger's farm. He remembers that there would be flies and mosquitoes in certain areas, which suggests that this event is part of the main narrative action, driving the story forward through conflict or external help.",
+                "The rabbit's decision not to kill the ox due to potential flies and mosquitoes is a preparatory action that drives the story forward. The hero is reacting to the tiger's promise and considering the consequences of his actions.",
+                "The rabbit's decision not to kill the ox due to potential flies and mosquitoes is a preparatory action that drives the story forward. The hero is reacting to the tiger's promise and considering the consequences of his actions.",
+                "The rabbit's decision not to kill the ox due to potential flies and mosquitoes is a preparatory action that drives the story forward. The hero is reacting to the tiger's promise and considering the consequences of his actions.",
+                "The rabbit's decision not to kill the ox due to potential flies and mosquitoes is a preparatory action that drives the story forward. The hero is reacting to the tiger's promise and considering the consequences of his actions.",
+                "The rabbit's decision not to kill the ox due to potential flies and mosquitoes is a preparatory action that drives the story forward. The hero is reacting to the tiger's promise and considering the consequences of his actions.",
+                "The rabbit's decision not to kill the ox due to potential flies and mosquitoes is a preparatory action that drives the story forward. The hero is reacting to the tiger's promise and considering the consequences of his actions.",
+                "The rabbit's decision not to kill the ox due to potential flies and mosquitoes is a preparatory action that drives the story forward. The hero is reacting to the tiger's promise and considering the consequences of his actions.",
+                "The rabbit's decision not to kill the ox due to potential flies and mosquitoes is a preparatory action that drives the story forward. The hero is reacting to the tiger's promise and considering the consequences of his actions.",
+                "The rabbit's decision not to kill the ox due to potential flies and mosquitoes is a preparatory action that drives the story forward. The hero is reacting to the tiger's promise and considering the consequences of his actions."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "decided not to kill the ox",
+                        "thought about flies and mosquitoes"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [
+                "object_4217ca5975864763bc93c11f081ee6a8"
+            ],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_14cbfcc9017e44cb8c04e4bd0b9dcd19",
+            "type": "move",
+            "name": "Rabbit Finds Suitable Location",
+            "description": "He went on and on and finally he came to a high place where there was a strong breeze blowing. “There are no mosquitoes here,” he said to himself. “The place is so far removed from any habitation that there are no flies, either.”",
+            "thoughts": [
+                "The event is part of the main narrative action: it drives the story forward through conflict or external help. The rabbit is searching for a suitable place to kill the ox, which is a key plot point in the story.",
+                "The event is part of the main narrative action: it drives the story forward through conflict or external help. The rabbit is trying to find a suitable place to kill the ox, and his decision-making process is influenced by his past experiences on the tiger's farm.",
+                "The event is part of the main narrative action: it drives the story forward through conflict, preparation, or external help. The rabbit's decision not to kill the ox due to the presence of flies and mosquitoes is a reaction to the tiger's request and sets up further events in the story.",
+                "The rabbit is reacting to a previous request from the tiger and trying to find a suitable place to kill the ox. This decision-making process is influenced by his past experiences on the tiger's farm.",
+                "The event is part of the main narrative action: it drives the story forward through conflict or external help. The rabbit is trying to find a suitable place to kill the ox, and his decision-making process is influenced by his past experiences on the tiger's farm.",
+                "The event is part of the main narrative action: it drives the story forward through conflict or external help. The rabbit is trying to find a suitable place to kill the ox, and his decision-making process is influenced by his past experiences on the tiger's farm."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "searched for a suitable place to kill the ox",
+                        "decided not to kill the ox due to flies and mosquitoes"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_f026583461754aa0bc979461ceb761c2",
+            "type": "move",
+            "name": "Rabbit Prepares to Kill Ox",
+            "description": "He decided to kill the ox. Just as he was ready to eat the ox, along came the tiger. “O, rabbit, you have been such a good friend of mine,” said the tiger, “and now I am so very, very hungry that all my ribs show, as you yourself can see.",
+            "thoughts": [
+                "The rabbit's attempt to kill the ox is a continuation of his previous actions and is driven by his goal to receive the reward. However, it is also an opportunity for the tiger to intervene and reveal his true intentions.",
+                "The rabbit is trying to find a suitable location to kill the ox as per the tiger's instructions. This event is part of the main narrative action and drives the story forward through conflict and preparation.",
+                "The rabbit's decision to kill the ox is a pivotal moment in the story, but it doesn't resolve any open conflict or reach a new stable state. The event is part of the main narrative action, driving the story forward through the rabbit's actions and reactions.",
+                "The rabbit's decision to kill the ox is a pivotal moment in the story, but it doesn't resolve any open conflict or reach a new stable state. The event is part of the main narrative action, driving the story forward through the rabbit's actions and reactions.",
+                "The rabbit's decision to kill the ox is a pivotal moment in the story, but it doesn't resolve any open conflict or reach a new stable state. The event is part of the main narrative action, driving the story forward through the rabbit's actions and reactions.",
+                "The rabbit's decision to kill the ox is a pivotal moment in the story, but it doesn't resolve any open conflict or reach a new stable state. The event is part of the main narrative action, driving the story forward through the rabbit's actions and reactions."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "trying to find a suitable location to kill the ox",
+                        "attempting to kill the ox"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_575897648c174caea9b3974dcbd558c4",
+                    "actions": [
+                        "coming along",
+                        "talking to the rabbit"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [
+                "object_4217ca5975864763bc93c11f081ee6a8"
+            ],
+            "place": "place_94afe975001741f79c1ef49bcd70b7e7"
+        },
+        {
+            "id": "event_9b993ff8fc4b4d59bc37455b7ac56fd6",
+            "type": "move",
+            "name": "Rabbit Gives Ox Piece",
+            "description": "Will you not be a good kind rabbit and give me a piece of your ox?” The rabbit gave the tiger a piece of the ox. The tiger devoured it in the twinkling of an eye.",
+            "thoughts": [
+                "The event involves the rabbit acting within the core plot, driving the story forward through conflict and external help. The tiger's hunger and the rabbit's cleverness create tension and escalate the narrative.",
+                "The event involves the rabbit acting within the core plot, and it drives the story forward through conflict. The tiger's hunger and the rabbit's cleverness create tension and escalate the narrative.",
+                "The event involves the rabbit acting within the core plot and drives the story forward through conflict. The tiger's hunger and the rabbit's cleverness create tension and escalate the narrative.",
+                "The event involves the rabbit acting within the core plot, driving the story forward through conflict and external help. The tiger's hunger and the rabbit's cleverness create tension and escalate the narrative.",
+                "The rabbit gives a piece of the ox to the tiger, who devours it quickly. This event escalates the narrative as it shows the tiger's hunger and the rabbit's cleverness in trying to delay giving him the entire ox."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "gave a piece of the ox to the tiger",
+                        "tried to delay giving the entire ox"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_575897648c174caea9b3974dcbd558c4",
+                    "actions": [
+                        "devoured the piece of the ox in the twinkling of an eye"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [
+                "object_4217ca5975864763bc93c11f081ee6a8"
+            ],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_26664a971c0142f6b74f623d26de4b62",
+            "type": "resolution",
+            "name": "Rabbit Feeds Hungry Tiger",
+            "description": "Then he leaned back and said, “Is that all you are going to give me to eat?” The tiger looked so big and savage that the rabbit did not dare refuse to give him any more of the ox.",
+            "thoughts": [
+                "The rabbit gives a piece of the ox to the tiger as he is hungry. This event resolves the conflict between the rabbit and the tiger over the ox.",
+                "The rabbit gives a piece of the ox to the tiger after he has been tricked into thinking there are no flies or mosquitoes. This event resolves the conflict between the rabbit and the tiger over the ox.",
+                "The rabbit gives a piece of the ox to the tiger after he asks for it. This event resolves the conflict between the rabbit and the tiger over the ox, as the rabbit has been trying to kill the ox in a place without flies or mosquitoes but is interrupted by the tiger's request.",
+                "The rabbit gives a piece of the ox to the tiger after he has been tricked into thinking there are no flies or mosquitoes. This event resolves the conflict between the rabbit and the tiger over the ox.",
+                "The rabbit gives a piece of the ox to the tiger after he has been tricked into thinking there are no flies or mosquitoes. This event resolves the conflict between the rabbit and the tiger over the ox."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "gives a piece of the ox to the tiger"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_575897648c174caea9b3974dcbd558c4",
+                    "actions": [
+                        "asks for more food",
+                        "looks big and savage"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [
+                "object_4217ca5975864763bc93c11f081ee6a8"
+            ],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_aeae34c581364a2ebe777bf99260e185",
+            "type": "conflict",
+            "name": "Tiger Demands More Ox",
+            "description": "The tiger ate and ate and ate until he had devoured that entire ox. The rabbit had been able to get only a tiny morsel of it. He was very, very angry at the tiger.",
+            "thoughts": [
+                "The event involves the tiger acting and reacting within the core plot. The rabbit's success is confirmed, but the conflict escalates as the tiger demands more of the ox. This event drives the story forward through conflict.",
+                "The tiger's request for a piece of the ox from the rabbit marks a turning point where the rabbit's actions are driven by fear and submission rather than resistance or defiance. This event is a culmination of the rabbit's earlier plan to deceive the tiger and his son, but ultimately, he gives in to the tiger's demands.",
+                "The event involves the tiger acting on his hunger and devouring a piece of the ox, which was given to him by the rabbit. This action is a consequence of the previous events in the story, particularly the rabbit's decision to give the tiger a piece of the ox due to his intimidating presence.",
+                "The tiger demands a piece of the ox from the rabbit after devouring the first piece. This action escalates the conflict between the two characters and drives the story forward.",
+                "The tiger's demand for a piece of the ox from the rabbit marks a turning point where the rabbit's actions are driven by fear and submission rather than resistance or defiance. This event is a culmination of the previous events in the story, particularly the rabbit's decision to give the tiger a piece of the ox due to his intimidating presence.",
+                "The tiger's request for a piece of the ox from the rabbit marks a turning point where the rabbit's actions are driven by fear and submission rather than resistance or defiance. This event is a culmination of the previous events in the story, particularly the rabbit's decision to give the tiger a piece of the ox due to his intimidating presence.",
+                "The tiger demands a piece of the ox from the rabbit after devouring the first piece. This action escalates the conflict between the two characters and drives the story forward.",
+                "The tiger demands a piece of the ox from the rabbit after devouring the first piece. This action escalates the conflict between the two characters and drives the story forward.",
+                "The tiger demands a piece of the ox from the rabbit after devouring the first piece. This action escalates the conflict between the two characters and drives the story forward."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "ate a piece of the ox",
+                        "gave a piece of the ox to the tiger"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_575897648c174caea9b3974dcbd558c4",
+                    "actions": [
+                        "devoured an entire ox"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [
+                "object_4217ca5975864763bc93c11f081ee6a8"
+            ],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_882ca24b5ac64f84a07e465072a6c52c",
+            "type": "move",
+            "name": "Rabbit gives ox to Tiger.",
+            "description": "One day, not long after, the rabbit went to a place not far from the tiger’s house and began cutting down big staves of wood. The tiger soon happened along and asked him what he was doing.",
+            "thoughts": [
+                "The rabbit and the tiger's interaction is a continuation of their previous story. The rabbit has already cleared the farm with the tiger away on a hunting trip, and now they are discussing the ox. However, this event marks a turning point in their relationship as the tiger's true intentions are revealed.",
+                "The rabbit and the tiger have a long history of interaction, with the tiger initially hiring the rabbit for work on his farm. The rabbit has already outsmarted the tiger in getting the ox without waiting to finish his work, and now the tiger is trying to take advantage of the rabbit's kindness by asking for more food. This event represents a turning point in their relationship, where the rabbit becomes angry at the tiger's exploitation.",
+                "The rabbit gives a piece of the ox to the tiger after he devours most of it. This event marks the culmination of the rabbit's plan and the tiger's hunger, leading to the final confrontation.",
+                "The rabbit gives a piece of the ox to the tiger after he devours most of it. This marks the culmination of the rabbit's plan and the tiger's hunger, leading to the final confrontation."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "cutting down big staves of wood",
+                        "giving a piece of the ox to the tiger"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_575897648c174caea9b3974dcbd558c4",
+                    "actions": [
+                        "asking what the rabbit was doing"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [
+                "object_4217ca5975864763bc93c11f081ee6a8",
+                "object_81d893cca8fe4adb8ae7acbc97b09130"
+            ],
+            "place": "place_b7584f1d1c5d44479896e58ab93067fa"
+        },
+        {
+            "id": "event_b5ae07c35d624cc3ac4f6bed5fb390c1",
+            "type": "acquisition",
+            "name": "Rabbit Prepares Stockade Defense",
+            "description": "“I’m getting ready to build a stockade around myself,” replied the rabbit. “Haven’t you heard the orders?” The tiger said that he hadn’t heard any orders.",
+            "thoughts": [
+                "The event involves the rabbit acting within the core plot, reacting to the tiger's actions, and driving the story forward. The conversation between the rabbit and the tiger is a key part of the narrative action.",
+                "The event involves a conversation between the rabbit and the tiger, where the rabbit is preparing for potential conflict by building a stockade around himself. This action is driven by past events and the rabbit's experience with the tiger's hunger. The narrative has progressed to this point through various interactions between the characters, including the tiger's initial dismissal of the rabbit, the rabbit's successful work on the farm, and the subsequent events leading up to this conversation.",
+                "The rabbit is building a stockade around himself as a response to the tiger's request for more food from the ox. This action indicates that the rabbit is taking steps to protect himself from the tiger's demands.",
+                "The rabbit is preparing for potential conflict by building a stockade around himself as a response to the tiger's demands. This action is driven by past events and the rabbit's experience with the tiger's hunger.",
+                "The rabbit is building a stockade around himself as a response to the tiger's demands for more food from the ox. This action indicates that the rabbit is taking steps to protect himself from the tiger's hunger.",
+                "The rabbit is building a stockade around himself as a response to the tiger's request for more food from the ox. This action indicates that the rabbit is taking steps to protect himself from the tiger's demands.",
+                "The rabbit is preparing for potential conflict by building a stockade around himself as a response to the tiger's demands. This action is driven by past events and the rabbit's experience with the tiger's hunger.",
+                "The rabbit is preparing for potential conflict by building a stockade around himself as a response to the tiger's demands. This action is driven by past events and the rabbit's experience with the tiger's hunger.",
+                "The rabbit is preparing for potential conflict by building a stockade around himself as a response to the tiger's demands. This action is driven by past events and the rabbit's experience with the tiger's hunger.",
+                "The rabbit is preparing for potential conflict by building a stockade around himself as a response to the tiger's demands. This action is driven by past events and the rabbit's experience with the tiger's hunger.",
+                "The rabbit is preparing for potential conflict by building a stockade around himself as a response to the tiger's demands. This action is driven by past events and the rabbit's experience with the tiger's hunger.",
+                "The rabbit is preparing for potential conflict by building a stockade around himself as a response to the tiger's demands. This action is driven by past events and the rabbit's experience with the tiger's hunger."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "building a stockade around himself",
+                        "preparing for potential conflict"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_575897648c174caea9b3974dcbd558c4",
+                    "actions": [
+                        "requesting more food from the ox",
+                        "being dismissed by the rabbit"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [
+                "object_f2b61b2f20b94ab18d8266d9d4a6ba1b"
+            ],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_95fbd3762f1b4456a399fd38e2ebd61d",
+            "type": "move",
+            "name": "Rabbit Builds Stockade",
+            "description": "“That is very strange,” said the rabbit. “The order has gone forth that every beast shall fortify himself by building a stockade around himself. All the beasts are doing it.”",
+            "thoughts": [
+                "The rabbit's statement about building a stockade around himself indicates a reaction to an external stimulus or order. Given that there are no open conflicts in the current context and the story has already reached a point of relative stability after the tiger's farm was cleared, this event can be seen as a response to a new situation.",
+                "The rabbit's action of preparing a stockade around himself is a response to a perceived threat from the tiger, who has devoured most of his ox. This event marks a new development in the story, where the rabbit takes proactive measures to protect himself.",
+                "The rabbit's action of building a stockade around himself is a response to an external stimulus (the order from unknown authority) and sets the stage for potential conflict or change. This event does not resolve any previous conflicts or reach a new stable state.",
+                "The rabbit's statement about building a stockade around himself indicates a reaction to an external stimulus or order. Given that there are no open conflicts in the current context and the story has already reached a point of relative stability after the tiger's farm was cleared, this event can be seen as a response to a new situation.",
+                "The rabbit's statement about building a stockade around himself indicates a reaction to an external stimulus or order. Given that there are no open conflicts in the current context and the story has already reached a point of relative stability after the tiger's farm was cleared, this event can be seen as a response to a new situation."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "building a stockade around himself"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_6bfe6cc2aa824578b802933d5f2e9ded",
+                    "actions": [
+                        "crowing in the distance"
+                    ],
+                    "importance": 0.2
+                }
+            ],
+            "objects": [
+                "object_f2b61b2f20b94ab18d8266d9d4a6ba1b"
+            ],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_5fac897cfa5e462ba665321d06a97562",
+            "type": "move",
+            "name": "Tiger Seeks Stockade Help",
+            "description": "The tiger became very much alarmed. “O, dear! O, dear! What shall I do,” he cried. “I don’t know how to build a stockade. I never could do it in the world.",
+            "thoughts": [
+                "The tiger's alarm and concern about building a stockade indicates that he is reacting to a new situation or threat. The context suggests that the rabbit has already begun taking action to prepare for potential danger, which implies that the narrative is escalating towards a more intense conflict.",
+                "The tiger's alarm and request for help to build a stockade indicates that he is facing a new challenge or threat. This event is part of the main narrative action as it drives the story forward through conflict or external help.",
+                "The event involves the rabbit acting within the core plot by preparing for a potential threat or danger. The tiger's alarm and the rabbit's preparation for building a stockade drive the story forward through conflict.",
+                "The tiger's alarm and request for help to build a stockade indicates that he is facing a new challenge or threat. This event is part of the main narrative action as it drives the story forward through conflict or external help.",
+                "The tiger's alarm and request for help to build a stockade indicates that he is facing a new challenge or threat. This event is part of the main narrative action as it drives the story forward through conflict or external help.",
+                "The tiger's alarm and request for help to build a stockade indicates that he is facing a new challenge or threat. This event is part of the main narrative action as it drives the story forward through conflict or external help."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "reacting to a new situation",
+                        "preparing for potential danger"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_575897648c174caea9b3974dcbd558c4",
+                    "actions": [
+                        "becoming alarmed",
+                        "requesting help to build a stockade"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [
+                "object_f2b61b2f20b94ab18d8266d9d4a6ba1b"
+            ],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_ef8a2809d2a245c7b8d064fc3394b4b6",
+            "type": "move",
+            "name": "Tiger Builds Rabbit's Stockade",
+            "description": "O, good rabbit! O, kind rabbit! You are such a very good friend of mine. Couldn’t you, as a great favour, because of our long friendship, build a stockade about me before you build one around yourself?”",
+            "thoughts": [
+                "The rabbit asks the tiger to build a stockade around him first, which implies that he wants to protect himself from the tiger's potential attack. This event is part of the main narrative action and drives the story forward through conflict.",
+                "The event marks a turning point where the rabbit's actions have consequences for the tiger. The rabbit's request for the tiger to build a stockade around himself is a clever ploy to expose the tiger's lack of preparation and ability to follow orders.",
+                "The rabbit's request for the tiger to build a stockade around him first is a clever ploy to expose the tiger's lack of preparation and his reliance on others. This event is part of the main narrative action, as it drives the story forward through conflict and external help.",
+                "The rabbit's request for the tiger to build a stockade around him first is a clever ploy to expose the tiger's lack of preparation and his reliance on others. This event is part of the main narrative action, as it drives the story forward through conflict and external help.",
+                "The rabbit's request for the tiger to build a stockade around him first is a clever ploy to expose the tiger's lack of preparation and his reliance on others. This event is part of the main narrative action, as it drives the story forward through conflict and external help.",
+                "The rabbit asks the tiger to build a stockade around him first, which implies that he wants to protect himself from the tiger's potential attack. This event is part of the main narrative action and drives the story forward through conflict."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "asked the tiger to build a stockade around him first"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_575897648c174caea9b3974dcbd558c4",
+                    "actions": [
+                        "was asked by the rabbit to build a stockade around him"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [
+                "object_f2b61b2f20b94ab18d8266d9d4a6ba1b"
+            ],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_e7a4bba773394675a43c252d92e8cc60",
+            "type": "move",
+            "name": "Rabbit Agrees to Help Tiger",
+            "description": "The rabbit replied that he could not think of risking his own life by building the tiger’s fortifications first. Finally, however, he consented to do it.",
+            "thoughts": [
+                "The rabbit agrees to help the tiger with building a stockade, but only after some hesitation. This event marks a turning point in their relationship, where the rabbit's actions have significant consequences for the tiger.",
+                "The rabbit agrees to help the tiger with building a stockade, but only after some persuasion. This event marks a turning point in their relationship, as the rabbit is able to outsmart and manipulate the tiger.",
+                "The rabbit agrees to help the tiger with his request, which is a specific action that drives the story forward. This event involves the hero acting within the core plot.",
+                "The rabbit agrees to help the tiger with building a stockade, but only after some persuasion. This event marks a turning point in their relationship, as the rabbit is able to outsmart and manipulate the tiger.",
+                "The rabbit agrees to help the tiger with building a stockade, but only after some persuasion. This event marks a turning point in their relationship, as the rabbit is able to outsmart and manipulate the tiger."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "agreed to help",
+                        "consented to build the stockade"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_575897648c174caea9b3974dcbd558c4",
+                    "actions": [
+                        "requested help from the rabbit"
+                    ],
+                    "importance": 0.6
+                }
+            ],
+            "objects": [
+                "object_4217ca5975864763bc93c11f081ee6a8"
+            ],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_28f4d16c3a52492fba57aa64b915a9a5",
+            "type": "acquisition",
+            "name": "Rabbit Builds Tiger Stockade",
+            "description": "The rabbit cut down great quantities of long sharp sticks. He set them firmly in the ground about the tiger. He fastened others securely over the top until the tiger was completely shut in by strong bars.",
+            "thoughts": [
+                "The rabbit builds a stockade around the tiger as part of his own self-preservation plan. This event is not directly resolving any previous conflict or closing off the main plot thread.",
+                "The rabbit builds a stockade around the tiger as part of his own preparations for self-defense. This event is not about resolving an open conflict or closing the story, but rather about the hero acting and preparing for potential danger.",
+                "The rabbit builds a stockade around the tiger as a favor, but actually sets up a trap. This event is not part of the main action or conflict resolution, and it's more about the rabbit taking revenge on the tiger for eating most of the ox.",
+                "The rabbit builds a stockade around the tiger as part of his own preparations for self-defense. This event is not about resolving an open conflict or closing the story, but rather about the hero acting and preparing for potential danger.",
+                "The rabbit builds a stockade around the tiger as part of his own preparations for self-defense. This event is not about resolving an open conflict or closing the story, but rather about the hero acting and preparing for potential danger.",
+                "The rabbit builds a stockade around the tiger as part of his own preparations for self-defense. This event is not about resolving an open conflict or closing the story, but rather about the hero acting and preparing for potential danger.",
+                "The rabbit builds a stockade around the tiger as part of his own preparations for self-defense. This event is not about resolving an open conflict or closing the story, but rather about the hero acting and preparing for potential danger.",
+                "The rabbit builds a stockade around the tiger as part of his own preparations for self-defense. This event is not about resolving an open conflict or closing the story, but rather about the hero acting and preparing for potential danger.",
+                "The rabbit builds a stockade around the tiger as part of his own preparations for self-defense. This event is not about resolving an open conflict or closing the story, but rather about the hero acting and preparing for potential danger.",
+                "The rabbit builds a stockade around the tiger as part of his own preparations for self-defense. This event is not about resolving an open conflict or closing the story, but rather about the hero acting and preparing for potential danger.",
+                "The rabbit builds a stockade around the tiger as part of his own preparations for self-defense. This event is not about resolving an open conflict or closing the story, but rather about the hero acting and preparing for potential danger.",
+                "The rabbit builds a stockade around the tiger as part of his own preparations for self-defense. This event is not about resolving an open conflict or closing the story, but rather about the hero acting and preparing for potential danger."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "cut down great quantities of long sharp sticks",
+                        "set them firmly in the ground about the tiger",
+                        "fastened others securely over the top"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [
+                "object_f2b61b2f20b94ab18d8266d9d4a6ba1b",
+                "object_81d893cca8fe4adb8ae7acbc97b09130"
+            ],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_829cc7ae696a4038888d976e584cdd67",
+            "type": "helper_move",
+            "name": "Tiger asks for protection.",
+            "description": "Then he went away and left the tiger. The tiger waited and waited for something to happen to show him the need of the fortifications. Nothing at all happened.",
+            "thoughts": [
+                "The event involves the tiger being tricked and deceived by the rabbit's previous actions. The rabbit had been given an ox as payment for his work but had not killed it yet. The tiger returns to find that the rabbit has not worked well when he was away, and then the tiger stays and watches until the whole farm is cleared. However, the key part of this event is the tiger's request for the rabbit to build a stockade around him first, which the rabbit agrees to do. This shows a reversal in their relationship, with the tiger now dependent on the rabbit.",
+                "The event involves the tiger's request for help from the rabbit and the rabbit's subsequent action of building a stockade around the tiger. This event is not part of the main conflict or plot resolution but rather an escalation of the story as the tiger tries to get out of his own responsibilities.",
+                "The event involves the tiger asking the rabbit for help and the rabbit agreeing to build a stockade around him. This is not part of the main conflict or action but rather a consequence of previous events.",
+                "The rabbit agrees to build a stockade around the tiger after he requests help. This event involves the tiger's request for assistance and the rabbit's subsequent action of building a stockade around him. The narrative has already progressed beyond the main conflict or plot resolution, as this event is an escalation of the story.",
+                "The event involves the tiger asking the rabbit for help and the rabbit agreeing to build a stockade around him. This is an escalation of the story as the tiger tries to get out of his own responsibilities.",
+                "The rabbit agrees to build a stockade around the tiger after he requests help. This event involves the tiger's request for assistance and the rabbit's subsequent action of building a stockade around him. The narrative has already progressed beyond the main conflict or plot resolution, as this event is an escalation of the story.",
+                "The rabbit agrees to build a stockade around the tiger after he requests help. This event involves the tiger's request for assistance and the rabbit's subsequent action of building a stockade around him. The narrative has already progressed beyond the main conflict or plot resolution, as this event is an escalation of the story.",
+                "The rabbit agrees to build a stockade around the tiger after he requests help. This event involves the tiger's request for assistance and the rabbit's subsequent action of building a stockade around him. The narrative has already progressed beyond the main conflict or plot resolution, as this event is an escalation of the story."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "asked for help",
+                        "agreed to build a stockade around the tiger"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_575897648c174caea9b3974dcbd558c4",
+                    "actions": [
+                        "requested a stockade be built around him"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [
+                "object_81d893cca8fe4adb8ae7acbc97b09130"
+            ],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_33030506d2c04dcb8a478a3d92140650",
+            "type": "helper_move",
+            "name": "Tiger Asks Rabbit for Help",
+            "description": "He got very hungry and thirsty. After a while the monkey passed that way. The tiger called out, “O, monkey, has the danger passed?”",
+            "thoughts": [
+                "The event is part of the main narrative action: it drives the story forward through conflict and external help. The tiger's hunger has created a new situation that requires the rabbit's assistance, and their interaction escalates the plot.",
+                "The event involves the tiger acting and reacting within the core plot, but it's not a climactic moment. The rabbit has built a stockade around the tiger, which is more of a consequence of previous events rather than a turning point in the story.",
+                "The event is part of the main narrative action: it drives the story forward through conflict, preparation, or external help. The tiger's hunger and the rabbit's cleverness are central to this plot point.",
+                "The event involves the tiger acting and reacting within the core plot, but it's not a climactic moment. The rabbit has built a stockade around the tiger, which is more of a consequence of previous events rather than a turning point in the story.",
+                "The tiger's hunger has created a new situation that requires the rabbit's assistance. The interaction escalates the plot as the tiger asks for help from the rabbit after devouring the entire ox.",
+                "The tiger's hunger has created a new situation that requires the rabbit's assistance. The interaction escalates the plot as the tiger asks for help from the rabbit after devouring most of the ox.",
+                "The tiger's hunger has created a new situation that requires the rabbit's assistance. The interaction escalates the plot as the tiger asks for help from the rabbit after devouring most of the ox.",
+                "The tiger's hunger has created a new situation that requires the rabbit's assistance. The interaction escalates the plot as the tiger asks for help from the rabbit after devouring most of the ox.",
+                "The tiger asks for help from the rabbit after devouring most of the ox. This event escalates the plot as it creates a new situation that requires the rabbit's assistance."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "asked for help",
+                        "devoured most of the ox"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_a09f2e8ce9a04c60af14a3683822e5cb",
+                    "actions": [
+                        "passed by",
+                        "built a stockade around the tiger"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [
+                "object_4217ca5975864763bc93c11f081ee6a8"
+            ],
+            "place": "place_94afe975001741f79c1ef49bcd70b7e7"
+        },
+        {
+            "id": "event_cef160cd0cb64611a75005ee63dc0f87",
+            "type": "move",
+            "name": "Monkey Refuses Tiger's Plea",
+            "description": "The monkey did not know what danger the tiger meant, but he replied, “Yes.” Then the tiger said, “O, monkey, O, good, kind monkey, will you not please be so kind as to help me out of my stockade?” “Let the one who got you in there help you out,” replied the monkey and he went on his way.",
+            "thoughts": [
+                "The event is part of the main narrative action: it drives the story forward through conflict. The tiger asks for help from the monkey, but the monkey refuses and leaves him trapped in the stockade.",
+                "The event involves the hero acting within the core plot. The tiger asks for help from the monkey, and the monkey's response drives the story forward through conflict.",
+                "The event is part of the main narrative action: it drives the story forward through conflict, preparation, or external help. The tiger asks for help from the monkey, and the monkey's response escalates the situation.",
+                "The event involves the hero acting within the core plot. The tiger asks for help from the monkey, and the monkey's response escalates the situation.",
+                "The event involves the hero acting within the core plot. The tiger asks for help from the monkey, and the monkey's response drives the story forward through conflict.",
+                "The event involves the hero acting within the core plot. The tiger asks for help from the monkey, and the monkey's response drives the story forward through conflict."
+            ],
+            "agents": [
+                {
+                    "id": "agent_a09f2e8ce9a04c60af14a3683822e5cb",
+                    "actions": [
+                        "replied",
+                        "went on his way"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_575897648c174caea9b3974dcbd558c4",
+                    "actions": [
+                        "asked for help"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [
+                "object_f2b61b2f20b94ab18d8266d9d4a6ba1b"
+            ],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_0fc9a7bd064344c3a763d0209818cd20",
+            "type": "connective_incident",
+            "name": "Tiger Asks Goat for Help",
+            "description": "Along came the goat and the tiger called out, “O, goat, has the danger passed?” The goat did not know anything about any danger, but he replied, “Yes.”",
+            "thoughts": [
+                "The event is part of the main narrative action: it drives the story forward through conflict or external help. The tiger is trapped in a stockade built by the rabbit and asks for help from the monkey, who refuses to assist him.",
+                "The tiger has been tricked by the rabbit into building a stockade around himself. The monkey's response indicates that he doesn't know what danger the tiger is referring to, implying that the event is not part of the main narrative action or conflict resolution. However, it is a consequence of previous events and serves as a form of revenge for the rabbit.",
+                "The tiger has been tricked by the rabbit into building a stockade around himself. The monkey's response indicates that he doesn't know what danger the tiger is referring to, implying that the event is not part of the main narrative action or conflict resolution.",
+                "The tiger has been tricked by the rabbit into building a stockade around himself. The monkey's response indicates that he doesn't know what danger the tiger is referring to, implying that the event is not part of the main narrative action or conflict resolution.",
+                "The tiger has been tricked by the rabbit into building a stockade around himself. The monkey's response indicates that he doesn't know what danger the tiger is referring to, implying that the event is not part of the main narrative action or conflict resolution.",
+                "The tiger has been tricked by the rabbit into building a stockade around himself. The monkey's response indicates that he doesn't know what danger the tiger is referring to, implying that the event is not part of the main narrative action or conflict resolution.",
+                "The tiger has been tricked by the rabbit into building a stockade around himself. The monkey's response indicates that he doesn't know what danger the tiger is referring to, implying that the event is not part of the main narrative action or conflict resolution.",
+                "The tiger has been tricked by the rabbit into building a stockade around himself. The monkey's response indicates that he doesn't know what danger the tiger is referring to, implying that the event is not part of the main narrative action or conflict resolution.",
+                "The tiger has been tricked by the rabbit into building a stockade around himself. The monkey's response indicates that he doesn't know what danger the tiger is referring to. This event is not part of the main narrative action or conflict resolution but serves as a form of revenge for the rabbit.",
+                "The tiger has been tricked by the rabbit into building a stockade around himself. The monkey's response indicates that he doesn't know what danger the tiger is referring to, implying that the event is not part of the main narrative action or conflict resolution."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "asked for help",
+                        "replied that the danger had passed"
+                    ],
+                    "importance": 0.4
+                },
+                {
+                    "id": "agent_a09f2e8ce9a04c60af14a3683822e5cb",
+                    "actions": [
+                        "did not know about any danger",
+                        "refused to assist the tiger"
+                    ],
+                    "importance": 0.6
+                }
+            ],
+            "objects": [],
+            "place": "place_94afe975001741f79c1ef49bcd70b7e7"
+        },
+        {
+            "id": "event_b75d78a4d10845f789035abeff916c1c",
+            "type": "move",
+            "name": "Tiger Asks Goat for Help",
+            "description": "Then the tiger said, “O, goat, O, good kind goat, please be so kind as to help me out of my stockade.” “Let the one who got you in there help you out,” replied the goat as he went on his way.",
+            "thoughts": [
+                "The event where the tiger asks the goat for help is a move because it drives the story forward through conflict. The tiger is trapped in his own stockade and is trying to get out, which creates tension and raises questions about what will happen next.",
+                "The tiger asks for help from other animals after being trapped in a stockade built by the rabbit. This event is part of the main narrative action as it involves the hero acting and reacting within the core plot.",
+                "The tiger asks for help from other animals after being trapped in a stockade built by the rabbit. This event is not part of the main conflict resolution or the climax, but rather an escalation of the situation where the tiger is punished for his previous actions.",
+                "The tiger asks for help from other animals after being trapped in a stockade built by the rabbit. This event is part of the main narrative action as it involves the hero acting and reacting within the core plot.",
+                "The tiger asks for help from other animals after being trapped in a stockade built by the rabbit. This event is part of the main narrative action as it involves the hero acting and reacting within the core plot.",
+                "The tiger asks for help from other animals after being trapped in a stockade built by the rabbit. This event is part of the main narrative action as it involves the hero acting and reacting within the core plot."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "refused to help the tiger",
+                        "went on his way"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_6cc93ec5a0594d7294ff061f919d2163",
+                    "actions": [
+                        "was asked for help by the tiger"
+                    ],
+                    "importance": 0.4
+                }
+            ],
+            "objects": [
+                "object_f2b61b2f20b94ab18d8266d9d4a6ba1b"
+            ],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_1c1e64a66d84433a80cf3c3fa0dced02",
+            "type": "move",
+            "name": "Tiger seeks animal aid.",
+            "description": "Along came the armadillo and the tiger called out, “O, armadillo, has the danger passed?” The armadillo had not heard of any danger, but he replied that it had passed.",
+            "thoughts": [
+                "The tiger has been trapped by the rabbit and is now trying to get help from other animals. The danger has passed for them, but not for the tiger.",
+                "The tiger has been tricked by the rabbit and is now trapped in a stockade. The danger that has passed refers to the threat of being eaten by the tiger, but for the tiger, it's still a danger because he's locked inside. The monkey and goat both respond with 'yes' without knowing what the tiger means, indicating they're not aware of any danger or conflict.",
+                "The tiger is trapped in a stockade built by the rabbit and is trying to get out. However, he is met with refusal from both the monkey and the goat, who tell him that the danger has passed, implying that they are aware of the tiger's situation but will not help him. This event is part of the narrative progression where the tiger faces consequences for his actions.",
+                "The tiger has been tricked by the rabbit and is now trapped in a stockade. The danger that has passed refers to the threat of being eaten by the tiger, but for the tiger, it's still a danger because he's locked inside. The monkey and goat both respond with 'yes' without knowing what the tiger means, indicating they're not aware of any danger or conflict.",
+                "The tiger has been tricked by the rabbit and is now trapped in a stockade. The danger that has passed refers to the threat of being eaten by the tiger, but for the tiger, it's still a danger because he's locked inside. The monkey and goat both respond with 'yes' without knowing what the tiger means, indicating they're not aware of any danger or conflict.",
+                "The tiger has been tricked by the rabbit and is now trapped in a stockade. He tries to get help from other animals, but they are unaware of his situation or refuse to assist him."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "tries to get help from other animals",
+                        "tricks the tiger"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_a09f2e8ce9a04c60af14a3683822e5cb",
+                    "actions": [
+                        "responds with 'yes' without knowing what the tiger means"
+                    ],
+                    "importance": 0.4
+                },
+                {
+                    "id": "agent_6cc93ec5a0594d7294ff061f919d2163",
+                    "actions": [
+                        "responds with 'yes' without knowing what the tiger means"
+                    ],
+                    "importance": 0.4
+                },
+                {
+                    "id": "agent_575897648c174caea9b3974dcbd558c4",
+                    "actions": [
+                        "is trapped in a stockade",
+                        "tries to get out"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [],
+            "place": "place_94afe975001741f79c1ef49bcd70b7e7"
+        },
+        {
+            "id": "event_8ef74bfc31474f91894c7feeef80dc88",
+            "type": "conflict",
+            "name": "Tiger seeks aid in vain.",
+            "description": "Then the tiger said, “O, armadillo, O, good, kind armadillo, you have always been such a good friend and neighbour. Please help me now to get out of my stockade.” “Let the one who got you in there help you out,” replied the armadillo as he went on his way.",
+            "thoughts": [
+                "The tiger asks for help from his former friends who helped him with the farm, but they all refuse, citing that he should be helped by the one who got him into the stockade. This event is a turning point where the tiger's past actions come back to haunt him.",
+                "The tiger asks for help from his friends, who all refuse to assist him. This event is a consequence of the previous events and does not drive the story forward through conflict or external help.",
+                "The tiger asks for help from his past acquaintances who previously failed him. The armadillo's response echoes his previous behavior when he was hired by the tiger and failed to complete the task due to his large appetite.",
+                "The tiger asks for help from his past acquaintances who previously failed him. The armadillo's response echoes his previous behavior when he was hired by the tiger and failed to complete the task due to his large appetite.",
+                "The tiger asks for help from his past acquaintances who previously failed him. The armadillo's response echoes his previous behavior when he was hired by the tiger and failed to complete the task due to his large appetite.",
+                "The tiger asks for help from his past acquaintances who previously failed him. The armadillo's response echoes his previous behavior when he was hired by the tiger and failed to complete the task due to his large appetite.",
+                "The tiger asks for help from his past acquaintances who previously failed him. The armadillo's response echoes his previous behavior when he was hired by the tiger and failed to complete the task due to his large appetite."
+            ],
+            "agents": [
+                {
+                    "id": "agent_36a51e654d3a49618253d290eb01250a",
+                    "actions": [
+                        "refused to help",
+                        "went on his way"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_575897648c174caea9b3974dcbd558c4",
+                    "actions": [
+                        "asked for help"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [
+                "object_f2b61b2f20b94ab18d8266d9d4a6ba1b"
+            ],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_dc672007a8a74e7e841e628add025802",
+            "type": "connective_incident",
+            "name": "Tiger Fails Stockade Breakthrough",
+            "description": "The tiger jumped and jumped with all his force at the top of the stockade, but he could not break through. He jumped and jumped with all his might at the front side of the stockade, but he could not break through.",
+            "thoughts": [
+                "The tiger's attempt to break through the stockade is a continuation of the narrative action. The rabbit has built the stockade as part of his preparations for defense, and the tiger is trying to escape from it. This event is not yet resolving any conflicts or reaching a new stable state.",
+                "The tiger's attempt to break through the stockade built by the rabbit is a failed action that does not drive the story forward or resolve any conflict. Instead, it sets up the next scene where the tiger will ask for help from other animals.",
+                "The tiger's attempt to break through the stockade built by the rabbit is a failed action that does not drive the story forward or resolve any conflict. Instead, it sets up the next event where the tiger will ask for help from other animals.",
+                "The tiger's attempt to break through the stockade built by the rabbit is a failed action that does not drive the story forward or resolve any conflict. Instead, it sets up the next scene where the tiger will ask for help from other animals.",
+                "The tiger's attempt to break through the stockade built by the rabbit is a failed action that does not drive the story forward or resolve any conflict. Instead, it sets up the next event where the tiger will ask for help from other animals.",
+                "The tiger's attempt to break through the stockade built by the rabbit is a failed action that does not drive the story forward or resolve any conflict. Instead, it sets up the next scene where the tiger will ask for help from other animals.",
+                "The tiger's attempt to break through the stockade built by the rabbit is a failed action that does not drive the story forward or resolve any conflict. Instead, it sets up the next scene where the tiger will ask for help from other animals.",
+                "The tiger's attempt to break through the stockade built by the rabbit is a failed action that does not drive the story forward or resolve any conflict. Instead, it sets up the next scene where the tiger will ask for help from other animals.",
+                "The tiger's attempt to break through the stockade built by the rabbit is a failed action that does not drive the story forward or resolve any conflict. Instead, it sets up the next scene where the tiger will ask for help from other animals.",
+                "The tiger's attempt to break through the stockade built by the rabbit is a failed action that does not drive the story forward or resolve any conflict. Instead, it sets up the next scene where the tiger will ask for help from other animals.",
+                "The tiger's attempt to break through the stockade built by the rabbit sets up the next scene where the tiger will ask for help from other animals. This event is a failed action that does not drive the story forward or resolve any conflict."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "built the stockade",
+                        "had built the stockade"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_575897648c174caea9b3974dcbd558c4",
+                    "actions": [
+                        "jumped at the top of the stockade",
+                        "jumped at the front side of the stockade"
+                    ],
+                    "importance": 0.9
+                }
+            ],
+            "objects": [
+                "object_f2b61b2f20b94ab18d8266d9d4a6ba1b"
+            ],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_3a1921184b614636b650c5940df3a44c",
+            "type": "connective_incident",
+            "name": "Tiger Trapped in Stockade",
+            "description": "He thought that never in the world would he be able to break out. He rested for a little while and as he rested he thought. He thought how bright the sun was shining outside.",
+            "thoughts": [
+                "The rabbit has built a stockade around the tiger, and the tiger is trying to escape but fails. This event is part of the main narrative action as it drives the story forward through conflict.",
+                "The event involves the tiger being trapped and trying to escape from a stockade built by the rabbit. This is a consequence of the rabbit's previous actions and a turning point in their relationship.",
+                "The rabbit builds a stockade around the tiger as part of his own preparations for self-defense. The tiger's subsequent attempts to escape and receive help from other animals are thwarted, leading to his eventual realization that he is trapped.",
+                "The tiger is trapped and trying to escape from a stockade built by the rabbit. This is a consequence of the rabbit's previous actions and a turning point in their relationship.",
+                "The tiger is trapped and trying to escape from a stockade built by the rabbit. This is a consequence of the rabbit's previous actions and a turning point in their relationship.",
+                "The tiger is trapped and trying to escape from a stockade built by the rabbit. This is a consequence of the rabbit's previous actions and a turning point in their relationship.",
+                "The tiger is trapped and trying to escape from a stockade built by the rabbit. This is a consequence of the rabbit's previous actions and a turning point in their relationship.",
+                "The tiger is trapped and trying to escape from a stockade built by the rabbit. This is a consequence of the rabbit's previous actions and a turning point in their relationship.",
+                "The tiger asks for help from other animals to escape from the stockade built by the rabbit, but they refuse, leading to the tiger's realization that he is trapped.",
+                "The tiger asks the rabbit to build a stockade around him, and the rabbit agrees. The event involves the tiger's request for help from the rabbit, which is a specific instance of a more general category."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "built a stockade around the tiger",
+                        "thwarted the tiger's escape attempts"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_575897648c174caea9b3974dcbd558c4",
+                    "actions": [
+                        "thought about escaping",
+                        "realized he was trapped"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_fc9bf3ace3034540a0d4e57d6260fd45",
+            "type": "conflict",
+            "name": "Tiger Jumps Stockade Walls",
+            "description": "He thought what good hunting there was in the jungle. He thought how cool the water was at the spring. Once more he jumped and jumped with all his might at the back side of the stockade.",
+            "thoughts": [
+                "The tiger's actions are part of his attempt to escape the stockade built by the rabbit. This event is a continuation of the previous events where the tiger tries various methods to break free. The story has reached its mid-point and the narrative is still building up towards the climax.",
+                "The rabbit has already built a stockade around himself and now the tiger asks for help. The tiger's attempts to break out are unsuccessful, which indicates that the event is part of the main narrative action: it drives the story forward through conflict.",
+                "The tiger's actions are part of his attempt to escape from the stockade built by the rabbit. This event is a continuation of the previous events where the tiger tries to get out of the stockade but fails. It's not a climactic moment that resolves an open conflict, nor is it a key action driving the story forward.",
+                "The tiger's actions are part of his attempt to escape from the stockade built by the rabbit. This event is a continuation of the previous events where the tiger tries to get out of the stockade but fails. It's not a climactic moment that resolves an open conflict, nor is it a key action driving the story forward.",
+                "The tiger's actions are part of his attempt to escape from the stockade built by the rabbit. This event is a continuation of the previous events where the tiger tries various methods to break free. The story has reached its mid-point and the narrative is still building up towards the climax.",
+                "The tiger's actions are part of his attempt to escape from the stockade built by the rabbit. This event is a continuation of the previous events where the tiger tries various methods to break free. The story has reached its mid-point and the narrative is still building up towards the climax.",
+                "The tiger's actions are part of his attempt to escape from the stockade built by the rabbit. This event is a continuation of the previous events where the tiger tries various methods to break free. The story has reached its mid-point and the narrative is still building up towards the climax.",
+                "The tiger's actions are part of his attempt to escape from the stockade built by the rabbit. This event is a continuation of the previous events where the tiger tries various methods to break free. The story has reached its mid-point and the narrative is still building up towards the climax."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "built a stockade around himself",
+                        "asked for help from the tiger"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_12c6e147cb5d461b8a0807320a4182a1",
+                    "actions": [
+                        "was deceived by the rabbit's request for help"
+                    ],
+                    "importance": 0.4
+                }
+            ],
+            "objects": [],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        },
+        {
+            "id": "event_2dd4e4f0a132483bb64d0945084b2d15",
+            "type": "struggle",
+            "name": "Tiger Breaks Through Stockade",
+            "description": "At last he broke through. He did not get through, however, without getting bad cuts on both his sides. Until this day the tiger has stripes on both his sides.",
+            "thoughts": [
+                "The event where the tiger breaks through the stockade and gets injured is a turning point in the story. The rabbit's clever plan has been executed, and the tiger is now trapped and unable to escape. This event marks a shift from the setup and escalation phases of the narrative to the climax.",
+                "The tiger's attempt to break through the stockade built by the rabbit is a pivotal moment in the story. It represents a turning point where the tiger, who had previously outsmarted and deceived others, is now trapped and unable to escape. This event marks a shift from the tiger's dominance to his vulnerability.",
+                "The tiger's attempt to break through the stockade built by the rabbit is a turning point in their ongoing conflict. The tiger has been outsmarted and trapped, and this event marks a shift towards his eventual defeat.",
+                "The tiger's attempt to break through the stockade built by the rabbit marks a turning point in their ongoing conflict. The tiger has been outsmarted and trapped, and this event marks a shift towards his eventual defeat.",
+                "The tiger's attempt to break through the stockade built by the rabbit is a turning point in their ongoing conflict. The tiger has been outsmarted and trapped, and this event marks a shift towards his eventual defeat.",
+                "The tiger's attempt to break through the stockade built by the rabbit marks a turning point in their ongoing conflict. The tiger has been outsmarted and trapped, and this event marks a shift towards his eventual defeat.",
+                "The tiger's attempt to break through the stockade built by the rabbit marks a turning point in their ongoing conflict. The tiger has been outsmarted and trapped, and this event marks a shift towards his eventual defeat.",
+                "The tiger's attempt to break through the stockade built by the rabbit marks a turning point in their ongoing conflict. The tiger has been outsmarted and trapped, and this event marks a shift towards his eventual defeat.",
+                "The tiger's attempt to break through the stockade built by the rabbit marks a turning point in their ongoing conflict. The tiger has been outsmarted and trapped, and this event marks a shift towards his eventual defeat.",
+                "The tiger's attempt to break through the stockade built by the rabbit marks a turning point in their ongoing conflict. The tiger has been outsmarted and trapped, and this event marks a shift towards his eventual defeat.",
+                "The tiger's attempt to break through the stockade built by the rabbit marks a turning point in their ongoing conflict. The tiger has been outsmarted and trapped, and this event marks a shift towards his eventual defeat.",
+                "The tiger's attempt to break through the stockade built by the rabbit marks a turning point in their ongoing conflict. The tiger has been outsmarted and trapped, and this event marks a shift towards his eventual defeat."
+            ],
+            "agents": [
+                {
+                    "id": "agent_783a2070a485488a9ed45684d94ea587",
+                    "actions": [
+                        "built a stockade",
+                        "outsmarted the tiger"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_12c6e147cb5d461b8a0807320a4182a1",
+                    "actions": [
+                        "was deceived by the rabbit"
+                    ],
+                    "importance": 0.4
+                }
+            ],
+            "objects": [
+                "object_81d893cca8fe4adb8ae7acbc97b09130"
+            ],
+            "place": "place_d75238a1eabd4d78ad0e66c0e99868cf"
+        }
+    ]
+}

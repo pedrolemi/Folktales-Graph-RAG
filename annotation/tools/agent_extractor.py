@@ -1,7 +1,7 @@
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate
 from schemas.agent import AgentsLLM, Agent, PersonalityLLM
 from schemas.place import Place
-from langchain_core.language_models.chat_models import BaseChatModel
+from utils.models import get_llm
 from utils.format_utils import format_hierarchy
 from loguru import logger
 from typing import cast
@@ -112,7 +112,7 @@ Description: {description}
 )
 
 
-def extract_agents(model: BaseChatModel, folktale: str, places: list[Place], role_dict: dict, traits_dict: dict):
+def extract_agents(folktale: str, places: list[Place], role_dict: dict, traits_dict: dict):
 	"""
 	Extrae los agentes de un cuento utilizando un modelo de lenguaje con salida estructurada.
 
@@ -132,6 +132,8 @@ def extract_agents(model: BaseChatModel, folktale: str, places: list[Place], rol
 		list[Agent]:
 			Lista de agentes extraídos.
 	"""
+	model = get_llm(0.0)
+
 	formatted_places = "\n".join(f"{i}. {place.name}" for i, place in enumerate(places))
 	formatted_roles = format_hierarchy(role_dict)
 	formatted_traits = "\n".join(f"- '{k}': {v}" for k, v in traits_dict.items())

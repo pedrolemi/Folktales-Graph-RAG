@@ -1,5 +1,5 @@
 from typing import Optional
-from neo4j_manager import Neo4jManager
+from graph.neo4j_manager import Neo4jManager
 from utils.models import get_embeddings
 from .base_retriever import BaseRetriever
 
@@ -27,8 +27,6 @@ class VectorRetriever(BaseRetriever):
         RETURN {return_clause}
         ORDER BY score DESC
         """
-
-        # print(cypher_query)
 
         params = {
             "index_name": self.index_name,

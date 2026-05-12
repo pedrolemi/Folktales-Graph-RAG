@@ -1,11 +1,11 @@
 from .agentic_rag import AgenticRAG
-from neo4j_manager import Neo4jManager
+from graph.neo4j_manager import Neo4jManager
 from .terminal_tool_factory import TerminalToolFactory
 from .agent_system import AgentSystem
 
 class MultiAgentSystem(AgentSystem):
-	def __init__(self, neo4j_manager: Neo4jManager):
-		super().__init__()
+	def __init__(self, neo4j_manager: Neo4jManager, verbose: bool = False):
+		super().__init__(verbose)
 
 		event_prompt = """
 You are an Event Analysis Agent for a folktale knowledge graph.
@@ -23,8 +23,6 @@ Focus on:
 - plot progression.
 - narrative flow.
 - sequence of actions.
-- causa chains.
-- turning points.
 - conflicts and resolutions.
 
 TOOL USAGE RULES:
@@ -38,18 +36,16 @@ Use for:
 
 2. hybrid_search
 Use for:
-- event queries containing named stories, characters, places, or partial keywords.
+- event queries containing keywords.
 - mixed semantic + keyword event retrieval.
-- e.g. “What happens to the hero in the Snow Queen story?”.
 
 3. text2cypher
 Use for:
 - event ordering and sequencing.
 - event relationships and dependencies.
 - counting or filtering events.
-- traversal of event graphs.
 - structural or temporal reasoning.
-- extracting structured examples from the graph.
+- extracting examples from the graph.
 
 STRICT RULES:
 1. The response must be based strictly in the provided tool output. Do not use any external knowledge or prior information. Do not invent, assume or infer anything not explicitly present in the context.
@@ -68,6 +64,7 @@ STRICT RULES:
 			text_property="description",
 			tool_name="event_tool",
 			system_prompt=event_prompt,
+			verbose=verbose,
 			return_projection={
 				"name": "node.name",
 				"description": "node.description",
@@ -99,9 +96,6 @@ Focus on:
 - character identity.
 - relationships.
 - motivations.
-- interactions.
-- alliances.
-- betrayals.
 - character roles.
 - character personalities and traits.
 
@@ -109,21 +103,23 @@ TOOL USAGE RULES:
 
 1. vector_search
 Use for:
-- character traits and personality descriptions.
+- character descriptions.
 - motivations and symbolic interpretations.
 
 2. hybrid_search
 Use for:
-- named characters + story context.
+- named with names + story context.
 - partial character names or ambiguous references.
 - mixed semantic + keyword queries involving characters.
 
 3. text2cypher
 Use for:
-- relationships between characters (knows, friend, enemy, family_member).
+- relationships between characters (knows, friend, enemy, family member).
 - roles and hierarchy (protagonist, antagonist, supporting roles).
 - counting appearances or interactions.
-- extracting structured examples from the graph.
+- extracting examples from the graph.
+- agent features such as age, gender and race.
+- character's personality, which is based on the Big Five traits (openness, conscientiousness, extraversion, agreeableness, neuroticism).
 
 STRICT RULES:
 1. The response must be based strictly in the provided tool output. Do not use any external knowledge or prior information. Do not invent, assume or infer anything not explicitly present in the context.
@@ -146,6 +142,7 @@ OPTIONAL MATCH (node)-[:HAS_ROLE]->(r:Role)
 			text_property="description",
 			tool_name="character_tool",
 			system_prompt=agent_prompt,
+			verbose=verbose,
 			return_projection={
 				"name": "node.name",
 				"description": "node.description",
@@ -177,8 +174,8 @@ A Place is:
 - a castle.
 - a narrative setting.
 
-Use for:
-- where events occur.
+Focus on:
+- where events take place.
 - story settings.
 - important locations.
 - where characters live or travel.
@@ -193,7 +190,6 @@ Use for:
 
 2. hybrid_search
 Use for:
-- named places (kingdoms, villages, forests, castles).
 - partial or unclear location references.
 - mixed semantic + keyword place queries.
 
@@ -201,7 +197,7 @@ Use for:
 Use for:
 - relationships between places and events.
 - counting or filtering places in the graph.
-- extracting structured examples from the graph.
+- extracting examples from the graph.
 - defining the type of a place (e.g., city, country, building, region).
 - representing where a character lives using relationships between Character and Place nodes.
 
@@ -222,6 +218,7 @@ STRICT RULES:
 			text_property="description",
 			tool_name="place_tool",
 			system_prompt=place_prompt,
+			verbose=verbose,
 			return_projection={
 				"name": "node.name",
 				"description": "node.description",
@@ -251,7 +248,7 @@ An Object is:
 - a tool.
 - a treasure.
 - a document.
-- an item that the characters use or own.
+- an item that characters use or own.
 
 Use for:
 - item descriptions.
@@ -271,18 +268,14 @@ Use for:
 
 2. hybrid_search
 Use for:
-- named objects or artifacts.
 - partial object names or unclear references.
 - mixed semantic + keyword object queries.
 
 3. text2cypher
 Use for:
-- ownership relationships (who owns what).
 - object usage in events.
-- object-to-character or object-to-event relationships.
 - counting or filtering objects.
-- structural graph queries involving items.
-- extracting structured examples from the graph.
+- extracting examples from the graph.
 
 STRICT RULES:
 1. The response must be based strictly in the provided tool output. Do not use any external knowledge or prior information. Do not invent, assume or infer anything not explicitly present in the context.
@@ -301,6 +294,7 @@ STRICT RULES:
 			text_property="description",
 			tool_name="object_tool",
 			system_prompt=object_prompt,
+			verbose=verbose,
 			return_projection={
 				"name": "node.name",
 				"description": "node.description",
@@ -315,7 +309,7 @@ Examples:
 - What is the significance of the ring?
 - How is the key used?
 - What objects are important for a specific story?
-	"""
+"""
 		)
 
 		tool_manager = TerminalToolFactory()
@@ -368,7 +362,6 @@ A Character is:
 Use character_tool for:
 - character descriptions.
 - character relationships.
-- character interactions.
 - character roles in the story.
 - character development.
 - who did what (when focus is on the person, not the event).
@@ -394,19 +387,11 @@ An Object is:
 - something that characters can use, carry or interact with.
 - NOT a character and NOT a place.
 
-Examples of objects:
-- weapons (swords, guns, tools).
-- artifacts (rings, crowns, magical items)
-- documents (letters, books, maps)
-- consumables (potions, goods)
-- keys, relics, treasures
-
 Use object_tool for:
 - what objects exist in the story.
 - who possesses or uses an object.
 - how objects are used in events.
 - object significance in the narrative.
-- object relationships to characters or events.
 
 ROUTING RULES:
 
@@ -430,12 +415,6 @@ OBJECT FOCUS -> object_tool
 - what characters use, carry or interact with.
 
 If multiple categories appear, select the SINGLE PRIMARY intent of the question.
-
-If unclear:
-- prefer event_tool for narrative questions.
-- prefer character_tool when the focus is on who performs actions or relationships.
-- prefer place_tool when the focus is on where something happens.
-- prefer object_tool when the focus is on a specific item, artifact or possession.
 
 STRICT RULES:
 

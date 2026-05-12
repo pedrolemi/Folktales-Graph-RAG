@@ -1,5 +1,5 @@
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate, MessagesPlaceholder
-from langchain_core.language_models.chat_models import BaseChatModel
+from utils.models import get_llm
 from langchain_core.messages import HumanMessage, AIMessage
 from schemas.event import EntitesLLM
 from pydantic import ValidationError
@@ -63,7 +63,7 @@ Return only the indices.
 	]
 )
 
-def extract_event_elements(model: BaseChatModel, title: str, story_segment: str, objects: list[Object], places: list[Place], max_attempts: int = 5):
+def extract_event_elements(title: str, story_segment: str, objects: list[Object], places: list[Place], max_attempts: int = 5):
 	"""
 	Extrae los elementos de un evento a partir de un segmento de historia.
 
@@ -80,6 +80,8 @@ def extract_event_elements(model: BaseChatModel, title: str, story_segment: str,
 		RuntimeError: Si después de `max_attempts` no se puede extraer un conjunto válido
 		de elementos para el evento.
 	"""
+
+	model = get_llm(0.0)
 
 	elements_prompt = ChatPromptTemplate.from_messages(
 		extractor_prompt.messages + [

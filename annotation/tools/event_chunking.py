@@ -1,7 +1,7 @@
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate
 from langchain_core.output_parsers import BaseOutputParser
 from langchain_core.exceptions import OutputParserException
-from langchain_core.language_models.chat_models import BaseChatModel
+from utils.models import get_llm
 from schemas.event import MAX_EVENTS
 from loguru import logger
 
@@ -57,7 +57,7 @@ Do not include this delimiter inside any chunk.
 	]
 )
 
-def extract_story_segments(model: BaseChatModel, folktale: str):
+def extract_story_segments(folktale: str):
 	"""
 	Extrae los segmentos de una historia (eventos).
 
@@ -69,6 +69,8 @@ def extract_story_segments(model: BaseChatModel, folktale: str):
 		list[str]: Lista de segmentos de la historia extraídos por el modelo.
 
 	"""
+
+	model = get_llm(0.0)
 
 	parser = ChunkParser()
 	event_chain = event_prompt | model | parser

@@ -4,6 +4,7 @@ from langchain_core.language_models.chat_models import BaseChatModel
 from schemas.agent import Agent
 from schemas.event import EventAgentsLLM, EventAgent
 from pydantic import BaseModel, Field, ConfigDict
+from utils.models import get_llm
 from collections import Counter
 from typing import Optional, cast
 from loguru import logger
@@ -83,9 +84,7 @@ type_prompt = ChatPromptTemplate.from_messages([
 ])
 
 def get_hierarchy_rule():
-	return 
-"""
-HIERARCHY RULE:
+	return """HIERARCHY RULE:
 The options follow a hierarchical structure where:
 
 - Option 0 is the parent (most general category).
@@ -98,7 +97,6 @@ Selection guidelines:
 - Select option 0 (parent) ONLY if none of the specific child options fit the narrative.
 
 The parent (option 0) acts strictly as a fallback category.
-
 """ 
 
 def _build_options_prompt(node: dict, self_name: Optional[str] = None):
@@ -147,7 +145,7 @@ def _build_options_prompt_by_list(options: list[tuple]):
 	]
 	return "\n".join(lines)
 
-def _extract_event(model: BaseChatModel, folktale_event: str, past_story: str, event_index: int, total_events: int, options: str, previous_thoughts: list[str], hierarchy_rule: str=""):
+def _extract_event(folktale_event: str, past_story: str, event_index: int, total_events: int, options: str, previous_thoughts: list[str], hierarchy_rule: str=""):
 	"""
 	Extrae un evento relevante de exto utilizando un modelo de lenguaje.
 
@@ -163,6 +161,8 @@ def _extract_event(model: BaseChatModel, folktale_event: str, past_story: str, e
 		- thinking (str): Razonamiento del modelo sobre la selección.
 
 	"""
+	model = get_llm(0.3)
+
 	type_chain = type_prompt | model.with_structured_output(Response)
 
 	# print(type_prompt.format(
@@ -188,7 +188,7 @@ def _extract_event(model: BaseChatModel, folktale_event: str, past_story: str, e
 
 	return response.response, response.thinking
 
-def hierarchical_event_classification(model: BaseChatModel, event_index: int, story_segments: list[str], taxonomy_tree: dict, n_rounds: int = 3, verbose: bool = False):
+def hierarchical_event_classification(event_index: int, story_segments: list[str], taxonomy_tree: dict, n_rounds: int = 3, verbose: bool = False):
 	"""
 	Clasifica un evento usando una taxonomía jerárquica con descripciones.
 
@@ -238,7 +238,6 @@ def hierarchical_event_classification(model: BaseChatModel, event_index: int, st
 			if level > 0:
 				hierarchy_rule = get_hierarchy_rule()
 			event, thinking = _extract_event(
-				model=model,
 				folktale_event=event_text,
 				past_story=past_story,
 				event_index=event_index,
@@ -287,7 +286,6 @@ def hierarchical_event_classification(model: BaseChatModel, event_index: int, st
 			log(selected_str, level + 1)
 
 			event, thinking = _extract_event(
-				model=model,
 				folktale_event=event_text,
 				past_story=past_story,
 				event_index=event_index,
@@ -365,7 +363,7 @@ def collect_options(node):
     return options
 
 
-def event_classification(model: BaseChatModel, event_index: int, story_segments: list[str], taxonomy_tree: dict, n_rounds: int = 3, verbose: bool = False):
+def event_classification(model: BaseChatModel, event_index: int, story_segments: list[str], taxonomy_tree: dict, n_rounds: int = 3):
 	event_text = story_segments[event_index]
 	past_story = "\n".join(story_segments[:event_index])
 	total_events = len(story_segments)
@@ -374,9 +372,8 @@ def event_classification(model: BaseChatModel, event_index: int, story_segments:
 	final_thoughts = []
 	options_list = collect_options(taxonomy_tree["function"])
 	options_str = _build_options_prompt_by_list(options_list)
-	for i in range(n_rounds):
+	for _ in range(n_rounds):
 		event, thinking = _extract_event(
-			model=model,
 			folktale_event=event_text,
 			past_story=past_story,
 			event_index=event_index,
@@ -404,7 +401,6 @@ def event_classification(model: BaseChatModel, event_index: int, story_segments:
 		selected_str = _build_options_prompt_by_list(selected)
 
 		event, thinking = _extract_event(
-			model=model,
 			folktale_event=event_text,
 			past_story=past_story,
 			event_index=event_index,
@@ -423,14 +419,6 @@ def event_classification(model: BaseChatModel, event_index: int, story_segments:
 	winning_event = options_list[winning_event_idx][0]
 
 	return winning_event, final_thoughts
-
-
-
-
-
-
-
-###############################################################
 
 name_system_prompt = SystemMessagePromptTemplate.from_template(
 	template="""You are an expert narrative annotation assistant.
@@ -466,7 +454,7 @@ name_prompt = ChatPromptTemplate.from_messages([
 	name_human_prompt,
 ])
 
-def extract_event_name(model: BaseChatModel, event_type: str, event_text: str, thoughts: list[str]):
+def extract_event_name(event_type: str, event_text: str, thoughts: list[str]):
 	"""
 	Extrae el nombre de la instancia de un evento a partir de su tipo y descripción.
 
@@ -479,6 +467,8 @@ def extract_event_name(model: BaseChatModel, event_type: str, event_text: str, t
 	Returns:
 		str: Nombre de la instancia del evento identificada por el modelo.
 	"""
+	model = get_llm(0.0)
+
 	parser = StrOutputParser()
 	name_chain = name_prompt | model | parser
 
@@ -493,8 +483,6 @@ def extract_event_name(model: BaseChatModel, event_type: str, event_text: str, t
 		"event_text": event_text,
 		"thinking": "\n".join(f"- {thought}" for thought in thoughts)
 	})
-
-	# print(result)
 	
 	logger.debug(f"Event name: {result}")
 
@@ -566,7 +554,9 @@ event_agent_prompt = ChatPromptTemplate.from_messages([
 	event_agent_human_prompt,
 ])
 
-def extract_event_agents(model: BaseChatModel, event_text: str, thoughts: list[str], agents: list[Agent], title: str):
+def extract_event_agents(event_text: str, thoughts: list[str], agents: list[Agent], title: str):
+	model = get_llm(0.0)
+
 	formatted_agents = "\n".join(f"{i}. {agent.name}: {agent.description}" for i, agent in enumerate(agents))
 
 	event_agent_chain = event_agent_prompt | model.with_structured_output(EventAgentsLLM)

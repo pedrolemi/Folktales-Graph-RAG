@@ -1,6 +1,6 @@
 from typing import Any
 from pydantic import BaseModel, Field
-from neo4j_manager import Neo4jManager
+from graph.neo4j_manager import Neo4jManager
 from utils.models import get_llm
 from langchain_core.prompts import (
     FewShotChatMessagePromptTemplate, 
@@ -69,18 +69,17 @@ class Text2CypherRetriever(BaseRetriever):
             for row in results
         )
 
-        system_prompt = f"""
-You are an expert at converting natural language questions into Cypher queries for Neo4j.
+        system_prompt = f"""You are an expert at converting natural language questions into Cypher queries for Neo4j.
 
-Graph Schema:
+GRAPH SCHEMA:
 {self.schema_str}
 
-There are the following folktales in the graph:
+AVAILABLE FOLKTALES:
 {folktales}
 
-Rules:
-1. Use only the node labels, relationship types, and properties shown in the schema.
-2. Output ONLY the Cypher query in the 'cypher' field — no explanations, no markdown.
+RULES:
+1. Use only the node labels, relationship types and properties shown in the schema.
+2. Output ONLY the Cypher query in the 'cypher' field. Do not include explanations or comments.
 3. The query must be syntactically correct Neo4j Cypher.
 """        
 

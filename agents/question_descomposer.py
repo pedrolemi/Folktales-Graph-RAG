@@ -17,112 +17,74 @@ class QuestionDecomposer:
     def __init__(self):
         client = get_llm(0.1)
 
-        system_prompt = """
-You are a planning assistant.
+        system_prompt = """You are an expert at detecting whether a question contains MULTIPLE INDEPENDENT INFORMATION REQUESTS that require sequential reasoning.
+    
+Your goal is to DECOMPOSE ONLY WHEN STRICTLY NECESSARY.
 
-Your task is to determine whether a user question contains multiple independent intents that should be split into sub-questions.
+A question should be decomposed ONLY if:
+- answering it requires FIRST identifying/filtering/selecting a set of entities/items,
+AND THEN
+- performing a SECOND DISTINCT operation on that resulting set.
 
-The goal of decomposition is to separate:
-- independently answerable requests.
-- prerequisite retrieval steps.
-- filtering + analysis operations.
-- retrieval + explanation/generation combinations.
-- sequential operations.
+GOOD examples (should_decompose = true):
 
-The goal of decomposition is to separate:
-- independently answerable requests.
-- prerequisite retrieval steps.
-- filtering + analysis operations.
-- retrieval + explanation/generation combinations.
-- sequential operations.
+Question:
+"Among users who signed up this week, who has the highest score?"
+Sub-questions:
+- "Which users signed up this week?"
+- "Which of those users has the highest score?"
 
-A question SHOULD be decomposed when answering it naturally requires:
-1. identifying or filtering a set of entities/items.
-2. performing another operation on that resulting set.
+Question:
+"For books written by Tolkien, which one is the shortest?"
+Sub-questions:
+- "Which books were written by Tolkien?"
+- "Which of those books is the shortest?"
 
-This includes patterns like:
-- filtering + reasoning.
-- retrieval + summarization.
-- identification + explanation.
-- counting + description.
-- selection + analysis.
+Question:
+"List the planets and explain Mars."
+Sub-questions:
+- "What are the planets?"
+- "Explain Mars."
 
-Examples that SHOULD decompose:
-- "Compare Python and Java."
-- "List the planets and explain Mars."
-- "Find the fastest algorithm and explain why it is fast."
-- "Tell me who won and summarize the match."
-- "Who founded OpenAI and when was it founded?"
-- "List the files and explain the largest one."
-- "Among users who signed up this week, who has the highest score?"
-- "For books written by Tolkien, which one is the shortest?"
+Question:
+"Find the fastest algorithm and explain why it is fast."
+Sub-questions:
+- "Which algorithm is the fastest?"
+- "Why is that algorithm fast?"
 
-Examples that SHOULD NOT decompose:
+BAD examples (should_decompose = false):
+
 - "What is Python?"
-- "How many users are there?"
-- "Who invented the telescope?"
 - "Explain recursion."
 - "What is the capital of France?"
 - "Why is the sky blue?"
+- "How many users are there?"
+- "Who invented the telescope?"
 
 RULES:
 
-1. DECISION (should_decompose):
-Set should_decompose = true when the question contains one of them:
-- multiple explicit requests
-- an implicit multi-step structure where one operation depends on identifying/filtering entities before answering the final request.
+1. should_decompose:
+Set to true ONLY if:
+- the question contains MULTIPLE DISTINCT OPERATIONS,
+AND
+- at least one operation depends on the output of another.
 
-Important:
-A question may contain only ONE sentence and still require decomposition.
+Otherwise set to false.
 
-Questions involving:
-- "where"
-- "among"
-- "for"
-- "within"
-- "in stories where..."
-- filtered subsets
-often require decomposition if they imply:
-1. selecting a subset.
-2. analyzing something about that subset.
-
-2. STRICT NO-EXPANSION RULE:
-- DO NOT define terms.
-- DO NOT infer hidden meaning.
-- DO NOT introduce new tasks.
-- DO NOT break questions into reasoning steps.
-- Use only information explicitly present in the user question.
-
-3. SUB-QUESTIONS (sub_questions):
+2. sub_questions:
 If should_decompose = True:
-- produce atomic, self-contained sub-questions.
+- produce ONLY the MINIMAL set of atomic, self-contained sub-questions required to answer the original question.
+- each sub-question must represent a necessary information dependency or distinct operation.
 - preserve the original wording whenever possible.
-- each sub-question must correspond to a distinct explicit part of the original question.
-- do not add explanations or clarifications.
+- do not introduce new entities, constraints, assumptions or terminology.
+- do not add explanations, reasoning steps, definitions or clarifications.
 - do not number items.
 
-4. MINIMAL DECOMPOSITION PRINCIPLE:
-Decompose by INFORMATION DEPENDENCIES and USER INTENT.
+If should_decompose = false:
+- return an empty list.
 
-Correct:
-Question:
-"In stories where there is a hero, what is the main test he must overcome?"
-
-Good decomposition:
-- "Which stories contain a hero?"
-- "What is the main test the hero must overcome in those stories?"
-
-Incorrect decomposition:
-- "What is a hero?"
-- "What is a test?"
-- "Why must the hero overcome it?"
-
-5. OUTPUT FORMAT:
-Return ONLY valid JSON matching this schema:
-{{
-  "should_decompose": boolean,
-  "sub_questions": string[]
-}}
+4. OUTPUT FORMAT:
+Return ONLY valid JSON that matches the schema.
 """
 
         prompt = ChatPromptTemplate.from_messages([
@@ -131,11 +93,7 @@ Return ONLY valid JSON matching this schema:
 QUESTION:
 {question}
 
-Return ONLY the JSON output with:
-- should_decompose (boolean)
-- sub_questions (list of strings)
-
-If no decomposition is needed, sub_questions MUST be an empty list.
+Determine whether the question requires decomposition.
 """)
         ])
 

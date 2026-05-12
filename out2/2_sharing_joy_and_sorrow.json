@@ -1,0 +1,363 @@
+{
+    "url": "https://fairytalez.com/sharing-joy-and-sorrow/",
+    "nation": "german",
+    "title": "Sharing Joy and Sorrow",
+    "genre": "fable",
+    "agents": [
+        {
+            "race": "human",
+            "name": "the tailor",
+            "age_group": "adult",
+            "gender": "male",
+            "description": "A quarrelsome and abusive husband who beats his wife.",
+            "role": "antagonist",
+            "lives_in": "place_42b13b0c46814c8da778284f4bf94d38",
+            "id": "agent_1ec6e1f685c44ed6add8df83116cffcf",
+            "personality": {
+                "openness": 0.3,
+                "conscientiousness": 0.2,
+                "extraversion": 0.6,
+                "agreeableness": 0.1,
+                "neuroticism": 0.8
+            }
+        },
+        {
+            "race": "human",
+            "name": "the tailor's wife",
+            "age_group": "adult",
+            "gender": "female",
+            "description": "A good, industrious, and pious wife who is abused by her husband.",
+            "role": "primary_character",
+            "lives_in": "place_42b13b0c46814c8da778284f4bf94d38",
+            "id": "agent_3fa325b934594cffba934bef5e2e4f30",
+            "personality": {
+                "openness": 0.6,
+                "conscientiousness": 0.8,
+                "extraversion": 0.4,
+                "agreeableness": 0.9,
+                "neuroticism": 0.2
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "type": "enemy",
+            "description": "The tailor's wife is subjected to physical abuse, harassment, and emotional distress by her husband.",
+            "strength": 1.0,
+            "source": "the tailor",
+            "source_id": "agent_1ec6e1f685c44ed6add8df83116cffcf",
+            "target": "the tailor's wife",
+            "target_id": "agent_3fa325b934594cffba934bef5e2e4f30"
+        }
+    ],
+    "places": [
+        {
+            "type": "house",
+            "name": "The Tailor's House",
+            "description": "The tailor's residence where he lived with his wife.",
+            "id": "place_42b13b0c46814c8da778284f4bf94d38"
+        },
+        {
+            "type": "village",
+            "name": "The Village",
+            "description": "The community where the tailor and his wife resided.",
+            "id": "place_8310f53cfbf546e0a8c35ae5bfd452f7"
+        },
+        {
+            "type": "community_building",
+            "name": "The Magistrates' Court",
+            "description": "A building used for public services, where the magistrates held court.",
+            "id": "place_435f7b4fef934608ba5aab05a077d95e"
+        },
+        {
+            "type": "field",
+            "name": "The Yard",
+            "description": "An open area adjacent to the tailor's house.",
+            "id": "place_dc3e72556a7944b2be4bf74ca771fdbd"
+        }
+    ],
+    "objects": [
+        {
+            "type": "crafted_object",
+            "name": "yard-measure",
+            "description": "The tailor used it to chase his wife around the yard.",
+            "id": "object_41631f3fd90048778ac821daf1aa89c9"
+        },
+        {
+            "type": "crafted_object",
+            "name": "scissors",
+            "description": "The tailor threw them at his wife as an admonition.",
+            "id": "object_690f0cfa98a146f0885df566c2001dc0"
+        }
+    ],
+    "events": [
+        {
+            "id": "event_0ff7cb59b97b4a178dbbb06b42027976",
+            "type": "setup",
+            "name": "Tailor Abuses His Wife",
+            "description": "There was once a tailor, who was a quarrelsome fellow, and his wife, who was good, industrious, and pious, never could please him. Whatever she did, he was not satisfied, but grumbled and scolded, and knocked her about and beat her.",
+            "thoughts": [
+                "The event describes a situation of ongoing conflict between the tailor and his wife. The description does not indicate any resolution or closure on the issue, nor is it part of the main action driving the story forward. Instead, it sets up the problem that will likely escalate in future events.",
+                "The given text describes a situation where the hero's wife is being mistreated by her husband. This event does not drive the story forward through conflict or external help but rather sets up the problem that will be addressed later in the narrative.",
+                "The provided text describes a situation of escalating conflict and abuse within a domestic setting. The hero's success or failure has not yet been established, and the event does not resolve any open conflicts. It is part of the main narrative action as it introduces the problem and sets up future events.",
+                "The event describes a situation of ongoing conflict between the tailor and his wife. The description does not indicate any resolution or closure on the issue, nor is it part of the main action driving the story forward. Instead, it sets up the problem that will likely escalate in future events.",
+                "The event describes a situation of ongoing conflict between the tailor and his wife. The description does not indicate any resolution or closure on the issue, nor is it part of the main action driving the story forward. Instead, it sets up the problem that will likely escalate in future events.",
+                "The event describes a situation of ongoing conflict between the tailor and his wife, setting up the problem that will likely escalate in future events. This fits best with option 0: setup, as it establishes the world or hero's situation before any significant conflict or disruption has occurred.",
+                "The text describes a situation of ongoing conflict between the tailor and his wife. The description does not indicate any resolution or closure on the issue, nor is it part of the main action driving the story forward. Instead, it sets up the problem that will likely escalate in future events.",
+                "The event describes a situation of ongoing conflict between the tailor and his wife. The description does not indicate any resolution or closure on the issue, nor is it part of the main action driving the story forward. Instead, it sets up the problem that will likely escalate in future events."
+            ],
+            "agents": [
+                {
+                    "id": "agent_1ec6e1f685c44ed6add8df83116cffcf",
+                    "actions": [
+                        "beats his wife",
+                        "grumbled and scolded"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_3fa325b934594cffba934bef5e2e4f30",
+                    "actions": [
+                        "is abused by her husband"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [
+                "object_690f0cfa98a146f0885df566c2001dc0"
+            ],
+            "place": "place_dc3e72556a7944b2be4bf74ca771fdbd"
+        },
+        {
+            "id": "event_7424a9e99fc649619ef7bf81fa56c4c8",
+            "type": "resolution",
+            "name": "Tailor Promises Better Behavior",
+            "description": "As the authorities at last heard of it, they had the tailor summoned, and put in prison in order to make him better. The tailor was kept for a while on bread and water, and then set free again. The tailor was forced, however, to promise not to beat his wife any more, but to live with her in peace, and share joy and sorrow with her, as married people ought to do.",
+            "thoughts": [
+                "The event marks a turning point where the authorities intervene, and the quarrelsome tailor is forced to promise change. This suggests a shift from conflict to resolution.",
+                "The event involves a resolution of the conflict between the quarrelsome tailor and his wife. The authorities intervene, and the tailor is forced to promise to stop beating his wife, indicating that the story has reached a point where the main issue is being addressed.",
+                "The event marks a turning point where the authorities intervene, and the quarrelsome tailor is forced to promise better behavior. This is not the climax or a major plot twist, but rather a shift in the story's direction towards resolution.",
+                "The authorities intervene to resolve the conflict between the quarrelsome tailor and his wife. The tailor is forced to promise better behavior, indicating a shift towards resolution.",
+                "The authorities intervene, and the quarrelsome tailor is forced to promise better behavior. This marks a shift from conflict to resolution, where the main issue of domestic violence is being addressed.",
+                "The authorities intervene, leading to a resolution of the conflict between the quarrelsome tailor and his wife. The tailor is forced to promise better behavior, indicating a shift towards resolution."
+            ],
+            "agents": [
+                {
+                    "id": "agent_1ec6e1f685c44ed6add8df83116cffcf",
+                    "actions": [
+                        "promised to stop beating his wife",
+                        "agreed to live with his wife in peace"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_3fa325b934594cffba934bef5e2e4f30",
+                    "actions": [
+                        "was abused by her husband",
+                        "is mentioned as the reason for the authorities' intervention"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [],
+            "place": "place_435f7b4fef934608ba5aab05a077d95e"
+        },
+        {
+            "id": "event_cbbd041184314e9f9749af052f39b59a",
+            "type": "move",
+            "name": "Tailor Chases His Wife",
+            "description": "All went on well for a time, but then tailor fell into his old ways, and was surly and quarrelsome. And because tailor dared not beat her, he would seize her by the hair and tear it out. The woman escaped from him, and sprang out into the yard, but he ran after her with his yard-measure and scissors, and chased her about, and threw the yard-measure and scissors at her, and whatever else came his way.",
+            "thoughts": [
+                "The event describes a continuation of the husband's abusive behavior towards his wife, escalating from physical violence to chasing her with household items. This aligns with option 0 as it is part of the main narrative action, driving the story forward through conflict.",
+                "The event describes a continuation of the tailor's abusive behavior towards his wife, escalating from physical violence to chasing her with various objects. This aligns with option 0 as it is part of the main narrative action driving the story forward through conflict.",
+                "The event shows a relapse into old behavior, escalating the conflict between the couple. It's not yet resolved and doesn't seem to be part of the main action that drives the story forward.",
+                "The event describes a continuation of the husband's abusive behavior towards his wife, escalating from physical violence to chasing her with various objects. This aligns with option 0 as it is part of the main narrative action driving the story forward through conflict.",
+                "The event shows a continuation of the tailor's abusive behavior towards his wife, escalating from physical violence to chasing her with various objects. This aligns with option 0 as it is part of the main narrative action driving the story forward through conflict."
+            ],
+            "agents": [
+                {
+                    "id": "agent_1ec6e1f685c44ed6add8df83116cffcf",
+                    "actions": [
+                        "seized her by the hair",
+                        "tore her hair out",
+                        "ran after her with his yard-measure and scissors",
+                        "chased her about",
+                        "threw the yard-measure and scissors at her"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_3fa325b934594cffba934bef5e2e4f30",
+                    "actions": [
+                        "escaped from him",
+                        "sprang out into the yard"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [
+                "object_41631f3fd90048778ac821daf1aa89c9",
+                "object_690f0cfa98a146f0885df566c2001dc0"
+            ],
+            "place": "place_dc3e72556a7944b2be4bf74ca771fdbd"
+        },
+        {
+            "id": "event_0b3d7666b7ad475a9cc417ee22f20572",
+            "type": "conflict",
+            "name": "Tailor Continues Abusive Behavior",
+            "description": "When he hit her he laughed, and when he missed her, he stormed and swore. This went on so long that the neighbours came to the wife’s assistance. The tailor was again summoned before the magistrates, and reminded of his promise.",
+            "thoughts": [
+                "The event involves the tailor acting out his violent behavior towards his wife again, which leads to external intervention from the neighbors and a reminder of his promise to change. This is not the main action driving the story forward or the final resolution, but rather an escalation of the conflict.",
+                "The event involves the hero acting out of character, escalating the conflict with his wife. The authorities are involved again, and the tailor's promise is being called into question.",
+                "The event describes the tailor's continued abuse of his wife, which prompts the neighbours' intervention and a reminder from the authorities for him to keep his promise. This is not a moment of conflict resolution or main narrative action driving the story forward, but rather an escalation of the problem.",
+                "The event describes the tailor's continued abuse of his wife, which prompts the neighbours' intervention and a reminder from the authorities for him to keep his promise. This is an escalation of the problem, showing that the conflict has not been resolved.",
+                "The event describes the tailor's continued abuse of his wife, which prompts the neighbours' intervention and a reminder from the authorities for him to keep his promise. This is not a moment of conflict resolution or main narrative action driving the story forward, but rather an escalation of the problem.",
+                "The event describes the tailor's continued abuse of his wife, which prompts the neighbours' intervention and a reminder from the authorities for him to keep his promise. This is not a moment of conflict resolution or main narrative action driving the story forward, but rather an escalation of the problem.",
+                "The event describes an escalation of the conflict between the tailor and his wife. The tailor's violent behavior continues despite a previous promise to change, prompting external intervention from the neighbors and a reminder from the authorities for him to keep his promise.",
+                "The event describes the tailor's continued abuse of his wife, which prompts the neighbours' intervention and a reminder from the authorities for him to keep his promise. This is an escalation of the problem, showing that the conflict has not been resolved.",
+                "The event describes an escalation of the conflict between the tailor and his wife. The tailor's behavior has not changed despite previous promises to reform, and he continues to abuse his wife. This is a continuation of the problem introduced in earlier events."
+            ],
+            "agents": [
+                {
+                    "id": "agent_1ec6e1f685c44ed6add8df83116cffcf",
+                    "actions": [
+                        "hit",
+                        "laughed",
+                        "stormed",
+                        "swore"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_3fa325b934594cffba934bef5e2e4f30",
+                    "actions": [
+                        "was hit",
+                        "was stormed at"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [
+                "object_690f0cfa98a146f0885df566c2001dc0"
+            ],
+            "place": "place_dc3e72556a7944b2be4bf74ca771fdbd"
+        },
+        {
+            "id": "event_14dd445af738467ba14ef7718092ded5",
+            "type": "connective_incident",
+            "name": "Judge Questions Tailor's Claim",
+            "description": "“Dear gentlemen,” said he, “I have kept my word, I have not beaten her, but have shared joy and sorrow with her.” “How can that be,” said the judge, “when she continually brings such heavy complaints against you?”",
+            "thoughts": [
+                "The event involves a confrontation between the tailor and the judge, where the judge questions the tailor's claim of sharing joy and sorrow with his wife. This is not part of the main action or conflict resolution, but rather a moment of reflection on past events.",
+                "The event involves a confrontation between the tailor and the judge, where the tailor defends himself against accusations of mistreating his wife. This is not a climactic or resolving moment in the story, but rather an escalating one, as the authorities are again involved to address the tailor's behavior.",
+                "The event shows the judge questioning the tailor's claim that he has shared joy and sorrow with his wife. This is a moment of conflict or tension in the story, where the truth behind the tailor's promise is being called into question.",
+                "The event shows a confrontation between the tailor and the judge, where the tailor defends himself against accusations of mistreating his wife. This is an escalating moment in the story, as the authorities are again involved to address the tailor's behavior.",
+                "The event shows a confrontation between the tailor and the judge, where the judge questions the tailor's claim that he has shared joy and sorrow with his wife. This is an escalating moment in the story, as the authorities are again involved to address the tailor's behavior.",
+                "The event shows a confrontation between the tailor and the judge, where the judge questions the tailor's claim that he has shared joy and sorrow with his wife. This is an escalating moment in the story, as the authorities are again involved to address the tailor's behavior.",
+                "The event shows a confrontation between the tailor and the judge, where the judge questions the tailor's claim that he has shared joy and sorrow with his wife. This is an escalating moment in the story, as the authorities are again involved to address the tailor's behavior.",
+                "The event shows a confrontation between the tailor and the judge, where the judge questions the tailor's claim that he has shared joy and sorrow with his wife. This is an escalating moment in the story, as the authorities are again involved to address the tailor's behavior.",
+                "The event shows a confrontation between the tailor and the judge, where the judge questions the tailor's claim that he has shared joy and sorrow with his wife. This is an escalating moment in the story, as the authorities are again involved to address the tailor's behavior.",
+                "The event shows a confrontation between the tailor and the judge, where the judge questions the tailor's claim that he has shared joy and sorrow with his wife. This is an escalating moment in the story, as the authorities are again involved to address the tailor's behavior.",
+                "The event shows a confrontation between the tailor and the judge, where the judge questions the tailor's claim that he has shared joy and sorrow with his wife. This is an escalating moment in the story, as the authorities are again involved to address the tailor's behavior."
+            ],
+            "agents": [
+                {
+                    "id": "agent_1ec6e1f685c44ed6add8df83116cffcf",
+                    "actions": [
+                        "defends himself against accusations",
+                        "claims to have shared joy and sorrow with his wife"
+                    ],
+                    "importance": 0.8
+                },
+                {
+                    "id": "agent_3fa325b934594cffba934bef5e2e4f30",
+                    "actions": [
+                        "is the subject of complaints from her husband's wife"
+                    ],
+                    "importance": 0.4
+                }
+            ],
+            "objects": [],
+            "place": "place_dc3e72556a7944b2be4bf74ca771fdbd"
+        },
+        {
+            "id": "event_69374f3338484abbab9a3811487612a7",
+            "type": "conflict",
+            "name": "Tailor Chases His Wife",
+            "description": "“I have not beaten her, but just because she looked so strange I wanted to comb her hair with my hand; she, however, got away from me, and left me quite spitefully. Then I hurried after her, and in order to bring her back to her duty, I threw at her as a well-meant admonition whatever came readily to hand.”",
+            "thoughts": [
+                "The event involves the hero acting within the core plot, specifically escalating the conflict between the tailor and his wife. The tailor's actions are a continuation of his previous behavior, but with increased aggression.",
+                "The event involves the tailor acting out of character, chasing his wife with a yard-measure and scissors, and throwing objects at her. This behavior is consistent with his previous actions in the story, where he would beat or mistreat his wife when she displeased him. The event drives the plot forward by escalating the conflict between the tailor and his wife, and setting the stage for further consequences.",
+                "The event involves the tailor acting out of character, chasing his wife with a yard-measure and scissors, which escalates the conflict. This aligns with the main narrative action driving the story forward through conflict.",
+                "The event involves the tailor acting out of character, chasing his wife with a yard-measure and scissors, which escalates the conflict. This aligns with the main narrative action driving the story forward through conflict.",
+                "The event involves the tailor acting out of character, escalating the conflict between him and his wife. This behavior is consistent with his previous actions in the story, where he would mistreat his wife when she displeased him. The event drives the plot forward by increasing the tension and setting the stage for further consequences.",
+                "The event involves the tailor acting out of character, chasing his wife with a yard-measure and scissors, which escalates the conflict. This aligns with the main narrative action driving the story forward through conflict.",
+                "The tailor's actions escalate the conflict between him and his wife, consistent with his previous behavior of mistreating her. This event drives the plot forward by increasing tension and setting the stage for further consequences.",
+                "The event involves the tailor acting out of character, chasing his wife with a yard-measure and scissors, which escalates the conflict. This behavior is consistent with his previous actions in the story, where he would mistreat his wife when she displeased him.",
+                "The event involves the tailor acting out of character, chasing his wife with a yard-measure and scissors, which escalates the conflict. This behavior is consistent with his previous actions in the story, where he would mistreat his wife when she displeased him. The event drives the plot forward by increasing the tension and setting the stage for further consequences."
+            ],
+            "agents": [
+                {
+                    "id": "agent_1ec6e1f685c44ed6add8df83116cffcf",
+                    "actions": [
+                        "chased his wife with a yard-measure and scissors",
+                        "threw objects at her"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_3fa325b934594cffba934bef5e2e4f30",
+                    "actions": [
+                        "got away from the tailor",
+                        "left him spitefully"
+                    ],
+                    "importance": 0.6
+                }
+            ],
+            "objects": [
+                "object_41631f3fd90048778ac821daf1aa89c9"
+            ],
+            "place": "place_dc3e72556a7944b2be4bf74ca771fdbd"
+        },
+        {
+            "id": "event_cd78be7579a546869759e025e997ac92",
+            "type": "connective_incident",
+            "name": "Tailor Justifies Abuse",
+            "description": "I have shared joy and sorrow with her also, for whenever I hit her I was full of joy, and she of sorrow, and if I missed her, then she was joyful, and I sorry.” The judges were not satisfied with this answer, but gave him the reward he deserved.",
+            "thoughts": [
+                "The event is part of the main narrative action: it drives the story forward through conflict. The tailor's behavior escalates as he continues to mistreat his wife, and the judges are not satisfied with his answer.",
+                "The event is part of the main narrative action: it drives the story forward through conflict. The tailor's behavior escalates despite his promise to change, and he is again summoned before the magistrates.",
+                "The event described involves the tailor's attempt to justify his violent behavior towards his wife, which has escalated from physical abuse to chasing her with yard-measure and scissors. The judges are not satisfied with this answer, but still give him a reward, indicating that the story is not yet at its climax or resolution.",
+                "The tailor's behavior escalates despite his promise to change, and he attempts to justify his violent actions towards his wife. The judges are not satisfied with this answer but still give him a reward.",
+                "The tailor's behavior escalates despite his promise to change, and he is again summoned before the magistrates. He attempts to justify his violent actions towards his wife by twisting the truth.",
+                "The tailor's behavior escalates despite his promise to change, and he is again summoned before the magistrates. He attempts to justify his violent behavior towards his wife by downplaying its severity.",
+                "The tailor attempts to justify his violent behavior towards his wife by downplaying its severity. This event links two narrative segments without being a conflict or resolution in itself, as it moves the plot forward mechanically.",
+                "The tailor attempts to justify his violent behavior towards his wife by downplaying its severity. This event links two narrative segments without being a conflict or resolution in itself, as it moves the plot forward mechanically.",
+                "The tailor attempts to justify his violent behavior towards his wife by downplaying its severity and twisting the truth. This event links two narrative segments without being a conflict or resolution in itself, as it moves the plot forward mechanically.",
+                "The tailor attempts to justify his violent behavior towards his wife by downplaying its severity. This event links two narrative segments without being a conflict or resolution in itself, as it moves the plot forward mechanically."
+            ],
+            "agents": [
+                {
+                    "id": "agent_1ec6e1f685c44ed6add8df83116cffcf",
+                    "actions": [
+                        "hit his wife",
+                        "chase his wife with yard-measure and scissors"
+                    ],
+                    "importance": 0.9
+                },
+                {
+                    "id": "agent_3fa325b934594cffba934bef5e2e4f30",
+                    "actions": [
+                        "suffer from physical abuse",
+                        "be joyful when the tailor misses her"
+                    ],
+                    "importance": 0.8
+                }
+            ],
+            "objects": [
+                "object_690f0cfa98a146f0885df566c2001dc0"
+            ],
+            "place": "place_dc3e72556a7944b2be4bf74ca771fdbd"
+        }
+    ]
+}

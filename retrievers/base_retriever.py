@@ -1,5 +1,5 @@
 from typing import Optional, Any
-from neo4j_manager import Neo4jManager
+from graph.neo4j_manager import Neo4jManager
 
 class BaseRetriever:
     def __init__(self, neo4j_manager: Neo4jManager, index_name: str, return_projection: Optional[dict[str, str]] = None, extra_match: str = "", include_score: bool = True):

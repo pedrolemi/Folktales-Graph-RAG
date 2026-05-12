@@ -1,5 +1,5 @@
 from typing import Any, Optional
-from neo4j_manager import Neo4jManager
+from graph.neo4j_manager import Neo4jManager
 from .base_retriever import BaseRetriever
 
 class FullTextRetriever(BaseRetriever):

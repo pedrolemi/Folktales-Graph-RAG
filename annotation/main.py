@@ -9,15 +9,15 @@ from .tools.event_extractor import extract_event_elements
 from .tools.object_extractor import extract_objects
 from .tools.relationship_extractor import extract_relationships
 from utils.regex_utils import clean_regex, title_case_to_snake_case
-from utils.models import get_llm
 from schemas.folktale import Folktale
 from pandas import DataFrame
 from loguru import logger
 from tqdm import tqdm
+import sys
 import re
 import os
 
-def get_batch(df: DataFrame, start: int, size: int):
+def get_batch(df: DataFrame, start: int, size: int) -> DataFrame:
     if start < 0:
         raise ValueError("start must be >= 0")
 
@@ -26,23 +26,40 @@ def get_batch(df: DataFrame, start: int, size: int):
 
     return df.iloc[start:start + size]
 
-def main():
-	model = get_llm(0.7)
+def get_stories_by_urls(df: DataFrame, urls: list[str]) -> DataFrame:
+    result = df[df["source"].isin(urls)]
 
-	logger.remove()
+    if result.empty:
+        raise ValueError("No stories found for the provided urls.")
+
+    return result
+
+def main():
+	# logger.remove()
+      
+	# logger.add(sys.stderr, level="SUCCESS")
 
 	data_dir = "./data"
 	processed_dir = os.path.join(data_dir, "processed")
 	folktales_path = os.path.join(processed_dir, "folk_tales_deduplicated.csv")
-	folktales_df = load_csv(folktales_path)
-	selected_folktales_df = get_batch(folktales_df, 0, 1)
+	folktales_df = load_csv(folktales_path)  
+		
+	urls = [
+    	# "https://fairytalez.com/momotaro/",
+    	# "https://fairytalez.com/the-birdcatcher/",
+        # "https://fairytalez.com/sharing-joy-and-sorrow/",
+        "https://fairytalez.com/the-thieves-and-the-cock/",
+        "https://fairytalez.com/how-the-tiger-got-his-stripes/"
+	]
+
+	selected_folktales_df = get_stories_by_urls(folktales_df, urls)
 
 	metadata_dir = "./metadata"
 	structure_dir = os.path.join(metadata_dir, "structure")
 	collections_dir = os.path.join(metadata_dir, "collections")
 	entities_dir = os.path.join(metadata_dir, "entities")
 
-	out_dir = "./out"
+	out_dir = "./out2"
 	os.makedirs(out_dir, exist_ok=True)
 
 	structures = load_json_folder(structure_dir)
@@ -59,25 +76,24 @@ def main():
 		
 		logger.debug(f"Starting annotation: '{title}' (idx={i})")
 
-		genre = extract_genre(model, text, collections["genre"])
+		genre = extract_genre(text, collections["genre"])
 
-		objects = extract_objects(model, text, entities["object"])
+		objects = extract_objects(text, entities["object"])
 
-		places = extract_places(model, text, entities["place"])
+		places = extract_places(text, entities["place"])
 
-		agents = extract_agents(model, text, places, structures["role"], collections["trait"])
+		agents = extract_agents(text, places, structures["role"], collections["trait"])
 
-		relationships = extract_relationships(model, text, agents)
+		relationships = extract_relationships(text, agents)
 		
 		story_segments = []
-		story_segments = extract_story_segments(model, text)
+		story_segments = extract_story_segments(text)
 
 		events = []
 		for j, segment in tqdm(enumerate(story_segments), desc=f"Events ({title})", leave=False):
-			objects_ids, place_id = extract_event_elements(model, title, segment, objects, places)
+			objects_ids, place_id = extract_event_elements(title, segment, objects, places)
 
 			event_type, final_thoughts = hierarchical_event_classification(
-				model=model,
 				event_index=j,
 				story_segments=story_segments,
 				taxonomy_tree=structures["function"],
@@ -87,11 +103,8 @@ def main():
 			
 			if event_type is None:
 				event_type = EventClass.EVENT
-			name = extract_event_name(model, event_type, segment, final_thoughts)
-			event_agents = extract_event_agents(model, segment, final_thoughts, agents, title)
-			
-			# u = uuid.uuid4()
-			# fixed = f"place_{u.hex}"
+			name = extract_event_name(event_type, segment, final_thoughts)
+			event_agents = extract_event_agents(segment, final_thoughts, agents, title)
 
 			event = Event(
 				type=event_type,
