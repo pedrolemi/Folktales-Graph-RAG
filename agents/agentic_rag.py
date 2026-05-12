@@ -4,6 +4,7 @@ from graph.neo4j_manager import Neo4jManager
 from .rag_tool_factory import RAGToolFactory
 from pydantic import BaseModel, Field
 from .agent_system import AgentSystem, AgentResult
+from retrievers.text2cypher import Text2CypherRetriever
 from typing import Optional
 import uuid
 
@@ -23,6 +24,11 @@ class AgenticRAG(AgentSystem):
             return_projection,
             extra_match
         )
+
+        text2cypher = Text2CypherRetriever(neo4j_manager)
+        text2cypher.add_few_shots()
+
+        tool_manager.register_custom_tool(text2cypher.as_tool())
 
         self.system_prompt = system_prompt or """You are a concise question-answering assistant.
 
@@ -45,7 +51,7 @@ STRICT RULES:
             result = self.answer(
                 question=query,
                 thread_id=f"subagent-{uuid.uuid4()}",
-                max_iterations=max_iterations,
+                max_iterations=max_iterations
             )
 
             iterations: list[AgentResult] = result.iterations

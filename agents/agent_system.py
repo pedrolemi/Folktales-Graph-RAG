@@ -171,13 +171,19 @@ class AgentSystem:
     
         return self.tool_manager.is_terminal_tool(last_message.name)
 
-    def answer(self, question: str, thread_id: str = "default", max_iterations: int = 2) -> AgentResponse:
+    def answer(self, question: str, thread_id: str = "default", max_iterations: int = 2, decompose: bool = True) -> AgentResponse:
         iterations: list[AgentResult] = []
 
-        queries = self.decomposer.run(question)
+        if decompose:
+            queries = self.decomposer.run(question)
+        else:
+            queries = [question]
+        
         self._log("DECOMPOSED QUERIES", indent=0)
         for i, query in enumerate(queries, 1):
             self._log(f"Query {i}", query, indent=2)
+
+        skip_critic = len(queries) > 1
 
         for idx, query in enumerate(queries):
             parts = []
@@ -193,7 +199,6 @@ class AgentSystem:
                 )
 
             parts.append(f"Question: {query}")
-
             current_question = "\n".join(parts)
 
             for i in range(max_iterations):
@@ -233,11 +238,17 @@ class AgentSystem:
                     ))
                     break
 
-                critique = self.critic.critique(
-                    current_question,
-                    context,
-                    answer
-                )
+                if skip_critic:
+                    critique = Critique(
+                        is_complete=True,
+                        is_faithful=True,
+                    )
+                else:
+                    critique = self.critic.critique(
+                        current_question,
+                        context,
+                        answer
+                    )
 
                 self._log("CRITIQUE", {
                     "is_complete": critique.is_complete,

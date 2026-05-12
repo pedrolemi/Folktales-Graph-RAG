@@ -1,11 +1,11 @@
-from langchain_core.tools import BaseTool, StructuredTool
+from langchain_core.tools import BaseTool
 
 class BaseToolFactory:
     def __init__(self):
         self.custom_tools: dict[str, BaseTool] = {}
         self.tool_map: dict[str, BaseTool] = {}
 
-    def register_custom_tool(self, tool: StructuredTool, terminal: bool = False):
+    def register_custom_tool(self, tool: BaseTool, terminal: bool = False):
         metadata = tool.metadata or {}
         metadata["terminal"] = terminal
         tool.metadata = metadata

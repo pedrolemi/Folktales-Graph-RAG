@@ -11,6 +11,7 @@ from typing import cast
 from utils.models import get_llm
 from pydantic import BaseModel
 from langchain_core.prompts import ChatPromptTemplate
+import uuid
 
 _MAX_CONTEXT_CHARS = 4000  # per-call limit to avoid truncated JSON responses
 
@@ -161,7 +162,8 @@ class RAGEvaluator:
 		Returns (None, []) on failure so the benchmark loop never crashes.
 		"""
 		try:
-			result = self.rag.answer(question)
+			thread_id=f"agent-{uuid.uuid4()}"
+			result = self.rag.answer(question, thread_id, max_iterations=1, decompose=False)
 			answer = result.answer
 			context = result.iterations[-1].context
 			return answer, context

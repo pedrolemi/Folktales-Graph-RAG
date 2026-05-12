@@ -2,7 +2,7 @@ from langchain_core.tools import BaseTool, StructuredTool
 from pydantic import BaseModel, Field
 from retrievers.vector_retriever import VectorRetriever
 from retrievers.hybrid_retriever import HybridRetriever
-from retrievers.text2cyper import Text2CypherRetriever
+from retrievers.text2cypher import Text2CypherRetriever
 from graph.neo4j_manager import Neo4jManager
 from .terminal_tool_factory import BaseToolFactory
 from typing import Any
@@ -31,81 +31,7 @@ class RAGToolFactory(BaseToolFactory):
 			extra_match=extra_match,
 			include_score=False
 		)
-		self.text2cypher = Text2CypherRetriever(neo4j_manager)
-		self._add_few_shots()
-
-	def _add_few_shots(self):
-		self.text2cypher.add_few_shot_example(
-			"What happens in the folktale 'Momotaro', in order, and which characters are involved in each event?",
-			"""
-MATCH (f:Folktale {title: "Momotaro"})-[:HAS_EVENT]->(e:Event)
-OPTIONAL MATCH (e)-[:HAS_AGENT]->(a:Agent)
-RETURN e.order AS order,
-	e.name AS event,
-	collect(a.name) AS agents
-ORDER BY order
-			"""
-		)
-
-		self.text2cypher.add_few_shot_example(
-			"Which characters are most important in the story based on how many events they appear in?",
-			"""
-MATCH (a:Agent)
-OPTIONAL MATCH (a)<-[:HAS_AGENT]-(e:Event)
-RETURN a.name AS agent,
-	count(DISTINCT e) AS event_count
-ORDER BY event_count DESC
-LIMIT 10
-			"""
-		)
-
-		self.text2cypher.add_few_shot_example(
-			"How many folktales come from Japan?",
-			"""
-MATCH (f:Folktale)-[:FROM_NATION]->(n:Nation {name: "Japan"})
-RETURN count(f) AS total_folktales
-			"""
-		)
-
-		self.text2cypher.add_few_shot_example(
-			"Who are Momotaro's friends?",
-			"""
-MATCH (m:Agent {name: "Momotaro"})-[r:RELATIONSHIP]->(a:Agent)
-WHERE r.type = "friend"
-RETURN a.name AS friend
-			"""
-		)
-
-		self.text2cypher.add_few_shot_example(
-			"What happens after the specific event where Momotaro gives the dumpling to the dog?",
-			"""
-MATCH (e:Event {name: "Momotaro gives dog a dumpling."})-[:POST_EVENT]->(next:Event)
-RETURN e.name AS current_event,
-	next.name AS next_event
-			"""
-		)
-
-		self.text2cypher.add_few_shot_example(
-			"What is the genre of the 'The Birdatcher' folktale?",
-			"""
-MATCH (f:Folktale {title: "The Birdatcher"})-[:HAS_GENRE]->(g:Genre)
-RETURN g.name AS ground_truth
-LIMIT 1
-"""
-		)
-
-	_GREETING_RESPONSE = (
-		"Hello! I’m a knowledge assistant focused on folktales from all around the world. You can ask me about their characters, relationships, themes or how they are structured."
-	)
-
-	_OUT_OF_SCOPE_RESPONSE = (
-		"This question is outside my scope."
-	)
-
-	_SKILLS_RESPONSE = (
-		"I can answer questions about folktales: their origins, characters, themes, narrative structures, cultural contexts and the relationships between characters."
-	)
-
+		
 	def get_tools(self) -> list[BaseTool]:
 		tools: list[BaseTool] = [
 			StructuredTool.from_function(
@@ -127,16 +53,6 @@ LIMIT 1
 				"Returns relevant passages using a combination of vector similarity and keyword filtering.",
 				args_schema=QueryInput,
 				func=self._hybrid_search,
-			),
-			StructuredTool.from_function(
-				name="text2cypher",
-				description="Use for structured queries that require structural information about the graph. "
-				"This includes questions about relationships between entities, counts, filtering, "
-				"comparisons, rankings, graph traversal, paths between nodes, temporal or event ordering "
-				"and queries at the type level (e.g., categories or entity classes). "
-				"Returns both the generated Cypher query and structured graph results.",
-				args_schema=QueryInput,
-				func=self._text2cypher
 			)
 		]
 
@@ -159,8 +75,7 @@ LIMIT 1
 			self._format_record(r)
 			for r in results
 		]
-		# return [r["description"] for r in results]
-	
+		
 	def _hybrid_search(self, query: str) -> list[str]:
 		results = self.hybrid_retriever.retrieve(query, top_k=1)
 
@@ -168,12 +83,4 @@ LIMIT 1
 			self._format_record(r)
 			for r in results
 		]
-		# return [r["description"] for r in results]
-
-	def _text2cypher(self, query: str) -> dict[str, Any]:
-		cypher, results = self.text2cypher.retrieve(query)
-		return {
-			"cypher": cypher,
-			"context": [str(r) for r in results],
-		}
-
+	

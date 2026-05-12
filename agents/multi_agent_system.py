@@ -1,6 +1,7 @@
 from .agentic_rag import AgenticRAG
 from graph.neo4j_manager import Neo4jManager
 from .terminal_tool_factory import TerminalToolFactory
+from retrievers.text2cypher import Text2CypherRetriever
 from .agent_system import AgentSystem
 
 class MultiAgentSystem(AgentSystem):
@@ -83,7 +84,7 @@ Examples:
 		)
 
 		agent_prompt = """
-You are a Character Analysis Agent for a folktale knowledge graph.
+You are a Character Analysis Character for a folktale knowledge graph.
 
 Your responsability is to answer ONLY questions about CHARACTERS.
 
@@ -118,7 +119,7 @@ Use for:
 - roles and hierarchy (protagonist, antagonist, supporting roles).
 - counting appearances or interactions.
 - extracting examples from the graph.
-- agent features such as age, gender and race.
+- character features such as age, gender and race.
 - character's personality, which is based on the Big Five traits (openness, conscientiousness, extraversion, agreeableness, neuroticism).
 
 STRICT RULES:
@@ -136,9 +137,9 @@ OPTIONAL MATCH (node)-[:HAS_ROLE]->(r:Role)
 
 		self.agent_rag = AgenticRAG(
 			neo4j_manager,
-			embedding_index="agent_embeddings",
-			fulltext_index="agent_fulltext",
-			node_label="Agent",
+			embedding_index="character_embeddings",
+			fulltext_index="character_fulltext",
+			node_label="Character",
 			text_property="description",
 			tool_name="character_tool",
 			system_prompt=agent_prompt,
@@ -312,12 +313,25 @@ Examples:
 """
 		)
 
+		text2cypher = Text2CypherRetriever(neo4j_manager)
+		text2cypher.add_few_shots()
+
 		tool_manager = TerminalToolFactory()
 
 		tool_manager.register_custom_tool(self.event_rag.as_tool(max_iterations=2))
 		tool_manager.register_custom_tool(self.agent_rag.as_tool(max_iterations=2))
 		tool_manager.register_custom_tool(self.place_rag.as_tool(max_iterations=2))
 		tool_manager.register_custom_tool(self.object_rag.as_tool(max_iterations=2))
+		tool_manager.register_custom_tool(text2cypher.as_tool(
+			name="folktale_tool",
+			description=(
+				"Tool for querying a Neo4j folktale knowledge graph at a general level. "
+				"It is used for high-level questions about folktales as whole entities, such as their title, genre, nationality, counts, or dataset-wide aggregations. "
+				"Examples include asking for the genre of a folktale, the number of folktales in the graph "
+				"or other summary-level information about folktales. "
+				"Do NOT use this tool for detailed exploration of internal structure such as specific events, characters, objects, or relationships as those are handled by specialized tools."
+			)
+		))
 
 		system_prompt="""
 You are a routing coordinator for a folktale multi-agent analysis system.
@@ -334,6 +348,21 @@ AVAILABLE TOOLS:
 
 3. out_of_scope
 - Use when the question is NOT related to stories, narratives or story analysis.
+
+4. folktale_tool
+- Use for GENERAL queries about folktales as whole entities in the dataset.
+
+A Folktale (general level) refers to:
+- the story as a complete unit (not its internal structure).
+- high-level properties of a folktale.
+
+Use folktale_tool for:
+- folktale titles.
+- folktale genre.
+- folktale nationality or origin.
+- number of folktales in the dataset.
+- counts, aggregations or global statistics over folktales.
+- simple fact queries about a folktale as a whole entity.
 
 4. event_tool
 - Use for questions about EVENTS in a story.
@@ -420,7 +449,7 @@ STRICT RULES:
 
 1. The response must be based strictly on the provided tool output. Do not use any external knowledge or prior information. Do not invent, assume or infer anything not explicitly present in the context.
 2. No hallucinations: nothing may be included unless directly supported by the tool output.
-3. If the required information is not present in the tool output, respond exactly: "This information is not available in the provided context."
+3. If the required information is not present in the tool output, respond exactly: "This information is not in the knowledge base."
 4. Start directly with the answer. Do not use preambles or introductions.
 5. Never begin with "I", "Let me", "Based on", "The context" or any meta-language.
 6. Do not include reasoning, justification, explanation, or derivation steps.

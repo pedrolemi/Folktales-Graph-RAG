@@ -32,7 +32,7 @@ class FolktaleGraphBuilder:
             "CREATE CONSTRAINT folktale_url IF NOT EXISTS FOR (f:Folktale) REQUIRE f.url IS UNIQUE",
 
             # IDs
-            "CREATE CONSTRAINT agent_id IF NOT EXISTS FOR (a:Agent) REQUIRE a.id IS UNIQUE",
+            "CREATE CONSTRAINT agent_id IF NOT EXISTS FOR (a:Character) REQUIRE a.id IS UNIQUE",
             "CREATE CONSTRAINT object_id IF NOT EXISTS FOR (o:Object) REQUIRE o.id IS UNIQUE",
             "CREATE CONSTRAINT place_id IF NOT EXISTS FOR (p:Place) REQUIRE p.id IS UNIQUE",
             "CREATE CONSTRAINT event_id IF NOT EXISTS FOR (e:Event) REQUIRE e.id IS UNIQUE",
@@ -57,8 +57,8 @@ class FolktaleGraphBuilder:
         )
 
         self.neo4j.create_vector_index(
-            index_name="agent_embeddings",
-            label="Agent",
+            index_name="character_embeddings",
+            label="Character",
             property_name="embedding",
             dimensions=768,
             similarity="cosine",
@@ -193,7 +193,7 @@ Description:
 
     def insert_agents(self, agents: list[Agent], folktale: Folktale):
         agent_query = """
-        MERGE (a:Agent {id: $agent_id})
+        MERGE (a:Character {id: $agent_id})
         SET a.race = $race,
             a.name = $name,
             a.ageGroup = $age_group,
@@ -207,13 +207,13 @@ Description:
         """
 
         place_query = """
-        MATCH (a:Agent {id: $agent_id})
+        MATCH (a:Character {id: $agent_id})
         MATCH (p:Place {id: $place_id})
         MERGE (a)-[:LIVES_IN]->(p)
         """
 
         trait_query = """
-        MERGE (a:Agent {id: $agent_id})
+        MERGE (a:Character {id: $agent_id})
         MERGE (tr:Trait {name: $trait})
         MERGE (a)-[r:HAS_TRAIT]->(tr)
         SET r.strength = $strength
@@ -281,7 +281,7 @@ Description:
                 
     def insert_relationships(self, relationships: list[Relationship]):
         query = """
-        MATCH (a:Agent {id: $source_id})
+        MATCH (a:Character {id: $source_id})
         MATCH (b:Agent {id: $target_id})
         MERGE (a)-[r:RELATIONSHIP {type: $type}]->(b)
         SET r.description = $description,
@@ -325,8 +325,8 @@ Description:
 
         agent_event_query = """
         MATCH (e:Event {id: $event_id})
-        MATCH (a:Agent {id: $agent_id})
-        MERGE (e)-[r:HAS_AGENT]->(a)
+        MATCH (a:Character {id: $agent_id})
+        MERGE (e)-[r:HAS_CHARACTER]->(a)
         SET r.importance = $importance,
             r.actions = $actions
         """
@@ -410,9 +410,9 @@ Description:
 
             UNION ALL
 
-            MATCH (a:Agent)
+            MATCH (a:Character)
             WHERE NOT EXISTS {
-                MATCH (a)<-[:HAS_AGENT]-(:Event)
+                MATCH (a)<-[:HAS_CHARACTER]-(:Event)
             }
             RETURN 'Agent' AS type, a.id AS id, a.name AS name,
                 'No event participation' AS reason, a AS node
@@ -447,8 +447,8 @@ Description:
 
             UNION ALL
 
-            MATCH (a:Agent)
-            WHERE NOT EXISTS { MATCH (a)<-[:HAS_AGENT]-(:Event) }
+            MATCH (a:Character)
+            WHERE NOT EXISTS { MATCH (a)<-[:HAS_CHARACTER]-(:Event) }
             WITH collect(DISTINCT a) AS nodes
             WITH nodes, [n IN nodes | n.name] AS names
             UNWIND nodes AS a

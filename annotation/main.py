@@ -13,7 +13,6 @@ from schemas.folktale import Folktale
 from pandas import DataFrame
 from loguru import logger
 from tqdm import tqdm
-import sys
 import re
 import os
 
