@@ -83,21 +83,20 @@ type_prompt = ChatPromptTemplate.from_messages([
 	type_human_prompt,
 ])
 
-def get_hierarchy_rule():
-	return """HIERARCHY RULE:
+def get_hierarchy_rule(id: int):
+    return f"""HIERARCHY RULE:
 The options follow a hierarchical structure where:
 
-- Option 0 is the parent (most general category).
-- All other options (1, 2, ...) are more specific child categories.
+- Option {id} is the parent (most general category).
 
 Selection guidelines:
 - Always prefer the MOST SPECIFIC option (child categories).
 - If the narrative matches a specific child option, select it.
-- In case of doubt, still favor the more specific option when reasonably supported.
-- Select option 0 (parent) ONLY if none of the specific child options fit the narrative.
+- In cases of doubt, still favor the more specific option when it is reasonably supported.
+- Select option {id} (the parent) ONLY if none of the specific child options fit the narrative.
 
-The parent (option 0) acts strictly as a fallback category.
-""" 
+The parent option acts strictly as a fallback category.
+"""
 
 def _build_options_prompt(node: dict, self_name: Optional[str] = None):
 	"""
@@ -114,12 +113,12 @@ def _build_options_prompt(node: dict, self_name: Optional[str] = None):
 			- list: Lista de tuplas (node_id, description) correspondientes a cada opción.
 	"""
 	options = []
-	if self_name:
-		options.append((self_name, node["description"]))
 	
 	for child_id, info in node.get("children", {}).items():
 		options.append((child_id, info["description"]))
 
+	if self_name:
+		options.append((self_name, node["description"]))
 
 	lines = [
 		f"{idx}. {node_id}: {description}" 
@@ -236,7 +235,7 @@ def hierarchical_event_classification(event_index: int, story_segments: list[str
 		for i in range(n_rounds):
 			hierarchy_rule = ""
 			if level > 0:
-				hierarchy_rule = get_hierarchy_rule()
+				hierarchy_rule = get_hierarchy_rule(len(options_list)-1)
 			event, thinking = _extract_event(
 				folktale_event=event_text,
 				past_story=past_story,
