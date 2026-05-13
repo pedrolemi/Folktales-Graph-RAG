@@ -6,7 +6,7 @@ Who won the last football World Cup?;RETURN "This question is outside my scope."
 What is the capital of France?;RETURN 'This question is outside my scope.' AS ground_truth;out_of_scope
 Which movies did Momotaro appear in?;RETURN "This question is outside my scope." AS ground_truth;out_of_scope
 What is Momotaro's surname?;RETURN "This information is not in the knowledge base." AS ground_truth;missing_data
-Hold old is Momotaro?;RETURN "This information is not in the knowledge base." AS ground_truth;missing_data
+How old is Momotaro?;RETURN "This information is not in the knowledge base." AS ground_truth;missing_data
 What is the town population in 'Sharing Joy and Sorrow'?;RETURN "This information is not in the knowledge base." AS ground_truth;missing_data
 List all Genre nodes in the graph;MATCH (g:Genre) RETURN g.name AS ground_truth ORDER BY g.name;aggregation
 How many Folktale nodes are in the graph?;MATCH (f:Folktale) RETURN toString(count(f)) + " folktale(s)" AS ground_truth;aggregation
