@@ -6,6 +6,7 @@ from utils.models import get_llm
 from .tool_factory import BaseToolFactory
 from .answer_critic import AnswerCritic, Critique
 from .question_descomposer import QuestionDecomposer
+from langchain.messages import RemoveMessage
 from langgraph.prebuilt import ToolNode
 from pydantic import BaseModel
 import json
@@ -24,7 +25,7 @@ class AgentResponse(BaseModel):
     final_critique: Critique
 
 class AgentSystem:
-    def __init__(self, verbose: bool = False):
+    def __init__(self, verbose: bool = False, keep_last: int = 20):
         self.model = get_llm(0.0)
         self.critic = AnswerCritic()
         self.decomposer = QuestionDecomposer()
@@ -32,6 +33,7 @@ class AgentSystem:
         self.tool_manager: Optional[BaseToolFactory] = None
         self.system_prompt = ""
         self.verbose = verbose
+        self.keep_last = keep_last
 
     def _log(self, title: str, content: Any = "", indent: int = 0):
         if not self.verbose:
@@ -88,6 +90,13 @@ class AgentSystem:
             return {"messages": [response]}
         
         tool_node = ToolNode(tools)
+
+        def cleanup(state: MessagesState):
+            messages = state["messages"]
+            if len(messages) > self.keep_last:
+                to_remove = messages[:-self.keep_last]
+                return {"messages": [RemoveMessage(id=m.id) for m in to_remove]}
+            return {"messages": []}
         
         def should_continue(state: MessagesState):
             last_message = state["messages"][-1]
@@ -99,15 +108,17 @@ class AgentSystem:
             if self._is_terminal(state["messages"]):
                 return END
 
-            return "agent"
+            return "cleanup"
         
         workflow = StateGraph(MessagesState)
         workflow.add_node("agent", call_model)
         workflow.add_node("tools", tool_node)
+        workflow.add_node("cleanup", cleanup)
 
         workflow.add_edge(START, "agent")
         workflow.add_conditional_edges("agent", should_continue, {"tools": "tools", END: END})
-        workflow.add_conditional_edges("tools", after_tools, {"agent": "agent", END: END})
+        workflow.add_conditional_edges("tools", after_tools, {"cleanup": "cleanup", END: END})
+        workflow.add_edge("cleanup", "agent")
 
         self.graph = workflow.compile(checkpointer=InMemorySaver())
     

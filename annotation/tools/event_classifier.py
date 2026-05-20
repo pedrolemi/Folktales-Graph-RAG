@@ -235,7 +235,7 @@ def hierarchical_event_classification(event_index: int, story_segments: list[str
 		for i in range(n_rounds):
 			hierarchy_rule = ""
 			if level > 0:
-				hierarchy_rule = get_hierarchy_rule(len(options_list)-1)
+				hierarchy_rule = get_hierarchy_rule(len(options_list) - 1)
 			event, thinking = _extract_event(
 				folktale_event=event_text,
 				past_story=past_story,

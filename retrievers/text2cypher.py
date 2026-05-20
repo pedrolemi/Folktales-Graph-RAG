@@ -105,7 +105,7 @@ RETURN g.name AS genre
     )
         
         self.add_few_shot_example(
-            "What are some characteristics of the tailor's wife, such as race, gender, and age group?",
+            "What are some characteristics of the tailor's wife, such as race, gender and age group?",
             """
 MATCH (a:Character)
 WHERE toLower(a.name) CONTAINS "tailor's wife"

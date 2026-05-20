@@ -282,7 +282,7 @@ Description:
     def insert_relationships(self, relationships: list[Relationship]):
         query = """
         MATCH (a:Character {id: $source_id})
-        MATCH (b:Agent {id: $target_id})
+        MATCH (b:Character {id: $target_id})
         MERGE (a)-[r:RELATIONSHIP {type: $type}]->(b)
         SET r.description = $description,
             r.strength = $strength
@@ -424,7 +424,7 @@ Description:
                 MATCH (p)<-[:TAKES_PLACE_IN]-(:Event)
             }
             AND NOT EXISTS {
-                MATCH (p)<-[:LIVES_IN]-(:Agent)
+                MATCH (p)<-[:LIVES_IN]-(:Character)
             }
             RETURN 'Place' AS type, p.id AS id, p.name AS name,
                 'No event usage and unlinked' AS reason, p AS node
@@ -459,7 +459,7 @@ Description:
 
             MATCH (p:Place)
             WHERE NOT EXISTS { MATCH (p)<-[:TAKES_PLACE_IN]-(:Event) }
-            AND NOT EXISTS { MATCH (p)<-[:LIVES_IN]-(:Agent) }
+            AND NOT EXISTS { MATCH (p)<-[:LIVES_IN]-(:Character) }
             WITH collect(DISTINCT p) AS nodes
             WITH nodes, [n IN nodes | n.name] AS names
             UNWIND nodes AS p

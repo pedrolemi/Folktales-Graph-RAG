@@ -2,7 +2,6 @@ from langchain_core.tools import BaseTool, StructuredTool
 from pydantic import BaseModel, Field
 from retrievers.vector_retriever import VectorRetriever
 from retrievers.hybrid_retriever import HybridRetriever
-from retrievers.text2cypher import Text2CypherRetriever
 from graph.neo4j_manager import Neo4jManager
 from .terminal_tool_factory import BaseToolFactory
 from typing import Any
